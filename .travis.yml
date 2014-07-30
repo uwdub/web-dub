@@ -1,0 +1,10 @@
+language: python
+
+python:
+  - "3.4"
+
+install:
+  - pip install -r requirements3.txt --use-mirrors
+
+script:
+  - nosetests

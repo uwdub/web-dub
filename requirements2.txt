@@ -1,0 +1,6 @@
+# Needed for Fabric
+pycrypto
+fabric
+
+# Needed for Jekyll code highlighting
+pygments
