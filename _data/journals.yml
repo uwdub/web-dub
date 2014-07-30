@@ -1,0 +1,16 @@
+---
+
+id_journal_ijhcs:
+  longname: International Journal of Human-Computer Studies
+  shortname: IJHCS
+
+id_journal_ip:
+  longname: Information Polity
+
+id_journal_pmc:
+  longname: Pervasive and Mobile Computing
+
+id_journal_tochi:
+  longname: ACM Transactions on Computer-Human Interaction
+  shortname: TOCHI
+

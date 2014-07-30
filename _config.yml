@@ -1,0 +1,12 @@
+name:       James Fogarty
+baseurl:    /~jfogarty
+
+exclude:
+  - env27
+  - env34
+  - fabfile.py
+  - fabfile.pyc
+  - README.md
+  - requirements2.txt
+  - requirements3.txt
+  - tests
