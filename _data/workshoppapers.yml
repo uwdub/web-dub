@@ -1,0 +1,177 @@
+---
+
+id_workshoppaper_chi2013:
+  pubnum: W.19
+  authors:
+    - id_author_epstein_daniel
+    - id_author_fogarty_james
+  title: 'Examining Obstacles to Sharing Fine-Grained Personal Activity Data'
+  workshop: id_workshop_chi2013_personal_informatics
+  localpdf: workshop-chi2013.pdf
+
+id_workshoppaper_chi2012_interactivemachinelearning:
+  pubnum: W.18
+  authors:
+    - id_author_amershi_saleema
+    - id_author_fogarty_james
+  title: 'Designing for Effective End-User Interactive Machine Learning'
+  workshop: id_workshop_chi2012_interactive_machine_learning
+  localpdf: workshop-chi2012-interactivemachinelearning.pdf
+
+id_workshoppaper_chi2012_personalinformatics:
+  pubnum: W.17
+  authors:
+    - id_author_andrew_adrienne
+    - id_author_borriello_gaetano
+    - id_author_fogarty_james
+  title: 'Understanding Self-Efficacy and the Design of Personal Informatics Tools'
+  workshop: id_workshop_chi2012_personal_informatics
+  localpdf: workshop-chi2012-personalinformatics.pdf
+
+id_workshoppaper_nsfpecs2011:
+  pubnum: W.16
+  authors:
+    - id_author_fogarty_james
+  title: 'Scaling Human Attention: End-User Interaction with Machine Learning in Pervasive Systems'
+  workshop: id_workshop_nsf2011_pecs
+  localpdf: workshop-nsfpecs2011.pdf
+
+id_workshoppaper_iui2011:
+  pubnum: W.15
+  authors:
+    - id_author_ziola_ryder
+    - id_author_grampurohit_shweta
+    - id_author_landes_nate
+    - id_author_fogarty_james
+    - id_author_harrison_beverly
+  title: 'OASIS: Creating Smart Objects with Dynamic Digital Behaviors'
+  workshop: id_workshop_iui2011_smart_objects
+  localpdf: workshop-iui2011.pdf
+
+id_workshoppaper_chi2010:
+  pubnum: W.14
+  authors:
+    - id_author_dixon_morgan
+    - id_author_fogarty_james
+  title: 'Prefab: What if Every GUI were Open-Source'
+  workshop: id_workshop_chi2010_floss
+  localpdf: workshop-chi2010.pdf
+
+id_workshoppaper_nips2009:
+  pubnum: W.13
+  authors:
+    - id_author_amershi_saleema
+    - id_author_fogarty_james
+    - id_author_kapoor_ashish
+    - id_author_tan_desney
+  title: 'Designing for End-User Interactive Concept Learning in CueFlik'
+  workshop: id_workshop_nips2009_interactive_machine_learning
+  localpdf: workshop-nips2009.pdf
+
+id_workshoppaper_ijcai2009:
+  pubnum: W.12
+  authors:
+    - id_author_lin_thomas
+    - id_author_etzioni_oren
+    - id_author_fogarty_james
+  title: 'Filtering Information Extraction via User-Contributed Knowledge'
+  workshop: id_workshop_ijcai2009_user_contributed_knowledge
+  localpdf: workshop-ijcai2009.pdf
+
+id_workshoppaper_chi2009_shareddatasets:
+  pubnum: W.11
+  authors:
+    - id_author_fogarty_james
+  title: 'HCI is Different: We Need Something Else'
+  workshop: id_workshop_chi2009_shared_datasets
+  localpdf: workshop-chi2009-shareddatasets.pdf
+
+id_workshoppaper_chi2009_consumptionfeedback:
+  pubnum: W.10
+  authors:
+    - id_author_froehlich_jon
+    - id_author_everitt_katherine
+    - id_author_fogarty_james
+    - id_author_landay_james
+  title: 'Sensing Opportunities for Personalized Feedback Technology to Reduce Consumption'
+  workshop: id_workshop_chi2009_sustainability
+  localpdf: workshop-chi2009-consumptionfeedback.pdf
+
+id_workshoppaper_chi2009_enduserprogramming:
+  pubnum: W.09
+  authors:
+    - id_author_adar_eytan
+    - id_author_dontcheva_mira
+    - id_author_fogarty_james
+    - id_author_weld_daniel
+  title: 'The Temporal Dimension in End User Web Programming'
+  workshop: id_workshop_chi2009_end_user_programming
+  localpdf: workshop-chi2009-enduserprogramming.pdf
+
+id_workshoppaper_chi2007:
+  pubnum: W.08
+  authors:
+    - id_author_campbell_taj
+    - id_author_fogarty_james
+  title: 'Applying Game Design to Everyday Fitness Applications'
+  workshop: id_workshop_chi2007_exertion_interfaces
+  localpdf: workshop-chi2007.pdf
+
+id_workshoppaper_chi2006:
+  pubnum: W.07
+  authors:
+    - id_author_fogarty_james
+    - id_author_hong_jason
+    - id_author_keyani_pedram
+    - id_author_tang_karen
+  title: 'Anonymous and Privacy-Sensitive Collection of Sensed Data in Location-Based Applications'
+  workshop: id_workshop_chi2006_mobile_social_software
+  localpdf: workshop-chi2006.pdf
+
+id_workshoppaper_uist2004dc:
+  pubnum: W.06
+  authors:
+    - id_author_fogarty_james
+  title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
+  workshop: id_workshop_uist2004_doctoral_symposium
+  localpdf: workshop-uist2004dc.pdf
+
+id_workshoppaper_ibmhci2004:
+  pubnum: W.05
+  authors:
+    - id_author_fogarty_james
+  title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
+  workshop: id_workshop_ibm2004_hci_symposium
+  localpdf: workshop-ibmhci2004.pdf
+
+id_workshoppaper_ubicomp2004dc:
+  pubnum: W.04
+  authors:
+    - id_author_fogarty_james
+  title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
+  workshop: id_workshop_ubicomp2004_doctoral_symposium
+  localpdf: workshop-ubicomp2004dc.pdf
+
+id_workshoppaper_chi2004:
+  pubnum: W.03
+  authors:
+    - id_author_fogarty_james
+  title: 'Connecting versus Calming: Interruptibility, Presence, and Availability'
+  workshop: id_workshop_chi2004_forecasting_presence
+  localpdf: workshop-chi2004.pdf
+
+id_workshoppaper_pervasive2004:
+  pubnum: W.02
+  authors:
+    - id_author_fogarty_james
+  title: 'AmIBusy: High-Level Abstraction in Ubiquitous Sensing Environments'
+  workshop: id_workshop_pervasive2004_toolkits
+  localpdf: workshop-pervasive2004.pdf
+
+id_workshoppaper_ubicomp2003:
+  pubnum: W.01
+  authors:
+    - id_author_fogarty_james
+  title: 'Sensor Redundancy and Certain Privacy Concerns'
+  workshop: id_workshop_ubicomp2007_boundary_negotiation
+  localpdf: workshop-ubicomp2003.pdf

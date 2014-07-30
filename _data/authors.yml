@@ -1,0 +1,537 @@
+# id_author_wobbrock_jacob:
+#   name:
+#     - Wobbrock   # Last name first
+#     - Jacob      # Then any additional names
+#     - O.
+---
+
+id_author_adar_eytan:
+  name:
+    - Adar
+    - Eytan
+
+id_author_amershi_saleema:
+  name:
+    - Amershi
+    - Saleema
+
+id_author_andrew_adrienne:
+  name:
+    - Andrew
+    - Adrienne
+
+id_author_atkeson_christopher:
+  name:
+    - Atkeson
+    - Christopher
+    - G.
+
+id_author_atlas_les:
+  name:
+    - Atlas
+    - Les
+
+id_author_au_carolyn:
+  name:
+    - Au
+    - Carolyn
+
+id_author_aung_htet_htet:
+  name:
+    - Aung
+    - Htet Htet
+
+id_author_avrahami_daniel:
+  name:
+    - Avrahami
+    - Daniel
+
+id_author_baker_david:
+  name:
+    - Baker
+    - David
+
+id_author_baker_ryan:
+  name:
+    - Baker
+    - Ryan
+    - S.
+
+id_author_bales_elizabeth:
+  name:
+    - Bales
+    - Elizabeth
+
+id_author_balazinska_magdalena:
+  name:
+    - Balazinska
+    - Magdalena
+
+id_author_bancroft_naomi:
+  name:
+    - Bancroft
+    - Naomi
+
+id_author_barbero_janos:
+  name:
+    - Barbero
+    - Janos
+
+id_author_borriello_gaetano:
+  name:
+    - Borriello
+    - Gaetano
+
+id_author_borning_alan:
+  name:
+    - Borning
+    - Alan
+
+id_author_bragin_tanya:
+  name:
+    - Bragin
+    - Tanya
+
+id_author_campbell_taj:
+  name:
+    - Campbell
+    - Taj
+
+id_author_campbell_tim:
+  name:
+    - Campbell
+    - Tim
+
+id_author_carroll_john:
+  name:
+    - Carroll
+    - John
+    - M.
+
+id_author_chalecki_jason:
+  name:
+    - Chalecki
+    - Jason
+
+id_author_christensen_jim:
+  name:
+    - Christensen
+    - Jim
+
+id_author_consolvo_sunny:
+  name:
+    - Consolvo
+    - Sunny
+
+id_author_cooper_seth:
+  name:
+    - Cooper
+    - Seth
+
+id_author_cordeiro_felicia:
+  name:
+    - Cordeiro
+    - Felicia
+
+id_author_dabbish_laura:
+  name:
+    - Dabbish
+    - Laura
+
+id_author_dey_anind:
+  name:
+    - Dey
+    - Anind
+    - K.
+
+id_author_dixon_morgan:
+  name:
+    - Dixon
+    - Morgan
+
+id_author_dontcheva_mira:
+  name:
+    - Dontcheva
+    - Mira
+
+id_author_drucker_steven:
+  name:
+    - Drucker
+    - Steven
+    - M.
+
+id_author_dunlap_dan:
+  name:
+    - Dunlap
+    - Dan
+
+id_author_epstein_daniel:
+  name:
+    - Epstein
+    - Daniel
+    - A.
+
+id_author_etzioni_oren:
+  name:
+    - Etzioni
+    - Oren
+
+id_author_everitt_katherine:
+  name:
+    - Everitt
+    - Katherine
+    - M.
+
+id_author_fiebrink_rebecca:
+  name:
+    - Fiebrink
+    - Rebecca
+
+id_author_fogarty_james:
+  name:
+    - Fogarty
+    - James
+
+id_author_forlizzi_jodi:
+  name:
+    - Forlizzi
+    - Jodi
+
+id_author_froehlich_jon:
+  name:
+    - Froehlich
+    - Jon
+
+id_author_friedman_batya:
+  name:
+    - Friedman
+    - Batya
+
+id_author_ganoe_craig:
+  name:
+    - Ganoe
+    - Craig
+
+id_author_golden_elspeth:
+  name:
+    - Golden
+    - Elspeth
+
+id_author_grampurohit_shweta:
+  name:
+    - Grampurohit
+    - Shweta
+
+id_author_harada_susumu:
+  name:
+    - Harada
+    - Susumu
+
+id_author_harrison_beverly:
+  name:
+    - Harrison
+    - Beverly
+
+id_author_hipke_kyle:
+  name:
+    - Hipke
+    - Kyle
+
+id_author_haggerty_conor:
+  name:
+    - Haggerty
+    - Conor
+
+id_author_hoffmann_raphael:
+  name:
+    - Hoffmann
+    - Raphael
+
+id_author_hong_jason:
+  name:
+    - Hong
+    - Jason
+    - I.
+
+id_author_hudson_scott:
+  name:
+    - Hudson
+    - Scott
+    - E.
+
+id_author_isenhour_philip:
+  name:
+    - Isenhour
+    - Philip
+
+id_author_kapoor_ashish:
+  name:
+    - Kapoor
+    - Ashish
+
+id_author_keyani_pedram:
+  name:
+    - Keyani
+    - Pedram
+
+id_author_khatib_firas:
+  name:
+    - Khatib
+    - Firas
+
+id_author_kiesler_sara:
+  name:
+    - Kiesler
+    - Sara
+
+id_author_kimuro_shunichi:
+  name:
+    - Kimuro
+    - Shunichi
+
+id_author_klang_christoffer:
+  name:
+    - Klang
+    - Christoffer
+
+id_author_ko_andrew:
+  name:
+    - Ko
+    - Andrew
+    - J.
+
+id_author_kohno_tadayoshi:
+  name:
+    - Kohno
+    - Tadayoshi
+
+id_author_kriplean_travis:
+  name:
+    - Kriplean
+    - Travis
+
+id_author_lai_jennifer:
+  name:
+    - Lai
+    - Jennifer
+
+id_author_landay_james:
+  name:
+    - Landay
+    - James
+    - A.
+
+id_author_landes_nate:
+  name:
+    - Landes
+    - Nate
+
+id_author_laput_gierad:
+  name:
+    - Laput
+    - Gierad
+
+id_author_larson_eric:
+  name:
+    - Larson
+    - Eric
+
+id_author_lee_johnny:
+  name:
+    - Lee
+    - Johnny
+    - C.
+
+id_author_lester_jonathan:
+  name:
+    - Lester
+    - Jonathan
+
+id_author_leventhal_daniel:
+  name:
+    - Leventhal
+    - Daniel
+
+id_author_li_yang:
+  name:
+    - Li
+    - Yang
+
+id_author_lin_thomas:
+  name:
+    - Lin
+    - Thomas
+
+id_author_liu_shih-yen:
+  name:
+    - Liu
+    - Shih-Yean (Sean)
+
+id_author_lu_hao:
+  name:
+    - Lü
+    - Hao
+
+id_author_makedon_ilya:
+  name:
+    - Makedon
+    - Ilya
+
+id_author_mostow_jack:
+  name:
+    - Mostow
+    - Jack
+
+id_author_munson_sean:
+  name:
+    - Munson
+    - Sean
+    - A.
+
+id_author_ngo_brian:
+  name:
+    - Ngo
+    - Brian
+
+id_author_patel_kayur:
+  name:
+    - Patel
+    - Kayur
+
+id_author_patel_shwetak:
+  name:
+    - Patel
+    - Shwetak
+    - N.
+
+id_author_players_foldit:
+  name:
+    - Foldit Players
+
+id_author_popovic_zoran:
+  name:
+    - Popović
+    - Zoran
+
+id_author_roesner_franzi:
+  name:
+    - Roesner
+    - Franzi
+
+id_author_rosson_mary_beth:
+  name:
+    - Rosson
+    - Mary Beth
+
+id_author_saba_elliot:
+  name:
+    - Saba
+    - Elliot
+
+id_author_saponas_scott:
+  name:
+    - Saponas
+    - T.
+    - Scott
+
+id_author_schafer_wendy:
+  name:
+    - Schafer
+    - Wendy
+
+id_author_skinner_michael:
+  name:
+    - Skinner
+    - Michael
+
+id_author_smith_ian:
+  name:
+    - Smith
+    - Ian
+
+id_author_steck_david:
+  name:
+    - Steck
+    - David
+
+id_author_tan_desney:
+  name:
+    - Tan
+    - Desney
+    - S.
+
+id_author_tang_karen:
+  name:
+    - Tang
+    - Karen
+    - P.
+
+id_author_toomim_michael:
+  name:
+    - Toomim
+    - Michael
+
+id_author_tullio_joe:
+  name:
+    - Tullio
+    - Joe
+
+id_author_van_metre_christina:
+  name:
+    - Van Metre
+    - Christina
+
+id_author_welbourne_evan:
+  name:
+    - Welbourne
+    - Evan
+
+id_author_waddell_paul:
+  name:
+    - Waddell
+    - Paul
+
+id_author_weld_daniel:
+  name:
+    - Weld
+    - Daniel
+    - S.
+
+id_author_winder_simon:
+  name:
+    - Winder
+    - Simon
+
+id_author_wobbrock_jacob:
+  name:
+    - Wobbrock
+    - Jacob
+    - O.
+
+id_author_wu_fei:
+  name:
+    - Wu
+    - Fei
+
+id_author_yang_jie:
+  name:
+    - Yang
+    - Jie
+
+id_author_zhang_xianhang:
+  name:
+    - Zhang
+    - Xianhang
+
+id_author_ziola_ryder:
+  name:
+    - Ziola
+    - Ryder
+
+
+
+
+
+
+
+
