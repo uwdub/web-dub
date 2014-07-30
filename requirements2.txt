@@ -1,4 +1,5 @@
 # Needed for Fabric
+ecdsa
 pycrypto
 fabric
 
