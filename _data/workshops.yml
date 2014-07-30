@@ -1,0 +1,94 @@
+---
+
+id_workshop_chi2013_personal_informatics:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Personal Informatics in the Wild: Hacking Habits for Health & Happiness'
+  shortname: CHI 2013
+  year: 2013
+
+id_workshop_chi2012_interactive_machine_learning:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on End-User Interactions with Intelligent and Autonomous Systems'
+  shortname: CHI 2012
+  year: 2012
+
+id_workshop_chi2012_personal_informatics:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Personal Informatics in Practice: Improving Quality of Life Through Data'
+  shortname: CHI 2012
+  year: 2012
+
+id_workshop_nsf2011_pecs:
+  longname: 'Presented at the NSF Workshop on Pervasive Computing at Scale'
+  year: 2011
+
+id_workshop_iui2011_smart_objects:
+  longname: 'Presented at the International Conference on Intelligent User Interfaces Workshop on Interacting with Smart Objects'
+  shortname: IUI 2011
+  year: 2011
+
+id_workshop_chi2010_floss:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on the Future of FLOSS in CHI Research and Practice'
+  shortname: CHI 2010
+  year: 2010
+
+id_workshop_nips2009_interactive_machine_learning:
+  longname: 'Presented at the Conference on Neural Information Processing Systems Workshop on Analysis and Design of Algorithms for Interactive Machine Learning'
+  shortname: NIPS 2009
+  year: 2009
+
+id_workshop_ijcai2009_user_contributed_knowledge:
+  longname: 'Presented at the International Joint Conferences on Artificial Intelligence Workshop on User-Contributed Knowledge and Artificial Intelligence: An Evolving Synergy'
+  shortname: IJCAI 2009
+  year: 2009
+
+id_workshop_chi2009_shared_datasets:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Developing Shared Home Behavior Datasets to Advance HCI and Ubiquitous Computing Research'
+  shortname: CHI 2009
+  year: 2009
+
+id_workshop_chi2009_sustainability:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Defining the Role of HCI in the Challenges of Sustainability'
+  shortname: CHI 2009
+  year: 2009
+
+id_workshop_chi2009_end_user_programming:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on End User Programming for the Web'
+  shortname: CHI 2009
+  year: 2009
+
+id_workshop_chi2007_exertion_interfaces:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Exertion Interfaces'
+  shortname: CHI 2007
+  year: 2007
+
+id_workshop_chi2006_mobile_social_software:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Mobile Social Software'
+  shortname: CHI 2006
+  year: 2006
+
+id_workshop_uist2004_doctoral_symposium:
+  longname: 'Presented at the ACM Symposium on User Interface Software and Technology Doctoral Symposium'
+  shortname: UIST 2004
+  year: 2004
+
+id_workshop_ibm2004_hci_symposium:
+  longname: 'Presented at the IBM Research Human Computer Interaction Symposium'
+  year: 2004
+
+id_workshop_ubicomp2004_doctoral_symposium:
+  longname: 'Presented at the International Conference on Ubiquitous Computing Doctoral Symposium'
+  shortname: UbiComp 2004
+  year: 2004
+
+id_workshop_chi2004_forecasting_presence:
+  longname: 'Presented at the ACM Conference on Human Factors in Computing Systems Workshop on Forecasting Presence and Availability'
+  shortname: CHI 2004
+  year: 2004
+
+id_workshop_pervasive2004_toolkits:
+  longname: 'Presented at the International Conference Pervasive Computing Workshop on Toolkit Support for Interaction in the Physical World'
+  shortname: Pervasive 2004
+  year: 2004
+
+id_workshop_ubicomp2007_boundary_negotiation:
+  longname: 'Presented at the International Conference on Ubiquitous Computing Workshop on Privacy as Boundary Negotiation'
+  shortname: UbiComp 2003
+  year: 2003

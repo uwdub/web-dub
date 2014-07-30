@@ -1,0 +1,98 @@
+---
+
+id_journalpaper_ip2012:
+  pubnum: J.05
+  authors:
+    - id_author_munson_sean
+    - id_author_avrahami_daniel
+    - id_author_consolvo_sunny
+    - id_author_fogarty_james
+    - id_author_friedman_batya
+    - id_author_smith_ian
+  title: 'Sunlight or Sunburn: A Survey of Attitudes toward Online Availability of US Public Records'
+  journal: id_journal_ip
+  year: 2012
+  volume: 17
+  issue: 2
+  pages: 99-114
+  officialurl: http://dx.doi.org/10.3233/IP-2012-0267
+  localthumb: ip2012.png
+  localpdf: ip2012.pdf
+
+id_journalpaper_pmc2012:
+  pubnum: J.04
+  authors:
+    - id_author_larson_eric
+    - id_author_froehlich_jon
+    - id_author_campbell_tim
+    - id_author_haggerty_conor
+    - id_author_atlas_les
+    - id_author_fogarty_james
+    - id_author_patel_shwetak
+  title: 'Disaggregated Water Sensing from a Single, Pressure-Based Sensor: An Extended Analysis of HydroSense using Staged Experiments'
+  journal: id_journal_pmc
+  year: 2012
+  volume: 8
+  issue: 1
+  pages: 82-102
+  officialurl: http://dx.doi.org/10.1016/j.pmcj.2010.08.008
+  localthumb: pmc2012.png
+  localpdf: pmc2012.pdf
+
+id_journalpaper_tochi2005:
+  pubnum: J.03
+  authors:
+    - id_author_fogarty_james
+    - id_author_hudson_scott
+    - id_author_atkeson_christopher
+    - id_author_avrahami_daniel
+    - id_author_forlizzi_jodi
+    - id_author_kiesler_sara
+    - id_author_lee_johnny
+    - id_author_yang_jie
+  title: 'Predicting Human Interruptibility with Sensors'
+  journal: id_journal_tochi
+  year: 2005
+  volume: 12
+  issue: 1
+  pages: 119-146
+  officialurl: http://dx.doi.org/10.1145/1057237.1057243
+  localthumb: tochi2005.png
+  localpdf: tochi2005.pdf
+
+id_journalpaper_ijhcs2004:
+  pubnum: J.02
+  authors:
+    - id_author_fogarty_james
+    - id_author_lai_jennifer
+    - id_author_christensen_jim
+  title: 'Presence versus Availability: The Design and Evaluation of a Context-Aware Communication Client'
+  journal: id_journal_ijhcs
+  year: 2004
+  volume: 61
+  issue: 3
+  pages: 299-317
+  officialurl: http://dx.doi.org/10.1016/j.ijhcs.2003.12.016
+  localthumb: ijhcs2004.png
+  localpdf: ijhcs2004.pdf
+
+id_journalpaper_ijhcs2001:
+  pubnum: J.01
+  authors:
+    - id_author_carroll_john
+    - id_author_rosson_mary_beth
+    - id_author_isenhour_philip
+    - id_author_ganoe_craig
+    - id_author_dunlap_dan
+    - id_author_fogarty_james
+    - id_author_schafer_wendy
+    - id_author_van_metre_christina
+  title: 'Designing Our Town: MOOsburg'
+  journal: id_journal_ijhcs
+  year: 2001
+  volume: 54
+  issue: 5
+  pages: 725-751
+  officialurl: http://dx.doi.org/10.1006/ijhc.2000.0438
+  localthumb: ijhcs2001.png
+  localpdf: ijhcs2001.pdf
