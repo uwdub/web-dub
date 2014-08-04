@@ -1,6 +1,7 @@
 ---
 
 id_conferencepaper_dis2014:
+  pubnum: C.52
   authors:
     - id_author_epstein_daniel
     - id_author_cordeiro_felicia
@@ -15,6 +16,7 @@ id_conferencepaper_dis2014:
   localpdf: dis2014.pdf
 
 id_conferencepaper_avi2014:
+  pubnum: C.51
   authors:
     - id_author_hipke_kyle
     - id_author_toomim_michael
@@ -29,6 +31,7 @@ id_conferencepaper_avi2014:
   localvideo: avi2014.mp4
 
 id_conferencepaper_chi2014_prefab:
+  pubnum: C.50
   authors:
     - id_author_dixon_morgan
     - id_author_laput_gierad
@@ -42,6 +45,7 @@ id_conferencepaper_chi2014_prefab:
   localvideo: chi2014-prefab.mp4
 
 id_conferencepaper_chi2014_gesturescript:
+  pubnum: C.49
   authors:
     - id_author_lu_hao
     - id_author_fogarty_james
@@ -55,6 +59,7 @@ id_conferencepaper_chi2014_gesturescript:
   localvideo: chi2014-gesturescript.mp4
 
 id_conferencepaper_ubicomp2013:
+  pubnum: C.48
   authors:
     - id_author_epstein_daniel
     - id_author_borning_alan
@@ -68,6 +73,7 @@ id_conferencepaper_ubicomp2013:
   localvideo: ubicomp2013.mp4
 
 id_conferencepaper_pervasivehealth2013:
+  pubnum: C.47
   authors:
     - id_author_andrew_adrienne
     - id_author_borriello_gaetano
@@ -80,6 +86,7 @@ id_conferencepaper_pervasivehealth2013:
   localpdf: pervasivehealth2013.pdf
 
 id_conferencepaper_uist2012:
+  pubnum: C.46
   authors:
     - id_author_roesner_franzi
     - id_author_fogarty_james
@@ -92,6 +99,7 @@ id_conferencepaper_uist2012:
   localpdf: uist2012.pdf
 
 id_conferencepaper_chi2012-prefab:
+  pubnum: C.45
   authors:
     - id_author_dixon_morgan
     - id_author_fogarty_james
@@ -105,6 +113,7 @@ id_conferencepaper_chi2012-prefab:
   localvideo: chi2012-prefab.mp4
 
 id_conferencepaper_chi2012_regroup:
+  pubnum: C.44
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -117,6 +126,7 @@ id_conferencepaper_chi2012_regroup:
   localpdf: chi2012-regroup.pdf
 
 id_conferencepaper_vlhcc2011:
+  pubnum: C.43
   authors:
     - id_author_ziola_ryder
     - id_author_grampurohit_shweta
@@ -131,6 +141,7 @@ id_conferencepaper_vlhcc2011:
   localpdf: vlhcc2011.pdf
 
 id_conferencepaper_aaai2011:
+  pubnum: C.42
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -144,6 +155,7 @@ id_conferencepaper_aaai2011:
   localpdf: aaai2011.pdf
 
 id_conferencepaper_ijcai2011:
+  pubnum: C.41
   authors:
     - id_author_patel_kayur
     - id_author_drucker_steven
@@ -158,6 +170,7 @@ id_conferencepaper_ijcai2011:
   localpdf: ijcai2011.pdf
 
 id_conferencepaper_fdg2011:
+  pubnum: C.40
   authors:
     - id_author_cooper_seth
     - id_author_khatib_firas
@@ -176,6 +189,7 @@ id_conferencepaper_fdg2011:
   localpdf: fdg2011.pdf
 
 id_conferencepaper_dgo2011:
+  pubnum: C.39
   authors:
     - id_author_munson_sean
     - id_author_avrahami_daniel
@@ -191,6 +205,7 @@ id_conferencepaper_dgo2011:
   localpdf: dgo2011.pdf
 
 id_conferencepaper_pervasive2011:
+  pubnum: C.38
   authors:
     - id_author_froehlich_jon
     - id_author_larson_eric
@@ -207,6 +222,7 @@ id_conferencepaper_pervasive2011:
   localpdf: pervasive2011.pdf
 
 id_conferencepaper_chi2011:
+  pubnum: C.37
   authors:
     - id_author_dixon_morgan
     - id_author_leventhal_daniel
@@ -220,6 +236,7 @@ id_conferencepaper_chi2011:
   localvideo: chi2011.mp4
 
 id_conferencepaper_uist2010:
+  pubnum: C.36
   authors:
     - id_author_patel_kayur
     - id_author_bancroft_naomi
@@ -236,6 +253,7 @@ id_conferencepaper_uist2010:
   localvideo: uist2010.mp4
 
 id_conferencepaper_pervasive2010:
+  pubnum: C.35
   authors:
     - id_author_welbourne_evan
     - id_author_balazinska_magdalena
@@ -249,6 +267,7 @@ id_conferencepaper_pervasive2010:
   localpdf: pervasive2010.pdf
 
 id_conferencepaper_dgo2010:
+  pubnum: C.34
   authors:
     - id_author_kriplean_travis
     - id_author_borning_alan
@@ -263,6 +282,7 @@ id_conferencepaper_dgo2010:
   localpdf: dgo2010.pdf
 
 id_conferencepaper_chi2010_prefab:
+  pubnum: C.33
   authors:
     - id_author_dixon_morgan
     - id_author_fogarty_james
@@ -275,6 +295,7 @@ id_conferencepaper_chi2010_prefab:
   localvideo: chi2010-prefab.mp4
 
 id_conferencepaper_chi2010_cueflik:
+  pubnum: C.32
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -288,6 +309,7 @@ id_conferencepaper_chi2010_cueflik:
   localpdf: chi2010-cueflik.pdf
 
 id_conferencepaper_cikm2009:
+  pubnum: C.31
   authors:
     - id_author_lin_thomas
     - id_author_etzioni_oren
@@ -300,6 +322,7 @@ id_conferencepaper_cikm2009:
   localpdf: cikm2009.pdf
 
 id_conferencepaper_uist2009:
+  pubnum: C.30
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -313,6 +336,7 @@ id_conferencepaper_uist2009:
   localpdf: uist2009.pdf
 
 id_conferencepaper_ubicomp2009:
+  pubnum: C.29
   authors:
     - id_author_froehlich_jon
     - id_author_larson_eric
@@ -328,6 +352,7 @@ id_conferencepaper_ubicomp2009:
   localpdf: ubicomp2009.pdf
 
 id_conferencepaper_chi2009_kylin:
+  pubnum: C.28
   authors:
     - id_author_hoffmann_raphael
     - id_author_amershi_saleema
@@ -343,6 +368,7 @@ id_conferencepaper_chi2009_kylin:
   localpdf: chi2009-kylin.pdf
 
 id_conferencepaper_chi2009_graphicalpasswords:
+  pubnum: C.27
   authors:
     - id_author_everitt_katherine
     - id_author_bragin_tanya
@@ -356,6 +382,7 @@ id_conferencepaper_chi2009_graphicalpasswords:
   localpdf: chi2009-graphicalpasswords.pdf
 
 id_conferencepaper_chi2009_anglemouse:
+  pubnum: C.26
   authors:
     - id_author_wobbrock_jacob
     - id_author_fogarty_james
@@ -371,6 +398,7 @@ id_conferencepaper_chi2009_anglemouse:
   localvideo: chi2009-anglemouse.mp4
 
 id_conferencepaper_cscw2008:
+  pubnum: C.25
   authors:
     - id_author_campbell_taj
     - id_author_ngo_brian
@@ -383,6 +411,7 @@ id_conferencepaper_cscw2008:
   localpdf: cscw2008.pdf
 
 id_conferencepaper_uist2008:
+  pubnum: C.24
   authors:
     - id_author_adar_eytan
     - id_author_dontcheva_mira
@@ -397,6 +426,7 @@ id_conferencepaper_uist2008:
   localvideo: uist2008.mp4
 
 id_conferencepaper_icmi2008:
+  pubnum: C.23
   authors:
     - id_author_harada_susumu
     - id_author_lester_jonathan
@@ -413,6 +443,7 @@ id_conferencepaper_icmi2008:
   localpdf: icmi2008.pdf
 
 id_conferencepaper_aaai2008_learningtools:
+  pubnum: C.22
   authors:
     - id_author_patel_kayur
     - id_author_fogarty_james
@@ -426,6 +457,7 @@ id_conferencepaper_aaai2008_learningtools:
   localpdf: aaai2008-learningtools.pdf
 
 id_conferencepaper_aaai2008_wikipedia:
+  pubnum: C.21
   authors:
     - id_author_weld_daniel
     - id_author_wu_fei
@@ -443,6 +475,7 @@ id_conferencepaper_aaai2008_wikipedia:
   localpdf: aaai2008-wikipedia.pdf
 
 id_conferencepaper_gi2008:
+  pubnum: C.20
   authors:
     - id_author_lu_hao
     - id_author_fogarty_james
@@ -454,6 +487,7 @@ id_conferencepaper_gi2008:
   localpdf: gi2008.pdf
 
 id_conferencepaper_chi2008_cueflik:
+  pubnum: C.19
   authors:
     - id_author_fogarty_james
     - id_author_tan_desney
@@ -467,6 +501,7 @@ id_conferencepaper_chi2008_cueflik:
   localpdf: chi2008-cueflik.pdf
 
 id_conferencepaper_chi2008_learningtools:
+  pubnum: C.18
   authors:
     - id_author_patel_kayur
     - id_author_fogarty_james
@@ -480,6 +515,7 @@ id_conferencepaper_chi2008_learningtools:
   localpdf: chi2008-learningtools.pdf
 
 id_conferencepaper_chi2008_sharedknowledgequestions:
+  pubnum: C.17
   authors:
     - id_author_toomim_michael
     - id_author_zhang_xianhang
@@ -493,6 +529,7 @@ id_conferencepaper_chi2008_sharedknowledgequestions:
   localpdf: chi2008-sharedknowledgequestions.pdf
 
 id_conferencepaper_uist2007:
+  pubnum: C.16
   authors:
     - id_author_hoffmann_raphael
     - id_author_fogarty_james
@@ -505,6 +542,7 @@ id_conferencepaper_uist2007:
   localpdf: uist2007.pdf
 
 id_conferencepaper_chi2007_subtle:
+  pubnum: C.15
   authors:
     - id_author_fogarty_james
     - id_author_hudson_scott
@@ -516,6 +554,7 @@ id_conferencepaper_chi2007_subtle:
   localpdf: chi2007-subtle.pdf
 
 id_conferencepaper_chi2007_interruptibility:
+  pubnum: C.14
   authors:
     - id_author_avrahami_daniel
     - id_author_fogarty_james
@@ -528,6 +567,7 @@ id_conferencepaper_chi2007_interruptibility:
   localpdf: chi2007-interruptibility.pdf
 
 id_conferencepaper_chi2007_mentalmodels:
+  pubnum: C.13
   authors:
     - id_author_tullio_joe
     - id_author_dey_anind
@@ -541,6 +581,7 @@ id_conferencepaper_chi2007_mentalmodels:
   localpdf: chi2007-mentalmodels.pdf
 
 id_conferencepaper_persuasive2007:
+  pubnum: C.12
   authors:
     - id_author_andrew_adrienne
     - id_author_borriello_gaetano
@@ -553,6 +594,7 @@ id_conferencepaper_persuasive2007:
   localpdf: persuasive2007.pdf
 
 id_conferencepaper_uist2006:
+  pubnum: C.11
   authors:
     - id_author_fogarty_james
     - id_author_au_carolyn
@@ -565,6 +607,7 @@ id_conferencepaper_uist2006:
   localpdf: uist2006.pdf
 
 id_conferencepaper_chi2006:
+  pubnum: C.10
   authors:
     - id_author_tang_karen
     - id_author_keyani_pedram
@@ -578,6 +621,7 @@ id_conferencepaper_chi2006:
   localpdf: chi2006.pdf
 
 id_conferencepaper_gi2005:
+  pubnum: C.09
   authors:
     - id_author_fogarty_james
     - id_author_baker_ryan
@@ -590,6 +634,7 @@ id_conferencepaper_gi2005:
   localpdf: gi2005.pdf
 
 id_conferencepaper_chi2005:
+  pubnum: C.08
   authors:
     - id_author_fogarty_james
     - id_author_ko_andrew
@@ -605,6 +650,7 @@ id_conferencepaper_chi2005:
   localpdf: chi2005.pdf
 
 id_conferencepaper_chi2004:
+  pubnum: C.07
   authors:
     - id_author_fogarty_james
     - id_author_hudson_scott
@@ -617,6 +663,7 @@ id_conferencepaper_chi2004:
   localpdf: chi2004.pdf
 
 id_conferencepaper_uist2003:
+  pubnum: C.06
   authors:
     - id_author_fogarty_james
     - id_author_hudson_scott
@@ -628,6 +675,7 @@ id_conferencepaper_uist2003:
   localpdf: uist2003.pdf
 
 id_conferencepaper_gi2003:
+  pubnum: C.05
   authors:
     - id_author_fogarty_james
     - id_author_forlizzi_jodi
@@ -640,6 +688,7 @@ id_conferencepaper_gi2003:
   localpdf: gi2003.pdf
 
 id_conferencepaper_chi2003:
+  pubnum: C.04
   authors:
     - id_author_hudson_scott
     - id_author_fogarty_james
@@ -657,6 +706,7 @@ id_conferencepaper_chi2003:
   localpdf: chi2003.pdf
 
 id_conferencepaper_uist2002:
+  pubnum: C.03
   authors:
     - id_author_fogarty_james
     - id_author_forlizzi_jodi
@@ -669,6 +719,7 @@ id_conferencepaper_uist2002:
   localpdf: uist2002.pdf
 
 id_conferencepaper_uist2001:
+  pubnum: C.02
   authors:
     - id_author_fogarty_james
     - id_author_forlizzi_jodi
@@ -681,6 +732,7 @@ id_conferencepaper_uist2001:
   localpdf: uist2001.pdf
 
 id_conferencepaper_aied2001:
+  pubnum: C.01
   authors:
     - id_author_fogarty_james
     - id_author_dabbish_laura
