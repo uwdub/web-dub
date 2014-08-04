@@ -1,7 +1,6 @@
 ---
 
 id_workshoppaper_chi2013:
-  pubnum: W.19
   authors:
     - id_author_epstein_daniel
     - id_author_fogarty_james
@@ -10,7 +9,6 @@ id_workshoppaper_chi2013:
   localpdf: workshop-chi2013.pdf
 
 id_workshoppaper_chi2012_interactivemachinelearning:
-  pubnum: W.18
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -19,7 +17,6 @@ id_workshoppaper_chi2012_interactivemachinelearning:
   localpdf: workshop-chi2012-interactivemachinelearning.pdf
 
 id_workshoppaper_chi2012_personalinformatics:
-  pubnum: W.17
   authors:
     - id_author_andrew_adrienne
     - id_author_borriello_gaetano
@@ -29,7 +26,6 @@ id_workshoppaper_chi2012_personalinformatics:
   localpdf: workshop-chi2012-personalinformatics.pdf
 
 id_workshoppaper_nsfpecs2011:
-  pubnum: W.16
   authors:
     - id_author_fogarty_james
   title: 'Scaling Human Attention: End-User Interaction with Machine Learning in Pervasive Systems'
@@ -37,7 +33,6 @@ id_workshoppaper_nsfpecs2011:
   localpdf: workshop-nsfpecs2011.pdf
 
 id_workshoppaper_iui2011:
-  pubnum: W.15
   authors:
     - id_author_ziola_ryder
     - id_author_grampurohit_shweta
@@ -49,7 +44,6 @@ id_workshoppaper_iui2011:
   localpdf: workshop-iui2011.pdf
 
 id_workshoppaper_chi2010:
-  pubnum: W.14
   authors:
     - id_author_dixon_morgan
     - id_author_fogarty_james
@@ -58,7 +52,6 @@ id_workshoppaper_chi2010:
   localpdf: workshop-chi2010.pdf
 
 id_workshoppaper_nips2009:
-  pubnum: W.13
   authors:
     - id_author_amershi_saleema
     - id_author_fogarty_james
@@ -69,7 +62,6 @@ id_workshoppaper_nips2009:
   localpdf: workshop-nips2009.pdf
 
 id_workshoppaper_ijcai2009:
-  pubnum: W.12
   authors:
     - id_author_lin_thomas
     - id_author_etzioni_oren
@@ -79,7 +71,6 @@ id_workshoppaper_ijcai2009:
   localpdf: workshop-ijcai2009.pdf
 
 id_workshoppaper_chi2009_shareddatasets:
-  pubnum: W.11
   authors:
     - id_author_fogarty_james
   title: 'HCI is Different: We Need Something Else'
@@ -87,7 +78,6 @@ id_workshoppaper_chi2009_shareddatasets:
   localpdf: workshop-chi2009-shareddatasets.pdf
 
 id_workshoppaper_chi2009_consumptionfeedback:
-  pubnum: W.10
   authors:
     - id_author_froehlich_jon
     - id_author_everitt_katherine
@@ -98,7 +88,6 @@ id_workshoppaper_chi2009_consumptionfeedback:
   localpdf: workshop-chi2009-consumptionfeedback.pdf
 
 id_workshoppaper_chi2009_enduserprogramming:
-  pubnum: W.09
   authors:
     - id_author_adar_eytan
     - id_author_dontcheva_mira
@@ -109,7 +98,6 @@ id_workshoppaper_chi2009_enduserprogramming:
   localpdf: workshop-chi2009-enduserprogramming.pdf
 
 id_workshoppaper_chi2007:
-  pubnum: W.08
   authors:
     - id_author_campbell_taj
     - id_author_fogarty_james
@@ -118,7 +106,6 @@ id_workshoppaper_chi2007:
   localpdf: workshop-chi2007.pdf
 
 id_workshoppaper_chi2006:
-  pubnum: W.07
   authors:
     - id_author_fogarty_james
     - id_author_hong_jason
@@ -129,7 +116,6 @@ id_workshoppaper_chi2006:
   localpdf: workshop-chi2006.pdf
 
 id_workshoppaper_uist2004dc:
-  pubnum: W.06
   authors:
     - id_author_fogarty_james
   title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
@@ -137,7 +123,6 @@ id_workshoppaper_uist2004dc:
   localpdf: workshop-uist2004dc.pdf
 
 id_workshoppaper_ibmhci2004:
-  pubnum: W.05
   authors:
     - id_author_fogarty_james
   title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
@@ -145,7 +130,6 @@ id_workshoppaper_ibmhci2004:
   localpdf: workshop-ibmhci2004.pdf
 
 id_workshoppaper_ubicomp2004dc:
-  pubnum: W.04
   authors:
     - id_author_fogarty_james
   title: 'Constructing and Evaluating Sensor-Based Statistical Models of Human Interruptibility'
@@ -153,7 +137,6 @@ id_workshoppaper_ubicomp2004dc:
   localpdf: workshop-ubicomp2004dc.pdf
 
 id_workshoppaper_chi2004:
-  pubnum: W.03
   authors:
     - id_author_fogarty_james
   title: 'Connecting versus Calming: Interruptibility, Presence, and Availability'
@@ -161,7 +144,6 @@ id_workshoppaper_chi2004:
   localpdf: workshop-chi2004.pdf
 
 id_workshoppaper_pervasive2004:
-  pubnum: W.02
   authors:
     - id_author_fogarty_james
   title: 'AmIBusy: High-Level Abstraction in Ubiquitous Sensing Environments'
@@ -169,7 +151,6 @@ id_workshoppaper_pervasive2004:
   localpdf: workshop-pervasive2004.pdf
 
 id_workshoppaper_ubicomp2003:
-  pubnum: W.01
   authors:
     - id_author_fogarty_james
   title: 'Sensor Redundancy and Certain Privacy Concerns'
