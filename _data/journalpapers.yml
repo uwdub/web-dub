@@ -1,7 +1,6 @@
 ---
 
 id_journalpaper_ip2012:
-  pubnum: J.05
   authors:
     - id_author_munson_sean
     - id_author_avrahami_daniel
@@ -20,7 +19,6 @@ id_journalpaper_ip2012:
   localpdf: ip2012.pdf
 
 id_journalpaper_pmc2012:
-  pubnum: J.04
   authors:
     - id_author_larson_eric
     - id_author_froehlich_jon
@@ -40,7 +38,6 @@ id_journalpaper_pmc2012:
   localpdf: pmc2012.pdf
 
 id_journalpaper_tochi2005:
-  pubnum: J.03
   authors:
     - id_author_fogarty_james
     - id_author_hudson_scott
@@ -61,7 +58,6 @@ id_journalpaper_tochi2005:
   localpdf: tochi2005.pdf
 
 id_journalpaper_ijhcs2004:
-  pubnum: J.02
   authors:
     - id_author_fogarty_james
     - id_author_lai_jennifer
@@ -77,7 +73,6 @@ id_journalpaper_ijhcs2004:
   localpdf: ijhcs2004.pdf
 
 id_journalpaper_ijhcs2001:
-  pubnum: J.01
   authors:
     - id_author_carroll_john
     - id_author_rosson_mary_beth
