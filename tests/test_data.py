@@ -71,6 +71,11 @@ class TestData(unittest.TestCase):
                     '{} not found in publications/'.format(file_path)
                 )
 
+    def test_conferencepapers_pubnums_removed(self):
+        for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
+            self.assertNotIn('pubnum',conferencepaper)
+
+
     def test_journalpapers_authors_exist(self):
         for id_journalpaper, journalpaper in self.data['journalpapers'].items():
             for id_author in journalpaper['authors']:
@@ -111,6 +116,11 @@ class TestData(unittest.TestCase):
                     '{} not found in publications/'.format(file_path)
                 )
 
+    def test_journalpapers_pubnums_removed(self):
+        for id_journalpaper, journalpaper in self.data['journalpapers'].items():
+            self.assertNotIn('pubnum',journalpaper)
+
+
     def test_workshoppapers_authors_exist(self):
         for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
             for id_author in workshoppaper['authors']:
@@ -138,4 +148,8 @@ class TestData(unittest.TestCase):
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} not found in publications/'.format(file_path)
                 )
+
+    def test_workshoppapers_pubnums_removed(self):
+        for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
+            self.assertNotIn('pubnum',workshoppaper)
 
