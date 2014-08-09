@@ -1,5 +1,5 @@
-name:       James Fogarty
-baseurl:    /~jfogarty
+name:       DUB
+baseurl:    ''
 
 exclude:
   - env27
