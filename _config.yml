@@ -1,6 +1,10 @@
 name:       DUB
 baseurl:    ''
 
+collections:
+  people:
+    output: true
+
 exclude:
   - env27
   - env34
