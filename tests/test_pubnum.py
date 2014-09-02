@@ -25,7 +25,7 @@ class TestPubnum(unittest.TestCase):
     def test_pubnums_removed(self) -> None:
         """
         Confirm none of our papers have a pubnum field.
-        Such a field would be left over from importing from a personal site, and not meaningful here.
+        Such a field would be left over from importing a personal site, and would not be meaningful here.
         """
         for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
             self.assertNotIn('pubnum',conferencepaper)
