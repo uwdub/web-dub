@@ -363,11 +363,13 @@ id_author_lin_thomas:
     - Thomas
 
 id_author_liu_shih-yen:
+  id_override: id_author_liu_shih-yen
   name:
     - Liu
     - Shih-Yean (Sean)
 
 id_author_lu_hao:
+  id_override: id_author_lu_hao
   name:
     - Lü
     - Hao
@@ -405,10 +407,12 @@ id_author_patel_shwetak:
     - N.
 
 id_author_players_foldit:
+  id_override: id_author_players_foldit
   name:
     - Foldit Players
 
 id_author_popovic_zoran:
+  id_override: id_author_popovic_zoran
   name:
     - Popović
     - Zoran
@@ -429,6 +433,7 @@ id_author_saba_elliot:
     - Elliot
 
 id_author_saponas_scott:
+  id_override: id_author_saponas_scott
   name:
     - Saponas
     - T.
