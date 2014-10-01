@@ -1,9 +1,8 @@
-import os.path
 import unittest
 import yaml
 
 
-class TestConferencePapers(unittest.TestCase):
+class TestAuthors(unittest.TestCase):
     def setUp(self) -> None:
         """
         Parse our data files and combine them into a dictionary.
@@ -29,7 +28,9 @@ class TestConferencePapers(unittest.TestCase):
         """
         for id_author, author in self.data['authors'].items():
             if 'id_override' in author:
-                id_expected = author['id_override']
+                id_expected = 'id_author_{}'.format(
+                    author['id_override']
+                )
             else:
                 id_expected = 'id_author_{}_{}'.format(
                     author['name'][0].lower().replace(' ', '_'),
