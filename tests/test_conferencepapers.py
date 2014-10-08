@@ -16,7 +16,7 @@ class TestConferencePapers(unittest.TestCase):
 
         self.data = {}
         for data_current in data_files:
-            with open('_data/{}.yml'.format(data_current)) as f:
+            with open('_dataC/{}.yml'.format(data_current)) as f:
                 self.data[data_current] = yaml.load(f)
 
     def test_parse_yaml(self) -> None:
@@ -24,6 +24,15 @@ class TestConferencePapers(unittest.TestCase):
         Confirm all YAML from setUp successfully parses.
         """
         pass
+
+    def test_conferences_format(self) -> None:
+        '''
+        Confirm conferences format follows: id_conference_{}_{}.
+        '''
+        for id_conference, conference in self.data['conferences'].items():
+            split = id_conference.split('_')
+            if 'id' in id_conference:
+                self.assertGreater(len(split[2]),5)
 
     def test_conferencepapers_authors_exist(self) -> None:
         """
