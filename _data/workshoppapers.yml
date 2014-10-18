@@ -103,7 +103,7 @@ id_workshoppaper_ubicomp2003_fogarty_james:
   - id_author_fogarty_james
   localpdf: workshop-ubicomp2003.pdf
   title: Sensor Redundancy and Certain Privacy Concerns
-  workshop: id_workshop_ubicomp2007_boundary_negotiation
+  workshop: id_workshop_ubicomp2003_boundary_negotiation
 id_workshoppaper_ubicomp2004dc_fogarty_james:
   authors:
   - id_author_fogarty_james
