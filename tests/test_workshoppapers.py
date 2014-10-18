@@ -115,6 +115,29 @@ class TestWorkshopPapers(unittest.TestCase):
                     '{} references localpdf {} not found in publications/'.format(id_workshoppaper, file_path)
                 )
 
+    def test_workshoppapers_id_format(self) -> None:
+        """
+        Confirm the workshoppaper id is in the expected format.
+        """
+        for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
+            id_workshop = re.match('id_workshop_(.*)', workshoppaper['workshop']).group(1)
+            id_author = re.match('id_author_(.*)', workshoppaper['authors'][0]).group(1)
+
+            id_expected = 'id_workshoppaper_{}_{}'.format(
+                id_workshop,
+                id_author
+            )
+            if 'slug' in workshoppaper:
+                id_expected += '_{}'.format(
+                    workshoppaper['slug']
+                )
+
+            self.assertEquals(
+                id_workshoppaper,
+                id_expected,
+                '{} does not have expected id {}'.format(id_workshoppaper, id_expected)
+            )
+
     def test_workshoppapers_id_unique(self) -> None:
         """
         Confirm every workshoppaper id is unique.
