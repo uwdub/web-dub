@@ -26,6 +26,29 @@ class TestWorkshopPapers(unittest.TestCase):
         """
         pass
 
+    def test_workshops_id_format(self) -> None:
+        """
+        Confirm the workshop id is in the expected format.
+        """
+        for id_workshop, workshop in self.data['workshops'].items():
+            if 'id_override' in workshop:
+                id_expected = 'id_workshop_{}_{}'.format(
+                    workshop['id_override'],
+                    workshop['slug']
+                )
+            else:
+                id_expected = 'id_workshop_{}{}_{}'.format(
+                    workshop['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                    workshop['year'],
+                    workshop['slug']
+                )
+
+            self.assertEquals(
+                id_workshop,
+                id_expected,
+                '{} does not have expected id {}'.format(id_workshop, id_expected)
+            )
+
     def test_workshops_id_unique(self) -> None:
         """
         Confirm every workshop id is unique.
