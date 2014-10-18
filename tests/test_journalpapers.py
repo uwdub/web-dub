@@ -132,9 +132,9 @@ class TestJournalPapers(unittest.TestCase):
                 year,
                 id_author
             )
-            if 'id_slug' in journalpaper:
+            if 'slug' in journalpaper:
                 id_expected += '_{}'.format(
-                    journalpaper['id_slug']
+                    journalpaper['slug']
                 )
 
             self.assertEquals(

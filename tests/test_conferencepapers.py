@@ -147,9 +147,9 @@ class TestConferencePapers(unittest.TestCase):
                 id_conference,
                 id_author
             )
-            if 'id_slug' in conferencepaper:
+            if 'slug' in conferencepaper:
                 id_expected += '_{}'.format(
-                    conferencepaper['id_slug']
+                    conferencepaper['slug']
                 )
 
             self.assertEquals(
