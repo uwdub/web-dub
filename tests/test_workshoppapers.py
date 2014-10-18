@@ -25,6 +25,18 @@ class TestWorkshopPapers(unittest.TestCase):
         """
         pass
 
+
+    def test_workshoppapers_id_unique(self) -> None:
+        '''
+        confirm every journalpapers has an unique id
+        '''
+        with open('_data/workshoppapers.yml') as f:
+            idset  = set()
+            for line in f:
+                if 'id_workshoppaper' in line:
+                    self.assertFalse(line in idset)
+                    idset.add(line)
+
     def test_workshoppapers_authors_exist(self) -> None:
         """
         Confirm all authors referenced by a paper actually exist.
