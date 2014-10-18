@@ -135,6 +135,29 @@ class TestConferencePapers(unittest.TestCase):
                     '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
                 )
 
+    def test_conferencepapers_id_format(self) -> None:
+        """
+        Confirm the conferencepaper id is in the expected format.
+        """
+        for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
+            id_conference = re.match('id_conference_(.*)', conferencepaper['conference']).group(1)
+            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1)
+
+            id_expected = 'id_conferencepaper_{}_{}'.format(
+                id_conference,
+                id_author
+            )
+            if 'id_slug' in conferencepaper:
+                id_expected += '_{}'.format(
+                    conferencepaper['id_slug']
+                )
+
+            self.assertEquals(
+                id_conferencepaper,
+                id_expected,
+                '{} does not have expected id {}'.format(id_conferencepaper, id_expected)
+            )
+
     def test_conferencepapers_id_unique(self) -> None:
         """
         Confirm every conferencepaper id is unique.
