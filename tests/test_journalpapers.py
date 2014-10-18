@@ -26,6 +26,20 @@ class TestJournalPapers(unittest.TestCase):
         """
         pass
 
+    def test_journals_id_format(self) -> None:
+        """
+        Confirm the journal id is in the expected format.
+
+        Many journals do not have good short names, so this format is pretty minimal.
+        """
+        for id_journal, journal in self.data['journals'].items():
+            id_expected = 'id_journal_.*'
+
+            self.assertTrue(
+                re.match(id_expected, id_journal),
+                '{} does not match expected id {}'.format(id_journal, id_expected)
+            )
+
     def test_journals_id_unique(self) -> None:
         """
         Confirm every journal id is unique.
