@@ -16,9 +16,10 @@
 #   id_aaai_nectar:
 #     longname: Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
 #     shortname: AAAI
+#     slug: nectar
 #
 # ID should be formatted id_{}_{}
-#   - same as above
+#   - series short name as above
 #   - slug for the track
 #
 # The conference adds a year:
@@ -28,46 +29,84 @@
 #   year: 2014
 #
 # ID should be formatted id_conference_{}{}:
-#
+#   - series short name as above
 #   - year as YYYY
 #
-# Alternatively, an override can be specified. Omit the id_conference prefix:
+# Alternative, the short name and year should be kept together if there is a slug:
 #
 # id_conference_aaai2008_nectar:
-#   id_override: aaai2008_nectar
-#   longname: *aaai_nectar
-#   shortname: AAAI 2008
+#   series: id_aaai_nectar
 #   year: 2008
+#
+# ID should be formatted id_conference_{}{}_{}:
+#   - series id, omit 'id_', omit slug
+#   - year as YYYY
+#   - slug for the track
 
 conference_series:
   id_aaai_nectar:
     longname: Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
     shortname: AAAI
-  id_aaai_senior:
+    slug: nectar
+  id_aaai_seniorpapers:
     longname: Proceedings of the AAAI Conference on Artificial Intelligence, Senior Papers Track
     shortname: AAAI
+    slug: seniorpapers
   id_avi:
     longname: Proceedings of the International Conference on Advanced Visual Interfaces
     shortname: AVI
-
-aliases_longname:
-  - longname: &aied               Proceedings of the International Conference on Artificial Intelligence in Education
-  - longname: &chi                Proceedings of the ACM Conference on Human Factors in Computing Systems
-  - longname: &cikm               Proceedings of the ACM Conference on Information and Knowledge Management
-  - longname: &cscw               Proceedings of the ACM Conference on Computer Supported Cooperative Work
-  - longname: &dis                Proceedings of the ACM Conference on Designing Interactive Systems
-  - longname: &dgo                Proceedings of the Conference on Digital Government Research
-  - longname: &fdg                Proceedings of the International Conference on the Foundations of Digital Games
-  - longname: &gi                 Proceedings of Graphics Interface
-  - longname: &icmi               Proceedings of the International Conference on Multimodal Interfaces
-  - longname: &ijcai              Proceedings of the International Joint Conference on Artificial Intelligence
-  - longname: &persuasive         Proceedings of the Conference on Persuasive Computing
-  - longname: &pervasive          Proceedings of the International Conference on Pervasive Computing
-  - longname: &pervasivehealth    Proceedings of the International Conference on Pervasive Computing Technologies for Healthcare
-  - longname: &ubicomp            Proceedings of the International Conference on Pervasive and Ubiquitous Computing
-  - longname: &ubicomp_premerger  Proceedings of the International Conference on Ubiquitous Computing
-  - longname: &uist               Proceedings of the ACM Symposium on User Interface Software and Technology
-  - longname: &vlhcc              Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
+  id_aied:
+    longname: Proceedings of the International Conference on Artificial Intelligence in Education
+    shortname: AIED
+  id_chi:
+    longname: Proceedings of the ACM Conference on Human Factors in Computing Systems
+    shortname: CHI
+  id_cikm:
+    longname: Proceedings of the ACM Conference on Information and Knowledge Management
+    shortname: CIKM
+  id_cscw:
+    longname: Proceedings of the ACM Conference on Computer Supported Cooperative Work
+    shortname: CSCW
+  id_dis:
+    longname: Proceedings of the ACM Conference on Designing Interactive Systems
+    shortname: DIS
+  id_dgo:
+    longname: Proceedings of the Conference on Digital Government Research
+    shortname: DGO
+  id_fdg:
+    longname: Proceedings of the International Conference on the Foundations of Digital Games
+    shortname: FDG
+  id_gi:
+    longname: Proceedings of Graphics Interface
+    shortname: GI
+  id_icmi:
+    longname: Proceedings of the International Conference on Multimodal Interfaces
+    shortname: ICMI
+  id_ijcai:
+    longname: Proceedings of the International Joint Conference on Artificial Intelligence
+    shortname: IJCAI
+  id_persuasive:
+    longname: Proceedings of the Conference on Persuasive Computing
+    shortname: Persuasive
+  id_pervasive:
+    longname: Proceedings of the International Conference on Pervasive Computing
+    shortname: Pervasive
+  id_pervasivehealth:
+    longname: Proceedings of the International Conference on Pervasive Computing Technologies for Healthcare
+    shortname: Pervasive Health
+  id_ubicomp:
+    longname: Proceedings of the International Conference on Pervasive and Ubiquitous Computing
+    shortname: UbiComp
+  id_ubicomp_premerger:
+    id_override: ubicomp_premerger
+    longname: Proceedings of the International Conference on Ubiquitous Computing
+    shortname: UbiComp
+  id_uist:
+    longname: Proceedings of the ACM Symposium on User Interface Software and Technology
+    shortname: UIST
+  id_vlhcc:
+    longname: Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
+    shortname: VLHCC
 
 id_conference_aaai2008_nectar:
   series: id_aaai_nectar
@@ -76,204 +115,126 @@ id_conference_aaai2011_nectar:
   series: id_aaai_nectar
   year: 2011
 id_conference_aaai2008_seniorpapers:
-  series: id_aaai_senior
+  series: id_aaai_seniorpapers
   year: 2008
 id_conference_avi2014:
   series: id_avi
   year: 2014
-
-
 id_conference_aied2001:
-  longname: *aied
-  shortname: AIED 2001
+  series: id_aied
   year: 2001
-
 id_conference_chi2014:
-  longname: *chi
-  shortname: CHI 2014
+  series: id_chi
   year: 2014
-
 id_conference_chi2012:
-  longname: *chi
-  shortname: CHI 2012
+  series: id_chi
   year: 2012
-
 id_conference_chi2011:
-  longname: *chi
-  shortname: CHI 2011
+  series: id_chi
   year: 2011
-
 id_conference_chi2010:
-  longname: *chi
-  shortname: CHI 2010
+  series: id_chi
   year: 2010
-
 id_conference_chi2009:
-  longname: *chi
-  shortname: CHI 2009
+  series: id_chi
   year: 2009
-
 id_conference_chi2008:
-  longname: *chi
-  shortname: CHI 2008
+  series: id_chi
   year: 2008
-
 id_conference_chi2007:
-  longname: *chi
-  shortname: CHI 2007
+  series: id_chi
   year: 2007
-
 id_conference_chi2006:
-  longname: *chi
-  shortname: CHI 2006
+  series: id_chi
   year: 2006
-
 id_conference_chi2005:
-  longname: *chi
-  shortname: CHI 2005
+  series: id_chi
   year: 2005
-
 id_conference_chi2004:
-  longname: *chi
-  shortname: CHI 2004
+  series: id_chi
   year: 2004
-
 id_conference_chi2003:
-  longname: *chi
-  shortname: CHI 2003
+  series: id_chi
   year: 2003
-
 id_conference_cikm2009:
-  longname: *cikm
-  shortname: CIKM 2009
+  series: id_cikm
   year: 2009
-
 id_conference_cscw2008:
-  longname: *cscw
-  shortname: CSCW 2008
+  series: id_cscw
   year: 2008
-
 id_conference_dgo2011:
-  longname: *dgo
-  shortname: dg.o 2011
+  series: id_dgo
   year: 2011
-
 id_conference_dgo2010:
-  longname: *dgo
-  shortname: dg.o 2010
+  series: id_dgo
   year: 2010
-
 id_conference_dis2014:
-  longname: *dis
-  shortname: DIS 2014
+  series: id_dis
   year: 2014
-
 id_conference_fdg2011:
-  longname: *fdg
-  shortname: FDG 2011
+  series: id_fdg
   year: 2011
-
 id_conference_gi2008:
-  longname: *gi
-  shortname: GI 2008
+  series: id_gi
   year: 2008
-
 id_conference_gi2005:
-  longname: *gi
-  shortname: GI 2005
+  series: id_gi
   year: 2005
-
 id_conference_gi2003:
-  longname: *gi
-  shortname: GI 2003
+  series: id_gi
   year: 2003
-
 id_conference_icmi2008:
-  longname: *icmi
-  shortname: ICMI 2008
+  series: id_icmi
   year: 2008
-
 id_conference_ijcai2011:
-  longname: *ijcai
-  shortname: IJCAI 2011
+  series: id_ijcai
   year: 2011
-
 id_conference_persuasive2007:
-  longname: *persuasive
-  shortname: Persuasive 2007
+  series: id_persuasive
   year: 2007
-
 id_conference_pervasive2011:
-  longname: *pervasive
-  shortname: Pervasive 2011
+  series: id_pervasive
   year: 2011
-
 id_conference_pervasive2010:
-  longname: *pervasive
-  shortname: Pervasive 2010
+  series: id_pervasive
   year: 2010
-
 id_conference_pervasivehealth2013:
-  longname: *pervasivehealth
-  shortname: PervasiveHealth 2013
+  series: id_pervasivehealth
   year: 2013
-
 id_conference_ubicomp2013:
-  longname: *ubicomp
-  shortname: UbiComp 2013
+  series: id_ubicomp
   year: 2013
-
 id_conference_ubicomp2009:
-  longname: *ubicomp_premerger
-  shortname: UbiComp 2009
+  id_override: ubicomp
+  series: id_ubicomp_premerger
   year: 2009
-
 id_conference_uist2012:
-  longname: *uist
-  shortname: UIST 2012
+  series: id_uist
   year: 2012
-
 id_conference_uist2010:
-  longname: *uist
-  shortname: UIST 2010
+  series: id_uist
   year: 2010
-
 id_conference_uist2009:
-  longname: *uist
-  shortname: UIST 2009
+  series: id_uist
   year: 2009
-
 id_conference_uist2008:
-  longname: *uist
-  shortname: UIST 2008
+  series: id_uist
   year: 2008
-
 id_conference_uist2007:
-  longname: *uist
-  shortname: UIST 2007
+  series: id_uist
   year: 2007
-
 id_conference_uist2006:
-  longname: *uist
-  shortname: UIST 2006
+  series: id_uist
   year: 2006
-
 id_conference_uist2003:
-  longname: *uist
-  shortname: UIST 2003
+  series: id_uist
   year: 2003
-
 id_conference_uist2002:
-  longname: *uist
-  shortname: UIST 2002
+  series: id_uist
   year: 2002
-
 id_conference_uist2001:
-  longname: *uist
-  shortname: UIST 2001
+  series: id_uist
   year: 2001
-
 id_conference_vlhcc2011:
-  longname: *vlhcc
-  shortname: VL/HCC 2011
+  series: id_vlhcc
   year: 2011
