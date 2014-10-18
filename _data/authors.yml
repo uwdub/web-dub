@@ -1,8 +1,22 @@
+# Authors:
+#
 # id_author_wobbrock_jacob:
 #   name:
 #     - Wobbrock   # Last name first
 #     - Jacob      # Then any additional names
 #     - O.
+#
+# ID should be formatted id_author_{}_{}:
+#   - name[0] lowercased
+#   - name[1] lowercased
+#
+# Alternatively, an override can be specified:
+#
+# id_author_players_foldit:
+#   id_override: players_foldit
+#   name:
+#     - Foldit Players
+
 ---
 
 id_author_adar_eytan:
