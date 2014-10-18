@@ -31,23 +31,52 @@ class TestConferencePapers(unittest.TestCase):
         Confirm the conference id is in the expected format.
         """
         for id_conference, conference in self.data['conferences'].items():
-            if id_conference in ('aliases_longname'):
-                continue
+            if id_conference == 'conference_series':
+                for id_series, series in conference.items():
+                    if 'id_override' in series:
+                        id_expected = 'id_{}'.format(
+                            series['id_override']
+                        )
+                    elif 'slug' in series:
+                        id_expected = 'id_{}_{}'.format(
+                            series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                            series['slug']
+                        )
+                    else:
+                        id_expected = 'id_{}'.format(
+                            series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', '')
+                        )
 
-            if 'id_override' in conference:
-                id_expected = 'id_conference_{}'.format(
-                    conference['id_override']
-                )
+                    self.assertEqual(
+                        id_series,
+                        id_expected,
+                        '{} does not have expected id {}'.format(id_series, id_expected)
+                    )
             else:
-                id_expected = 'id_conference_{}'.format(
-                    conference['shortname'].lower().replace(' ', '').replace('.', '').replace('/', '')
-                )
+                series = self.data['conferences']['conference_series'][conference['series']]
 
-            self.assertEquals(
-                id_conference,
-                id_expected,
-                '{} does not have expected id {}'.format(id_conference, id_expected)
-            )
+                if 'id_override' in conference:
+                    id_expected = 'id_conference_{}{}'.format(
+                        conference['id_override'],
+                        conference['year']
+                    )
+                elif 'slug' in series:
+                    id_expected = 'id_conference_{}{}_{}'.format(
+                        series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                        conference['year'],
+                        series['slug']
+                    )
+                else:
+                    id_expected = 'id_conference_{}{}'.format(
+                        series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                        conference['year'],
+                    )
+
+                self.assertEquals(
+                    id_conference,
+                    id_expected,
+                    '{} does not have expected id {}'.format(id_conference, id_expected)
+                )
 
     def test_conferences_id_unique(self) -> None:
         """
