@@ -16,7 +16,7 @@ class TestConferencePapers(unittest.TestCase):
 
         self.data = {}
         for data_current in data_files:
-            with open('_dataC/{}.yml'.format(data_current)) as f:
+            with open('_data/{}.yml'.format(data_current)) as f:
                 self.data[data_current] = yaml.load(f)
 
     def test_parse_yaml(self) -> None:
@@ -33,6 +33,21 @@ class TestConferencePapers(unittest.TestCase):
             split = id_conference.split('_')
             if 'id' in id_conference:
                 self.assertGreater(len(split[2]),5)
+
+
+    def test_conferencepapers_id_unique(self) -> None:
+        '''
+        confirm every conferencepaper has an unique id
+        '''
+        with open('_data/conferencepapers.yml') as f:
+            idset  = set()
+            for line in f:
+                if 'id_conferencepaper' in line:
+                    self.assertFalse(line in idset)
+                    idset.add(line)
+
+
+
 
     def test_conferencepapers_authors_exist(self) -> None:
         """

@@ -25,6 +25,29 @@ class TestJournalPapers(unittest.TestCase):
         """
         pass
 
+    
+    # def test_journals_format(self) -> None:
+    #     '''
+    #     Confirm journals format follows: id_conference_{}_{}.
+    #     '''
+    #     for id_journal, journal in self.data['journals'].items():
+    #         split = id_journal.split('_')
+    #         if 'id' in id_journal:
+    #             self.assertGreater(len(split[2]),5)
+    
+
+    def test_journalpapers_id_unique(self) -> None:
+        '''
+        confirm every journalpapers has an unique id
+        '''
+        with open('_data/journalpapers.yml') as f:
+            idset  = set()
+            for line in f:
+                if 'id_journalpaper' in line:
+                    self.assertFalse(line in idset)
+                    idset.add(line)
+
+
     def test_journalpapers_authors_exist(self) -> None:
         """
         Confirm all authors referenced by a paper actually exist.
