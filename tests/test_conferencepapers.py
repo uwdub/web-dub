@@ -25,29 +25,39 @@ class TestConferencePapers(unittest.TestCase):
         """
         pass
 
-    def test_conferences_format(self) -> None:
-        '''
-        Confirm conferences format follows: id_conference_{}_{}.
-        '''
+    def test_conferences_id_format(self) -> None:
+        """
+        Confirm the conference id is in the expected format.
+        """
         for id_conference, conference in self.data['conferences'].items():
-            split = id_conference.split('_')
-            if 'id' in id_conference:
-                self.assertGreater(len(split[2]),5)
+            if id_conference in ('aliases_longname'):
+                continue
 
+            if 'id_override' in conference:
+                id_expected = 'id_conference_{}'.format(
+                    conference['id_override']
+                )
+            else:
+                id_expected = 'id_conference_{}'.format(
+                    conference['shortname'].lower().replace(' ', '').replace('.', '').replace('/', '')
+                )
+
+            self.assertEquals(
+                id_conference,
+                id_expected,
+                '{} does not have expected id {}'.format(id_conference, id_expected)
+            )
 
     def test_conferencepapers_id_unique(self) -> None:
-        '''
+        """
         confirm every conferencepaper has an unique id
-        '''
+        """
         with open('_data/conferencepapers.yml') as f:
             idset  = set()
             for line in f:
                 if 'id_conferencepaper' in line:
                     self.assertFalse(line in idset)
                     idset.add(line)
-
-
-
 
     def test_conferencepapers_authors_exist(self) -> None:
         """
