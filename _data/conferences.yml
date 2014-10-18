@@ -1,3 +1,21 @@
+# Traditional papers:
+#
+# id_conference_avi2014:
+#   longname: *avi
+#   shortname: AVI 2014
+#   year: 2014
+#
+# ID should be formatted id_conference_{}:
+#   - shortname lowercased removing any of ' ', '.', or '/'
+#
+# Alternatively, an override can be specified. Omit the id_conference prefix:
+#
+# id_conference_aaai2008_nectar:
+#   id_override: aaai2008_nectar
+#   longname: *aaai_nectar
+#   shortname: AAAI 2008
+#   year: 2008
+
 ---
 aliases_longname:
   - longname: &aaai_nectar        Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
@@ -22,16 +40,19 @@ aliases_longname:
   - longname: &vlhcc              Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
 
 id_conference_aaai2008_nectar:
+  id_override: aaai2008_nectar
   longname: *aaai_nectar
   shortname: AAAI 2008
   year: 2008
 
 id_conference_aaai2011_nectar:
+  id_override: aaai2011_nectar
   longname: *aaai_nectar
   shortname: AAAI 2011
   year: 2011
 
 id_conference_aaai2008_seniorpapers:
+  id_override: aaai2008_seniorpapers
   longname: *aaai_senior
   shortname: AAAI 2008
   year: 2008
@@ -171,7 +192,7 @@ id_conference_pervasive2010:
   shortname: Pervasive 2010
   year: 2010
 
-id_conference_pervasivehealth2013_shortpapers:
+id_conference_pervasivehealth2013:
   longname: *pervasivehealth
   shortname: PervasiveHealth 2013
   year: 2013

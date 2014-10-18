@@ -509,7 +509,7 @@ id_conferencepaper_pervasivehealth2013_andrew_adrienne:
   - id_author_andrew_adrienne
   - id_author_borriello_gaetano
   - id_author_fogarty_james
-  conference: id_conference_pervasivehealth2013_shortpapers
+  conference: id_conference_pervasivehealth2013
   localpdf: pervasivehealth2013.pdf
   localthumb: pervasivehealth2013.png
   officialurl: http://dx.doi.org/10.4108/icst.pervasivehealth.2013.252101
