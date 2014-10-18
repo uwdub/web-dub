@@ -21,217 +21,217 @@ aliases_longname:
   - longname: &uist               Proceedings of the ACM Symposium on User Interface Software and Technology
   - longname: &vlhcc              Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
 
-id_conference_aaai_2008_nectar:
+id_conference_aaai2008_nectar:
   longname: *aaai_nectar
   shortname: AAAI 2008
   year: 2008
 
-id_conference_aaai_2011_nectar:
+id_conference_aaai2011_nectar:
   longname: *aaai_nectar
   shortname: AAAI 2011
   year: 2011
 
-id_conference_aaai_2008_seniorpapers:
+id_conference_aaai2008_seniorpapers:
   longname: *aaai_senior
   shortname: AAAI 2008
   year: 2008
 
-id_conference_aied_2001:
+id_conference_aied2001:
   longname: *aied
   shortname: AIED 2001
   year: 2001
 
-id_conference_avi_2014:
+id_conference_avi2014:
   longname: *avi
   shortname: AVI 2014
   year: 2014
 
-id_conference_chi_2014:
+id_conference_chi2014:
   longname: *chi
   shortname: CHI 2014
   year: 2014
 
-id_conference_chi_2012:
+id_conference_chi2012:
   longname: *chi
   shortname: CHI 2012
   year: 2012
 
-id_conference_chi_2011:
+id_conference_chi2011:
   longname: *chi
   shortname: CHI 2011
   year: 2011
 
-id_conference_chi_2010:
+id_conference_chi2010:
   longname: *chi
   shortname: CHI 2010
   year: 2010
 
-id_conference_chi_2009:
+id_conference_chi2009:
   longname: *chi
   shortname: CHI 2009
   year: 2009
 
-id_conference_chi_2008:
+id_conference_chi2008:
   longname: *chi
   shortname: CHI 2008
   year: 2008
 
-id_conference_chi_2007:
+id_conference_chi2007:
   longname: *chi
   shortname: CHI 2007
   year: 2007
 
-id_conference_chi_2006:
+id_conference_chi2006:
   longname: *chi
   shortname: CHI 2006
   year: 2006
 
-id_conference_chi_2005:
+id_conference_chi2005:
   longname: *chi
   shortname: CHI 2005
   year: 2005
 
-id_conference_chi_2004:
+id_conference_chi2004:
   longname: *chi
   shortname: CHI 2004
   year: 2004
 
-id_conference_chi_2003:
+id_conference_chi2003:
   longname: *chi
   shortname: CHI 2003
   year: 2003
 
-id_conference_cikm_2009:
+id_conference_cikm2009:
   longname: *cikm
   shortname: CIKM 2009
   year: 2009
 
-id_conference_cscw_2008:
+id_conference_cscw2008:
   longname: *cscw
   shortname: CSCW 2008
   year: 2008
 
-id_conference_dgo_2011:
+id_conference_dgo2011:
   longname: *dgo
   shortname: dg.o 2011
   year: 2011
 
-id_conference_dgo_2010:
+id_conference_dgo2010:
   longname: *dgo
   shortname: dg.o 2010
   year: 2010
 
-id_conference_dis_2014:
+id_conference_dis2014:
   longname: *dis
   shortname: DIS 2014
   year: 2014
 
-id_conference_fdg_2011:
+id_conference_fdg2011:
   longname: *fdg
   shortname: FDG 2011
   year: 2011
 
-id_conference_gi_2008:
+id_conference_gi2008:
   longname: *gi
   shortname: GI 2008
   year: 2008
 
-id_conference_gi_2005:
+id_conference_gi2005:
   longname: *gi
   shortname: GI 2005
   year: 2005
 
-id_conference_gi_2003:
+id_conference_gi2003:
   longname: *gi
   shortname: GI 2003
   year: 2003
 
-id_conference_icmi_2008:
+id_conference_icmi2008:
   longname: *icmi
   shortname: ICMI 2008
   year: 2008
 
-id_conference_ijcai_2011:
+id_conference_ijcai2011:
   longname: *ijcai
   shortname: IJCAI 2011
   year: 2011
 
-id_conference_persuasive_2007:
+id_conference_persuasive2007:
   longname: *persuasive
   shortname: Persuasive 2007
   year: 2007
 
-id_conference_pervasive_2011:
+id_conference_pervasive2011:
   longname: *pervasive
   shortname: Pervasive 2011
   year: 2011
 
-id_conference_pervasive_2010:
+id_conference_pervasive2010:
   longname: *pervasive
   shortname: Pervasive 2010
   year: 2010
 
-id_conference_pervasivehealth_2013_shortpapers:
+id_conference_pervasivehealth2013_shortpapers:
   longname: *pervasivehealth
   shortname: PervasiveHealth 2013
   year: 2013
 
-id_conference_ubicomp_2013:
+id_conference_ubicomp2013:
   longname: *ubicomp
   shortname: UbiComp 2013
   year: 2013
 
-id_conference_ubicomp_2009:
+id_conference_ubicomp2009:
   longname: *ubicomp_premerger
   shortname: UbiComp 2009
   year: 2009
 
-id_conference_uist_2012:
+id_conference_uist2012:
   longname: *uist
   shortname: UIST 2012
   year: 2012
 
-id_conference_uist_2010:
+id_conference_uist2010:
   longname: *uist
   shortname: UIST 2010
   year: 2010
 
-id_conference_uist_2009:
+id_conference_uist2009:
   longname: *uist
   shortname: UIST 2009
   year: 2009
 
-id_conference_uist_2008:
+id_conference_uist2008:
   longname: *uist
   shortname: UIST 2008
   year: 2008
 
-id_conference_uist_2007:
+id_conference_uist2007:
   longname: *uist
   shortname: UIST 2007
   year: 2007
 
-id_conference_uist_2006:
+id_conference_uist2006:
   longname: *uist
   shortname: UIST 2006
   year: 2006
 
-id_conference_uist_2003:
+id_conference_uist2003:
   longname: *uist
   shortname: UIST 2003
   year: 2003
 
-id_conference_uist_2002:
+id_conference_uist2002:
   longname: *uist
   shortname: UIST 2002
   year: 2002
 
-id_conference_uist_2001:
+id_conference_uist2001:
   longname: *uist
   shortname: UIST 2001
   year: 2001
 
-id_conference_vlhcc_2011:
+id_conference_vlhcc2011:
   longname: *vlhcc
   shortname: VL/HCC 2011
   year: 2011
