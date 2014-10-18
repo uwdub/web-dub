@@ -1,4 +1,5 @@
 import os.path
+import re
 import unittest
 import yaml
 
@@ -24,6 +25,87 @@ class TestConferencePapers(unittest.TestCase):
         Confirm all YAML from setUp successfully parses.
         """
         pass
+
+    def test_conferences_id_format(self) -> None:
+        """
+        Confirm the conference id is in the expected format.
+        """
+        for id_conference, conference in self.data['conferences'].items():
+            if id_conference == 'conference_series':
+                for id_series, series in conference.items():
+                    if 'id_override' in series:
+                        id_expected = 'id_{}'.format(
+                            series['id_override']
+                        )
+                    elif 'slug' in series:
+                        id_expected = 'id_{}_{}'.format(
+                            series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                            series['slug']
+                        )
+                    else:
+                        id_expected = 'id_{}'.format(
+                            series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', '')
+                        )
+
+                    self.assertEqual(
+                        id_series,
+                        id_expected,
+                        '{} does not have expected id {}'.format(id_series, id_expected)
+                    )
+            else:
+                series = self.data['conferences']['conference_series'][conference['series']]
+
+                if 'id_override' in conference:
+                    id_expected = 'id_conference_{}{}'.format(
+                        conference['id_override'],
+                        conference['year']
+                    )
+                elif 'slug' in series:
+                    id_expected = 'id_conference_{}{}_{}'.format(
+                        series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                        conference['year'],
+                        series['slug']
+                    )
+                else:
+                    id_expected = 'id_conference_{}{}'.format(
+                        series['shortname'].lower().replace(' ', '').replace('.', '').replace('/', ''),
+                        conference['year'],
+                    )
+
+                self.assertEquals(
+                    id_conference,
+                    id_expected,
+                    '{} does not have expected id {}'.format(id_conference, id_expected)
+                )
+
+    def test_conferences_id_unique(self) -> None:
+        """
+        Confirm every conference id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/conferences.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_conference_.*):', line)
+                if match:
+                    id_conference = match.group(1)
+
+                    self.assertNotIn(
+                        id_conference,
+                        id_existing,
+                        '{} is duplicated in conferences.yml'.format(id_conference)
+                    )
+
+                    id_existing.add(id_conference)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in conferences.yml'
+            )
 
     def test_conferencepapers_authors_exist(self) -> None:
         """
@@ -81,3 +163,56 @@ class TestConferencePapers(unittest.TestCase):
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
                 )
+
+    def test_conferencepapers_id_format(self) -> None:
+        """
+        Confirm the conferencepaper id is in the expected format.
+        """
+        for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
+            id_conference = re.match('id_conference_(.*)', conferencepaper['conference']).group(1)
+            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1)
+
+            id_expected = 'id_conferencepaper_{}_{}'.format(
+                id_conference,
+                id_author
+            )
+            if 'slug' in conferencepaper:
+                id_expected += '_{}'.format(
+                    conferencepaper['slug']
+                )
+
+            self.assertEquals(
+                id_conferencepaper,
+                id_expected,
+                '{} does not have expected id {}'.format(id_conferencepaper, id_expected)
+            )
+
+    def test_conferencepapers_id_unique(self) -> None:
+        """
+        Confirm every conferencepaper id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/conferencepapers.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_conferencepaper_.*):', line)
+                if match:
+                    id_conferencepaper = match.group(1)
+
+                    self.assertNotIn(
+                        id_conferencepaper,
+                        id_existing,
+                        '{} is duplicated in conferencepapers.yml'.format(id_conferencepaper)
+                    )
+
+                    id_existing.add(id_conferencepaper)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in conferencepapers.yml'
+            )
+
