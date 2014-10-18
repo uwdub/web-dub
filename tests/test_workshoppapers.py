@@ -1,4 +1,5 @@
 import os.path
+import re
 import unittest
 import yaml
 
@@ -25,17 +26,34 @@ class TestWorkshopPapers(unittest.TestCase):
         """
         pass
 
+    def test_workshops_id_unique(self) -> None:
+        """
+        Confirm every workshop id is unique.
 
-    def test_workshoppapers_id_unique(self) -> None:
-        '''
-        confirm every journalpapers has an unique id
-        '''
-        with open('_data/workshoppapers.yml') as f:
-            idset  = set()
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/workshops.yml') as f:
+            id_existing = set()
             for line in f:
-                if 'id_workshoppaper' in line:
-                    self.assertFalse(line in idset)
-                    idset.add(line)
+                match = re.match('(id_workshop_.*):', line)
+                if match:
+                    id_workshop = match.group(1)
+
+                    self.assertNotIn(
+                        id_workshop,
+                        id_existing,
+                        '{} is duplicated in workshops.yml'.format(id_workshop)
+                    )
+
+                    id_existing.add(id_workshop)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in workshops.yml'
+            )
 
     def test_workshoppapers_authors_exist(self) -> None:
         """
@@ -73,3 +91,32 @@ class TestWorkshopPapers(unittest.TestCase):
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} references localpdf {} not found in publications/'.format(id_workshoppaper, file_path)
                 )
+
+    def test_workshoppapers_id_unique(self) -> None:
+        """
+        Confirm every workshoppaper id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/workshoppapers.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_workshoppaper_.*):', line)
+                if match:
+                    id_workshoppaper = match.group(1)
+
+                    self.assertNotIn(
+                        id_workshoppaper,
+                        id_existing,
+                        '{} is duplicated in workshoppapers.yml'.format(id_workshoppaper)
+                    )
+
+                    id_existing.add(id_workshoppaper)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in workshoppapers.yml'
+            )
