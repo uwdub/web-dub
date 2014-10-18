@@ -1,4 +1,5 @@
 import os.path
+import re
 import unittest
 import yaml
 
@@ -24,29 +25,6 @@ class TestJournalPapers(unittest.TestCase):
         Confirm all YAML from setUp successfully parses.
         """
         pass
-
-    
-    # def test_journals_format(self) -> None:
-    #     '''
-    #     Confirm journals format follows: id_conference_{}_{}.
-    #     '''
-    #     for id_journal, journal in self.data['journals'].items():
-    #         split = id_journal.split('_')
-    #         if 'id' in id_journal:
-    #             self.assertGreater(len(split[2]),5)
-    
-
-    def test_journalpapers_id_unique(self) -> None:
-        '''
-        confirm every journalpapers has an unique id
-        '''
-        with open('_data/journalpapers.yml') as f:
-            idset  = set()
-            for line in f:
-                if 'id_journalpaper' in line:
-                    self.assertFalse(line in idset)
-                    idset.add(line)
-
 
     def test_journalpapers_authors_exist(self) -> None:
         """
@@ -96,3 +74,32 @@ class TestJournalPapers(unittest.TestCase):
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} references localpdf {} not found in publications/'.format(id_journalpaper, file_path)
                 )
+
+    def test_journalpapers_id_unique(self) -> None:
+        """
+        Confirm every journalpaper id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/journalpapers.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_journalpaper_.*):', line)
+                if match:
+                    id_journalpaper = match.group(1)
+
+                    self.assertNotIn(
+                        id_journalpaper,
+                        id_existing,
+                        '{} is duplicated in journalpapers.yml'.format(id_journalpaper)
+                    )
+
+                    id_existing.add(id_journalpaper)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in journalpapers.yml'
+            )
