@@ -11,8 +11,7 @@ id_workshoppaper_chi2006_mobile_social_software_fogarty_james:
   - id_author_keyani_pedram
   - id_author_tang_karen
   localpdf: workshop-chi2006.pdf
-  title: Anonymous and Privacy-Sensitive Collection of Sensed Data in Location-Based
-    Applications
+  title: Anonymous and Privacy-Sensitive Collection of Sensed Data in Location-Based Applications
   workshop: id_workshop_chi2006_mobile_social_software
 id_workshoppaper_chi2007_exertion_interfaces_campbell_taj:
   authors:
@@ -89,8 +88,7 @@ id_workshoppaper_nsf2011_pecs_fogarty_james:
   authors:
   - id_author_fogarty_james
   localpdf: workshop-nsfpecs2011.pdf
-  title: 'Scaling Human Attention: End-User Interaction with Machine Learning in Pervasive
-    Systems'
+  title: 'Scaling Human Attention: End-User Interaction with Machine Learning in Pervasive Systems'
   workshop: id_workshop_nsf2011_pecs
 id_workshoppaper_pervasive2004_toolkits_fogarty_james:
   authors:
