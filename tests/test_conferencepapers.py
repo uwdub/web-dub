@@ -1,4 +1,5 @@
 import os.path
+import re
 import unittest
 import yaml
 
@@ -48,16 +49,34 @@ class TestConferencePapers(unittest.TestCase):
                 '{} does not have expected id {}'.format(id_conference, id_expected)
             )
 
-    def test_conferencepapers_id_unique(self) -> None:
+    def test_conferences_id_unique(self) -> None:
         """
-        confirm every conferencepaper has an unique id
+        Confirm every conference id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
         """
-        with open('_data/conferencepapers.yml') as f:
-            idset  = set()
+        with open('_data/conferences.yml') as f:
+            id_existing = set()
             for line in f:
-                if 'id_conferencepaper' in line:
-                    self.assertFalse(line in idset)
-                    idset.add(line)
+                match = re.match('(id_conference_.*):', line)
+                if match:
+                    id_conference = match.group(1)
+
+                    self.assertNotIn(
+                        id_conference,
+                        id_existing,
+                        '{} is duplicated in conferences.yml'.format(id_conference)
+                    )
+
+                    id_existing.add(id_conference)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in conferences.yml'
+            )
 
     def test_conferencepapers_authors_exist(self) -> None:
         """
