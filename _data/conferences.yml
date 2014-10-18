@@ -52,12 +52,12 @@ conference_series:
     longname: Proceedings of the AAAI Conference on Artificial Intelligence, Senior Papers Track
     shortname: AAAI
     slug: seniorpapers
-  id_avi:
-    longname: Proceedings of the International Conference on Advanced Visual Interfaces
-    shortname: AVI
   id_aied:
     longname: Proceedings of the International Conference on Artificial Intelligence in Education
     shortname: AIED
+  id_avi:
+    longname: Proceedings of the International Conference on Advanced Visual Interfaces
+    shortname: AVI
   id_chi:
     longname: Proceedings of the ACM Conference on Human Factors in Computing Systems
     shortname: CHI
@@ -67,12 +67,12 @@ conference_series:
   id_cscw:
     longname: Proceedings of the ACM Conference on Computer Supported Cooperative Work
     shortname: CSCW
-  id_dis:
-    longname: Proceedings of the ACM Conference on Designing Interactive Systems
-    shortname: DIS
   id_dgo:
     longname: Proceedings of the Conference on Digital Government Research
     shortname: DGO
+  id_dis:
+    longname: Proceedings of the ACM Conference on Designing Interactive Systems
+    shortname: DIS
   id_fdg:
     longname: Proceedings of the International Conference on the Foundations of Digital Games
     shortname: FDG
@@ -107,82 +107,81 @@ conference_series:
   id_vlhcc:
     longname: Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
     shortname: VLHCC
-
 id_conference_aaai2008_nectar:
   series: id_aaai_nectar
+  year: 2008
+id_conference_aaai2008_seniorpapers:
+  series: id_aaai_seniorpapers
   year: 2008
 id_conference_aaai2011_nectar:
   series: id_aaai_nectar
   year: 2011
-id_conference_aaai2008_seniorpapers:
-  series: id_aaai_seniorpapers
-  year: 2008
-id_conference_avi2014:
-  series: id_avi
-  year: 2014
 id_conference_aied2001:
   series: id_aied
   year: 2001
-id_conference_chi2014:
-  series: id_chi
+id_conference_avi2014:
+  series: id_avi
   year: 2014
-id_conference_chi2012:
-  series: id_chi
-  year: 2012
-id_conference_chi2011:
-  series: id_chi
-  year: 2011
-id_conference_chi2010:
-  series: id_chi
-  year: 2010
-id_conference_chi2009:
-  series: id_chi
-  year: 2009
-id_conference_chi2008:
-  series: id_chi
-  year: 2008
-id_conference_chi2007:
-  series: id_chi
-  year: 2007
-id_conference_chi2006:
-  series: id_chi
-  year: 2006
-id_conference_chi2005:
-  series: id_chi
-  year: 2005
-id_conference_chi2004:
-  series: id_chi
-  year: 2004
 id_conference_chi2003:
   series: id_chi
   year: 2003
+id_conference_chi2004:
+  series: id_chi
+  year: 2004
+id_conference_chi2005:
+  series: id_chi
+  year: 2005
+id_conference_chi2006:
+  series: id_chi
+  year: 2006
+id_conference_chi2007:
+  series: id_chi
+  year: 2007
+id_conference_chi2008:
+  series: id_chi
+  year: 2008
+id_conference_chi2009:
+  series: id_chi
+  year: 2009
+id_conference_chi2010:
+  series: id_chi
+  year: 2010
+id_conference_chi2011:
+  series: id_chi
+  year: 2011
+id_conference_chi2012:
+  series: id_chi
+  year: 2012
+id_conference_chi2014:
+  series: id_chi
+  year: 2014
 id_conference_cikm2009:
   series: id_cikm
   year: 2009
 id_conference_cscw2008:
   series: id_cscw
   year: 2008
-id_conference_dgo2011:
-  series: id_dgo
-  year: 2011
 id_conference_dgo2010:
   series: id_dgo
   year: 2010
+id_conference_dgo2011:
+  series: id_dgo
+  year: 2011
 id_conference_dis2014:
   series: id_dis
   year: 2014
 id_conference_fdg2011:
   series: id_fdg
   year: 2011
-id_conference_gi2008:
-  series: id_gi
-  year: 2008
-id_conference_gi2005:
-  series: id_gi
-  year: 2005
 id_conference_gi2003:
   series: id_gi
   year: 2003
+id_conference_gi2005:
+  series: id_gi
+  year: 2005
+id_conference_gi2008:
+  series: id_gi
+  year: 2008
 id_conference_icmi2008:
   series: id_icmi
   year: 2008
@@ -192,49 +191,49 @@ id_conference_ijcai2011:
 id_conference_persuasive2007:
   series: id_persuasive
   year: 2007
-id_conference_pervasive2011:
-  series: id_pervasive
-  year: 2011
 id_conference_pervasive2010:
   series: id_pervasive
   year: 2010
+id_conference_pervasive2011:
+  series: id_pervasive
+  year: 2011
 id_conference_pervasivehealth2013:
   series: id_pervasivehealth
-  year: 2013
-id_conference_ubicomp2013:
-  series: id_ubicomp
   year: 2013
 id_conference_ubicomp2009:
   id_override: ubicomp
   series: id_ubicomp_premerger
   year: 2009
-id_conference_uist2012:
-  series: id_uist
-  year: 2012
-id_conference_uist2010:
-  series: id_uist
-  year: 2010
-id_conference_uist2009:
-  series: id_uist
-  year: 2009
-id_conference_uist2008:
-  series: id_uist
-  year: 2008
-id_conference_uist2007:
-  series: id_uist
-  year: 2007
-id_conference_uist2006:
-  series: id_uist
-  year: 2006
-id_conference_uist2003:
-  series: id_uist
-  year: 2003
-id_conference_uist2002:
-  series: id_uist
-  year: 2002
+id_conference_ubicomp2013:
+  series: id_ubicomp
+  year: 2013
 id_conference_uist2001:
   series: id_uist
   year: 2001
+id_conference_uist2002:
+  series: id_uist
+  year: 2002
+id_conference_uist2003:
+  series: id_uist
+  year: 2003
+id_conference_uist2006:
+  series: id_uist
+  year: 2006
+id_conference_uist2007:
+  series: id_uist
+  year: 2007
+id_conference_uist2008:
+  series: id_uist
+  year: 2008
+id_conference_uist2009:
+  series: id_uist
+  year: 2009
+id_conference_uist2010:
+  series: id_uist
+  year: 2010
+id_conference_uist2012:
+  series: id_uist
+  year: 2012
 id_conference_vlhcc2011:
   series: id_vlhcc
   year: 2011
