@@ -134,3 +134,33 @@ class TestConferencePapers(unittest.TestCase):
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
                 )
+
+    def test_conferencepapers_id_unique(self) -> None:
+        """
+        Confirm every conferencepaper id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/conferencepapers.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_conferencepaper_.*):', line)
+                if match:
+                    id_conferencepaper = match.group(1)
+
+                    self.assertNotIn(
+                        id_conferencepaper,
+                        id_existing,
+                        '{} is duplicated in conferencepapers.yml'.format(id_conferencepaper)
+                    )
+
+                    id_existing.add(id_conferencepaper)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in conferencepapers.yml'
+            )
+
