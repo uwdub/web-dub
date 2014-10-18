@@ -26,6 +26,35 @@ class TestJournalPapers(unittest.TestCase):
         """
         pass
 
+    def test_journals_id_unique(self) -> None:
+        """
+        Confirm every journal id is unique.
+
+        The YAML parser does not error on this, and just keeps the most recently parsed.
+
+        So we need to look at the file ourself.
+        """
+        with open('_data/journals.yml') as f:
+            id_existing = set()
+            for line in f:
+                match = re.match('(id_journal_.*):', line)
+                if match:
+                    id_journal = match.group(1)
+
+                    self.assertNotIn(
+                        id_journal,
+                        id_existing,
+                        '{} is duplicated in journals.yml'.format(id_journal)
+                    )
+
+                    id_existing.add(id_journal)
+
+            self.assertGreater(
+                len(id_existing),
+                0,
+                'No ID were parsed in journals.yml'
+            )
+
     def test_journalpapers_authors_exist(self) -> None:
         """
         Confirm all authors referenced by a paper actually exist.
