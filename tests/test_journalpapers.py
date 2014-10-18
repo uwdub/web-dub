@@ -118,6 +118,31 @@ class TestJournalPapers(unittest.TestCase):
                     '{} references localpdf {} not found in publications/'.format(id_journalpaper, file_path)
                 )
 
+    def test_journalpapers_id_format(self) -> None:
+        """
+        Confirm the journalpaper id is in the expected format.
+        """
+        for id_journalpaper, journalpaper in self.data['journalpapers'].items():
+            id_journal = re.match('id_journal_(.*)', journalpaper['journal']).group(1)
+            year = journalpaper['year']
+            id_author = re.match('id_author_(.*)', journalpaper['authors'][0]).group(1)
+
+            id_expected = 'id_journalpaper_{}{}_{}'.format(
+                id_journal,
+                year,
+                id_author
+            )
+            if 'id_slug' in journalpaper:
+                id_expected += '_{}'.format(
+                    journalpaper['id_slug']
+                )
+
+            self.assertEquals(
+                id_journalpaper,
+                id_expected,
+                '{} does not have expected id {}'.format(id_journalpaper, id_expected)
+            )
+
     def test_journalpapers_id_unique(self) -> None:
         """
         Confirm every journalpaper id is unique.
