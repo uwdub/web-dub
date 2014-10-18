@@ -1,12 +1,35 @@
 # Typical conferences:
 #
+# The names are stored in the series:
+#
+# conference_series:
+#   id_avi:
+#     longname: Proceedings of the International Conference on Advanced Visual Interfaces
+#     shortname: AVI
+#
+# ID should be formatted id_{}:
+#   - shortname lowercased removing any of ' ', '.', or '/'
+#
+# Alternative, a series may have a special track designation:
+#
+# conference_series:
+#   id_aaai_nectar:
+#     longname: Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
+#     shortname: AAAI
+#
+# ID should be formatted id_{}_{}
+#   - same as above
+#   - slug for the track
+#
+# The conference adds a year:
+#
 # id_conference_avi2014:
-#   longname: *avi
-#   shortname: AVI 2014
+#   series: id_avi
 #   year: 2014
 #
-# ID should be formatted id_conference_{}:
-#   - shortname lowercased removing any of ' ', '.', or '/'
+# ID should be formatted id_conference_{}{}:
+#
+#   - year as YYYY
 #
 # Alternatively, an override can be specified. Omit the id_conference prefix:
 #
@@ -16,11 +39,18 @@
 #   shortname: AAAI 2008
 #   year: 2008
 
----
+conference_series:
+  id_aaai_nectar:
+    longname: Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
+    shortname: AAAI
+  id_aaai_senior:
+    longname: Proceedings of the AAAI Conference on Artificial Intelligence, Senior Papers Track
+    shortname: AAAI
+  id_avi:
+    longname: Proceedings of the International Conference on Advanced Visual Interfaces
+    shortname: AVI
+
 aliases_longname:
-  - longname: &aaai_nectar        Proceedings of the AAAI Conference on Artificial Intelligence, Nectar Track
-  - longname: &aaai_senior        Proceedings of the AAAI Conference on Artificial Intelligence, Senior Papers Track
-  - longname: &avi                Proceedings of the International Conference on Advanced Visual Interfaces
   - longname: &aied               Proceedings of the International Conference on Artificial Intelligence in Education
   - longname: &chi                Proceedings of the ACM Conference on Human Factors in Computing Systems
   - longname: &cikm               Proceedings of the ACM Conference on Information and Knowledge Management
@@ -40,32 +70,23 @@ aliases_longname:
   - longname: &vlhcc              Proceedings of the IEEE Symposium on Visual Languages and Human-Centric Computing
 
 id_conference_aaai2008_nectar:
-  id_override: aaai2008_nectar
-  longname: *aaai_nectar
-  shortname: AAAI 2008
+  series: id_aaai_nectar
   year: 2008
-
 id_conference_aaai2011_nectar:
-  id_override: aaai2011_nectar
-  longname: *aaai_nectar
-  shortname: AAAI 2011
+  series: id_aaai_nectar
   year: 2011
-
 id_conference_aaai2008_seniorpapers:
-  id_override: aaai2008_seniorpapers
-  longname: *aaai_senior
-  shortname: AAAI 2008
+  series: id_aaai_senior
   year: 2008
+id_conference_avi2014:
+  series: id_avi
+  year: 2014
+
 
 id_conference_aied2001:
   longname: *aied
   shortname: AIED 2001
   year: 2001
-
-id_conference_avi2014:
-  longname: *avi
-  shortname: AVI 2014
-  year: 2014
 
 id_conference_chi2014:
   longname: *chi
