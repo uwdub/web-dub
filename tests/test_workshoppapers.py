@@ -3,7 +3,6 @@ import re
 import unittest
 import yaml
 
-
 class TestWorkshopPapers(unittest.TestCase):
     def setUp(self) -> None:
         """
@@ -113,6 +112,24 @@ class TestWorkshopPapers(unittest.TestCase):
                 self.assertTrue(
                     os.path.isfile('publications/{}'.format(file_path)),
                     '{} references localpdf {} not found in publications/'.format(id_workshoppaper, file_path)
+                )
+
+    def test_workshoppapers_files_paths(self) -> None:
+        """
+        Confirm all files have paths that correspond to the ID.
+        """
+        for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
+            # Papers may have a PDF
+            if 'localpdf' in workshoppaper:
+                id_path = re.match('id_workshoppaper_(.*)', id_workshoppaper).group(1)
+                path_expected = 'workshop_{}.pdf'.format(
+                    id_path
+                )
+
+                self.assertEquals(
+                    workshoppaper['localpdf'],
+                    path_expected,
+                    '{} localpdf does not have expected path {}'.format(id_workshoppaper, path_expected)
                 )
 
     def test_workshoppapers_id_format(self) -> None:
