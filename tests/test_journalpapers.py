@@ -118,6 +118,31 @@ class TestJournalPapers(unittest.TestCase):
                     '{} references localpdf {} not found in publications/'.format(id_journalpaper, file_path)
                 )
 
+    def test_journalpapers_files_paths(self) -> None:
+        """
+        Confirm all files have paths that correspond to the ID.
+        """
+        for id_journalpaper, journalpaper in self.data['journalpapers'].items():
+            # This will be the prefix for everything
+            id_path = re.match('id_journalpaper_(.*)', id_journalpaper).group(1)
+
+            # Every paper must have a thumb
+            path_expected = '{}.png'.format(id_path)
+            self.assertEquals(
+                journalpaper['localthumb'],
+                path_expected,
+                '{} localthumb does not have expected path {}'.format(id_journalpaper, path_expected)
+            )
+
+            # Papers may have a PDF
+            if 'localpdf' in journalpaper:
+                path_expected = '{}.pdf'.format(id_path)
+                self.assertEquals(
+                    journalpaper['localpdf'],
+                    path_expected,
+                    '{} localpdf does not have expected path {}'.format(id_journalpaper, path_expected)
+                )
+
     def test_journalpapers_id_format(self) -> None:
         """
         Confirm the journalpaper id is in the expected format.
