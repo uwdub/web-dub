@@ -1,4 +1,4 @@
-id_journalpaper_ijhcs2001_carroll_john:
+id_journalpaper_ijhcs2001_carroll:
   authors:
   - id_author_carroll_john
   - id_author_rosson_mary_beth
@@ -17,7 +17,7 @@ id_journalpaper_ijhcs2001_carroll_john:
   title: 'Designing Our Town: MOOsburg'
   volume: 54
   year: 2001
-id_journalpaper_ijhcs2004_fogarty_james:
+id_journalpaper_ijhcs2004_fogarty:
   authors:
   - id_author_fogarty_james
   - id_author_lai_jennifer
@@ -31,7 +31,7 @@ id_journalpaper_ijhcs2004_fogarty_james:
   title: 'Presence versus Availability: The Design and Evaluation of a Context-Aware Communication Client'
   volume: 61
   year: 2004
-id_journalpaper_ip2012_munson_sean:
+id_journalpaper_ip2012_munson:
   authors:
   - id_author_munson_sean
   - id_author_avrahami_daniel
@@ -48,7 +48,7 @@ id_journalpaper_ip2012_munson_sean:
   title: 'Sunlight or Sunburn: A Survey of Attitudes toward Online Availability of US Public Records'
   volume: 17
   year: 2012
-id_journalpaper_pmc2012_larson_eric:
+id_journalpaper_pmc2012_larson:
   authors:
   - id_author_larson_eric
   - id_author_froehlich_jon
@@ -66,7 +66,7 @@ id_journalpaper_pmc2012_larson_eric:
   title: 'Disaggregated Water Sensing from a Single, Pressure-Based Sensor: An Extended Analysis of HydroSense using Staged Experiments'
   volume: 8
   year: 2012
-id_journalpaper_tochi2005_fogarty_james:
+id_journalpaper_tochi2005_fogarty:
   authors:
   - id_author_fogarty_james
   - id_author_hudson_scott

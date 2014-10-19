@@ -121,7 +121,7 @@ class TestWorkshopPapers(unittest.TestCase):
         """
         for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
             id_workshop = re.match('id_workshop_(.*)', workshoppaper['workshop']).group(1)
-            id_author = re.match('id_author_(.*)', workshoppaper['authors'][0]).group(1)
+            id_author = re.match('id_author_(.*)', workshoppaper['authors'][0]).group(1).split('_')[0]
 
             id_expected = 'id_workshoppaper_{}_{}'.format(
                 id_workshop,

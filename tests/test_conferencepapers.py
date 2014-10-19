@@ -170,7 +170,7 @@ class TestConferencePapers(unittest.TestCase):
         """
         for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
             id_conference = re.match('id_conference_(.*)', conferencepaper['conference']).group(1)
-            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1)
+            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1).split('_')[0]
 
             id_expected = 'id_conferencepaper_{}_{}'.format(
                 id_conference,
