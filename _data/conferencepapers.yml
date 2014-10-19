@@ -5,8 +5,8 @@ id_conferencepaper_aaai2008_nectar_patel:
   - id_author_landay_james
   - id_author_harrison_beverly
   conference: id_conference_aaai2008_nectar
-  localpdf: aaai2008-learningtools.pdf
-  localthumb: aaai2008-learningtools.png
+  localpdf: aaai2008_nectar_patel.pdf
+  localthumb: aaai2008_nectar_patel.png
   officialurl: http://www.aaai.org/Library/AAAI/2008/aaai08-263.php
   pages: 1563-1566
   title: Examining Difficulties Software Developers Encounter in the Adoption of Statistical Machine Learning
@@ -21,8 +21,8 @@ id_conferencepaper_aaai2008_seniorpapers_weld:
   - id_author_patel_kayur
   - id_author_skinner_michael
   conference: id_conference_aaai2008_seniorpapers
-  localpdf: aaai2008-wikipedia.pdf
-  localthumb: aaai2008-wikipedia.png
+  localpdf: aaai2008_seniorpapers_weld.pdf
+  localthumb: aaai2008_seniorpapers_weld.png
   officialurl: http://www.aaai.org/Library/AAAI/2008/aaai08-274.php
   pages: 1609-1614
   title: Intelligence in Wikipedia
@@ -33,8 +33,8 @@ id_conferencepaper_aaai2011_nectar_amershi:
   - id_author_kapoor_ashish
   - id_author_tan_desney
   conference: id_conference_aaai2011_nectar
-  localpdf: aaai2011.pdf
-  localthumb: aaai2011.png
+  localpdf: aaai2011_nectar_amershi.pdf
+  localthumb: aaai2011_nectar_amershi.png
   officialurl: http://www.aaai.org/ocs/index.php/AAAI/AAAI11/paper/view/3736
   pages: 1529-1532
   title: Effective End-User Interaction with Machine Learning
@@ -45,8 +45,8 @@ id_conferencepaper_aied2001_fogarty:
   - id_author_steck_david
   - id_author_mostow_jack
   conference: id_conference_aied2001
-  localpdf: aied2001.pdf
-  localthumb: aied2001.png
+  localpdf: aied2001_fogarty.pdf
+  localthumb: aied2001_fogarty.png
   pages: 422-433
   title: 'Mining a Database of Reading Mistakes: For What Should an Automated Reading Tutor LISTEN?'
 id_conferencepaper_avi2014_hipke:
@@ -56,9 +56,9 @@ id_conferencepaper_avi2014_hipke:
   - id_author_fiebrink_rebecca
   - id_author_fogarty_james
   conference: id_conference_avi2014
-  localpdf: avi2014.pdf
-  localthumb: avi2014.png
-  localvideo: avi2014.mp4
+  localpdf: avi2014_hipke.pdf
+  localthumb: avi2014_hipke.png
+  localvideo: avi2014_hipke.mp4
   officialurl: null
   pages: null
   title: 'BeatBox: End-User Interactive Definition and Training of Recognizers for Percussive Vocalizations'
@@ -73,8 +73,8 @@ id_conferencepaper_chi2003_hudson:
   - id_author_lee_johnny
   - id_author_yang_jie
   conference: id_conference_chi2003
-  localpdf: chi2003.pdf
-  localthumb: chi2003.png
+  localpdf: chi2003_hudson.pdf
+  localthumb: chi2003_hudson.png
   officialurl: http://dx.doi.org/10.1145/642611.642657
   pages: 257-264
   title: 'Predicting Human Interruptibility with Sensors: A Wizard of Oz Feasibility Study'
@@ -84,8 +84,8 @@ id_conferencepaper_chi2004_fogarty:
   - id_author_hudson_scott
   - id_author_lai_jennifer
   conference: id_conference_chi2004
-  localpdf: chi2004.pdf
-  localthumb: chi2004.png
+  localpdf: chi2004_fogarty.pdf
+  localthumb: chi2004_fogarty.png
   officialurl: http://dx.doi.org/10.1145/985692.985719
   pages: 207-214
   title: Examining the Robustness of Sensor-Based Statistical Models of Human Interruptibility
@@ -98,8 +98,8 @@ id_conferencepaper_chi2005_fogarty:
   - id_author_tang_karen
   - id_author_hudson_scott
   conference: id_conference_chi2005
-  localpdf: chi2005.pdf
-  localthumb: chi2005.png
+  localpdf: chi2005_fogarty.pdf
+  localthumb: chi2005_fogarty.png
   officialurl: http://dx.doi.org/10.1145/1054972.1055018
   pages: 331-340
   title: Examining Task Engagement in Sensor-Based Statistical Models of Human Interruptibility
@@ -110,8 +110,8 @@ id_conferencepaper_chi2006_tang:
   - id_author_fogarty_james
   - id_author_hong_jason
   conference: id_conference_chi2006
-  localpdf: chi2006.pdf
-  localthumb: chi2006.png
+  localpdf: chi2006_tang.pdf
+  localthumb: chi2006_tang.png
   officialurl: http://dx.doi.org/10.1145/1124772.1124788
   pages: 93-102
   title: 'Putting People in their Place: An Anonymous and Privacy-Sensitive Approach to Collecting Sensed Data in Location-Based Applications'
@@ -121,8 +121,8 @@ id_conferencepaper_chi2007_avrahami:
   - id_author_fogarty_james
   - id_author_hudson_scott
   conference: id_conference_chi2007
-  localpdf: chi2007-interruptibility.pdf
-  localthumb: chi2007-interruptibility.png
+  localpdf: chi2007_avrahami.pdf
+  localthumb: chi2007_avrahami.png
   officialurl: http://dx.doi.org/10.1145/1240624.1240632
   pages: 51-60
   title: 'Biases in Human Estimation of Interruptibility: Effects and Implications for Practice'
@@ -131,8 +131,8 @@ id_conferencepaper_chi2007_fogarty:
   - id_author_fogarty_james
   - id_author_hudson_scott
   conference: id_conference_chi2007
-  localpdf: chi2007-subtle.pdf
-  localthumb: chi2007-subtle.png
+  localpdf: chi2007_fogarty.pdf
+  localthumb: chi2007_fogarty.png
   officialurl: http://dx.doi.org/10.1145/1240624.1240645
   pages: 135-144
   title: Toolkit Support for Developing and Deploying Sensor-Based Statistical Models of Human Situations
@@ -143,8 +143,8 @@ id_conferencepaper_chi2007_tullio:
   - id_author_chalecki_jason
   - id_author_fogarty_james
   conference: id_conference_chi2007
-  localpdf: chi2007-mentalmodels.pdf
-  localthumb: chi2007-mentalmodels.png
+  localpdf: chi2007_tullio.pdf
+  localthumb: chi2007_tullio.png
   officialurl: http://dx.doi.org/10.1145/1240624.1240630
   pages: 31-40
   title: 'How it Works: A Field Study of Non-Technical Users Interacting with an Intelligent System'
@@ -155,8 +155,8 @@ id_conferencepaper_chi2008_fogarty:
   - id_author_kapoor_ashish
   - id_author_winder_simon
   conference: id_conference_chi2008
-  localpdf: chi2008-cueflik.pdf
-  localthumb: chi2008-cueflik.png
+  localpdf: chi2008_fogarty.pdf
+  localthumb: chi2008_fogarty.png
   officialurl: http://dx.doi.org/10.1145/1357054.1357061
   pages: 29-38
   title: 'CueFlik: Interactive Concept Learning in Image Search'
@@ -167,8 +167,8 @@ id_conferencepaper_chi2008_patel:
   - id_author_landay_james
   - id_author_harrison_beverly
   conference: id_conference_chi2008
-  localpdf: chi2008-learningtools.pdf
-  localthumb: chi2008-learningtools.png
+  localpdf: chi2008_patel.pdf
+  localthumb: chi2008_patel.png
   officialurl: http://dx.doi.org/10.1145/1357054.1357160
   pages: 667-676
   title: Investigating Statistical Machine Learning as a Tool for Software Development
@@ -179,8 +179,8 @@ id_conferencepaper_chi2008_toomim:
   - id_author_fogarty_james
   - id_author_landay_james
   conference: id_conference_chi2008
-  localpdf: chi2008-sharedknowledgequestions.pdf
-  localthumb: chi2008-sharedknowledgequestions.png
+  localpdf: chi2008_toomim.pdf
+  localthumb: chi2008_toomim.png
   officialurl: http://dx.doi.org/10.1145/1357054.1357086
   pages: 193-196
   title: Access Control by Testing for Shared Knowledge
@@ -191,8 +191,8 @@ id_conferencepaper_chi2009_everitt:
   - id_author_fogarty_james
   - id_author_kohno_tadayoshi
   conference: id_conference_chi2009
-  localpdf: chi2009-graphicalpasswords.pdf
-  localthumb: chi2009-graphicalpasswords.png
+  localpdf: chi2009_everitt.pdf
+  localthumb: chi2009_everitt.png
   officialurl: http://dx.doi.org/10.1145/1518701.1518837
   pages: 889-898
   title: A Comprehensive Study of Frequency, Interference, and Training of Multiple Graphical Passwords
@@ -205,8 +205,8 @@ id_conferencepaper_chi2009_hoffmann:
   - id_author_fogarty_james
   - id_author_weld_daniel
   conference: id_conference_chi2009
-  localpdf: chi2009-kylin.pdf
-  localthumb: chi2009-kylin.png
+  localpdf: chi2009_hoffmann.pdf
+  localthumb: chi2009_hoffmann.png
   officialurl: http://dx.doi.org/10.1145/1518701.1518986
   pages: 1849-1858
   title: Amplifying Community Content Creation with Mixed-Initiative Information Extraction
@@ -218,9 +218,9 @@ id_conferencepaper_chi2009_wobbrock:
   - id_author_kimuro_shunichi
   - id_author_harada_susumu
   conference: id_conference_chi2009
-  localpdf: chi2009-anglemouse.pdf
-  localthumb: chi2009-anglemouse.png
-  localvideo: chi2009-anglemouse.mp4
+  localpdf: chi2009_wobbrock.pdf
+  localthumb: chi2009_wobbrock.png
+  localvideo: chi2009_wobbrock.mp4
   officialurl: http://dx.doi.org/10.1145/1518701.1518912
   pages: 1401-1410
   title: 'The Angle Mouse: Target-Agnostic Dynamic Gain Adjustment Based on Angular Deviation'
@@ -231,8 +231,8 @@ id_conferencepaper_chi2010_amershi:
   - id_author_kapoor_ashish
   - id_author_tan_desney
   conference: id_conference_chi2010
-  localpdf: chi2010-cueflik.pdf
-  localthumb: chi2010-cueflik.png
+  localpdf: chi2010_amershi.pdf
+  localthumb: chi2010_amershi.png
   officialurl: http://dx.doi.org/10.1145/1753326.1753531
   pages: 1357-1360
   title: Examining Multiple Potential Models in End-User Interactive Concept Learning
@@ -241,9 +241,9 @@ id_conferencepaper_chi2010_dixon:
   - id_author_dixon_morgan
   - id_author_fogarty_james
   conference: id_conference_chi2010
-  localpdf: chi2010-prefab.pdf
-  localthumb: chi2010-prefab.png
-  localvideo: chi2010-prefab.mp4
+  localpdf: chi2010_dixon.pdf
+  localthumb: chi2010_dixon.png
+  localvideo: chi2010_dixon.mp4
   officialurl: http://dx.doi.org/10.1145/1753326.1753554
   pages: 1525-1534
   title: 'Prefab: Implementing Advanced Behaviors Using Pixel-Based Reverse Engineering of Interface Structure'
@@ -253,9 +253,9 @@ id_conferencepaper_chi2011_dixon:
   - id_author_leventhal_daniel
   - id_author_fogarty_james
   conference: id_conference_chi2011
-  localpdf: chi2011.pdf
-  localthumb: chi2011.png
-  localvideo: chi2011.mp4
+  localpdf: chi2011_dixon.pdf
+  localthumb: chi2011_dixon.png
+  localvideo: chi2011_dixon.mp4
   officialurl: http://dx.doi.org/10.1145/1978942.1979086
   pages: 969-978
   title: Content and Hierarchy in Pixel-Based Methods for Reverse Engineering Interface Structure
@@ -265,8 +265,8 @@ id_conferencepaper_chi2012_amershi:
   - id_author_fogarty_james
   - id_author_weld_daniel
   conference: id_conference_chi2012
-  localpdf: chi2012-regroup.pdf
-  localthumb: chi2012-regroup.png
+  localpdf: chi2012_amershi.pdf
+  localthumb: chi2012_amershi.png
   officialurl: http://dx.doi.org/10.1145/2207676.2207680
   pages: 21-30
   title: 'ReGroup: Interactive Machine Learning for On-Demand Group Creation in Social Networks'
@@ -276,9 +276,9 @@ id_conferencepaper_chi2012_dixon:
   - id_author_fogarty_james
   - id_author_wobbrock_jacob
   conference: id_conference_chi2012
-  localpdf: chi2012-prefab.pdf
-  localthumb: chi2012-prefab.png
-  localvideo: chi2012-prefab.mp4
+  localpdf: chi2012_dixon.pdf
+  localthumb: chi2012_dixon.png
+  localvideo: chi2012_dixon.mp4
   officialurl: http://dx.doi.org/10.1145/2207676.2208734
   pages: 3167-3176
   title: A General-Purpose Target-Aware Pointing Enhancement Using Pixel-Level Analysis of Graphical Interfaces
@@ -288,9 +288,9 @@ id_conferencepaper_chi2014_dixon:
   - id_author_laput_gierad
   - id_author_fogarty_james
   conference: id_conference_chi2014
-  localpdf: chi2014-prefab.pdf
-  localthumb: chi2014-prefab.png
-  localvideo: chi2014-prefab.mp4
+  localpdf: chi2014_dixon.pdf
+  localthumb: chi2014_dixon.png
+  localvideo: chi2014_dixon.mp4
   officialurl: http://dx.doi.org/10.1145/2556288.2556979
   pages: 2231-2240
   title: Pixel-Based Methods for Widget State and Style in a Runtime Implementation of Sliding Widgets
@@ -300,9 +300,9 @@ id_conferencepaper_chi2014_lu:
   - id_author_fogarty_james
   - id_author_li_yang
   conference: id_conference_chi2014
-  localpdf: chi2014-gesturescript.pdf
-  localthumb: chi2014-gesturescript.png
-  localvideo: chi2014-gesturescript.mp4
+  localpdf: chi2014_lu.pdf
+  localthumb: chi2014_lu.png
+  localvideo: chi2014_lu.mp4
   officialurl: http://dx.doi.org/10.1145/2556288.2557263
   pages: 1685-1694
   title: 'Gesture Script: Recognizing Gestures and their Structure using Rendering Scripts and Interactively Trained Parts'
@@ -312,8 +312,8 @@ id_conferencepaper_cikm2009_lin:
   - id_author_etzioni_oren
   - id_author_fogarty_james
   conference: id_conference_cikm2009
-  localpdf: cikm2009.pdf
-  localthumb: cikm2009.png
+  localpdf: cikm2009_lin.pdf
+  localthumb: cikm2009_lin.png
   officialurl: http://dx.doi.org/10.1145/1645953.1646230
   pages: 1787-1790
   title: Identifying Interesting Assertions from the Web
@@ -323,8 +323,8 @@ id_conferencepaper_cscw2008_campbell:
   - id_author_ngo_brian
   - id_author_fogarty_james
   conference: id_conference_cscw2008
-  localpdf: cscw2008.pdf
-  localthumb: cscw2008.png
+  localpdf: cscw2008_campbell.pdf
+  localthumb: cscw2008_campbell.png
   officialurl: http://dx.doi.org/10.1145/1460563.1460603
   pages: 249-252
   title: Game Design Principles in Everyday Fitness Applications
@@ -336,8 +336,8 @@ id_conferencepaper_dgo2010_kriplean:
   - id_author_klang_christoffer
   - id_author_fogarty_james
   conference: id_conference_dgo2010
-  localpdf: dgo2010.pdf
-  localthumb: dgo2010.png
+  localpdf: dgo2010_kriplean.pdf
+  localthumb: dgo2010_kriplean.png
   officialurl: http://dl.acm.org/citation.cfm?id=1809874.1809898
   pages: 112-121
   title: Supporting Agile Modeling through Experimentation in an Integrated Urban Simulation Framework
@@ -350,8 +350,8 @@ id_conferencepaper_dgo2011_munson:
   - id_author_friedman_batya
   - id_author_smith_ian
   conference: id_conference_dgo2011
-  localpdf: dgo2011.pdf
-  localthumb: dgo2011.png
+  localpdf: dgo2011_munson.pdf
+  localthumb: dgo2011_munson.png
   officialurl: http://dx.doi.org/10.1145/2037556.2037558
   pages: 2-9
   title: Attitudes toward Online Availability of US Public Records
@@ -363,8 +363,8 @@ id_conferencepaper_dis2014_epstein:
   - id_author_fogarty_james
   - id_author_munson_sean
   conference: id_conference_dis2014
-  localpdf: dis2014.pdf
-  localthumb: dis2014.png
+  localpdf: dis2014_epstein.pdf
+  localthumb: dis2014_epstein.png
   officialurl: null
   pages: null
   title: 'Taming Data Complexity in Lifelogs: Exploring Visual Cuts of Personal Informatics Data'
@@ -380,8 +380,8 @@ id_conferencepaper_fdg2011_cooper:
   - id_author_popovic_zoran
   - id_author_players_foldit
   conference: id_conference_fdg2011
-  localpdf: fdg2011.pdf
-  localthumb: fdg2011.png
+  localpdf: fdg2011_cooper.pdf
+  localthumb: fdg2011_cooper.png
   officialurl: http://dx.doi.org/10.1145/2159365.2159367
   pages: 9-14
   title: Analysis of Social Gameplay Macros in the Foldit Cookbook
@@ -391,8 +391,8 @@ id_conferencepaper_gi2003_fogarty:
   - id_author_forlizzi_jodi
   - id_author_hudson_scott
   conference: id_conference_gi2003
-  localpdf: gi2003.pdf
-  localthumb: gi2003.png
+  localpdf: gi2003_fogarty.pdf
+  localthumb: gi2003_fogarty.png
   officialurl: http://www.graphicsinterface.org/proceedings/2003/127/
   pages: 209-216
   title: 'Portrait: Generating Personal Presentations'
@@ -402,8 +402,8 @@ id_conferencepaper_gi2005_fogarty:
   - id_author_baker_ryan
   - id_author_hudson_scott
   conference: id_conference_gi2005
-  localpdf: gi2005.pdf
-  localthumb: gi2005.png
+  localpdf: gi2005_fogarty.pdf
+  localthumb: gi2005_fogarty.png
   officialurl: http://dl.acm.org/citation.cfm?id=1089530
   pages: 129-136
   title: Case Studies in the use of ROC Curve Analysis for Sensor-Based Estimates in Human Computer Interaction
@@ -412,8 +412,8 @@ id_conferencepaper_gi2008_lu:
   - id_author_lu_hao
   - id_author_fogarty_james
   conference: id_conference_gi2008
-  localpdf: gi2008.pdf
-  localthumb: gi2008.png
+  localpdf: gi2008_lu.pdf
+  localthumb: gi2008_lu.png
   officialurl: http://dl.acm.org/citation.cfm?id=1375714.1375758
   pages: 259-266
   title: 'Cascaded Treemaps: Examining the Visibility and Stability of Structure in Treemaps'
@@ -427,8 +427,8 @@ id_conferencepaper_icmi2008_harada:
   - id_author_landay_james
   - id_author_wobbrock_jacob
   conference: id_conference_icmi2008
-  localpdf: icmi2008.pdf
-  localthumb: icmi2008.png
+  localpdf: icmi2008_harada.pdf
+  localthumb: icmi2008_harada.png
   officialurl: http://dx.doi.org/10.1145/1452392.1452407
   pages: 69-76
   title: 'VoiceLabel: Using Speech to Label Mobile Sensor Data'
@@ -440,8 +440,8 @@ id_conferencepaper_ijcai2011_patel:
   - id_author_kapoor_ashish
   - id_author_tan_desney
   conference: id_conference_ijcai2011
-  localpdf: ijcai2011.pdf
-  localthumb: ijcai2011.png
+  localpdf: ijcai2011_patel.pdf
+  localthumb: ijcai2011_patel.png
   officialurl: http://ijcai.org/papers11/Papers/IJCAI11-289.pdf
   pages: 1723-1728
   title: Using Multiple Models to Understand Data
@@ -451,8 +451,8 @@ id_conferencepaper_persuasive2007_andrew:
   - id_author_borriello_gaetano
   - id_author_fogarty_james
   conference: id_conference_persuasive2007
-  localpdf: persuasive2007.pdf
-  localthumb: persuasive2007.png
+  localpdf: persuasive2007_andrew.pdf
+  localthumb: persuasive2007_andrew.png
   officialurl: http://dx.doi.org/10.1007/978-3-540-77006-0_32
   pages: 259-270
   title: Toward a Systematic Understanding of Suggestion Tactics in Persuasion Technologies
@@ -463,8 +463,8 @@ id_conferencepaper_pervasive2010_welbourne:
   - id_author_borriello_gaetano
   - id_author_fogarty_james
   conference: id_conference_pervasive2010
-  localpdf: pervasive2010.pdf
-  localthumb: pervasive2010.png
+  localpdf: pervasive2010_welbourne.pdf
+  localthumb: pervasive2010_welbourne.png
   officialurl: http://dx.doi.org/10.1007/978-3-642-12654-3_4
   pages: 57-75
   title: Specification and Verification of Complex Location Events with Panoramic
@@ -478,8 +478,8 @@ id_conferencepaper_pervasive2011_froehlich:
   - id_author_fogarty_james
   - id_author_patel_shwetak
   conference: id_conference_pervasive2011
-  localpdf: pervasive2011.pdf
-  localthumb: pervasive2011.png
+  localpdf: pervasive2011_froehlich.pdf
+  localthumb: pervasive2011_froehlich.png
   officialurl: http://dx.doi.org/10.1007/978-3-642-21726-5_4
   pages: 50-59
   title: A Longitudinal Study of Pressure Sensing to Infer Real-World Water Usage Events in the Home
@@ -489,8 +489,8 @@ id_conferencepaper_pervasivehealth2013_andrew:
   - id_author_borriello_gaetano
   - id_author_fogarty_james
   conference: id_conference_pervasivehealth2013
-  localpdf: pervasivehealth2013.pdf
-  localthumb: pervasivehealth2013.png
+  localpdf: pervasivehealth2013_andrew.pdf
+  localthumb: pervasivehealth2013_andrew.png
   officialurl: http://dx.doi.org/10.4108/icst.pervasivehealth.2013.252101
   pages: 260-263
   title: 'Simplifying Mobile Phone Food Diaries: Design and Evaluation of a Food Index-Based Nutrition Diary'
@@ -503,8 +503,8 @@ id_conferencepaper_ubicomp2009_froehlich:
   - id_author_fogarty_james
   - id_author_patel_shwetak
   conference: id_conference_ubicomp2009
-  localpdf: ubicomp2009.pdf
-  localthumb: ubicomp2009.png
+  localpdf: ubicomp2009_froehlich.pdf
+  localthumb: ubicomp2009_froehlich.png
   officialurl: http://dx.doi.org/10.1145/1620545.1620581
   pages: 235-244
   title: 'HydroSense: Infrastructure-Mediated Single-Point Sensing of Whole-Home Water Activity'
@@ -514,9 +514,9 @@ id_conferencepaper_ubicomp2013_epstein:
   - id_author_borning_alan
   - id_author_fogarty_james
   conference: id_conference_ubicomp2013
-  localpdf: ubicomp2013.pdf
-  localthumb: ubicomp2013.png
-  localvideo: ubicomp2013.mp4
+  localpdf: ubicomp2013_epstein.pdf
+  localthumb: ubicomp2013_epstein.png
+  localvideo: ubicomp2013_epstein.mp4
   officialurl: http://dx.doi.org/10.1145/2493432.2493433
   pages: 489-498
   title: 'Fine-Grained Sharing of Sensed Physical Activity: A Value Sensitive Approach'
@@ -526,8 +526,8 @@ id_conferencepaper_uist2001_fogarty:
   - id_author_forlizzi_jodi
   - id_author_hudson_scott
   conference: id_conference_uist2001
-  localpdf: uist2001.pdf
-  localthumb: uist2001.png
+  localpdf: uist2001_fogarty.pdf
+  localthumb: uist2001_fogarty.png
   officialurl: http://dx.doi.org/10.1145/502348.502369
   pages: 141-150
   title: 'Aesthetic Information Collages: Generating Decorative Displays that Contain Information'
@@ -537,8 +537,8 @@ id_conferencepaper_uist2002_fogarty:
   - id_author_forlizzi_jodi
   - id_author_hudson_scott
   conference: id_conference_uist2002
-  localpdf: uist2002.pdf
-  localthumb: uist2002.png
+  localpdf: uist2002_fogarty.pdf
+  localthumb: uist2002_fogarty.png
   officialurl: http://dx.doi.org/10.1145/571985.571995
   pages: 61-70
   title: Specifying Behavior and Semantic Meaning in an Unmodified Layered Drawing Package
@@ -547,8 +547,8 @@ id_conferencepaper_uist2003_fogarty:
   - id_author_fogarty_james
   - id_author_hudson_scott
   conference: id_conference_uist2003
-  localpdf: uist2003.pdf
-  localthumb: uist2003.png
+  localpdf: uist2003_fogarty.pdf
+  localthumb: uist2003_fogarty.png
   officialurl: http://dx.doi.org/10.1145/964696.964710
   pages: 125-134
   title: 'GADGET: A Toolkit for Optimization-Based Approaches to Interface and Display Generation'
@@ -558,8 +558,8 @@ id_conferencepaper_uist2006_fogarty:
   - id_author_au_carolyn
   - id_author_hudson_scott
   conference: id_conference_uist2006
-  localpdf: uist2006.pdf
-  localthumb: uist2006.png
+  localpdf: uist2006_fogarty.pdf
+  localthumb: uist2006_fogarty.png
   officialurl: http://dx.doi.org/10.1145/1166253.1166269
   pages: 91-100
   title: 'Sensing from the Basement: A Feasibility Study of Unobtrusive and Low-Cost Home Activity Recognition'
@@ -569,8 +569,8 @@ id_conferencepaper_uist2007_hoffmann:
   - id_author_fogarty_james
   - id_author_weld_daniel
   conference: id_conference_uist2007
-  localpdf: uist2007.pdf
-  localthumb: uist2007.png
+  localpdf: uist2007_hoffmann.pdf
+  localthumb: uist2007_hoffmann.png
   officialurl: http://dx.doi.org/10.1145/1294211.1294216
   pages: 13-22
   title: 'Assieme: Finding and Leveraging Implicit References in a Web Search Interface for Programmers'
@@ -581,9 +581,9 @@ id_conferencepaper_uist2008_adar:
   - id_author_fogarty_james
   - id_author_weld_daniel
   conference: id_conference_uist2008
-  localpdf: uist2008.pdf
-  localthumb: uist2008.png
-  localvideo: uist2008.mp4
+  localpdf: uist2008_adar.pdf
+  localthumb: uist2008_adar.png
+  localvideo: uist2008_adar.mp4
   officialurl: http://dx.doi.org/10.1145/1449715.1449756
   pages: 239-248
   title: 'Zoetrope: Interacting with the Ephemeral Web'
@@ -594,8 +594,8 @@ id_conferencepaper_uist2009_amershi:
   - id_author_kapoor_ashish
   - id_author_tan_desney
   conference: id_conference_uist2009
-  localpdf: uist2009.pdf
-  localthumb: uist2009.png
+  localpdf: uist2009_amershi.pdf
+  localthumb: uist2009_amershi.png
   officialurl: http://dx.doi.org/10.1145/1622176.1622222
   pages: 247-256
   title: Overview-Based Example Selection in End-User Interactive Concept Learning
@@ -608,9 +608,9 @@ id_conferencepaper_uist2010_patel:
   - id_author_ko_andrew
   - id_author_landay_james
   conference: id_conference_uist2010
-  localpdf: uist2010.pdf
-  localthumb: uist2010.png
-  localvideo: uist2010.mp4
+  localpdf: uist2010_patel.pdf
+  localthumb: uist2010_patel.png
+  localvideo: uist2010_patel.mp4
   officialurl: http://dx.doi.org/10.1145/1866029.1866038
   pages: 37-46
   title: 'Gestalt: Integrated Support for Implementation and Analysis in Machine Learning Processes'
@@ -620,8 +620,8 @@ id_conferencepaper_uist2012_roesner:
   - id_author_fogarty_james
   - id_author_kohno_tadayoshi
   conference: id_conference_uist2012
-  localpdf: uist2012.pdf
-  localthumb: uist2012.png
+  localpdf: uist2012_roesner.pdf
+  localthumb: uist2012_roesner.png
   officialurl: http://dx.doi.org/10.1145/2380116.2380147
   pages: 239-250
   title: User Interface Toolkit Mechanisms for Securing Interface Elements
@@ -633,8 +633,8 @@ id_conferencepaper_vlhcc2011_ziola:
   - id_author_fogarty_james
   - id_author_harrison_beverly
   conference: id_conference_vlhcc2011
-  localpdf: vlhcc2011.pdf
-  localthumb: vlhcc2011.png
+  localpdf: vlhcc2011_ziola.pdf
+  localthumb: vlhcc2011_ziola.png
   officialurl: http://dx.doi.org/10.1109/VLHCC.2011.6070380
   pages: 65-68
   title: Examining Interaction with General-Purpose Object Recognition in LEGO OASIS
