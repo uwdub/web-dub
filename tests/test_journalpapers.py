@@ -125,7 +125,7 @@ class TestJournalPapers(unittest.TestCase):
         for id_journalpaper, journalpaper in self.data['journalpapers'].items():
             id_journal = re.match('id_journal_(.*)', journalpaper['journal']).group(1)
             year = journalpaper['year']
-            id_author = re.match('id_author_(.*)', journalpaper['authors'][0]).group(1)
+            id_author = re.match('id_author_(.*)', journalpaper['authors'][0]).group(1).split('_')[0]
 
             id_expected = 'id_journalpaper_{}{}_{}'.format(
                 id_journal,
