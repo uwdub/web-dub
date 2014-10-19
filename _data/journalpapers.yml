@@ -1,4 +1,4 @@
-id_journalpaper_ijhcs2001_carroll_john:
+id_journalpaper_ijhcs2001_carroll:
   authors:
   - id_author_carroll_john
   - id_author_rosson_mary_beth
@@ -10,28 +10,28 @@ id_journalpaper_ijhcs2001_carroll_john:
   - id_author_van_metre_christina
   issue: 5
   journal: id_journal_ijhcs
-  localpdf: ijhcs2001.pdf
-  localthumb: ijhcs2001.png
+  localpdf: ijhcs2001_carroll.pdf
+  localthumb: ijhcs2001_carroll.png
   officialurl: http://dx.doi.org/10.1006/ijhc.2000.0438
   pages: 725-751
   title: 'Designing Our Town: MOOsburg'
   volume: 54
   year: 2001
-id_journalpaper_ijhcs2004_fogarty_james:
+id_journalpaper_ijhcs2004_fogarty:
   authors:
   - id_author_fogarty_james
   - id_author_lai_jennifer
   - id_author_christensen_jim
   issue: 3
   journal: id_journal_ijhcs
-  localpdf: ijhcs2004.pdf
-  localthumb: ijhcs2004.png
+  localpdf: ijhcs2004_fogarty.pdf
+  localthumb: ijhcs2004_fogarty.png
   officialurl: http://dx.doi.org/10.1016/j.ijhcs.2003.12.016
   pages: 299-317
   title: 'Presence versus Availability: The Design and Evaluation of a Context-Aware Communication Client'
   volume: 61
   year: 2004
-id_journalpaper_ip2012_munson_sean:
+id_journalpaper_ip2012_munson:
   authors:
   - id_author_munson_sean
   - id_author_avrahami_daniel
@@ -41,14 +41,14 @@ id_journalpaper_ip2012_munson_sean:
   - id_author_smith_ian
   issue: 2
   journal: id_journal_ip
-  localpdf: ip2012.pdf
-  localthumb: ip2012.png
+  localpdf: ip2012_munson.pdf
+  localthumb: ip2012_munson.png
   officialurl: http://dx.doi.org/10.3233/IP-2012-0267
   pages: 99-114
   title: 'Sunlight or Sunburn: A Survey of Attitudes toward Online Availability of US Public Records'
   volume: 17
   year: 2012
-id_journalpaper_pmc2012_larson_eric:
+id_journalpaper_pmc2012_larson:
   authors:
   - id_author_larson_eric
   - id_author_froehlich_jon
@@ -59,14 +59,14 @@ id_journalpaper_pmc2012_larson_eric:
   - id_author_patel_shwetak
   issue: 1
   journal: id_journal_pmc
-  localpdf: pmc2012.pdf
-  localthumb: pmc2012.png
+  localpdf: pmc2012_larson.pdf
+  localthumb: pmc2012_larson.png
   officialurl: http://dx.doi.org/10.1016/j.pmcj.2010.08.008
   pages: 82-102
   title: 'Disaggregated Water Sensing from a Single, Pressure-Based Sensor: An Extended Analysis of HydroSense using Staged Experiments'
   volume: 8
   year: 2012
-id_journalpaper_tochi2005_fogarty_james:
+id_journalpaper_tochi2005_fogarty:
   authors:
   - id_author_fogarty_james
   - id_author_hudson_scott
@@ -78,8 +78,8 @@ id_journalpaper_tochi2005_fogarty_james:
   - id_author_yang_jie
   issue: 1
   journal: id_journal_tochi
-  localpdf: tochi2005.pdf
-  localthumb: tochi2005.png
+  localpdf: tochi2005_fogarty.pdf
+  localthumb: tochi2005_fogarty.png
   officialurl: http://dx.doi.org/10.1145/1057237.1057243
   pages: 119-146
   title: Predicting Human Interruptibility with Sensors

@@ -3,6 +3,7 @@ import re
 import unittest
 import yaml
 
+import shutil
 
 class TestConferencePapers(unittest.TestCase):
     def setUp(self) -> None:
@@ -164,13 +165,46 @@ class TestConferencePapers(unittest.TestCase):
                     '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
                 )
 
+    def test_conferencepapers_files_paths(self) -> None:
+        """
+        Confirm all files have paths that correspond to the ID.
+        """
+        for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
+            # This will be the prefix for everything
+            id_path = re.match('id_conferencepaper_(.*)', id_conferencepaper).group(1)
+
+            # Every paper must have a thumb
+            path_expected = '{}.png'.format(id_path)
+            self.assertEquals(
+                conferencepaper['localthumb'],
+                path_expected,
+                '{} localthumb does not have expected path {}'.format(id_conferencepaper, path_expected)
+            )
+
+            # Papers may have a PDF
+            if 'localpdf' in conferencepaper:
+                path_expected = '{}.pdf'.format(id_path)
+                self.assertEquals(
+                    conferencepaper['localpdf'],
+                    path_expected,
+                    '{} localpdf does not have expected path {}'.format(id_conferencepaper, path_expected)
+                )
+
+            # Papers may have a video
+            if 'localvideo' in conferencepaper:
+                path_expected = '{}.(mp4)'.format(id_path)
+                self.assertTrue(
+                    re.match(path_expected, conferencepaper['localvideo']),
+                    '{} localvideo does not match expected path {}'.format(id_conferencepaper, path_expected)
+                )
+
     def test_conferencepapers_id_format(self) -> None:
         """
         Confirm the conferencepaper id is in the expected format.
         """
         for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
             id_conference = re.match('id_conference_(.*)', conferencepaper['conference']).group(1)
-            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1)
+            id_author = re.match('id_author_(.*)', conferencepaper['authors'][0]).group(1).split('_')[0]
 
             id_expected = 'id_conferencepaper_{}_{}'.format(
                 id_conference,
