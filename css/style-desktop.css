@@ -1,0 +1,449 @@
+/*
+	Standout by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	h2
+	{
+		font-size: 2em;
+	}
+
+	section,
+	article
+	{
+		margin-bottom: 3em;
+	}
+	
+	.button
+	{
+		padding: 25px 30px;
+		font-size: 2em;
+	}
+	
+	.button-top
+	{
+		display: none;
+	}
+	
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		padding: 3em 0 2em 0;
+	}
+	
+	#banner-wrapper
+	{
+	}
+	
+	#main-wrapper
+	{
+	}
+	
+	#footer-wrapper
+	{
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		position: relative;
+	}
+
+		#header h1
+		{
+			letter-spacing: -1px;
+			font-size: 2.5em;
+			font-weight: 300;
+			line-height: 2em;
+			padding: 0 0 0 0.75em;
+			margin: 0;
+		}
+
+			#header h1 a
+			{
+				text-decoration: none;
+				color: #000000;
+			}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 2em;
+	}
+	
+		#nav ul
+		{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+		
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+
+		#nav li
+		{
+			float: left;
+			display: inline-block;
+			padding: 0 1.5em 0 1.5em;
+		}
+		
+		#nav a
+		{
+			display: inline-block;
+			padding-bottom: 0.65em;
+			text-decoration: none;
+			font-size: 1.20em;
+			font-weight: 300;
+			font-style: italic;
+			color: #a2a2a2;
+			outline: 0;
+			-moz-transition: color .25s ease-in-out;
+			-webkit-transition: color .25s ease-in-out;
+			-o-transition: color .25s ease-in-out;
+			-ms-transition: color .25s ease-in-out;
+			transition: color .25s ease-in-out;
+
+		}
+
+		#nav a:hover,
+		#nav .current_page_item a,
+		#nav .active a
+		{
+			color: #454545;
+		}
+		
+		#nav .current_page_item a
+		{
+			border-bottom: 4px solid #1C94E6;
+		}
+
+	.dropotron
+	{
+		background: #fff;
+		background: rgba(255,255,255,0.97);
+		padding: 1.5em;
+		line-height: 2.5em;
+		min-width: 13em;
+		box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15);
+	}
+
+		.dropotron a,
+		.dropotron span
+		{
+			font-weight: 300;
+			font-style: italic;
+			color: #a2a2a2;
+			text-decoration: none;
+		}
+
+		.dropotron li:hover > a,
+		.dropotron li:hover > span
+		{
+			color: #454545;
+		}
+
+		.dropotron.level-0
+		{
+			margin-top: 1em;
+		}
+
+		.dropotron.level-0:after
+		{
+			content: '';
+			position: absolute;
+			top: -10px;
+			left: 50%;
+			margin-left: -10px;
+			border-bottom: solid 10px rgba(255,255,255,0.97);
+			border-left: solid 10px transparent;
+			border-right: solid 10px transparent;
+		}
+
+/*********************************************************************************/
+/* Bar                                                                           */
+/*********************************************************************************/
+
+	#bar
+	{
+		padding: 3.5em 3em 3.5em 3em;
+	}	
+
+		#bar h2
+		{
+			font-size: 1.75em;
+			font-weight: 300;
+			margin: 0 !important;
+		}
+		
+		#bar p
+		{
+			position: absolute;
+			right: 3em;
+			top: 50%;
+			margin-top: -0.7em;
+			font-size: 1.25em;
+			font-weight: 300;
+		}
+
+/*********************************************************************************/
+/* Slider                                                                        */
+/*********************************************************************************/
+
+	#slider
+	{
+		margin: 0 auto;
+		padding: 0;
+		width: 1200px;
+		height: 635px;
+		position: relative;
+	}
+	
+	
+		#slider .viewer
+		{
+			width: 1200px;
+			margin: 0 auto;
+			overflow: hidden;
+		}
+	
+			#slider .viewer .reel
+			{
+				display: none;
+			}
+	
+			#slider .viewer .reel .slide
+			{
+				position: relative;
+			}
+	
+			#slider .viewer .reel .slide img
+			{
+				width: 1200px;
+				height: 635px;
+			}
+
+		#slider .caption-shadow
+		{
+			position: absolute;
+			width: 100%;
+			background: url(images/bg04.png) no-repeat center top;
+			height: 50px;
+			top: 180px;
+		}
+
+		#slider .captions
+		{
+			position: absolute;
+			top: 195px;
+			width: 1200px;
+			height: 180px;
+			padding-top: 30px;
+			background: #fff;
+			background: rgba(255,255,255,0.90);
+		}
+			
+			#slider .captions .captionLine
+			{
+				display: block;
+				padding-top: 15px;
+				padding-left: 120px;
+				font-weight: 300;
+			}
+			
+				#slider .captions .captionLine h2
+				{
+					margin: 0px;
+					padding: 0px 0px 0px 0px;
+					letter-spacing: -1px;
+					font-size: 2.50em;
+				}
+				
+				#slider .captions .captionLine p
+				{
+					width: 50%;
+					margin: 0px;
+					padding-top: 10px;
+				}
+				
+				#slider .captions .captionLine .button
+				{
+					position: absolute;
+					top: 50px;
+					right: 120px;
+					z-index: 10;
+				}
+		
+		#slider .navigation
+		{
+			position: absolute;
+			top: 195px;
+			height: 180px;
+			right: 0px;
+			width: 1200px;
+		}
+		
+		#slider .previous-button, #slider .next-button
+		{
+			outline: 0;
+			position: absolute;
+			opacity: 0.5;
+			width: 8em;
+			height: 100%;
+			top: 0;
+			overflow: hidden;
+			text-decoration: none;
+			-moz-transition: opacity .25s ease-in-out;
+			-webkit-transition: opacity .25s ease-in-out;
+			-o-transition: opacity .25s ease-in-out;
+			-ms-transition: opacity .25s ease-in-out;
+			transition: opacity .25s ease-in-out;
+		}
+
+		#slider .previous-button:before, #slider .next-button:before
+		{
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 128px;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing:antialiased;
+			-moz-osx-font-smoothing:grayscale;
+			line-height: 170px;
+			width: 100%;
+			height: 100%;
+			color: #ccc;
+			text-align: center;
+		}
+
+		#slider .previous-button:hover, #slider .next-button:hover
+		{
+			opacity: 1.0;
+		}
+
+		#slider .previous-button
+		{
+			left: 0;
+		}
+
+			#slider .previous-button:before
+			{
+				content: '\f104';
+			}
+		
+		#slider .next-button
+		{
+			right: 0;
+		}
+
+			#slider .next-button:before
+			{
+				content: '\f105';
+			}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		padding: 0em 0em 5em 0em;
+	}
+	
+	.homepage #main
+	{
+		padding-bottom: 0;
+	}
+	
+		#main h2
+		{
+			margin: 0em 0em 1em 0em;
+			letter-spacing: -1px;
+		}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+	.no-sidebar #content
+	{
+		padding: 3em 3em 0em 3em;
+	}
+
+	.left-sidebar #content
+	{
+		padding: 3em 3em 0em 0em;
+	}
+
+	.right-sidebar #content
+	{
+		padding: 3em 0em 0em 3em;
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+	
+	#sidebar
+	{
+	}
+
+	.left-sidebar #sidebar
+	{
+		padding: 3em 3em 0em 3em;
+	}
+
+	.right-sidebar #sidebar
+	{
+		padding: 3em 3em 0em 3em;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		padding-top: 6em;
+	}
+
+		#footer h2
+		{
+			padding: 0em 0em 1em 0em;
+			font-size: 1.50em;
+		}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		margin-top: 4em;
+		padding: 3em 0em 10em 0em;
+	}
