@@ -1,0 +1,379 @@
+/*
+	Standout by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		line-height: 1.75em;
+		font-size: 9.5pt;
+		letter-spacing: 0;
+	}
+
+	h2, h3, h4, h5, h6
+	{
+		font-size: 1.5em;
+	}
+
+	section,
+	article
+	{
+		clear: both;
+		margin: 0px 15px !important;
+	}
+	
+	ul.style1
+	{
+	}
+
+	ul.style2
+	{
+		overflow:  hidden;
+		padding-bottom: 1em;
+	}
+
+		ul.style2 li
+		{
+		}
+
+	ul.style4
+	{
+		margin-bottom: 2em;
+		text-align: center;
+	}
+	
+		ul.style4 li
+		{
+			display: block;
+			margin-bottom: 0.30em;
+		}
+
+		ul.style4 a
+		{
+			display: block;
+			padding: 0.70em 1em;
+			text-decoration: none;
+			font-size: 1.25em;
+			font-style: italic;
+			color: #787878;
+		}
+		
+	.button
+	{
+		display: block;
+		text-align: center;
+		font-size: 1.25em;
+		padding: 1em 0 1em 0;
+	}
+
+/*********************************************************************************/
+/* Mobile UI                                                                     */
+/*********************************************************************************/
+
+	#skel-layers-wrapper
+	{
+		padding-top: 44px;
+	}
+
+	#titleBar
+	{
+		background: #101010 url('images/bg02.jpg') no-repeat left top;
+		background-size: 100% 100%;
+	}
+
+		#titleBar .title
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			display: block;
+			width: 100%;
+			line-height: 44px;
+			font-size: 1.1em;
+			font-weight: 300;
+			color: #fff;
+			text-align: center;
+		}
+
+		#titleBar .toggle
+		{
+			position: absolute;
+			left: 0;
+			top: 0;
+			text-indent: -9999px;
+			width: 60px;
+			height: 44px;
+			z-index: 1;
+		}
+
+			#titleBar .toggle:before
+			{
+				content: '';
+				position: absolute;
+				left: 4px;
+				top: 1px;
+				width: 25px;
+				height: 30px;
+				background: url('images/toggle.svg') 6px 15px no-repeat;
+				opacity: 0.15;
+			}
+
+			#titleBar .toggle:active:before
+			{
+				opacity: 0.5;
+			}
+
+	#navPanel
+	{
+		background: #101010;
+		background-size: 100% 100%;
+	}
+
+		#navPanel .link
+		{
+			display: block;
+			color: #666;
+			text-decoration: none;
+			height: 44px;
+			line-height: 44px;
+			border-top: 1px solid #222;
+			padding: 0 1em 0 1em;
+			font-style: italic;
+		}
+
+		#navPanel .link:first-child
+		{
+			border-top: 0;
+		}
+
+		#navPanel .indent-1 { display: inline-block; width: 1em; }
+		#navPanel .indent-2 { display: inline-block; width: 2em; }
+		#navPanel .indent-3 { display: inline-block; width: 3em; }
+		#navPanel .indent-4 { display: inline-block; width: 4em; }
+		#navPanel .indent-5 { display: inline-block; width: 5em; }
+		#navPanel .depth-0 { color: #fff; }
+	
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+	}
+	
+	#banner-wrapper
+	{
+	}
+	
+	#main-wrapper
+	{
+		margin: 10px 10px 0 10px;
+	}
+	
+	#footer-wrapper
+	{
+		margin: 0 10px 10px 10px;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Bar                                                                           */
+/*********************************************************************************/
+
+	#bar
+	{
+		overflow: hidden;
+		margin-top: -3px;
+		background-size: 100% 100%;
+		padding: 1em 0 1em 0;
+	}	
+
+		#bar h2, #bar p
+		{
+			text-align: center;
+			font-weight: 300;
+		}
+
+		#bar h2
+		{
+			display: block;
+			margin: 0 !important;
+			font-size: 1.1em;
+		}
+		
+		#bar p
+		{
+			display: none;
+		}
+
+/*********************************************************************************/
+/* Slider                                                                        */
+/*********************************************************************************/
+
+	#slider
+	{
+		position: relative;
+	}
+	
+		#slider .viewer
+		{
+		}
+	
+			#slider .viewer .reel
+			{
+				display: none;
+			}
+	
+			#slider .viewer .reel .slide
+			{
+			}
+
+				#slider .viewer .reel .slide img
+				{
+					width: 100%;
+					line-height: 0;
+				}
+
+		#slider .captions
+		{
+			overflow: hidden;
+			padding: 30px 20px 20px 20px;
+			background: #fff;
+			text-align: center;
+		}
+
+			#slider .captions h2
+			{
+				margin: 0 0 0.75em 0;
+			}
+		
+		#slider .navigation
+		{
+			display: none;
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		margin: 0em;
+		padding: 0em 0em 3em 0em;
+	}
+
+		#main > .row > .\31 2u:first-child
+		{
+			margin-top: 0 !important;
+		}
+	
+	.homepage #main
+	{
+		padding-bottom: 0;
+	}
+
+		#main h2
+		{
+			margin: 0em 0em 1.5em 0em;
+		}
+
+		#main .image-left
+		{
+			float: none;
+			width: 100%;
+			margin-bottom: 0.75em;
+		}
+	
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+	.no-sidebar #content
+	{
+		padding: 2em 0em 0em 0em;
+	}
+
+	.left-sidebar #content
+	{
+		padding: 2em 0em 0em 0em;
+	}
+
+	.right-sidebar #content
+	{
+		padding: 2em 0em 0em 0em;
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+	
+	#sidebar
+	{
+	}
+
+	.left-sidebar #sidebar
+	{
+		padding: 3em 0em 0em 0em;
+	}
+
+	.right-sidebar #sidebar
+	{
+		padding: 3em 0em 0em 0em;
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		padding-top: 4em;
+		background-size: 100% auto;
+	}
+
+		#footer h2
+		{
+			margin: 0em 0em 0.50em 0em;
+		}
+
+		#footer section
+		{
+			overflow: hidden;
+			padding-bottom: 2em;
+		}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		margin-top: 4em;
+		padding: 3em 0em 5em 0em;
+	}
