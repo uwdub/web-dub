@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: portfolio
 title: "HCI & Design at the University of Washington"
 ---
 
