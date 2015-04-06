@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: standout
 title: "HCI & Design at the University of Washington"
 ---
 

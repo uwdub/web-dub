@@ -1,5 +1,9 @@
 ---
-# Empty YAML header gets Jekyll to process this, important for {{ site.baseurl }} processing
+########################################################################################################################
+# /*
+# Empty YAML header gets Jekyll to process this, important for {{ site.baseurl }} processing in breakpoints
+# */
+########################################################################################################################
 ---
 /*
 	Standout by Pixelarity
