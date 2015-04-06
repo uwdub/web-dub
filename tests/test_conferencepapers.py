@@ -3,7 +3,7 @@ import re
 import unittest
 import yaml
 
-    class TestConferencePapers(unittest.TestCase):
+class TestConferencePapers(unittest.TestCase):
     def setUp(self) -> None:
         """
         Parse our data files and combine them into a dictionary.
