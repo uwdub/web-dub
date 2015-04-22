@@ -1,6 +1,6 @@
 ---
-layout: standout
+layout: main
 title: "HCI & Design at the University of Washington"
 ---
 
-Website content to be added here.
+This is content region, not currently used.

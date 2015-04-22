@@ -1,6 +1,8 @@
 ---
-layout: right-sidebar
-name: James Fogarty
+layout: sample/left-sidebar
+name:
+  - Fogarty
+  - James
 ---
 
 

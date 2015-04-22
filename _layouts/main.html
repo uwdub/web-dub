@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title> </title>
+    <title>{{ site.name }}{% if page.title and page.title != site.name %} - {{ page.title }}{% endif %}</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -44,14 +44,18 @@
 										<nav id="nav">
 											<ul>
 												<li class="current_page_item"><a href="{{ site.baseurl }}/index.html">Home</a></li>
-												<li>
-													<a href="" class="arrow">Dropdown</a>
-													<ul>
-														<li><a href="#">Lorem ipsum dolor</a></li>
-														<li><a href="#">Magna phasellus</a></li>
-														<li><a href="#">Etiam dolore nisl</a></li>
+                        <li><a href="{{ site.baseurl }}/people.html">People</a></li>
+                        <li><a href="{{ site.baseurl }}/aboutdub.html">About DUB</a></li>
+                        <li>
+                          <a href="" class="arrow">Sample Templates</a>
+                          <ul>
+                            <li><a href="{{ site.baseurl }}/sample/standout.html">Standout</a></li>
+                            <li><a href="{{ site.baseurl }}/sample/portfolio.html">Portfolio</a></li>
+                            <li><a href="{{ site.baseurl }}/sample/right-sidebar.html">Right Sidebar</a></li>
+                            <li><a href="{{ site.baseurl }}/sample/left-sidebar.html">Left Sidebar</a></li>
+                            <li><a href="{{ site.baseurl }}/sample/no-sidebar.html">No Sidebar</a></li>
 														<li>
-															<span class="arrow">Phasellus consequat</span>
+															<span class="arrow">Nested Menu ></span>
 															<ul>
 																<li><a href="#">Lorem ipsum dolor</a></li>
 																<li><a href="#">Phasellus consequat</a></li>
@@ -60,13 +64,8 @@
 																<li><a href="#">Veroeros feugiat</a></li>
 															</ul>
 														</li>
-														<li><a href="#">Veroeros feugiat</a></li>
-													</ul>
-												</li>
-												<li><a href="{{ site.baseurl }}/portfolio.html">Portfolio</a></li>
-												<li><a href="{{ site.baseurl }}/right-sidebar.html">Right Sidebar</a></li>
-												<li><a href="{{ site.baseurl }}/left-sidebar.html">Left Sidebar</a></li>
-												<li><a href="{{ site.baseurl }}/no-sidebar.html">No Sidebar</a></li>
+                          </ul>
+                        </li>
 											</ul>
 										</nav>
 
@@ -83,8 +82,8 @@
 					<div class="row">
 						<div class="12u">
 							<div id="bar">
-								<h2>Welcome to UntitledStudio</h2>
-								<p>Lorem ipsum dolor sit amet nullam consequat  feugiat lorem tempus</p>
+								<h2>DUB</h2>
+								<p>HCI & Design at the University of Washington</p>
 							</div>
 							<div id="slider">
 								<div class="viewer">
