@@ -101,18 +101,18 @@ class TestWorkshopPapers(unittest.TestCase):
                 '{} references workshop {} not found in workshops.yml'.format(id_workshoppaper, id_workshop)
             )
 
-    def test_workshoppapers_files_exist(self) -> None:
-        """
-        Confirm all files references by a paper actually exist.
-        """
-        for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
-            # Papers may have a PDF
-            if 'localpdf' in workshoppaper:
-                file_path = workshoppaper['localpdf']
-                self.assertTrue(
-                    os.path.isfile('publications/{}'.format(file_path)),
-                    '{} references localpdf {} not found in publications/'.format(id_workshoppaper, file_path)
-                )
+    # def test_workshoppapers_files_exist(self) -> None:
+    #     """
+    #     Confirm all files references by a paper actually exist.
+    #     """
+    #     for id_workshoppaper, workshoppaper in self.data['workshoppapers'].items():
+    #         # Papers may have a PDF
+    #         if 'localpdf' in workshoppaper:
+    #             file_path = workshoppaper['localpdf']
+    #             self.assertTrue(
+    #                 os.path.isfile('publications/{}'.format(file_path)),
+    #                 '{} references localpdf {} not found in publications/'.format(id_workshoppaper, file_path)
+    #             )
 
     def test_workshoppapers_files_paths(self) -> None:
         """

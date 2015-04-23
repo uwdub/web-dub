@@ -130,38 +130,38 @@ class TestConferencePapers(unittest.TestCase):
                 '{} references conference {} not found in conferences.yml'.format(id_conferencepaper, id_conference)
             )
 
-    def test_conferencepapers_files_exist(self) -> None:
-        """
-        Confirm all files references by a paper actually exist.
-        """
-        for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
-            # Every paper must have a thumb
-            self.assertIn(
-                'localthumb',
-                conferencepaper,
-                '{} missing field localthumb'.format(id_conferencepaper)
-            )
-            file_path = conferencepaper['localthumb']
-            self.assertTrue(
-                os.path.isfile('publications/{}'.format(file_path)),
-                '{} references localthumb {} not found in publications/'.format(id_conferencepaper, file_path)
-            )
-
-            # Papers may have a PDF
-            if 'localpdf' in conferencepaper:
-                file_path = conferencepaper['localpdf']
-                self.assertTrue(
-                    os.path.isfile('publications/{}'.format(file_path)),
-                    '{} references localpdf {} not found in publications/'.format(id_conferencepaper, file_path)
-                )
-
-            # Papers may have a video
-            if 'localvideo' in conferencepaper:
-                file_path = conferencepaper['localvideo']
-                self.assertTrue(
-                    os.path.isfile('publications/{}'.format(file_path)),
-                    '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
-                )
+    # def test_conferencepapers_files_exist(self) -> None:
+    #     """
+    #     Confirm all files references by a paper actually exist.
+    #     """
+    #     for id_conferencepaper, conferencepaper in self.data['conferencepapers'].items():
+    #         # Every paper must have a thumb
+    #         self.assertIn(
+    #             'localthumb',
+    #             conferencepaper,
+    #             '{} missing field localthumb'.format(id_conferencepaper)
+    #         )
+    #         file_path = conferencepaper['localthumb']
+    #         self.assertTrue(
+    #             os.path.isfile('publications/{}'.format(file_path)),
+    #             '{} references localthumb {} not found in publications/'.format(id_conferencepaper, file_path)
+    #         )
+    #
+    #         # Papers may have a PDF
+    #         if 'localpdf' in conferencepaper:
+    #             file_path = conferencepaper['localpdf']
+    #             self.assertTrue(
+    #                 os.path.isfile('publications/{}'.format(file_path)),
+    #                 '{} references localpdf {} not found in publications/'.format(id_conferencepaper, file_path)
+    #             )
+    #
+    #         # Papers may have a video
+    #         if 'localvideo' in conferencepaper:
+    #             file_path = conferencepaper['localvideo']
+    #             self.assertTrue(
+    #                 os.path.isfile('publications/{}'.format(file_path)),
+    #                 '{} references localvideo {} not found in publications/'.format(id_conferencepaper, file_path)
+    #             )
 
     def test_conferencepapers_files_paths(self) -> None:
         """

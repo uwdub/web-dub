@@ -93,30 +93,30 @@ class TestJournalPapers(unittest.TestCase):
                 '{} references journal {} not found in journals.yml'.format(id_journalpaper, id_journal)
             )
 
-    def test_journalpapers_files_exist(self) -> None:
-        """
-        Confirm all files references by a paper actually exist.
-        """
-        for id_journalpaper, journalpaper in self.data['journalpapers'].items():
-            # Every paper must have a thumb
-            self.assertIn(
-                'localthumb',
-                journalpaper,
-                '{} missing field localthumb'.format(id_journalpaper)
-            )
-            file_path = journalpaper['localthumb']
-            self.assertTrue(
-                os.path.isfile('publications/{}'.format(file_path)),
-                '{} references localthumb {} not found in publications/'.format(id_journalpaper, file_path)
-            )
-
-            # Papers may have a PDF
-            if 'localpdf' in journalpaper:
-                file_path = journalpaper['localpdf']
-                self.assertTrue(
-                    os.path.isfile('publications/{}'.format(file_path)),
-                    '{} references localpdf {} not found in publications/'.format(id_journalpaper, file_path)
-                )
+    # def test_journalpapers_files_exist(self) -> None:
+    #     """
+    #     Confirm all files references by a paper actually exist.
+    #     """
+    #     for id_journalpaper, journalpaper in self.data['journalpapers'].items():
+    #         # Every paper must have a thumb
+    #         self.assertIn(
+    #             'localthumb',
+    #             journalpaper,
+    #             '{} missing field localthumb'.format(id_journalpaper)
+    #         )
+    #         file_path = journalpaper['localthumb']
+    #         self.assertTrue(
+    #             os.path.isfile('publications/{}'.format(file_path)),
+    #             '{} references localthumb {} not found in publications/'.format(id_journalpaper, file_path)
+    #         )
+    #
+    #         # Papers may have a PDF
+    #         if 'localpdf' in journalpaper:
+    #             file_path = journalpaper['localpdf']
+    #             self.assertTrue(
+    #                 os.path.isfile('publications/{}'.format(file_path)),
+    #                 '{} references localpdf {} not found in publications/'.format(id_journalpaper, file_path)
+    #             )
 
     def test_journalpapers_files_paths(self) -> None:
         """
