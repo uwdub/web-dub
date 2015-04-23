@@ -10,3 +10,6 @@ env34
 
 # Compiled Python
 *.pyc
+
+# Full of Big Binary Files
+publications
