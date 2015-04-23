@@ -1,6 +1,7 @@
 ---
 layout: main-no-sidebar
 # title: "HCI & Design at the University of Washington"
+current_page_item: "people"
 ---
 
 <html>

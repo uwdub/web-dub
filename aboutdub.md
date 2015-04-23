@@ -1,5 +1,6 @@
 ---
 layout: main-no-sidebar
+current_page_item: "aboutdub"
 ---
 
 This is the content about what DUB is. But nobody wrote it yet. Dang. This is the content about what DUB is. Oh noes.
