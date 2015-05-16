@@ -3,8 +3,8 @@ name:
   - Fogarty
   - James
 position:
-  - unit: Computer Science & Engineering
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Computer Science & Engineering    
 web: 
   - http://homes.cs.washington.edu/~jfogarty/
 twitter:

@@ -4,8 +4,8 @@ name:
   - Andrew
   - J.
 position:
-  - unit: Information School
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Information School    
 web: 
   - https://faculty.washington.edu/ajko/
 twitter:
