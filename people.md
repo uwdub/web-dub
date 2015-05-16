@@ -4,9 +4,11 @@ layout: main-no-sidebar
 current_page_item: "people"
 ---
 
+# Faculty
 <html>
 <ul>
-{% for item_person in site.people %}
+{% assign people = (site.people | sort: 'name') %}
+{% for item_person in people %}
   <li><a href="{{ item_person.url }}">
   {% for item_name in item_person.name offset:1 %}
     {{ item_name }}
@@ -16,5 +18,3 @@ current_page_item: "people"
 {% endfor %}
 </ul>
 </html>
-  
-  
