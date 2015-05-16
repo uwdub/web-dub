@@ -4,8 +4,10 @@ name:
   - Jacob
   - O.
 position:
-  - unit: Information School
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Information School    
 web: 
-  - http://homes.cs.washington.edu/~jfogarty/
+  - http://faculty.washington.edu/wobbrock/
+twitter:
+  - "@wobbrockjo"
 ---
