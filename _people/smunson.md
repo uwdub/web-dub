@@ -10,8 +10,3 @@ position:
 web: 
   - http://homes.cs.washington.edu/~jfogarty/
 ---
-
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 

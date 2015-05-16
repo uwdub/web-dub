@@ -9,11 +9,5 @@ position:
 web: 
   - http://homes.cs.washington.edu/~jfogarty/
 twitter:
-  - "@profjayfo"
-  
+  - "@profjayfo" 
 ---
-
-Text about James what ain't been writ yet. Text about James what ain't been writ yet.
-Text about James what ain't been writ yet. Text about James what ain't been writ yet.
-Text about James what ain't been writ yet. Text about James what ain't been writ yet.
-Text about James what ain't been writ yet. Text about James what ain't been writ yet.

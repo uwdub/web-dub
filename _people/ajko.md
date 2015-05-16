@@ -10,7 +10,3 @@ position:
 web: 
   - http://homes.cs.washington.edu/~jfogarty/
 ---
-
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 
