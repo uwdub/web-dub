@@ -1,5 +1,4 @@
 ---
-layout: person
 name:
   - Kientz
   - Julie
