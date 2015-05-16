@@ -5,7 +5,7 @@ python:
 
 install:
   - pip install -r requirements3.txt
-  - sudo apt-get install -y python-pygments ruby ruby-dev
+  - sudo apt-get install -y ruby ruby-dev
   - gem install jekyll
 
 script:
