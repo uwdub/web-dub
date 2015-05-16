@@ -1,2 +1,4 @@
+invoke
 nose
+pygments
 PyYAML

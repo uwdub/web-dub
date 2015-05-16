@@ -1,7 +1,0 @@
-# Needed for Fabric
-ecdsa
-pycrypto
-fabric
-
-# Needed for Jekyll code highlighting
-pygments
