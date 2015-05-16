@@ -2,9 +2,12 @@
 name:
   - Kientz
   - Julie
+  - A.
 position:
   - unit: Human Centered Design & Engineering
     title: Associate Professor
 web: 
-  - http://homes.cs.washington.edu/~jfogarty/ 
+  - http://www.juliekientz.com/
+twitter:
+  - "@juliekientz"
 ---
