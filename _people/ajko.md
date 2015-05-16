@@ -1,16 +1,15 @@
 ---
-layout: person
 name:
   - Ko
   - Andrew
   - J.
 position:
-  - unit: Information School
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Information School    
 web: 
-  - http://homes.cs.washington.edu/~jfogarty/
+  - https://faculty.washington.edu/ajko/
+twitter:
+  - andyjko
+tags:
+  - people-faculty
 ---
-
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 
-So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. So much Andy. Much wow. Yup yup. 

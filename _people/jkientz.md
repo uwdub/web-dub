@@ -1,17 +1,15 @@
 ---
-layout: person
 name:
   - Kientz
   - Julie
+  - A.
 position:
-  - unit: Human Centered Design & Engineering
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Human Centered Design & Engineering    
 web: 
-  - http://homes.cs.washington.edu/~jfogarty/
-  
+  - http://www.juliekientz.com/
+twitter:
+  - juliekientz
+tags:
+  - people-faculty
 ---
-
-Text about Julie what ain't been writ yet. Text about Julie what ain't been writ yet.
-Text about Julie what ain't been writ yet. Text about Julie what ain't been writ yet.
-Text about Julie what ain't been writ yet. Text about Julie what ain't been writ yet.
-Text about Julie what ain't been writ yet. Text about Julie what ain't been writ yet.

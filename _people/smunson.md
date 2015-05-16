@@ -1,17 +1,15 @@
 ---
-layout: person
 name:
   - Munson
   - Sean
   - A.
 position:
-  - unit: Human Centered Design & Engineering
-    title: Assistant Professor
+  - title: Assistant Professor
+    unit: Human Centered Design & Engineering    
 web: 
-  - http://homes.cs.washington.edu/~jfogarty/
+  - http://smunson.com/
+twitter:
+  - smunson  
+tags:
+  - people-faculty
 ---
-
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 
-Can you believe Sean has such awesome content. Can you believe Sean has such awesome content. 

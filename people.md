@@ -4,9 +4,11 @@ layout: main-no-sidebar
 current_page_item: "people"
 ---
 
+## Faculty
 <html>
 <ul>
-{% for item_person in site.people %}
+{% assign people = (site.people | person_has_tag: 'people-faculty' | sort: 'name') %}
+{% for item_person in people %}  
   <li><a href="{{ item_person.url }}">
   {% for item_name in item_person.name offset:1 %}
     {{ item_name }}
@@ -16,5 +18,19 @@ current_page_item: "people"
 {% endfor %}
 </ul>
 </html>
-  
-  
+
+## Graduate Students
+<html>
+<ul>
+{% assign people = (site.people | person_has_tag: 'people-gradstudent' | sort: 'name') %}
+{% for item_person in people %}  
+  <li><a href="{{ item_person.url }}">
+  {% for item_name in item_person.name offset:1 %}
+    {{ item_name }}
+  {% endfor %}
+  {{ item_person.name[0] }}
+  </a></li>
+{% endfor %}
+</ul>
+</html>
+

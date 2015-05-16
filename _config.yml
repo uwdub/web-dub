@@ -5,6 +5,12 @@ collections:
   people:
     output: true
 
+defaults:
+  - scope:
+      type: people
+    values:
+      layout: person
+
 exclude:
   # Our Python
   - env34
