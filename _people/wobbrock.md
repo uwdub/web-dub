@@ -9,5 +9,5 @@ position:
 web: 
   - http://faculty.washington.edu/wobbrock/
 twitter:
-  - "@wobbrockjo"
+  - wobbrockjo
 ---

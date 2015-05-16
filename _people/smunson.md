@@ -4,10 +4,10 @@ name:
   - Sean
   - A.
 position:
-  - unit: Human Centered Design & Engineering
-    title: Assistant Professor
+  - title: Assistant Professor
+    unit: Human Centered Design & Engineering    
 web: 
   - http://smunson.com/
 twitter:
-  - "@smunson"  
+  - smunson  
 ---

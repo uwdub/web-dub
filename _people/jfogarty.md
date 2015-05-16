@@ -8,5 +8,5 @@ position:
 web: 
   - http://homes.cs.washington.edu/~jfogarty/
 twitter:
-  - "@profjayfo" 
+  - profjayfo 
 ---

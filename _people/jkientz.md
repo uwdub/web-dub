@@ -4,10 +4,10 @@ name:
   - Julie
   - A.
 position:
-  - unit: Human Centered Design & Engineering
-    title: Associate Professor
+  - title: Associate Professor
+    unit: Human Centered Design & Engineering    
 web: 
   - http://www.juliekientz.com/
 twitter:
-  - "@juliekientz"
+  - juliekientz
 ---

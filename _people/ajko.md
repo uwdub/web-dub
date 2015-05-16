@@ -9,5 +9,5 @@ position:
 web: 
   - https://faculty.washington.edu/ajko/
 twitter:
-  - "@andyjko" 
+  - andyjko 
 ---
