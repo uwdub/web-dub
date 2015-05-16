@@ -16,4 +16,6 @@ position:
     unit: eScience Institute
 web: 
   - http://faculty.washington.edu/aragon/
+tags:
+  - people-faculty
 ---

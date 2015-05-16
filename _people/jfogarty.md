@@ -9,4 +9,6 @@ web:
   - http://homes.cs.washington.edu/~jfogarty/
 twitter:
   - profjayfo 
+tags:
+  - people-faculty
 ---

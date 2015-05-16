@@ -10,4 +10,6 @@ web:
   - http://faculty.washington.edu/wobbrock/
 twitter:
   - wobbrockjo
+tags:
+  - people-faculty
 ---

@@ -10,4 +10,6 @@ web:
   - http://smunson.com/
 twitter:
   - smunson  
+tags:
+  - people-faculty
 ---

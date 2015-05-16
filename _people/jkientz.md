@@ -10,4 +10,6 @@ web:
   - http://www.juliekientz.com/
 twitter:
   - juliekientz
+tags:
+  - people-faculty
 ---

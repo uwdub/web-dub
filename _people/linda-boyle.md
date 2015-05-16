@@ -10,4 +10,6 @@ position:
     unit: Civil & Environmental Engineering
 web: 
   - http://depts.washington.edu/hfsm/linda.php
+tags:
+  - people-faculty
 ---
