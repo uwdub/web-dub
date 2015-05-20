@@ -3,10 +3,12 @@ name:
 - Gould
 - Annabelle
 position:
-- title: ?????
-  unit: School of Art
-- title: ?????
-  unit: Division of Design (School of Art)
+- title: Chair
+  unit: Division of Design, School of Art + Art History + Design
+- title: Associate Professor
+  unit: Division of Design, School of Art + Art History + Design
+web:
+- http://art.washington.edu/design/design-faculty/annabelle-gould/
 tags:
 - people-faculty
 

@@ -3,8 +3,10 @@ name:
 - Davidson
 - Andrew
 position:
-- title: ?????
+- title: Senior Lecturer
   unit: Human Centered Design & Engineering
+- title: Adjunct Senior Lecturer
+  unit: Division of Design, School of Art + Art History + Design
 web:
 - http://faculty.washington.edu/adavid7
 twitter:
