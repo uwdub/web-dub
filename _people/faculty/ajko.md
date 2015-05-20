@@ -6,8 +6,10 @@ name:
 position:
 - title: Associate Professor
   unit: Information School
+- title: Adjunct Associate Professor
+  unit: Computer Science & Engineering
 web:
-- https://faculty.washington.edu/ajko/
+- http://faculty.washington.edu/ajko/
 twitter:
 - andyjko
 tags:
