@@ -6,9 +6,7 @@ position:
 - title: ?????
   unit: Computer Science & Engineering
 tags:
-# - people-phd
-# - people-masters
-# - people-ugrad
+- people-phd
 
 ############################################################
 # These fields are provided to ease migration of old content.

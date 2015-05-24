@@ -8,9 +8,7 @@ position:
 web:
 - http://students.washington.edu/kathlo/index.html
 tags:
-# - people-phd
-# - people-masters
-# - people-ugrad
+- people-phd
 
 ############################################################
 # These fields are provided to ease migration of old content.

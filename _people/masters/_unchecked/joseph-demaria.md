@@ -8,9 +8,7 @@ position:
 web:
 - http://joedemaria.com/
 tags:
-# - people-phd
-# - people-masters
-# - people-ugrad
+- people-masters
 
 ############################################################
 # These fields are provided to ease migration of old content.
