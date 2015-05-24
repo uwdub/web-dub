@@ -7,7 +7,7 @@ position:
 - title: ?????
   unit: Information School
 web:
-- https://webserv.ischool.uw.edu/directory/students/phd/profile.aspx?netid=nkarlova
+- http://nataschakarlova.com/
 twitter:
 - nataschakarlova
 tags:
