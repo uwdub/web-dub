@@ -10,8 +10,8 @@ web:
 - http://www.juliekientz.com/
 twitter:
 - juliekientz
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

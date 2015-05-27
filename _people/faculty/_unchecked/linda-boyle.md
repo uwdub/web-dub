@@ -10,8 +10,8 @@ position:
   unit: Civil & Environmental Engineering
 web:
 - http://depts.washington.edu/hfsm/linda.php
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -9,8 +9,8 @@ position:
   unit: Information School
 web:
 - http://www.cs.washington.edu/people/faculty/borning/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -8,8 +8,8 @@ position:
   unit: Mechanical Engineering
 web:
 - http://faculty.washington.edu/kmsteele/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -9,8 +9,8 @@ web:
 - http://mako.cc/academic/
 twitter:
 - makoshark
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

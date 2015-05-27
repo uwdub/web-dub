@@ -11,8 +11,8 @@ web:
 - http://www.tellous.com/
 twitter:
 - Justin_Hamacher
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

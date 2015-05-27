@@ -10,8 +10,8 @@ position:
   unit: Electrical Engineering
 web:
 - http://www.cs.washington.edu/homes/ladner
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

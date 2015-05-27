@@ -9,8 +9,8 @@ web:
 - https://www.msu.edu/~garyh/
 twitter:
 - garyhsieh
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

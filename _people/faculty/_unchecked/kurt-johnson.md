@@ -8,8 +8,8 @@ position:
   unit: Rehabilitation Medicine, School of Medicine
 web:
 - http://dub.washington.edu/projects/agc
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

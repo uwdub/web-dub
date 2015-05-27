@@ -9,8 +9,8 @@ position:
   unit: Clinical Informatics and Patient-Centered Technologies
 web:
 - http://faculty.washington.edu/gdemiris/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

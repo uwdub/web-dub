@@ -8,8 +8,8 @@ position:
   unit: Design Machine Group
 web:
 - http://brj.be.washington.edu
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

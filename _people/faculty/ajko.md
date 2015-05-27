@@ -12,8 +12,8 @@ web:
 - http://faculty.washington.edu/ajko/
 twitter:
 - andyjko
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

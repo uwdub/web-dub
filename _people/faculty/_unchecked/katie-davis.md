@@ -9,8 +9,8 @@ web:
 - http://www.katiedavisresearch.com/
 twitter:
 - katiebda
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -7,8 +7,8 @@ position:
   unit: Division of Design (School of Art)
 web:
 - http://www.publicpractice.org/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

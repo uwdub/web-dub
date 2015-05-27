@@ -7,8 +7,8 @@ position:
   unit: Division of Design (School of Art)
 web:
 - http://depts.washington.edu/designuw/faculty_cheng.htm
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

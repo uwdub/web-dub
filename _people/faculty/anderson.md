@@ -7,8 +7,8 @@ position:
   unit: Computer Science & Engineering
 web:
 - http://www.cs.washington.edu/people/faculty/anderson
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

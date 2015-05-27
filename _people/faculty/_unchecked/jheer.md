@@ -7,8 +7,8 @@ position:
   unit: Computer Science & Engineering
 twitter:
 - jeffrey_heer
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.
