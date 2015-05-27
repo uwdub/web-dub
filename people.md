@@ -7,7 +7,7 @@ current_page_item: "people"
 ## Faculty
 <html>
 <ul>
-{% assign people = (site.people | person_has_tag: 'people-faculty' | sort: 'name') %}
+{% assign people = (site.people | person_has_role: 'faculty' | sort: 'name') %}
 {% for item_person in people %}  
   <li><a href="{{ item_person.url }}">
   {% for item_name in item_person.name offset:1 %}
@@ -19,10 +19,10 @@ current_page_item: "people"
 </ul>
 </html>
 
-## PhD Students
+## Doctoral Students
 <html>
 <ul>
-{% assign people = (site.people | person_has_tag: 'people-phd' | sort: 'name') %}
+{% assign people = (site.people | person_has_role: 'doctoral-student' | sort: 'name') %}
 {% for item_person in people %}  
   <li><a href="{{ item_person.url }}">
   {% for item_name in item_person.name offset:1 %}
@@ -37,7 +37,7 @@ current_page_item: "people"
 ## Masters Students
 <html>
 <ul>
-{% assign people = (site.people | person_has_tag: 'people-masters' | sort: 'name') %}
+{% assign people = (site.people | person_has_role: 'masters-student' | sort: 'name') %}
 {% for item_person in people %}  
   <li><a href="{{ item_person.url }}">
   {% for item_name in item_person.name offset:1 %}
