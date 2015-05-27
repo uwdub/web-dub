@@ -8,8 +8,8 @@ position:
   unit: Interaction Design
 web:
 - http://www.lpw-design.com
-tags:
-- people-masters
+role:
+- masters-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

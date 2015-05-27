@@ -9,8 +9,8 @@ web:
 - http://www.koendecouck.be/
 twitter:
 - '@kdecouck'
-tags:
-- people-masters
+role:
+- masters-student
 
 ############################################################
 # These fields are provided to ease migration of old content.
