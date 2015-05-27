@@ -9,8 +9,8 @@ web:
 - http://www.mayankgoel.com
 twitter:
 - mynkgoel
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

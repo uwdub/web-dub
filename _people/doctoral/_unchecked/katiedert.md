@@ -7,8 +7,8 @@ position:
   unit: Human Centered Design & Engineering
 twitter:
 - katiedert
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

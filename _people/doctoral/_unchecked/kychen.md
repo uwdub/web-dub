@@ -9,8 +9,8 @@ web:
 - http://www.keyuc.com/
 twitter:
 - kych1n
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

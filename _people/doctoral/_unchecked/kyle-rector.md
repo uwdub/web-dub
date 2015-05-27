@@ -9,8 +9,8 @@ web:
 - http://www.cs.washington.edu/homes/rectorky/
 twitter:
 - krrun16
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

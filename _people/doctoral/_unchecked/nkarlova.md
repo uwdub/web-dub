@@ -10,8 +10,8 @@ web:
 - http://nataschakarlova.com/
 twitter:
 - nataschakarlova
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -8,8 +8,8 @@ position:
   unit: Human Centered Design & Engineering
 twitter:
 - aberry85
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

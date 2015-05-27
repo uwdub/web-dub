@@ -3,8 +3,8 @@ name:
 - Chang
 - Chun-Cheng
 position: []
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

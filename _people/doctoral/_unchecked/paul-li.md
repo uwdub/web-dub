@@ -8,8 +8,8 @@ position:
   unit: Information School
 web:
 - http://students.washington.edu/plli/
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

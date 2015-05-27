@@ -10,8 +10,8 @@ web:
 - http://www.depstein.net/
 twitter:
 - daepstein
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

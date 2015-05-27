@@ -7,8 +7,8 @@ position:
   unit: Human Centered Design & Engineering
 - title: ?????
   unit: Microsoft
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

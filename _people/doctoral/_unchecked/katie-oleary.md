@@ -7,8 +7,8 @@ position:
   unit: Information School
 web:
 - http://students.washington.edu/kathlo/index.html
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

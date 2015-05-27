@@ -7,8 +7,8 @@ position:
   unit: Biomedical and Health Informatics
 web:
 - http://students.washington.edu/alaz/
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -9,8 +9,8 @@ web:
 - http://kanitw.yellowpigz.com/
 twitter:
 - kanitw
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

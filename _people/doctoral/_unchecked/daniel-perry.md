@@ -10,8 +10,8 @@ web:
 - http://www.danielbperry.com
 twitter:
 - danielbperry
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

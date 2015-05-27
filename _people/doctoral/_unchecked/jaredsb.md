@@ -10,8 +10,8 @@ web:
 - http://jaredsb.com/
 twitter:
 - swarm_think
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.

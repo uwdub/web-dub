@@ -9,8 +9,8 @@ web:
 - http://homes.cs.washington.edu/~cbonnar/
 twitter:
 - caitbonnar
-tags:
-- people-phd
+role:
+- doctoral-student
 
 ############################################################
 # These fields are provided to ease migration of old content.
