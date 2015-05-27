@@ -7,8 +7,8 @@ position:
   unit: Human Centered Design & Engineering
 web:
 - http://www.uwtc.washington.edu/nav_people/faculty/turns
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

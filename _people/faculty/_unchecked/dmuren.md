@@ -8,8 +8,8 @@ position:
   unit: Division of Design (School of Art)
 web:
 - http://www.dmuren.com
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

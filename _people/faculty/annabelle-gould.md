@@ -9,8 +9,8 @@ position:
   unit: Division of Design, School of Art + Art History + Design
 web:
 - http://art.washington.edu/design/design-faculty/annabelle-gould/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -11,8 +11,8 @@ web:
 - http://faculty.washington.edu/adavid7
 twitter:
 - ahdavidson7
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

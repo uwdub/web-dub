@@ -16,8 +16,8 @@ position:
   unit: eScience Institute
 web:
 - http://faculty.washington.edu/aragon/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

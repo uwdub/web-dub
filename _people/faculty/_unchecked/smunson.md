@@ -10,8 +10,8 @@ web:
 - http://smunson.com/
 twitter:
 - smunson
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

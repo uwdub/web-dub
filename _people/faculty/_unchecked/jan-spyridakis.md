@@ -7,8 +7,8 @@ position:
   unit: Human Centered Design & Engineering
 web:
 - http://www.hcde.washington.edu/navpeople/faculty/jansp
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

@@ -8,8 +8,8 @@ position:
   unit: Information School
 web:
 - http://projects.ischool.washington.edu/mcdonald/
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.

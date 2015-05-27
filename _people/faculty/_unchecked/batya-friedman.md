@@ -9,8 +9,8 @@ position:
   unit: Computer Science & Engineering
 web:
 - http://projects.ischool.washington.edu/vsd/index.html
-tags:
-- people-faculty
+role:
+- faculty
 
 ############################################################
 # These fields are provided to ease migration of old content.
