@@ -5,47 +5,13 @@ current_page_item: "people"
 ---
 
 ## Faculty
-<html>
-<ul>
-{% assign people = (site.people | person_has_role: 'faculty' | sort: 'name') %}
-{% for item_person in people %}  
-  <li><a href="{{ item_person.url }}">
-  {% for item_name in item_person.name offset:1 %}
-    {{ item_name }}
-  {% endfor %}
-  {{ item_person.name[0] }}
-  </a></li>
-{% endfor %}
-</ul>
-</html>
+{% assign faculty = (site.people | person_has_role: 'faculty') %}
+{% include peopletable.md people=faculty %}
 
 ## Doctoral Students
-<html>
-<ul>
-{% assign people = (site.people | person_has_role: 'doctoral-student' | sort: 'name') %}
-{% for item_person in people %}  
-  <li><a href="{{ item_person.url }}">
-  {% for item_name in item_person.name offset:1 %}
-    {{ item_name }}
-  {% endfor %}
-  {{ item_person.name[0] }}
-  </a></li>
-{% endfor %}
-</ul>
-</html>
+{% assign doctoralstudents = (site.people | person_has_role: 'doctoral-student') %}
+{% include peopletable.md people=doctoralstudents %}
 
 ## Masters Students
-<html>
-<ul>
-{% assign people = (site.people | person_has_role: 'masters-student' | sort: 'name') %}
-{% for item_person in people %}  
-  <li><a href="{{ item_person.url }}">
-  {% for item_name in item_person.name offset:1 %}
-    {{ item_name }}
-  {% endfor %}
-  {{ item_person.name[0] }}
-  </a></li>
-{% endfor %}
-</ul>
-</html>
-
+{% assign mastersstudents = (site.people | person_has_role: 'masters-student') %}
+{% include peopletable.md people=mastersstudents %}
