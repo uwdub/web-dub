@@ -1,6 +1,8 @@
 ---
 layout: default
 title: General Development Guide
+layout: main-no-sidebar
+# title: General Development Guide
 ---
 
 This page documents some of our development tools and conventions. It aims to be thorough as possible while
