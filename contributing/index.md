@@ -5,6 +5,32 @@ layout: main-no-sidebar
 # title: General Development Guide
 ---
 
+Creating, maintaining, and enhancing the DUB website is ongoing community effort.
+This page introduces how members of the DUB community can contribute.
+Many types of contribution are possible, from simple content improvement to major structural enhancements.
+
+If you are interested in contributing, please start by reviewing this page's guidance.
+
+If this page does not answer your questions on how to get started, reach out to us at `embed email here somehow`.
+
+## Outline
+
+- Website Coordination
+  - GitHub
+  - Email
+  - Slack
+- Types of Contributions
+  - Modifying a Single Page
+  - Modifying a Set of Pages or Files
+  - Understanding Markdown
+  - Understanding Liquid
+  - Understanding Jekyll
+  - Working with Tests
+- Technology Guidance
+  - Installing Git and GitHub Clients
+  - Installing Ruby
+  - Installing Python
+  - Git and Feature Branching
 This page documents some of our development tools and conventions. It aims to be thorough as possible while
 remaining generic. Individual projects then document their own installation and configuration details.
 
