@@ -102,22 +102,22 @@ But if you are unsure about something, then you might need to understand somethi
 
 [Understanding the Jekyll Header](#understanding-the-jekyll-header) can help if confused by a page header, such as:
 
-```
-    ---
-    layout: main-no-sidebar
-    current_page_item: "people"
-    ---
-```
+{% highlight yaml %}
+---
+layout: main-no-sidebar
+current_page_item: "people"
+---
+{% endhighlight %}
 
 [Understanding Liquid](#understanding-liquid) can help if confused by text containing
 `{% raw %}{{{% endraw %}`, `{% raw %}}}{% endraw %}`, `{% raw %}{%{% endraw %}`, `{% raw %}%}{% endraw %}`, such as: 
 
-```
+{% highlight liquid %}
 {% raw %}{%{% endraw %} for item_name in item_person.name offset: 1 {% raw %}%}{% endraw %}
   {% raw %}{{{% endraw %} item_name {% raw %}}}{% endraw %}
 {% raw %}{%{% endraw %} endfor {% raw %}%}{% endraw %}
 {% raw %}{{{% endraw %} item_person.name[0] {% raw %}}}{% endraw %}
-```
+{% endhighlight %}
 
 [Understanding Jekyll](#understanding-jekyll) can help if confused about how site content is organized, 
 or if considering a major structural enhancement to the website.
