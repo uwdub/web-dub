@@ -1,36 +1,152 @@
 ---
-layout: default
-title: General Development Guide
 layout: main-no-sidebar
 # title: General Development Guide
 ---
 
 Creating, maintaining, and enhancing the DUB website is ongoing community effort.
-This page introduces how members of the DUB community can contribute.
-Many types of contribution are possible, from simple content improvement to major structural enhancements.
-
+Many types of contribution are possible, from complaining, to simple content improvement, to major structural enhancements.
 If you are interested in contributing, please start by reviewing this page's guidance.
+If this page does not answer your questions on how to get started, let us know.
 
-If this page does not answer your questions on how to get started, reach out to us at `embed email here somehow`.
+# Outline
+- TOC
+{:toc}
 
-## Outline
+# Website Communication and Coordination <a name="website-communication-and-coordination"></a>
 
-- Website Coordination
-  - GitHub
-  - Email
-  - Slack
-- Types of Contributions
-  - Modifying a Single Page
-  - Modifying a Set of Pages or Files
-  - Understanding Markdown
-  - Understanding Liquid
-  - Understanding Jekyll
-  - Working with Tests
-- Technology Guidance
-  - Installing Git and GitHub Clients
-  - Installing Ruby
-  - Installing Python
-  - Git and Feature Branching
+Our web development efforts are coordinated on several channels.
+
+## Email
+
+Anybody may contact dub-web via email:  
+
+`insert a recaptcha mailhide here or something like that`
+
+Anybody in the DUB community may also join dub-web:
+
+<https://dub.washington.edu/mailman/listinfo/dub-web>
+
+## GitHub
+
+Development is hosted on GitHub at:
+ 
+<https://github.com/uwdub/web-dub>
+
+Our primary coordination mechanisms are Issues on this repository:
+
+<https://github.com/uwdub/web-dub/issues>
+
+## Slack
+
+`insert something about a slack channel here`
+
+# Types of Contributions
+
+## Complaining
+
+An always popular form of contribution is to complain about what has been done, 
+complain about what has not been done, or suggest what could be done.
+Please feel free to use any of the 
+[Website Communication and Coordination](#website-communication-and-coordination) mechanisms.
+
+A guiding principle of web-dub is that we will keep the website appropriately maintainable.
+This means the website will also generally be minimal.
+Please do not be offended when we consider your suggestion to be an unmaintainable monster that can never be allowed.
+
+## Modifying a Single File
+
+The most common form of contribution is updating some text.
+If this is all you need, you can probably do this directly on GitHub.
+
+GitHub explains how to edit a file via GitHub:
+
+<https://help.github.com/articles/editing-files-in-another-user-s-repository/>
+
+In short, you will need to:
+
+- Have a GitHub account.
+- Find the appropriate file in the repository:
+
+  <https://github.com/uwdub/web-dub>
+- Click the pencil icon for 'Edit this page'.
+- Ignore the [Things to be Ignored](#things-to-be-ignored).
+- Make your changes.
+- Submit them as a pull request.
+
+The pull request will be reviewed by web-dub and published when we accept it.
+If you are doing something small and easy, that should be pretty quickly after you submit.
+
+## Modifying Multiple Files
+
+## Things to be Ignored <a name="things-to-be-ignored"></a>
+
+The DUB website is implemented in 
+[Jekyll](http://jekyllrb.com/), which in turn uses 
+[Markdown](http://liquidmarkup.org/) and 
+[Liquid](https://daringfireball.net/projects/markdown/syntax).
+
+You should be able to mostly ignore this. 
+If you are editing text, or changing a field in a header, things should 'just work'.
+You should be fine to find something in the site, modify or copy text, and get what you expect.
+
+But if you are unsure about something, then you might need to understand something.
+
+[Understanding Markdown](#understanding-markdown) can help if confused by the syntax of text, such as:
+
+```
+# This is an HTML h1
+### This is an HTML h3
+[This Is Link Text](http://this-is-a-link.com)
+<http://this-is-a-link-with-itself-as-the-text.com>
+```
+
+[Understanding the Jekyll Header](#understanding-the-jekyll-header) can help if confused by a page header, such as:
+
+```
+    ---
+    layout: main-no-sidebar
+    current_page_item: "people"
+    ---
+```
+
+[Understanding Liquid](#understanding-liquid) can help if confused by text containing
+`{% raw %}{{{% endraw %}`, `{% raw %}}}{% endraw %}`, `{% raw %}{%{% endraw %}`, `{% raw %}%}{% endraw %}`, such as: 
+
+```
+{% raw %}{%{% endraw %} for item_name in item_person.name offset: 1 {% raw %}%}{% endraw %}
+  {% raw %}{{{% endraw %} item_name {% raw %}}}{% endraw %}
+{% raw %}{%{% endraw %} endfor {% raw %}%}{% endraw %}
+{% raw %}{{{% endraw %} item_person.name[0] {% raw %}}}{% endraw %}
+```
+
+[Understanding Jekyll](#understanding-jekyll) can help if confused about how site content is organized, 
+or if considering a major structural enhancement to the website.
+If you are considering something major here, you really should first reach out to dub-web
+via any of the [Website Communication and Coordination](#website-communication-and-coordination) mechanisms.
+ 
+## Understanding Markdown <a name="understanding-markdown"></a>
+
+## Understanding the Jekyll Header <a name="understanding-the-jekyll-header"></a>
+
+## Understanding Liquid
+
+## Understanding Jekyll
+
+## Working with Tests
+
+# Technology Guidance
+
+## Installing Git and GitHub Clients
+
+## Installing Ruby
+
+## Installing Python
+
+## Git and Feature Branching
+
+
+ 
+
 This page documents some of our development tools and conventions. It aims to be thorough as possible while
 remaining generic. Individual projects then document their own installation and configuration details.
 
