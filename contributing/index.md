@@ -95,8 +95,11 @@ But if you are unsure about something, then you might need to understand somethi
 
 ```
 # This is an HTML h1
+
 ### This is an HTML h3
+
 [This Is Link Text](http://this-is-a-link.com)
+
 <http://this-is-a-link-with-itself-as-the-text.com>
 ```
 
@@ -119,62 +122,29 @@ current_page_item: "people"
 {% raw %}{{{% endraw %} item_person.name[0] {% raw %}}}{% endraw %}
 {% endhighlight %}
 
-[Understanding Jekyll](#understanding-jekyll) can help if confused about how site content is organized, 
-or if considering a major structural enhancement to the website.
+[Understanding Jekyll](#understanding-jekyll) can help if confused by how site content is organized, 
+or if considering a major structural enhancement.
 If you are considering something major here, you really should first reach out to dub-web
 via any of the [Website Communication and Coordination](#website-communication-and-coordination) mechanisms.
+
+[Understanding Tests](#working-with-tests) can help if confused by how data consistency is enforced.
+This is generally not visible in website content, as the tests are external.
+But tests might be rejecting some edits you are submitting,
+or you will need to understand tests if considering a major structural enhancement.
  
 ## Understanding Markdown <a name="understanding-markdown"></a>
 
 ## Understanding the Jekyll Header <a name="understanding-the-jekyll-header"></a>
 
-## Understanding Liquid
+## Understanding Liquid <a name="understanding-liquid"></a>
 
-## Understanding Jekyll
+## Understanding Jekyll <a name="understanding-jekyll"></a>
 
-## Working with Tests
+## Understanding Tests <a name="understanding-tests"></a>
 
 # Technology Guidance
 
-## Installing Git and GitHub Clients
-
-## Installing Ruby
-
-## Installing Python
-
-## Git and Feature Branching
-
-
- 
-
-This page documents some of our development tools and conventions. It aims to be thorough as possible while
-remaining generic. Individual projects then document their own installation and configuration details.
-
-We provide detailed instructions for [Windows]({{ site.baseurl }}/contributing.html#Windows) and [Mac OSX]({{ site.baseurl }}/contributing.html#OSX). If you're on another operating system (e.g. Unix), you probably don't need help setting this up. Take a look at the [OSX instructions]({{ site.baseurl }}/contributing.html#OSX) for some basic ideas.
-
-Once you're set up, we provide additional instructions for [forking the repository]({{ site.baseurl }}/contributing.html#forking), [branching behavior]({{ site.baseurl }}/contributing.html#branches), and [submitting a pull request]({{ site.baseurl }}/contributing.html#pull_request).
-
-## <a name="Windows"></a> Windows Setup Instructions
-
-### <a name="Git"></a> Git and GitHub
-
-We use Git and GitHub.
-
-First, download [git for Windows](http://git-scm.com/download/win).
-
-Consider downloading [GitHub for Windows](https://windows.github.com/), which provides a graphical interface for interacting with git and GitHub.
-
-By convention, GitHub for Windows defines the `upstream` remote:
-
-    git remote add upstream <GitHub HTTPS clone URL>
-
-For example, for [cse441-sp15](https://github.com/uwcse441/web-cse441-sp15) we define `upstream` as:
-
-    git remote add upstream https://github.com/uwcse441/web-cse441-sp15.git
-
-This ends up being a very useful convention, regardless of whether you're on Windows, Mac, Linux, or something we've never heard of.
-
-### <a name="Jekyll_win"></a> Jekyll
+## Installing Jekyll
 
 We use Jekyll to build our websites. It requires Python 2.7 and Ruby.
 
@@ -200,137 +170,33 @@ The `deploy` task will deploy the site to its production location.
 
     fab deploy
 
-### <a name="MicrosoftVisualStudio"></a> Microsoft Visual Studio
+{% comment %}
+We use Jekyll to build our websites. It requires Python 2.7 and Ruby.
 
-Many Node.js and Python modules require a C compiler for included native code.
+The easiest way to install Jekyll on Mac is to first install [RubyGems](http://rubygems.org/pages/download). Once you do this, setting up Jekyll becomes simple.
 
-We currently use the freely available Microsoft Visual Studio C++ 2012 for Windows Desktop:
+    gem install jekyll
 
-<http://go.microsoft.com/?linkid=9816758>
+If you run into problems with this, you might need to install OSX Command Line Tools. Directions for doing so are available [here](http://railsapps.github.io/xcode-command-line-tools.html).
 
-#### Versions
+It's that easy (note how much shorter the directions are than the Windows ones!). By default, the above command will install all other dependencies.
 
-Node.js and Python each expect particular versions of Microsoft Visual Studio. Currently, that expectation is:
+By convention, we use Fabric to ease deployment. It should be installed as part of `requirements2.txt`.
 
-  * Node.js: Microsoft Visual Studio C++ 2012
-  * Python 3.4: Microsoft Visual Studio C++ 2010
-  * Python 2.7: Microsoft Visual Studio C++ 2008
+The `build` task will compile the site to `_site`.
 
-Each version defines environment variables that say where to find the build tools:
+    fab build
 
-  * `VS110COMNTOOLS` is defined by Microsoft Visual Studio C++ 2012
-  * `VS100COMNTOOLS` is defined by Microsoft Visual Studio C++ 2010
-  * `VS90COMNTOOLS` is defined by Microsoft Visual Studio C++ 2008
+The `serve` task will continuously compile and serve the website on `localhost:4000`.
 
-Instead of installing all of these versions, we manipulate the environment variables to alias the old versions to the newer version. This is not necessarily 100% robust, but has not been problematic.
+    fab serve
 
-This can be done locally within a session:
+The `deploy` task will deploy the site to its production location.
 
-    set VS90COMNTOOLS="%VS110COMNTOOLS%"
-    set VS100COMNTOOLS="%VS110COMNTOOLS%"
+    fab deploy
+{% endcomment %}
 
-Alternatively, we can define the system environment variable:
-
-     Control Panel
-     System and Security
-     System
-     Advanced system settings
-     Environment Variables...
-     System variables
-     New...
-
-![VS90COMNTOOLS]({{ site.baseurl }}/images/development_general/vs90comntools.png)
-![VS100COMNTOOLS]({{ site.baseurl }}/images/development_general/vs100comntools.png)
-
-### <a name="Node.js_win"></a> Node.js
-
-When I first tried to install Node.js, a tree fell on my house. Seriously. So first check you are not under any trees.
-
-First, [install Microsoft Visual Studio]({{ site.baseurl }}/contributing.html#MicrosoftVisualStudio).
-
-You then need Node.js:
-
-<http://nodejs.org/download/>
-
-Unfortunately, the current installers seem to require a reboot for path settings to take effect.
-
-You should then be sure to understand the difference between global and local modules:
-
-<http://blog.nodejs.org/2011/03/23/npm-1-0-global-vs-local-installation/>
-
-Following the advice "install it in both places", we install several modules globally. These each have commands that it is convenient to be able to easily execute.
-
-Cordova/PhoneGap enables mobile applications based on HTML, CSS, and Javascript:
-
-    npm -g install cordova
-    npm -g install phonegap
-
-Ionic works with Cordova/PhoneGap and Angular to target mobile apps:
-
-    npm -g install ionic
-
-And you should install a project's local dependencies:
-
-    npm install
-
-### <a name="Python27_win"></a> Python 2.7
-
-We use Python 2.7 as little as possible, but there are still libraries that require it.
-
-First, [install Microsoft Visual Studio]({{ site.baseurl }}/contributing.html#MicrosoftVisualStudio). Be sure to note the need to configure environment variables to point Python 2.7 at the install.
-
-You then need Python:
-
-<https://www.python.org/ftp/python/2.7.6/python-2.7.6.msi>
-
-Python 2.7 does not come with a built-in package manager, so we need to install it. Download these two files:
-
-<https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py>
-
-<https://raw.github.com/pypa/pip/master/contrib/get-pip.py>
-
-Then you can install pip:
-
-    c:\Python27\python ez_setup.py
-    c:\Python27\python get-pip.py
-
-Now you need virtualenv:
-
-    c:\Python27\Scripts\pip install virtualenv
-
-Finally you can create a Python environment for your project. By convention, we call our environment `env27`:
-
-    c:\Python27\Scripts\virtualenv.exe env27
-
-Now you can install your project requirements. By convention, we put these in `requirements2.txt`:
-
-    env27\Scripts\activate.bat
-    pip install -r requirements2.txt
-
-If a module fails with an error `Unable to find vcvarsall.bat`, it is because Microsoft Visual Studio is not set up correctly.
-
-### <a name="Python34_win"></a> Python 3.4
-
-We should use Python 3 whenever possible. Currently that means Python 3.4.
-
-First, [install Microsoft Visual Studio]({{ site.baseurl }}/contributing.html#MicrosoftVisualStudio). Be sure to note the need to configure environment variables to point Python 3.4 at the install.
-
-You then need Python:
-
-<https://www.python.org/ftp/python/3.4.1/python-3.4.1.msi>
-
-Python 3.4 includes pip and pyvenv, so we just get started. By convention, we call our environment `env34`:
-
-    c:\Python34\python.exe -m venv env34    
-
-Now you can install your project requirements. By convention, we put these in `requirements3.txt`:
-
-    env34\Scripts\activate.bat
-    pip install -r requirements3.txt
-
-If a module fails with an error `Unable to find vcvarsall.bat`, it is because Microsoft Visual Studio is not set up correctly.
-
-### <a name="Ruby_win"></a> Ruby
+## Installing Ruby
 
 To install Ruby, you need Ruby and an associated DevKit. You can get them here:
 
@@ -355,10 +221,46 @@ Unzip it to a permanent directory. I use `c:\RubyDevKit`. Then install the DevKi
     ruby dk.rb init
     ruby dk.rb install
 
-## <a name="OSX"></a> Mac OSX Setup Instructions
+## Installing Python 3
 
-### <a name="Git"></a> Git and GitHub
+We should use Python 3 whenever possible. Currently that means Python 3.4.
 
+First, [install Microsoft Visual Studio]({{ site.baseurl }}/contributing.html#MicrosoftVisualStudio). Be sure to note the need to configure environment variables to point Python 3.4 at the install.
+
+You then need Python:
+
+<https://www.python.org/ftp/python/3.4.1/python-3.4.1.msi>
+
+Python 3.4 includes pip and pyvenv, so we just get started. By convention, we call our environment `env34`:
+
+    c:\Python34\python.exe -m venv env34    
+
+Now you can install your project requirements. By convention, we put these in `requirements3.txt`:
+
+    env34\Scripts\activate.bat
+    pip install -r requirements3.txt
+
+If a module fails with an error `Unable to find vcvarsall.bat`, it is because Microsoft Visual Studio is not set up correctly.
+
+## Installing Git and GitHub Clients
+
+We use Git and GitHub.
+
+First, download [git for Windows](http://git-scm.com/download/win).
+
+Consider downloading [GitHub for Windows](https://windows.github.com/), which provides a graphical interface for interacting with git and GitHub.
+
+By convention, GitHub for Windows defines the `upstream` remote:
+
+    git remote add upstream <GitHub HTTPS clone URL>
+
+For example, for [cse441-sp15](https://github.com/uwcse441/web-cse441-sp15) we define `upstream` as:
+
+    git remote add upstream https://github.com/uwcse441/web-cse441-sp15.git
+
+This ends up being a very useful convention, regardless of whether you're on Windows, Mac, Linux, or something we've never heard of.
+
+{% comment %}
 We use Git and GitHub.
 
 First, download [git for Mac](http://git-scm.com/download/mac).
@@ -374,33 +276,18 @@ For example, for [cse441-sp15](https://github.com/uwcse441/web-cse441-sp15) we d
     git remote add upstream https://github.com/uwcse441/web-cse441-sp15.git
 
 This ends up being a very useful convention, regardless of whether you're on Windows, Mac, Linux, or something we've never heard of.
+{% endcomment %}
 
-### <a name="Jekyll_osx"></a> Jekyll
+## Git and Feature Branching
 
-We use Jekyll to build our websites. It requires Python 2.7 and Ruby.
 
-The easiest way to install Jekyll on Mac is to first install [RubyGems](http://rubygems.org/pages/download). Once you do this, setting up Jekyll becomes simple.
 
-    gem install jekyll
 
-If you run into problems with this, you might need to install OSX Command Line Tools. Directions for doing so are available [here](http://railsapps.github.io/xcode-command-line-tools.html).
 
-It's that easy (note how much shorter the directions are than the Windows ones!). By default, the above command will install all other dependencies.
 
-By convention, we use Fabric to ease deployment. It should be installed as part of `requirements2.txt`.
 
-The `build` task will compile the site to `_site`.
 
-    fab build
-
-The `serve` task will continuously compile and serve the website on `localhost:4000`.
-
-    fab serve
-
-The `deploy` task will deploy the site to its production location.
-
-    fab deploy
-
+{% comment %}
 ## <a name="forking"></a> Forking the Repository
 
 The easiest way to fork a repository is to visit the repository on GitHub and press the fork button. So for our course repository, visit [here](https://github.com/uwcse441/web-cse441-sp15).
@@ -452,3 +339,48 @@ After pushing a set of changes, a pull request appears in the parent repository 
 ![pull_request]({{ site.baseurl }}/images/development_general/pull_request.png)
 
 Push the `pull request` button and send one off to us! We'll take a look, and accept your changes if they don't crash the website.
+{% endcomment %}
+
+{% comment %}
+### <a name="MicrosoftVisualStudio"></a> Microsoft Visual Studio
+
+Many Node.js and Python modules require a C compiler for included native code.
+
+We currently use the freely available Microsoft Visual Studio C++ 2012 for Windows Desktop:
+
+<http://go.microsoft.com/?linkid=9816758>
+
+#### Versions
+
+Node.js and Python each expect particular versions of Microsoft Visual Studio. Currently, that expectation is:
+
+  * Node.js: Microsoft Visual Studio C++ 2012
+  * Python 3.4: Microsoft Visual Studio C++ 2010
+  * Python 2.7: Microsoft Visual Studio C++ 2008
+
+Each version defines environment variables that say where to find the build tools:
+
+  * `VS110COMNTOOLS` is defined by Microsoft Visual Studio C++ 2012
+  * `VS100COMNTOOLS` is defined by Microsoft Visual Studio C++ 2010
+  * `VS90COMNTOOLS` is defined by Microsoft Visual Studio C++ 2008
+
+Instead of installing all of these versions, we manipulate the environment variables to alias the old versions to the newer version. This is not necessarily 100% robust, but has not been problematic.
+
+This can be done locally within a session:
+
+    set VS90COMNTOOLS="%VS110COMNTOOLS%"
+    set VS100COMNTOOLS="%VS110COMNTOOLS%"
+
+Alternatively, we can define the system environment variable:
+
+     Control Panel
+     System and Security
+     System
+     Advanced system settings
+     Environment Variables...
+     System variables
+     New...
+
+![VS90COMNTOOLS]({{ site.baseurl }}/images/development_general/vs90comntools.png)
+![VS100COMNTOOLS]({{ site.baseurl }}/images/development_general/vs100comntools.png)
+{% endcomment %}
