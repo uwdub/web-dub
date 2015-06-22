@@ -5,8 +5,10 @@
     {% include pageheader.html %}
 	</head>
 	<body class="no-sidebar">
+    {% comment %}
     <!-- NavHeader -->
     {% include navheader.html %}
+    {% endcomment %}
 
 		<!-- Main -->
     <div id="main" class="container-fluid">
@@ -17,56 +19,61 @@
             <p>HCI & Design at the University of Washington</p>
           </div>
 
-          <!-- not changed -->
-          <div id="slider">
-            <div class="viewer">
-              <div class="reel">
-                <div class="slide">
-                  <a class="link" href="#">Full story ...</a>
-                  <img src="{{ site.baseurl }}/images/slide01.jpg" alt="" />
-                  <div class="caption">
+          <!-- Carousel -->
+          <div id="carousel-main" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{{ site.baseurl }}/images/slide01.jpg" alt="">
+                <div class="carousel-caption">
                     <h2>Fusce ultrices fringilla</h2>
                     <p>Nam ut purus urna, in lacinia purus. Nulla dictum orci et tellus gravida sapien lectus tempus ante. Nam ut purus urna, in lacinia nulla.</p>
                     <a href="#" class="button">Amet nullam consequat</a>
-                  </div>
                 </div>
-                <div class="slide">
-                  <a class="link" href="#">Full story ...</a>
-                  <img src="{{ site.baseurl }}/images/slide02.jpg" alt="" />
-                  <div class="caption">
+              </div>
+              <div class="item">
+                <img src="{{ site.baseurl }}/images/slide02.jpg" alt="">
+                <div class="carousel-caption">
                     <h2>Sed tempus lorem aliquam</h2>
                     <p>Pellentesque pede. Donec pulvinar ullamcorper metus. In lectus pulvinar mollis. Vestibulum sem vestibulum eu, facilisis quis, arcu dolor.</p>
                     <a href="#" class="button">Amet nullam consequat</a>
-                  </div>
                 </div>
-                <div class="slide">
-                  <a class="link" href="#">Full story ...</a>
-                  <img src="{{ site.baseurl }}/images/slide03.jpg" alt="" />
-                  <div class="caption">
+              </div>
+              <div class="item">
+                <img src="{{ site.baseurl }}/images/slide03.jpg" alt="">
+                <div class="carousel-caption">
                     <h2>Magna feugiat nam veroeros</h2>
                     <p>Consectetuer adipiscing elit. Nam pede erat lobortis tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi sed eleifend.</p>
                     <a href="#" class="button">Amet nullam consequat</a>
-                  </div>
                 </div>
               </div>
             </div>
-            <div class="captions">
-              <div class="captionLine">Lorem sed ipsum tempus dolor?</div>
-              <div class="caption-shadow"></div>
-            </div>
-            <div class="navigation">
-              <a href="#" class="previous-button">&lt;</a>
-              <a href="#" class="next-button">&gt;</a>
-            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <!-- end not changed -->
+          <!-- Carousel End -->
         </div>
       </div>
     </div>
 		<!-- Main End -->
 
     <!-- Footer -->
-    <div id="footer">
+    <div id="footer" class="container-fluid">
       <!-- Footer Content -->
       <div class="row">
         <div class="col-md-4">
