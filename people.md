@@ -1,5 +1,5 @@
 ---
-layout: main-no-sidebar
+layout: sidebar-none
 # title: "HCI & Design at the University of Washington"
 current_page_item: "people"
 ---

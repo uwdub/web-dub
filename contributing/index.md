@@ -1,5 +1,5 @@
 ---
-layout: main-no-sidebar
+layout: sidebar-none
 # title: General Development Guide
 ---
 
