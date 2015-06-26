@@ -84,24 +84,20 @@ The DUB website is implemented in
 [Jekyll](http://jekyllrb.com/), which in turn uses 
 [Markdown](http://liquidmarkup.org/) and 
 [Liquid](https://daringfireball.net/projects/markdown/syntax).
+Layout and styling use [Bootstrap](http://getbootstrap.com/).
 
 You should be able to mostly ignore this. 
 If you are editing text, or changing a field in a header, things should 'just work'.
-You should be fine to find something in the site, modify or copy text, and get what you expect.
+You should be find to find something in the site, modify or copy text, and get what you expect.
 
 But if you are unsure about something, then you might need to understand something.
 
 [Understanding Markdown](#understanding-markdown) can help if confused by the syntax of text, such as:
 
-```
-# This is an HTML h1
-
-### This is an HTML h3
-
-[This Is Link Text](http://this-is-a-link.com)
-
-<http://this-is-a-link-with-itself-as-the-text.com>
-```
+    # This is an HTML h1
+    ### This is an HTML h3
+    [This Is Link Text](http://this-is-a-link.com)
+    <http://this-is-a-link-with-itself-as-the-text.com>
 
 [Understanding the Jekyll Header](#understanding-the-jekyll-header) can help if confused by a page header, such as:
 
