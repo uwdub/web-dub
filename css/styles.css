@@ -1,4 +1,12 @@
 /************************************************************/
+/* Colors
+/*
+/* #392952;  /* Dark purple background */
+/* #ffffff;  /* White foreground */
+/* #615475;  /* Light purple hover background */
+/************************************************************/
+
+/************************************************************/
 /* Basic
 /*
 /* http://www.w3schools.com/tags/ref_colorpicker.asp
@@ -10,6 +18,22 @@ a
     color: #615475;
 }
 
+.btn-default
+{
+    background-color: #392952;
+    color: #ffffff;
+}
+
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active
+    {
+        background-color: #615475;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+
 /************************************************************/
 /* NavBar
 /*
@@ -17,18 +41,11 @@ a
 /* http://work.smarchal.com/twbscolor/
 /************************************************************/
 
-/************************************************************/
-/* NavBar
-/*
-/* #392952;  /* Dark purple background */
-/* #ffffff;  /* White foreground */
-/* #615475;  /* Light purple hover background */
-/************************************************************/
-
 .navbar-dub
 {
     background-color: #392952;
 }
+
     .navbar-dub .navbar-brand,
     .navbar-dub .navbar-brand:hover,
     .navbar-dub .navbar-brand:focus
@@ -41,12 +58,12 @@ a
       color: #ffffff;
     }
 
-    .navbar-default .navbar-nav > li > a:hover,
-    .navbar-default .navbar-nav > li > a:focus
-    {
-      background-color: #615475;
-      color: #ffffff;
-    }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus
+        {
+          background-color: #615475;
+          color: #ffffff;
+        }
 
     .navbar-dub .navbar-text
     {
@@ -57,15 +74,16 @@ a
     {
       border-color: #ffffff;
     }
-    .navbar-dub .navbar-toggle:hover,
-    .navbar-dub .navbar-toggle:focus
-    {
-      background-color: #615475;
-    }
-    .navbar-dub .navbar-toggle .icon-bar
-    {
-      background-color: #ffffff;
-    }
+
+        .navbar-dub .navbar-toggle:hover,
+        .navbar-dub .navbar-toggle:focus
+        {
+          background-color: #615475;
+        }
+        .navbar-dub .navbar-toggle .icon-bar
+        {
+          background-color: #ffffff;
+        }
 
 /*
 .navbar-default .navbar-nav > li > .dropdown-menu
