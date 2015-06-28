@@ -53,6 +53,12 @@ a
       color: #ffffff;
     }
 
+    .navbar-dub .navbar-brand > img
+    {
+        height: 30px;
+        margin-top: -5px;
+    }
+
     .navbar-dub .navbar-nav > li > a
     {
       color: #ffffff;
