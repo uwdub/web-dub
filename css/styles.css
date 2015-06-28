@@ -17,19 +17,23 @@ a
 /* http://work.smarchal.com/twbscolor/
 /************************************************************/
 
+/************************************************************/
+/* NavBar
+/*
+/* #392952;  /* Dark purple background */
+/* #ffffff;  /* White foreground */
+/* #615475;  /* Light purple hover background */
+/************************************************************/
+
 .navbar-dub
 {
     background-color: #392952;
 }
-    .navbar-dub .navbar-brand
-    {
-      color: #ffffff;
-    }
-
+    .navbar-dub .navbar-brand,
     .navbar-dub .navbar-brand:hover,
     .navbar-dub .navbar-brand:focus
     {
-      color: #ecdbff;
+      color: #ffffff;
     }
 
     .navbar-dub .navbar-nav > li > a
@@ -40,7 +44,8 @@ a
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus
     {
-      color: #ecdbff;
+      background-color: #615475;
+      color: #ffffff;
     }
 
     .navbar-dub .navbar-text
