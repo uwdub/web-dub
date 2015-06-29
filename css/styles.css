@@ -1,10 +1,50 @@
 /************************************************************/
 /* Colors
 /*
-/* #392952;  /* Dark purple background */
-/* #ffffff;  /* White foreground */
+/* #392952;  /* Dark purple banner */
+/* #ffffff;  /* White banner foreground */
 /* #615475;  /* Light purple hover background */
+/* #d3d3d3;  /* Light gray body background */
+/* #ffffff;  /* White main background */
 /************************************************************/
+
+body
+{
+    background-color: #d3d3d3;
+}
+
+#main
+{
+    background-color: #ffffff;
+}
+
+#bar
+{
+    background-color: #392952;
+    color: #ffffff;
+
+    /* needed for bar-secondary to bottom align */
+    position: relative;
+}
+
+    #bar-primary
+    {
+    }
+
+    #bar-secondary
+    {
+        text-align: right;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+#carousel-main
+{
+    padding-left: 0;
+    padding-right: 0;
+}
 
 /************************************************************/
 /* Basic
