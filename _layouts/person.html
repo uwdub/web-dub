@@ -12,55 +12,50 @@
     {% assign item_person = page %}
 
 		<!-- Main -->
-    <div id="main" class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="bar">
-            <h2>
-              {% for item_name in item_person.name offset:1 %}
-                {{ item_name }}
-              {% endfor %}
-              {{ item_person.name[0] }}
-            </h2>
-          </div>
+    <div class="container" id="main">
+      <!-- Bar -->
+      <div class="row" id="bar">
+        <div class="col-md-6" id="bar-primary">
+          <h1>
+            {% for item_name in item_person.name offset:1 %}
+              {{ item_name }}
+            {% endfor %}
+            {{ item_person.name[0] }}
+          </h1>
+        </div>
+        <div class="col-md-6" id="bar-secondary">
+          <!-- <p>HCI & Design at the University of Washington</p> -->
         </div>
       </div>
-                <div class="row">
-                  <div class="col-md-3">
-                    <img src="{{ site.baseurl }}/images/slide01.jpg" width="100%"/>
-                  </div>
-                  <div class="col-md-9">
-                    {% for item_position in item_person.position %}
-                      <p>{{ item_position.title }}, {{ item_position.unit }}</p>
-                    {% endfor %}
-                    {% for item_web in item_person.web %}
-                      <p><a href="{{ item_web }}">{{ item_web }}</a></p>
-                    {% endfor %}
-                    {% for item_twitter in item_person.twitter %}
-                      <p><a href="{{ item_twitter }}">{{ item_twitter }}</a></p>
-                    {% endfor %}
-                  </div>
-                </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="content">
+      <!-- Bar End -->
+
+      <!-- Content -->
+      <div id="content">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="{{ site.baseurl }}/images/slide01.jpg" width="100%"/>
+          </div>
+          <div class="col-md-9">
+            {% for item_position in item_person.position %}
+              <p>{{ item_position.title }}, {{ item_position.unit }}</p>
+            {% endfor %}
+            {% for item_web in item_person.web %}
+              <p><a href="{{ item_web }}">{{ item_web }}</a></p>
+            {% endfor %}
+            {% for item_twitter in item_person.twitter %}
+              <p><a href="{{ item_twitter }}">{{ item_twitter }}</a></p>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
             {{ content }}
           </div>
         </div>
       </div>
+      <!-- Content End -->
     </div>
 		<!-- Main End -->
-
-    <!-- Footer -->
-    <div id="footer" class="container">
-      <!-- Copyright -->
-      <div class="row">
-        <div id="copyright" class="col-md-12">
-          &copy; Untitled. All rights reserved.
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
 
     <!-- EndOfBody -->
     {% include endofbody.html %}
