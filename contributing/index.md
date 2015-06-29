@@ -1,5 +1,5 @@
 ---
-layout: main-no-sidebar
+layout: sidebar-none
 # title: General Development Guide
 ---
 
@@ -12,7 +12,7 @@ If this page does not answer your questions on how to get started, let us know.
 - TOC
 {:toc}
 
-# Website Communication and Coordination <a name="website-communication-and-coordination"></a>
+# Communication and Coordination <a name="communication-and-coordination"></a>
 
 Our web development efforts are coordinated on several channels.
 
@@ -47,7 +47,7 @@ Our primary coordination mechanisms are Issues on this repository:
 An always popular form of contribution is to complain about what has been done, 
 complain about what has not been done, or suggest what could be done.
 Please feel free to use any of the 
-[Website Communication and Coordination](#website-communication-and-coordination) mechanisms.
+[Communication and Coordination](#communication-and-coordination) mechanisms.
 
 A guiding principle of web-dub is that we will keep the website appropriately maintainable.
 This means the website will also generally be minimal.
@@ -84,24 +84,20 @@ The DUB website is implemented in
 [Jekyll](http://jekyllrb.com/), which in turn uses 
 [Markdown](http://liquidmarkup.org/) and 
 [Liquid](https://daringfireball.net/projects/markdown/syntax).
+Layout and styling use [Bootstrap](http://getbootstrap.com/).
 
 You should be able to mostly ignore this. 
 If you are editing text, or changing a field in a header, things should 'just work'.
-You should be fine to find something in the site, modify or copy text, and get what you expect.
+You should be find to find something in the site, modify or copy text, and get what you expect.
 
 But if you are unsure about something, then you might need to understand something.
 
 [Understanding Markdown](#understanding-markdown) can help if confused by the syntax of text, such as:
 
-```
-# This is an HTML h1
-
-### This is an HTML h3
-
-[This Is Link Text](http://this-is-a-link.com)
-
-<http://this-is-a-link-with-itself-as-the-text.com>
-```
+    # This is an HTML h1
+    ### This is an HTML h3
+    [This Is Link Text](http://this-is-a-link.com)
+    <http://this-is-a-link-with-itself-as-the-text.com>
 
 [Understanding the Jekyll Header](#understanding-the-jekyll-header) can help if confused by a page header, such as:
 
@@ -125,7 +121,7 @@ current_page_item: "people"
 [Understanding Jekyll](#understanding-jekyll) can help if confused by how site content is organized, 
 or if considering a major structural enhancement.
 If you are considering something major here, you really should first reach out to dub-web
-via any of the [Website Communication and Coordination](#website-communication-and-coordination) mechanisms.
+via any of the [Communication and Coordination](#communication-and-coordination) mechanisms.
 
 [Understanding Tests](#working-with-tests) can help if confused by how data consistency is enforced.
 This is generally not visible in website content, as the tests are external.

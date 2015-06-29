@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <!-- PageHeader -->
+    {% include pageheader.html %}
+	</head>
+	<body class="layout-sidebar-none">
+    <!-- NavHeader -->
+    {% include navheader.html %}
+
+		<!-- Main -->
+    <div class="container" id="main" >
+      <!-- Bar -->
+      <div class="row" id="bar">
+        <div class="col-md-6" id="bar-primary">
+          <h1>DUB</h1>
+        </div>
+        <div class="col-md-6" id="bar-secondary">
+          <p>HCI & Design at the University of Washington</p>
+        </div>
+      </div>
+      <!-- Bar End -->
+
+      <!-- Content -->
+      <div class="row" id="content">
+        <div class="col-md-12">
+          {{ content }}
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+		<!-- Main End -->
+
+    <!-- EndOfBody -->
+    {% include endofbody.html %}
+	</body>
+</html>

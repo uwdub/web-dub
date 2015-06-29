@@ -1,128 +1,116 @@
-<!DOCTYPE HTML>
-<!--
-	Standout by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
--->
+<!DOCTYPE html>
 <html>
-	<head>
+  <head lang="en">
     <!-- PageHeader -->
-      {% include pageheader.html %}
+    {% include pageheader.html %}
 	</head>
-	<body class="no-sidebar">
+	<body class="layout-main">
     <!-- NavHeader -->
-      {% include navheader.html %}
+    {% include navheader.html %}
 
-		<!-- Main Wrapper -->
-			<div id="main-wrapper">
-				<div id="main" class="container">
-					<div class="row">
-						<div class="12u">
-							<div id="bar">
-								<h2>DUB</h2>
-								<p>HCI & Design at the University of Washington</p>
-							</div>
-							<div id="slider">
-								<div class="viewer">
-									<div class="reel">
-										<div class="slide">
-											<a class="link" href="#">Full story ...</a>
-											<img src="{{ site.baseurl }}/images/slide01.jpg" alt="" />
-											<div class="caption">
-												<h2>Fusce ultrices fringilla</h2>
-												<p>Nam ut purus urna, in lacinia purus. Nulla dictum orci et tellus gravida sapien lectus tempus ante. Nam ut purus urna, in lacinia nulla.</p>
-												<a href="#" class="button">Amet nullam consequat</a>
-											</div>
-										</div>
-										<div class="slide">
-											<a class="link" href="#">Full story ...</a>
-											<img src="{{ site.baseurl }}/images/slide02.jpg" alt="" />
-											<div class="caption">
-												<h2>Sed tempus lorem aliquam</h2>
-												<p>Pellentesque pede. Donec pulvinar ullamcorper metus. In lectus pulvinar mollis. Vestibulum sem vestibulum eu, facilisis quis, arcu dolor.</p>
-												<a href="#" class="button">Amet nullam consequat</a>
-											</div>
-										</div>
-										<div class="slide">
-											<a class="link" href="#">Full story ...</a>
-											<img src="{{ site.baseurl }}/images/slide03.jpg" alt="" />
-											<div class="caption">
-												<h2>Magna feugiat nam veroeros</h2>
-												<p>Consectetuer adipiscing elit. Nam pede erat lobortis tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi sed eleifend.</p>
-												<a href="#" class="button">Amet nullam consequat</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="captions">
-									<div class="captionLine">Lorem sed ipsum tempus dolor?</div>
-									<div class="caption-shadow"></div>
-								</div>
-								<div class="navigation">
-									<a href="#" class="previous-button">&lt;</a>
-									<a href="#" class="next-button">&gt;</a>
-								</div>
-							</div>
+		<!-- Main -->
+    <div class="container" id="main">
+      <!-- Bar -->
+      <div class="row" id="bar">
+        <div class="col-md-6" id="bar-primary">
+          <h1>DUB</h1>
+        </div>
+        <div class="col-md-6" id="bar-secondary">
+          <p>HCI & Design at the University of Washington</p>
+        </div>
+      </div>
+      <!-- Bar End -->
 
-						</div>
-					</div>
-				</div>
-			</div>
-		<!-- Main End Wrapper -->
+      <!-- Carousel -->
+      <div class="row" id="carousel">
+        <div class="col-md-12">
+          <div id="carousel-main" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
 
-		<!-- Footer Wrapper -->
-			<div id="footer-wrapper">
-			
-				<!-- Footer -->
-					<footer id="footer" class="container">
-					
-						<!-- Footer Content -->
-							<div class="row">
-							
-								<div class="4u">
-									<section>
-										<h2>Magna feugiat consequat</h2>
-										<p>Nam ut purus urna, in lacinia purus. Nulla dictum, amet tempus pulvinar vehicula, orci et tellus gravida sapien lectus amet lorem tempus ante. Nam ut purus urna, in lacinia purus nulla dictum consequat feugiat lorem ipsum dolor sit amet.</p>
-									</section>
-								</div>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="{{ site.baseurl }}/images/slide01.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Fusce ultrices fringilla</h2>
+                    <p>Nam ut purus urna, in lacinia purus. Nulla dictum orci et tellus gravida sapien lectus tempus ante. Nam ut purus urna, in lacinia nulla.</p>
+                    <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{{ site.baseurl }}/images/slide02.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Sed tempus lorem aliquam</h2>
+                    <p>Pellentesque pede. Donec pulvinar ullamcorper metus. In lectus pulvinar mollis. Vestibulum sem vestibulum eu, facilisis quis, arcu dolor.</p>
+                    <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="{{ site.baseurl }}/images/slide03.jpg" alt="">
+                <div class="carousel-caption">
+                    <h2>Magna feugiat nam veroeros</h2>
+                    <p>Consectetuer adipiscing elit. Nam pede erat lobortis tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi sed eleifend.</p>
+                    <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+                </div>
+              </div>
+            </div>
 
-								<div class="4u">
-									<section>
-										<h2>Gravida tempus veroeros</h2>
-										<ul class="style5">
-											<li class="first"><span class="date">July 25</span><a href="#">Urna in lacinia purus nulla dictum neque</a></li>
-											<li><span class="date">July 20</span><a href="#">Vehicula orci et tellus gravida sapien</a></li>
-											<li><span class="date">July 18</span><a href="#">Nam ut purus urna in lacinia nulla dictum</a></li>
-										</ul>
-									</section>
-								</div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel End -->
 
-								<div class="4u">
-									<section>
-										<h2>Magna feugiat consequat</h2>
-										<p>Urna in lacinia purus nulla dictum neque vehicula orci tellus.</p>
-										<ul class="style2">
-											<li><a href="#" class="icon fa-twitter">Twitter</a></li>
-											<li><a href="#" class="icon fa-instagram">Instagram</a></li>
-											<li><a href="#" class="icon fa-facebook">Instagram</a></li>
-											<li><a href="#" class="icon fa-tumblr">Tumblr</a></li>
-											<li><a href="#" class="icon fa-dribbble">Dribbble</a></li>
-										</ul>
-									</section>
-								</div>
+      <!-- Content -->
+      <div class="row" id="content">
+        <div class="col-md-4">
+          <section>
+            <h2>Magna feugiat consequat</h2>
+            <p>Nam ut purus urna, in lacinia purus. Nulla dictum, amet tempus pulvinar vehicula, orci et tellus gravida sapien lectus amet lorem tempus ante. Nam ut purus urna, in lacinia purus nulla dictum consequat feugiat lorem ipsum dolor sit amet.</p>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section>
+            <h2>Gravida tempus veroeros</h2>
+            <ul class="style5">
+              <li class="first"><span class="date">July 25</span><a href="#">Urna in lacinia purus nulla dictum neque</a></li>
+              <li><span class="date">July 20</span><a href="#">Vehicula orci et tellus gravida sapien</a></li>
+              <li><span class="date">July 18</span><a href="#">Nam ut purus urna in lacinia nulla dictum</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <section>
+            <h2>Magna feugiat consequat</h2>
+            <p>Urna in lacinia purus nulla dictum neque vehicula orci tellus.</p>
+            <ul class="style2">
+              <li><a href="#" class="icon fa-twitter">Twitter</a></li>
+              <li><a href="#" class="icon fa-instagram">Instagram</a></li>
+              <li><a href="#" class="icon fa-facebook">Instagram</a></li>
+              <li><a href="#" class="icon fa-tumblr">Tumblr</a></li>
+              <li><a href="#" class="icon fa-dribbble">Dribbble</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+		<!-- Main End -->
 
-							</div>
-						
-						<!-- Copyright -->
-							<div class="row">
-								<div id="copyright" class="12u">
-									&copy; Untitled. All rights reserved.
-								</div>
-							</div>
-
-					</footer>
-
-			</div>
-
+    <!-- EndOfBody -->
+    {% include endofbody.html %}
 	</body>
 </html>

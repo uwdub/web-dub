@@ -1,68 +1,35 @@
-<!-- Header Wrapper -->
-  <div id="header-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="12u">
-
-          <header id="header">
-
-            <!-- Logo -->
-              <h1><a href="{{ site.baseurl }}/index.html" id="logo">Standout</a></h1>
-
-            <!-- Nav -->
-              <nav id="nav">
-                <ul>
-                  {% if page.current_page_item == 'home' %}
-                  <li class="current_page_item">
-                  {% else %}
-                  <li>
-                  {% endif %}
-                  <a href="{{ site.baseurl }}/index.html">Home</a></li>
-
-                  {% if page.current_page_item == 'people' %}
-                  <li class="current_page_item">
-                  {% else %}
-                  <li>
-                  {% endif %}
-                  <a href="{{ site.baseurl }}/people.html">People</a></li>
-
-                  {% if page.current_page_item == 'aboutdub' %}
-                  <li class="current_page_item">
-                  {% else %}
-                  <li>
-                  {% endif %}
-                  <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a></li>
-
-                  <!--
-                  <li>
-                    <a href="" class="arrow">Sample Templates</a>
-                    <ul>
-                      <li><a href="{{ site.baseurl }}/sample/standout.html">Standout</a></li>
-                      <li><a href="{{ site.baseurl }}/sample/portfolio.html">Portfolio</a></li>
-                      <li><a href="{{ site.baseurl }}/sample/right-sidebar.html">Right Sidebar</a></li>
-                      <li><a href="{{ site.baseurl }}/sample/left-sidebar.html">Left Sidebar</a></li>
-                      <li><a href="{{ site.baseurl }}/sample/no-sidebar.html">No Sidebar</a></li>
-                      <li>
-                        <span class="arrow">Nested Menu ></span>
-                        <ul>
-                          <li><a href="#">Lorem ipsum dolor</a></li>
-                          <li><a href="#">Phasellus consequat</a></li>
-                          <li><a href="#">Magna phasellus</a></li>
-                          <li><a href="#">Etiam dolore nisl</a></li>
-                          <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  -->
-                </ul>
-              </nav>
-
-          </header>
-
-        </div>
+<nav class="navbar navbar-default navbar-static-top navbar-dub" id="mainNavbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbarContent">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+        <img src="{{ site.baseurl }}/images/nav-logo.png" alt="DUB"/>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="mainNavbarContent">
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li
+            {% if page.current_page_item == 'home' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/index.html">Home</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'people' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/people.html">People</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'aboutdub' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-
-
+</nav>

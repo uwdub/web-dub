@@ -6,7 +6,7 @@
 <html>
 <section>
 <div class="row">
-  <div class="6u">
+  <div class="col-md-6">
     <ul>
 {% for item_person in people limit: peoplesplit %}  
   <li><a href="{{ item_person.url }}">
@@ -18,7 +18,7 @@
 {% endfor %}
     </ul>
   </div>
-  <div class="6u">
+  <div class="col-md-6">
     <ul>
 {% for item_person in people offset: peoplesplit %}  
   <li><a href="{{ item_person.url }}">
