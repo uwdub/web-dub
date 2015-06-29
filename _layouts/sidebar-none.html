@@ -9,15 +9,19 @@
     {% include navheader.html %}
 
 		<!-- Main -->
-    <div id="main" class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="bar">
-            <h2>DUB</h2>
-            <p>HCI & Design at the University of Washington</p>
-          </div>
+    <div class="container" id="main" >
+      <!-- Bar -->
+      <div class="row" id="bar">
+        <div class="col-md-6" id="bar-primary">
+          <h1>DUB</h1>
+        </div>
+        <div class="col-md-6" id="bar-secondary">
+          <p>HCI & Design at the University of Washington</p>
         </div>
       </div>
+      <!-- Bar End -->
+
+      <!-- Content -->
       <div class="row">
         <div class="col-md-12">
           <div id="content">
@@ -25,19 +29,9 @@
           </div>
         </div>
       </div>
+      <!-- Content End -->
     </div>
 		<!-- Main End -->
-
-    <!-- Footer -->
-    <div id="footer" class="container">
-      <!-- Copyright -->
-      <div class="row">
-        <div id="copyright" class="col-md-12">
-          &copy; Untitled. All rights reserved.
-        </div>
-      </div>
-    </div>
-    <!-- Footer End -->
 
     <!-- EndOfBody -->
     {% include endofbody.html %}
