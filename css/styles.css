@@ -111,23 +111,26 @@ a
 {
     background-color: #392952;
     color: #ffffff;
-
-    /* needed for bar-secondary to bottom align */
-    position: relative;
 }
 
     #bar-primary
     {
     }
 
-    #bar-secondary
-    {
+/* apply these only at medium or larger */
+@media (min-width: 992px) {
+    #bar {
+        position: relative;
+    }
+
+    #bar-secondary {
         text-align: right;
 
         position: absolute;
         bottom: 0;
         right: 0;
     }
+}
 
 /************************************************************/
 /* Carousel
