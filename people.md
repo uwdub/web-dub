@@ -1,6 +1,6 @@
 ---
 layout: sidebar-none
-# title: "HCI & Design at the University of Washington"
+title: "People"
 current_page_item: "people"
 ---
 
