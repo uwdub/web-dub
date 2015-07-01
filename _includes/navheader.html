@@ -19,14 +19,24 @@
             <a href="{{ site.baseurl }}/index.html">Home</a>
           </li>
           <li
+            {% if page.current_page_item == 'aboutdub' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a>
+          </li>
+          <li
             {% if page.current_page_item == 'people' %}class="active"{% endif %}
           >
             <a href="{{ site.baseurl }}/people.html">People</a>
           </li>
           <li
-            {% if page.current_page_item == 'aboutdub' %}class="active"{% endif %}
+            {% if page.current_page_item == 'resources' %}class="active"{% endif %}
           >
-            <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a>
+            <a href="{{ site.baseurl }}/resources.html">Resources</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'gettinginvolved' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/gettinginvolved.html">Getting Involved</a>
           </li>
         </ul>
       </div>
