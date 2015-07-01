@@ -1,5 +1,6 @@
 ---
 layout: sidebar-none
+title: "About DUB"
 current_page_item: "aboutdub"
 ---
 
