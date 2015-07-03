@@ -14,25 +14,25 @@
       {% include barheader.html %}
 
 {% capture content_remainder %}
-{{ content }}
+  {{ content }}
 {% endcapture %}
 
-{% assign toc_split_start = content_remainder | split: '<div class="toc_start"></div>' %}
-{% assign toc_split_temp = toc_split_start[1] | join: '' %}
-{% assign toc_split_end = toc_split_temp | split: '<div class="toc_end"></div>' %}
-{% assign content_toc = toc_split_end[0] | join: '' %}
+{% assign split_start = content_remainder | split: '<div class="sidebar_start"></div>' %}
+{% assign split_temp = split_start[1] | join: '' %}
+{% assign split_end = split_temp | split: '<div class="sidebar_end"></div>' %}
+{% assign content_sidebar = split_end[0] | join: '' %}
 {% capture content_remainder %}
-  {{ toc_split_start[0] | join: '' }}
-  {{ toc_split_end[1] | join: '' }}
+  {{ split_start[0] | join: '' }}
+  {{ split_end[1] | join: '' }}
 {% endcapture %}
 
       <!-- Content -->
       <div class="row" id="content">
-        <div class="col-md-8">
-          {{ content_remainder }}
+        <div class="col-md-4 col-md-push-8">
+          {{ content_sidebar }}
         </div>
-        <div class="col-md-4">
-          {{ content_toc }}
+        <div class="col-md-8 col-md-pull-4">
+          {{ content_remainder }}
         </div>
       </div>
       <!-- Content End -->
