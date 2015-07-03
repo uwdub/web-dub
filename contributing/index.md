@@ -4,7 +4,7 @@ title: Website Contribution
 ---
 
 <div class="sidebar_start"></div>
-- TOC
+- Table of Contents
 {:toc}
 <div class="sidebar_end"></div>
 
