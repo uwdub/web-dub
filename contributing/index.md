@@ -1,16 +1,17 @@
 ---
-layout: sidebar-none
-# title: General Development Guide
+layout: sidebar-right
+title: Website Contribution
 ---
+
+<div class="sidebar_start"></div>
+- Table of Contents
+{:toc}
+<div class="sidebar_end"></div>
 
 Creating, maintaining, and enhancing the DUB website is ongoing community effort.
 Many types of contribution are possible, from complaining, to simple content improvement, to major structural enhancements.
 If you are interested in contributing, please start by reviewing this page's guidance.
 If this page does not answer your questions on how to get started, let us know.
-
-# Outline
-- TOC
-{:toc}
 
 # Communication and Coordination <a name="communication-and-coordination"></a>
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <!-- PageHeader -->
+    {% include pageheader.html %}
+	</head>
+	<body class="layout-sidebar-none">
+    <!-- NavHeader -->
+    {% include navheader.html %}
+
+		<!-- Main -->
+    <div class="container" id="main" >
+      <!-- Bar -->
+      {% include barheader.html %}
+
+{% capture content_remainder %}
+  {{ content }}
+{% endcapture %}
+
+{% assign split_start = content_remainder | split: '<div class="sidebar_start"></div>' %}
+{% assign split_temp = split_start[1] | join: '' %}
+{% assign split_end = split_temp | split: '<div class="sidebar_end"></div>' %}
+{% assign content_sidebar = split_end[0] | join: '' %}
+{% capture content_remainder %}
+  {{ split_start[0] | join: '' }}
+  {{ split_end[1] | join: '' }}
+{% endcapture %}
+
+      <!-- Content -->
+      <div class="row" id="content">
+        <div class="col-md-4 col-md-push-8">
+          {{ content_sidebar }}
+        </div>
+        <div class="col-md-8 col-md-pull-4">
+          {{ content_remainder }}
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+		<!-- Main End -->
+
+    <!-- EndOfBody -->
+    {% include endofbody.html %}
+	</body>
+</html>
