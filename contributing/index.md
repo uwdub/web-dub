@@ -1,5 +1,5 @@
 ---
-layout: sidebar-none
+layout: sidebar-right
 # title: General Development Guide
 ---
 
@@ -8,9 +8,10 @@ Many types of contribution are possible, from complaining, to simple content imp
 If you are interested in contributing, please start by reviewing this page's guidance.
 If this page does not answer your questions on how to get started, let us know.
 
-# Outline
+<div class="toc_start"></div>
 - TOC
 {:toc}
+<div class="toc_end"></div>
 
 # Communication and Coordination <a name="communication-and-coordination"></a>
 
