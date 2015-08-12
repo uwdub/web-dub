@@ -1,5 +1,5 @@
 ---
-layout: sidebar-none
+layout: base/sidebar-none
 title: "Getting Involved"
 current_page_item: "gettinginvolved"
 ---

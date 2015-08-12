@@ -1,5 +1,5 @@
 ---
-layout: sidebar-none
+layout: base/sidebar-none
 # current_page_item: "aboutdub"
 ---
 

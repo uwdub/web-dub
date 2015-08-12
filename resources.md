@@ -1,5 +1,5 @@
 ---
-layout: sidebar-none
+layout: base/sidebar-none
 title: "Resources"
 current_page_item: "resources"
 ---
