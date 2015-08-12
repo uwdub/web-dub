@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <!-- PageHeader -->
+    {% include pageheader.html %}
+	</head>
+	<body class="layout-sidebar-none">
+    <!-- NavHeader -->
+    {% include navheader.html %}
+
+		<!-- Main -->
+    <div class="container" id="main" >
+      <!-- Bar -->
+      {% include barheader.html %}
+
+      <!-- Content -->
+      <div class="row" id="content">
+        <div class="col-md-12">
+          {{ content }}
+        </div>
+      </div>
+      <!-- Content End -->
+    </div>
+		<!-- Main End -->
+
+    <!-- EndOfBody -->
+    {% include endofbody.html %}
+	</body>
+</html>

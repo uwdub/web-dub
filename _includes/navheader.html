@@ -1,0 +1,45 @@
+<nav class="navbar navbar-default navbar-static-top navbar-dub" id="mainNavbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbarContent">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+        <img src="{{ site.baseurl }}/images/nav-logo.png" alt="DUB"/>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="mainNavbarContent">
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li
+            {% if page.current_page_item == 'home' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/index.html">Home</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'aboutdub' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'people' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/people.html">People</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'resources' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/resources.html">Resources</a>
+          </li>
+          <li
+            {% if page.current_page_item == 'gettinginvolved' %}class="active"{% endif %}
+          >
+            <a href="{{ site.baseurl }}/gettinginvolved.html">Getting Involved</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
