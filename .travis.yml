@@ -1,0 +1,12 @@
+language: python
+
+python:
+  - "3.4"
+
+install:
+  - pip install -r requirements3.txt
+  - sudo apt-get install -y ruby ruby-dev
+  - gem install jekyll
+
+script:
+  - nosetests

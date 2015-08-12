@@ -1,0 +1,11 @@
+# PyCharm settings
+.idea
+
+# Jekyll's build of the site
+_site
+
+# Our Python environment
+env34
+
+# Compiled Python
+*.pyc
