@@ -1,4 +1,8 @@
-name:       DUB
+name:       'DUB'
+
+brandimage: 'images/nav-logo.png'
+brandtext:  'DUB'
+
 baseurl:    ''
 
 collections:
