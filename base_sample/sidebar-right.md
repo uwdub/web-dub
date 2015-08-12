@@ -1,6 +1,6 @@
 ---
-layout: base-sidebar-right
-title: "Base Sample sidebar-right"
+layout: base/sidebar-right
+title: "sidebar-right"
 ---
 
 <div class="sidebar_start"></div>
