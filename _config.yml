@@ -1,4 +1,6 @@
-name:       Fogies Base
+name:       'Fogies Base'
+brandimage: ''
+brandtext:  'Fogies'
 baseurl:    ''
 
 exclude:
