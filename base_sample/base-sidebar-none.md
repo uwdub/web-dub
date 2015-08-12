@@ -1,5 +1,5 @@
 ---
-layout: sidebar-none
+layout: base-sidebar-none
 title: "Base Sample sidebar-none"
 ---
 
