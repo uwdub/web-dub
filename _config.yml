@@ -1,7 +1,9 @@
+baseurl:    ''
+
 name:       'Fogies Base'
+
 brandimage: ''
 brandtext:  'Fogies'
-baseurl:    ''
 
 exclude:
   # Python
