@@ -11,31 +11,16 @@
     <div class="collapse navbar-collapse" id="mainNavbarContent">
       <div>
         <ul class="nav navbar-nav navbar-right">
-          <li
-            {% if page.current_page_item == 'home' %}class="active"{% endif %}
-          >
-            <a href="{{ site.baseurl }}/index.html">Home</a>
-          </li>
-          <li
-            {% if page.current_page_item == 'aboutdub' %}class="active"{% endif %}
-          >
-            <a href="{{ site.baseurl }}/aboutdub.html">About DUB</a>
-          </li>
-          <li
-            {% if page.current_page_item == 'people' %}class="active"{% endif %}
-          >
-            <a href="{{ site.baseurl }}/people.html">People</a>
-          </li>
-          <li
-            {% if page.current_page_item == 'resources' %}class="active"{% endif %}
-          >
-            <a href="{{ site.baseurl }}/resources.html">Resources</a>
-          </li>
-          <li
-            {% if page.current_page_item == 'gettinginvolved' %}class="active"{% endif %}
-          >
-            <a href="{{ site.baseurl }}/gettinginvolved.html">Getting Involved</a>
-          </li>
+          {% for item_nav in site.navbar.items %}
+            {% capture item_nav_computed_url %}{{ site.baseurl }}/{{ item_nav.link }}{% endcapture %}
+            {% if page.url == item_nav_computed_url %}
+              <li class="active">
+            {% else %}
+              <li>
+            {% endif %}
+                <a href="{{ site.baseurl }}/{{ item_nav.link }}">{{ item_nav.text }}</a>
+              </li>
+          {% endfor %}
         </ul>
       </div>
     </div>
