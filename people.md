@@ -1,7 +1,6 @@
 ---
 layout: base/sidebar-none
 title: "People"
-current_page_item: "people"
 ---
 
 ## Faculty

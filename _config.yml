@@ -1,9 +1,21 @@
 name:       'DUB'
+baseurl:    ''
 
 brandimage: 'images/nav-logo.png'
 brandtext:  'DUB'
 
-baseurl:    ''
+navbar:
+  items:
+    - text: 'Home'
+      link: 'index.html'
+    - text: 'About DUB'
+      link: 'aboutdub.html'
+    - text: 'People'
+      link: 'people.html'
+    - text: 'Resources'
+      link: 'resources.html'
+    - text: 'Getting Involved'
+      link: 'gettinginvolved.html'
 
 collections:
   people:
