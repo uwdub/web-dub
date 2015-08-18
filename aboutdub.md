@@ -1,5 +1,5 @@
 ---
-layout: base/sidebar-none
+layout: base/bar-sidebar-none
 title: "About DUB"
 title_secondary: "HCI & Design at the University of Washington"
 ---

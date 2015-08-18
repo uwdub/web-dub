@@ -1,5 +1,5 @@
 ---
-layout: base/sidebar-none
+layout: base/bar-sidebar-none
 title: "People"
 ---
 

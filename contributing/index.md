@@ -1,5 +1,5 @@
 ---
-layout: base/sidebar-right
+layout: base/bar-sidebar-right
 title: Website Contribution
 ---
 

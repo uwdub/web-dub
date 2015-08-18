@@ -1,6 +1,5 @@
 ---
-layout: base/sidebar-none
-# current_page_item: "aboutdub"
+layout: base/bar-sidebar-none
 ---
 
 This is stub content to be edited regarding the DUB logos.
