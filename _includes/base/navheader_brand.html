@@ -1,0 +1,13 @@
+<a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+  {% if page.brandtext %}
+    {{ page.brandtext }}
+  {% else %}
+    {% capture exists_brand_png %}{% file_exists {{ site.brandimage }} %}{% endcapture %}
+
+    {% if exists_brand_png == 'true' %}
+      <img src="{{ site.baseurl }}/{{ site.brandimage }}" alt="{{ site.brandtext }}"/>
+    {% else %}
+      {{ site.brandtext }}
+    {% endif %}
+  {% endif %}
+</a>

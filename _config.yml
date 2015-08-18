@@ -1,5 +1,21 @@
-name:       DUB
+name:       'DUB'
 baseurl:    ''
+
+brandimage: 'images/nav-logo.png'
+brandtext:  'DUB'
+
+navbar:
+  items:
+    - text: 'Home'
+      link: 'index.html'
+    - text: 'About DUB'
+      link: 'aboutdub.html'
+    - text: 'People'
+      link: 'people.html'
+    - text: 'Resources'
+      link: 'resources.html'
+    - text: 'Getting Involved'
+      link: 'gettinginvolved.html'
 
 collections:
   people:
@@ -12,12 +28,15 @@ defaults:
       layout: person
 
 exclude:
-  # Our Python
+  # Python
   - env34
   - requirements3.txt
   - tasks.py
   - tasks.pyc
-  # Project README
+  # README
   - README.md
+  # Ruby
+  - Gemfile
+  - Gemfile.lock
   # Tests
   - tests

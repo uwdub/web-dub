@@ -139,6 +139,7 @@ a
 #carousel .col-md-12
 {
     /* fill the space, since #carousel is tucked under #bar */
+    margin-top: -15px;
     padding-left: 0;
     padding-right: 0;
 }
