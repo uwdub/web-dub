@@ -1,6 +1,6 @@
 ---
-layout: base/sidebar-none
-title: "sidebar-none"
+layout: base/bar
+title: "bar"
 # title_bar: 'different title'
 # brandtext: 'different brand'
 ---
