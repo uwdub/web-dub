@@ -4,9 +4,15 @@ python:
   - "3.4"
 
 install:
+  # Install Ruby
+  - rvm install 2.2.2
+  - rvm use 2.2.2 --default
+  - gem install bundler
+
+  # Install Python dependencies
   - pip install -r requirements3.txt
-  - sudo apt-get install -y ruby ruby-dev
-  - gem install jekyll
+  # Install Ruby dependencies
+  - bundle install
 
 script:
   - nosetests
