@@ -12,8 +12,7 @@
       <div>
         <ul class="nav navbar-nav navbar-right">
           {% for item_nav in site.navbar.items %}
-            {% capture item_nav_computed_url %}{{ site.baseurl }}/{{ item_nav.link }}{% endcapture %}
-            {% if page.url == item_nav_computed_url %}
+            {% if page.url == item_nav.link %}
               <li class="active">
             {% else %}
               <li>
