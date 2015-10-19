@@ -1,3 +1,6 @@
+# IDEA settings
+*.iml
+
 # PyCharm settings
 .idea
 
