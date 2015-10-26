@@ -14,32 +14,41 @@ title_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ site.baseurl }}/images/slide01.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
-            <h2>Fusce ultrices fringilla</h2>
-            <p>Nam ut purus urna, in lacinia purus. Nulla dictum orci et tellus gravida sapien lectus tempus ante. Nam ut purus urna, in lacinia nulla.</p>
-            <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+            <h2>Design.</h2>
+            <p>Design is becoming increasingly recognized as an important aspect of technology.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
         <div class="item">
-          <img src="{{ site.baseurl }}/images/slide02.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
-            <h2>Sed tempus lorem aliquam</h2>
-            <p>Pellentesque pede. Donec pulvinar ullamcorper metus. In lectus pulvinar mollis. Vestibulum sem vestibulum eu, facilisis quis, arcu dolor.</p>
-            <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+            <h2>Use.</h2>
+            <p>Students and faculty work on research to make technology and products more usable.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
         <div class="item">
-          <img src="{{ site.baseurl }}/images/slide03.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
-            <h2>Magna feugiat nam veroeros</h2>
-            <p>Consectetuer adipiscing elit. Nam pede erat lobortis tellus. Etiam neque. Vivamus consequat lorem at nisl. Nullam non wisi sed eleifend.</p>
-            <a href="#" class="btn btn-default btn-lg">Amet nullam consequat</a>
+            <h2>Build.</h2>
+            <p>Students get hands-on experience prototyping and building products in class and in labs.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{ site.baseurl }}/images/slide_dub.jpg" alt="dub">
+          <div class="carousel-caption">
+            <h2>DUB</h2>
+            <p>DUB is a community that comes together to share ideas about human-computer interaction and design.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
       </div>
@@ -62,31 +71,24 @@ title_secondary: "HCI & Design at the University of Washington"
 <div class="row" id="footer">
   <div class="col-md-4">
     <section>
-      <h2>Magna feugiat consequat</h2>
-      <p>Nam ut purus urna, in lacinia purus. Nulla dictum, amet tempus pulvinar vehicula, orci et tellus gravida sapien lectus amet lorem tempus ante. Nam ut purus urna, in lacinia purus nulla dictum consequat feugiat lorem ipsum dolor sit amet.</p>
+      <h2>What is DUB?</h2>      
+      <p>The DUB group is a grassroots, opt-in alliance of faculty, students, researchers, and industry affiliates interested in human-computer interaction and design at the University of Washington.</p>
+      <p>The mission of DUB is to bring together an interdisciplinary set of people to discuss issues, share ideas, collaborate on research projects, and discuss teaching concerns related to the interaction between people and computers and major socio-technical phenomena surrounding them.</p>
+      </section>
+  </div>
+  <div class="col-md-4">
+    <section>
+      <h2>Upcoming DUB Seminars</h2>      
+      <iframe src="http://www.google.com/calendar/embed?title=Upcoming%20dub%20meetings&amp;showTitle=0&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=designusebuild%40gmail.com&amp;color=%23A32929" style=" border-width:0 " width="360" height="225" frameborder="0" scrolling="no"></iframe>
     </section>
   </div>
   <div class="col-md-4">
     <section>
-      <h2>Gravida tempus veroeros</h2>
-      <ul class="style5">
-        <li class="first"><span class="date">July 25</span><a href="#">Urna in lacinia purus nulla dictum neque</a></li>
-        <li><span class="date">July 20</span><a href="#">Vehicula orci et tellus gravida sapien</a></li>
-        <li><span class="date">July 18</span><a href="#">Nam ut purus urna in lacinia nulla dictum</a></li>
-      </ul>
-    </section>
-  </div>
-  <div class="col-md-4">
-    <section>
-      <h2>Magna feugiat consequat</h2>
-      <p>Urna in lacinia purus nulla dictum neque vehicula orci tellus.</p>
-      <ul class="style2">
-        <li><a href="#" class="icon fa-twitter">Twitter</a></li>
-        <li><a href="#" class="icon fa-instagram">Instagram</a></li>
-        <li><a href="#" class="icon fa-facebook">Instagram</a></li>
-        <li><a href="#" class="icon fa-tumblr">Tumblr</a></li>
-        <li><a href="#" class="icon fa-dribbble">Dribbble</a></li>
-      </ul>
+      <h2>Connect with DUB</h2>
+      <p>Want to join one of the most vibrant HCI & Design communities in the world?</p>
+      <p><a href="/mailinglists.html"><img src="logos/E-mail.png" alt="e-mail"></a>&nbsp;&nbsp;<strong>Join</strong> the DUB mailing list.</p>
+      <p><a href="http://twitter.com/#!/uwdub"><img src="logos/Twitter.png" alt="twitter"></a>&nbsp;&nbsp;<strong>Follow</strong> us on Twitter.</p>
+      <p><a href="/gettinginvolved.html"><img src="logos/UW.png" alt="u dub"></a>&nbsp;&nbsp;<strong>Learn</strong> how to get involved.</p>
     </section>
   </div>
 </div>
