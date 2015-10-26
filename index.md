@@ -14,36 +14,41 @@ title_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ site.baseurl }}/images/slide01.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
-            <h2>The DUB Seminar</h2>
-            <p>The dub seminar is a weekly lunch seminar on Wednesdays, when members of the dub community across many departments come together to attend talks by industry and academic speakers</p>
-            <p>The dub seminars are regularly recorded and uploaded onto dub Vimeo channel. Subscribe to the channel so you can keep up with what is going on in dub! </p>
-            <a href="https://vimeo.com/designusebuild" class="btn btn-default btn-lg">Check out the Vimeo channel</a>
+            <h2>Design.</h2>
+            <p>Design is becoming increasingly recognized as an important aspect of technology.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
         <div class="item">
-          <img src="{{ site.baseurl }}/images/slide02.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
-            <h2>The 7th Annual DUB Retreat</h2>
-            <p>The Taskar Center for Accessible Technology director Anat Caspi presented as the keynote speaker at the 7th Annual DUB Retreat, which was held at the Intellectual House on October 16th, 2015. Anat talked about her work with the Taskcar center, and their most recent work - The Universal Play Kiosk - a configurable space designed to facilitate equal participation of all - was on display recently at the Seattle Design Festival.</p>
-            <p>The Kiosk creates an immersive, collaborative environment that truly integrates children and adults with special needs. The modular structure accommodates wheelchairs and other assistive devices, is adjustable on the fly to welcome individuals of varying abilities, and provides rich sensory stimulation through colors, shadows, textures and sounds.</p>
-            <a href="/people.html" class="btn btn-default btn-lg">Learn more about dub research</a>
+            <h2>Use.</h2>
+            <p>Students and faculty work on research to make technology and products more usable.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
         <div class="item">
-          <img src="{{ site.baseurl }}/images/slide03.jpg" alt="">
+          <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
-            <h2>The MHCI+D Program</h2>
-            <p>The 3rd cohort of the dub-sponsored Masters in Human-Computer Interaction and Design has arrived! </p>
-            <p>This unique interdisciplinary program was designed by the dub faculty and will be taught by dub faculty.</p>
-            <p>In this year-long, project-based curriculum students learn the latest tools and techniques in user experience and interface design, prototyping, and evaluation. Courses consist of both hands-on studios and cutting-edge lecture courses. The combination of theory and practice, with emphasis on making and doing, provides a dynamic, active and robust learning experience. </p>
-            <a href="http://mhcid.uw.edu" class="btn btn-default btn-lg">Learn more about the program</a>
+            <h2>Build.</h2>
+            <p>Students get hands-on experience prototyping and building products in class and in labs.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{ site.baseurl }}/images/slide_dub.jpg" alt="dub">
+          <div class="carousel-caption">
+            <h2>DUB</h2>
+            <p>DUB is a community that comes together to share ideas about human-computer interaction and design.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
       </div>
@@ -67,24 +72,23 @@ title_secondary: "HCI & Design at the University of Washington"
   <div class="col-md-4">
     <section>
       <h2>What is DUB?</h2>      
-      <p>The dub group is a grassroots, opt in alliance of faculty, students, researchers, and industry affiliates interested in human-computer interaction and design at the University of Washington. The mission of dub is to bring together an interdisciplinary set of people to discuss issues, share ideas, collaborate on research projects, and discuss teaching concerns related to the interaction between people and computers and major socio-technical phenomena surrounding them.</p>
-      <p>Want to join one of the most vibrant HCI & Design communities in the world?</p>
-      <p>See <a href="/gettinginvolved.html">getting involved</a></p>
-      <p>Join the <a href="/mailinglist.html">mailing list</a></p>
-      <p>Follow <a href="http://twitter.com/#!/uwdub">@uwdub</a></p>
+      <p>The DUB group is a grassroots, opt-in alliance of faculty, students, researchers, and industry affiliates interested in human-computer interaction and design at the University of Washington.</p>
+      <p>The mission of DUB is to bring together an interdisciplinary set of people to discuss issues, share ideas, collaborate on research projects, and discuss teaching concerns related to the interaction between people and computers and major socio-technical phenomena surrounding them.</p>
       </section>
   </div>
   <div class="col-md-4">
     <section>
-      <h2>Upcoming Dub Seminars</h2>      
-      <iframe src="http://www.google.com/calendar/embed?title=Upcoming%20dub%20meetings&amp;showTitle=0&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=designusebuild%40gmail.com&amp;color=%23A32929" style=" border-width:0 " width="375" height="350" frameborder="0" scrolling="no"></iframe>
+      <h2>Upcoming DUB Seminars</h2>      
+      <iframe src="http://www.google.com/calendar/embed?title=Upcoming%20dub%20meetings&amp;showTitle=0&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=designusebuild%40gmail.com&amp;color=%23A32929" style=" border-width:0 " width="360" height="225" frameborder="0" scrolling="no"></iframe>
     </section>
   </div>
   <div class="col-md-4">
     <section>
-      <h2>Tweet @UWdub</h2>
-          <a class="twitter-timeline" href="https://twitter.com/search?q=%23uwdub+OR+%40uwdub" data-widget-id="502177500789604352" height="350">Tweets about "#uwdub OR @uwdub"</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <h2>Connect with DUB</h2>
+      <p>Want to join one of the most vibrant HCI & Design communities in the world?</p>
+      <p><a href="/mailinglists.html"><img src="logos/E-mail.png" alt="e-mail"></a>&nbsp;&nbsp;<strong>Join</strong> the DUB mailing list.</p>
+      <p><a href="http://twitter.com/#!/uwdub"><img src="logos/Twitter.png" alt="twitter"></a>&nbsp;&nbsp;<strong>Follow</strong> us on Twitter.</p>
+      <p><a href="/gettinginvolved.html"><img src="logos/UW.png" alt="u dub"></a>&nbsp;&nbsp;<strong>Learn</strong> how to get involved.</p>
     </section>
   </div>
 </div>
