@@ -7,12 +7,15 @@ install:
   # Install Ruby
   - rvm install 2.2.3
   - rvm use 2.2.3 --default
-  - gem install bundler
+
+  # Install NodeJS
+  - nvm install 5.1.0
 
   # Install Python dependencies
   - pip install -r requirements3.txt
-  # Install Ruby dependencies
-  - bundle install
+
+  # Invoke will get our other dependencies
+  - invoke update_dependencies
 
 script:
   - nosetests

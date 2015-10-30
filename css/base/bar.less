@@ -1,0 +1,251 @@
+/************************************************************/
+/* Colors
+/*
+/* #392952;  /* Dark purple banner */
+/* #ffffff;  /* White banner foreground */
+/* #615475;  /* Light purple hover background */
+/* #d3d3d3;  /* Light gray body background */
+/* #ffffff;  /* White main background */
+/************************************************************/
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg:               #d3d3d3;
+
+//** Global textual link color.
+@link-color:            #392952;
+//** Link hover color.
+@link-hover-color:      lighten(@link-color, 15%);
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-default-color:              #ffffff;
+@btn-default-bg:                 #392952;
+@btn-default-border:             #ccc;
+
+
+#main
+{
+    background-color: #ffffff;
+}
+
+/************************************************************/
+/* Basic
+/*
+/* http://www.w3schools.com/tags/ref_colorpicker.asp
+/* with base 392952
+/************************************************************/
+
+/*
+.btn-default
+{
+    background-color: #392952;
+    color: #ffffff;
+}
+
+    .btn-default:hover,
+    .btn-default:focus,
+    .btn-default:active,
+    .btn-default.active
+    {
+        background-color: #615475;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+*/
+
+/************************************************************/
+/* NavBar
+/*
+/* https://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
+/* http://work.smarchal.com/twbscolor/
+/************************************************************/
+
+.navbar-dub
+{
+    background-color: #392952;
+}
+
+    .navbar-dub .navbar-brand,
+    .navbar-dub .navbar-brand:hover,
+    .navbar-dub .navbar-brand:focus
+    {
+      color: #ffffff;
+    }
+
+    .navbar-dub .navbar-brand > img
+    {
+        height: 30px;
+        margin-top: -5px;
+    }
+
+    .navbar-dub .navbar-nav > li > a
+    {
+      color: #ffffff;
+    }
+
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus
+        {
+          background-color: #615475;
+          color: #ffffff;
+        }
+
+    .navbar-dub .navbar-text
+    {
+      color: #ffffff;
+    }
+
+    .navbar-dub .navbar-toggle
+    {
+      border-color: #ffffff;
+    }
+
+        .navbar-dub .navbar-toggle:hover,
+        .navbar-dub .navbar-toggle:focus
+        {
+          background-color: #615475;
+        }
+        .navbar-dub .navbar-toggle .icon-bar
+        {
+          background-color: #ffffff;
+        }
+
+/************************************************************/
+/* Bar
+/************************************************************/
+
+#bar
+{
+    background-color: #392952;
+    color: #ffffff;
+}
+
+    #bar-primary
+    {
+    }
+
+/* apply these only at medium or larger */
+@media (min-width: 992px) {
+    #bar {
+        position: relative;
+    }
+
+    #bar-secondary {
+        text-align: right;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+/************************************************************/
+/* Carousel
+/************************************************************/
+
+#carousel .col-md-12
+{
+    /* fill the space, since #carousel is tucked under #bar */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/************************************************************/
+/* Content
+/************************************************************/
+
+#content
+{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/************************************************************/
+/* Scraps that may prove helpful as the NavBar grows.
+/************************************************************/
+
+/*
+.navbar-default .navbar-nav > li > .dropdown-menu
+{
+  background-color: #392952;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a
+{
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus
+{
+  color: #ecdbff;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider
+{
+  background-color: #392952;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+{
+  color: #ecdbff;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus
+{
+  color: #ecdbff;
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-toggle
+{
+  border-color: #8e44ad;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus
+{
+  background-color: #8e44ad;
+}
+.navbar-default .navbar-toggle .icon-bar
+{
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form
+{
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link
+{
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover
+{
+  color: #ecdbff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a
+  {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus
+  {
+    color: #ecdbff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus
+  {
+    color: #ecdbff;
+    background-color: #8e44ad;
+  }
+}
+*/
