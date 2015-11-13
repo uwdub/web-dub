@@ -10,6 +10,8 @@ navbar:
       link: 'index.html'
     - text: 'About DUB'
       link: 'aboutdub.html'
+    - text: 'Calendar'
+      link: 'calendar.html'
     - text: 'People'
       link: 'people.html'
     - text: 'Resources'
