@@ -3,8 +3,9 @@ import invoke
 
 @invoke.task
 def update_dependencies():
-    print('Updating dependencies')
+    invoke.run('gem install bundler')
     invoke.run('bundle install')
+    invoke.run('npm install')
     invoke.run('pip install -r requirements3.txt')
 
 
