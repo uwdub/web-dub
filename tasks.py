@@ -2,13 +2,20 @@ import invoke
 
 
 @invoke.task
+def update_dependencies():
+    print('Updating dependencies')
+    invoke.run('bundle install')
+    invoke.run('pip install -r requirements3.txt')
+
+
+@invoke.task(pre=[update_dependencies])
 def build():
-    invoke.run('jekyll build -t --config _config.yml,_config-dev.yml')
+    invoke.run('bundle exec jekyll build -t --config _config.yml,_config-dev.yml')
 
 
-@invoke.task
+@invoke.task(pre=[update_dependencies])
 def serve():
-    invoke.run('jekyll serve -t --config _config.yml,_config-dev.yml --watch --force_polling')
+    invoke.run('bundle exec jekyll serve -t --config _config.yml,_config-dev.yml --watch --force_polling')
 
 
 @invoke.task
