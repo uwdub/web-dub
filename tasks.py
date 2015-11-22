@@ -11,12 +11,12 @@ def update_dependencies():
 
 @invoke.task(pre=[update_dependencies])
 def build():
-    invoke.run('bundle exec jekyll build -t --config _config.yml,_config-dev.yml')
+    invoke.run('bundle exec jekyll build -t --config _config.yml')
 
 
 @invoke.task(pre=[update_dependencies])
 def serve():
-    invoke.run('bundle exec jekyll serve -t --config _config.yml,_config-dev.yml --watch --force_polling')
+    invoke.run('bundle exec jekyll serve -t --config _config.yml,_config-serve.yml --watch --incremental')
 
 
 @invoke.task
