@@ -18,8 +18,11 @@ exclude:
   - bootstrap/less
   # Node
   - node_modules
+  - npm-shrinkwrap.json
+  - package.json
   # Python
   - env34
+  - env35
   - requirements3.txt
   - tasks.py
   - tasks.pyc

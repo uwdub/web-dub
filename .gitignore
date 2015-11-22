@@ -7,6 +7,7 @@ _site
 
 # Our Python environment
 env34
+env35
 
 # Compiled Python
 *.pyc
