@@ -23,6 +23,8 @@ navbar:
 
 collections:
   people:
+    output: false
+  seminars:
     output: true
 
 defaults:
