@@ -14,15 +14,17 @@ navbar:
       link: 'aboutdub.html'
     - text: 'Calendar'
       link: 'calendar.html'
-    - text: 'People'
-      link: 'people.html'
-    - text: 'Resources'
-      link: 'resources.html'
+#    - text: 'People'
+#      link: 'people.html'
+#    - text: 'Resources'
+#      link: 'resources.html'
     - text: 'Getting Involved'
       link: 'gettinginvolved.html'
 
 collections:
   people:
+    output: false
+  seminars:
     output: true
 
 defaults:
