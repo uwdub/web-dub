@@ -1,6 +1,6 @@
 ---
 layout: base/bar-sidebar-right
-title: "Calendar"
+title: "Previous Seminars"
 title_secondary: "HCI & Design at the University of Washington"
 ---
 
@@ -10,4 +10,5 @@ title_secondary: "HCI & Design at the University of Washington"
 <div class="sidebar_end"></div>
 
 # Previous DUB Seminars
-Previous seminar content here.
+{% assign previous = (site.seminars) %}
+{% include seminartable.md seminars = previous %}
