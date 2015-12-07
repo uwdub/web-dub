@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!-- PageHeader -->
+    {% include base/pageheader.html %}
+</head>
+<body class="layout-person">
+<!-- NavHeader -->
+{% include base/navheader.html %}
+
+<!-- Our Seminar -->
+{% assign item_seminar = page %}
+
+<!-- Main -->
+<div class="container" id="main">
+    <!-- Bar -->
+    <div class="row" id="bar">
+        <div class="col-md-6" id="bar-primary">
+            <h1>
+                DUB Seminar:
+                {{ item_seminar.date | date: '%B %d, %Y'}}
+            </h1>
+        </div>
+        <div class="col-md-6" id="bar-secondary">
+        </div>
+    </div>
+    <!-- Bar End -->
+
+    <!-- Content -->
+    <div id="content">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Title</h4>
+                {{ item_seminar.title }}
+                <h4>Date</h4>
+                {{ item_seminar.date | date: '%B %d, %Y'}}
+                <h4>Location</h4>
+                {{ item_seminar.location }}
+                <h4>Speaker</h4>
+                {% for item_names in item_seminar.name %}
+                    {% for item_name in item_names offset: 1 %}
+                        {{ item_name }}
+                    {% endfor %}
+                    {{ item_names[0] }}
+                    <br />
+                {% endfor %}
+                <h4>Affiliation</h4>
+                {{ item_seminar.affiliation }}
+                <h4>Abstract</h4>
+                {{ item_seminar.abstract }}
+                <h4>Bio</h4>
+                {{ item_seminar.bio }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+    <!-- Content End -->
+</div>
+<!-- Main End -->
+
+<!-- EndOfBody -->
+{% include base/endofbody.html %}
+</body>
+</html>
