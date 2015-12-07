@@ -10,6 +10,6 @@ title_secondary: "HCI & Design at the University of Washington"
 <div class="sidebar_end"></div>
 
 # Upcoming DUB Seminars
-{% assign current = (site.seminars) %}
+{% assign current = (site.seminars | ) %}
 {% include seminartable.md seminars = current %}
 

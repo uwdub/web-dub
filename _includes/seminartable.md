@@ -20,6 +20,10 @@
           {{ item_seminar.affiliation }}
           <br />
           {{ item_seminar.location }}
+          <br />
+          <a href="{{ item_seminar.url }}">
+            Read more...
+          </a>
         {% endfor %}
        </div>
     </div>
