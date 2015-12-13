@@ -6,6 +6,8 @@ python:
 install:
   # Install Ruby
   - rvm install 2.2.3
+  - rvm @global do gem install bundler -v 1.10.6
+  - rvm @global do gem uninstall bundler -v "!=1.10.6"
   - rvm use 2.2.3 --default
 
   # Install NodeJS
