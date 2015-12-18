@@ -12,7 +12,11 @@ def update_dependencies():
     invoke.run('pip install -r requirements3.txt', encoding=sys.stdout.encoding)
     print('Updating Ruby dependencies')
     invoke.run('gem install bundler -v 1.10.6', encoding=sys.stdout.encoding)
-    invoke.run('bundle install', encoding=sys.stdout.encoding)
+
+    # Check we have our Ruby dependencies
+    result = invoke.run('bundle check', encoding=sys.stdout.encoding, warn=True)
+    if result.failed:
+        invoke.run('bundle install', encoding=sys.stdout.encoding)
 
 
 @invoke.task(pre=[update_dependencies])
