@@ -8,8 +8,17 @@ def update_dependencies():
     # errors on Windows, so we set the encoding parameter on our commands
     print('Updating Node.js dependencies')
     invoke.run('npm install', encoding=sys.stdout.encoding)
+
+    # Python dependencies
     print('Updating Python dependencies')
-    invoke.run('pip install -r requirements3.txt', encoding=sys.stdout.encoding)
+
+    # Ensure we have pip-tools
+    result = invoke.run('pip show pip-tools', encoding=sys.stdout.encoding, warn=True)
+    if result.failed:
+        invoke.run('pip install pip-tools', encoding=sys.stdout.encoding)
+
+    # Ensure we have exactly our dependencies
+    invoke.run('pip-sync requirements3.txt', encoding=sys.stdout.encoding)
 
     # Ruby dependencies
     print('Updating Ruby dependencies')
