@@ -23,6 +23,7 @@ exclude:
   # Python
   - env34
   - env35
+  - requirements3.in
   - requirements3.txt
   - tasks.py
   - tasks.pyc
