@@ -16,6 +16,11 @@ navbar:
 exclude:
   # Bootstrap
   - bootstrap/less
+  # CSS/LESS files, these are all included by css/base/styles.less
+  - css/styles.less
+  - css/base/bar.less
+  - css/base/base.less
+  - css/base/syntax.css
   # Node
   - node_modules
   - npm-shrinkwrap.json
@@ -34,3 +39,7 @@ exclude:
   - Gemfile.lock
   # Tests
   - tests
+
+#include:
+#  # CSS/LESS files are included by this root
+#  - css/base/styles.less
