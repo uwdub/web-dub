@@ -22,6 +22,7 @@ module Jekyll
       raise "Missing 'lessc' path in site configuration" if !site.config['lessc']
       
       # static_files have already been filtered against excludes, etc.
+      generated = []
       site.static_files.each do |sf|
         next if not sf.path =~ less_ext
         
@@ -45,10 +46,15 @@ module Jekyll
           
           raise "LESS compilation error" if $?.to_i != 0
         end
-        
+
+        # Track what we generated
+        generated << sf
+
         # Add this output file so it won't be cleaned
         site.static_files << LessCssFile.new(site, site.source, css_dir_relative, css_name)
       end
+
+      site.static_files = site.static_files - generated
     end
   end
 end
