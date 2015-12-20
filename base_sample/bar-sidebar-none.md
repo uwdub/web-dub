@@ -1,8 +1,8 @@
 ---
-layout: base/bar
-title: "bar"
-# title_bar: 'different title'
-# brandtext: 'different brand'
+layout: base/bar-sidebar-none
+title: "title"
+title_bar: "title_bar"
+title_secondary: "title_secondary"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a mattis ipsum. Proin accumsan laoreet nisl in pulvinar. Nulla volutpat volutpat dui id sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc facilisis ipsum quis auctor vestibulum. Ut at tellus venenatis, dictum lorem ac, aliquam ipsum. In sagittis lorem vel turpis ultrices, fringilla efficitur mauris volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur vitae velit tincidunt, pretium metus ac, egestas nibh. Ut eu viverra tellus. Donec et elit id felis scelerisque pellentesque at sed eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
