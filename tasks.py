@@ -14,7 +14,7 @@ def update_dependencies():
 
     # Ensure we have pip-tools
     result = invoke.run('pip show pip-tools', encoding=sys.stdout.encoding, warn=True)
-    if result.failed:
+    if 'Name: pip-tools' not in result.stdout:
         invoke.run('pip install pip-tools', encoding=sys.stdout.encoding)
 
     # Ensure we have exactly our dependencies
