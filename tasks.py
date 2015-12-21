@@ -12,6 +12,11 @@ def update_dependencies():
     # Python dependencies
     print('Updating Python dependencies')
 
+    # Ensure we have a current version of pip, as needed by pip-tools
+    result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
+    # For efficiency, we should check the version before doing this
+    invoke.run('pip install --upgrade pip', encoding=sys.stdout.encoding)
+
     # Ensure we have pip-tools
     result = invoke.run('pip show pip-tools', encoding=sys.stdout.encoding, warn=True)
     if 'Name: pip-tools' not in result.stdout:
