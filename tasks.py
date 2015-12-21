@@ -13,8 +13,9 @@ def update_dependencies():
     print('Updating Python dependencies')
 
     # Ensure we have a current version of pip, as needed by pip-tools
-    result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
     # For efficiency, we should check the version before doing this
+    # But I was getting Unicode errors on this
+    # result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
     invoke.run('pip install --upgrade pip', encoding=sys.stdout.encoding)
 
     # Ensure we have pip-tools
