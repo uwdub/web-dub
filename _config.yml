@@ -1,5 +1,4 @@
 name:       'DUB'
-baseurl:    ''
 
 brandimage: 'images/nav-logo.png'
 brandtext:  'DUB'
@@ -65,7 +64,3 @@ exclude:
   - Gemfile.lock
   # Tests
   - tests
-
-#include:
-#  # CSS/LESS files are included by this root
-#  - css/base/styles.less
