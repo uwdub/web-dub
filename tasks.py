@@ -12,10 +12,15 @@ def update_dependencies():
     # Python dependencies
     print('Updating Python dependencies')
 
+    # Ensure we have a current version of pip, as needed by pip-tools
+    # TODO check version that is installed
+    result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
+    invoke.run('pip install --upgrade pip', encoding=sys.stdout.encoding)
+
     # Ensure we have pip-tools
+    # TODO check version that is installed
     result = invoke.run('pip show pip-tools', encoding=sys.stdout.encoding, warn=True)
-    if result.failed:
-        invoke.run('pip install pip-tools', encoding=sys.stdout.encoding)
+    invoke.run('pip install pip-tools==1.4.2', encoding=sys.stdout.encoding)
 
     # Ensure we have exactly our dependencies
     invoke.run('pip-sync requirements3.txt', encoding=sys.stdout.encoding)
@@ -41,14 +46,27 @@ def update_dependencies():
 
 
 @invoke.task(pre=[update_dependencies])
-def build():
-    invoke.run('bundle exec jekyll build -t --config _config.yml', encoding=sys.stdout.encoding)
+def build_production():
+    invoke.run('bundle exec jekyll build -t --config _config.yml,_config-build-production.yml', encoding=sys.stdout.encoding)
 
 
 @invoke.task(pre=[update_dependencies])
-def serve():
+def build_test():
+    invoke.run('bundle exec jekyll build -t --config _config.yml,_config-build-test.yml', encoding=sys.stdout.encoding)
+
+
+@invoke.task(pre=[update_dependencies])
+def serve_production():
     invoke.run(
-        'bundle exec jekyll serve -t --config _config.yml,_config-serve.yml --watch --force_polling',
+        'bundle exec jekyll serve -t --config _config.yml,_config-serve-production.yml -H 0.0.0.0',
+        encoding=sys.stdout.encoding
+    )
+
+
+@invoke.task(pre=[update_dependencies])
+def serve_test():
+    invoke.run(
+        'bundle exec jekyll serve -t --config _config.yml,_config-serve-test.yml --watch --force_polling',
         encoding=sys.stdout.encoding
     )
 
