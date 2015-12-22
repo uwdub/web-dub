@@ -14,8 +14,7 @@ install:
   - nvm install 5.1.0
 
   # Install Python dependencies
-  - pip install --upgrade pip
-  - pip install -r requirements3.txt
+  - pip install invoke
 
   # Invoke will get our other dependencies
   - invoke update_dependencies
