@@ -1,5 +1,4 @@
 name:       'Fogies Base'
-baseurl:    ''
 
 brandimage: ''
 brandtext:  'Fogies'
@@ -39,7 +38,3 @@ exclude:
   - Gemfile.lock
   # Tests
   - tests
-
-#include:
-#  # CSS/LESS files are included by this root
-#  - css/base/styles.less
