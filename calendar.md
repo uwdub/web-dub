@@ -11,6 +11,11 @@ title_secondary: "HCI & Design at the University of Washington"
 
 # Upcoming DUB Seminars
 {% assign currentDate = site.time %}
-{% assign current = site.seminars | seminar_upcoming: currentDate %}
-{% include seminartable.md seminars = current %}
+{% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
+{% if upcoming == empty %}
+  <br />
+  No upcoming seminars have yet been scheduled. Please check back at a later date.
+{% else %}
+  {% include seminartable.md seminars = upcoming %}
+{% endif %}
 

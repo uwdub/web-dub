@@ -4,7 +4,7 @@
   <section>
     <div class="row">
       <div class="col-md-12">
-        {% for item_seminar in seminars %}
+        {% for item_seminar in seminars reversed %}
           <div class="col-md-2">
             <h4>
             {{ item_seminar.date | date: "%m/%d/%y"}}

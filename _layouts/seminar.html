@@ -17,8 +17,7 @@
     <div class="row" id="bar">
         <div class="col-md-6" id="bar-primary">
             <h1>
-                DUB Seminar:
-                {{ item_seminar.date | date: '%B %d, %Y'}}
+                Seminar
             </h1>
         </div>
         <div class="col-md-6" id="bar-secondary">
@@ -29,13 +28,15 @@
     <!-- Content -->
     <div id="content">
         <div class="row">
-            <div class="col-md-12">
-                <h4>Title</h4>
-                {{ item_seminar.title }}
+            <div class="col-md-2">
                 <h4>Date</h4>
                 {{ item_seminar.date | date: '%B %d, %Y'}}
                 <h4>Location</h4>
                 {{ item_seminar.location }}
+            </div>
+            <div class="col-md-10">
+                <h4>Title</h4>
+                {{ item_seminar.title }}
                 <h4>Speaker</h4>
                 {% for item_names in item_seminar.name %}
                     {% for item_name in item_names offset: 1 %}
