@@ -9,6 +9,7 @@
             <h4>
             {{ item_seminar.date | date: "%m/%d/%y"}}
             </h4>
+            {{ item_seminar.time }}
             {{ item_seminar.location }}
           </div>
           <div class="col-md-10">
