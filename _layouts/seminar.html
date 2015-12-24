@@ -4,7 +4,7 @@
     <!-- PageHeader -->
     {% include base/pageheader.html %}
 </head>
-<body class="layout-person">
+<body class="layout-seminar">
 <!-- NavHeader -->
 {% include base/navheader.html %}
 
@@ -53,6 +53,12 @@
                 {{ item_seminar.abstract }}
                 <h4>Bio</h4>
                 {{ item_seminar.bio }}
+                {% assign video_id = item_seminar.video %}
+                {% assign video_size = video_id.size %}
+                {% if video_size > 0 %}
+                    <h4>Video</h4>
+                    {% vimeo video_id %}
+                {% endif %}
             </div>
         </div>
         <div class="row">
