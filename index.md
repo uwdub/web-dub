@@ -78,8 +78,47 @@ title_secondary: "HCI & Design at the University of Washington"
   </div>
   <div class="col-md-4">
     <section>
-      <h2>Upcoming DUB Seminars</h2>      
-      <iframe src="http://www.google.com/calendar/embed?title=Upcoming%20dub%20meetings&amp;showTitle=0&amp;showDate=0&amp;showTabs=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=designusebuild%40gmail.com&amp;color=%23A32929" style=" border-width:0 " width="360" height="225" frameborder="0" scrolling="no"></iframe>
+      <h2>Upcoming DUB Seminars</h2>
+      {% assign currentDate = site.time %}
+      {% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
+      {% if upcoming == empty %}
+        No upcoming seminars have yet been scheduled.
+      {% else %}
+        {% for item_seminar in upcoming limit: 2 %}
+          <div class = "row">
+            <div class="col-md-2">
+              {{ item_seminar.date | date: "%b" | upcase }}
+              {{ item_seminar.date | date: "%-d"}}
+            </div>
+            <div class="col-md-10">
+              <p>
+                <a href="{{ item_seminar.url }}">
+                  {{ item_seminar.title }}
+                </a>
+              </p>
+              <p>
+                <strong>
+                  {{ item_seminar.time }}
+                  &emsp;&emsp;
+                  {{ item_seminar.location }}
+                </strong>
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class = "row">
+        <div class="col-md-12"><hr /></div>
+        <div class="col-md-2"></div>
+        <div class="col-md-10">
+          <p>
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+            &emsp;
+            <a href="/calendar.html">View Full Calendar</a>
+          </p>
+        </div>
+      </div>
     </section>
   </div>
   <div class="col-md-4">
