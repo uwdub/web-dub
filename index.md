@@ -82,7 +82,18 @@ title_secondary: "HCI & Design at the University of Washington"
       {% assign currentDate = site.time %}
       {% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
       {% if upcoming == empty %}
-        No upcoming seminars have yet been scheduled.
+        <div class = "row">
+          <div class="col-md-12">
+            No upcoming seminars have yet been scheduled.
+          </div>
+          <div class="col-md-12"><hr /></div>
+          <div class="col-md-12">
+            <p>
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              &nbsp;&nbsp;<a href="/calendar.html">View Full Calendar</a>
+            </p>
+          </div>
+        </div>
       {% else %}
         {% for item_seminar in upcoming limit: 2 %}
           <div class = "row">
@@ -106,19 +117,18 @@ title_secondary: "HCI & Design at the University of Washington"
             </div>
           </div>
         {% endfor %}
-      </div>
-      {% endif %}
-      <div class = "row">
-        <div class="col-md-12"><hr /></div>
-        <div class="col-md-2"></div>
-        <div class="col-md-10">
-          <p>
-            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-            &emsp;
-            <a href="/calendar.html">View Full Calendar</a>
-          </p>
+        <div class = "row">
+          <div class="col-md-12"><hr /></div>
+          <div class="col-md-2"></div>
+          <div class="col-md-10">
+            <p>
+              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              &emsp;
+              <a href="/calendar.html">View Full Calendar</a>
+            </p>
+          </div>
         </div>
-      </div>
+      {% endif %}
     </section>
   </div>
   <div class="col-md-4">
