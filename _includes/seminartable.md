@@ -9,8 +9,14 @@
             <h4>
               {{ item_seminar.date | date: "%m/%d/%y"}}
             </h4>
-            {{ item_seminar.time }}
-            &nbsp;{{ item_seminar.location }}
+            <div class="pull-left">
+              {{ item_seminar.time }}&nbsp;
+            </div>
+            <div class="pull-left">
+              {{ item_seminar.location }}
+            </div>
+            <div class="clearfix">
+            </div>
           </div>
           <div class="col-md-10">
             <h4>
