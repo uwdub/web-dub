@@ -83,23 +83,19 @@ class TestSeminars(unittest.TestCase):
                     'Invalid tbd in {}'.format(seminar_path_current)
                 )
             else:
-                # It has one or more speakers, each of which has a name and affiliation
-                self.assertIn(
-                    'speakers',
-                    seminar,
-                    'No speakers in {}'.format(seminar_path_current)
-                )
-                for speaker_current in seminar['speakers']:
-                    self.assertIn(
-                        'name',
-                        speaker_current,
-                        'No name in {}'.format(seminar_path_current)
-                    )
-                    self.assertIn(
-                        'affiliation',
-                        speaker_current,
-                        'No affiliation in {}'.format(seminar_path_current)
-                    )
+                # It might have one or more speakers, each of which has a name and affiliation
+                if 'speakers' in seminar:
+                    for speaker_current in seminar['speakers']:
+                        self.assertIn(
+                            'name',
+                            speaker_current,
+                            'No name in {}'.format(seminar_path_current)
+                        )
+                        self.assertIn(
+                            'affiliation',
+                            speaker_current,
+                            'No affiliation in {}'.format(seminar_path_current)
+                        )
 
                 # It has a title
                 self.assertIn(
@@ -116,7 +112,7 @@ class TestSeminars(unittest.TestCase):
                 )
                 self.assertIn(
                     seminar['location'],
-                    ['TBD', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
+                    ['TBD', 'CSE 691 (Gates Commons)', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
                     'Invalid location in {}'.format(seminar_path_current)
                 )
 
