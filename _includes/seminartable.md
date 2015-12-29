@@ -9,8 +9,14 @@
             <h4>
               {{ item_seminar.date | date: "%m/%d/%y"}}
             </h4>
-            {{ item_seminar.time }}
-            &nbsp;{{ item_seminar.location }}
+            <div class="pull-left">
+              {{ item_seminar.time }}&nbsp;
+            </div>
+            <div class="pull-left">
+              {{ item_seminar.location }}
+            </div>
+            <div class="clearfix">
+            </div>
           </div>
           <div class="col-md-10">
             <h4>
@@ -19,12 +25,16 @@
               </a>
             </h4>
             {% for item_names in item_seminar.name %}
-                {% for item_name in item_names offset: 1 %}
-                  {{ item_name }}
-                {% endfor %}
+              {% for item_name in item_names offset: 1 %}
+                {{ item_name }}
+              {% endfor %}
+              {% if forloop.last %}
                 {{ item_names[0] }}
-                <br />
+              {% else %}
+                {{ item_names[0] | append:',' }}
+              {% endif %}
             {% endfor %}
+            <br />
             {{ item_seminar.affiliation }}
           </div>
           <div class="col-md-12">
