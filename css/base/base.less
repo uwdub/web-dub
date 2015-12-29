@@ -6,15 +6,19 @@
 // Variables we can set to style the base site.
 ////////////////////////////////////////////////////////////////////////////////
 
+// http://colorpalettes.net/color-palette-1447/
+@base-primary-color:                    #34113b;
+@base-hover-color:                      #572565;
+@base-link-color:                       #9657a6;
+
 @base-body-bg:                          #d3d3d3;
 @base-main-bg:                          #ffffff;
 
-@base-link-color:                       @base-navbar-bg;
-@base-link-hover-color:                 @base-navbar-hover;
+@base-link-hover-color:                 @base-link-color;
 
-@base-navbar-bg:                        #392952;
+@base-navbar-bg:                        @base-primary-color;
 @base-navbar-color:                     #ffffff;
-@base-navbar-hover:                     #615475;
+@base-navbar-hover:                     @base-hover-color;
 
 @base-navbar-link-color:                @base-navbar-color;
 @base-navbar-link-hover-color:          @base-navbar-color;
