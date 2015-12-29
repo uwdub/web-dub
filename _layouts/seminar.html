@@ -12,62 +12,71 @@
 {% assign item_seminar = page %}
 
 <!-- Main -->
-<div class="container" id="main">
+<div class="container" id="base-main">
     <!-- Bar -->
     <div class="row" id="bar">
         <div class="col-md-6" id="bar-primary">
-            <h1>
-                Seminar
-            </h1>
+            <h1>Seminar</h1>
         </div>
         <div class="col-md-6" id="bar-secondary">
+            <p>HCI & Design at the University of Washington</p>
         </div>
     </div>
     <!-- Bar End -->
 
-    <!-- Content -->
-    <div id="content">
-        <div class="row">
-            <div class="col-md-2">
-                <h4>Date</h4>
-                {{ item_seminar.date | date: '%B %d, %Y'}}
-                <h4>Time</h4>
-                {{ item_seminar.time }}
-                <h4>Location</h4>
-                {{ item_seminar.location }}
-            </div>
-            <div class="col-md-10">
-                <h4>Title</h4>
-                {{ item_seminar.title }}
-                <h4>Speaker</h4>
-                {% for item_names in item_seminar.name %}
-                    {% for item_name in item_names offset: 1 %}
-                        {{ item_name }}
+    <div class="row base-content">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <a href="/calendar.html" class="list-group-item">Upcoming Seminars</a>
+                    <a href="/previousseminars.html" class="list-group-item">Previous Seminars</a>
+                </div>
+                <div class="col-md-6 col-md-pull-2">
+                    <h4>Title</h4>
+                    {{ item_seminar.title }}
+                    {% if item_seminar.name.size > 1 %}
+                        <h4>Speakers</h4>
+                    {% else %}
+                        <h4>Speaker</h4>
+                    {% endif %}
+                    {% for item_names in item_seminar.name %}
+                        {% for item_name in item_names offset: 1 %}
+                            {{ item_name }}
+                        {% endfor %}
+                        {% if forloop.last %}
+                            {{ item_names[0] }}
+                        {% else %}
+                            {{ item_names[0] | append:',' }}
+                        {% endif %}
                     {% endfor %}
-                    {{ item_names[0] }}
-                    <br />
-                {% endfor %}
-                <h4>Affiliation</h4>
-                {{ item_seminar.affiliation }}
-                <h4>Abstract</h4>
-                {{ item_seminar.abstract }}
-                <h4>Bio</h4>
-                {{ item_seminar.bio }}
-                {% assign video_id = item_seminar.video %}
-                {% assign video_size = video_id.size %}
-                {% if video_size > 0 %}
-                    <h4>Video</h4>
-                    {% vimeo video_id %}
-                {% endif %}
+                    <h4>Affiliation</h4>
+                    {{ item_seminar.affiliation }}
+                </div>
+                <div class="col-md-2 col-md-pull-10">
+                    <h4>Date</h4>
+                    {{ item_seminar.date | date: '%b %d, %Y'}}
+                    <h4>Time</h4>
+                    {{ item_seminar.time }}
+                    <h4>Location</h4>
+                    {{ item_seminar.location }}
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                {{ content }}
+            <div class="row">
+                <div class="col-md-6 col-md-push-2">
+                    <h4>Abstract</h4>
+                    {{ item_seminar.abstract }}
+                    <h4>Bio</h4>
+                    {{ item_seminar.bio }}
+                    {% assign video_id = item_seminar.video %}
+                    {% assign video_size = video_id.size %}
+                    {% if video_size > 0 %}
+                        <h4>Video</h4>
+                        {% vimeo video_id %}
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
-    <!-- Content End -->
 </div>
 <!-- Main End -->
 
