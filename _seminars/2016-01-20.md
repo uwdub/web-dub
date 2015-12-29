@@ -55,7 +55,7 @@ speakers:
 ################################################################################
 title:    "Talk Title: In Quotes Because : Is a Reserved Character in YAML"
 
-location: HUB 145
+location: TBD
 
 abstract: >
   Abstract can span multiple lines of text. But try not to have spaces at the end of a line,

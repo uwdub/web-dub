@@ -10,11 +10,13 @@ title_secondary: "HCI & Design at the University of Washington"
 <div class="sidebar_end"></div>
 
 # Previous DUB Seminars
+{% include seminartable.md seminars="previous" %}
+
 {% assign currentDate = site.time %}
 {% assign previous = site.seminars | seminar_previous: currentDate %}
 {% if previous == empty %}
   <br />
   No previous seminars.
 {% else %}
-  {% include seminartableprevious.md seminars = previous %}
+  {% include seminartable.md seminars = previous %}
 {% endif %}

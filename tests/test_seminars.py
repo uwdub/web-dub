@@ -112,7 +112,7 @@ class TestSeminars(unittest.TestCase):
                 )
                 self.assertIn(
                     seminar['location'],
-                    ['TBD', 'CSE 691 (Gates Commons)', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
+                    ['TBD', 'CSE 691', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
                     'Invalid location in {}'.format(seminar_path_current)
                 )
 
