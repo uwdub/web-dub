@@ -12,6 +12,8 @@ def update_dependencies():
     # Python dependencies
     print('Updating Python dependencies')
 
+    # TODO verify python version
+
     # Ensure we have a current version of pip, as needed by pip-tools
     # TODO check version that is installed
     result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
