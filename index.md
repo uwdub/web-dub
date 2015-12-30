@@ -15,6 +15,7 @@ title_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -23,7 +24,7 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <h2>Design.</h2>
-            <p>Design is becoming increasingly recognized as an important aspect of technology.</p>
+            <p>Technologists use design thinking to improve on the form and function of future and existing products.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
@@ -31,7 +32,7 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
             <h2>Use.</h2>
-            <p>Students and faculty work on research to make technology and products more usable.</p>
+            <p>DUB members involved in usability research and design aim to create better user experiences for technology.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
@@ -39,15 +40,23 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
             <h2>Build.</h2>
-            <p>Students get hands-on experience prototyping and building products in class and in labs.</p>
+            <p>Hands-on prototyping and product development takes places in labs and classrooms across campus.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
         <div class="item">
-          <img src="{{ site.baseurl }}/images/slide_dub.jpg" alt="dub">
+          <img src="{{ site.baseurl }}/images/slide_research.jpg" alt="research">
           <div class="carousel-caption">
-            <h2>DUB</h2>
-            <p>DUB is a community that comes together to share ideas about human-computer interaction and design.</p>
+            <h2>Research</h2>
+            <p>Students, faculty and industry collaborators work together on world-class research at UW.</p>
+            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{ site.baseurl }}/images/slide_education.jpg" alt="education">
+          <div class="carousel-caption">
+            <h2>Education</h2>
+            <p>Students regularly participate in discussions about HCI with UW faculty and peers.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
