@@ -1,5 +1,6 @@
 ---
 layout: base/bar
+base-bar-sidebar-right-js: true
 ---
 {% capture content_remainder %}
   {{ content }}
@@ -23,28 +24,35 @@ layout: base/bar
   {{ split_end[1] | join: '' }}
 {% endcapture %}
 
-<div class="row base-content">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-12">
+<div class="base-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="base-sidebar-right-top">
             {{ content_top }}
           </div>
         </div>
-        <div class="row hidden-xs hidden-sm">
-          <div class="col-md-12">
-            {{ content_remainder }}
+      </div>
+      <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+          <div id="base-sidebar-right-remainder-tucked">
+            <div id="base-sidebar-right-remainder-content">
+              {{ content_remainder }}
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <div id="base-sidebar-right-sidebar">
         {{ content_sidebar }}
       </div>
     </div>
-    <div class="row hidden-md hidden-lg">
-      <div class="col-md-12">
-        {{ content_remainder }}
+  </div>
+  <div class="row hidden-md hidden-lg">
+    <div class="col-md-12">
+      <div id="base-sidebar-right-remainder-bottom">
       </div>
     </div>
   </div>
