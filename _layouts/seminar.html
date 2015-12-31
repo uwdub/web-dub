@@ -31,47 +31,58 @@
                     <a href="/calendar.html" class="list-group-item">Upcoming Seminars</a>
                     <a href="/previousseminars.html" class="list-group-item">Previous Seminars</a>
                 </div>
-                <div class="col-md-6 col-md-pull-2">
-                    <h4>Title</h4>
-                    {{ item_seminar.title }}
-                    {% if item_seminar.name.size > 1 %}
-                        <h4>Speakers</h4>
-                    {% else %}
-                        <h4>Speaker</h4>
-                    {% endif %}
-                    {% for item_names in item_seminar.name %}
-                        {% for item_name in item_names offset: 1 %}
-                            {{ item_name }}
-                        {% endfor %}
-                        {% if forloop.last %}
-                            {{ item_names[0] }}
-                        {% else %}
-                            {{ item_names[0] | append:',' }}
-                        {% endif %}
-                    {% endfor %}
-                    <h4>Affiliation</h4>
-                    {{ item_seminar.affiliation }}
-                </div>
-                <div class="col-md-2 col-md-pull-10">
-                    <h4>Date</h4>
+                <div class="col-md-2 col-md-pull-4">
+                    <h3>Date</h3>
                     {{ item_seminar.date | date: '%b %d, %Y'}}
-                    <h4>Time</h4>
+                    <h3>Time</h3>
                     {{ item_seminar.time }}
-                    <h4>Location</h4>
+                    <h3>Location</h3>
                     {{ item_seminar.location }}
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-md-push-2">
-                    <h4>Abstract</h4>
+                <div class="col-md-6 col-md-pull-4">
+                    <h3>Title</h3>
+                    {{ item_seminar.title }}
+                    {% if item_seminar.speakers.size > 1 %}
+                        <h3>Speakers</h3>
+                    {% else %}
+                        <h3>Speaker</h3>
+                    {% endif %}
+                    {% if item_seminar.speakers.size > 0 %}
+                        {% assign item_affiliations = '' | split: ',' %}
+                        {% for item_speaker in item_seminar.speakers %}
+                            {% assign item_affiliations = item_affiliations | push: item_speaker.affiliation | uniq %}
+                        {% endfor %}
+                    {% endif %}
+                    {% for item_affiliation in item_affiliations %}
+                        {% assign item_affiliation_names = '' | split: ' ' %}
+                        {% for item_speaker in item_seminar.speakers %}
+                            {% if item_speaker.affiliation == item_affiliation %}
+                                {% assign item_full_name = '' %}
+                                {% for item_name in item_speaker.name offset: 1 %}
+                                    {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
+                                    {% if forloop.last %}
+                                        {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
+                                    {% endif %}
+                                {% endfor %}
+                                {% assign item_affiliation_names = item_affiliation_names | push: item_full_name %}
+                            {% endif %}
+                        {% endfor %}
+                        <div>
+                            {{ item_affiliation_names | join: ', ' }}
+                        </div>
+                        <div class="text-muted">
+                            {{ item_affiliation }}
+                        </div>
+                    {% endfor %}
+                    <h3>Abstract</h3>
                     {{ item_seminar.abstract }}
-                    <h4>Bio</h4>
+                    <h3>Bio</h3>
                     {{ item_seminar.bio }}
                     {% assign video_id = item_seminar.video %}
                     {% assign video_size = video_id.size %}
                     {% if video_size > 0 %}
-                        <h4>Video</h4>
-                        {% vimeo video_id %}
+                    <h3>Video</h3>
+                    {% vimeo video_id %}
                     {% endif %}
                 </div>
             </div>
