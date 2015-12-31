@@ -5,9 +5,21 @@ title_secondary: "HCI & Design at the University of Washington"
 ---
 
 <div class="sidebar_start"></div>
-  <a href="#" class="list-group-item active">Upcoming Seminars</a>
-  <a href="/previousseminars.html" class="list-group-item">Previous Seminars</a>
+
+<ul id="seminar-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
+  <li class="active"><a href="#tab_seminars_upcoming" data-toggle="tab">Upcoming Seminars</a></li>
+  <li><a href="#tab_seminars_previous" data-toggle="tab">Previous Seminars</a></li>
+</ul>
+
 <div class="sidebar_end"></div>
 
+<div id="seminar-tabs-content" class="tab-content">
+  <div class="tab-pane active" id="tab_seminars_upcoming" markdown="block">
 # Upcoming DUB Seminars
 {% include seminartable.md seminars="upcoming" %}
+  </div>
+  <div class="tab-pane" id="tab_seminars_previous" markdown="block">
+# Previous DUB Seminars
+{% include seminartable.md seminars="previous" %}
+  </div>
+</div>
