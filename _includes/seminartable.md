@@ -36,15 +36,31 @@
               </a>
             </h4>
           </div>
-          {% for item_speaker in item_publish_speakers %}
+          {% assign item_affiliations = '' | split: ',' %}
+          {% if item_publish_speakers && item_publish_speakers.size > 0 %}
+            {% for item_speaker in item_publish_speakers %}
+              {% assign item_affiliations = item_affiliations | push: item_speaker.affiliation | uniq %}
+            {% endfor %}
+          {% endif %}
+          {% for item_affiliation in item_affiliations %}
+            {% assign item_affiliation_names = '' | split: ' ' %}
+            {% for item_speaker in item_publish_speakers %}
+              {% if item_speaker.affiliation == item_affiliation %}
+                {% assign item_full_name = '' %}
+                {% for item_name in item_speaker.name offset: 1 %}
+                  {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
+                  {% if forloop.last %}
+                    {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
+                  {% endif %}
+                {% endfor %}
+                {% assign item_affiliation_names = item_affiliation_names | push: item_full_name %}
+              {% endif %}
+            {% endfor %}
             <div class="col-xs-12">
-              {% for item_name in item_speaker.name offset:1 %}
-                {{ item_name }}
-              {% endfor %}
-              {{ item_speaker.name[0] }}
+              {{ item_affiliation_names | join: ', ' }}
             </div>
-            <div class="col-xs-12">
-              {{ item_speaker.affiliation }}
+            <div class="text-muted col-xs-12">
+              {{ item_affiliation }}
             </div>
           {% endfor %}
         </div>
