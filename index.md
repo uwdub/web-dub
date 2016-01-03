@@ -106,23 +106,26 @@ title_secondary: "HCI & Design at the University of Washington"
       {% else %}
         {% for item_seminar in upcoming limit: 2 %}
           <div class = "row">
-            <div class="col-md-2">
-              {{ item_seminar.date | date: "%b" | upcase }}
-              {{ item_seminar.date | date: "%-d"}}
+            <div class="col-md-2 text-center xs-left">
+              <strong>
+                {{ item_seminar.date | date: "%b" | upcase }}
+                {{ item_seminar.date | date: "%-d" }}
+              </strong>
             </div>
             <div class="col-md-10">
-              <p>
-                <a href="{{ item_seminar.url }}">
-                  {{ item_seminar.title }}
-                </a>
-              </p>
-              <p>
+              <div>
                 <strong>
-                  {{ item_seminar.time }}
-                  &emsp;&emsp;
-                  {{ item_seminar.location }}
+                  <a href="{{ item_seminar.url }}">
+                    {{ item_seminar.title }}
+                  </a>
                 </strong>
-              </p>
+              </div>
+              <div>
+                {{ item_seminar.time }}
+                &nbsp;
+                {{ item_seminar.location }}
+              </div>
+              <br />
             </div>
           </div>
         {% endfor %}
