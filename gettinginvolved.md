@@ -5,27 +5,29 @@ title_secondary: "HCI & Design at the University of Washington"
 ---
 
 <div class="sidebar_start"></div>
-  <a href="#mailing-list" class="list-group-item">Mailing List</a>
-  <a href="#seminar" class="list-group-item">DUB Seminar</a>
-  <a href="#prospective" class="list-group-item">Prospective Students</a> 
+  <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
+    <li class="active"><a href="#mailing_list" data-toggle="tab">Mailing List</a></li>
+    <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
+    <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
+  </ul>
 <div class="sidebar_end"></div>
 
 <div class="top_start"></div>
 `undergrads? industry sponsors? in general who to contact?`
 <div class="top_end"></div>
 
-<div id="mailing-list" markdown="1">
------------------
+<div id="seminar-tabs-content" class="tab-content">
+<div class="tab-pane active" id="mailing_list" markdown="block">
 
 # Mailing List
------------------
+
 The DUB mailing list is for students, faculty and industry partners with an interest in HCI/Design 
 and an affiliation to the University of Washington.
 
 To participate, please subscribe to **both**:
 
 #### The "everyone" list:
-- Subscribe to [dub](http://dub.washington.edu/mailman/listinfo/dub)... General announcements and information relating to dub.
+- Subscribe to [dub](http://dub.washington.edu/mailman/listinfo/dub)... General announcements and information relating to DUB.
 
     *Note: You may only subscribe to this list with a valid UW or CSE email address.*
 
@@ -39,27 +41,26 @@ Questions? Email `point of contact tbd`.
 
 </div>
 
-<div id="seminar" markdown="1">
------------------
+<div class="tab-pane" id="seminar" markdown="block">
+# DUB Seminars
 
-# DUB Seminar
------------------
 The weekly DUB seminar features talks from visiting researchers, industries, and our own DUB researchers.
 Members of DUB are all welcome and encouraged to attend the weekly DUB seminar. In addition, the seminar can be 
 taken for credit as CSE 590J or HCDE 523.
 
-Video recordings of the dub seminars are regularly uploaded onto the 
+Take a look at the <a href="/calendar.html#tab_upcoming_seminars">DUB Calendar</a> to see which upcoming seminars have been scheduled. 
+You can also peruse the <a href="/calendar.html#tab_previous_seminars">archive</a> of previous seminars.
+
+Video recordings of the DUB seminars are regularly uploaded onto the 
 [DesignUseBuild Vimeo channel](https://vimeo.com/designusebuild). 
 If you can't make it to the seminar, be sure to check out and subscribe to the channel to keep up with the latest 
 research in human-computer interaction and design.
 
 </div>
 
-<div id="prospective" markdown="1">
------------------
-
+<div class="tab-pane" id="prospective" markdown="block">
 # Prospective Students
------------------
+
 DUB is not an academic department, but we do have our own degree program (MHCI+D) that is jointly offered by the 
 four primary DUB departments (CSE, Design, HCDE, and the iSchool).
 
@@ -105,4 +106,5 @@ as well as related programs in other DUB units:
 - iSchool: [Master of Science in Information Management (MSIM)](https://ischool.uw.edu/future/msim)
 - BHI: [Master of Science in Biomedical & Health Informatics (MS BHI)](http://www.bhi.washington.edu/welcomestudents)
 
+</div>
 </div>
