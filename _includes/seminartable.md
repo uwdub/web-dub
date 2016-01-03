@@ -64,7 +64,7 @@
             </div>
           {% endfor %}
         </div>
-        <div class="col-md-12">
+        <div class="col-xs-12">
           <hr />
         </div>
       {% endfor %}
