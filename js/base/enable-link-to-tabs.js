@@ -9,6 +9,12 @@ $(function() {
     $('.nav-pills a[href='+hash.replace(prefix,"")+']').tab('show');
   }
 
+  // If we link to a hash within our page
+  $(window).on('hashchange', function(e) {
+    $('.nav-tabs a[href='+ window.location.hash.replace(prefix,"")+']').tab('show');
+    $('.nav-pills a[href='+ window.location.hash.replace(prefix,"")+']').tab('show');
+  });
+
   // Change hash for page-reload
   $('.nav-tabs a').on('shown.bs.tab', function (e) {
     window.location.hash = e.target.hash.replace("#", "#" + prefix);
