@@ -21,9 +21,9 @@ Primary activities of the DUB group include:
 
 - A weekly lunch speaker seminar, on Wednesdays from 12:00-1:30. 
 
-  [The DUB mailing lists](/mailinglists.html) are used for seminar announcements.
+  [The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists) are used for seminar announcements.
   
-  [The DUB calendar](/calendar.html) presents upcoming speakers, topics, and locations.
+  [The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
 - An annual retreat for faculty, research-active students, and industry partners.
 - An annual reception at the CHI conference, promoting broader visibility of the DUB community.
 
@@ -35,7 +35,7 @@ Members of DUB come from many University of Washington departments. The historic
 - [The Information School](http://ischool.uw.edu)
 
 DUB and these departments also collaborate in leadership of, and enjoy broad participation from, 
-the [Master of Human-Computer Interaction & Design (MHCI+D)](http://mhcid.washington.edu) program.
+the [Master of Human-Computer Interaction + Design (MHCI+D)](http://mhcid.washington.edu) program.
 This brings together together DUB's cross-campus perspectives in Human Computer Interaction & Design education.
 
 DUB welcomes participation from across the University of Washington. Additional participation includes:
@@ -46,7 +46,7 @@ DUB welcomes participation from across the University of Washington. Additional 
 - [DXARTS Digital Arts](http://dxarts.washington.edu)
 - [Electrical Engineering](http://www.ee.washington.edu/) 
 - [Industrial & Systems Engineering](http://depts.washington.edu/ie/)
-- [Mechanical Engineering](https://www.me.washington.edu/)
+- [Mechanical Engineering](http://www.me.washington.edu/)
 - [Psychology](http://www.psych.uw.edu/)
  
 Industry research partners include Adobe, FXPAL, Google, Intel, Microsoft, and others.

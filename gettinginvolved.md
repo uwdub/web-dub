@@ -6,105 +6,151 @@ title_secondary: "HCI & Design at the University of Washington"
 
 <div class="sidebar_start"></div>
   <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
-    <li class="active"><a href="#mailing_list" data-toggle="tab">Mailing List</a></li>
+    <li class="active"><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
     <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
     <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
   </ul>
 <div class="sidebar_end"></div>
 
-<div class="top_start"></div>
-`undergrads? industry sponsors? in general who to contact?`
-<div class="top_end"></div>
+<!----------------------------------------------------------------------------->
 
 <div id="seminar-tabs-content" class="tab-content">
-<div class="tab-pane active" id="mailing_list" markdown="block">
+<div class="tab-pane active" id="mailing_lists" markdown="block">
 
-# Mailing List
+# Mailing Lists
 
-The DUB mailing list is for students, faculty and industry partners with an interest in HCI/Design 
-and an affiliation to the University of Washington.
+The DUB mailing lists are the primary channel for DUB announcements.
+They are for faculty, students, researchers, and industry partners with an interest in
+Human Computer Interaction & Design at the University of Washington.
 
-To participate, please subscribe to **both**:
+We prefer you subscribe using your official email address (i.e., not a personal email).
+University of Washington addresses are approved most quickly,
+and posting is similarly restricted.
 
-#### The "everyone" list:
-- Subscribe to [dub](http://dub.washington.edu/mailman/listinfo/dub)... General announcements and information relating to DUB.
+## DUB mailing list
 
-    *Note: You may only subscribe to this list with a valid UW or CSE email address.*
+<html>
+<div class="row">
+<div class="col-md-4" markdown="block">
+[Subscribe to dub]({{ site.baseurl }}/mailman/listinfo/dub)
+</div>
+<div class="col-md-8" markdown="block">
+General DUB-related announcements and information.
+</div>
+</div>
+</html>
 
-#### ... And one of the following specific to you:
-- Subscribe to [dub-students](http://dub.washington.edu/mailman/listinfo/dub-students)... Student discussions
-- Subscribe to [dub-faculty](http://dub.washington.edu/mailman/listinfo/dub-faculty)... Faculty discussions
-- Subscribe to [dub-industry](http://dub.washington.edu/mailman/listinfo/dub-industry)... Industrial participant discussions
-- Subscribe to [dub-alumni](http://dub.washington.edu/mailman/listinfo/dub-alumni)... Alumni discussions
+## Additional DUB mailing lists
 
-Questions? Email `point of contact tbd`.
+In addition to joining the main list, join any additional appropriate lists.
+
+<html>
+<div class="row">
+<div class="col-md-4" markdown="block">
+[Subscribe to dub-faculty]({{ site.baseurl }}/mailman/listinfo/dub-faculty)
+</div>
+<div class="col-md-8" markdown="block">
+Faculty-specific DUB-related announcements and information.
+</div>
+</div>
+</html>
+
+<html>
+<div class="row">
+<div class="col-md-4" markdown="block">
+[Subscribe to dub-students]({{ site.baseurl }}/mailman/listinfo/dub-students)
+</div>
+<div class="col-md-8" markdown="block">
+Student-specific DUB-related announcements and information.
+</div>
+</div>
+</html>
 
 </div>
+
+<!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="seminar" markdown="block">
 # DUB Seminars
 
-The weekly DUB seminar features talks from visiting researchers, industries, and our own DUB researchers.
-Members of DUB are all welcome and encouraged to attend the weekly DUB seminar. In addition, the seminar can be 
-taken for credit as CSE 590J or HCDE 523.
+The weekly DUB seminar is the primary gathering point for the DUB community.
+The seminar features talks from researchers, practitioners, and our own DUB community.
+All members of the DUB community are welcome and encouraged to attend the weekly DUB seminar.
+Seminars during the academic year often attract 80 to 100 people, beginning with socializing and then the talk.
 
-Take a look at the <a href="/calendar.html#tab_upcoming_seminars">DUB Calendar</a> to see which upcoming seminars have been scheduled. 
-You can also peruse the <a href="/calendar.html#tab_previous_seminars">archive</a> of previous seminars.
+[The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists) are used for seminar announcements.
 
-Video recordings of the DUB seminars are regularly uploaded onto the 
-[DesignUseBuild Vimeo channel](https://vimeo.com/designusebuild). 
-If you can't make it to the seminar, be sure to check out and subscribe to the channel to keep up with the latest 
-research in human-computer interaction and design.
+[The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
+
+Videos of DUB seminar talks are posted to [the DUB calendar]({{ site.baseurl }}/calendar.html)
+and [the DUB Vimeo channel](http://vimeo.com/designusebuild), with speaker permission.
+
+The seminar can also be taken for credit.
 
 </div>
+
+<!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="prospective" markdown="block">
 # Prospective Students
 
-DUB is not an academic department, but we do have our own degree program (MHCI+D) that is jointly offered by the 
-four primary DUB departments (CSE, Design, HCDE, and the iSchool).
+DUB is not an academic department, so prospective students join DUB by joining a department or program that
+participates in the University of Washington's Human Computer Interaction & Design community.
 
-In addition, students can participate in DUB from any department at the University of Washington, after they 
-have been accepted into one of the participating graduate degree programs.
+## Doctoral Programs
 
-#### Ph.D. Programs
-
-Ph.D. students involved in DUB come from a variety of degree programs across the University of Washington campus.
-Students must apply and be accepted to one of the individual DUB departments. Students do, however, work 
-with faculty from across the many units involved in DUB; it is common to see joint advising by faculty 
-members in more than one department, and thesis committees often comprise members from multiple units. 
-We also see many collaborative student research projects across units and jointly co-authored papers.
+Doctoral students involved in DUB come from a variety of programs across the University of Washington.
+Students must apply and be accepted to one of the individual DUB departments.
+However, it is common to see students working with faculty from across the units involved in DUB,
+common to see joint advising by faculty in multiple departments,
+and common to see thesis committees comprising faculty from multiple departments.
+There are also many collaborative student research projects across departments.
 
 Please see the individual pages for each of the associated Ph.D. programs:
 
 - [Computer Science & Engineering](http://www.cs.washington.edu/prospective_students/grad)
 - [Human Centered Design & Engineering](http://www.hcde.washington.edu/phd)
-- [The Information School](https://ischool.uw.edu/future/phd)
+- [The Information School](http://ischool.uw.edu/future/phd)
+
 - [Biomedical & Health Informatics](http://www.bhi.washington.edu/welcomestudents)
-- [Electrical Engineering](http://www.ee.washington.edu/academics/graduate/index.html)
+- [Communications](http://www.com.washington.edu/student-admissions/graduate-admissions-maphd)
 - [DXARTS Digital Arts](http://dxarts.washington.edu/dxarts-phd)
+- [Electrical Engineering](http://www.ee.washington.edu/academics/graduate)
+- [Industrial & Systems Engineering](http://depts.washington.edu/ie/prospective/phd)
+- [Mechanical Engineering](http://www.me.washington.edu/prospective/grad/admissions.html)
+- [Psychology](http://www.psych.uw.edu/psych.php?p=137)
 
-#### Master's Programs
+If you are unsure which program is the right fit for you, please talk directly with the departments.
 
-Four of the core departments involved in the DUB group (CSE, Design, HCDE, and the iSchool) identified a 
-need for a degree program that combined the diverse expertise of each of the core departments into a single 
-degree. The four departments came together and jointly designed, created, and sponsored a professional Master's 
-degree that focuses specifically on human-computer interaction and design. The result was the MHCI+D degree 
-mentioned above. The single year, full time, intensive degree program was launched in 2013 and is officially 
-hosted in the Graduate School. Faculty from the four core units teach in the program, and students take 
-electives directly from the four departments. The four departments also continue to offer their high quality, 
-individual graduate programs that go more in-depth in the specific fields. The demand is high for all of these 
-competitive, world-class programs.
+You can also apply to multiple programs. The important thing is to come join us!
 
-Below is information on the joint MHCI+D program and the individual degrees offered by the four core DUB units, 
-as well as related programs in other DUB units:
+## Master's Programs
 
-- DUB: [Master of Human-Computer Interaction + Design (MHCI+D)](http://mhcid.washington.edu)
-- CSE: [Master of Science in Computer Science & Engineering (MS CSE)](http://www.cs.washington.edu/prospective_students/pmp)
-- HCDE: [Master of Science in Human Centered Design & Engineering (MS HCDE)](http://www.hcde.washington.edu/ms)
-- Design: [Master of Design in Interaction Design (MDes)](http://art.washington.edu/design/graduate/overview/)
-- iSchool: [Master of Science in Information Management (MSIM)](https://ischool.uw.edu/future/msim)
-- BHI: [Master of Science in Biomedical & Health Informatics (MS BHI)](http://www.bhi.washington.edu/welcomestudents)
+DUB faculty collaborate in leadership of the
+[Master of Human-Computer Interaction + Design (MHCI+D)](http://mhcid.washington.edu) program.
+This brings together together DUB's cross-campus perspectives in Human Computer Interaction & Design education.
+
+Departments in the DUB community also continue to offer
+their high-quality graduate programs that go more in-depth in the specific fields.
+The demand is high for all of these competitive, world-class programs.
+
+- [Master of Human-Computer Interaction + Design](http://mhcid.washington.edu)
+
+- [Computer Science & Engineering](http://www.cs.washington.edu/prospective_students/pmp)
+- [The Division of Design](http://art.washington.edu/design/graduate/overview/)
+- [Human Centered Design & Engineering](http://www.hcde.washington.edu/ms)
+- [The Information School](http://ischool.uw.edu/future/msim)
+
+- [Architecture](http://arch.be.washington.edu/admissions)
+- [Biomedical & Health Informatics](http://www.bhi.washington.edu/welcomestudents)
+- [Communications](http://www.com.washington.edu/graduate-students)
+- [Electrical Engineering](http://www.ee.washington.edu/admissions/pmp)
+- [Industrial & Systems Engineering](http://depts.washington.edu/ie/degree-programs)
+- [Mechanical Engineering](http://www.me.washington.edu/prospective/grad/admissions.html)
+
+If you are unsure which program is the right fit for you, please talk directly with the departments.
+
+You can also apply to multiple programs. The important thing is to come join us!
 
 </div>
 </div>
