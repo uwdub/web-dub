@@ -14,8 +14,10 @@ title_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+{% comment %}        
         <li data-target="#carousel-example-generic" data-slide-to="3"></li>
         <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+{% endcomment %}        
       </ol>
 
       <!-- Wrapper for slides -->
@@ -24,7 +26,7 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <h2>Design.</h2>
-            <p>Technologists use design thinking to improve on the form and function of future and existing products.</p>
+            <p>Applying design thinking to improve the future.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
@@ -32,7 +34,7 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
             <h2>Use.</h2>
-            <p>DUB members involved in usability research and design aim to create better user experiences for technology.</p>
+            <p>Creating better user experiences with technology.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
@@ -40,10 +42,11 @@ title_secondary: "HCI & Design at the University of Washington"
           <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
             <h2>Build.</h2>
-            <p>Hands-on prototyping and product development takes places in labs and classrooms across campus.</p>
+            <p>Prototyping and developing new technologies.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
+{% comment %}        
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_research.jpg" alt="research">
           <div class="carousel-caption">
@@ -60,6 +63,7 @@ title_secondary: "HCI & Design at the University of Washington"
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
         </div>
+{% endcomment %}        
       </div>
 
       <!-- Controls -->
@@ -90,74 +94,49 @@ design, people, and technology.
   </div>
   <div class="col-md-4">
     <section>
-      <h2>Upcoming DUB Seminars</h2>
+      <h2>Upcoming Seminars</h2>
       {% assign currentDate = site.time %}
       {% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
-      {% if upcoming == empty %}
-        <div class = "row">
-          <div class="col-md-12">
-            No upcoming seminars have yet been scheduled.
+      {% for item_seminar in upcoming limit: 2 %}
+        <div class="row upcomingseminar">
+          <div class="col-xs-4">
+            <strong>{{ item_seminar.date | date: "%b %-d" | upcase }}</strong>
           </div>
-          <div class="col-md-12"><hr /></div>
-          <div class="col-md-12">
-            <p>
-              <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-              &nbsp;&nbsp;<a href="/calendar.html">View Full Calendar</a>
-            </p>
+          <div class="col-xs-8 text-right">
+            {{ item_seminar.location }}
+            {{ item_seminar.time }}
+          </div>
+          <div class="col-xs-12">
+            <strong><a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a></strong>
           </div>
         </div>
-      {% else %}
-        {% for item_seminar in upcoming limit: 2 %}
-          <div class = "row">
-            <div class="col-md-2 text-center xs-left">
-              <strong>
-                {{ item_seminar.date | date: "%b" | upcase }}
-                {{ item_seminar.date | date: "%-d" }}
-              </strong>
-            </div>
-            <div class="col-md-10">
-              <div>
-                <strong>
-                  <a href="{{ item_seminar.url }}">
-                    {{ item_seminar.title }}
-                  </a>
-                </strong>
-              </div>
-              <div>
-                {{ item_seminar.time }}
-                &nbsp;
-                {{ item_seminar.location }}
-              </div>
-              <br />
-            </div>
-          </div>
-        {% endfor %}
-        <div class = "row">
-          <div class="col-md-12"><hr /></div>
-          <div class="col-md-2"></div>
-          <div class="col-md-10">
+      {% endfor %}
+      <div class="row upcomingfullcalendar">
+        <div class="col-xs-12">
+          <hr />
+        </div>
+        <div class="col-xs-12 text-center">
             <p>
               <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
               &emsp;
-              <a href="/calendar.html">View Full Calendar</a>
+              <a href="{{ site.baseurl }}/calendar.html">View Full Calendar</a>
             </p>
-          </div>
         </div>
-      {% endif %}
+      </div>
     </section>
   </div>
   <div class="col-md-4">
     <section>
       <h2>Connect with DUB</h2>
       <p>Join us in one of the world's most vibrant communities for research and education addressing all aspects of Human Computer Interaction & Design.</p>
+      <a href="{{ site.baseurl }}/aboutdub.html">
+        <p><img src="{{ site.baseurl }}/images/connect_uw.png" class="connecticon" alt="u dub"><strong>Learn</strong> about DUB.</p>
+      </a>
       <a href="{{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists">
-        <p><img src="{{ site.baseurl }}/images/connect_email.png" class="connecticon" alt="e-mail"><strong>Join</strong> the DUB mailing list.</p>
+        <p><img src="{{ site.baseurl }}/images/connect_email.png" class="connecticon" alt="e-mail"><strong>Join</strong> the DUB mailing lists.</p>
       </a>
       <a href="http://twitter.com/#!/uwdub">
         <p><img src="{{ site.baseurl }}/images/connect_twitter.png" class="connecticon" alt="twitter"><strong>Follow</strong> us on Twitter.</p>
-      </a>
-      <a href="/gettinginvolved.html">
-        <p><img src="{{ site.baseurl }}/images/connect_uw.png" class="connecticon" alt="u dub"><strong>Learn</strong> how to get involved.</p>
       </a>
     </section>
   </div>
