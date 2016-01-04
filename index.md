@@ -78,12 +78,15 @@ title_secondary: "HCI & Design at the University of Washington"
 
 <!-- Footer -->
 <div class="row" id="footer">
-  <div class="col-md-4">
-    <section>
-      <h2>What is DUB?</h2>      
-      <p>The DUB group is a grassroots, opt-in alliance of faculty, students, researchers, and industry affiliates interested in human-computer interaction and design at the University of Washington.</p>
-      <p>The mission of DUB is to bring together an interdisciplinary set of people to discuss issues, share ideas, collaborate on research projects, and discuss teaching concerns related to the interaction between people and computers and major socio-technical phenomena surrounding them.</p>
-      </section>
+  <div class="col-md-4" markdown="block">
+## What is DUB?
+
+DUB is a grassroots alliance of faculty, students, researchers, and industry partners
+interested in Human Computer Interaction & Design research and education at the University of Washington.
+
+The mission of DUB is to bring together an interdisciplinary set of people to share ideas,
+collaborate on research, and discuss teaching related to the interaction between
+design, people, and technology.
   </div>
   <div class="col-md-4">
     <section>
