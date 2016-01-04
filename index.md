@@ -146,10 +146,16 @@ title_secondary: "HCI & Design at the University of Washington"
   <div class="col-md-4">
     <section>
       <h2>Connect with DUB</h2>
-      <p>Want to join one of the most vibrant HCI & Design communities in the world?</p>
-      <p><a href="/mailinglists.html"><img src="logos/E-mail.png" alt="e-mail"></a>&nbsp;&nbsp;<strong>Join</strong> the DUB mailing list.</p>
-      <p><a href="http://twitter.com/#!/uwdub"><img src="logos/Twitter.png" alt="twitter"></a>&nbsp;&nbsp;<strong>Follow</strong> us on Twitter.</p>
-      <p><a href="/gettinginvolved.html"><img src="logos/UW.png" alt="u dub"></a>&nbsp;&nbsp;<strong>Learn</strong> how to get involved.</p>
+      <p>Join us in one of the world's most vibrant communities for research and education addressing all aspects of Human Computer Interaction & Design.</p>
+      <a href="{{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists">
+        <p><img src="{{ site.baseurl }}/images/connect_email.png" class="connecticon" alt="e-mail"><strong>Join</strong> the DUB mailing list.</p>
+      </a>
+      <a href="http://twitter.com/#!/uwdub">
+        <p><img src="{{ site.baseurl }}/images/connect_twitter.png" class="connecticon" alt="twitter"><strong>Follow</strong> us on Twitter.</p>
+      </a>
+      <a href="/gettinginvolved.html">
+        <p><img src="{{ site.baseurl }}/images/connect_uw.png" class="connecticon" alt="u dub"><strong>Learn</strong> how to get involved.</p>
+      </a>
     </section>
   </div>
 </div>
