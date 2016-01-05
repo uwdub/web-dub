@@ -1,3 +1,0 @@
-# For now, we don't want people to pick this up, obviously remove this when we launch
-User-agent: *
-Disallow: /
