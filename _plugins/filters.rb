@@ -1,3 +1,5 @@
+require 'date'
+
 module Jekyll
   module PeopleFilter
     def person_has_role(people, tag)
@@ -6,16 +8,12 @@ module Jekyll
   end
 
   module SeminarFilter
-    def seminar_has_year(seminars, tag)
-      seminars.select { |seminar| item_property(seminar, "date.year").include? tag }
+    def seminar_upcoming(seminars, date)
+      seminars.select { |seminar| item_property(seminar, "date").to_date() >= date.to_date() }
     end
 
-    def seminar_upcoming(seminars, tag)
-      seminars.select { |seminar| item_property(seminar, "date") >= tag }
-    end
-
-    def seminar_previous(seminars, tag)
-      seminars.select { |seminar| item_property(seminar, "date") < tag }
+    def seminar_previous(seminars, date)
+      seminars.select { |seminar| item_property(seminar, "date").to_date() < date.to_date() }
     end
   end
 end
