@@ -97,8 +97,13 @@ design, people, and technology.
       <h2>Upcoming Seminars</h2>
       {% assign currentDate = site.time %}
       {% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
-      {% for item_seminar in upcoming limit: 2 %}
+      {% for item_seminar in upcoming limit: 3 %}
         <div class="row upcomingseminar">
+          {% if item_seminar.tbd %}
+              {% assign item_publish_title = "TBD" %}
+           {% else %}
+              {% assign item_publish_title = item_seminar.title %}
+           {% endif %}
           <div class="col-xs-4">
             <strong>{{ item_seminar.date | date: "%b %-d" | upcase }}</strong>
           </div>
@@ -107,7 +112,7 @@ design, people, and technology.
             {{ item_seminar.time }}
           </div>
           <div class="col-xs-12">
-            <strong><a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a></strong>
+            <strong><a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_publish_title }}</a></strong>
           </div>
         </div>
       {% endfor %}
