@@ -95,8 +95,7 @@ design, people, and technology.
   <div class="col-md-4">
     <section>
       <h2>Upcoming Seminars</h2>
-      {% assign currentDate = site.time %}
-      {% assign upcoming = site.seminars | seminar_upcoming: currentDate %}
+      {% assign upcoming = site.seminars | seminar_upcoming: site.time %}
       {% for item_seminar in upcoming limit: 3 %}
         <div class="row upcomingseminar">
           {% if item_seminar.tbd %}
