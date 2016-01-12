@@ -17,7 +17,12 @@ time_end: "1:20 PM"
 # A seminar file might exist but not yet be scheduled. This is 'TBD'. 
 # The only valid value is 'True'. The field should not be present if 'False'.
 ################################################################################
-tbd: True
+tbd_speakers:   True
+tbd_title:      True
+tbd_location:   True
+tbd_abstract:   True
+tbd_bio:        True
+tbd_video:      True
 
 ################################################################################
 # One or more speakers. Each speaker has name and affiliation.
