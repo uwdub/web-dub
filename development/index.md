@@ -135,8 +135,8 @@ From the working directory of our project (e.g., `c:\devel\{{ page.working_direc
 
 To build the site:
     
-    invoke build
+    invoke build_test
 
 To build and serve the site on `localhost:4000`, continuously updating based on changes:
 
-    invoke serve
+    invoke serve_test
