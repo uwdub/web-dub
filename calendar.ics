@@ -1,0 +1,22 @@
+---
+---
+BEGIN:VCALENDAR
+PRODID:-//DUB//DUB Calendar 1.0//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:DUB Calendar
+X-WR-TIMEZONE:America/Los_Angeles
+X-WR-CALDESC:A calendar of DUB events.
+{% for item_seminar in site.seminars %}BEGIN:VEVENT
+UID:{{ item_seminar.date | date: "%Y%m%d" }}@dub.washington.edu
+LOCATION:{{ item_seminar.location }}
+SUMMARY:DUB Seminar{% unless item_seminar.tbd_title %}: {{ item_seminar.title }}{% endunless %}
+DTSTART:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time | convert_time }}
+DTEND:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time_end | convert_time }}
+DTSTAMP:{{ site.time | date: "%Y%m%d" }}T{{ site.time | date: "%H%M%S" }}
+DESCRIPTION:Go to {{ site.baseurl }}{{ item_seminar.url }} for more info.
+SEQUENCE:0
+END:VEVENT{% unless forloop.last %}
+{{}}{% endunless %}{% endfor %}
+END:VCALENDAR
