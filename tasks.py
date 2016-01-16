@@ -24,6 +24,8 @@ def update_dependencies():
     result = invoke.run('pip show pip-tools', encoding=sys.stdout.encoding, warn=True)
     invoke.run('pip install pip-tools==1.4.2', encoding=sys.stdout.encoding)
 
+    # pip-sync does not respect options in the requirements file, this ensure it only needs to delete
+    invoke.run('pip install -r requirements3.txt', encoding=sys.stdout.encoding)
     # Ensure we have exactly our dependencies
     invoke.run('pip-sync requirements3.txt', encoding=sys.stdout.encoding)
 
