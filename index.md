@@ -98,20 +98,38 @@ design, people, and technology.
       {% assign upcoming = site.seminars | seminar_upcoming: site.time %}
       {% for item_seminar in upcoming limit: 3 %}
         <div class="row upcomingseminar">
-          {% if item_seminar.tbd %}
-              {% assign item_publish_title = "TBD" %}
-           {% else %}
-              {% assign item_publish_title = item_seminar.title %}
-           {% endif %}
           <div class="col-xs-4">
             <strong>{{ item_seminar.date | date: "%b %-d" | upcase }}</strong>
           </div>
           <div class="col-xs-8 text-right">
-            {{ item_seminar.location }}
+            {% unless item_seminar.tbd_location %}
+              {{ item_seminar.location }}
+            {% endunless %}
             {{ item_seminar.time }}
           </div>
           <div class="col-xs-12">
-            <strong><a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_publish_title }}</a></strong>
+            <strong>
+            {% unless item_seminar.tbd_title %}
+              <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
+            {% elsif item_seminar.tbd_speakers %}
+              DUB Seminar: Speaker TBD
+            {% else %}
+              {% assign speaker_names = '' | split: ' ' %}
+              {% for item_speaker in item_seminar.speakers %}
+                {% assign item_full_name = '' %}
+                {% for item_name in item_speaker.name offset: 1 %}
+                  {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
+                  {% if forloop.last %}
+                    {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
+                  {% endif %}
+                {% endfor %}
+                {% assign speaker_names = speaker_names | push: item_full_name %}
+              {% endfor %}
+              {% assign speaker_names = speaker_names | join: ', ' %}
+              {% assign speaker_title = 'DUB Seminar: ' | append: speaker_names %}
+              {{ speaker_title }}
+            {% endunless %}
+            </strong>
           </div>
         </div>
       {% endfor %}

@@ -34,6 +34,13 @@
                     </ul>
                 </div>
                 <div class="col-md-2 col-md-pull-4">
+                    {% if item_seminar.tbd_title %}
+                        {% if item_seminar.tbd_speakers %}
+                            {% assign item_publish_title = "DUB Seminar: Speaker TBD" %}
+                        {% endif %}
+                    {% else %}
+                        {% assign item_publish_title = item_seminar.title %}
+                    {% endif %}
                     <div class="col-xs-12">
                         <h3>Date</h3>
                         {{ item_seminar.date | date: '%b %d, %Y'}}
@@ -43,36 +50,27 @@
                         {{ item_seminar.time }}
                     </div>
                     <div class="col-xs-12">
-                        <h3>Location</h3>
-                        {{ item_seminar.location }}
+                        {% unless item_seminar.tbd_location %}
+                            <h3>Location</h3>
+                            {{ item_seminar.location }}
+                        {% endunless %}
                     </div>
                 </div>
                 <div class="col-md-6 col-md-pull-4">
-                    {% if item_seminar.tbd %}
-                        {% assign item_publish_speakers = null %}
-                        {% assign item_publish_title = "TBD" %}
-                        {% assign item_publish_abstract = null %}
-                        {% assign item_publish_bio = null %}
-                        {% assign item_publish_video = null %}
-                    {% else %}
-                        {% assign item_publish_speakers = item_seminar.speakers %}
-                        {% assign item_publish_title = item_seminar.title %}
-                        {% assign item_publish_abstract = item_seminar.abstract %}
-                        {% assign item_publish_bio = item_seminar.bio %}
-                        {% assign item_publish_video = item_seminar.video %}
-                    {% endif %}
                     <div class="col-xs-12">
-                        <h3>Title</h3>
-                        {{ item_publish_title }}
+                        {% unless item_seminar.tbd_title %}
+                            <h3>Title</h3>
+                            {{ item_publish_title }}
+                        {% endunless %}
                     </div>
                     <div class="col-xs-12">
-                        {% if item_publish_speakers %}
-                            {% if item_publish_speakers.size > 1 %}
+                        {% unless item_seminar.tbd_speakers %}
+                            {% if item_seminar.speakers.size > 1 %}
                                 <h3>Speakers</h3>
                             {% else %}
                                 <h3>Speaker</h3>
                             {% endif %}
-                            {% if item_publish_speakers.size > 0 %}
+                            {% if item_seminar.speakers.size > 0 %}
                                 {% assign item_affiliations = '' | split: ',' %}
                                 {% for item_speaker in item_seminar.speakers %}
                                     {% assign item_affiliations = item_affiliations | push: item_speaker.affiliation | uniq %}
@@ -99,27 +97,27 @@
                                     {{ item_affiliation }}
                                 </div>
                             {% endfor %}
-                        {% endif %}
+                        {% endunless %}
                     </div>
                     <div class="col-xs-12">
-                        {% if item_publish_abstract.size > 0 %}
+                        {% unless item_seminar.tbd_abstract %}
                             <h3>Abstract</h3>
-                            {{ item_publish_abstract | markdownify }}
-                        {% endif %}
+                            {{ item_seminar.abstract | markdownify }}
+                        {% endunless %}
                     </div>
                     <div class="col-xs-12">
-                        {% if item_publish_bio.size > 0 %}
+                        {% unless item_seminar.tbd_bio %}
                             <h3>Bio</h3>
-                            {{ item_publish_bio | markdownify }}
-                        {% endif %}
+                            {{ item_seminar.bio | markdownify }}
+                        {% endunless %}
                     </div>
                     <div class="col-xs-12">
-                        {% if item_publish_video.size > 0 %}
+                        {% unless item_seminar.tbd_video %}
                             <h3>Video</h3>
                             <div class='embed-container'>
-                                {% vimeo item_publish_video %}
+                                {% vimeo item_seminar.video %}
                             </div>
-                        {% endif %}
+                        {% endunless %}
                     </div>
                 </div>
             </div>
