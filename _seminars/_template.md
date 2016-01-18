@@ -14,10 +14,15 @@ time:     "12:00 PM"
 time_end: "1:20 PM"
 
 ################################################################################
-# A seminar file might exist but not yet be scheduled. This is 'TBD'. 
-# The only valid value is 'True'. The field should not be present if 'False'.
+# A seminar file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
-tbd: True
+tbd_speakers:   True
+tbd_title:      True
+tbd_location:   True
+tbd_abstract:   True
+tbd_bio:        True
+tbd_video:      True
 
 ################################################################################
 # One or more speakers. Each speaker has name and affiliation.
@@ -29,37 +34,44 @@ tbd: True
 #     - Middle
 #     - More
 #     affiliation: Computer Science & Engineering 
+#   - name: 
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation: Information School 
+#   - name: 
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation: Carnegie Mellon University 
 ################################################################################
 speakers:
-  - name: 
-    - Surname
-    - First
-    - Middle
-    - More
-    affiliation: Computer Science & Engineering 
-  - name: 
-    - Surname
-    - First
-    - Middle
-    - More
-    affiliation: Information School 
-  - name: 
-    - Surname
-    - First
-    - Middle
-    - More
-    affiliation: Carnegie Mellon University 
 
 ################################################################################
 # Our core fields are title, location, abstract, bio.
+# title:      "Title in Quotes: Because Colons Cause Errors"
+# 
+# location:   "HUB 334"
+# 
+# abstract:   |
+#   An abstract can span multiple lines, and can do things across those lines,
+#   like going on for a while or being repetitive.
+# 
+# bio:        |
+#   An do not even get us started on how an abstract can be. Definitely can
+#   also span multiple lines like this.
 ################################################################################
-title:    "Talk Title: In Quotes Because : Is a Reserved Character in YAML"
+title:      "TBD"
 
-location: TBD
+location:   "TBD"
 
-abstract: |
-
-bio: |
+abstract:   |
+  TBD
+  
+bio:        |
+  TBD
 
 ################################################################################
 # A seminar may have a video. If so, provide the Vimeo video number.
@@ -68,5 +80,4 @@ bio: |
 #
 # If not, this field should not be present 
 ################################################################################
-video: 142303577
 ---
