@@ -75,65 +75,187 @@ class TestSeminars(unittest.TestCase):
                     'Date does not match filename in {}'.format(seminar_path_current)
                 )
 
-            # It might be tbd
-            if 'tbd' in seminar:
+            # The speaker may be tbd
+            if 'tbd_speakers' in seminar:
                 # If the field exists, its value must be True
                 self.assertTrue(
-                    seminar['tbd'],
-                    'Invalid tbd in {}'.format(seminar_path_current)
+                    seminar['tbd_speakers'],
+                    'Invalid tbd_speakers in {}'.format(seminar_path_current)
                 )
-            else:
-                # It might have one or more speakers, each of which has a name and affiliation
+                # Should be missing or have our template value
                 if 'speakers' in seminar:
-                    for speaker_current in seminar['speakers']:
-                        self.assertIn(
-                            'name',
-                            speaker_current,
-                            'No name in {}'.format(seminar_path_current)
-                        )
-                        self.assertIn(
-                            'affiliation',
-                            speaker_current,
-                            'No affiliation in {}'.format(seminar_path_current)
-                        )
+                    self.assertEqual(
+                        seminar['speakers'],
+                        None,
+                        'Inconsistent tbd_speakers and speakers in {}'.format(seminar_path_current)
+                    )
+            else:
+                # Speakers should exist
+                self.assertIn(
+                    'speakers',
+                    seminar,
+                    'Inconsistent tbd_speakers and speakers in {}'.format(seminar_path_current)
+                )
+                # Should not be our template value
+                self.assertNotEqual(
+                    seminar['speakers'],
+                    None,
+                    'Inconsistent tbd_speakers and speakers in {}'.format(seminar_path_current)
+                )
+                # One or more speakers, each of which has a name and affiliation
+                for speaker_current in seminar['speakers']:
+                    self.assertIn(
+                        'name',
+                        speaker_current,
+                        'Missing speakers name in {}'.format(seminar_path_current)
+                    )
+                    self.assertIn(
+                        'affiliation',
+                        speaker_current,
+                        'Missing speakers affiliation in {}'.format(seminar_path_current)
+                    )
 
-                # It has a title
+            # The title may be tbd
+            if 'tbd_title' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['tbd_title'],
+                    'Invalid tbd_title in {}'.format(seminar_path_current)
+                )
+                # Should be missing or have our template value
+                if 'title' in seminar:
+                    self.assertEqual(
+                        seminar['title'],
+                        'TBD',
+                        'Inconsistent tbd_title and title in {}'.format(seminar_path_current)
+                    )
+            else:
+                # Title should exist
                 self.assertIn(
                     'title',
                     seminar,
-                    'No title in {}'.format(seminar_path_current)
+                    'Inconsistent tbd_title and title in {}'.format(seminar_path_current)
+                )
+                # Should not be our template value
+                self.assertNotEqual(
+                    seminar['title'],
+                    'TBD',
+                    'Inconsistent tbd_title and title in {}'.format(seminar_path_current)
                 )
 
-                # It has a valid location
+            # The location may be tbd
+            if 'tbd_location' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['tbd_location'],
+                    'Invalid tbd_location in {}'.format(seminar_path_current)
+                )
+                # Should be missing or have our template value
+                if 'location' in seminar:
+                    self.assertEqual(
+                        seminar['location'],
+                        'TBD',
+                        'Inconsistent tbd_location and location in {}'.format(seminar_path_current)
+                    )
+            else:
+                # Location should exist
                 self.assertIn(
                     'location',
                     seminar,
-                    'No location in {}'.format(seminar_path_current)
+                    'Inconsistent tbd_location and location in {}'.format(seminar_path_current)
                 )
+                # Should not be our template value
+                self.assertNotEqual(
+                    seminar['location'],
+                    'TBD',
+                    'Inconsistent tbd_location and location in {}'.format(seminar_path_current)
+                )
+                # Should be a valid location
                 self.assertIn(
                     seminar['location'],
-                    ['TBD', 'CSE 691', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
+                    ['CSE 691', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
                     'Invalid location in {}'.format(seminar_path_current)
                 )
 
-                # It has an abstract
+            # The abstract may be tbd
+            if 'tbd_abstract' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['tbd_abstract'],
+                    'Invalid tbd_abstract in {}'.format(seminar_path_current)
+                )
+                # Should be missing or have our template value
+                if 'abstract' in seminar:
+                    self.assertEqual(
+                        seminar['abstract'],
+                        'TBD\n',
+                        'Inconsistent tbd_abstract and abstract in {}'.format(seminar_path_current)
+                    )
+            else:
+                # Abstract should exist
                 self.assertIn(
                     'abstract',
                     seminar,
-                    'No abstract in {}'.format(seminar_path_current)
+                    'Inconsistent tbd_abstract and abstract in {}'.format(seminar_path_current)
+                )
+                # Should not be our template value
+                self.assertNotEqual(
+                    seminar['abstract'],
+                    'TBD\n',
+                    'Inconsistent tbd_abstract and abstract in {}'.format(seminar_path_current)
                 )
 
-                # It has a bio
+            # The bio may be tbd
+            if 'tbd_bio' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['tbd_bio'],
+                    'Invalid tbd_bio in {}'.format(seminar_path_current)
+                )
+                # Should be missing or have our template value
+                if 'bio' in seminar:
+                    self.assertEqual(
+                        seminar['bio'],
+                        'TBD\n',
+                        'Inconsistent tbd_bio and bio in {}'.format(seminar_path_current)
+                    )
+            else:
+                # Bio should exist
                 self.assertIn(
                     'bio',
                     seminar,
-                    'No bio in {}'.format(seminar_path_current)
+                    'Inconsistent tbd_bio and bio in {}'.format(seminar_path_current)
+                )
+                # Should not be our template value
+                self.assertNotEqual(
+                    seminar['bio'],
+                    'TBD\n',
+                    'Inconsistent tbd_bio and bio in {}'.format(seminar_path_current)
                 )
 
-                # It might have a video field
-                if 'video' in seminar:
-                    self.assertEqual(
-                        type(seminar['video']),
-                        int,
-                        'Invalid video in {}'.format(seminar_path_current)
-                    )
+            # The video may be tbd
+            if 'tbd_video' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['tbd_video'],
+                    'Invalid tbd_video in {}'.format(seminar_path_current)
+                )
+                # Should be missing or have our template value
+                self.assertNotIn(
+                    'video',
+                    seminar,
+                    'Invalid video in {}'.format(seminar_path_current)
+                )
+            else:
+                # Video should exist
+                self.assertIn(
+                    'video',
+                    seminar,
+                    'Inconsistent tbd_video and video in {}'.format(seminar_path_current)
+                )
+                # It should be an integer
+                self.assertEqual(
+                    type(seminar['video']),
+                    int,
+                    'Invalid video in {}'.format(seminar_path_current)
+                )
