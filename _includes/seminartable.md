@@ -30,9 +30,9 @@
                 <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
               </h4>
             </div>
-          {% elsif item_seminar.tbd_speakers %}
+          {% else %}
             <div class="col-xs-12">
-              <h4 class="tableheading">DUB Seminar: Speaker TBD</h4>
+              <h4 class="tableheading">DUB Seminar</h4>
             </div>
           {% endunless %}
           {% unless item_seminar.tbd_speakers %}
