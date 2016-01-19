@@ -96,7 +96,7 @@ design, people, and technology.
     <section>
       <h2>Upcoming Seminars</h2>
       {% assign upcoming = site.seminars | seminar_upcoming: site.time %}
-      {% for item_seminar in upcoming limit: 3 %}
+      {% for item_seminar in upcoming limit: 2 %}
         <div class="row upcomingseminar">
           <div class="col-xs-4">
             <strong>{{ item_seminar.date | date: "%b %-d" | upcase }}</strong>
@@ -111,25 +111,25 @@ design, people, and technology.
             <strong>
             {% unless item_seminar.tbd_title %}
               <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
-            {% elsif item_seminar.tbd_speakers %}
-              DUB Seminar: Speaker TBD
             {% else %}
-              {% assign speaker_names = '' | split: ' ' %}
-              {% for item_speaker in item_seminar.speakers %}
-                {% assign item_full_name = '' %}
-                {% for item_name in item_speaker.name offset: 1 %}
-                  {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
-                  {% if forloop.last %}
-                    {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
-                  {% endif %}
-                {% endfor %}
-                {% assign speaker_names = speaker_names | push: item_full_name %}
-              {% endfor %}
-              {% assign speaker_names = speaker_names | join: ', ' %}
-              {% assign speaker_title = 'DUB Seminar: ' | append: speaker_names %}
-              {{ speaker_title }}
+              DUB Seminar
             {% endunless %}
             </strong>
+          </div>
+          <div class="col-xs-12">
+            {% assign speaker_names = '' | split: ' ' %}
+            {% for item_speaker in item_seminar.speakers %}
+              {% assign item_full_name = '' %}
+              {% for item_name in item_speaker.name offset: 1 %}
+                {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
+                {% if forloop.last %}
+                  {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
+                {% endif %}
+              {% endfor %}
+              {% assign speaker_names = speaker_names | push: item_full_name %}
+            {% endfor %}
+            {% assign speaker_names = speaker_names | join: ', ' %}
+            {{ speaker_names }}
           </div>
         </div>
       {% endfor %}
