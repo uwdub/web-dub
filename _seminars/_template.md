@@ -60,7 +60,7 @@ speakers:
 #   like going on for a while or being repetitive.
 # 
 # bio:        |
-#   An do not even get us started on how an abstract can be. Definitely can
+#   And do not even get us started on how a bio can be. Bio definitely can
 #   also span multiple lines like this.
 ################################################################################
 title:      "TBD"
