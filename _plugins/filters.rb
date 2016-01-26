@@ -1,4 +1,5 @@
 require 'date'
+require 'time'
 
 module Jekyll
   module PeopleFilter
@@ -16,7 +17,14 @@ module Jekyll
       seminars.select { |seminar| item_property(seminar, "date").to_date() < date.to_date() }
     end
   end
+
+  module TimeConverter
+    def convert_time(input_time)
+      Time.parse(input_time).strftime("%H%M%S")
+    end
+  end
 end
 
 Liquid::Template.register_filter(Jekyll::PeopleFilter)
 Liquid::Template.register_filter(Jekyll::SeminarFilter)
+Liquid::Template.register_filter(Jekyll::TimeConverter)
