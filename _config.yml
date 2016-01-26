@@ -28,10 +28,6 @@ collections:
 
 defaults:
   - scope:
-      type: people
-    values:
-      layout: person
-  - scope:
       type: seminars
     values:
       layout: seminar
