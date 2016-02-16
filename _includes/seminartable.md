@@ -14,18 +14,27 @@
               {{ item_seminar.date | date: "%m/%d/%y"}}
             </h4>
           </div>
-          <div class="col-xs-12">
-            {{ item_seminar.time }}&nbsp;
-          </div>
-          {% unless item_seminar.tbd_location %}
+          {% if include.seminars == "upcoming" %}
             <div class="col-xs-12">
-              {{ item_seminar.location }}
+              {{ item_seminar.time }}
             </div>
-          {% endunless %}
+            {% unless item_seminar.tbd_location %}
+              <div class="col-xs-12">
+                {{ item_seminar.location }}
+              </div>
+            {% endunless %}
+          {% elsif include.seminars == "previous" %}
+            <div class="col-md-12 hidden-xs hidden-sm">
+              {% unless item_seminar.tbd_video %}
+                {% assign vimeo_url = "https://vimeo.com/" | append: item_seminar.video %}
+                <a href="{{ vimeo_url }}" target="new">Video</a>
+              {% endunless %}
+            </div>
+          {% endif %}
         </div>
         <div class="col-md-9">
           {% unless item_seminar.tbd_title %}
-            <div class="col-xs-12">
+            <div class="col-md-11 col-xs-12">
               <h4 class="tableheading">            
                 <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
               </h4>
@@ -62,6 +71,12 @@
               </div>
             {% endfor %}
           {% endunless %}
+          <div class="col-xs-12 hidden-md hidden-lg">
+            {% unless item_seminar.tbd_video %}
+              {% assign vimeo_url = "https://vimeo.com/" | append: item_seminar.video %}
+              <a href="{{ vimeo_url }}" target="new">Video</a>
+            {% endunless %}
+          </div>
         </div>
         <div class="col-xs-12">
           <hr />
