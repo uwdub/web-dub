@@ -16,13 +16,12 @@
           </div>
           {% if include.seminars == "upcoming" %}
             <div class="col-xs-12">
+              {% unless item_seminar.tbd_location %}
+                {{ item_seminar.location }}
+                <br class="md-hidden"/>
+              {% endunless %}
               {{ item_seminar.time }}
             </div>
-            {% unless item_seminar.tbd_location %}
-              <div class="col-xs-12">
-                {{ item_seminar.location }}
-              </div>
-            {% endunless %}
           {% elsif include.seminars == "previous" %}
             <div class="col-md-12 hidden-xs hidden-sm">
               {% unless item_seminar.tbd_video %}
@@ -34,7 +33,7 @@
         </div>
         <div class="col-md-9">
           {% unless item_seminar.tbd_title %}
-            <div class="col-md-11 col-xs-12">
+            <div class="col-xs-12">
               <h4 class="tableheading">            
                 <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
               </h4>
