@@ -27,69 +27,68 @@
     margin-top: 20px;
 }
 
-// vertical-align the bottom buttons across the three columns
+// Carousel on Desktop
 @media (min-width: @screen-md-min)
 {
-    #footer
-    {
-        display: flex;
-        align-items: stretch;
+    .carousel-inner .item {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: initial;
+    }
+
+    .carousel-caption-title {
+        font-size: 50px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
     }
 
     .footer-panel
     {
-        display: flex;
-        align-items: stretch;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 
-    .footer-content
+    .carousel-control
     {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display: none;
+    }
+}
+
+// Carousel on mobile
+@media (max-width: @screen-sm-max)
+{
+    .carousel-caption-title {
+        font-size: 24px;
     }
 
-    .icon-bottom
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        flex-grow: 1;
-    }
-
-    .icon-bottom .col-xs-12
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .connect-text
-    {
-        align-self: flex-start;
-    }
-
-    .connect-link
-    {
-        display: flex;
-        align-items: stretch;
-        flex-grow: 1;
-    }
-
-    .connect-link-item
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .carousel-caption p {
+        font-size: 14px;
     }
 }
 
 // Icons on the front page
+
 .connecticon
 {
     margin-right: 10px;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.footer-panel h2
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .upcomingseminar
@@ -117,7 +116,7 @@
 }
 
 // Removes element for mobile
-@media (max-width: @screen-md-min)
+@media (max-width: @screen-sm-max)
 {
     .md-hidden
     {
