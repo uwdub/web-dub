@@ -26,7 +26,9 @@
             <div class="col-md-12 hidden-xs hidden-sm">
               {% unless item_seminar.tbd_video %}
                 {% assign vimeo_url = "https://vimeo.com/" | append: item_seminar.video %}
-                <a href="{{ vimeo_url }}" target="new">Video</a>
+                <a href="{{ vimeo_url }}" target="new">
+                  <img src="{{ site.baseurl }}/images/vimeo_icon.png" alt="vimeo" class="vimeo-icon">
+                </a>
               {% endunless %}
             </div>
           {% endif %}
