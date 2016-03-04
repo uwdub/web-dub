@@ -15,8 +15,14 @@ class TestSeminars(unittest.TestCase):
             if seminar_file_entry.is_file()
         ]
         for seminar_path_current in seminar_paths:
-            with open(seminar_path_current) as f:
-                blocks = yaml.safe_load_all(f)
+            try:
+                with open(seminar_path_current) as f:
+                    blocks = list(yaml.safe_load_all(f))
+            except UnicodeDecodeError as e:
+                self.assertIsNone(
+                    e,
+                    'Unicode error parsing seminar file: {}'.format(seminar_path_current)
+                )
 
             self.assertIsNotNone(
                 blocks,
