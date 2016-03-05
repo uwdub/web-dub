@@ -27,10 +27,68 @@
     margin-top: 20px;
 }
 
+// Carousel on Desktop
+@media (min-width: @screen-md-min)
+{
+    .carousel-inner .item {
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+
+    .carousel-caption {
+        top: 50%;
+        transform: translateY(-50%);
+        bottom: initial;
+    }
+
+    .carousel-caption-title {
+        font-size: 50px;
+    }
+
+    .carousel-caption p {
+        font-size: 16px;
+    }
+
+    .footer-panel
+    {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .carousel-control
+    {
+        display: none;
+    }
+}
+
+// Carousel on mobile
+@media (max-width: @screen-sm-max)
+{
+    .carousel-caption-title {
+        font-size: 24px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
 // Icons on the front page
+
 .connecticon
 {
     margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.footer-panel h2
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .upcomingseminar
@@ -57,10 +115,12 @@
     height: 100%;
 }
 
-// Front page date left-aligns for md and smaller screen size
-@media (max-width: @screen-md-min){
-    .xs-left {
-        text-align: left;
+// Removes element for mobile
+@media (max-width: @screen-sm-max)
+{
+    .md-hidden
+    {
+        display: none;
     }
 }
 
@@ -68,4 +128,9 @@
 .tableheading
 {
     display: inline;
+}
+
+.vimeo-icon
+{
+    height: 16px;
 }
