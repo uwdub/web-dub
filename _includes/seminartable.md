@@ -17,10 +17,12 @@
           {% if include.seminars == "upcoming" %}
             <div class="col-xs-12">
               {{ item_seminar.time }}
-              {% unless item_seminar.tbd_location %}
-                {{ item_seminar.location }}
-              {% endunless %}
             </div>
+            {% unless item_seminar.tbd_location %}
+              <div class="col-xs-12">
+                {{ item_seminar.location }}
+              </div>
+            {% endunless %}
           {% endif %}
         </div>
         <div class="col-md-9">
