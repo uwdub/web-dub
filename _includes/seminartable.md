@@ -14,14 +14,16 @@
               {{ item_seminar.date | date: "%m/%d/%y"}}
             </h4>
           </div>
-          <div class="col-xs-12">
-            {{ item_seminar.time }}&nbsp;
-          </div>
-          {% unless item_seminar.tbd_location %}
+          {% if include.seminars == "upcoming" %}
             <div class="col-xs-12">
-              {{ item_seminar.location }}
+              {{ item_seminar.time }}
             </div>
-          {% endunless %}
+            {% unless item_seminar.tbd_location %}
+              <div class="col-xs-12">
+                {{ item_seminar.location }}
+              </div>
+            {% endunless %}
+          {% endif %}
         </div>
         <div class="col-md-9">
           {% unless item_seminar.tbd_title %}
