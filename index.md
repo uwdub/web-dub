@@ -8,20 +8,35 @@ title_secondary: "HCI & Design at the University of Washington"
 <!-- Carousel -->
 <div class="row" id="carousel">
   <div class="col-md-12">
-    <div id="carousel-main" class="carousel slide" data-ride="carousel">
+    <div id="carousel-main" class="carousel slide" data-ride="carousel" data-interval="10000">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-main" data-slide-to="1"></li>
         <li data-target="#carousel-main" data-slide-to="2"></li>      
+        <li data-target="#carousel-main" data-slide-to="3"></li>      
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
+          <img src="{{ site.baseurl }}/posts/2016/slide_chi2016.png" alt="CHI 2016">
+          <div class="carousel-caption">
+            <h2>DUB at CHI 2016</h2>
+            <p>
+                HCI & Design at the University of Washington<br>will again have a large and quality presence at CHI 2016.
+            </p>
+            <p>
+              <a href="{{ site.baseurl }}/posts/2016/20160321-chi2016papers.html" class="btn btn-default btn-lg">
+                Learn about UW Research at CHI 2016
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="item">
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
-            <h2>Design.</h2>
+            <h2>Design</h2>
             <p>Applying design thinking to improve the future.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
@@ -29,7 +44,7 @@ title_secondary: "HCI & Design at the University of Washington"
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
-            <h2>Use.</h2>
+            <h2>Use</h2>
             <p>Creating better user experiences with technology.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
@@ -37,7 +52,7 @@ title_secondary: "HCI & Design at the University of Washington"
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
-            <h2>Build.</h2>
+            <h2>Build</h2>
             <p>Prototyping and developing new technologies.</p>
             <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
           </div>
