@@ -7,10 +7,11 @@
   <section>
     <div class="row">
       {% for item_person in people %} 
+      {% assign person_id = item_person.path | split:"/" | last | split:"." | first %}
         <div class="media col-md-6">
           <div class="media-left">
             <div class="media-object">
-              <img src="{{ site.baseurl }}/logos/twitter.png" class="img-circle"/>
+              <img src="http://res.cloudinary.com/dubweb/image/upload/t_dub_thumbnail/v1460490785/faculty/{{ person_id }}.jpg" class="img-circle"/>
             </div>
           </div>
           <div class="media-body">
