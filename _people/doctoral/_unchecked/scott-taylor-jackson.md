@@ -1,7 +1,8 @@
 ---
 name:
 - Scott
-- Taylor Jackson
+- Taylor
+- Jackson
 position:
 - title: ?????
   unit: Human Centered Design & Engineering

@@ -1,7 +1,7 @@
 ---
 name:
-- "Harada (\u539F\u7530)"
-- "Susumu (\u4E1E)"
+- Harada
+- Susumu
 position:
 - title: ?????
   unit: Computer Science & Engineering
