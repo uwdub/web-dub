@@ -1,7 +1,7 @@
 ---
 name:
 - Feng
-- 'Muchen '
+- Muchen
 position:
 - title: ?????
   unit: Master of Human-Computer Interaction + Design
