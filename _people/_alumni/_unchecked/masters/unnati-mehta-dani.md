@@ -1,8 +1,8 @@
 ---
 name:
-- Mehta Dani
 - Unnati
-- Mayur
+- Mehta
+- Dani
 position:
 - title: ?????
   unit: Master of Human-Computer Interaction + Design

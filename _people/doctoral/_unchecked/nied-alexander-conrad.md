@@ -1,7 +1,8 @@
 ---
 name:
 - Nied
-- A. Conrad
+- Alexander
+- Conrad
 position:
 - title: ?????
   unit: Computer Science & Engineering

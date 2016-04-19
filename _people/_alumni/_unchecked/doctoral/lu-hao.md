@@ -1,6 +1,6 @@
 ---
 name:
-- "L\xFC"
+- Lu
 - Hao
 position:
 - title: ?????
