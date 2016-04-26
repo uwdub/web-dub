@@ -28,7 +28,7 @@ title_secondary: "HCI & Design at the University of Washington"
             </p>
             <p>
               <a href="{{ site.baseurl }}/posts/2016/20160321-chi2016papers.html" class="btn btn-default btn-lg">
-                Learn about UW Research at CHI 2016
+                UW Research at CHI 2016
               </a>
             </p>
           </div>
