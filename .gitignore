@@ -17,3 +17,6 @@ env35
 
 # Installed node packages
 node_modules
+
+# The Gemfile lock
+Gemfile.lock
