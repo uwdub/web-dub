@@ -145,6 +145,13 @@ Please do not create images that introduce new colors, stretch or outline the lo
     </tr>
     <tr>
         <td>
+        <p>Purple & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_purplegreen.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_purplegreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
         <p>Black & Green on Transparent</p>
         <p><a href="{{ site.baseurl }}/images/logo/DUB_right_blackgreen.png">1500x398</a></p>
         </td>
