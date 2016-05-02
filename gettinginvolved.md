@@ -107,30 +107,79 @@ The DUB brand consists of a logo, variants on that logo, and some guidelines for
 
 <table class="table">
     <tr>
+        <td colspan="2"><h2>Logo with Bottom Text</h2></td>
+    </tr>
+    <tr>
+        <td>Black & Green on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_bottom_blackgreen.png" /></td>
+    </tr>
+    <tr>
+        <td>Black on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_bottom_black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_bottom_white.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo with Right Text</h2></td>
+    </tr>
+    <tr>
+        <td>Black & Green on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_right_blackgreen.png" /></td>
+    </tr>
+    <tr>
+        <td>Black on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_right_black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_right_white.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo Only</h2></td>
+    </tr>
+    <tr>
+        <td>Black on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on Transparent</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_white.png" /></td>
+    </tr>
+    <tr>
+        <td>White on Purple</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_square_whiteonpurple.png" /></td>
+    </tr>
+    <tr>
+        <td>Purple on White</td>
+        <td><img class="logo-branding" src="/images/logo/DUB_square_purpleonwhite.png" /></td>
+    </tr>
+    <tr>
         <td colspan="2"><h2>Colors</h2></td>
     </tr>
     <tr>
         <td>Purple</td>
         <td>
-            <div class="logo" style="background-color: #4b2e83;color: white;">#4b2e83</div>
+            <div class="logo-branding" style="background-color: #4b2e83;color: white;">#4b2e83</div>
         </td>
     </tr>
     <tr>
         <td>Green</td>
         <td>
-            <div class="logo" style="background-color: #4cdc31;color: white;">#4cdc31</div>
+            <div class="logo-branding" style="background-color: #4cdc31;color: white;">#4cdc31</div>
         </td>
     </tr>
     <tr>
         <td>Black</td>
         <td>
-            <div class="logo" style="background-color: #000000;color: white;">#000000</div>
+            <div class="logo-branding" style="background-color: #000000;color: white;">#000000</div>
         </td>
     </tr>
     <tr>
         <td>White</td>
         <td>
-            <div class="logo" style="background-color: #ffffff;color: black;">#ffffff</div>
+            <div class="logo-branding" style="background-color: #ffffff;color: black;">#ffffff</div>
         </td>
     </tr>
     <tr>
@@ -139,55 +188,6 @@ The DUB brand consists of a logo, variants on that logo, and some guidelines for
     <tr>
         <td>Brandon</td>
         <td><a href="https://www.myfonts.com/fonts/hvdfonts/brandon-text/">Light, Medium, and Black</a></td>
-    </tr>
-    <tr>
-        <td colspan="2"><h2>Logo only</h2></td>
-    </tr>
-    <tr>
-        <td>Black on transparent</td>
-        <td><img class="logo" src="/images/web/logo/DUB-black.png" /></td>
-    </tr>
-    <tr>
-        <td>White on transparent</td>
-        <td><img class="logo" src="/images/web/logo/DUB-white.png" /></td>
-    </tr>
-    <tr>
-        <td>Purple on white</td>
-        <td><img class="logo" src="/images/web/DUB-purple.png" /></td>
-    </tr>
-    <tr>
-        <td>White on purple</td>
-        <td><img class="logo" src="/images/web/DUB-white-on-purple.png" /></td>
-    </tr>
-    <tr>
-        <td colspan="2"><h2>Logo and right text</h2></td>
-    </tr>
-    <tr>
-        <td>Black on transparent</td>
-        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-black.png" /></td>
-    </tr>
-    <tr>
-        <td>White on transparent</td>
-        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-white.png" /></td>
-    </tr>
-    <tr>
-        <td>Black & green text on transparent</td>
-        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-blackgreen.png" /></td>
-    </tr>
-    <tr>
-        <td colspan="2"><h2>Logo and bottom text</h2></td>
-    </tr>
-    <tr>
-        <td>Black on transparent</td>
-        <td><img class="logo" src="/images/web/vertical/DUB-vertical-black.png" /></td>
-    </tr>
-    <tr>
-        <td>White on transparent</td>
-        <td><img class="logo" src="/images/web/vertical/DUB-vertical-white.png" /></td>
-    </tr>
-    <tr>
-        <td>Black & green text on transparent</td>
-        <td><img class="logo" src="/images/web/vertical/DUB-vertical-blackgreen.png" /></td>
     </tr>
 </table>
 
