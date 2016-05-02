@@ -96,64 +96,100 @@ The seminar can also be taken for credit.
 <div class="tab-pane" id="branding" markdown="block">
 # Logo and Branding
 
-The DUB brand consists of a logo, variants on that logo, and some guidelines for how to use the logo. Add it to things like:
+We encourage the DUB community to include DUB in their presentations, posters, papers, and other materials. 
 
-* T-shirts
-* Presentations
-* Your website
-* Social media
+DUB branding is never intended to compete with another brand (e.g., department, research lab, company).
+The strength of DUB is that it brings together people from many different perspectives.
+Our logo therefore intentionally does not resemble the logo of a typical department.
+It instead conveys that DUB emerges from our coming together.
 
-**Don't** introduce new colors, **don't** stretch or outline the logo, and **don't** reorganize the words "DESIGN USE BUILD".
+This page aims to provide high-quality images of the DUB logo for inclusion in your materials.
+We would prefer to keep a small number of high-quality images in use among the DUB community.
+If there is a combination or size you would like that is not already here, please ask for it to be added.
+Please do not create images that introduce new colors, stretch or outline the logo, or reorganize "DESIGN USE BUILD".
 
 <table class="table">
     <tr>
         <td colspan="2"><h2>Logo with Bottom Text</h2></td>
     </tr>
     <tr>
-        <td>Black & Green on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_bottom_blackgreen.png" /></td>
+        <td>
+        <p>Black & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png" /></td>
     </tr>
     <tr>
-        <td>Black on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_bottom_black.png" /></td>
+        <td>
+        <p>Black on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_black.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_black.png" /></td>
     </tr>
     <tr>
-        <td>White on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_bottom_white.png" /></td>
+        <td>
+        <p>White on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_white.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_white.png" /></td>
     </tr>
     <tr>
         <td colspan="2"><h2>Logo with Right Text</h2></td>
     </tr>
     <tr>
-        <td>Black & Green on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_right_blackgreen.png" /></td>
+        <td>
+        <p>Black & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_blackgreen.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_blackgreen.png" /></td>
     </tr>
     <tr>
-        <td>Black on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_right_black.png" /></td>
+        <td>
+        <p>Black on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_black.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_black.png" /></td>
     </tr>
     <tr>
-        <td>White on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_right_white.png" /></td>
+        <td>
+        <p>White on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_white.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_white.png" /></td>
     </tr>
     <tr>
         <td colspan="2"><h2>Logo Only</h2></td>
     </tr>
     <tr>
-        <td>Black on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_black.png" /></td>
+        <td>
+        <p>Black on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_black.png">1200x490</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_black.png" /></td>
     </tr>
     <tr>
-        <td>White on Transparent</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_white.png" /></td>
+        <td>
+        <p>White on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_white.png">1200x490</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_white.png" /></td>
     </tr>
     <tr>
-        <td>White on Purple</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_square_whiteonpurple.png" /></td>
+        <td colspan="2"><h2>Logo Square</h2></td>
     </tr>
     <tr>
-        <td>Purple on White</td>
-        <td><img class="logo-branding" src="/images/logo/DUB_square_purpleonwhite.png" /></td>
+        <td>
+        <p>White on Purple</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_square_whiteonpurple.png">400x400</a></p>
+        </td>        
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_square_whiteonpurple.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Purple on White</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_square_purpleonwhite.png">400x400</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_square_purpleonwhite.png" /></td>
     </tr>
     <tr>
         <td colspan="2"><h2>Colors</h2></td>
