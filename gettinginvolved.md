@@ -8,6 +8,7 @@ title_secondary: "HCI & Design at the University of Washington"
   <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
     <li class="active"><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
     <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
+    <li><a href="#branding" data-toggle="tab">Logo and Branding</a></li>
     <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
   </ul>
 <div class="sidebar_end"></div>
@@ -76,16 +77,119 @@ Student-specific DUB-related announcements and information.
 The weekly DUB seminar is the primary gathering point for the DUB community.
 The seminar features talks from researchers, practitioners, and our own DUB community.
 All members of the DUB community are welcome and encouraged to attend the weekly DUB seminar.
-Seminars during the academic year often attract 80 to 100 people, beginning with socializing and then the talk.
+Seminars during the academic year often attract 100 to 120 people, beginning with socializing and then the talk.
 
 [The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists) are used for seminar announcements.
 
 [The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
 
-Videos of DUB seminar talks are posted to [the DUB calendar]({{ site.baseurl }}/calendar.html)
-and [the DUB Vimeo channel](http://vimeo.com/designusebuild), with speaker permission.
+With speaker permission, 
+videos of DUB seminar talks are posted to [the DUB calendar]({{ site.baseurl }}/calendar.html)
+and [the DUB Vimeo channel](http://vimeo.com/designusebuild).
 
 The seminar can also be taken for credit.
+
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<div class="tab-pane" id="branding" markdown="block">
+# Logo and Branding
+
+The DUB brand consists of a logo, variants on that logo, and some guidelines for how to use the logo. Add it to things like:
+
+* T-shirts
+* Presentations
+* Your website
+* Social media
+
+**Don't** introduce new colors, **don't** stretch or outline the logo, and **don't** reorganize the words "DESIGN USE BUILD".
+
+<table class="table">
+    <tr>
+        <td colspan="2"><h2>Colors</h2></td>
+    </tr>
+    <tr>
+        <td>Purple</td>
+        <td>
+            <div class="logo" style="background-color: #4b2e83;color: white;">#4b2e83</div>
+        </td>
+    </tr>
+    <tr>
+        <td>Green</td>
+        <td>
+            <div class="logo" style="background-color: #4cdc31;color: white;">#4cdc31</div>
+        </td>
+    </tr>
+    <tr>
+        <td>Black</td>
+        <td>
+            <div class="logo" style="background-color: #000000;color: white;">#000000</div>
+        </td>
+    </tr>
+    <tr>
+        <td>White</td>
+        <td>
+            <div class="logo" style="background-color: #ffffff;color: black;">#ffffff</div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Font</h2></td>
+    </tr>
+    <tr>
+        <td>Brandon</td>
+        <td><a href="https://www.myfonts.com/fonts/hvdfonts/brandon-text/">Light, Medium, and Black</a></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo only</h2></td>
+    </tr>
+    <tr>
+        <td>Black on transparent</td>
+        <td><img class="logo" src="/images/web/logo/DUB-black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on transparent</td>
+        <td><img class="logo" src="/images/web/logo/DUB-white.png" /></td>
+    </tr>
+    <tr>
+        <td>Purple on white</td>
+        <td><img class="logo" src="/images/web/DUB-purple.png" /></td>
+    </tr>
+    <tr>
+        <td>White on purple</td>
+        <td><img class="logo" src="/images/web/DUB-white-on-purple.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo and right text</h2></td>
+    </tr>
+    <tr>
+        <td>Black on transparent</td>
+        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on transparent</td>
+        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-white.png" /></td>
+    </tr>
+    <tr>
+        <td>Black & green text on transparent</td>
+        <td><img class="logo" src="/images/web/horizontal/DUB-horizontal-blackgreen.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo and bottom text</h2></td>
+    </tr>
+    <tr>
+        <td>Black on transparent</td>
+        <td><img class="logo" src="/images/web/vertical/DUB-vertical-black.png" /></td>
+    </tr>
+    <tr>
+        <td>White on transparent</td>
+        <td><img class="logo" src="/images/web/vertical/DUB-vertical-white.png" /></td>
+    </tr>
+    <tr>
+        <td>Black & green text on transparent</td>
+        <td><img class="logo" src="/images/web/vertical/DUB-vertical-blackgreen.png" /></td>
+    </tr>
+</table>
 
 </div>
 
