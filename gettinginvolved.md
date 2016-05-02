@@ -128,6 +128,20 @@ Please do not create images that introduce new colors, stretch or outline the lo
     </tr>
     <tr>
         <td>
+        <p>White & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Purple on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png" /></td>
+    </tr>
+    <tr>
+        <td>
         <p>Black on Transparent</p>
         <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_black.png">1200x650</a></p>
         </td>
@@ -156,6 +170,20 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <p><a href="{{ site.baseurl }}/images/logo/DUB_right_blackgreen.png">1500x398</a></p>
         </td>
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_blackgreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>White & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_whitegreen.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_whitegreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Purple on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_right_purple.png">1500x398</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_purple.png" /></td>
     </tr>
     <tr>
         <td>
