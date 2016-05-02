@@ -110,51 +110,6 @@ Please do not create images that introduce new colors, stretch or outline the lo
 
 <table class="table">
     <tr>
-        <td colspan="2"><h2>Logo with Bottom Text</h2></td>
-    </tr>
-    <tr>
-        <td>
-        <p>Purple & Green on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_purplegreen.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_purplegreen.png" /></td>
-    </tr>
-    <tr>
-        <td>
-        <p>Black & Green on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png" /></td>
-    </tr>
-    <tr>
-        <td>
-        <p>White & Green on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png" /></td>
-    </tr>
-    <tr>
-        <td>
-        <p>Purple on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png" /></td>
-    </tr>
-    <tr>
-        <td>
-        <p>Black on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_black.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_black.png" /></td>
-    </tr>
-    <tr>
-        <td>
-        <p>White on Transparent</p>
-        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_white.png">1200x650</a></p>
-        </td>
-        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_white.png" /></td>
-    </tr>
-    <tr>
         <td colspan="2"><h2>Logo with Right Text</h2></td>
     </tr>
     <tr>
@@ -198,6 +153,51 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <p><a href="{{ site.baseurl }}/images/logo/DUB_right_white.png">1500x398</a></p>
         </td>
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_white.png" /></td>
+    </tr>
+    <tr>
+        <td colspan="2"><h2>Logo with Bottom Text</h2></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Purple & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_purplegreen.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_purplegreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Black & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_blackgreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>White & Green on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_whitegreen.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Purple on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_purple.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>Black on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_black.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_black.png" /></td>
+    </tr>
+    <tr>
+        <td>
+        <p>White on Transparent</p>
+        <p><a href="{{ site.baseurl }}/images/logo/DUB_bottom_white.png">1200x650</a></p>
+        </td>
+        <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_white.png" /></td>
     </tr>
     <tr>
         <td colspan="2"><h2>Logo Only</h2></td>
