@@ -145,7 +145,7 @@ design, people, and technology.
       <div class="icon-bottom">
         <a href="{{ site.baseurl }}/aboutdub.html">
           <p>
-            <img src="{{ site.baseurl }}/images/dub_icon.png" class="connecticon" alt="learn">
+            <img src="{{ site.baseurl }}/images/connect_dub.png" class="connecticon" alt="learn">
             <span class="icon-link-text"><strong>Learn</strong> more about DUB</span>
           </p>
         </a>

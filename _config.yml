@@ -1,6 +1,6 @@
 name:       'DUB'
 
-brandimage: 'images/nav-logo.png'
+brandimage: 'images/nav_logo.png'
 brandtext:  'DUB'
 
 lessc: node_modules/.bin/lessc
