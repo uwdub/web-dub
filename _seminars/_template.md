@@ -1,9 +1,9 @@
 ---
 ################################################################################
-# Version of the seminar format. The only valid value for this is 1. 
-# We may increment this in the future to simplify maintenance of old seminars.
+# Version of the seminar file. This is used to keep the iCal up to date.
+# IMPORTANT: Increment the version number each time the seminar file is updated.
 ################################################################################
-version: 1
+version: 0
 
 ################################################################################
 # Date and time of the seminar. In quotes because : is a reserved character.
