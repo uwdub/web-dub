@@ -50,11 +50,13 @@ class TestSeminars(unittest.TestCase):
                 seminar,
                 'No version in {}'.format(seminar_path_current)
             )
-            self.assertIn(
-                str(seminar['version']),
-                ['1'],
-                'Invalid version in {}'.format(seminar_path_current)
-            )
+            # The version is not 0, unless we're looking at the _template.md
+            if os.path.normpath(seminar_path_current) != os.path.normpath('_seminars/_template.md'):
+                self.assertGreater(
+                    seminar['version'],
+                    0,
+                    'Version was not incremented in {}'.format(seminar_path_current)
+                )
 
             # It has date and time fields
             self.assertIn(
