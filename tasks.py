@@ -17,7 +17,7 @@ def update_dependencies():
     # Ensure we have a current version of pip, as needed by pip-tools
     # TODO check version that is installed
     result = invoke.run('pip show pip', encoding=sys.stdout.encoding, warn=True)
-    invoke.run('pip install --upgrade pip', encoding=sys.stdout.encoding)
+    invoke.run('pip install --upgrade pip==8.1.1', encoding=sys.stdout.encoding)
 
     # Ensure we have pip-tools
     # TODO check version that is installed
