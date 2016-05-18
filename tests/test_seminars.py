@@ -115,11 +115,18 @@ class TestSeminars(unittest.TestCase):
                         speaker_current,
                         'Missing speakers name in {}'.format(seminar_path_current)
                     )
-                    self.assertIn(
-                        'affiliation',
-                        speaker_current,
-                        'Missing speakers affiliation in {}'.format(seminar_path_current)
-                    )
+                    if 'affiliation_none' in speaker_current:
+                        self.assertEqual(
+                            speaker_current['affiliation_none'],
+                            True,
+                            'Inconsistent value for speakers affiliation_none in {}'.format(seminar_path_current)
+                        )
+                    else:
+                        self.assertIn(
+                            'affiliation',
+                            speaker_current,
+                            'Missing speakers affiliation in {}'.format(seminar_path_current)
+                        )
 
             # The title may be tbd
             if 'tbd_title' in seminar:
