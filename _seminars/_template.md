@@ -27,6 +27,9 @@ tbd_video:      true
 ################################################################################
 # One or more speakers. Each speaker has name and affiliation.
 #
+# If a speaker does not have an affiliation, the affiliation field can be removed.
+# In this case, the speaker needs a field 'affiliation_none: true'.
+#
 # speakers:
 #   - name: 
 #     - Surname
