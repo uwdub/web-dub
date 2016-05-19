@@ -31,6 +31,7 @@ defaults:
       type: seminars
     values:
       layout: seminar
+      archive: true
 
 future: true
 
