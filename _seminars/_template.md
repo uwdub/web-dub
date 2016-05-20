@@ -25,6 +25,13 @@ tbd_bio:        true
 tbd_video:      true
 
 ################################################################################
+# Seminar files are archived by default.
+# Add the following line if the file should not be archived:
+#
+# archive: false
+################################################################################
+
+################################################################################
 # One or more speakers. Each speaker has name and affiliation.
 #
 # If a speaker does not have an affiliation, the affiliation field can be removed.
