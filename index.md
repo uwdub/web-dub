@@ -164,7 +164,7 @@ design, people, and technology.
         <a href="https://medium.com/hci-design-at-uw">
           <p>
             <img src="{{ site.baseurl }}/images/connect_medium.png" class="connecticon" alt="medium">
-            <span class="icon-link-text"><strong>Read about</strong> our work on Medium</span>
+            <span class="icon-link-text"><strong>Read</strong> more on Medium</span>
           </p>
         </a>
       </div>
