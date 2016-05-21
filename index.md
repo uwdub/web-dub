@@ -143,12 +143,6 @@ design, people, and technology.
       <h2>Connect with DUB</h2>
       <p class="connect-text">Join one of the world's most vibrant communities for research and education addressing all aspects of Human Computer Interaction & Design.</p>
       <div class="icon-bottom">
-        <a href="{{ site.baseurl }}/aboutdub.html">
-          <p>
-            <img src="{{ site.baseurl }}/images/connect_dub.png" class="connecticon" alt="learn">
-            <span class="icon-link-text"><strong>Learn</strong> more about DUB</span>
-          </p>
-        </a>
         <a href="{{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists">
           <p>
             <img src="{{ site.baseurl }}/images/connect_email.png" class="connecticon" alt="e-mail">
@@ -165,6 +159,12 @@ design, people, and technology.
           <p>
             <img src="{{ site.baseurl }}/images/connect_vimeo.png" class="connecticon" alt="vimeo">
             <span class="icon-link-text"><strong>Follow</strong> us on Vimeo</span>
+          </p>
+        </a>
+        <a href="https://medium.com/hci-design-at-uw">
+          <p>
+            <img src="{{ site.baseurl }}/images/connect_medium.png" class="connecticon" alt="medium">
+            <span class="icon-link-text"><strong>Read</strong> more on Medium</span>
           </p>
         </a>
       </div>
