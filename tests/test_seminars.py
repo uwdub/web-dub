@@ -57,6 +57,11 @@ class TestSeminars(unittest.TestCase):
             )
 
             # The sequence is not 0, unless we're looking at the _template.md
+            self.assertIn(
+                'sequence',
+                seminar,
+                'No sequence in {}'.format(seminar_path_current)
+            )
             if os.path.normpath(seminar_path_current) != os.path.normpath('_seminars/_template.md'):
                 self.assertGreater(
                     seminar['sequence'],
