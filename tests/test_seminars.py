@@ -56,6 +56,14 @@ class TestSeminars(unittest.TestCase):
                 'Invalid version in {}'.format(seminar_path_current)
             )
 
+            # The sequence is not 0, unless we're looking at the _template.md
+            if os.path.normpath(seminar_path_current) != os.path.normpath('_seminars/_template.md'):
+                self.assertGreater(
+                    seminar['sequence'],
+                    0,
+                    'Sequence was not incremented in {}'.format(seminar_path_current)
+                )
+
             # It has date and time fields
             self.assertIn(
                 'date',
