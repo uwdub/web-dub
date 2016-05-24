@@ -1,6 +1,6 @@
 name:       'DUB'
 
-brandimage: 'images/nav-logo.png'
+brandimage: 'images/nav_logo.png'
 brandtext:  'DUB'
 
 lessc: node_modules/.bin/lessc
@@ -35,6 +35,7 @@ defaults:
       type: seminars
     values:
       layout: seminar
+      archive: true
 
 future: true
 

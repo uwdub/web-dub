@@ -28,9 +28,30 @@
 }
 
 // Icons on the front page
+
 .connecticon
 {
     margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.footer-content
+{
+    margin: 15px;
+}
+
+.footer-panel h2
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.calendar-feed
+{
+    padding-bottom: 5px;
 }
 
 .upcomingseminar
@@ -57,10 +78,12 @@
     height: 100%;
 }
 
-// Front page date left-aligns for md and smaller screen size
-@media (max-width: @screen-md-min){
-    .xs-left {
-        text-align: left;
+// Removes element for mobile
+@media (max-width: @screen-sm-max)
+{
+    .md-hidden
+    {
+        display: none;
     }
 }
 
@@ -68,4 +91,18 @@
 .tableheading
 {
     display: inline;
+}
+
+.vimeo-icon
+{
+    height: 16px;
+}
+
+.logo-branding
+{
+    width: 160px;
+    background-color: rgb(230,230,230);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid gray;
 }
