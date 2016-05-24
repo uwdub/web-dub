@@ -9,10 +9,6 @@ working_directory: web-fogies
 
 This site is implemented in Jekyll, thus requiring Ruby and Node.js. We also use Python in our automation and testing.
 
-{% comment %}
-Packages installed by the above can sometimes require a native compiler, for which we use Microsoft Visual Studio.
-{% endcomment %}
-
 ## Installing Node.js, Python, Ruby, and Ruby DevKit
 
 We currently use:
@@ -62,43 +58,6 @@ We currently use:
     ruby dk.rb install
     ~~~
 
-{% comment %}
-## Installing Microsoft Visual Studio
-
-Many Node.js and Python packages require a C compiler for included native code. We currently use:
-
-[Microsoft Visual Studio C++ 2012 for Windows Desktop - https://go.microsoft.com/?linkid=9816758](https://go.microsoft.com/?linkid=9816758)
-
-Node.js and Python each expect particular versions of Microsoft Visual Studio. Currently, that expectation is:
-
-- Node.js: Microsoft Visual Studio C++ 2012
-- Python 3.5: Microsoft Visual Studio C++ 2010
-
-Each version defines environment variables that say where to find the build tools:
-
-- `VS110COMNTOOLS` is defined by Microsoft Visual Studio C++ 2012
-- `VS100COMNTOOLS` is defined by Microsoft Visual Studio C++ 2010
-
-Instead of installing these versions, we manipulate environment variables to alias the old versions to the newer version. 
-This is not necessarily completely robust, but has not been problematic.
-
-This can be done locally within a command line session:
-
-    set VS100COMNTOOLS="%VS110COMNTOOLS%"
-
-But we generally define the system environment variable:
-
-    Control Panel
-    System and Security
-    System
-    Advanced system settings
-    Environment Variables...
-    System variables
-    New...
-
-![VS100COMNTOOLS]({{ site.baseurl }}/development/vs100comntools.png)
-{% endcomment %}
-
 ## Creating a Virtual Environment and Installing Dependencies
 
 All Python work should be done within a virtual environment, to avoid dependency conflicts.
@@ -119,10 +78,6 @@ Next activate that virtual environment and install our Python dependencies:
 Next use Python's invoke automation to get the rest of our dependencies:
 
     invoke update_dependencies
-
-{% comment %}
-If a package fails with an error `Unable to find vcvarsall.bat`, it is because Microsoft Visual Studio is not set up correctly.
-{% endcomment %}
 
 ## Building and Serving the Site
 
