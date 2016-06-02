@@ -7,10 +7,12 @@
   <section>
     <div class="row">
       {% for item_person in people %} 
-        {% assign photo_path = item_person.path | remove: "_" | split:"." | first | append:".jpg" %}
+        {% assign photo_path = item_person.path | split:"." | first | append:".jpg" %}
+        {{ photo_path }}
         {% capture photo_exists %}{% file_exists {{ photo_path }} %}{% endcapture %}
-        {% if photo_exists == "true" %}
-          {% assign photo_url = photo_path | prepend: "/" | prepend: site.baseurl %}
+        {{ photo_exists }}
+        {% if photo_exists == 'true' %}
+          {% assign photo_url = photo_path | remove: "_" | prepend: "/" | prepend: site.baseurl %}
         {% else %}
           {% assign photo_url = "default.jpg" | prepend: "/people/" | prepend: site.baseurl %}
         {% endif %}
@@ -18,7 +20,7 @@
           <div class="media-left">
             <div class="media-object">
               {% assign assuming_photo_exists_url = photo_path | prepend: "/" | prepend: site.baseurl %}
-              <img src="{{ assuming_photo_exists_url }}" class="img-circle"/>
+              <img src="{{ photo_url }}" class="img-circle"/>
             </div>
           </div>
           <div class="media-body">
