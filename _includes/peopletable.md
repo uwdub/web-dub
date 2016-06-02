@@ -7,11 +7,20 @@
   <section>
     <div class="row">
       {% for item_person in people %} 
-      {% assign person_id = item_person.path | split:"/" | last | split:"." | first %}
-        <div class="media col-md-6">
+        {% assign photo_path = item_person.path | split:"." | first | append:".jpg" %}
+        {{ photo_path }}
+        {% capture photo_exists %}{% file_exists {{ photo_path }} %}{% endcapture %}
+        {{ photo_exists }}
+        {% if photo_exists == 'true' %}
+          {% assign photo_url = photo_path | remove: "_" | prepend: "/" | prepend: site.baseurl %}
+        {% else %}
+          {% assign photo_url = "default.jpg" | prepend: "/people/" | prepend: site.baseurl %}
+        {% endif %}
+        <div class="media col-md-4">
           <div class="media-left">
             <div class="media-object">
-              <img src="http://res.cloudinary.com/dubweb/image/upload/t_dub_thumbnail/v1460490785/faculty/{{ person_id }}.jpg" class="img-circle"/>
+              {% assign assuming_photo_exists_url = photo_path | prepend: "/" | prepend: site.baseurl %}
+              <img src="{{ photo_url }}" class="img-circle"/>
             </div>
           </div>
           <div class="media-body">
@@ -31,7 +40,7 @@
             <br />
           </div>
         </div>
-        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% assign loopindex = forloop.index | modulo: 3 %}
         {% if loopindex == 0 %}
           <div class="col-md-12"></div>
         {% endif %}
