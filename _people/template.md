@@ -6,10 +6,10 @@
 version: 1
 
 ################################################################################
-# A people file might exist but lack values for some fields. These are 'NA'. 
-# The only valid value is 'True'. A NA field should not be present if 'False'.
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
-na_web: true
+tbd_web: true
 
 ################################################################################
 # Full name listed in the order of last name, first name, middle name(s).
@@ -34,7 +34,8 @@ name:
 # A person may have multiple positions. Positions consist of titles and units.
 # Each value for a field must match one of the options below exactly.
 #
-# Valid faculty titles: Professor, Professor Emeritus
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Senior Lecturer
 #
 # Valid faculty and doctoral units:
 #   Computer Science & Engineering
@@ -71,10 +72,10 @@ name:
 # Faculty have one or more title and units.
 # role:
 #  - faculty
-# position:
-#  - title: Professor
+# positions:
+#  - title: Associate Professor
 #    unit: Information School
-#  - title: Professor
+#  - title: Assistant Professor
 #    unit: Computer Science & Engineering
 # 
 # Students do not have a title, but can have one more units.
@@ -82,21 +83,21 @@ name:
 # For a doctoral student their unit is the name of their department.
 # role:
 #  - doctoral-student
-# position:
+# positions:
 #  - unit: Information School
 #
 # For a master's student their unit is the name of their program.
 #  role:
 #  - masters-student
-#  position:
+#  positions:
 #  - unit: Master of Science in Human Centered Design & Engineering
 #
 ################################################################################
 role:
 - faculty
 
-position:
-- title: Professor
+positions:
+- title: Associate Professor
 - unit: Computer Science & Engineering
 
 ################################################################################
