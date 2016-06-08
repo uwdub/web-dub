@@ -1,32 +1,94 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Friedman
 - Batya
-position:
-- title: ?????
-  unit: Information School
-- title: ?????
-  unit: Computer Science & Engineering
-web:
-- http://projects.ischool.washington.edu/vsd/index.html
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
 role:
 - faculty
 
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "Batya Friedman is a Professor in the Information School and an Adjunct\
-  \ Professor in the Department of Computer Science and Engineering at the University\
-  \ of Washington where she directs the Value Sensitive Design Research Lab.  She\
-  \ received both her BA (1979) and Ph.D. (1988) from the University of California,\
-  \ Berkeley.  Dr. Friedman\u2019s research interests include human-computer interaction,\
-  \ especially human values in design, social and cultural aspects of information\
-  \ systems, and design methodology.  Her 1997 edited volume (Cambridge University\
-  \ Press) is titled Human Values and the Design of Computer Technology.  Her work\
-  \ on Value Sensitive Design has focused on the values of informed consent, privacy\
-  \ in public, trust, freedom from bias, moral agency, environmental sustainability,\
-  \ and human dignity; and engaged such technologies as web browsers, large-screen\
-  \ displays, urban simulation, robotics, open-source code bases, and location-enhanced\
-  \ computing.  She is currently working on value sensitive tools for envisioning\
-  \ and multi-lifespan HCI."
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+position:
+- title: ?????
+  affiliation: Information School
+- title: ?????
+  affiliation: Computer Science & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
+web:
+- http://projects.ischool.washington.edu/vsd/index.html
 ---

@@ -1,30 +1,92 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Spyridakis
 - Jan
-position:
-- title: ?????
-  unit: Human Centered Design & Engineering
-web:
-- http://www.hcde.washington.edu/navpeople/faculty/jansp
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
 role:
 - faculty
 
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: '<a href=http://uwtc.washington.edu/nav_people/profiles/faculty_profiles/193>
-  Jan Spyridakis</a>, Professor in Human Centered Design & Engineering at the University
-  of Washington, specializes in user experience research and design. Her research
-  interests include remote user assessment; experimental methods and tools for assessing
-  users remotely; and assessment of the effect of information design variables on
-  users. In her <a href=https://depts.washington.edu/ibuxl/weblabux/>Internet-Based
-  User Experience Lab</a>, she and her students research how design features of online
-  information affect users'' behavior, comprehension, and perceptions. Her lab has
-  also been developing WebLabUX, a tool to support the conduct of remote user testing.
-  This software package allows researchers and Web site stakeholders to measure user
-  behavior and performance on an instrumented Web site as well as test design variations.
-  Dr. Spyridakis has been honored by receiving eight awards for her research and six
-  for her pedagogy. '
-old-dub-photo: icons/people/spyridakis_jan.jpg
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+positions:
+- title: ?????
+  affiliation: Human Centered Design & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
+web:
+- http://www.hcde.washington.edu/navpeople/faculty/jansp
 ---

@@ -1,38 +1,93 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Weld
 - Daniel
 - S.
-position:
-- title: ?????
-  unit: Computer Science & Engineering
-web:
-- http://www.cs.washington.edu/homes/weld/
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
 role:
 - faculty
 
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "Daniel S. Weld is Thomas J. Cable / WRF Professor of Computer Science\
-  \ and Engineering at the University of Washington. After formative education at\
-  \ Phillips Academy, he received bachelor's degrees in both Computer Science and\
-  \ Biochemistry at Yale University in 1982. He landed a Ph.D. from the MIT Artificial\
-  \ Intelligence Lab in 1988, received a Presidential Young Investigator's award in\
-  \ 1989, an Office of Naval Research Young Investigator's award in 1990, was named\
-  \ AAAI Fellow in 1999 and deemed ACM Fellow in 2005. Dan is an area editor for the\
-  \ Journal of the ACM, on the editorial board of Artificial Intelligence, was a founding\
-  \ editor and member of the advisory board for the Journal of AI Research, was guest\
-  \ editor for Computational Intelligence and Artificial Intelligence, edited the\
-  \ AAAI report on the Role of Intelligent Systems in the National Information Infrastructure,\
-  \ and was Program Chair for AAAI-96. Dan has published two books and scads of technical\
-  \ papers.\r\n\r\nDan is an active entrepreneur with several patents and technology\
-  \ licenses. In May 1996, he co-founded Netbot Incorporated, creator of Jango Shopping\
-  \ Search and later acquired by Excite. In October 1998, Dan co-founded AdRelevance,\
-  \ a revolutionary monitoring service for internet advertising which was acquired\
-  \ by Media Metrix and subsequently by Nielsen NetRatings. In June 1999, Dan co-founded\
-  \ data integration company Nimble Technology which was acquired by the Actuate Corporation.\
-  \ In January 2001, Dan joined the Madrona Venture Group as a Venture Partner and\
-  \ member of the Technical Advisory Board. "
-old-dub-photo: icons/people/kg-utah-3-04_008-cropped.jpg
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+position:
+- title: ?????
+  unit: Computer Science & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
+web:
+- http://www.cs.washington.edu/homes/weld/
 ---

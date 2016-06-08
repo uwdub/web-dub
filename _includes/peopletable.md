@@ -8,9 +8,7 @@
     <div class="row">
       {% for item_person in people %} 
         {% assign photo_path = item_person.path | split:"." | first | append:".jpg" %}
-        {{ photo_path }}
         {% capture photo_exists %}{% file_exists {{ photo_path }} %}{% endcapture %}
-        {{ photo_exists }}
         {% if photo_exists == 'true' %}
           {% assign photo_url = photo_path | remove: "_" | prepend: "/" | prepend: site.baseurl %}
         {% else %}
@@ -33,8 +31,8 @@
                 {{index}}
               </a>
             </h4>
-            {% for item_position in item_person.position %}
-              {{ item_position.unit }}
+            {% for item_position in item_person.positions %}
+              {{ item_position.affiliation }}
               <br />
             {% endfor %}
             <br />
