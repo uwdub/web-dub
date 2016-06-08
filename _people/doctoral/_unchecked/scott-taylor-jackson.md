@@ -1,38 +1,92 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Scott
 - Taylor
 - Jackson
-position:
-- title: ?????
-  unit: Human Centered Design & Engineering
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
+role:
+- doctoral
+
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+positions:
+- affiliation: Human Centered Design & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
 web:
 - http://about.me/taylorscott
-twitter:
-- TaylorHCDE
-role:
-- doctoral-student
-
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "<p>I&nbsp;received my B.S. in <a href=\"http://www.cogsci.ucsd.edu/\"\
-  \ target=\"_blank\">Cognitive Science/HCI</a> from the University of California,\
-  \ San Diego and&nbsp;I am currently pursuing my PhD in Human Centered Design and\
-  \ Engineering <a href=\"http://www.hcde.washington.edu/\" target=\"_blank\">(HCDE)</a>\
-  \ at the University of Washington in Seattle. I am working closely with <a href=\"\
-  http://faculty.washington.edu/aragon/\" target=\"_blank\">Dr. Cecilia Aragon</a>\
-  \ in the Scientific Collaboration and Creativity Lab <a href=\"http://depts.washington.edu/sccl/\"\
-  \ target=\"_blank\">(SCCL)</a>&nbsp;developing tools and methods to visualize and\
-  \ analyze large data sets. I am also interested in HCI, Information Visualization,\
-  \ Scientific Collaboration, Computer-Mediated Communication, and Pervasive Computing.\
-  \ &nbsp;</p>\r\n<p>Partners in crime: <a href=\"http://www.steveselzer.com/\" target=\"\
-  _blank\">Steve Selzer</a>, <a href=\"http://lancor.com/team-eric-nguyen/\" target=\"\
-  _blank\">Eric Nguyen</a>,&nbsp;<a href=\"http://behzodsirjani.com/\" target=\"_blank\"\
-  >Behzod Sirjani</a>, <a href=\"http://drewpaine.net/\" target=\"_blank\">Drew Paine</a>,\
-  \ <a href=\"http://www.rossbohner.com/web/\" target=\"_blank\">Ross Bohner</a>,\
-  \ <a href=\"http://pratikpramanik.com/\" target=\"_blank\">Pratik Pramanik</a>,\
-  \ <a href=\"http://www.danielbperry.com/\" target=\"_blank\">Daniel Perry</a>.</p>\r\
-  \n<p><em>Profile Photo&nbsp;&nbsp;\xA9&nbsp;2011 TJS</em></p>"
-old-dub-photo: icons/people/taylorscott.jpeg
 ---
