@@ -20,8 +20,8 @@ version: 1
 # - More
 ################################################################################
 name:
-- Turns
-- Jennifer
+- Demiris
+- George
 
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
@@ -78,8 +78,10 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- title: ?????
-  affiliation: Human Centered Design & Engineering
+- title: Professor
+  affiliation: Biomedical and Health Informatics
+- title: Professor
+  affiliation: School of Nursing
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.
@@ -88,5 +90,5 @@ positions:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
 web:
-- http://www.uwtc.washington.edu/nav_people/faculty/turns
+- http://faculty.washington.edu/gdemiris/
 ---

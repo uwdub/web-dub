@@ -6,8 +6,8 @@
 version: 1
 
 ################################################################################
-# A people file might exist but lack values for some fields. These are 'NA'. 
-# The only valid value is 'True'. A NA field should not be present if 'False'.
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
 
 ################################################################################
@@ -26,15 +26,26 @@ name:
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
 # The first role that is listed is their main (current) role.
-# Valid roles: faculty, doctoral, masters, undergrad, staff
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
 #              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
+role:
+- faculty
+
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
 #
-# A person may have multiple positions. Positions consist of titles and units.
-# Each value for a field must match one of the options below exactly.
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
 #
-# Valid faculty titles: Professor, Professor Emeritus
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
 #
-# Valid faculty and doctoral units:
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
 #   Computer Science & Engineering
 #   Division of Design
 #   Human Centered Design & Engineering
@@ -49,7 +60,7 @@ name:
 #   Mechanical Engineering
 #   Psychology
 # 
-# Valid masters units:
+# Valid masters affiliations:
 #   Master of Science in Computer Science & Engineering
 #   Master of Design
 #   Master of Science in Human Centered Design & Engineering
@@ -65,36 +76,10 @@ name:
 #   Master of Science in Industrial Engineering
 #   Master of Science in Mechanical Engineering
 #   Master of Science in Engineering
-#
-# Faculty have one or more title and units.
-#  role:
-#  - faculty
-#  position:
-#  - title: Professor
-#    unit: Information School
-#  - title: Professor
-#    unit: Computer Science & Engineering
-# 
-# Students do not have a title, but can have one more units.
-#
-# For a doctoral student their unit is the name of their department.
-#  role:
-#  - doctoral-student
-#  position:
-#  - unit: Information School
-#
-# For a master's student their unit is the name of their program.
-#  role:
-#  - masters-student
-#  position:
-#  - unit: Master of Science in Human Centered Design & Engineering
-#
 ################################################################################
-role:
-- faculty
-position:
+positions:
 - title: Professor
-  unit: Computer Science & Engineering
+  affiliation: Computer Science & Engineering
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.
@@ -104,36 +89,4 @@ position:
 ################################################################################
 web:
 - http://www.cs.washington.edu/people/faculty/anderson
-
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "<b> Richard Anderson</b> is a Professor in the Department of Computer\
-  \ Science and Engineering at the University \r\nof Washington.  He graduated with\
-  \ a B.A. in\r\nMathematics from <a href=\"http://www.reed.edu/\"> Reed College </a>\
-  \ in 1981,\r\nand a Ph.D. in Computer Science from <a href=\"http://www.cs.stanford.edu\"\
-  >Stanford University</a>\r\nin 1985.  He joined the <a href=\"http://www.washington.edu\"\
-  >University of Washington</a> in 1986, after a\r\none-year Postdoc at the <a href=\"\
-  http://www.msri.org\"> Mathematical Science \r\nResearch Institute </a> in\r\nBerkeley,\
-  \ CA.  In 1987 he received an NSF Presidential Young\r\nInvestigator award.  He\
-  \ spent the 1993-1994 academic year\r\nas a visiting professor at the <a href=\"\
-  http://www.iisc.ernet.in/\"> \r\nIndian Institute of Science</a>, in Bangalore,\
-  \ India, and the 2001-2002 academic year a visiting researcher in the \r\nLearning\
-  \ Sciences and Technology group at <a \r\nhref=\"http://research.microsoft.com\"\
-  >Microsoft Research</a>.  While at Microsoft, he led the development of <a \r\n\
-  href=\"http://www.cs.washington.edu/education/dl/presenter/\">Classroom Presenter</a>,\
-  \ a tool for delivering presentations from the \r\nTabletPC.  He was the 2007 recipient\
-  \ of the UW College of Engineering\r\nFaculty Innovator for Teaching Award.  He\
-  \ has been the department's assoicate chair for educational programs since 2004.\r\
-  \n </p>\r\n\r\n<P>\r\nRichard Anderson's main research interests are in Computing\
-  \ for the Developing World,   Educational Technology, and Pen Based Computing. He\
-  \ is \r\nparticularly interested in using technology to improve the classroom environment,\
-  \ and in educational applications of \r\n\r\nthe Tablet PC.  Previously, he has\
-  \ worked in the theory and implementation\r\nof algorithms, including parallel algorithms,\
-  \ computational geometry, and \r\nscientific applications.   He was a founder of\
-  \ the department's <a \r\nhref=\"http://www.cs.washington.edu/masters/\">Professional\
-  \ Master's Program</a> and led the effort to export the department's introductory\
-  \ programming courses using <a href=http://www.cs.washington.edu/education/TVI/>Tutored\
-  \ \r\nVideo Instruction</a>. \r\n"
-old-dub-photo: icons/people/rja.jpg
 ---
