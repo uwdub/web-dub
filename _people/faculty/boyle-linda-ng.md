@@ -20,8 +20,9 @@ version: 1
 # - More
 ################################################################################
 name:
-- Turns
-- Jennifer
+- Boyle
+- Linda
+- Ng
 
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
@@ -78,9 +79,11 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- title: ?????
-  affiliation: Human Centered Design & Engineering
-
+- title: Associate Professor
+  affiliation: Industrial & Systems Engineering
+- title: Associate Professor
+  affiliation: Civil & Environmental Engineering
+  
 ################################################################################
 # A person may have a website. If not, this field should not be present.
 #
@@ -88,5 +91,5 @@ positions:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
 web:
-- http://www.uwtc.washington.edu/nav_people/faculty/turns
+- http://depts.washington.edu/hfsm/linda.php
 ---

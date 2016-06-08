@@ -1,26 +1,94 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+tbd_web: true
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Hendry
 - David
 - G
-position:
-- title: ?????
-  unit: Information School
-web:
-- http://faculty.washington.edu/dhendry/
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
 role:
 - faculty
 
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: 'David Hendry is Assistant Professor at the <a href="http://www.ischool.washington.edu/">Information
-  School</a>, University of Washington. He is currently investigating tools and practices
-  for information management in design, an area of inquiry called Design Informatics.
-  He has published on design education, search, and end-user programming. After his
-  Ph.D. from the Robert Gordon University in Aberdeen, Scotland, where he built a
-  system called SketchTrieve, he spent six years in industry working on the usability
-  of search and other dot.com applications, leaving Terra Lycos in 2002 to join the
-  Information School. '
-old-dub-photo: icons/people/dhendry.jpg
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+positions:
+- title: ?????
+  affiliation: Information School
+  
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
+web:
+- http://faculty.washington.edu/dhendry/
 ---

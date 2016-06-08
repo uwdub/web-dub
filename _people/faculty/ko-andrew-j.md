@@ -6,10 +6,9 @@
 version: 1
 
 ################################################################################
-# A people file might exist but lack values for some fields. These are 'NA'. 
-# The only valid value is 'True'. A NA field should not be present if 'False'.
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
-na_web: true
 
 ################################################################################
 # Full name listed in the order of last name, first name, middle name(s).
@@ -31,12 +30,13 @@ name:
 # Valid roles: faculty, doctoral, masters, undergrad, staff
 #              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
 #
-# A person may have multiple positions. Positions consist of titles and units.
+# A person may have multiple positions, which consist of titles and affiliations.
 # Each value for a field must match one of the options below exactly.
 #
-# Valid faculty titles: Professor, Professor Emeritus
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
 #
-# Valid faculty and doctoral units:
+# Valid faculty and doctoral affiliations:
 #   Computer Science & Engineering
 #   Division of Design
 #   Human Centered Design & Engineering
@@ -51,7 +51,7 @@ name:
 #   Mechanical Engineering
 #   Psychology
 # 
-# Valid masters units:
+# Valid masters affiliations:
 #   Master of Science in Computer Science & Engineering
 #   Master of Design
 #   Master of Science in Human Centered Design & Engineering
@@ -68,38 +68,35 @@ name:
 #   Master of Science in Mechanical Engineering
 #   Master of Science in Engineering
 #
-# Faculty have one or more title and units.
+# Faculty have one or more title and affiliations.
 # role:
 #  - faculty
-# position:
-#  - title: Professor
-#    unit: Information School
-#  - title: Professor
-#    unit: Computer Science & Engineering
+# positions:
+#  - title: Associate Professor
+#    affiliation: Information School
+#  - title: Assistant Professor
+#    affiliation: Computer Science & Engineering
 # 
 # Students do not have a title, but can have one more units.
 #
 # For a doctoral student their unit is the name of their department.
 # role:
 #  - doctoral-student
-# position:
-#  - unit: Information School
+# positions:
+#  - affiliation: Information School
 #
 # For a master's student their unit is the name of their program.
 #  role:
 #  - masters-student
-#  position:
-#  - unit: Master of Science in Human Centered Design & Engineering
-#
+#  positions:
+#  - affiliation: Master of Science in Human Centered Design & Engineering
 ################################################################################
 role:
 - faculty
 
-position:
+positions:
 - title: Associate Professor
-  unit: Information School
-- title: Adjunct Associate Professor
-  unit: Computer Science & Engineering
+  affiliation: Information School
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.
@@ -109,29 +106,4 @@ position:
 ################################################################################
 web:
 - http://faculty.washington.edu/ajko/
-
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: Andrew Ko is an Assistant Professor at the <a href="http://ischool.uw.edu/">Information
-  School</a> at the <a href="http://www.washington.edu">University of Washington</a>.
-  His research interests include human and cooperative aspects of software development
-  and design, and more broadly, the fields of human-computer interaction and software
-  engineering. He has published articles in all of these areas, receiving best paper
-  awards at top conferences such as the <a href="http://www.icse-conferences.org/">International
-  Conference on Software Engineering</a> (ICSE) and the <a href="http://www.chi2007.org">ACM
-  Conference on Human Factors in Computing</a> (CHI), as well as extensive press on
-  the <a href="http://faculty.washington.edu/ajko/whyline-java.shtml">Whyline</a>,
-  a debugging tool that lets users ask why questions about problematic output. In
-  2010, he was awarded an NSF CAREER award to support his research and teaching on
-  evidence-based bug triage. In 2004, he was awarded both <a href="http://www.nsf.gov/grfp">NSF</a>
-  and <a href="http://www.asee.org/ndseg">NDSEG</a> research fellowships in support
-  of his Ph.D. research. He received his Ph.D at the <a href="http://www.hcii.cs.cmu.edu">Human-Computer
-  Interaction Institute</a> at <a href="http://www.cmu.edu">Carnegie Mellon University</a>,
-  advised by <a href="http://www.cs.cmu.edu/~bam">Brad Myers</a>. He received Honors
-  Bachelors of Science degrees in Computer Science and Psychology from <a href="http://www.oregonstate.edu">Oregon
-  State University</a> in 2002.
-old-dub-photo: icons/people/mug_1.jpg
-twitter:
-- andyjko
 ---

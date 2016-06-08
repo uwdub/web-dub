@@ -20,8 +20,9 @@ version: 1
 # - More
 ################################################################################
 name:
-- Turns
-- Jennifer
+- Farkas
+- David
+- K.
 
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
@@ -78,9 +79,9 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- title: ?????
+- title: Professor Emeritus
   affiliation: Human Centered Design & Engineering
-
+  
 ################################################################################
 # A person may have a website. If not, this field should not be present.
 #
@@ -88,5 +89,5 @@ positions:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
 web:
-- http://www.uwtc.washington.edu/nav_people/faculty/turns
+- http://faculty.washington.edu/farkas/
 ---
