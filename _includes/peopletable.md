@@ -31,8 +31,8 @@
                 {{index}}
               </a>
             </h4>
-            {% for item_position in item_person.position %}
-              {{ item_position.unit }}
+            {% for item_position in item_person.positions %}
+              {{ item_position.affiliation }}
               <br />
             {% endfor %}
             <br />

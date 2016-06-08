@@ -8,9 +8,9 @@ title: "People"
 {% include peopletable.md people=faculty %}
 
 ## Doctoral Students
-{% assign doctoralstudents = (site.people | person_has_role: 'doctoral-student') %}
+{% assign doctoralstudents = (site.people | person_has_role: 'doctoral') %}
 {% include peopletable.md people=doctoralstudents %}
 
 ## Masters Students
-{% assign mastersstudents = (site.people | person_has_role: 'masters-student') %}
+{% assign mastersstudents = (site.people | person_has_role: 'masters') %}
 {% include peopletable.md people=mastersstudents %}
