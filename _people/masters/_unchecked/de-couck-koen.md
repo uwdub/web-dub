@@ -1,39 +1,91 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - De Couck
 - Koen
-position:
-- title: ?????
-  unit: Human Centered Design & Engineering
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
+role:
+- masters
+
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+positions:
+- affiliation: Human Centered Design & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
 web:
 - http://www.koendecouck.be/
-twitter:
-- '@kdecouck'
-role:
-- masters-student
-
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "Koen De Couck is a Belgian data scientist/developer, entrepreneur, angel\
-  \ investor and digital nomad. His professional background includes user research\
-  \ & design, software design, HCI, statistics and online psychological assessment.\r\
-  \n\r\nKoen graduated from Ghent University, Belgium in 2013 with first class honours\
-  \ in Experimental Psychology. He received the prestigious Klasse Award (2010) for\
-  \ his investigation of Flemish user behaviour relating to different online knowledge\
-  \ platforms (wiki\u2019s, directories, search engines). He also gave talks about\
-  \ his findings at the universities of Leiden (2009), Rotterdam (2010) and University\
-  \ of Cambridge (2012). His Belgian master dissertation, \u2018The researcher personality\
-  \ archetype\u2019, detailed a user behavior model specific to higher educational\
-  \ settings. These findings received wide attention in local media. In his free time\
-  \ Koen acted as a private tutor in statistics to undergraduate students, and functioned\
-  \ as webmaster of the psychology student council. In 2012, he founded his own company\
-  \ and designed a pilot project called \u2018Sense\u2019, an Android based psychometrics\
-  \ app which intelligently matches users.\r\n\r\nIn recent years Koen has been active\
-  \ at the University of Washington as an HCDE Fulbright graduate,  the United States\
-  \ merit-based program for young professionals. He worked on several user experience\
-  \ projects and participates as an active member of DUB. He is also a member of the\
-  \ British Psychological Society and several foundations promoting young responsible\
-  \ entrepreneurship, incl. the international Kairos Society.\r\n"
-old-dub-photo: icons/people/image_normal.jpg
 ---

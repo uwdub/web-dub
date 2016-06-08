@@ -1,40 +1,91 @@
 ---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of last name, first name, middle name(s).
+#
+# name: 
+# - Surname
+# - First
+# - Middle
+# - More
+################################################################################
 name:
 - Chen
 - Nan-Chen
-position:
-- title: ?????
-  unit: Human Centered Design & Engineering
+
+################################################################################
+# Each person has a single main role, and may have additional alumni roles.
+# The first role that is listed is their main (current) role.
+#
+# Valid roles: faculty, doctoral, masters, undergrad, industry,
+#              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
+################################################################################
+role:
+- doctoral
+
+################################################################################
+# A person may have multiple positions, which consist of titles and affiliations.
+#
+# Faculty have one or more title and affiliations.
+# Students do not have a title, but have one or more affiliations.
+#
+# For a doctoral student their affiliation is the name of their department.
+# For a master's student their affiliation is the name of their program.
+#
+# Valid faculty titles: Assistant Professor, Associate Professor, Professor,
+#                       Professor Emeritus, Senior Lecturer
+#
+# Valid faculty and doctoral affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Communications
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Psychology
+# 
+# Valid masters affiliations:
+#   Master of Science in Computer Science & Engineering
+#   Master of Design
+#   Master of Science in Human Centered Design & Engineering
+#   Master of Science in Information Management
+#   Master of Library and Information Science
+#   Master of Human-Computer Interaction + Design
+#   Master of Science in Architecture
+#   Master of Science in Biomedical and Health Informatics
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
+#   Master of Science in Electrical Engineering
+#   Master of Industrial and Systems Engineering
+#   Master of Science in Industrial Engineering
+#   Master of Science in Mechanical Engineering
+#   Master of Science in Engineering
+################################################################################
+positions:
+- affiliation: Human Centered Design & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - http://faculty.washington.edu/ajko/
+################################################################################
 web:
 - http://nanchen.csie.org/
-role:
-- doctoral-student
-
-############################################################
-# These fields are provided to ease migration of old content.
-# They are not used, and should be deleted when no longer desired.
-old-dub-bio: "<p>\r\nI am currently a PhD student in <a href='http://www.hcde.washington.edu/'\
-  \ target='_blank'>Human-Centered Design and Engineering (HCDE)</a> at University\
-  \ of Washington. As a member of <a href='http://depts.washington.edu/sccl/' target='_blank'>Scientific\
-  \ Collaboration and Creativity Lab (SCCL)</a>, I work with <a href='http://faculty.washington.edu/aragon/'\
-  \ target='_blank'>Prof. Cecilia Aragon</a>. I am also a member of the <a href='http://dub.washington.edu/'\
-  \ target='_blank'> Design-Use-Build (DUB) group</a>. I received my B.S. degree in\
-  \ <a href='http://www.csie.ntu.edu.tw/main.php?lang=en' target='_blank'>Computer\
-  \ Science and Information Engineering</a> with a minor in <a href='http://140.112.62.7/act4-e.php'\
-  \ target='_blank'>Psychology</a> from <a href='http://www.ntu.edu.tw/english/' target='_blank'>National\
-  \ Taiwan University</a> in 2013, where I worked with <a href='http://mll.csie.ntu.edu.tw/hchu.php'\
-  \ target='_blank'>Prof. Hao-Hua Chu</a>.\r\n</p>\r\n\r\n<p>\r\nMy research is focused\
-  \ on human-computer interaction. I am interested in developing visualization tools\
-  \ to help people better understand data and technologies to support collaboration.\
-  \ I am now working on building tools to analyze affect in text-based communication,\
-  \ such as online chat. </p>\r\n\r\n<p>\r\nI grew up in <a href='http://en.wikipedia.org/wiki/Taipei'\
-  \ target='_blank'>Taipei, Taiwan</a>. It is a city having super convenient <a href='http://en.wikipedia.org/wiki/Taipei#Transportation'\
-  \ target='_blank'>public transportation systems</a>, bike-friendly streets, and\
-  \ countless taxies. This means you can live without having a car. In addition, you\
-  \ can find food anytime anywhere in Taipei. We have many great <a href='http://www.thingsasian.com/stories-photos/1547'\
-  \ target='_blank'>night markets</a>, various restaurants, and super convenient convenience\
-  \ stores. Taipei is also famous for its <a href='http://fs.weatherspark.com.s3.amazonaws.com/production/reports/year/000/033/158/47ccbfb4/probability_of_precipitation_at_some_point_in_the_day_percent_pct.png'\
-  \ target='_blank'>rainy weather</a> - this is one of the reasons why I chose Seattle.\
-  \ ;-) \r\n</p>\r\n"
-old-dub-photo: icons/people/nanchen.jpg
 ---
