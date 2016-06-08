@@ -7,14 +7,18 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 // http://colorpalettes.net/color-palette-1447/
-@base-primary-color:                    #34113b;
-@base-hover-color:                      #572565;
+@base-primary-color:                    #4b2e83;
+@base-hover-color:                      #4cdc31;
 @base-link-color:                       #9657a6;
 
 @base-body-bg:                          #d3d3d3;
 @base-main-bg:                          #ffffff;
 
 @base-link-hover-color:                 @base-link-color;
+
+@base-button-bg:                        @base-primary-color;
+@base-button-color:                     #ffffff;
+@base-button-hover:                     @base-hover-color;
 
 @base-navbar-bg:                        @base-primary-color;
 @base-navbar-color:                     #ffffff;
@@ -37,6 +41,21 @@
 // Background
 
 @body-bg:                               @base-body-bg;
+
+// Buttons
+@btn-default-color:                     @base-button-color;
+@btn-default-bg:                        @base-button-bg;
+@btn-default-hover:                     @base-button-hover;
+
+// Buttons otherwise get darker on hover
+.btn-default {
+  &:hover {
+    background-color: @base-button-hover;
+  }
+}
+
+
+@btn-default-border:                    #ccc;
 
 // Links
 

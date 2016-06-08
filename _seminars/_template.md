@@ -1,9 +1,15 @@
 ---
 ################################################################################
-# Version of the seminar format. The only valid value for this is 1. 
+# Version of the seminar format. The only valid value for this is '1'. 
 # We may increment this in the future to simplify maintenance of old seminars.
 ################################################################################
 version: 1
+
+################################################################################
+# Sequence number of the seminar file. This is used to keep the iCal up to date.
+# Increment the sequence number each time the seminar file is updated.
+################################################################################
+sequence: 0
 
 ################################################################################
 # Date and time of the seminar. In quotes because : is a reserved character.
@@ -25,7 +31,17 @@ tbd_bio:        true
 tbd_video:      true
 
 ################################################################################
+# Seminar files are archived by default.
+# Add the following line if the file should not be archived:
+#
+# archive: false
+################################################################################
+
+################################################################################
 # One or more speakers. Each speaker has name and affiliation.
+#
+# If a speaker does not have an affiliation, the affiliation field can be removed.
+# In this case, the speaker needs a field 'affiliation_none: true'.
 #
 # speakers:
 #   - name: 

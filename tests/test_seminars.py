@@ -15,8 +15,14 @@ class TestSeminars(unittest.TestCase):
             if seminar_file_entry.is_file()
         ]
         for seminar_path_current in seminar_paths:
-            with open(seminar_path_current) as f:
-                blocks = yaml.safe_load_all(f)
+            try:
+                with open(seminar_path_current) as f:
+                    blocks = list(yaml.safe_load_all(f))
+            except UnicodeDecodeError as e:
+                self.assertIsNone(
+                    e,
+                    'Unicode error parsing seminar file: {}'.format(seminar_path_current)
+                )
 
             self.assertIsNotNone(
                 blocks,
@@ -49,6 +55,19 @@ class TestSeminars(unittest.TestCase):
                 ['1'],
                 'Invalid version in {}'.format(seminar_path_current)
             )
+
+            # The sequence is not 0, unless we're looking at the _template.md
+            self.assertIn(
+                'sequence',
+                seminar,
+                'No sequence in {}'.format(seminar_path_current)
+            )
+            if os.path.normpath(seminar_path_current) != os.path.normpath('_seminars/_template.md'):
+                self.assertGreater(
+                    seminar['sequence'],
+                    0,
+                    'Sequence was not incremented in {}'.format(seminar_path_current)
+                )
 
             # It has date and time fields
             self.assertIn(
@@ -109,11 +128,18 @@ class TestSeminars(unittest.TestCase):
                         speaker_current,
                         'Missing speakers name in {}'.format(seminar_path_current)
                     )
-                    self.assertIn(
-                        'affiliation',
-                        speaker_current,
-                        'Missing speakers affiliation in {}'.format(seminar_path_current)
-                    )
+                    if 'affiliation_none' in speaker_current:
+                        self.assertEqual(
+                            speaker_current['affiliation_none'],
+                            True,
+                            'Inconsistent value for speakers affiliation_none in {}'.format(seminar_path_current)
+                        )
+                    else:
+                        self.assertIn(
+                            'affiliation',
+                            speaker_current,
+                            'Missing speakers affiliation in {}'.format(seminar_path_current)
+                        )
 
             # The title may be tbd
             if 'tbd_title' in seminar:
@@ -173,7 +199,17 @@ class TestSeminars(unittest.TestCase):
                 # Should be a valid location
                 self.assertIn(
                     seminar['location'],
-                    ['CSE 691', 'HUB 145', 'HUB 250', 'HUB 332', 'HUB 334'],
+                    [
+                        'Alder Commons',
+                        'CSE 691',
+                        'Haggett Hall Cascade Room',
+                        'HUB 145',
+                        'HUB 250',
+                        'HUB 332',
+                        'HUB 334',
+                        'Sieg 233',
+                        'StartUp Hall Meeting Room, 1100 NE Campus Parkway'
+                    ],
                     'Invalid location in {}'.format(seminar_path_current)
                 )
 

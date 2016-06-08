@@ -15,8 +15,8 @@ SUMMARY:DUB Seminar{% unless item_seminar.tbd_title %}: {{ item_seminar.title }}
 DTSTART:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time | convert_time }}
 DTEND:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time_end | convert_time }}
 DTSTAMP:{{ site.time | date: "%Y%m%d" }}T{{ site.time | date: "%H%M%S" }}
-DESCRIPTION:Go to {{ site.baseurl }}{{ item_seminar.url }} for more info.
-SEQUENCE:0
+DESCRIPTION:{% include icaldescription.md %}
+SEQUENCE:{{ item_seminar.sequence }}
 END:VEVENT{% unless forloop.last %}
 {{}}{% endunless %}{% endfor %}
 END:VCALENDAR
