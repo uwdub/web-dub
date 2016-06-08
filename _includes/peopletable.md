@@ -8,9 +8,7 @@
     <div class="row">
       {% for item_person in people %} 
         {% assign photo_path = item_person.path | split:"." | first | append:".jpg" %}
-        {{ photo_path }}
         {% capture photo_exists %}{% file_exists {{ photo_path }} %}{% endcapture %}
-        {{ photo_exists }}
         {% if photo_exists == 'true' %}
           {% assign photo_url = photo_path | remove: "_" | prepend: "/" | prepend: site.baseurl %}
         {% else %}
