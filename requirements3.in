@@ -1,3 +1,4 @@
 invoke
 nose
-pyyaml --global-option='--without-libyaml'
+pip-tools --global-option='--without-libyaml'
+pyyaml
