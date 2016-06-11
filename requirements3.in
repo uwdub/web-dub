@@ -1,4 +1,5 @@
 invoke
+jinja2
 nose
 pip-tools --global-option='--without-libyaml'
 pyyaml
