@@ -1,5 +1,7 @@
 import invoke
+import jinja2
 import sys
+import yaml
 
 
 @invoke.task
@@ -57,6 +59,20 @@ def build_production():
 @invoke.task(pre=[update_dependencies])
 def build_test():
     invoke.run('bundle exec jekyll build -t --config _config.yml,_config-build-test.yml', encoding=sys.stdout.encoding)
+
+
+@invoke.task()
+def compile_config():
+    # Parse our compile config
+    with open('_compile-config.yml') as f:
+        config = yaml.safe_load(f)
+
+    # Compile each jinja2 file
+    for jinja2_entry in config['jinja2']['files']:
+        jinja2_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath='.'))
+        template = jinja2_environment.get_template(jinja2_entry['in'])
+        with open(jinja2_entry['out'], 'w') as f:
+            f.write(template.render(config['jinja2']['config']))
 
 
 @invoke.task(pre=[update_dependencies])

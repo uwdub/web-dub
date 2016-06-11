@@ -1,9 +1,6 @@
 # THIS FILE CAN'T BE GENERATED RIGHT NOW BECAUSE OF:
 #   https://github.com/nvie/pip-tools/issues/345
 #
-# INVOKE IS PINNED BECAUSE OF:
-#   https://github.com/pyinvoke/invoke/issues/345
-#
 # WHEN THINGS WORK, IT SHOULD BE UPDATED VIA:
 #   pip-compile --output-file requirements3.txt requirements3.in
 #

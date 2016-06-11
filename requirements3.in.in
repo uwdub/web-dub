@@ -1,6 +1,7 @@
+{# This file compiles to requirements3.in -#}
 # This file compiled from requirements3.in.in
 
-invoke==0.12.2
+invoke=={{ invoke_version }}
 jinja2
 nose
 pip-tools --global-option='--without-libyaml'

@@ -1,0 +1,10 @@
+jinja2:
+  config:
+    # Invoke is currently pinned by this bug:
+    #   https://github.com/pyinvoke/invoke/issues/345
+    invoke_version: 0.12.2
+  files:
+    - in:  requirements3.in.in
+      out: requirements3.in
+    - in:  .travis.yml.in
+      out: .travis.yml
