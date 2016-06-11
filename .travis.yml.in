@@ -1,3 +1,6 @@
+{# This file compiles to .travis.yml -#}
+# This file compiled from .travis.yml.in
+
 sudo: false
 
 language: python
@@ -15,8 +18,8 @@ install:
   # Install NodeJS
   - nvm install 5.1.0
 
-  # Install Python dependencies
-  - pip install invoke=={{ invoke_version }}
+  # Install Python dependencies (including invoke)
+  - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies
   - invoke update_dependencies
