@@ -15,8 +15,8 @@ install:
   # Install NodeJS
   - nvm install 5.1.0
 
-  # Install Python dependencies
-  - pip install invoke==0.12.2
+  # Install Python dependencies (including invoke)
+  - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies
   - invoke update_dependencies
