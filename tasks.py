@@ -132,10 +132,74 @@ def compile_calendar():
             with open(seminar_path_current, 'rb') as f:
                 seminar_hash_current = hashlib.md5(f.read()).hexdigest()
 
-            seminar_calendar_sequences[os.path.normpath(seminar_path_current)] = {
+            seminar_calendar_sequences[seminar_path_current] = {
                 'hash': seminar_hash_current,
                 'sequence': seminar_sequence_current
             }
+
+    # Store our updated sequences
+    data = {'sequences': seminar_calendar_sequences }
+    with open('_compile-calendar-sequences.yml', 'w') as f:
+        yaml.dump(
+            data,
+            stream=f,
+            default_flow_style=False
+        )
+
+
+@invoke.task()
+def compile_calendar_increment_all_sequences():
+    # Obtain our stored sequences
+    with open('_compile-calendar-sequences.yml') as f:
+        seminar_calendar_sequences = yaml.safe_load(f)['sequences']
+
+    # Iterate over all our seminar files
+    seminar_paths = [
+        os.path.normpath(seminar_file_entry.path)
+        for seminar_file_entry
+        in os.scandir('_seminars')
+        if seminar_file_entry.is_file() and
+           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
+    ]
+
+    for seminar_path_current in seminar_paths:
+        # Get the hash and sequence from the file
+        with open(seminar_path_current, 'rb') as f:
+            seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+        with open(seminar_path_current) as f:
+            seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
+
+        if seminar_path_current not in seminar_calendar_sequences:
+            seminar_calendar_sequences[seminar_path_current] = {
+                'hash': seminar_hash_current,
+                'sequence': seminar_sequence_current
+            }
+
+        seminar_hash_stored = seminar_calendar_sequences[seminar_path_current]['hash']
+        seminar_sequence_stored = seminar_calendar_sequences[seminar_path_current]['sequence']
+
+        # Bump the sequence
+        seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
+
+        # pyyaml does not preserve comments, so we brute force modification of the seminar yml file
+        with open(seminar_path_current) as f:
+            seminar_contents = f.read()
+        seminar_contents = re.sub(
+            'sequence: {}'.format(seminar_sequence_stored),
+            'sequence: {}'.format(seminar_sequence_current),
+            seminar_contents
+        )
+        with open(seminar_path_current, 'w') as f:
+            f.write(seminar_contents)
+
+        # That changed the file, so update our hash, then store the updated sequence
+        with open(seminar_path_current, 'rb') as f:
+            seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+
+        seminar_calendar_sequences[seminar_path_current] = {
+            'hash': seminar_hash_current,
+            'sequence': seminar_sequence_current
+        }
 
     # Store our updated sequences
     data = {'sequences': seminar_calendar_sequences }
