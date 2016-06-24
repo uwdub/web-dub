@@ -80,7 +80,6 @@ role:
 ################################################################################
 positions:
 - affiliation: Human Centered Design & Engineering
-- affiliation: Microsoft
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.

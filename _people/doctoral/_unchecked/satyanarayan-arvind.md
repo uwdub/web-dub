@@ -78,7 +78,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliation: Stanford Computer Science
+- affiliation: Computer Science & Engineering
   
 ################################################################################
 # A person may have a website. If not, this field should not be present.

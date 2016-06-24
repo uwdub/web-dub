@@ -9,7 +9,6 @@ version: 1
 # A people file might exist but lack values for some fields. These are 'TBD'. 
 # The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
-tbd_web: true
 
 ################################################################################
 # Full name listed in the order of last name, first name, middle name(s).
@@ -79,7 +78,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliaton: Human Centered Design & Engineering
+- affiliation: Human Centered Design & Engineering
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.

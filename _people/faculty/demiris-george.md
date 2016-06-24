@@ -79,9 +79,9 @@ role:
 ################################################################################
 positions:
 - title: Professor
-  affiliation: Biomedical and Health Informatics
+  affiliation: Biomedical & Health Informatics
 - title: Professor
-  affiliation: School of Nursing
+  affiliation: Nursing
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.

@@ -9,6 +9,7 @@ version: 1
 # A people file might exist but lack values for some fields. These are 'TBD'. 
 # The only valid value is 'True'. A TBD field should not be present if 'False'.
 ################################################################################
+tbd_web: true
 
 ################################################################################
 # Full name listed in the order of last name, first name, middle name(s).
@@ -20,8 +21,9 @@ version: 1
 # - More
 ################################################################################
 name:
-- De Couck
-- Koen
+- Surname
+- First
+- Middle
 
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
@@ -31,7 +33,7 @@ name:
 #              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
 ################################################################################
 role:
-- masters
+- faculty
 
 ################################################################################
 # A person may have multiple positions, which consist of titles and affiliations.
@@ -43,42 +45,46 @@ role:
 # For a master's student their affiliation is the name of their program.
 #
 # Valid faculty titles: Assistant Professor, Associate Professor, Professor,
-#                       Professor Emeritus, Senior Lecturer
+#                       Professor Emeritus, Lecturer, Senior Lecturer
 #
 # Valid faculty and doctoral affiliations:
 #   Computer Science & Engineering
-#   Division of Design
 #   Human Centered Design & Engineering
-#   Information School
 #   Human Computer Interaction & Design
-#   Architecture
-#   Biomedical & Health Informatics
-#   Communications
+#   Information School
+#   Division of Design
 #   DXARTS Digital Arts
 #   Electrical Engineering
-#   Industrial & Systems Engineering
 #   Mechanical Engineering
+#   Industrial & Systems Engineering
+#   Civil & Environmental Engineering
+#   Biomedical & Health Informatics
+#   Rehabilitation Medicine
+#   Communication
+#   Architecture
 #   Psychology
+#   Nursing
 # 
 # Valid masters affiliations:
 #   Master of Science in Computer Science & Engineering
-#   Master of Design
 #   Master of Science in Human Centered Design & Engineering
 #   Master of Science in Information Management
 #   Master of Library and Information Science
+#   Master of Design
 #   Master of Human-Computer Interaction + Design
-#   Master of Science in Architecture
-#   Master of Science in Biomedical and Health Informatics
-#   Master of Communication in Digital Media
-#   Master of Communication in Communities and Networks
+#   Master of Science in Biomedical & Health Informatics
 #   Master of Science in Electrical Engineering
-#   Master of Industrial and Systems Engineering
+#   Master of Industrial & Systems Engineering
 #   Master of Science in Industrial Engineering
 #   Master of Science in Mechanical Engineering
 #   Master of Science in Engineering
+#   Master of Science in Architecture
+#   Master of Communication in Digital Media
+#   Master of Communication in Communities and Networks
 ################################################################################
 positions:
-- affiliation: Master of Science in Human Centered Design & Engineering
+- title: Associate Professor
+  affiliation: Computer Science & Engineering
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.
@@ -86,6 +92,5 @@ positions:
 # web:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
-web:
-- http://www.koendecouck.be/
+
 ---
