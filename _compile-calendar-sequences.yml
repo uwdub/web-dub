@@ -99,14 +99,14 @@ sequences:
     hash: 0d568e0c9fc3f5d612d626e0b32f330f
     sequence: 2
   _seminars\2016-06-22.md:
-    hash: 6a98a61983195845e58a5f44b94c138a
-    sequence: 4
+    hash: 58aef075055d85e776126fb5e3cf4365
+    sequence: 5
   _seminars\2016-06-29.md:
-    hash: 1a5cb044faecf5d6ce64ce2a5623cb42
-    sequence: 2
-  _seminars\2016-07-06.md:
-    hash: c459420992398f82331c8fc512e8d52a
+    hash: c3baf2c83e6b144e9b60a4d3ec10c355
     sequence: 3
+  _seminars\2016-07-06.md:
+    hash: 69c7e9dbb033b36b45e25b0e713bb3f0
+    sequence: 5
   _seminars\2016-07-13.md:
     hash: 6572ba1dfb70b6990903365722d467db
     sequence: 2
