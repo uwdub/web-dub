@@ -63,5 +63,7 @@ exclude:
   # Ruby
   - Gemfile
   - Gemfile.lock
+  # Secrets
+  - secrets
   # Tests
   - tests
