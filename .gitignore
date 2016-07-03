@@ -8,6 +8,9 @@
 .jekyll-metadata
 _site
 
+# Our secrets
+secrets
+
 # Our Python environment
 env34
 env35

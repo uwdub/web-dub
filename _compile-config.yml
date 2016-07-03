@@ -1,0 +1,12 @@
+config:
+  # Invoke is currently pinned by this bug:
+  #   https://github.com/pyinvoke/invoke/issues/345
+  invoke_version: 0.12.2
+  pip_version: 8.1.1
+
+jinja2:
+  entries:
+    - in:  requirements3.in.in
+      out: requirements3.in
+    - in:  .travis.yml.in
+      out: .travis.yml
