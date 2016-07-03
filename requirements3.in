@@ -3,5 +3,5 @@
 invoke==0.12.2
 jinja2
 nose
-pip-tools --global-option='--without-libyaml'
-pyyaml
+pip-tools
+pyyaml --global-option='--without-libyaml'
