@@ -1,5 +1,6 @@
-# PyCharm settings
+# IDE settings
 .idea
+*.iml
 
 # Jekyll's build of the site
 .jekyll-metadata
