@@ -6,3 +6,4 @@ jinja2
 nose
 pip-tools --global-option='--without-libyaml'
 pyyaml
+{# This comment gives us a newline at the end of the generated file #}
