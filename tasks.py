@@ -116,7 +116,10 @@ def compile_config():
 
     # Compile each jinja2 file
     for jinja2_entry in compile_config_yaml['jinja2']['entries']:
-        jinja2_environment = jinja2.Environment(loader=jinja2.FileSystemLoader(searchpath='.'))
+        jinja2_environment = jinja2.Environment(
+            loader=jinja2.FileSystemLoader(searchpath='.'),
+            undefined=jinja2.StrictUndefined
+        )
         template = jinja2_environment.get_template(jinja2_entry['in'])
         with open(jinja2_entry['out'], 'w') as f:
             f.write(template.render(compile_config_yaml['config']))
