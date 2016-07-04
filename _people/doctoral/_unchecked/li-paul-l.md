@@ -79,8 +79,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- title: ?????
-  affiliation: Information School
+- affiliation: Information School
   
 ################################################################################
 # A person may have a website. If not, this field should not be present.

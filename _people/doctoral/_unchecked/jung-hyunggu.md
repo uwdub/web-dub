@@ -78,7 +78,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliation: Biomedical and Health Informatics
+- affiliation: Biomedical & Health Informatics
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.

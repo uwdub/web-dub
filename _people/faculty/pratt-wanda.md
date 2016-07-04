@@ -20,8 +20,8 @@ version: 1
 # - More
 ################################################################################
 name:
-- De Couck
-- Koen
+- Pratt
+- Wanda
 
 ################################################################################
 # Each person has a single main role, and may have additional alumni roles.
@@ -31,7 +31,7 @@ name:
 #              alumni-faculty, alumni-doctoral, alumni-masters, alumni-undergrad
 ################################################################################
 role:
-- masters
+- faculty
 
 ################################################################################
 # A person may have multiple positions, which consist of titles and affiliations.
@@ -78,7 +78,8 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliation: Master of Science in Human Centered Design & Engineering
+- title: Professor
+  affiliation: Information School
 
 ################################################################################
 # A person may have a website. If not, this field should not be present.
@@ -87,5 +88,5 @@ positions:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
 web:
-- http://www.koendecouck.be/
+- http://faculty.washington.edu/wpratt/
 ---
