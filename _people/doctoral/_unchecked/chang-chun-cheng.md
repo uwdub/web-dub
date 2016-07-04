@@ -79,7 +79,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliation: ???
+- affiliation: Industrial & Systems Engineering
 ################################################################################
 # A person may have a website. If not, this field should not be present.
 #

@@ -78,7 +78,7 @@ role:
 #   Master of Science in Engineering
 ################################################################################
 positions:
-- affiliation: Human Centered Design & Engineering
+- affiliation: Master of Science in Human Centered Design & Engineering
   
 ################################################################################
 # A person may have a website. If not, this field should not be present.
