@@ -51,6 +51,10 @@ exclude:
   - node_modules
   - npm-shrinkwrap.json
   - package.json
+  # People raw images
+  - _people/doctoral/_images_raw
+  - _people/faculty/_images_raw
+  - _people/masters/_images_raw
   # Python
   - env34
   - env35
