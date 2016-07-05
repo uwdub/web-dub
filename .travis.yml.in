@@ -18,7 +18,8 @@ install:
   # Install NodeJS
   - nvm install {{ node_version }}
 
-  # Install Python dependencies (including invoke)
+  # Install Python dependencies
+  - python -m pip install --upgrade pip=={{ pip_version }}
   - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies
@@ -26,3 +27,4 @@ install:
 
 script:
   - nosetests
+{# This comment gives us a newline at the end of the generated file #}
