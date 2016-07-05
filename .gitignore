@@ -15,3 +15,6 @@ env35
 
 # Installed node packages
 node_modules
+
+# Any secrets
+secrets
