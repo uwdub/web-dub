@@ -6,19 +6,20 @@ sudo: false
 language: python
 
 python:
-  - "3.5"
+  - "{{ python_version }}"
 
 install:
   # Install Ruby
-  - rvm install 2.2.3
-  - rvm @global do gem install bundler -v 1.10.6
-  - rvm @global do gem uninstall bundler -v "!=1.10.6"
-  - rvm use 2.2.3 --default
+  - rvm install {{ ruby_version }}
+  - rvm @global do gem install bundler -v {{ bundler_version }}
+  - rvm @global do gem uninstall bundler -v "!={{ bundler_version }}"
+  - rvm use {{ ruby_version }} --default
 
   # Install NodeJS
-  - nvm install 5.1.0
+  - nvm install {{ node_version }}
 
-  # Install Python dependencies (including invoke)
+  # Install Python dependencies
+  - python -m pip install --upgrade pip=={{ pip_version }}
   - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies
@@ -26,3 +27,4 @@ install:
 
 script:
   - nosetests
+{# This comment gives us a newline at the end of the generated file #}
