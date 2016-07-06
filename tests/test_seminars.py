@@ -207,6 +207,7 @@ class TestSeminars(unittest.TestCase):
                         'HUB 250',
                         'HUB 332',
                         'HUB 334',
+                        'Kane 225 (Walker-Ames Room)',
                         'Sieg 233',
                         'StartUp Hall Meeting Room, 1100 NE Campus Parkway'
                     ],
