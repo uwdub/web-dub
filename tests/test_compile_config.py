@@ -34,7 +34,7 @@ class TestCompileConfig(unittest.TestCase):
             self.assertEqual(
                 before_output_hashes[jinja2_entry['out']],
                 after_output_hashes[jinja2_entry['out']],
-                'compile_config detected a change in {}, changes should be in {}'.format(
+                'compile_config detected inconsistency between {} and {}'.format(
                     jinja2_entry['out'],
                     jinja2_entry['in']
                 )
