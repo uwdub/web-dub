@@ -88,5 +88,5 @@ positions:
 # - http://faculty.washington.edu/ajko/
 ################################################################################
 web:
-- http://depts.washington.edu/designuw/faculty_cheng.htm
+- http://art.washington.edu/design/design-faculty/karen-cheng/
 ---
