@@ -9,10 +9,10 @@ python:
   - "{{ python_version }}"
 
 cache:
-  bundler: true
   pip: true
   directories:
     - node_modules
+    - /home/travis/.rvm/gems
 
 install:
   # Install Ruby
