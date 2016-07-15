@@ -8,6 +8,12 @@ language: python
 python:
   - "{{ python_version }}"
 
+cache:
+  bundler: true
+  pip: true
+  directories:
+    - node_modules
+
 install:
   # Install Ruby
   - rvm install {{ ruby_version }}

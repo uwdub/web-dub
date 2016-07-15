@@ -7,6 +7,12 @@ language: python
 python:
   - "3.5"
 
+cache:
+  bundler: true
+  pip: true
+  directories:
+    - node_modules
+
 install:
   # Install Ruby
   - rvm install 2.2.3
