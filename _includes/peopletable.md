@@ -14,7 +14,7 @@
         {% else %}
           {% assign photo_url = "default.jpg" | prepend: "/people/" | prepend: site.baseurl %}
         {% endif %}
-        <div class="media col-md-4">
+        <div class="media col-md-4 people-col">
           <div class="media-left">
             <div class="media-object">
               {% assign assuming_photo_exists_url = photo_path | prepend: "/" | prepend: site.baseurl %}
@@ -35,7 +35,6 @@
               {{ item_position.affiliation }}
               <br />
             {% endfor %}
-            <br />
           </div>
         </div>
         {% assign loopindex = forloop.index | modulo: 3 %}
