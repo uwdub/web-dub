@@ -117,11 +117,26 @@ sequences:
     hash: 5eca9bfb0e8f77057635cab97c01816a
     sequence: 3
   _seminars\2016-08-03.md:
-    hash: d4cd2fef6a575302a74a7f93509d6d96
-    sequence: 4
+    hash: ae2fd3e28ab716315f43a0108f9f13fd
+    sequence: 5
   _seminars\2016-08-10.md:
     hash: 47770c6799b0ea7a37084955790a2dc5
     sequence: 3
   _seminars\2016-08-17.md:
     hash: ab5f53bc9eec545ea68bd861787ba52d
     sequence: 6
+  _seminars\2016-08-24.md:
+    hash: c3d04a8b3c78254e92a37b9309bbd072
+    sequence: 2
+  _seminars\2016-08-31.md:
+    hash: 445f60257d2363e6967c8bf39e145493
+    sequence: 2
+  _seminars\2016-09-07.md:
+    hash: 10bb32cf084e2f65d457022ab8460749
+    sequence: 2
+  _seminars\2016-09-14.md:
+    hash: 36a9512d0b72c6ec253f40a54b3a458b
+    sequence: 2
+  _seminars\2016-09-21.md:
+    hash: 2dc39410c69488bf70ea26c44cb42056
+    sequence: 2
