@@ -8,7 +8,7 @@ class TestPeople(unittest.TestCase):
         """
         All people files parse as valid YAML.
         """
-        extensions = {".jpg", ".png", ".gif"} #etc
+        extensions = {".jpg", ".png", ".gif"}  # etc
 
         people_paths = [
             people_file_entry.path
@@ -38,12 +38,14 @@ class TestPeople(unittest.TestCase):
         people_paths = [
             people_file_entry.path
             for people_file_entry
-            in os.scandir('_people') and
-                os.scandir('_people/faculty') and
-                os.scandir('_people/doctoral/_unchecked') and
-                os.scandir('_people/masters/_unchecked')
-            if (people_file_entry.is_file()) and (os.path.splitext(people_file_entry.path)[1] == ".md")
-            ]
+            in os.scandir('_people')
+            and os.scandir('_people/faculty')
+            and os.scandir('_people/doctoral')
+            and os.scandir('_people/masters')
+            if people_file_entry.is_file()
+            and os.path.splitext(people_file_entry.path)[1] == ".md"
+        ]
+
         for people_path_current in people_paths:
             with open(people_path_current) as f:
                 # First block should be our header
