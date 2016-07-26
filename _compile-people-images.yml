@@ -1,4 +1,92 @@
 people:
+  _people\doctoral\bauer-jared-s.md:
+    image_hash: de087d0ed60157da338b6ee367e8cf69
+  _people\doctoral\berry-andrew-b-l.md:
+    image_hash: 0fe8ca7eb9984faa3e7dc08d4f5d981d
+  _people\doctoral\bonnar-caitlin.md:
+    image_hash: 02bfed472226a135a769f03edda3f438
+  _people\doctoral\bragg-danielle.md:
+    image_hash: 0b54d32e40486aa5e966f99e08b56cb4
+  _people\doctoral\bragg-jonathan.md:
+    image_hash: bb637bf1f53191acf4ffde99162e6098
+  _people\doctoral\brooks-michael.md:
+    image_hash: 3e056104851e8fc687b63e2b3ec57070
+  _people\doctoral\burg-brian.md:
+    image_hash: 13fdc5f3fe3b0ac77847e3dd7170573c
+  _people\doctoral\chang-chun-cheng.md:
+    image_hash: b0fa96fb9895e728277b031b10e30c0c
+  _people\doctoral\chen-keyu.md:
+    image_hash: 352f100540c1aa542098d9c683059691
+  _people\doctoral\chen-nan-chen.md:
+    image_hash: 6382b7c79c41e424d8acb813e927fe58
+  _people\doctoral\chilton-lydia.md:
+    image_hash: 99f142f7fe80f9e3be277d1ea2522e4d
+  _people\doctoral\chung-chia-fang-christina.md:
+    image_hash: 3795bab3f50a3f8f698733a90d946766
+  _people\doctoral\chung-mike.md:
+    image_hash: 5289b86a2a6b1de76aa381de271da5ea
+  _people\doctoral\derthick-katie.md:
+    image_hash: ee184e3cfc46bec43e21d6f5e926a8a5
+  _people\doctoral\dixon-morgan.md:
+    image_hash: 9b0ef4d9ce071a9cba00ebd6f9cea5a8
+  _people\doctoral\epstein-daniel-a.md:
+    image_hash: 0a6151d41baaeb5680aa92804a8f1952
+  _people\doctoral\fox-sarah.md:
+    image_hash: e395e262fcefa00add62077cc17878a1
+  _people\doctoral\goel-mayank.md:
+    image_hash: 0019929aa3f7a16eb5c972dee9bebe18
+  _people\doctoral\hiniker-alexis.md:
+    image_hash: 0bf54a17e5d38c9266bd7be44df5526a
+  _people\doctoral\hong-sungsoo-ray.md:
+    image_hash: 1793ba0df774588a3f16b11eb92dcc09
+  _people\doctoral\jung-hyunggu.md:
+    image_hash: 9581b382e969a84c9a3a878c004843cf
+  _people\doctoral\karlova-natascha-a.md:
+    image_hash: 041f45320d5f4420586f1c640d364301
+  _people\doctoral\kay-matthew.md:
+    image_hash: dc12dfa345c28a2e0e458d300abb04e5
+  _people\doctoral\kuksenok-katie.md:
+    image_hash: a56d90172c3f75933ef5f9f6c0e173bf
+  _people\doctoral\lazar-amanda.md:
+    image_hash: b9e5fe59fb4b70f682868864aa7c167a
+  _people\doctoral\li-paul-l.md:
+    image_hash: d73ee4e2b985b1b80769786497a8952e
+  _people\doctoral\liu-leslie-s.md:
+    image_hash: 18d0a2cf9e4f19cca1ad1b9fd9ea9249
+  _people\doctoral\nelson-greg-l.md:
+    image_hash: 0374d33c2687d7a753202ae17b2cbea2
+  _people\doctoral\nied-alexander-conrad.md:
+    image_hash: 9939fcd732a7c4f9cf3df0eda4dd1c86
+  _people\doctoral\oleary-katie.md:
+    image_hash: 39fc9eae42eeec6883aed42dde771bc7
+  _people\doctoral\perry-daniel-b.md:
+    image_hash: 30811b25f0a37fa4f7ed0c056a9782a8
+  _people\doctoral\porter-john-r.md:
+    image_hash: 706bda36afa9f18b1390d2b3c069fb68
+  _people\doctoral\rector-kyle.md:
+    image_hash: f2e2de6e07a70456e392c6ee80c83012
+  _people\doctoral\satyanarayan-arvind.md:
+    image_hash: e6959b45677318feee64eaf336591b1e
+  _people\doctoral\scott-taylor-jackson.md:
+    image_hash: d07a8c65212a6e38f5a8d8e0e569f891
+  _people\doctoral\shinohara-kristen.md:
+    image_hash: c8080bd5acf9eda41104143173ab2946
+  _people\doctoral\snyder-jeff.md:
+    image_hash: df66cb4a98aed7e130486ac56a79007d
+  _people\doctoral\sobel-kiley.md:
+    image_hash: 3855c968ebc9c7e345419ee65a8d9172
+  _people\doctoral\suh-hyewon.md:
+    image_hash: 2a3f2b66805f1f4987de9a1176d78970
+  _people\doctoral\thornton-katherine.md:
+    image_hash: 567899acb02666ea0c31ff6f2d53bc4c
+  _people\doctoral\vashistha-aditya.md:
+    image_hash: 4e70ff9439c8eb1ec44ff7523ba7c79a
+  _people\doctoral\wang-edward-j.md:
+    image_hash: 87b298848d1653d68f5ec0067e1ac718
+  _people\doctoral\wongsuphasawat-kanit-ham.md:
+    image_hash: f38907660c27944fe73f343402b98839
+  _people\doctoral\yaaqoubi-judith.md:
+    image_hash: 0e20a903b765c826e7c2f19baf84da12
   _people\faculty\anderson-richard.md:
     image_hash: b1bcba9e226518ee9d293c66eb1b545e
   _people\faculty\aragon-cecilia-r.md:
