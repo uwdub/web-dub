@@ -135,6 +135,15 @@ def compile_config():
             f.write(template.render(compile_config_yaml['config']))
 
 
+@invoke.task()
+def compile_requirements():
+    # Compile the requirements file
+    invoke.run(
+        'pip-compile --upgrade --output-file requirements3.txt requirements3.in',
+        encoding=sys.stdout.encoding
+    )
+
+
 @invoke.task(pre=[update_dependencies])
 def serve_production():
     invoke.run(
