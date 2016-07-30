@@ -55,7 +55,7 @@ def update_dependencies():
     print('Checking Python dependencies')
 
     # Ensure we have a current version of pip, as needed by pip-tools
-    pip_version_desired = compile_config_yaml['config']['pip_version']
+    pip_version_desired = compile_config_yaml['config']['local']['python']['pip_version']
     result = invoke.run('pip --disable-pip-version-check show pip', **params_silent)
     check_result(result, 'check pip version')
 
@@ -82,7 +82,7 @@ def update_dependencies():
     print('Checking Ruby dependencies')
 
     # Check we have the correct Bundler version
-    bundler_version_desired = compile_config_yaml['config']['bundler_version']
+    bundler_version_desired = compile_config_yaml['config']['local']['ruby']['bundler_version']
 
     result = invoke.run('gem list -i bundler -v {}'.format(bundler_version_desired), **params_silent)
     # expected to fail if the desired version is not installed

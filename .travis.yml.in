@@ -6,7 +6,7 @@ sudo: false
 language: python
 
 python:
-  - "{{ python_version }}"
+  - "{{ local.python.version }}"
 
 cache:
   pip: true
@@ -16,16 +16,16 @@ cache:
 
 install:
   # Install Ruby
-  - rvm install {{ ruby_version }}
-  - rvm @global do gem install bundler -v {{ bundler_version }}
-  - rvm @global do gem uninstall bundler -v "!={{ bundler_version }}"
-  - rvm use {{ ruby_version }} --default
+  - rvm install {{ local.ruby.version }}
+  - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
+  - rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}"
+  - rvm use {{ local.ruby.version }} --default
 
   # Install NodeJS
-  - nvm install {{ node_version }}
+  - nvm install {{ local.node.version }}
 
   # Install Python dependencies
-  - python -m pip install --upgrade pip=={{ pip_version }}
+  - python -m pip install --upgrade pip=={{ local.python.pip_version }}
   - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies

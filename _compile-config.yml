@@ -1,14 +1,18 @@
 config:
-  python_version: 3.5
-  pip_version: 8.1.1
-  # Invoke is currently pinned by this bug:
-  #   https://github.com/pyinvoke/invoke/issues/345
-  invoke_version: 0.12.2
+  local:
+    node:
+      version: 5.1.0
 
-  node_version: 5.1.0
+    python:
+      version: 3.5
+      pip_version: 8.1.1
+      # Invoke is currently pinned by this bug:
+      #   https://github.com/pyinvoke/invoke/issues/345
+      invoke_version: 0.12.2
 
-  ruby_version: 2.2.3
-  bundler_version: 1.10.6
+    ruby:
+      version: 2.2.3
+      bundler_version: 1.10.6
 
 jinja2:
   entries:
