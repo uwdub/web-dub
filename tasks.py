@@ -105,7 +105,7 @@ def update_dependencies():
 @invoke.task(pre=[update_dependencies])
 def build_production():
     invoke.run(
-        'bundle exec jekyll build -t --config _config.yml,_config-build-production.yml',
+        'bundle exec jekyll build -t --config _config.yml,_config-production.yml',
         encoding=sys.stdout.encoding
     )
 
@@ -113,7 +113,7 @@ def build_production():
 @invoke.task(pre=[update_dependencies])
 def build_test():
     invoke.run(
-        'bundle exec jekyll build -t --config _config.yml,_config-build-test.yml',
+        'bundle exec jekyll build -t --config _config.yml,_config-test.yml',
         encoding=sys.stdout.encoding
     )
 
@@ -147,7 +147,7 @@ def compile_requirements():
 @invoke.task(pre=[update_dependencies])
 def serve_production():
     invoke.run(
-        'bundle exec jekyll serve -t --config _config.yml,_config-serve-production.yml -H 0.0.0.0',
+        'bundle exec jekyll serve -t --config _config.yml,_config-production.yml -H 0.0.0.0',
         encoding=sys.stdout.encoding
     )
 
@@ -155,7 +155,7 @@ def serve_production():
 @invoke.task(pre=[update_dependencies])
 def serve_test():
     invoke.run(
-        'bundle exec jekyll serve -t --config _config.yml,_config-serve-test.yml --watch --force_polling',
+        'bundle exec jekyll serve -t --config _config.yml,_config-test.yml --watch --force_polling',
         encoding=sys.stdout.encoding
     )
 
