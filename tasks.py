@@ -160,8 +160,9 @@ def compile_calendar():
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
         if seminar_path_current not in seminar_calendar_sequences:
+            # This is a seminar that is new to our sequence tracking
             seminar_calendar_sequences[seminar_path_current] = {
-                'hash': seminar_hash_current,
+                'hash': 'invalid_hash_to_force_update',
                 'sequence': seminar_sequence_current
             }
 
