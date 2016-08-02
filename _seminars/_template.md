@@ -17,7 +17,7 @@ sequence: 0
 ################################################################################
 date:     2015-10-07
 time:     "12:00 PM"
-time_end: "1:20 PM"
+time_end: "1:30 PM"
 
 ################################################################################
 # A seminar file might exist but lack values for some fields. These are 'TBD'. 
