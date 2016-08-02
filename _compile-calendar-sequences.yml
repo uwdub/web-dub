@@ -1,142 +1,142 @@
 sequences:
   _seminars\2015-10-07.md:
-    hash: 687f76aed04e7a10f0e93401c1383950
-    sequence: 2
-  _seminars\2015-10-14.md:
-    hash: ba96862d2f9e96516d33a896c3dc6ac5
-    sequence: 2
-  _seminars\2015-10-21.md:
-    hash: cc6a9b1d2141f8bef1d90fefa658b295
-    sequence: 2
-  _seminars\2015-10-28.md:
-    hash: 8c72d3b6c727c007f633abc6c88675a3
-    sequence: 2
-  _seminars\2015-11-04.md:
-    hash: ab71dfba579fa1b6b83b80c505092eec
-    sequence: 2
-  _seminars\2015-11-18.md:
-    hash: ba535d6db94de025650f9ed2ad000196
-    sequence: 2
-  _seminars\2015-11-25.md:
-    hash: a585431a17473928f9587a5ba50a0168
-    sequence: 2
-  _seminars\2015-12-02.md:
-    hash: 702e4b960a4699be3e2f0ef0fe8a18f9
-    sequence: 2
-  _seminars\2015-12-09.md:
-    hash: 1f15aacd0929da59d3d55d5028c7f181
-    sequence: 2
-  _seminars\2016-01-06.md:
-    hash: 227731fed60f3da18d97392c8e9eeb6c
-    sequence: 2
-  _seminars\2016-01-13.md:
-    hash: 59e3a6174db5eaf13871d7de7be9c978
-    sequence: 2
-  _seminars\2016-01-20.md:
-    hash: 2048c8cd09422388cd3bf91243063241
-    sequence: 2
-  _seminars\2016-01-27.md:
-    hash: 8e1906d6e9cc4c5396eba184b2444804
-    sequence: 2
-  _seminars\2016-02-03.md:
-    hash: 1250661c86c6600a0e3595ec2ee1b524
-    sequence: 2
-  _seminars\2016-02-10.md:
-    hash: f51726dcebbb3fe17db4bd87d81b1e50
-    sequence: 2
-  _seminars\2016-02-17.md:
-    hash: 6cc220e34e524233f9770383763b9079
-    sequence: 2
-  _seminars\2016-02-24.md:
-    hash: ad7ca3fcf09e59a0378115f6c07c05a2
-    sequence: 2
-  _seminars\2016-03-02.md:
-    hash: 036d28a5426fd7e57b7a0402dec0ec36
-    sequence: 2
-  _seminars\2016-03-09.md:
-    hash: be13bb5087c839135fcbeb25336ca7ac
-    sequence: 2
-  _seminars\2016-03-16.md:
-    hash: 1954a5e73c699c52fe8f533b474c025c
-    sequence: 2
-  _seminars\2016-03-23.md:
-    hash: cb98fe4bde11194425eadf0d3a082b23
-    sequence: 2
-  _seminars\2016-03-30.md:
-    hash: 7d1c4734d3658f9695d5420c973c24bd
-    sequence: 2
-  _seminars\2016-04-06.md:
-    hash: 9857e7dce3d980c78402faf4d1389efd
-    sequence: 2
-  _seminars\2016-04-13.md:
-    hash: 062600bff356f4e967c1eed495e30e34
-    sequence: 2
-  _seminars\2016-04-20.md:
-    hash: 20dde5b11701f1c7a83fad99fde33766
-    sequence: 2
-  _seminars\2016-04-27.md:
-    hash: 7e3e4734951a72bd095228d71744e3ed
-    sequence: 2
-  _seminars\2016-05-04.md:
-    hash: c6971180d93c30bd100f87d0a9908a84
-    sequence: 2
-  _seminars\2016-05-11.md:
-    hash: 30de8d115e0fa34437ba58cdd2e3084c
-    sequence: 2
-  _seminars\2016-05-18.md:
-    hash: 110c632cb5684f4a1caf8d550a3a1347
-    sequence: 2
-  _seminars\2016-05-25.md:
-    hash: d5b4a083555d8353c22528a90a9be117
-    sequence: 2
-  _seminars\2016-06-01.md:
-    hash: 689cedb6e31aef2e5873759625ae37ca
-    sequence: 2
-  _seminars\2016-06-08.md:
-    hash: 29c1cd09a8df97b358823a3bde5d809c
-    sequence: 2
-  _seminars\2016-06-15.md:
-    hash: 0d568e0c9fc3f5d612d626e0b32f330f
-    sequence: 2
-  _seminars\2016-06-22.md:
-    hash: 5217aa91e39806406a9e9f34a9a0cc94
-    sequence: 6
-  _seminars\2016-06-29.md:
-    hash: 9c81789d6655420f1d2039b67b56eb95
-    sequence: 4
-  _seminars\2016-07-06.md:
-    hash: 11ed3cd305efb6e581321221fe832889
-    sequence: 7
-  _seminars\2016-07-13.md:
-    hash: 707aeac492b5b2ff8e64236b59bf0eee
-    sequence: 4
-  _seminars\2016-07-20.md:
-    hash: 576a41e78cdfc19eb3583e0acccbf8b0
-    sequence: 4
-  _seminars\2016-07-27.md:
-    hash: 5eca9bfb0e8f77057635cab97c01816a
+    hash: 51d30f54a276da7c91b47baf6deb9c9c
     sequence: 3
-  _seminars\2016-08-03.md:
-    hash: ae2fd3e28ab716315f43a0108f9f13fd
+  _seminars\2015-10-14.md:
+    hash: 8e11d44b5a68b5926a977c05938cb7e1
+    sequence: 3
+  _seminars\2015-10-21.md:
+    hash: a538f036b544568dadfb530bdf535dc8
+    sequence: 3
+  _seminars\2015-10-28.md:
+    hash: 89ab8dafee076709b1e982130fed83c6
+    sequence: 3
+  _seminars\2015-11-04.md:
+    hash: 0c124dff73663512fefcdbfe635a7d82
+    sequence: 3
+  _seminars\2015-11-18.md:
+    hash: 7ddd9ae9a64a08e8b0b0e04a9b31d8d3
+    sequence: 3
+  _seminars\2015-11-25.md:
+    hash: c8167b16ec82279373ab3bee93a917bf
+    sequence: 3
+  _seminars\2015-12-02.md:
+    hash: eeb9dc7d88ea096e062c8a79590c3545
+    sequence: 3
+  _seminars\2015-12-09.md:
+    hash: cf803922c81d8832f84272e24b97f42e
+    sequence: 3
+  _seminars\2016-01-06.md:
+    hash: 64c78e17e42f81534442b65695ec865a
+    sequence: 3
+  _seminars\2016-01-13.md:
+    hash: 4a96f75325f7761fc567de2117c729bb
+    sequence: 3
+  _seminars\2016-01-20.md:
+    hash: 61bae22075b5caaca483c30fce4c45a1
+    sequence: 3
+  _seminars\2016-01-27.md:
+    hash: 6eb28b1454ff8a2e57470dab17363d48
+    sequence: 3
+  _seminars\2016-02-03.md:
+    hash: 094a88b5d6a399ec6e491a768a298c67
+    sequence: 3
+  _seminars\2016-02-10.md:
+    hash: 61a7dfc2aaae3d2895229ab43545a746
+    sequence: 3
+  _seminars\2016-02-17.md:
+    hash: 35c90b6fd784413d7b1f5b736edc9cb5
+    sequence: 3
+  _seminars\2016-02-24.md:
+    hash: 155a67b9d3e2f83ac3ebce6eb16b44ee
+    sequence: 3
+  _seminars\2016-03-02.md:
+    hash: 13f00c326fcc72ee2ee3606b9a2748bd
+    sequence: 3
+  _seminars\2016-03-09.md:
+    hash: 5b9965cef1a7742c452113887529ba48
+    sequence: 3
+  _seminars\2016-03-16.md:
+    hash: 0ca755ab59e359933659fdafdb05cbc3
+    sequence: 3
+  _seminars\2016-03-23.md:
+    hash: cc82497ea6ee5d7a7247c024c12a5f99
+    sequence: 3
+  _seminars\2016-03-30.md:
+    hash: 35b7a0be94ad05c14c854c05d534641a
+    sequence: 3
+  _seminars\2016-04-06.md:
+    hash: 0679032cbb4902933a8f9593cac2d599
+    sequence: 3
+  _seminars\2016-04-13.md:
+    hash: acee24697cdc2621fb8481f1bf62ad1a
+    sequence: 3
+  _seminars\2016-04-20.md:
+    hash: ed10b710d778dfb20830323a4e707e0d
+    sequence: 3
+  _seminars\2016-04-27.md:
+    hash: 79723c35c12922a4f4be96ac00b609cf
+    sequence: 3
+  _seminars\2016-05-04.md:
+    hash: 757d9251ba3ef41c8be4507f7023d0cc
+    sequence: 3
+  _seminars\2016-05-11.md:
+    hash: 4b6f9b63741d92f051e5b5bfc17cde3f
+    sequence: 3
+  _seminars\2016-05-18.md:
+    hash: 024b19d04cbb086b73a151fdbb1acb91
+    sequence: 3
+  _seminars\2016-05-25.md:
+    hash: 8db8eda7ff5305a45e586ddf9a124bf2
+    sequence: 3
+  _seminars\2016-06-01.md:
+    hash: f3a545747438a53706cabe33029430aa
+    sequence: 3
+  _seminars\2016-06-08.md:
+    hash: 1403954934e7e9f3ad46590394de7d58
+    sequence: 3
+  _seminars\2016-06-15.md:
+    hash: 58d88976d275aa5eb40c9bad263648b3
+    sequence: 3
+  _seminars\2016-06-22.md:
+    hash: 288821849a2a7e7c9ae875bd8866d731
+    sequence: 8
+  _seminars\2016-06-29.md:
+    hash: f041e2176f61417527c188a0439b08a3
     sequence: 5
-  _seminars\2016-08-10.md:
-    hash: 379cc0e2cc859154649b5e4a2940849c
+  _seminars\2016-07-06.md:
+    hash: 08107b3c132dea2aa03fbf641ee2da80
+    sequence: 8
+  _seminars\2016-07-13.md:
+    hash: bd2abaf74685cda06b481ec94be17d6b
+    sequence: 5
+  _seminars\2016-07-20.md:
+    hash: 7f84989498bb3c678b5c6f3654b62483
+    sequence: 5
+  _seminars\2016-07-27.md:
+    hash: a5ba5b90e566ebe114e6be94d5354f89
     sequence: 4
-  _seminars\2016-08-17.md:
-    hash: ab5f53bc9eec545ea68bd861787ba52d
+  _seminars\2016-08-03.md:
+    hash: 74ff680f1edf1571994680e93a72e5c9
     sequence: 6
+  _seminars\2016-08-10.md:
+    hash: 39ae8ee353c2ce712a22553b56ce8b76
+    sequence: 5
+  _seminars\2016-08-17.md:
+    hash: c9ae132d778718a78c88bcdc78e686bd
+    sequence: 8
   _seminars\2016-08-24.md:
-    hash: c3d04a8b3c78254e92a37b9309bbd072
-    sequence: 2
+    hash: eb9e1509c1706915417ef2964974255b
+    sequence: 3
   _seminars\2016-08-31.md:
-    hash: 445f60257d2363e6967c8bf39e145493
-    sequence: 2
+    hash: 1332a4175eca10d3e5abec09c6b7b65d
+    sequence: 3
   _seminars\2016-09-07.md:
-    hash: 10bb32cf084e2f65d457022ab8460749
-    sequence: 2
+    hash: 4948702fca598b923fb0aea6883ba38c
+    sequence: 3
   _seminars\2016-09-14.md:
-    hash: 36a9512d0b72c6ec253f40a54b3a458b
-    sequence: 2
+    hash: 1555f0c597d440f67cd4a2d9ea80d3ea
+    sequence: 3
   _seminars\2016-09-21.md:
-    hash: 2dc39410c69488bf70ea26c44cb42056
-    sequence: 2
+    hash: 1f3b8da7eecf3e8e26d8e7447a5443e4
+    sequence: 3

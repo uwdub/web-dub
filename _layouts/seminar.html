@@ -52,7 +52,11 @@
                     <div class="col-xs-12">
                         {% unless item_seminar.tbd_location %}
                             <h3>Location</h3>
-                            {{ item_seminar.location }}
+                            {% if item_seminar.location_override_seminar_page %}
+                                {{ item_seminar.location_override_seminar_page }}
+                            {% else %}
+                                {{ item_seminar.location }}
+                            {% endif %}
                         {% endunless %}
                     </div>
                 </div>

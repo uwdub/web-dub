@@ -17,7 +17,7 @@ sequence: 0
 ################################################################################
 date:     2015-10-07
 time:     "12:00 PM"
-time_end: "1:20 PM"
+time_end: "1:30 PM"
 
 ################################################################################
 # A seminar file might exist but lack values for some fields. These are 'TBD'. 
@@ -70,7 +70,8 @@ speakers:
 # title:      "Title in Quotes: Because Colons Cause Errors"
 # 
 # location:   "HUB 334"
-# 
+# (optional) location_override_seminar_page:
+#
 # abstract:   |
 #   An abstract can span multiple lines, and can do things across those lines,
 #   like going on for a while or being repetitive.
