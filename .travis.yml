@@ -7,6 +7,12 @@ language: python
 python:
   - "3.5"
 
+cache:
+  pip: true
+  directories:
+    - node_modules
+    - /home/travis/.rvm/gems
+
 install:
   # Install Ruby
   - rvm install 2.2.3

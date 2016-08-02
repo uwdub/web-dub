@@ -1,9 +1,9 @@
 {# This file compiles to requirements3.in -#}
 # This file compiled from requirements3.in.in
 
-invoke=={{ invoke_version }}
+invoke=={{ local.python.invoke_version }}
 jinja2
 nose
 pip-tools
-pyyaml --global-option='--without-libyaml'
+pyyaml
 {# This comment gives us a newline at the end of the generated file #}
