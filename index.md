@@ -100,11 +100,7 @@ design, people, and technology.
             </div>
             <div class="col-xs-8 text-right">
               {% unless item_seminar.tbd_location %}
-                {% if item_seminar.location == "StartUp Hall Meeting Room, 1100 NE Campus Parkway" %}
-                  StartUp Hall Meeting Room,<br>1100 NE Campus Parkway<br>
-                {% else %}
-                  {{ item_seminar.location }}
-                {% endif %}
+                {{ item_seminar.location }}
               {% endunless %}
               {{ item_seminar.time }}
             </div>
