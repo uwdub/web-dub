@@ -15,7 +15,7 @@ module Jekyll
 
     def seminar_previous(seminars, date)
       seminars.select { |seminar| item_property(seminar, "date").to_date() < date.to_date() &&
-          item_property(seminar, "archive") == true }
+          item_property(seminar, "no_archive") != true }
     end
   end
 

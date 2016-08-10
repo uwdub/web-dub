@@ -15,9 +15,11 @@
             </h4>
           </div>
           {% if include.seminars == "upcoming" %}
-            <div class="col-xs-12">
-              {{ item_seminar.time }}
-            </div>
+            {% unless item_seminar.no_dub_seminar == true %}
+              <div class="col-xs-12">
+                {{ item_seminar.time }}
+              </div>
+            {% endunless %}
             {% unless item_seminar.tbd_location %}
               <div class="col-xs-12">
                 {{ item_seminar.location }}
@@ -28,9 +30,15 @@
         <div class="col-md-9">
           {% unless item_seminar.tbd_title %}
             <div class="col-xs-12">
-              <h4 class="tableheading">            
-                <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
-              </h4>
+              {% if item_seminar.no_dub_seminar == true %}
+                <div class="tableheading text-muted no-seminar">
+                  {{ item_seminar.title }}
+                </div>
+              {% else %}
+                <h4 class="tableheading">
+                  <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
+                </h4>
+              {% endif %}
             </div>
           {% else %}
             <div class="col-xs-12">
