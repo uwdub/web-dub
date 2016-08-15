@@ -94,6 +94,18 @@ class TestSeminars(unittest.TestCase):
                     'Date does not match filename in {}'.format(seminar_path_current)
                 )
 
+            # If a seminar is no_dub_seminar, it should also be no_archive.
+            if 'no_dub_seminar' in seminar:
+                # If the field exists, its value must be True
+                self.assertTrue(
+                    seminar['no_dub_seminar'],
+                    'Invalid no_dub_seminar in {}'.format(seminar_path_current)
+                )
+                self.assertTrue(
+                    seminar['no_archive'],
+                    'Invalid no_archive in {}'.format(seminar_path_current)
+                )
+
             # The speaker may be tbd
             if 'tbd_speakers' in seminar:
                 # If the field exists, its value must be True
