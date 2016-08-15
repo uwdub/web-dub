@@ -102,12 +102,20 @@ design, people, and technology.
               {% unless item_seminar.tbd_location %}
                 {{ item_seminar.location }}
               {% endunless %}
-              {{ item_seminar.time }}
+              {% unless item_seminar.no_seminar %}
+                {{ item_seminar.time }}
+              {% endunless %}
             </div>
             <div class="col-xs-12">
 
               {% unless item_seminar.tbd_title %}
-                <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
+                {% unless item_seminar.no_seminar %}
+                  <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
+                {% else %}
+                  <div class="text-muted no-seminar">
+                    {{ item_seminar.title }}
+                  </div>
+                {% endunless %}
               {% else %}
                 DUB Seminar
               {% endunless %}

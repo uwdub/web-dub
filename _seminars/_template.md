@@ -31,10 +31,13 @@ tbd_bio:        true
 tbd_video:      true
 
 ################################################################################
-# Seminar files are archived by default.
-# Add the following line if the file should not be archived:
+# If a date is "No DUB Seminar", we display it differently.
 #
-# archive: false
+# no_seminar: true
+#
+# Seminar files are archived by default. Add this if a seminar should not be.
+#
+# no_archive: true
 ################################################################################
 
 ################################################################################
