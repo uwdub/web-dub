@@ -33,7 +33,7 @@ tbd_video:      true
 ################################################################################
 # If a date is "No DUB Seminar", we display it differently.
 #
-# no_dub_seminar: true
+# no_seminar: true
 #
 # Seminar files are archived by default. Add this if a seminar should not be.
 #
