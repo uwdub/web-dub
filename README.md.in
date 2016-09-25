@@ -1,0 +1,123 @@
+This is a template for websites implemented using Jekyll.
+
+# Building the Site
+
+This site is implemented in Jekyll, which requires Ruby and Node.js. It also uses Python for automation and testing.
+
+## Installing Ruby, Ruby DevKit, Node.js, and Python
+
+Development currently requires:
+
+- Ruby {{ local.ruby.version }}
+
+  {% set install_params_ruby = {} -%}
+  {%- for version_available in readme.ruby_versions -%}
+    {%- if version_available.version == local.ruby.version -%}
+      {%- set install_params_ruby = install_params_ruby.update(version_available) -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  [{{ install_params_ruby.installer_url }}]({{ install_params_ruby.installer_url }})
+
+  Installation on Windows:
+
+  During installation:
+
+  - On 'Installation Destination and Optional Tasks':
+
+    Documentation assumes an installation path of {{ install_params_ruby.install_path }}.
+
+    Check 'Add Ruby executables to your PATH'.
+
+- Ruby DevKit
+
+  [{{ install_params_ruby.installer_devkit_url }}]({{ install_params_ruby.installer_devkit_url }})
+
+  When installing the Ruby DevKit:
+
+  - Extract to `{{ install_params_ruby.install_devkit_path }}`.
+
+  - Install the DevKit into our Ruby installation:
+
+    ~~~
+    cd {{ install_params_ruby.install_devkit_path }}
+    ruby dk.rb init
+    ruby dk.rb install
+    ~~~
+
+- Node {{ local.node.version }}
+
+  {% set install_params_node = {} -%}
+  {%- for version_available in readme.node_versions -%}
+    {%- if version_available.version == local.node.version -%}
+      {%- set install_params_node = install_params_node.update(version_available) -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  [{{ install_params_node.installer_url }}]({{ install_params_node.installer_url }})
+
+  When installing Node.js, the default options are appropriate.
+
+- Python {{ local.python.version }}
+
+  {% set install_params_python = {} -%}
+  {%- for version_available in readme.python_versions -%}
+    {%- if version_available.version == local.python.version -%}
+      {%- set install_params_python = install_params_python.update(version_available) -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  [{{ install_params_python.installer_url }}]({{ install_params_python.installer_url }})
+
+  When installing Python:
+
+  - Choose 'Customize Installation'
+  - On 'Optional Features':
+
+    Check 'pip' and 'for all users (requires elevation)'.
+
+    Uncheck 'Documentation', 'tcl/tk and IDLE', 'Python test suite', 'py launcher'.
+
+  - On 'Advanced Options':
+
+    Uncheck all options.
+
+    Set the installation path to `{{ install_params_python.install_path }}`.
+
+## Creating a Virtual Environment and Installing Dependencies
+
+All Python work should be done within a virtual environment, to avoid dependency conflicts.
+Node.js and Ruby have their own dependency management (i.e., npm shrinkwrap and bundler).
+Our Python automation scripts will employ those tools, but we first need to configure Python.
+
+Create the virtual environment. From the working directory of our project (e.g., `{{ readme.working_directory }}`):
+
+    {{ install_params_python.install_path }}\python.exe -m venv {{ install_params_python.virtual_environment_name }}
+
+This will create a directory for the virtual environment (e.g., `{{ readme.working_directory }}\{{ install_params_python.virtual_environment_name }}\`).
+
+Next activate that virtual environment and install our Python dependencies:
+
+    {{ install_params_python.virtual_environment_name }}\Scripts\activate.bat
+    pip install -r {{ install_params_python.requirements_name }}
+
+Next use Python's invoke automation to get the rest of our dependencies:
+
+    invoke update_dependencies
+
+## Building and Serving the Site
+
+Invoke automation is provided for building the site.
+
+If it is not already active, you need to re-activate the virtual environment.
+From the working directory of our project (e.g., `{{ readme.working_directory }}`):
+
+    {{ install_params_python.virtual_environment_name }}\Scripts\activate.bat
+
+To build the site:
+
+    invoke build_test
+
+To build and serve the site on `localhost:4000`, continuously updating based on changes:
+
+    invoke serve_test
