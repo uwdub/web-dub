@@ -5,7 +5,7 @@ sudo: false
 language: python
 
 python:
-  - "3.5"
+  - "3.5.2"
 
 cache:
   pip: true
@@ -15,13 +15,16 @@ cache:
 
 install:
   # Install Ruby
-  - rvm install 2.2.3
-  - rvm @global do gem install bundler -v 1.10.6
-  - rvm @global do gem uninstall bundler -v "!=1.10.6"
-  - rvm use 2.2.3 --default
+  - rvm install 2.3.1
+  - rvm @global do gem install bundler -v 1.13.1
+  - rvm @global do gem query --local
+  - rvm @global do gem list ^bundler$ -i -v "!=1.13.1" &&
+    rvm @global do gem uninstall bundler -v "!=1.13.1" ||
+    true
+  - rvm use 2.3.1 --default
 
   # Install NodeJS
-  - nvm install 5.1.0
+  - nvm install 4.5.0
 
   # Install Python dependencies
   - python -m pip install --upgrade pip==8.1.1

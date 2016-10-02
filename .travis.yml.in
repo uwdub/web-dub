@@ -18,7 +18,10 @@ install:
   # Install Ruby
   - rvm install {{ local.ruby.version }}
   - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
-  - rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}"
+  - rvm @global do gem query --local
+  - rvm @global do gem list ^bundler$ -i -v "!={{ local.ruby.bundler_version }}" &&
+    rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}" ||
+    true
   - rvm use {{ local.ruby.version }} --default
 
   # Install NodeJS
