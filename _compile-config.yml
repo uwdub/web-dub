@@ -1,21 +1,49 @@
 config:
   local:
     node:
-      version: 5.1.0
+      version: 4.5.0
 
     python:
-      version: 3.5
+      version: 3.5.2
       pip_version: 8.1.1
       # Invoke is currently pinned by this bug:
       #   https://github.com/pyinvoke/invoke/issues/345
       invoke_version: 0.12.2
 
     ruby:
-      version: 2.2.3
-      bundler_version: 1.10.6
+      version: 2.3.1
+      bundler_version: 1.13.1
+
+  readme:
+    working_directory: c:\devel\web-jekyll-base
+
+    node_versions:
+      - version: 4.5.0
+        installer_url: https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi
+
+    python_versions:
+      - version: 3.5.2
+        installer_url: https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+        install_path: c:\Python35
+        virtual_environment_name: env35
+        requirements_name: requirements3.txt
+
+    ruby_versions:
+      - version: 2.2.3
+        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe
+        install_path: c:\Ruby223
+        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+        install_devkit_path: c:\RubyDevKit
+      - version: 2.3.1
+        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe
+        install_path: c:\Ruby231
+        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+        install_devkit_path: c:\RubyDevKit
 
 jinja2:
   entries:
+    - in:  README.md.in
+      out: README.md
     - in:  requirements3.in.in
       out: requirements3.in
     - in:  .travis.yml.in
