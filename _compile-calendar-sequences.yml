@@ -144,11 +144,11 @@ sequences:
     hash: 0996896ebbe2f3466fa92c5cb1634470
     sequence: 2
   _seminars\2016-10-05.md:
-    hash: 8668d4349d49917e650ba6375daa857d
-    sequence: 2
-  _seminars\2016-10-12.md:
-    hash: 36b73d5e6626d6e85bd838ddbaeca8c7
+    hash: 5ce2d180f7c254ab487096bc08e46fdf
     sequence: 3
+  _seminars\2016-10-12.md:
+    hash: 92fb49b0334db507930941b74e2eda48
+    sequence: 4
   _seminars\2016-10-19.md:
     hash: 662282a85c479629296295fc6cee613e
     sequence: 2
