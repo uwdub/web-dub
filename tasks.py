@@ -8,6 +8,13 @@ import yaml
 VERBOSE = False
 
 
+@invoke.task
+def verbose():
+    global VERBOSE
+
+    VERBOSE = True
+
+
 def check_result(result, description):
     if result.failed:
         print('========================================')
@@ -23,13 +30,6 @@ def check_result(result, description):
         print(result.stderr)
         print('========================================')
         raise Exception('Failed to {}'.format(description))
-
-
-@invoke.task
-def verbose():
-    global VERBOSE
-
-    VERBOSE = True
 
 
 @invoke.task
@@ -125,7 +125,7 @@ def compile_config():
         compile_config_yaml = yaml.safe_load(f)
 
     # Compile each jinja2 file
-    for jinja2_entry in compile_config_yaml['jinja2']['entries']:
+    for jinja2_entry in compile_config_yaml['compile_config']['entries']:
         jinja2_environment = jinja2.Environment(
             loader=jinja2.FileSystemLoader(searchpath='.'),
             undefined=jinja2.StrictUndefined

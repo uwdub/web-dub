@@ -7,25 +7,31 @@ lessc: node_modules/.bin/lessc
 
 navbar:
   items:
-    - text: 'Sidebar-None'
+    - text: 'Bar-Sidebar-None'
       link: 'base_sample/bar-sidebar-none.html'
-    - text: 'Sidebar-Right'
+    - text: 'Bar-Sidebar-Right'
       link: 'base_sample/bar-sidebar-right.html'
+    - text: 'Freelancer'
+      link: 'base_sample/freelancer.html'
 
 exclude:
   # Bootstrap
   - bootstrap/less
-  # CSS/LESS files, these are all included by css/base/styles.less
+  # CSS/LESS files, these are all included by other less files and cannot compile on their own
   - css/styles.less
-  - css/base/bar.less
-  - css/base/base.less
+  - css/base/base_styles.less
+  - css/base/base_variables.less
   - css/base/syntax.css
+  - css/base/bar/base_bar.less
+  - css/base/freelancer/base_freelancer.less
+  - css/base/freelancer/freelancer.less
+  - css/base/freelancer/mixins.less
+  - css/base/freelancer/variables.less
   # Node
   - node_modules
   - npm-shrinkwrap.json
   - package.json
   # Python
-  - env34
   - env35
   - requirements3.in
   - requirements3.txt
@@ -36,5 +42,7 @@ exclude:
   # Ruby
   - Gemfile
   - Gemfile.lock
+  # Secrets
+  - secrets
   # Tests
   - tests
