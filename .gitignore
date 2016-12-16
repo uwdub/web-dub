@@ -2,6 +2,9 @@
 .idea
 *.iml
 
+# MacOS files
+.DS_Store
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
