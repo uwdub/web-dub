@@ -22,15 +22,15 @@ install:
   - python -m pip install -r requirements3.txt
 
   # Install Ruby
-  - rvm install 2.3.1
-  - rvm @global do gem install bundler -v 1.13.1
+  - rvm install 2.3.3
+  - rvm @global do gem install bundler -v 1.13.6
   - |
-    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!=1.13.1" )
+    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!=1.13.6" )
     if [ "$bundler_uninstall" == "true" ]
     then
-      rvm @global do gem uninstall bundler -v "!=1.13.1"
+      rvm @global do gem uninstall bundler -v "!=1.13.6"
     fi
-  - rvm use 2.3.1 --default
+  - rvm use 2.3.3 --default
 
   # Invoke will get our other dependencies
   - invoke update_dependencies

@@ -8,9 +8,9 @@ This site is implemented in Jekyll, which requires Ruby and Node.js. It also use
 
 Development currently requires:
 
-- Ruby 2.3.1
+- Ruby 2.3.3
 
-  [https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe)
+  [https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe)
 
   Installation on Windows:
 
@@ -18,7 +18,7 @@ Development currently requires:
 
   - On 'Installation Destination and Optional Tasks':
 
-    Documentation assumes an installation path of c:\Ruby231.
+    Documentation assumes an installation path of c:\Ruby233.
 
     Check 'Add Ruby executables to your PATH'.
 
