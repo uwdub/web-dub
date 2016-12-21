@@ -227,8 +227,8 @@ def compile_calendar():
             
             #Generate seminar string from applicable components
             summary_string = 'DUB Seminar'
-            if 'no_seminar' in seminar_contents or 'title_override_seminar_page' in seminar_contents:
-                #Title is reflected when there's no seminar or the title is overridden
+            if 'no_seminar' in seminar_contents:
+                #Title is reflected when there's no seminar
                 summary_string = seminar_contents['title']
             else:
                 #Add the location unless overridden by the page
@@ -249,6 +249,8 @@ def compile_calendar():
                     summary_string += ' - TBD'
                 if 'tbd_title' not in seminar_contents:
                     summary_string += ' - "{}"'.format(seminar_contents['title'])
+                if 'title_override_seminar_page' in seminar_contents:
+                    summary_string = seminar_contents['title_override_seminar_page']
             ics_event.add('summary', summary_string)
             # Generate naive time objects from seminar date and time
             seminar_start_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time'], '%I:%M %p').time())
