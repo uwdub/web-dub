@@ -5,6 +5,7 @@ import re
 import os
 import sys
 import yaml
+import markdown
 from datetime import datetime
 import pytz
 from icalendar import Calendar, Event
@@ -223,17 +224,19 @@ def compile_calendar():
             # Add seminar as calendar event
             ics_event = Event()
             ics_event.add('uid', seminar_contents['date'].strftime('%Y-%m-%d') + '@dub.washington.edu')
-            #Add the location unless overridden by the page
-            if 'location_override_seminar_page' in seminar_contents:
-                ics_event.add('location', seminar_contents['location_override_seminar_page'])
-            else:
-                ics_event.add('location', seminar_contents['location'])
+            
             #Generate seminar string from applicable components
             summary_string = 'DUB Seminar'
             if 'no_seminar' in seminar_contents or 'title_override_seminar_page' in seminar_contents:
                 #Title is reflected when there's no seminar or the title is overridden
                 summary_string = seminar_contents['title']
             else:
+                #Add the location unless overridden by the page
+                if 'location_override_seminar_page' in seminar_contents:
+                    #Remove newlines in title
+                    ics_event.add('location', re.sub('<br>', '', seminar_contents['location_override_seminar_page']))
+                else:
+                    ics_event.add('location', seminar_contents['location'])
                 if 'tbd_speakers' not in seminar_contents:
                     speaker_names = ', '.join([' '.join(speaker['name'][1:] + [speaker['name'][0]]) for speaker in seminar_contents['speakers']])
                     #Assume the first speaker's affiliation is representative of all of them, rather than duplicating e.g., Speaker A (UW), Speaker B (UW), Speaker C (UW)
@@ -246,7 +249,6 @@ def compile_calendar():
                     summary_string += ' - TBD'
                 if 'tbd_title' not in seminar_contents:
                     summary_string += ' - "{}"'.format(seminar_contents['title'])
-            #print(seminar_contents['date'],summary_string)
             ics_event.add('summary', summary_string)
             # Generate naive time objects from seminar date and time
             seminar_start_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time'], '%I:%M %p').time())
@@ -266,7 +268,8 @@ def compile_calendar():
                         description_string = seminar_contents['bio']
                 elif 'tbd_abstract' not in seminar_contents:
                     description_string = seminar_contents['abstract']
-            ics_event.add('description', description_string)
+            #parse description as markdown
+            ics_event.add('description', markdown.markdown(description_string))
 
             ics.add_component(ics_event)
         with open('calendar.ics', 'wb') as f:

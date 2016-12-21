@@ -6,3 +6,4 @@ nose
 pip-tools
 pyyaml
 icalendar
+markdown
