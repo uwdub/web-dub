@@ -271,7 +271,11 @@ def compile_calendar():
                 elif 'tbd_abstract' not in seminar_contents:
                     description_string = seminar_contents['abstract']
             #parse description as markdown
-            ics_event.add('description', markdown.markdown(description_string))
+            class SensibleParagraphs(markdown.extensions.Extension):
+                def extendMarkdown(self, md, md_globals):
+                    br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
+                    md.inlinePatterns.add('nl', br_tag, '_end')
+            ics_event.add('description', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
 
             ics.add_component(ics_event)
         with open('calendar.ics', 'wb') as f:
