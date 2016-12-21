@@ -5,6 +5,9 @@ import re
 import os
 import sys
 import yaml
+from datetime import datetime
+import pytz
+from icalendar import Calendar, Event
 
 
 VERBOSE = False
@@ -142,7 +145,6 @@ def compile_calendar():
     # Obtain our stored sequences
     with open('_compile-calendar-sequences.yml') as f:
         seminar_calendar_sequences = yaml.safe_load(f)['sequences']
-
     # Iterate over all our seminar files
     seminar_paths = [
         os.path.normpath(seminar_file_entry.path)
@@ -152,13 +154,14 @@ def compile_calendar():
            os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
     ]
 
+    regenerate_calendar_ics = True #For debugging, change to "False" before PR
+
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file, to compare against our stored data
         with open(seminar_path_current, 'rb') as f:
             seminar_hash_current = hashlib.md5(f.read()).hexdigest()
         with open(seminar_path_current) as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
-
         if seminar_path_current not in seminar_calendar_sequences:
             # This is a seminar that is new to our sequence tracking
             seminar_calendar_sequences[seminar_path_current] = {
@@ -192,6 +195,9 @@ def compile_calendar():
                 'sequence': seminar_sequence_current
             }
 
+            #Trigger that we need to regenerate the subscribable calendar
+            regenerate_calendar_ics = True
+
     # Store our updated sequences
     data = {'sequences': seminar_calendar_sequences }
     with open('_compile-calendar-sequences.yml', 'w') as f:
@@ -201,6 +207,70 @@ def compile_calendar():
             default_flow_style=False
         )
 
+    if regenerate_calendar_ics:
+        # Create calendar object. Unless we were to store the calendar object between runs and update it dynamically (as above), we have to re-generate the entire file every time.
+        ics = Calendar()
+        ics.add('prodid', '-//DUB//DUB Calendar 2.0//EN')
+        ics.add('version', '2.0')
+        ics.add('calscale','gregorian')
+        ics.add('method', 'publish')
+        ics.add('x-wr-calname', 'DUB Calendar')
+        ics.add('x-wr-timezone', 'America/Los_Angeles')
+        ics.add('x-wr-caldesc', 'A calendar of DUB events.')
+        for seminar_path_current in seminar_paths:
+            with open(seminar_path_current) as f:
+                seminar_contents = list(yaml.safe_load_all(f))[0]
+            # Add seminar as calendar event
+            ics_event = Event()
+            ics_event.add('uid', seminar_contents['date'].strftime('%Y-%m-%d') + '@dub.washington.edu')
+            #Add the location unless overridden by the page
+            if 'location_override_seminar_page' in seminar_contents:
+                ics_event.add('location', seminar_contents['location_override_seminar_page'])
+            else:
+                ics_event.add('location', seminar_contents['location'])
+            #Generate seminar string from applicable components
+            summary_string = 'DUB Seminar'
+            if 'no_seminar' in seminar_contents or 'title_override_seminar_page' in seminar_contents:
+                #Title is reflected when there's no seminar or the title is overridden
+                summary_string = seminar_contents['title']
+            else:
+                if 'tbd_speakers' not in seminar_contents:
+                    speaker_names = ', '.join([' '.join(speaker['name'][1:] + [speaker['name'][0]]) for speaker in seminar_contents['speakers']])
+                    #Assume the first speaker's affiliation is representative of all of them, rather than duplicating e.g., Speaker A (UW), Speaker B (UW), Speaker C (UW)
+                    #This is not true in all cases. See 2016-06-22
+                    first_affiliation = ''
+                    if 'affiliation' in seminar_contents['speakers'][0]:
+                        first_affiliation = '({})'.format(seminar_contents['speakers'][0]['affiliation'])
+                    summary_string += ' - {} {}'.format(speaker_names ,first_affiliation)
+                else:
+                    summary_string += ' - TBD'
+                if 'tbd_title' not in seminar_contents:
+                    summary_string += ' - "{}"'.format(seminar_contents['title'])
+            #print(seminar_contents['date'],summary_string)
+            ics_event.add('summary', summary_string)
+            # Generate naive time objects from seminar date and time
+            seminar_start_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time'], '%I:%M %p').time())
+            seminar_end_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time_end'], '%I:%M %p').time())
+            # Localize time objects by time zone
+            ics_event.add('dtstart', pytz.timezone('America/Los_Angeles').localize(seminar_start_time))
+            ics_event.add('dtend', pytz.timezone('America/Los_Angeles').localize(seminar_end_time))
+            #Generate description string from applicable components
+            description_string = ''
+            if 'text_override_seminar_page' in seminar_contents:
+                description_string = seminar_contents['text_override_seminar_page']
+            else:
+                if 'tbd_bio' not in seminar_contents:
+                    if 'tbd_abstract' not in seminar_contents:
+                        description_string = seminar_contents['abstract'] + '\r\n' + seminar_contents['bio']
+                    else:
+                        description_string = seminar_contents['bio']
+                elif 'tbd_abstract' not in seminar_contents:
+                    description_string = seminar_contents['abstract']
+            ics_event.add('description', description_string)
+
+            ics.add_component(ics_event)
+        with open('calendar.ics', 'wb') as f:
+            f.write(ics.to_ical())
 
 @invoke.task()
 def compile_calendar_increment_all_sequences():

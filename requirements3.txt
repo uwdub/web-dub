@@ -9,7 +9,7 @@ first==2.0.1              # via pip-tools
 icalendar==3.11.1
 invoke==0.12.2
 jinja2==2.8
-MarkupSafe==0.23          # via jinja2
+markupsafe==0.23          # via jinja2
 nose==1.3.7
 pip-tools==1.8.0
 python-dateutil==2.6.0    # via icalendar
@@ -17,6 +17,5 @@ pytz==2016.10             # via icalendar
 pyyaml==3.12
 six==1.10.0               # via pip-tools, python-dateutil
 
-# The following packages are commented out because they are
-# considered to be unsafe in a requirements file:
+# The following packages are considered to be unsafe in a requirements file:
 # setuptools                # via icalendar

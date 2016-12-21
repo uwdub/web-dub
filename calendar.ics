@@ -1,22 +1,2025 @@
----
----
 BEGIN:VCALENDAR
-PRODID:-//DUB//DUB Calendar 1.0//EN
 VERSION:2.0
-CALSCALE:GREGORIAN
-METHOD:PUBLISH
+PRODID:-//DUB//DUB Calendar 2.0//EN
+CALSCALE:gregorian
+METHOD:publish
+X-WR-CALDESC:A calendar of DUB events.
 X-WR-CALNAME:DUB Calendar
 X-WR-TIMEZONE:America/Los_Angeles
-X-WR-CALDESC:A calendar of DUB events.
-{% for item_seminar in site.seminars %}BEGIN:VEVENT
-UID:{{ item_seminar.date | date: "%Y%m%d" }}@dub.washington.edu
-LOCATION:{{ item_seminar.location }}
-SUMMARY:DUB Seminar{% unless item_seminar.tbd_title %}: {{ item_seminar.title }}{% endunless %}
-DTSTART:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time | convert_time }}
-DTEND:{{ item_seminar.date | date: "%Y%m%d" }}T{{ item_seminar.time_end | convert_time }}
-DTSTAMP:{{ site.time | date: "%Y%m%d" }}T{{ site.time | date: "%H%M%S" }}
-DESCRIPTION:{% include icaldescription.md %}
-SEQUENCE:{{ item_seminar.sequence }}
-END:VEVENT{% unless forloop.last %}
-{{}}{% endunless %}{% endfor %}
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Luz Rello (Carnegie Mellon University) - "ChangeDysl
+ exia: Early Detection and Intervention at Large Scale"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151007T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151007T133000
+UID:2015-10-07@dub.washington.edu
+DESCRIPTION:More than 10% of the population has dyslexia\, and most are di
+ agnosed only after they fail in school. My work is \nchanging this through
+  scalable early detection and tools that help people with dyslexia read an
+ d write better. To \ndetect dyslexia\, I am developing machine learning mo
+ dels that predict reading and writing difficulties by watching \nhow peopl
+ e interact with my web-based game Dytective. My experiments have revealed 
+ differences in how people with \ndyslexia read and write\, and I have deve
+ loped a series of tools that integrate these results to help people with \
+ ndyslexia read and write better. These tools are used by tens of thousands
+  of people\, which apart from supporting \nusers\, also serve as living la
+ boratories in which to develop and prove techniques for detection and inte
+ rvention. \nMoving forward\, we are working with schools to put our approa
+ ch into practice at scale to finally eliminate school \nfailure as a prima
+ ry way dyslexia is diagnosed.\n\nLuz Rello is a Post Doctoral Fellow at Ca
+ rnegie Mellon University in the Human-Computer Interaction Institute. She 
+ is \nalso an Ashoka Fellow\, invited expert to W3C-WAI and co-founder of t
+ he Cookie Cloud team that creates applications \nfrom research results. Sh
+ e holds a degree in Linguistics (Complutense University of Madrid)\, a MSc
+  in Natural \nLanguage Processing (University of Wolverhampton) and a Ph.D
+ . in Computer Science (Pompeu Fabra University). She has \nreceived a numb
+ er of awards\, including the MIT Technology Review 'Innovators under 35 Aw
+ ard Spain' (2014) and the \nEuropean Young Researchers' Award (2013) for h
+ er work on applying technology for dyslexia using Linguistics\, HCI and \n
+ NLP. Her IDEAL eBook reader and Dyseggxia game (Vodafone Foundation Mobile
+  for Good Europe Awards 2013) have received \nnearly one hundred thousand 
+ downloads in more than 70 countries. Currently\, she is working to detect 
+ dyslexia at \nlarge scale and on bringing this work to society via her non
+ -profit organization Change Dyslexia.\n
+LOCATION:HUB 145
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Adam Fourney (Microsoft Research) - "Leveraging Sign
+ als Generated From Search Engines and Web-based Resources"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151014T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151014T133000
+UID:2015-10-14@dub.washington.edu
+DESCRIPTION:Search engines and web-based resources have become ubiquitous 
+ and essential tools for supporting the use of \ninteractive systems. (e.g\
+ , Microsoft PowerPoint\, Adobe Photoshop\, etc.) For example\, people rely
+  on web resources to \nlearn new tasks\, troubleshoot problems\, or remind
+  themselves of key task details. This reliance on search engines and \nweb
+ -based resources generates a rich set of signals that characterizes how th
+ e population thinks about and uses \nsoftware systems "in the wild\," on a
+  day-to-day basis. \n\nIn this talk\, I demonstrate how these signals can 
+ be extracted and leveraged. Specifically\, I show how logs of online \nint
+ eractions can be used to identify potential usability problems in any publ
+ icly available interactive system. I \nshow how web tutorials can be used 
+ to map a broad user vocabulary to the narrow vocabulary expressed in a use
+ r \ninterface. Finally\, I demonstrate how web resources and software appl
+ ications can mutually enhance each other by \nmeans of a shared interactio
+ n history. I conclude with an outline of my long-term research vision\, wh
+ ich casts \nsoftware applications\, web search\, and online support materi
+ als as interoperating components of a larger holistic \nsystem to be studi
+ ed\, designed\, and evaluated in concert.\n\nAdam Fourney joined the MSR C
+ ontext\, Learning\, and User Experience for Search (CLUES) research group 
+ in September of \nthis year\, having recently earned his doctoral degree f
+ rom the Cheriton School of Computer Science at the University \nof Waterlo
+ o\, working under the supervision of Dr. Michael Terry. Adam also holds a 
+ master's degree from the \nUniversity of Waterloo\, a bachelor's degree fr
+ om the University of Ottawa\, and has interned on two occasions at \nMicro
+ soft Research Redmond. Outside of his primary research interests\, Adam is
+  an active developer in the Pebble \nsmartwatch community.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Krzysztof Gajos (Harvard University) - "From Paid to
+  Organic Crowdsourcing"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151021T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151021T133000
+UID:2015-10-21@dub.washington.edu
+DESCRIPTION:Human computation systems seamlessly combine human perception\
+ , creativity and knowledge with machine-driven \nalgorithmic computation. 
+  Such systems have been demonstrated to accomplish tasks that could not pr
+ eviously be \naccomplished by either machines or by non-experts alone.  Co
+ ntemporary human computation systems frequently recruit \nhuman contributi
+ ons from online micro-labor markets such as Amazon Mechanical Turk.  While
+  convenient\, this approach \nlimits the scale\, scope and quality of work
+ .\n\nIn contrast\, my group's work has contributed to a largely unexplored
+  area of "organic" crowdsourcing\, an area that \nbuilds on insights from 
+ social computing research and on recent advances in human computation.  In
+  organic \ncrowdsourcing\, intrinsically motivated people contribute to hu
+ man computation workflows as a byproduct of performing \nactivities that t
+ hey find inherently valuable.  In successful organic crowdsourcing systems
+ \, the addition of the \nhuman computation element enhances (instead of de
+ tracting from) the main activity\, while also resulting in useful \nwork b
+ eing done.  For example\, with our Crowdy system\, people learning from tu
+ torial videos get prompted with short \nquizzes. The quizzes are designed 
+ such that by answering them\, people contribute to a workflow that improve
+ s those \nsame videos for future learners.  The quizzes are also designed 
+ to be pedagogically valuable.  The results of our \nstudy show that the im
+ provements to the tutorial videos generated by Crowdy are comparable in qu
+ ality to those \nproduced by experts.  Our results also demonstrate that p
+ eople who view tutorial videos with Crowdy and participate \nin quizzes le
+ arn more than people who watch the same videos with a traditional video in
+ terface.  I will present three \norganic crowdsourcing projects from our g
+ roup and share an initial synthesis of generalizable principles for the \n
+ design of organic crowdsourcing systems.\n\nKrzysztof Gajos is an associat
+ e professor of Computer Science at the Harvard Paulson School of Engineeri
+ ng and \nApplied Sciences. Krzysztof is broadly interested in intelligent 
+ interactive systems\, a research area that bridges \nartificial intelligen
+ ce and human-computer interaction. Recent projects pursued by his group co
+ ntributed to diverse \nareas such as personalized adaptive user interfaces
+ \, systems for supporting collective creativity\, organic \ncrowdsourcing\
+ , large-scale experimentation in the wild\, and learning technologies.\n\n
+ Prior to arriving at Harvard\, Krzysztof was a postdoctoral researcher at 
+ Microsoft Research. He received his Ph.D. \nfrom the University of Washing
+ ton and his M.Eng. and B.Sc. degrees from MIT. In the Fall of 2005\, he wa
+ s visiting \nfaculty at the Ashesi University in Accra\, Ghana\, where he 
+ taught Introduction to Artificial Intelligence. Krzysztof \nis a coeditor-
+ in-chief of the ACM Transactions on Interactive Intelligent Systems. He is
+  a recipient of a Sloan \nResearch Fellowship.\n
+LOCATION:HUB 250
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Been Kim (Computer Science & Engineering) - "Interac
+ tive and Interpretable Machine Learning Models for Human Machine Collabora
+ tion"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151028T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151028T133000
+UID:2015-10-28@dub.washington.edu
+DESCRIPTION:I envision a system that enables successful collaborations bet
+ ween humans and machine learning models by harnessing \nthe relative stren
+ gth to accomplish what neither can do alone. Machine learning techniques a
+ nd humans have skills \nthat complement each other --- machine learning te
+ chniques are good at computation on data at the lowest level of \ngranular
+ ity\, whereas people are better at abstracting knowledge from their experi
+ ence\, and transferring the knowledge \nacross domains. The goal of my res
+ earch is to develop a framework for human-in-the-loop machine learning tha
+ t enables \npeople to interact effectively with machine learning models to
+  make better decisions using large datasets\, without \nrequiring in-depth
+  knowledge about machine learning techniques.\n\nIn this talk\, I present 
+ the Bayesian Case Model (BCM)\, a general framework for Bayesian case-base
+ d reasoning (CBR) \nand prototype classification and clustering. BCM bring
+ s the intuitive power of CBR to a Bayesian generative \nframework. The BCM
+  learns prototypes\, the "quintessential" observations that best represent
+  clusters in a dataset\, by \nperforming joint inference on cluster labels
+ \, prototypes and important features. Simultaneously\, BCM pursues sparsit
+ y \nby learning subspaces\, the sets of features that play important roles
+  in the characterization of the prototypes. The \nprototype and subspace r
+ epresentation provides quantitative benefits in interpretability while pre
+ serving \nclassification accuracy. Human subject experiments verify statis
+ tically significant improvements to participants' \nunderstanding when usi
+ ng explanations produced by BCM\, compared to those given by prior art. I 
+ demonstrate the \napplication of this model for an educational domain in w
+ hich teachers cluster programming assignments to streamline \nthe grading 
+ process. \n\nBeen Kim is a Research Scientist at AI2. She is also an affil
+ iated faculty in the Department of Computer Science & \nEngineering at the
+  University of Washington. Her research focuses on interactive and interpr
+ etable machine learning \nmodels for human-machine collaboration. She rece
+ ived her PhD. from MIT. Prior to her PhD\, she worked at the MathWorks \na
+ s a software engineer.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Christian Holz (Microsoft Research) - "Glass Fibers\
+ , Mental Models\, Mobile Devices\, and Electro Shocks"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151104T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151104T133000
+UID:2015-11-04@dub.washington.edu
+DESCRIPTION:In this talk\, I explore the higher dimensions of touch input.
+  I show how to enable mobile devices to sense 3D \ninformation about the s
+ pace above them from just the touch input they observe. I present a series
+  of touchscreen \ndevices that capture users' fingerprints upon touch\, fr
+ om which they conclude 3D information. Just like camera-based \n3D trackin
+ g systems provide the opportunity for more natural and expressive interact
+ ion\, deriving such information \nfrom touch provides similar benefits. Wh
+ ile camera-based systems require a certain distance between sensor and \nt
+ racked objects\, however\, touchscreens sense information directly on thei
+ r surface\, which allows them to remain \nthin--the form factor that has a
+ llowed such devices to achieve mobility and mass-adoption in the first pla
+ ce. I \ndemonstrate that reconstructing 3D information from touch enables 
+ devices to increase their input accuracy by a \nfactor of three compared t
+ o current devices and I show that fingerprint-sensing touchscreens solve a
+  long-standing \nchallenge in HCI: biometric user identification. I conclu
+ de with a new model of user authentication on touch devices\, \ndemonstrat
+ e how to implement seamless biometric authentication on commodity devices\
+ , and discuss the implications of \nthis model on existing operating syste
+ ms and their user interfaces. \n\nChristian Holz is a researcher in Human-
+ Computer Interaction at Microsoft Research\, Redmond. His research focuses
+  on \naugmenting the capabilities of existing mobile devices as well as cr
+ eating new devices to enrich the sensing \ncapabilities of today's devices
+ . Technology Review recently named Christian one of the 10 best innovators
+  under 35 in \nGermany and his work has received honorable mentions at ACM
+  CHI and a best paper award at ACM UIST. Christian holds a \nPh.D. in Huma
+ n-Computer Interaction and masters and bachelor degrees in Software Engine
+ ering from University of \nPotsdam\, Germany. \n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Jeffrey Lin (Riot Games) - "67 million trials in 4 w
+ eeks: How online video games can change how we think about research\, and 
+ how research can change how we design video games"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151118T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151118T133000
+UID:2015-11-18@dub.washington.edu
+DESCRIPTION:League of Legends is an online game with over 67 million playe
+ rs playing the game every month. As the developer of \nLeague of Legends\,
+  Riot Games has been employing the latest research from social and cogniti
+ ve psychology mixed with \ntechniques like machine learning and game desig
+ n to help create more positive online communities.\n\nOne example of such 
+ research was the Tribunal System\; this experimental system automatically 
+ curated behaviors such \nas chat logs from online communities into "case f
+ iles" that could be reviewed by players in League of Legends. \nDepending 
+ on the case verdict\, the players under review would receive rewards or pu
+ nishments for their behaviors. \nThis system collects over 105 million tri
+ als of data a year in just North America and Europe.\n\nIn a second exampl
+ e\, we will show how you can utilize machine learning to study the evoluti
+ on of language\, and how \nfeedback from the system can be used as an inte
+ rvention to curb negative online behaviors. Finally\, we will discuss \nan
+  experiment where we explored what happens when you deploy a simple primin
+ g experiment to 67 million players over 4 \nweeks.\n\nUsing online platfor
+ ms as a medium for research\, many fields of psychology could be on the ve
+ rge of a breakthrough. \nIn the past year\, we have started collaborations
+  with academic institutions to study cooperation and collective \nintellig
+ ence\, online governance\, the evolution of language and more. We want to 
+ show you how online video games can \nforever change how we think about re
+ search and how your lab can get involved. \n\nJeffrey "Lyte" Lin is lead g
+ ame designer of social systems and is responsible for helping League of Le
+ gends have the \nmost sportsmanlike community in online games. Dr. Lin and
+  his team challenge the convention that online communities \nare and alway
+ s will be toxic environments\; in fact\, some of the team's latest work su
+ ggests that the vast majority of \nonline communities are positive or neut
+ ral. He runs experiments and data analyses\, translating the results and \
+ nlearnings into viable game features that enhance engagement while amplify
+ ing the sportsmanlike behavior that already \nexists in the community. Bef
+ ore Riot\, Jeffrey was an experimental psychologist at Valve Software and 
+ received his \nPh.D. in cognitive neuroscience from the University of Wash
+ ington with Dr. Geoffrey Boynton and Dr. Scott Murray.  \n
+LOCATION:HUB 250
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Katharina Reinecke (Computer Science & Engineering) 
+ - "Using Large-Scale Online Experiments to Design less WEIRD User Interfac
+ es"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151125T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151125T133000
+UID:2015-11-25@dub.washington.edu
+DESCRIPTION:An estimated 95% of our scientific knowledge about people\, th
+ eir behavior\, perception\, and preferences is based on \nstudies with "WE
+ IRD" samples\, an acronym for participants who are Western\, Educated\, In
+ dustrialized\, Rich\, and Democratic. \nMy work in Human-Computer Interact
+ ion has shown that technology developed for WEIRD users\, based on knowled
+ ge that is \nderived from studies with mostly US-based student populations
+ \, is often misaligned with the preferences\, behaviors\, \nand abilities 
+ of a large proportion of the world's population: Users differ in how they 
+ perceive information\, what \nthey find appealing\, and what they can work
+  with most efficiently. \n\nA possible solution to the conventional "one s
+ ize fits all" approach is to predict what a user likes and works with \nmo
+ st efficiently\, and to leverage this knowledge to design user interfaces 
+ accordingly. In this talk\, I will show\nhow the online experiment platfor
+ m LabintheWild (www.labinthewild.org) has enabled me to conduct large-scal
+ e behavioral\nexperiments needed to build such predictive models. Labinthe
+ Wild enables participants to compare themselves to \nothers in exchange fo
+ r study participation\; a feedback mechanism that has attracted an average
+  of 1\,000 participants\na day from more than 200 countries and various de
+ mographic groups. I show how LabintheWild experiments have enabled me\nto 
+ study less WEIRD users than possible in conventional laboratory studies\, 
+ and how the results of these studies allowed\nme to build systems that pre
+ dict what users like. \n\nKatharina Reinecke is an assistant professor in 
+ the Computer Science & Engineering department at the University of \nWashi
+ ngton. Prior to that\, she was an assistant professor at the University of
+  Michigan School of Information and the \nDepartment of Computer Science. 
+ She received her Ph.D. in Computer Science from the University of Zurich\,
+  Switzerland\,\nand spent her postdoctoral years at the Harvard School of 
+ Engineering and Applied Sciences. Her research in human-computer\ninteract
+ ion focuses on understanding how culture affects users' perception\, behav
+ ior\, and preferences when interacting\nwith technology. Using data from h
+ er online experiment platform LabintheWild.org\, she builds systems that p
+ redict the\nsuitability of user interfaces for people around the world. Ka
+ tharina has received Best Paper awards and nominations\nat premier venues 
+ in human-computer interaction (ACM CHI\, ACM CSCW\, UMAP)\, a Google Resea
+ rch Faculty award\, as well\nas the Mercator Prize for the best doctoral t
+ hesis at the University of Zurich in 2011.  \n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Andrew Davidson\, Elena Agapie\, Kiley Sobel\, Emma 
+ Rose (Human Centered Design & Engineering) - "Building up STE(A)M: The UCD
+  Charrette for K-12 Outreach"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151202T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151202T133000
+UID:2015-12-02@dub.washington.edu
+DESCRIPTION:The imperative to inspire young students\, especially under-re
+ presented minorities and women\, to pursue education and \ncareers in STE(
+ A)M (Science\, Technology\, Engineering\, (Art)\, and Math) fields is well
+  known. The burning question is \nhow to do it effectively.\n\nFor the pas
+ t few years\, we have been using a design activity known as a charrette as
+  a way to introduce students to \nthe user-centered design (UCD) process. 
+ In our "UCD Charrette\," students are given a particular design space to \
+ nexplore (such as user interfaces for a web site\, mobile app\, or a physi
+ cal device). In a very short period of time \n(two hours or less)\, workin
+ g in small groups\, they brainstorm user needs\, develop use-case scenario
+ s\, and create and \npresent interaction designs for an application. We ha
+ ve run these participatory workshops with students at various \nlevels\, f
+ rom middle school to graduate programs.\n\nIn this talk\, we will report o
+ n our recent experiences using our UCD Charrette in a variety of outreach 
+ efforts\, most \nespecially a number of Puget Sound high schools.\n\nAndre
+ w Davidson is a HCDE Senior Lecturer and former high school teacher\, and 
+ Elena Agapie and Kiley Sobel are HCDE PhD \nstudents. Emma Rose is a UWT A
+ ssistant Professor.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Sue Fussell (Cornell University) - "Understanding an
+ d Supporting Communication Across Linguistic Boundaries"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151209T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20151209T133000
+UID:2015-12-09@dub.washington.edu
+DESCRIPTION:Computer-mediated communication (CMC) tools and social media p
+ otentially allow people to interact fluidly across \nnational\, cultural a
+ nd linguistic boundaries in ways that would have been difficult if not imp
+ ossible in the past. \nTo date\, however\, however\, much of this potentia
+ l fails to be realized. A single individual is unlikely to be \nfluent in 
+ a wide array of languages. The use of a lingua franca such as English perm
+ its a degree of interaction \nwith speakers of other native languages\, bu
+ t it can have negative effects on non-native speakers. Advances in \nmachi
+ ne translation (MT) and other technologies could allow people to communica
+ te with one another in their native \nlanguage\, but translation errors ca
+ n create sizeable misunderstandings when MT is used in conversational sett
+ ings.  \n\nIn a series of studies\, my students and I have been exploring 
+ the problem space of inter-lingual communication\, \nwith the goals of bet
+ ter understanding the challenges of interaction across language boundaries
+  and of informing \nthe design of new tools to support this interaction.  
+ I will first describe two interview studies exploring how the \nneed to us
+ e a non-native language affects communication and coordination in both for
+ mal and informal settings. I \nwill then describe several tools we have de
+ veloped to make MT more usable in everyday conversation and present the \n
+ results of lab studies evaluating these tools.  Taken together\, these stu
+ dies help help advance the area of \ninter-lingual computer-mediated commu
+ nication. \n\nSusan R. Fussell is a Professor in the Department of Communi
+ cation and the Department of of Information Science at \nCornell Universit
+ y. She received her BS degree in psychology and sociology from Tufts Unive
+ rsity\, and her Ph.D. in \nsocial and cognitive psychology from Columbia U
+ niversity. Dr. Fussell's primary interests lie in the areas of \ncomputer-
+ supported cooperative work and computer-mediated communication. Her curren
+ t projects focus on \nintercultural and multilingual communication\, colla
+ borative intelligence analysis\, public deliberation\, and tools \nto moti
+ vate people to reduce their energy usage.  More information can be found o
+ n her website \n<http://sfussell.hci.cornell.edu> or her lab Facebook page
+  <https://www.facebook.com/InterculturalCommLab>.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "DUB Faculty Meeting / Student Group Lunches"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160106T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160106T133000
+UID:2016-01-06@dub.washington.edu
+DESCRIPTION:
+LOCATION:CSE 691
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Lung-Pan Chen (Hasso Plattner Institute) - "Taking V
+ R Immersion to the Next Level with Large-Scale Haptic Effects"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160113T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160113T133000
+UID:2016-01-13@dub.washington.edu
+DESCRIPTION:I will present a series of research prototypes of immersive vi
+ rtual reality systems that reproduce not \nonly what users see and hear\, 
+ but also what users feel. Unlike traditional approaches to VR haptics\, su
+ ch as\nvibrating gloves\, our systems reproduce _large_ physical effects\,
+  such as solid walls\, splashing water\, \nlevers that user can flip\, and
+  tornados that actually lift users up in the air. To explore all possible 
+ \nlarge-scale haptic effects fast\, our systems is not based on machines -
+  it is based on people. Our systems \norchestrate so-called "human actuato
+ rs" to do all the physical labor. Just-in-time\, these human workers \nman
+ ually lift\, tilt\, or push the player\, or present props to simulate wall
+ s or levers. I will show a motion \nplatform based on five human actuators
+ \, a real-walking VR setup based on ten human actuators\, and a "consumer 
+ scale"\nversion of our concept that runs on a single GearVR headset actuat
+ ed by a single human actuator.\n\nHaptic Turk - A Motion Platform Based on
+  People (paper at CHI 2014):\n\n- video <https://www.youtube.com/watch?v=F
+ G7qoFubf04>\n- web page <http://hpi.de/baudisch/projects/haptic-turk.html>
+ \n\nTurkDeck - Physical Virtual Reality Based on People (paper at UIST 201
+ 5):\n\n- video <https://www.youtube.com/watch?v=8ZaC_kyF6wo>\n- web page <
+ http://hpi.de/en/baudisch/projects/turkdeck.html>\n\nLung-Pan Cheng is a P
+ h.D. Candidate working with Prof. Dr. Patrick Baudisch in the Human Comput
+ er Interaction \nLab at Hasso Plattner Institute. His research primarily f
+ ocuses on virtual reality\, specifically in haptics and\n mobile technolog
+ y. His recent research targets on making immersive haptic experience mass 
+ available.\n\nPrior to his Ph.D. study\, he received his B.S. in CS from N
+ ational Chiao Tung University and M.S. in CS \nfrom the Mobile HCI Lab at 
+ National Taiwan University.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Daniel S. Weld (Computer Science & Engineering) - "I
+ ntelligent Control of Crowdsourcing"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160120T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160120T133000
+UID:2016-01-20@dub.washington.edu
+DESCRIPTION:Crowd-sourcing labor markets (e.g.\, Amazon Mechanical Turk) a
+ re booming\, because they enable rapid construction of complex workflows t
+ hat seamlessly mix human computation with computer automation. Example app
+ lications range from photo tagging to audio-visual transcription and inter
+ lingual translation. Similarly\, workflows on citizen science sites (e.g. 
+ GalaxyZoo) have allowed ordinary people to pool their effort and make inte
+ resting discoveries. Unfortunately\, constructing a good workflow is diffi
+ cult\, because the quality of the work performed by humans is highly varia
+ ble. Typically\, a task designer will experiment with several alternative 
+ workflows to accomplish a task\, varying the amount of redundant labor\, u
+ ntil she devises a control strategy that delivers acceptable performance.\
+ n\nFortunately\, this control challenge can often be formulated as an auto
+ mated planning problem ripe for algorithms from the probabilistic planning
+  and reinforcement learning literature. I describe our recent work on the 
+ decision-theoretic control of crowd sourcing and suggest open problems for
+  future research. In particular\, I discuss:\n\n* The use of partially-obs
+ ervable Markov decision Processes (POMDPs) to control voting on binary-cho
+ ice questions and iterative improvement workflows.\n* Decision-theoretic m
+ ethods that dynamically switch between alternative workflows in a way that
+  improves on traditional (static) A-B testing.\n* A novel workflow for cro
+ wdsourcing the construction of a taxonomy — a challenging problem since 
+ it demands a global perspective of the input data when no one worker sees 
+ more than a tiny fraction.\n* Methods for optimizing the acquisition of la
+ beled training data for use in machine learning applications\; this an imp
+ ortant special case\, since data annotation is often crowd-sourced.\n\nDan
+ iel S. Weld is Thomas J. Cable / WRF Professor of Computer Science & Engin
+ eering at the University of Washington and an Entrepreneurial Faculty Fell
+ ow. After formative education at Phillips Academy\, he received bachelor's
+  degrees in both CS and Biochemistry at Yale University in 1982. He landed
+  a Ph.D. from the MIT Artificial Intelligence Lab in 1988\, received a Pre
+ sidential Young Investigator's award in 1989\, an Office of Naval Research
+  Young Investigator's award in 1990\, was named AAAI Fellow in 1999 and de
+ emed ACM Fellow in 2005. Dan was a founding editor for the Journal of AI R
+ esearch\, was area editor for the Journal of the ACM\, guest editor for Co
+ mputational Intelligence and Artificial Intelligence\, and was Program Cha
+ ir for AAAI-96. Dan has published two books and scads of technical papers.
+ \n\nDan is an active entrepreneur with several patents and technology lice
+ nses. He co-founded Netbot Incorporated\, creator of Jango Shopping Search
+  (acquired by Excite)\, AdRelevance\, a monitoring service for internet ad
+ vertising\, (acquired by Media Metrix)\, Nimble Technology\, a data integr
+ ation company (acquired by Actuate). Dan is a Venture Partner at the Madro
+ na Venture Group\, and a member of the Technical Advisory Boards for the A
+ llen Institute for Artificial Intelligence\, Context Relevant\, Spare5\, a
+ nd Madrona.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Mike Bennett\, Kevin Larson (Microsoft) - "Reading B
+ etween the Lines: Improving Comprehension for Students"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160127T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160127T133000
+UID:2016-01-27@dub.washington.edu
+DESCRIPTION:While reading is arguably a student's most important skill\, t
+ he technology of reading is relatively unchanged. \nCan the power of compu
+ ting improve a student's reading comprehension? We will discuss what has b
+ een learned about \ntypography in the last 500 years\, about reading psych
+ ology in the last 100 years\, and what technology can be \ninvented right 
+ now.\n\nMike Bennett and Kevin Larson are teammates on Microsoft's Advance
+ d Reading Technologies team. For over 25 years \nthe team has been researc
+ hing how to make on-screen reading better. Mike is a vision scientist\, wh
+ o did a postdoc \nin Stanford University\, was a researcher in MIT's Media
+  Lab Europe\, and holds a PhD from University College Dublin\, \nIreland. 
+ Kevin is a reading psychologist with a PhD from the University of Texas\; 
+ he is well-known in the field of \ntypography for bridging the knowledge g
+ ap between design and the science of reading.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Mira Dontcheva (Adobe Research) - "Closing the Langu
+ age Gap Between People and Applications"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160203T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160203T133000
+UID:2016-02-03@dub.washington.edu
+DESCRIPTION:The language of an application is often not the same as the la
+ nguage of its users. \nUsers who want to straighten a photo have to know t
+ o reach for the ruler tool and \nusers who want to work with 3D objects ha
+ ve to learn about transforming and scaling. \nThis language gap is especia
+ lly problematic for novices but remains an issue for \nexpert users who ar
+ e learning how to do something new. In the context of creativity \nsupport
+  tools where users are often working with visuals\, this language gap is \
+ nexacerbated by the language of images and graphics is not easily discover
+ able.\nIn this talk\, I will cover recent projects that try to make it eas
+ ier for users \nto work with creative tools through natural language inter
+ faces. I will cover how \nwe can automatically learn mappings between natu
+ ral language words and application\ntool names\, how we can combine multip
+ le modalities to make it easier to do creative\ntasks\, and how we can add
+ ress the inherent ambiguity in user natural language requests. \n\nMira Do
+ ntcheva is a Senior Research Scientist at Adobe. Her research focuses on \
+ ncreativity support tools\, natural language interaction\, and information
+  visualization. \nSince joining Adobe\, she has worked on making Adobe’s
+  products easier to learn and \nuse by leveraging the vast amount of help 
+ content on the Web and building novel \nforms of instructional content inc
+ luding interactive tutorials and games. Before \njoining Adobe in 2008\, s
+ he completed her PhD in Computer Science at the University of Washington. 
+ \n
+LOCATION:HUB 145
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Beth Kolko (Human Centered Design & Engineering / Sh
+ ift Labs) - "It's All a Design Problem: Startupland from the Inside Out"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160210T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160210T133000
+UID:2016-02-10@dub.washington.edu
+DESCRIPTION:After 20 years as a professor\, I started a company. I wasn't 
+ commercializing any IP from my academic work. I wanted to build a company 
+ that responded to a generalized problem that had been revealed through yea
+ rs of academic research. \n\nIn this talk I'll address how the various asp
+ ects of building a company are\, in essence\, design problems. Both obviou
+ s tasks like fundraising\, ideation\, prototyping\, and user testing\, as 
+ well as less obvious processes like manufacturing\, marketing\, sales\, an
+ d hiring can all be approached as design problems at heart. There are lots
+  of ways to build a company\, and I'll share the experience of building wi
+ th a design perspective at the center of decision-making.\n\nCaution:  the
+ re may be adult language involved.\n\nI'm a researcher\, educator\, and en
+ trepreneur who blends disciplinary perspectives to identify hidden problem
+ s and craft innovative solutions. I began my career as a professor in the 
+ humanities\, studying how diverse communities used a then text-based Inter
+ net to organize and enact change. After a decade of work on technology ado
+ ption\, adaptation\, and usage patterns in low resource communities around
+  the world\, I became a professor in engineering in order to collaborate o
+ n building better solutions to intransigent problems. My current work focu
+ ses on the potential of non-experts to create disruptive solutions\, and I
+  build programs that help people become functional engineers so they can s
+ olve problems in their communities.\n\nIn terms of actual job titles\, I a
+ m a Professor of Human Centered Design & Engineering at the University of 
+ Washington where I co-direct the Tactical and Tactile Technology Lab (form
+ erly the Design for Digital Inclusion lab).I am also co-founder and CEO of
+  Shift Labs\, a company that builds simple medical devices that solve huge
+  unmet problems at a price point global markets can afford. \n\nAt UW I al
+ so created the Hackademia Project which builds innovation potential among 
+ broad audiences by imparting functional engineering skills combined with d
+ esign thinking. My technology development projects have included work on a
+  low-cost ultrasound system for midwives in Uganda and a grassroots public
+  transportation information system in Kyrgyzstan.\n\nI've been the Directo
+ r of Innovation at the Makerbot Foundation (2013)\, a Fulbright professor 
+ at the University of World Economy and Diplomacy in Tashkent\, Uzbekistan 
+ (2000)\, a Visiting Faculty Researcher at Microsoft Research (2007)\, and 
+ a Fellow (2007-2009) and Faculty Associate (2009-present) at the Berkman C
+ enter for Internet and Society at Harvard University. I've lectured around
+  the world\, and consulted for a variety of NGOs\, including extensive fie
+ ldwork in Cambodia\, India\, Kyrgyzstan\, Indonesia\, and Kenya.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Emi Tamaki (University of Tokyo) - "Share the Hands 
+ - UnlimitedHand: Interactivity through Human Hand Somatics"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160217T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160217T133000
+UID:2016-02-17@dub.washington.edu
+DESCRIPTION:Human sensations are formed through closed loop systems compri
+ sing of both an Input and an Output. The agenda for \nVirtual and Augmente
+ d Reality (VR/AR) research have been to simultaneously provide the two\, m
+ odeling sensations \nrecognizable by our Sensory System. Recent pursuits f
+ ocus on devices that augment visual and auditory faculties. \nThe hand\, h
+ owever\, a part of the body that allows rich sensations and expressions to
+  be articulated\, deserve closer \nexamination. We have developed "Unlimit
+ ed Hand"\, a wearable device granting a human hand access to virtual dimen
+ sions. \nThe device reads hand movements with a hybrid set of motion senso
+ rs while triggering hand motions by exerting \nElectric Muscle Stimuli on 
+ the wearer's forearm. This simultaneous exchange initiates a closed loop b
+ etween human \nhand and computer. In this meeting\, we will look into how 
+ this device is capable of providing new tactile experiences \nin multiple 
+ fields of applications.\n\nEmi Tamaki is an Assistant Professor at Waseda 
+ University and the Co-Founder and Chief Researcher of H2L\, Inc.\n\nShe is
+  aiming to research and popularize VR(Virtual Reality) and AR(Augmented Re
+ ality) in the transmission of the \ntactile feeling and other sensations b
+ etween computers and humans.\n\nIn 2010\, Tamaki developed PossessedHand\,
+  a device to control human finger movements by a computer and wearable \ne
+ lectrodes for experiencing the VR world. PossessedHand has drawn the atten
+ tion of many scientific societies and has \nappeared on CNN and ABC TV. Po
+ ssessedHand was also selected as one of Time magazine's Best 50 Inventions
+ . Tamaki \nreceived a Ph.D. from the University of Tokyo Graduate School i
+ n 2011. In the same year\, she received the University \nof Tokyo Presiden
+ t's Award for Students and was the valedictorian of her class. In 2012\, s
+ he started up a company\, \nH2L\, Inc. about tactile feeling with Ken Iwas
+ aki and Tomy Kamada. In 2013\, Tamaki resumed research activities at \nWas
+ eda University. She was recently awarded the Woman of the Year Runner-up P
+ rize in the Nikkei Woman. From 2013 she \nis working on a new device\, Unl
+ imitedHand that is the world's first haptic controller in the VR game worl
+ d. \nUnlimitedHand allows the user to touch and feel the virtual objects. 
+ UnlimitedHand was launched at September\, 2015 at \nTechCrunch SF 2015. On
+  KickStarter\, the crowd-founding of UnlimitedHand reached their goal in j
+ ust 22 hours.\n\n- UnlimitedHand at KickStarter \n\n  <https://www.kicksta
+ rter.com/projects/1551369150/unlimitedhand-touch-and-feel-the-game-world/d
+ escription>\n\n- UnlimitedHand Project Site \n\n  <http://unlimitedhand.co
+ m>\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Helena Mentis (University of Maryland\, Baltimore Co
+ unty) - "Crafting the Image in Surgical Telemedicine"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160224T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160224T133000
+UID:2016-02-24@dub.washington.edu
+DESCRIPTION:Surgical telemedicine has emerged as a promising answer to the
+  increasing needs of everyday surgical collaboration \nand in situ educati
+ on. The implicit desire is to allow a remote surgeon to see the body as th
+ e local surgeon does in \norder to engage in shared decision-making or ins
+ truction. With this talk I take a step back by discussing the \nproductive
+  and cross-referential nature of surgical practice and image use. I discus
+ s how it is not simply a case of \ntransferring recorded video\, but rathe
+ r a new practice is instantiated in creating a view of the body for the re
+ mote \nsurgeon. In order to investigate these practices for capturing and 
+ using video\, I deployed a head-mounted video \ncamera (via the Google Gla
+ ss) in six transplant organ recovery assessments. Drawing on observations 
+ and analysis of \nthe video artifacts\, I examine how the transmitting sur
+ geon crafts a view for the remote surgeon in order to \nfacilitate the co-
+ construction of knowledge and shared decision making.  I use these finding
+ s to discuss further \ndesign directions for video use in surgical telemed
+ icine.\n\nHelena Mentis\, PhD\, is an assistant professor in the Departmen
+ t of Information Systems at UMBC. Her research \ncontributes to the areas 
+ of human-computer interaction (HCI)\, computer supported cooperative work 
+ (CSCW)\, and health \ninformatics. She investigates how images and visuali
+ zations play a part in medical collaboration and care\, \nparticularly wit
+ h regards to how both professionals and layman perceive information throug
+ h images.  Before UMBC\, she \nwas a research fellow at Harvard Medical Sc
+ hool\, held a joint postdoctoral fellowship at Microsoft Research Cambridg
+ e \nand the University of Cambridge\, and was an ERCIM postdoctoral schola
+ r at Mobile Life in Sweden. She received a PhD \nin Information Sciences a
+ nd Technology from The Pennsylvania State University in 2010.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Justin Bonny (foundry10) - "Investigating Links betw
+ een Multiplayer Online Battle Arena (MOBA) Expertise and Cognitive Skills 
+ at a Gaming Tournament"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160302T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160302T133000
+UID:2016-03-02@dub.washington.edu
+DESCRIPTION:An approach for studying how individuals learn and use particu
+ lar skill sets is to examine those who vary in expertise within a\nspecifi
+ c field. Previous research has found that individuals with first-person sh
+ ooter expertise outperform novices on specific\ntypes of cognition tasks. 
+ Given the rapid growth in popularity of multiplayer online battle arena (M
+ OBA) games (e.g.\, Dota 2\, League\nof Legends) we investigated whether si
+ milar connections would be observed with this gamer population. In doing s
+ o we addressed: (i)\nwhether a sample of experienced gamers and valid cogn
+ itive task data could be collected at a MOBA tournament\, (ii) whether\nin
+ dividual differences in cognitive skills are connected to MOBA expertise\,
+  (iii) how MOBA expertise effects line up with previous\nresearch. Our res
+ ults suggest that gaming tournaments should be considered for gathering a 
+ large sample of experienced gamers and\nthat specific cognitive skills are
+  connected to MOBA expertise. We conclude that MOBAs offer a unique perspe
+ ctive for examining how\nexperience with an online game genre that has com
+ plex gameplay and social interactions is connected to psychological proces
+ ses.\n\nJustin Bonny is a research psychologist at foundry10 and is respon
+ sible for examining how student learning occurs through informal\nand non-
+ traditional experiences. Previously Dr. Bonny has investigated cognitive u
+ nderpinnings of STEM skills in children and\nadults. He earned his Ph.D. f
+ rom Emory University and has worked as a community college professor and s
+ cientist for the Navy. \nTo find out more about research at foundry10 visi
+ t <http://www.foundry10.org>.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Afra Mashhadi (Bell Labs) - "From Network Noise to S
+ ocial Signals: Network-Sensing and Crowd-Sourcing for Behavioural Modellin
+ g"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160309T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160309T133000
+UID:2016-03-09@dub.washington.edu
+DESCRIPTION:Workplace studies have played a prominent role in the field of
+  computer-supported cooperative work (CSCW) over the past 20 years.\nMore 
+ recently with the rise of the Quantified-Self movement\, the workplace stu
+ dies have also started to look into new\, sometimes\nplayful\, techniques 
+ in engaging users and collecting subjective data. In this talk I present "
+ Quantified Enterprise" a platform that\naims to uncover hidden dynamics of
+  modern enterprises including various space/people metrics and their inter
+ plays\, through\nnetwork-sensing and crowd-sourcing. I present insights fr
+ om our long-term deployment of this platform in two of Bell Labs offices i
+ n\nEurope. I demonstrate how such a platform could be used to derive socia
+ l signals (e.g.\, interactions\, happiness\, and mood) at\nworkplace and h
+ ow these information could act as collective and personalised behavioural 
+ feedback to the employees themselves.  \n\nAfra Mashhadi is a senior resea
+ rch scientist at Bell Laboratories. Her research focuses in ubiquitous com
+ puting where she leverages\nhuman behavioural patterns to design human-cen
+ tric systems\; and HCI where she aims to uncover the perception of users
+ ’s interactions\nwith such systems. In particular her main focus is on C
+ rowdSensing which refers to the data collection methodology where informat
+ ion\nis gathered from the participants through either explicit CROWD-sourc
+ ing or implicit pervasive SENsing. Results of her research have\nbeen publ
+ ished in top-tier conferences (Percom\, CHI\, CSCW\, Ubicomp) and journals
+ \, and trialled as part of multiple deployments in\nEuropean projects and 
+ private entities such as WebSummit 2015. Afra is also an honorary research
+ er at UCL (University College\nLondon) where she obtained her PhD degree.\
+ n\nWeb:  <http://www0.cs.ucl.ac.uk/staff/A.JahanbakhshMashhadi/mashhadi/Ho
+ me.html>\n
+LOCATION:HUB 145
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - Finals Week"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160316T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160316T133000
+UID:2016-03-16@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - Quarter Break"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160323T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160323T133000
+UID:2016-03-23@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "DUB Faculty Meeting / Small Group Lunches"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160330T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160330T133000
+UID:2016-03-30@dub.washington.edu
+DESCRIPTION:
+LOCATION:CSE 691
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Carmen Gonzalez (Communication) - "Digital Equity an
+ d Meaningful Connectivity"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160406T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160406T133000
+UID:2016-04-06@dub.washington.edu
+DESCRIPTION:Constrained access to the Internet and communication technolog
+ ies is commonly associated with social inequality. Policymakers in\nmany s
+ ectors—and particularly\, in education—have placed their bets on incre
+ ased access to technology having the potential to\nmitigate broader social
+  disparities. The relationships between digital and social equity suggest 
+ that meaningful connectivity—that\nis\, having the technical skills nece
+ ssary to engage technology and mobilize digital resources to address every
+ day needs—can empower\nsocially disenfranchised individuals\, families\,
+  and communities. In the context of a national digital equity initiative\,
+  this study\nexamines how parents and children of low-income Latino famili
+ es incorporate new technologies into their everyday lives. Through a\ncomp
+ arison of three demographically similar communities where discounted broad
+ band is being offered\, we present a bottom-up\,\ncommunication-centered p
+ erspective on a top-down technology policy. Our ecological approach consid
+ ers the intersection of macro- and\nmeso-level factors that influence Lati
+ no families’ perceptions of technology and that shape their consequent a
+ doption and\nintegration decisions.\n\nCarmen Gonzalez is an assistant pro
+ fessor in the Department of Communication at the University of Washington.
+  \nThrough community-based\, multi-method research\, her work examines the
+  communication practices of immigrant and minority populations\nin the con
+ texts of health promotion and civic engagement. In her current work she in
+ vestigates how Latino families engage digital\ntechnologies and how access
+  to technology can be leveraged to support individual and community empowe
+ rment. Prior to joining the UW\,\nshe was a postdoctoral researcher at Rut
+ gers University. She holds a PhD in Communication and a BA in Journalism a
+ nd Chicano Studies\nfrom the University of Southern California. \n
+LOCATION:Haggett Hall Cascade Room
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Eric Gilbert (Georgia Tech) - "When Anyone Can Say A
+ nything: Credibility\, Censorship\, and Moderation in Social Media"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160413T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160413T133000
+UID:2016-04-13@dub.washington.edu
+DESCRIPTION:Perhaps the defining attribute of social media is that anyone 
+ anywhere can say anything. This is often wonderful. \nThen again: *anyone 
+ anywhere* can say *anything*. In this talk\, I will concentrate on two lin
+ es of inquiry: \n1) What if people say things that aren't true?\; 2) What 
+ if people say things their government doesn't like? \nFirst\, I will discu
+ ss the development and analysis of a large-scale\, systematic credibility 
+ corpus\, called CREDBANK. \nWith CREDBANK's 66M tweets nested in 1\,377 re
+ al-world events\, we have found temporal and linguistic regularities \ndif
+ ferentiating credible and non-credible information on Twitter. Second\, I 
+ will discuss a prototype linguistic algorithm we\nbuilt to circumvent cens
+ orship on Chinese social media. Taking advantage of Mandarin's natural hom
+ ophones\, we transformed\npreviously-censored posts to stay on Sina Weibo 
+ three times longer and create millions of false positives for censors--whi
+ le\nremaining human-interpretable. Finally\, I will close the talk with a 
+ preview of a new line of work emerging from a different\nquestion: What if
+  people say horrible things to each other? Here\, we are working on machin
+ e learning-based interventions to help\nmoderate online spaces.\n\nEric Gi
+ lbert is an Assistant Professor in the School of Interactive Computing at 
+ Georgia Tech. \nHe joined the Tech faculty in 2011 after a Ph.D. in CS at 
+ Illinois. \nDr. Gilbert leads the comp.social lab--a research group that f
+ ocuses on building and studying social media. \nHis work has been supporte
+ d by grants from Facebook\, Samsung\, Yahoo!\, Google\, Yik Yak\, NSF\, AR
+ L\, and DARPA. \nHe is the recipient of an NSF CAREER award and the Georgi
+ a Tech Sigma Xi Young Faculty Award. \nRecently\, Dr. Gilbert served as pr
+ ogram co-chair of ICWSM 2016. \nIn addition to founding several widely-use
+ d\, experimental social computing systems\, \nhe has received four best pa
+ per awards and six nominations from ACM's SIGCHI. \nDr. Gilbert’s work h
+ as also appeared in the New York Times\, Wired and on NPR.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Joyojeet Pal (University of Michigan) - "Accessibili
+ ty Infrastructure and the Transition to Touchscreens: Evidence from Bangal
+ ore\, India"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160420T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160420T133000
+UID:2016-04-20@dub.washington.edu
+DESCRIPTION:Recent increases in access to smartphones has dramatically alt
+ ered the accessibility landscape for people with visual\nimpairments in pa
+ rts of the Global South\, where accessible technologies have historically 
+ been scarce. Examining\nongoing transitions from button-based feature phon
+ es to devices with touchscreen interfaces in Bangalore\, India\,\nwe explo
+ re the concept of an accessibility infrastructure that includes a broader 
+ set of factors that enable or\ninhibit the functional use of accessible te
+ chnologies. We argue that the functional use of these technologies is\ndif
+ ficult\, if not impossible to extract from the larger social context in wh
+ ich they operate. Through the lens\nof social infrastructure for technolog
+ y adoption – such as networks of users and technical support ecologies\,
+ \nwe discuss ways in which touchscreens have changed the public participat
+ ion of people with disabilities in important\nways. On the flip side\, we 
+ look at ways in which the same infrastructures can be barriers to the devi
+ ces being used\nto their full potential.\n\nJoyojeet Pal is an assistant p
+ rofessor at the School of Information at the University of Michigan\, Ann 
+ Arbor.\nHis work focuses on social studies of accessibility in low- and mi
+ ddle-income countries\, specifically in-depth\nqualitative examinations of
+  access to technology and its impact on social inclusion. Some of his rece
+ nt work has\nexamined the use of social media in political action in India
+ . He is the producer and researcher of the award-winning\ndocumentary "For
+  the Love of a Man."\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Ed Summers (SAS Institute) - "Accessible Analytics"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160427T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160427T133000
+UID:2016-04-27@dub.washington.edu
+DESCRIPTION:The ability to derive insights from data and take action based
+  on those insights are essential skills for all \ncitizens in the 21st cen
+ tury knowledge economy.  However\, people with disabilities are at a disad
+ vantage because \nthey do not have equal access to the most common output 
+ of analytics workflows - interactive digital charts\, graphs\, \nmaps and 
+ other data visualizations. SAS is working to change that. \n\nPlease join 
+ Ed Summers for an interactive presentation.  Ed will provide an overview o
+ f the accessibility program \nat SAS including recent progress towards uni
+ versally accessible analytics and data visualization.\n\nEd Summers is a b
+ lind software engineer and an accessibility specialist. He has a B.S. in C
+ omputer Science and \nmore than 20 years of professional experience as a s
+ oftware developer and a development manager. \nEd’s personal mission is 
+ to enable people with disabilities to realize their full potential in the 
+ classroom \nand the 21st century knowledge economy. He fulfills that missi
+ on as a leader in the software industry and \ndisability-related not-for-p
+ rofit organizations. \n\nEd is a Distinguished Technical Leader and Senior
+  Manager of Accessibility at SAS - the market leader in business \nanalyti
+ cs software and services.  The SAS accessibility team enables users of all
+  abilities to access the \npower of analytics.  Ed also serves as the Chai
+ r of both the North Carolina Commission for the Blind and \nthe North Caro
+ lina State Board of Education Advisory Council for the Governor Morehead S
+ chool for the Blind.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Tom Yeh (University of Colorado) - "Printing Picture
+ s in 3D"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160504T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160504T133000
+UID:2016-05-04@dub.washington.edu
+DESCRIPTION:The Tactile Picture Book Project (TPBP) is a research endeavor
+  that utilizes 3D printing as a new media platform\nfor designing\, develo
+ ping\, and distributing information in a tangible format. The mission of T
+ PBP is to give children\nwith visual impairments access to a lot more pict
+ ures they can "see" by touch and feel. To date\, the TPBP team has\nmade 3
+ D adaptations for several children's book classics such as Goodnight Moon\
+ , Harold and the Purple Crayon\,\nThe Very Hungry Caterpillar\, Dear Zoo\,
+  and Noah's Ark. In this talk\, Yeh will demonstrate examples of 3D pictur
+ es\,\ndiscuss the technical challenges encountered in creating these pictu
+ res\, and share the many valuable lessons learned\nthrough the process. In
+  addition\, Yeh will present CraftML\, a new 3D modeling markup language d
+ esigned to mimic common\nweb technologies including HTML5\, CSS\, and Java
+ script. CraftML allows web designers without prior 3D modeling\nexperience
+  to easily bring their creative talents and design skills to the domain of
+  3D modeling. The TPBP is\nsupported by a research grant from the National
+  Science Foundation and has appeared in several news outlets such\nas 9New
+ s\, Newsweek\, DailyCamera\, DailyMail\, New Scientist\, Science Daily\, a
+ nd NPR.\n\nTom Yeh received his PhD from the Massachusetts Institute of Te
+ chnology for studying vision-based user interfaces.\nIn 2012\, he joined t
+ he University of Colorado Boulder (CU) as an assistant professor in the De
+ partment of\nComputer Science. Prior to joining CU\, he was a postdoctoral
+  fellow at the University of Maryland Institute for\nAdvanced Computer Stu
+ dies (UMIACS). Yeh’s research interests include 3D printing\, big data\,
+  citizen science\, and\nmobile security. He has published more than 30 art
+ icles across these interest areas. He has received best paper\nawards and 
+ honorable mentions from CHI\, UIST\, and MobileHCI. In 2014\, he received 
+ the Student Affairs Faculty\nof the Year Award. Yeh’s research projects 
+ are funded by the National Science Foundation (NSF) and the\nDefense Advan
+ ced Research Projects Agency (DARPA).\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - CHI 2016"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160511T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160511T133000
+UID:2016-05-11@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Shaun Kane (University of Colorado) - "Combining Abi
+ lity and Context to Create More Accessible User Interfaces"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160518T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160518T133000
+UID:2016-05-18@dub.washington.edu
+DESCRIPTION:In recent years\, user interfaces have expanded from a relativ
+ ely standardized set of inputs and outputs (keyboards\, mice\, and monitor
+ s)\, to a broad ecosystem of device form factors with diverse input\, outp
+ ut\, and sensing methods. This diversity of interaction methods can benefi
+ t all computer users\, but may be especially helpful for individuals with 
+ disabilities.\n\nIn this talk\, I will discuss our recent efforts to creat
+ e more accessible computing technologies for individuals with a range of a
+ bilities\, including new mobile and wearable technologies for people with 
+ vision impairments\, gesture-sensitive wheelchair controls\, and context-a
+ ware communication devices.\n\nShaun Kane is an assistant professor in the
+  Department of Computer Science at the University of Colorado Boulder and 
+ is currently a Visiting Researcher at Microsoft Research. Shaun has been a
+ warded a Google Lime Scholarship\, a UMBC Academic Innovation Fellowship\,
+  and an Alfred P. Sloan Fellowship. Shaun's work explores ways to make com
+ puting devices easier to use for people with disabilities\, and explores a
+  range of accessibility issues including touch screen and gesture interact
+ ion for people with vision impairments\, touch interfaces for power wheelc
+ hair users\, context-aware augmentative and alternative communication devi
+ ces\, and wearable assistive technology.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - David A. Shamma  - "The New Practice of Old Photogra
+ phy"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160525T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160525T133000
+UID:2016-05-25@dub.washington.edu
+DESCRIPTION:A decade ago we saw the birth of Flickr\, a media website for 
+ social \nphoto sharing. Since then\, social media websites have grown to\n
+ encompass many types of photo\, video\, audio\, and even hyper-link\nshari
+ ng. Many researchers have conducted work on these social-websites\nin gene
+ ral yet there still exists many opportunities to explore how\npeople engag
+ e with media online\, specifically multimedia\, in social\ncontexts. Howev
+ er\, the practice of photography itself is almost two\ncenturies old.  Wha
+ t can we further understand about the modern\npractice of photography (sel
+ fies\, food\, and all) from the works and\nwritings of the masters (both p
+ ast and contemporary)? In this talk\, I\nwill highlight some new challenge
+ s for researchers studying social\nphotography and present a few recent fi
+ ndings from an investigation of\nFlickr which include geographic annotatio
+ n of photographs and regions\,\ncommunity congregation online\, and social
+  engagement.\n\nDavid Ayman Shamma is the former Director of the HCI Resea
+ rch Group at\nYahoo Labs and Flickr. He received his Ph.D. at Northwestern
+ \nUniversity in 2005 in Computer Science from the Intelligent\nInformation
+  Laboratory.  His personal research investigates social\nmultimedia comput
+ ing and creativity.  He currently serves on the\nsteering committees for A
+ CM Multimedia and ACM TVX. In 2013\, he was\nco-chair of the Technical Pro
+ gram at ACM Multimedia and he is a\nco-general chair for ACM Creativity an
+ d Cognition 2017.  In the past\,\nhe was a Visiting Senior Research Fellow
+  at the Keiko-NUS CUTE Center\nat the National University of Singapore (20
+ 14)\, he was appointed as a\nSenior Member of the ACM (2012). Before Yahoo
+ !\, he was an instructor\nat the Medill School of Journalism\; he has also
+  taught courses in\nComputer Science and Studio Art. Prior to receiving hi
+ s Ph.D.\, he was\na visiting research scientist for the Center for Mars Ex
+ ploration at\nNASA Ames Research Center.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Mark Cartwright (Northwestern University) - ""Give m
+ e a &lt\;ka-CHUNK&gt\;": Rethinking the Interaction Paradigm of Audio Prod
+ uction Tools\n"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160601T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160601T133000
+UID:2016-06-01@dub.washington.edu
+DESCRIPTION:The goal of my research is to reduce technical barriers to cre
+ ative expression\, with a focus on audio and music. \nDigital audio produc
+ tion tools (the audio-equivalents to Photoshop) used to make music recordi
+ ngs are typically controlled \nusing low-level technical parameters\, imit
+ ating their analog counterparts from forty years ago. \nLearning the mappi
+ ng between creative intent ("give me a &lt\;ka-CHUNK&gt\;") and these low-
+ level parameter setting requires \nconsiderable knowledge and experience\,
+  discouraging many from using the tools. \nIn my research\, I fundamentall
+ y rethink the interaction paradigm of audio production tools. \nMy researc
+ h allows users to communicate using natural methods similar to how one typ
+ ically communicates \naudio ideas to another human—e.g. using descriptiv
+ e language\, vocal imitation\, examples\, and evaluative feedback. \nUsing
+  these methods\, even novice users can realize and explore creative ideas\
+ , letting them overcome \nhurdles such as limited technical knowledge and 
+ experience with the tools. \nIn this talk\, I present systems that impleme
+ nt these interaction approaches and experiments \nthat explore the strengt
+ hs and limitations of these approaches.\n\nMark Cartwright is a Chicago-ba
+ sed computer scientist and musician. \nHe is a Ph.D. candidate in computer
+  science at Northwestern University in Bryan Pardo's Interactive Audio Lab
+ . \nHis research lies at the intersection of human-computer interaction\, 
+ audio signal processing\, and machine learning. \nIt focuses on creating n
+ ew interfaces and tools for music production that support creativity by \n
+ rethinking the traditional interaction paradigms. \nHe received a Bachelor
+  of Music from Northwestern University and a Master of Arts from Stanford 
+ University (CCRMA). \nHe won a National Science Foundation Graduate Resear
+ ch Fellowship to fund his Ph.D. and \nwas a visiting researcher at the Cen
+ ter for Digital Music at Queen Mary University of London and Adobe's Creat
+ ive Technology Lab. \nAs a member of the experimental-rock trio volcano!\,
+  \nMark exercises his passion for low frequencies\, enveloping noise\, and
+  unusual sound textures using computers\, synths\, and bass.\nvolcano! has
+  released albums on The Leaf Label and has toured the United States and Eu
+ rope.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - Finals Week"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160608T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160608T133000
+UID:2016-06-08@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - Quarter Break"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160615T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160615T133000
+UID:2016-06-15@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Aaron Brako\, Jennifer Hopper\, Dave Miller\, Johnny
+  Schroepfer (['Google']) - "Getting Started on Your Career Path as an HCI/
+ UX Professional"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160622T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160622T133000
+UID:2016-06-22@dub.washington.edu
+DESCRIPTION:The panel will provide diverse perspectives on what industry i
+ s looking for in HCI/UX talent. Speakers will discuss\ntopics such as rece
+ nt developments in the field\, generalist versus specialist\, how to prese
+ nt yourself and your work\nand other relevant topics. Each speaker will sh
+ are insider perspectives from their particular career context.\n\nAaron Br
+ ako is an Interaction Designer on the Search team at Google in Mountain Vi
+ ew. He has also worked on Google Now and previously worked as a UX designe
+ r at Microsoft. Aaron is an MHCI+D alum\, and was the co-founder of Pyrami
+ d Labs - a digital design and development studio based in Mumbai\, India. 
+ At Google\, Aaron is focused on creating global-scale assistive experience
+ s that are proactive\, personalized\, and contextually relevant.\n\nJennif
+ er Hopper is the Talent Manager at Filter Digital\, a digital talent agenc
+ y that supports digital creative\noperations with skill sets such as UX De
+ signers\, Visual Designers\, Front End Developers\, Producers\, Writers\,\
+ nContent Strategists and more. At Filter\, she is making it her mission to
+  change the narrative of the Freelance Nation\nwhere independent creative 
+ professionals are nurtured\, valued and celebrated.\n\nDave Miller is an e
+ xperienced creative services professional with areas of expertise in recru
+ iting\, client services\,\nbusiness development\, marketing\, copywriting\
+ , design and event management. He previously worked with The\nCreative Gro
+ up\, and continues work in marketing\, copywriting\, and design with Desig
+ nHolistic. He is also the\nOutreach Director for AIGA/Seattle. Dave says e
+ very great product is the sum of its people.\n\nJohnny Shroepfer is a seni
+ or member of the Interaction Design team at IA Collaborative\, a design in
+ novation\nconsultancy leading the world's most progressive brands through 
+ user driven design methodologies for product\,\nservice and brand innovati
+ on. He previously worked in experience design with Sapient. Johnny is an a
+ dvocate for\nstrategy and design working as one.\n
+LOCATION:StartUp Hall Meeting Room
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Kate Richmond\, Bret Richmond (Synapse) - "Prototypi
+ ng in Hardware Product Development"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160629T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160629T133000
+UID:2016-06-29@dub.washington.edu
+DESCRIPTION:Prototyping is a key part of the hardware product development 
+ process. When done well\, prototyping can reduce the \nrisk of a product b
+ eing delayed or not meeting target specifications. In this talk\, we'll go
+  through the hardware \nproduct development process we use at Synapse\, ho
+ w to decide what type of prototypes you should make\, and the \nimportance
+  of testing the prototypes that you build. We'll walk through some example
+ s of product we've developed at \nSynapse like the Nike+ SportWatch GPS an
+ d how we prototyped during their development.\n\nKate is the Director of E
+ lectrical Engineering at Synapse Product Development. She specializes in m
+ iniaturized \nlow-power electronic design\, including flexible and high de
+ nsity PCB design\, low power microcontrollers and radios\, \nbatteries\, a
+ nd display technology. She has extensive experience in design for manufact
+ uring\, contract manufacturer \nramp up\, and production test development.
+  Kate received her BS in Electrical and Computer Engineering from \nOlin C
+ ollege.\n\nBret is a mechanical engineer with a wide range of product deve
+ lopment experience. While earning his B.S. in \nMechanical Engineering at 
+ Olin College\, he joined the engineering team at Seahorse Power Company (n
+ ow BigBelly Solar) \nto design prototypes of the first solar-powered garba
+ ge compactors\, which are now seen on street corners in cities \naround th
+ e country. He later moved to Slipstream Design in Seattle\, where he worke
+ d on a diverse set of projects\, \nfrom ski pole adjustment mechanisms to 
+ lab equipment for cleaning rodent cages in research institutions. After a 
+ \nhiatus as a Crew Leader at Washington Trails Association for volunteer t
+ rail maintenance crews\, he joined the Synapse \nfamily in 2010. During hi
+ s time at Synapse\, Bret has worked as a mechanical engineer\, a project m
+ anager\, and a \nmechanical engineering lead on projects like the Philips 
+ AirFloss\, the Viableware RAIL\, and a number of small\, highly \nintegrat
+ ed consumer electronics. In his current role as Director of Mechanical Eng
+ ineering\, Bret is responsible for \nensuring that Synapse's Mechanical En
+ gineers are delivering high-quality product development consulting to meet
+  their \nclients' needs.\n
+LOCATION:Sieg 233
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Rachelle Ornan-Stone (Boeing) - "Rocket Science"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160706T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160706T133000
+UID:2016-07-06@dub.washington.edu
+DESCRIPTION:Rachelle's talk will span diverse topics related to the design
+ \, science\, and \npsychology of  aerospace interiors.  She will cover som
+ e of her favorite work \nprojects to date related to visual perception of 
+ the aircraft interior\, \ndesign for space tourism\, the passenger of the 
+ future\, and MORE!\n\nDr. Rachelle N. Ornan-Stone is an entrepreneurial\, 
+ detail and data-driven design\nprofessional with a penchance for the explo
+ ration and pursuit of big ideas and\nchallenges within aerospace\, especia
+ lly when it comes to the balance of aesthetics\,\npsychology\, and safety.
+  She was instrumental in initiating collaboration between\nBoeing Commerci
+ al Airplanes and Boeing Space & Defense on the design and development\nof 
+ the CST-100/Starliner baseline and concept interior while spearheading key
+ \ncross-industry engagements and sponsorships. She currently directs resea
+ rch related\nto Boeing aircraft interiors and bridges communication betwee
+ n sales\, marketing\,\nengineering and customers to ensure a commercially 
+ viable\, preferred product to\nmaximize revenue.  Rachelle holds a PhD in 
+ experimental and human factors psychology\,\nand a master’s in Industria
+ l Design from North Carolina State University.\nShe is an avid outdoorswom
+ an and competitive synchronized swimmer who wants\nto be an astronaut when
+  she grows up.\n
+LOCATION:Sieg 233
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Shiri Azenkot (Cornell Tech) - "Addressing an Ignore
+ d User Group: People with Low Vision"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160713T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160713T133000
+UID:2016-07-13@dub.washington.edu
+DESCRIPTION:Visual impairments include a range of visual abilities. Many p
+ eople have low\nvision\, which means they have functional vision but they 
+ face visual challenges\nwhen performing daily activities. Unlike blind peo
+ ple\, low vision people tend\nto use their vision in their daily lives. Mo
+ st people with visual impairments\nhave low vision and aren’t blind\, bu
+ t there has been very little research\naddressing this user group. In my t
+ alk\, I’ll describe low vision and present\nan overview of the research 
+ my group is conducting in this area. We are working\non studying the chall
+ enges that low vision people face when completing daily\ntasks such as sho
+ pping\, and designing smart glasses applications to address\nthese challen
+ ges.\n\nI am an Assistant Professor at the Jacobs Technion-Cornell Institu
+ te at\nCornell Tech. I am also an affiliate faculty member in the Computer
+  Science\nDepartment at the Technion-Israel Institute of Technology. My re
+ search interests\nare in accessibility and interaction on new platforms. I
+  conduct this research\nwith a fantastic group of students who are part of
+  the Enhancing Ability Lab\,\nwhich I direct. Before arriving at Cornell T
+ ech\, I was a PhD student in\nComputer Science & Engineering at the Univer
+ sity of Washington\, where I was\nadvised by Richard Ladner and Jacob Wobb
+ rock. As a graduate student I\nreceived the University of Washington Gradu
+ ate Student Medal\,\na NSF Graduate Research Fellowship\, an AT&T Labs Res
+ earch Fellowship.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Kay Hofmeester (Microsoft Health) - "The Future of D
+ ata Tracking. What We Should Do with All That Health and Wellness Data?"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160720T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160720T133000
+UID:2016-07-20@dub.washington.edu
+DESCRIPTION:With more and more wearables and sensors coming online\, we ar
+ e collecting incredibly large amounts of personal data.\nEven though many 
+ people initially seem interested in tracking their data\, telemetry shows 
+ that the interest wanes\nquickly. Should we continue to collect all this d
+ ata? Why are we collecting it anyway? What is it that we should do\nwith t
+ he data?\n\nKay Hofmeester is Creative Director for Microsoft Health. Usin
+ g Microsoft Band data\, including heart rate\, detailed\nsleep and activit
+ y information\, his team is working on changing people’s behavior to imp
+ rove their health and wellness.\nPreviously Kay managed user experience te
+ ams for Amazon Echo\, Xbox Kinect\, Windows\, Surface and Windows Phone.\n
+LOCATION:Sieg 233
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Jason Pace (UW Bothell) - "Beyond Inclusion: Confron
+ ting Bias in Human Centered Design Before the Robots Take Over"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160727T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160727T133000
+UID:2016-07-27@dub.washington.edu
+DESCRIPTION:Design is a discipline filled with Philosopher Kings\, holders
+  of arcane knowledge who believe we're uniquely\nqualified to dazzle the m
+ asses stuck in Plato's cave. We all live in the designed world\, and both 
+ our\nmoment-to-moment experiences and our most personal conceptions of the
+  self are shaped by the design\nexpression of others\; as designers we str
+ ive to continuously interrogate our processes and motives to\nensure they 
+ include rather than exclude\, uplift rather than denigrate\, and expand pe
+ rsonal agency rather\nthan constrain it. Human-centered design supports ou
+ r work by offering a methodological framework to enhance\nempathy and brid
+ ge gaps between designers and consumers\, but this still results in produc
+ ts and services filled\nwith translation errors and missed opportunities. 
+ Most designers ultimately still believe we're Philosopher Kings\n(even if 
+ we're loathe to admit it)\, and we still typically live a world away from 
+ the personas we so diligently\ncreate. This discussion explores the need t
+ o turn a human-centered lens upon ourselves\, and asks that we reject\nthe
+  designer as Philosopher King model as we rush into a virtual world where 
+ our experience of reality is even\nmore comprehensively provided by someon
+ e else.\n\nJason Pace is the Executive Director of the University of Washi
+ ngton Bothell’s Digital Future Lab\n(<http://digitalfuturelab.com/>)\,\n
+ an interactive media research and commercial game development studio focus
+ ed on transforming how the\ntechnology industry approaches design and dive
+ rsity. Pace started the lab after spending 16 years at\nMicrosoft leading 
+ user experience and product development teams on a number of Microsoft's c
+ onsumer\nproducts\, and his work in the DFL explores how radically diverse
+  teams (teams that intentionally seek\nto maximize individual differences 
+ across a broad spectrum of backgrounds) can lead to unexpected insights\,\
+ nnew directions in product development\, and increased efficiency. The lab
+  challenges conventional wisdom\nabout pedigree and notions of "culture fi
+ t"\, bringing undergraduate students together from across majors\nand scho
+ ols to create high-performance creative teams engaged in both commercial p
+ roduct development and\ndesign research. \n
+LOCATION:Sieg 233
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - John Tang\, Gina Venolia (Microsoft Research) - "Opp
+ ortunities for Live Streams Coming from the Same Event"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160803T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160803T133000
+UID:2016-08-03@dub.washington.edu
+DESCRIPTION:Recent events in the news have demonstrated the growing role o
+ f live streaming in sharing events with the world.\nWe are interested in e
+ xploring opportunities for creating an interactive experience for remote v
+ iewers to participate\nin events through integrating live streams and othe
+ r social media coming from the same event. We will discuss a series\nof st
+ udies\, including a mixed methods study of the early use of Meerkat and Pe
+ riscope apps for mobile live streaming.\nThis study identified the occurre
+ nce of multiple live streams coming from the same event\, which represent 
+ an\nopportunity for multiple perspectives on events of shared public inter
+ est. We have deployed prototypes at a jazz\nfestival and a Comic Con to ge
+ t some experience with events covered by multiple live streams. We are esp
+ ecially\ninterested to explore with DUB the social implications of partici
+ pating together in live events\, as they unfold\nin real time.\n\nJohn C. 
+ Tang and Gina Venolia are Senior Researchers in the neXus group at Microso
+ ft Research where we design and\nstudy new tools to support connecting peo
+ ple over distance. We combine understanding users needs through qualitativ
+ e\nmethods with designing and prototyping new technologies and learning by
+  deploying them in the real world.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Elin A. Björling\, Emma J. Rose (UW Tacoma) - "Proj
+ ect EMAR: Designing a Social Robot to Assess Teen Stress Using a Human-Cen
+ tered Approach"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160810T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160810T133000
+UID:2016-08-10@dub.washington.edu
+DESCRIPTION:Teens experience dangerous and chronic stress\, more so than a
+ ny other age group. The adolescent brain is also\nextremely vulnerable to 
+ the impact of stress increasing the risk for mental and physical illnesses
+  for teens.\nResearchers lack quality data to understand how\, when and wh
+ y stress occurs in teens or even to understand what\n"normal" stress might
+  look like. To gain a deeper understanding of teen stress\, our team is de
+ veloping a social robot\nthat can be deployed in a high school setting. Th
+ is robot\, called EMAR\, (Ecological Momentary Assessment Robot)\,\nis bei
+ ng developed using participatory and human-centered approaches that engage
+  high school students.\nOur hope is that by capturing the experiences of s
+ tress in real-time\, an engaging social robot will gather much\nneeded\, a
+ ccurate data to help researchers to better understand teen stress. In this
+  talk\, we share two prototypes\nof the robot and how the teen design grou
+ ps have informed the design and impacted our thinking.\nThis is a cross-ca
+ mpus and interdisciplinary collaboration at the University of Washington a
+ nd we are actively\nlooking for interested faculty and students who wish t
+ o join us on project EMAR.  \n\nElin Björling\, Ph.D. holds both a profes
+ sional research scientist position for the Office of Research and a\nclini
+ cal faculty appointment in the school of Nursing and Healthcare Leadership
+  at University of Washington\nTacoma. Over the past two decades\, Elin has
+  utilized an ecological momentary assessment/experience sampling approach\
+ nusing community based design and mixed-methods to study stress in adolesc
+ ents.\n\nEmma J. Rose\, Ph.D. is an assistant professor in the School of I
+ nterdisciplinary Arts & Sciences at University of\nWashington Tacoma. Her 
+ research focuses on the practice of user experience\, how people use exper
+ tise to overcome\nresource constraints\, and the development of technical 
+ identity. Her research is motivated by a commitment to social\njustice and
+  a belief that the way technologies are designed ultimately shapes our wor
+ ld. She received her PhD in Human\nCentered Design and Engineering from th
+ e University of Washington in 2011.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Jofish Kaye (Yahoo) - "Money\, Passwords\, & Picture
+ s: How People Share"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160817T114500
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160817T133000
+UID:2016-08-17@dub.washington.edu
+DESCRIPTION:Every day we make decisions about which technologies to use: w
+ hat phone to buy\, \nhow to share files with collaborators\, how to check 
+ your bank balance. \nThese choices are not just about the best technology 
+ for you to use as an \nindividual\, but also about the decisions made by y
+ our colleagues\, family\, \nfriends and others around you. In this talk\, 
+ I’ll discuss research with over 180 \nparticipants exploring how people 
+ share passwords\, how they manage their bank \naccounts and finances\, and
+  how they store\, share and safeguard their photos\, \ndocuments and data.
+  I’ll talk about the complex moral and emotional decisions \npeople navi
+ gate as they make these decisions\, and I’ll discuss implications for \n
+ studying how people use technology\, as well as building technology that b
+ etter \nsupports the balance between safeguarding and sharing.\n\nJofish K
+ aye is Principal Research Scientist at Yahoo Labs. His research explores t
+ he \nsocial\, cultural\, and technological effects of technology on people
+ \, and how people’s \ndecisions and behaviors can change and improve tho
+ se technologies. His previous work \nhas ranged from studies of long dista
+ nt relationships and computerized smell output \nto visualizations of Twit
+ ter and academic publications. He was General Co-Chair of \nthe CHI 2016 c
+ onference\, occasionally teaches at Stanford University\, and has a Ph.D \
+ nin Information Science from Cornell\, and an M.S. in Media Arts & Science
+ s and a B.S. \nin Cognitive Science\, both from MIT.\n
+LOCATION:11:45<br>\nLunch in Kane 225<br>\n<br>\n12:30<br>\nTalk in Kane 2
+ 20<br>\n(No Food Allowed)<br>\n<br>\n<a href="https://catalyst.uw.edu/webq
+ /survey/mglarson/308643">Please RSVP Here</a><br>\n<br>\nYour RSVP enables
+ : (1) lunch planning\, (2) us to provide you with any necessary parking in
+ formation.\n
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160824T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160824T133000
+UID:2016-08-24@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160831T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160831T133000
+UID:2016-08-31@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160907T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160907T133000
+UID:2016-09-07@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160914T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160914T133000
+UID:2016-09-14@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160921T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160921T133000
+UID:2016-09-21@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "DUB Faculty Meeting / Student Group Lunches"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160928T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20160928T133000
+UID:2016-09-28@dub.washington.edu
+DESCRIPTION:
+LOCATION:CSE 691
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Stephen Voida (University of Colorado Boulder) - "Fr
+ om Trace Data to Reflective Personal Informatics"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161005T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161005T133000
+UID:2016-10-05@dub.washington.edu
+DESCRIPTION:As streams of trace data about information work have prolifera
+ ted\, the challenges of personal information management \nhave become incr
+ easingly complex and difficult — with personal information streams fragm
+ ented across devices and \nremoved from the site of work\, for example\, o
+ ne’s ability to make sense of this trace data and use it productively to
+  \nimprove knowledge work has become work in its own right. In this talk\,
+  I present research that begins to explore two \nrelated challenges: (1) u
+ nderstanding the ways in which knowledge workers are — and are not — m
+ otivated to interact \nwith various representations of their trace data\, 
+ and (2) understanding how to manifest trace data in the work \nenvironment
+  in ways that make it present/visible in the right time and the right plac
+ e as well as being appropriable \nfor helping individuals (and groups) imp
+ rove their knowledge work practices. I conclude by reflecting on steps \nf
+ orward at the intersection of these two challenges.\n\nStephen Voida is an
+  Assistant Professor and founding faculty member in the Department of Info
+ rmation Science\, \nan Adjunct Assistant Professor in the Department of Co
+ mputer Science\, and a faculty fellow in the Institute of \nCognitive Scie
+ nce at the University of Colorado Boulder. Dr. Voida conducts empirical\, 
+ design\, and systems research \nin the areas of personal informatics and p
+ ersonal information management\, with a focus on developing tools that \nh
+ elp people to collect\, interpret\, and reflect on the data streams that t
+ hey create and the digital artifacts that \nthey encounter on an everyday 
+ basis. His research has been recognized with best paper awards and nominat
+ ions at \nseveral of the top conferences in his field\, including ACM CHI 
+ and CSCW. His research has been supported by \nGoogle Research\, the Natio
+ nal Science Foundation\, and a Computing Research Association Computing In
+ novation \npostdoctoral fellowship and has appeared in the New York Times\
+ , the Wall Street Journal\, The Atlantic\, \nLifehacker.com\, and on the A
+ PM Marketplace Tech Report. Dr. Voida earned his Ph.D and M.S. degrees in 
+ \nComputer Science and Human–Computer Interaction\, respectively\, from 
+ the Georgia Institute of Technology \nand his B.S. in Computer Science fro
+ m Arizona State University.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - James Fogarty (Computer Science & Engineering) - "Un
+ locking Data\, Unlocking Interaction"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161012T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161012T133000
+UID:2016-10-12@dub.washington.edu
+DESCRIPTION:The applications we create are framed by the tools we use to c
+ reate them. On one hand\, tools codify effective \npractice and empower de
+ sign. On the other\, that same codification eventually constrains design. 
+ My research examines \nnew approaches to interactive systems in light of t
+ his tradeoff\, often with an emphasis on unlocking existing \ncodification
+ s to enable new designs. This talk will focus on three examples:\n\n- I wi
+ ll first present our work on unlocking data with interactive machine learn
+ ing. Dominant models of interaction \n  fail to support expressiveness and
+  control in many emerging forms of everyday data. Exploring such domains a
+ s \n  web image search and gesture recognition\, our work shows how intera
+ ctive machine learning can support people \n  in extending the underlying 
+ language of an interaction.\n- I will then present our work on using pixel
+ -based reverse engineering to unlock existing graphical interfaces\, \n  a
+ llowing runtime modification of those interfaces without their source. Pix
+ el-based methods allow prototyping \n  new possibilities atop the existing
+  ecosystem of applications and tools\, accelerating innovation and informi
+ ng \n  the next-generation ecosystem.\n- Finally\, I will consider how the
+ se challenges combine in the emergence of self-tracking and personal infor
+ matics. \n  Data is no longer a distant concept\, but an everyday barrier 
+ to interaction\, self-knowledge\, and personal empowerment. \n  The tools 
+ we create to support these applications will define the future of everyday
+  interaction with personal data.\n\nGiven these examples\, I argue researc
+ h must consider not only specific applications\, but also the assumptions 
+ \ncodified by underlying tools and how those tools frame our understanding
+  of what application designs are even possible.\n\nJames Fogarty is an Ass
+ ociate Professor of Computer Science & Engineering at the \nUniversity of 
+ Washington (<https://homes.cs.washington.edu/~jfogarty>). His broad resear
+ ch interests are in \nengineering interactive systems\, often with a focus
+  on the role of tools in developing\, deploying\, and evaluating \nnew app
+ roaches to the human obstacles surrounding everyday adoption of ubiquitous
+  computing and intelligent interaction.  \n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Nat Guy (NASA Jet Propulsion Laboratory) - "Augmente
+ d Reality for Space Exploration"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161019T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161019T133000
+UID:2016-10-19@dub.washington.edu
+DESCRIPTION:JPL uses cutting-edge augmented reality and virtual reality te
+ chnology to explore space and our own planet in innovative ways.\nJPL's sc
+ ientists plan and analyze activities for the Mars Curiosity rover while wa
+ lking on a 3D reconstruction of the Martian surface.\nMechanical engineers
+  designing spacecraft and rovers can preview full-scale holographic protot
+ ypes before any parts are built.\nAstronauts aboard the International Spac
+ e Station can receive virtual assistance from experts on the ground and wo
+ rk more efficiently\nby using AR interfaces. These are only some of the pr
+ ojects in AR and VR that are going on right now at JPL. This talk will pre
+ sent\nrecent projects that leverage immersive technology to tackle unique 
+ visualization challenges\, and discuss research that shows the\nefficacy o
+ f these techniques.\n\nNathaniel "Nat" Guy is a Lead User Interface Develo
+ per in the Human Interfaces Group <http://www.hi.jpl.nasa.gov>\nat the NAS
+ A Jet Propulsion Laboratory. He has Master's degrees in Computer Science a
+ nd in Aeronautics & Astronautics\,\nboth from the University of Washington
+ . Prior to joining JPL\, Nat spent five years as a software engineer at Ni
+ ntendo of America\,\nand has also worked on software testing for SpaceX an
+ d ground system software development for the Hakuto Lunar XPRIZE Team in J
+ apan.\nAt JPL\, Nat builds highly test-driven 3D interfaces for AR and web
+ -based platforms to support mission operations and planning for the\nupcom
+ ing Mars 2020 rover mission.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Heather Feldner (Mechanical Engineering) - "Go Baby 
+ Go: Technology\, Hacking\, and Child/Family Experiences of Mobility"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161026T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161026T133000
+UID:2016-10-26@dub.washington.edu
+DESCRIPTION:Mobility\, in some form or another\, drives our exploration of
+ \, and participation in\, the world around us.\nIncreasingly\, scholars an
+ d rehabilitation professionals are recognizing mobility as a basic human r
+ ight\,\nand endorsing the efficacy of early powered mobility experiences f
+ or children with mobility impairments\nin order to foster independence\, p
+ romote socialization with peers\, and facilitate participation in family\n
+ and community life. However\, the relationship between technology provisio
+ n\, the mobility industry\, and\nuser-centered design\, when considered in
+  the context of lived experiences of children with mobility\nimpairments a
+ nd their families\, is complex and understudied. Perceptions of these expe
+ riences from\nchildren’s own points of view are especially limited. This
+  presentation will describe a unique technology\nhacking initiative develo
+ ped at the University of Delaware called Go Baby Go and introduce research
+  that\nhas emerged from the Go Baby Go program\, including work that explo
+ res child and family experiences with\ntechnology design and the provision
+  of mobility devices.\n\nThis data offers perspectives that may inform sta
+ keholders who are seeking or developing technology\nsolutions for people w
+ ith disabilities. Incorporating these perspectives is critical in advancin
+ g\nthe features of mobility devices and provision practices\, and is essen
+ tial in promoting further commitment\nto mobility advocacy\, environmental
+  and attitudinal accessibility\, and more explicit child/family\ninvolveme
+ nt in all phases of user-centered design.\n\nHeather earned her Bachelor o
+ f Science and Master’s in Physical Therapy from Marquette University.\nS
+ he practiced pediatric physical therapy full-time until 2010\, when she be
+ gan teaching in the DPT program\nat the University of Illinois at Chicago.
+  Earlier this year\, Heather earned her PhD in Disability Studies\nand a C
+ ertificate in Assistive Technology from UIC. She joined UW last month as a
+  postdoctoral fellow in\nDr. Kat Steele’s Ability & Innovation Lab in Me
+ chanical Engineering. Her research interests involve the\nqualitative appr
+ aisal of user experiences with technology\, user-centered design\, and exp
+ loring how alternative\nmodels of disability and a social justice approach
+  may be applied to assistive technology provision and rehabilitation.\n
+LOCATION:HUB 332
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Parmit Chilana (Simon Fraser University) - "Conversa
+ tional Programmers"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161102T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161102T133000
+UID:2016-11-02@dub.washington.edu
+DESCRIPTION:Research in HCI and computing education is continuously helpin
+ g us better understand the barriers to learning and teaching\nprogramming.
+  However\, many of the insights are based on the assumption that learners 
+ will eventually write code (e.g.\, as a\nprofessional developer or a domai
+ n-specific end-user programmer). But\, is this always the case?\n\nIn this
+  talk\, I will be presenting our recent research which shows that some stu
+ dents in fields such as management may not\naspire to write code as an end
+ -user programmer or a professional programmer\, but are still strongly int
+ erested in taking\nprogramming classes. We call these students   conversat
+ ional programmers because they want to develop only conversational\nskills
+  in programming literacy to be able to: 1) aid technical conversations wit
+ h professional software developers in the\nfuture\; or 2) enhance their ma
+ rketability in the software industry. I will also discuss results from our
+  follow up study\nthat confirms the existence of such a population of conv
+ ersational programmers in industry. Based on 3151 survey responses\nfrom n
+ on-engineering professionals at a large technology company who never or ra
+ rely wrote code on the job\, we found that\na significant number of them (
+ 42.6%) had invested in learning programming.  And\, their top motivations 
+ to learn programming\nwere also to improve the efficacy of technical conve
+ rsations and to acquire marketable skillsets. I will discuss some of\nthe 
+ broader implications of these findings and new directions for future work 
+ on conversational programmers.\n\nParmit Chilana is an Assistant Professor
+  in Human-Computer Interaction at the School of Computing Science at Simon
+  Fraser\nUniversity. From 2013-16\, she was an Assistant Professor in Mana
+ gement Sciences at the University of Waterloo. Parmit’s core\nresearch i
+ n HCI focuses on the design and study of novel tools and techniques that h
+ elp people use\, learn\, and program\nfeature-rich software. Her work has 
+ been recognized with several awards and honors\, including Best Paper and 
+ Honorable Mention\nawards at the ACM CHI conference and 2nd place in the i
+ nternational iSchool Doctoral Dissertation Award competition.\nParmit rece
+ ived her PhD in Information Science from the University of Washington in 2
+ 013 where she also co-founded AnswerDash\,\na venture-funded startup that 
+ is commercializing her dissertation work on selection-based crowdsourced h
+ elp retrieval.\nParmit received her BSc from Simon Fraser University and M
+ Sc from the University of Illinois at Urbana-Champaign.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Nathalie Riche (Microsoft Research) - "Data-Driven S
+ torytelling: Transforming Data into Visually Shared Stories"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161109T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161109T133000
+UID:2016-11-09@dub.washington.edu
+DESCRIPTION:In this talk\, I will present my most recent research efforts 
+ in the field of information visualization and data-driven storytelling. Wh
+ ile most of the research in information visualization has been focusing on
+  designing and implementing novel interfaces and interactive techniques to
+  enable data exploration\, data visualizations also started to appear as a
+  powerful vector for communicating information to a large audience. Storie
+ s supported by facts extracted from data analysis (e.g. data-driven storyt
+ elling) proliferate in many different forms from static infographics to dy
+ namic and interactive applications on news media outlets. Yet\, there is l
+ ittle research on what makes compelling visual stories or on how to empowe
+ r people to build these experiences without programming. I will present in
+ sights from projects focusing on two different genres of data-driven stori
+ es: animations and comics. I will conclude the talk by reflecting on chall
+ enges and opportunities in this new research field.\n\nNathalie is a resea
+ rcher at Microsoft Research since december 2008. She is a team member of t
+ he neXus research group led by Kori Inkpen\, bridging computer-supported c
+ ollaborative work\, computational social science\, and data visualization.
+   Nathalie holds a Ph.D. in computer science from the University of Paris 
+ Sud\, France\; and University of Sydney\, Australia. She published her res
+ earch in leading venues in Human-Computer Interaction and Information Visu
+ alization. She has received several best papers nominations and awards for
+  her research and is involved in the organizing and program committees of 
+ major visualization conferences.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Will Odom (Simon Fraser University) - "Slow Interact
+ ion Design"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161116T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161116T133000
+UID:2016-11-16@dub.washington.edu
+DESCRIPTION:The convergence of social\, cloud and mobile computing has cre
+ ated a world in which people generate\, access\, manipulate\, and share pe
+ rsonal digital data at larger scales and faster rates than ever before. Fr
+ om digital photo albums to online music streaming services\, these new tec
+ hnologies have enabled people to create vast archives of virtual possessio
+ ns that capture their life experiences. While these technological trends h
+ ave created many opportunities\, they also raise complex questions for the
+  HCI community as we critically look to the future and consider their long
+ er-term implications. As archives continue to grow\, how will people live 
+ with their virtual possessions in ways that support their evolving practic
+ es\, values\, and understandings of self? How might people’s relations t
+ o digital data and the technologies that manifest them change over time? W
+ hat kinds of qualities should designers consider in crafting a longer-term
+  place for computational things in everyday life? In this talk I will draw
+  on examples from my research to motivate these questions as a crucial res
+ earch space for the HCI community. I will then give an overview of my rece
+ nt and ongoing research-through-design projects themed around the concept 
+ of slow interaction design that demonstrate productive ways of grappling w
+ ith these complex and emerging questions. \n\nWilliam Odom is an Assistant
+  Professor in the School of Interactive Arts and Technology at Simon Frase
+ r University in Vancouver\, Canada. He co-directs the Everyday Design Stud
+ io and leads a range of projects themed within slow interaction design\, t
+ he growing digitization of people's possessions\, and methods for nurturin
+ g and developing the practice of Research-through-Design. His work has rec
+ eived numerous best paper and honorable mention awards at ACM conferences 
+ including CHI\, DIS\, and Ubicomp\, as well as a silver international desi
+ gn excellence award (IDEA) from the Industrial Designers Society of Americ
+ a. He holds a Ph.D. in Human-Computer Interaction from Carnegie Mellon Uni
+ versity\, and was previously a Fulbright Scholar and Banting Fellow. \n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Linda Boyle (Industrial & Systems Engineering / Civi
+ l & Environmental Engineering) - "Designing Increasingly Autonomous Vehicl
+ es to be Safer than Humans"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161123T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161123T133000
+UID:2016-11-23@dub.washington.edu
+DESCRIPTION:Vehicles are becoming increasingly autonomous but are not as y
+ et all fully driverless. Autonomous technology is being introduced in phas
+ es. This requires human drivers to continually adapt to their changing rol
+ e inside the car. The human’s ability to decide when to take back contro
+ l of the primary driving task is further complicated given system imperfec
+ tions. As drivers adapt to increasing levels of automation\, they may chan
+ ge their driving behaviour in ways that can compromise and even negate the
+  intended system benefits. To design vehicles that account for limitations
+  of both the human and the system\, it is essential to model such behaviou
+ ral adaptation. This presentation will focus on the challenges and opportu
+ nities in this modelling endeavour and their safety implications for all r
+ oad users.\n\nLinda Ng Boyle is Professor and Chair of the Industrial & Sy
+ stems Engineering Department at the University of Washington (UW). She has
+  a joint appointment in Civil & Environmental Engineering. Prior to the UW
+ \, she was on the faculty at the University of Iowa and a researcher at th
+ e US Department of Transportation. Her BS degree is from the University of
+  Buffalo and her MS and PhD are from the University of Washington. She is 
+ an associate editor for the journal Accident Analysis and Prevention\, the
+  chair of the Transportation Research Board committee on Statistical Metho
+ ds\, and a recipient of the NSF Career Award. She also co-organizes the In
+ ternational Driving Symposium on Human Factors in Driver Assessment\, Trai
+ ning\, and Vehicle Design.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Frank Bentley (Yahoo) - "Exploring the Changing Use 
+ of Personal Email Accounts"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161130T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161130T133000
+UID:2016-11-30@dub.washington.edu
+DESCRIPTION:Once upon a time\, personal email accounts were places to send
+  notes to friends and family\, or to receive updates from mailing lists \n
+ on topics of interest. However\, in 2016 most of that communication has mo
+ ved elsewhere\, yet the use of email products remains quite\nhigh.  Throug
+ h a series of interviews with 150 personal email users and several larger 
+ surveys\, we set out to qualitatively and\nquantitatively understand curre
+ nt personal email use behaviors. We show the importance of email for manag
+ ing receipts\, events\, \ntravel\, and deals and how email has evolved int
+ o the largest Business to Consumer communication channel.  The design impl
+ ications \nof this work will highlight a few application concepts created 
+ from these insights which move away from email as a reverse\nchronological
+  list of senders and subjects.\n\nFrank Bentley is a Senior Principal Rese
+ archer at Yahoo\, where he leads User Research for Yahoo Mail\, Messenger\
+ , Flickr\, and View.\nFrank's research identifies new product opportunitie
+ s in communication and digital media based on findings from iterative user
+ \nresearch and through the rapid prototyping and field evaluation of new c
+ oncepts. For the past 10 years\, he has taught a Mobile HCI\nclass at MIT\
+ , which has also reached over 75\,000 students on the EdX platform\, and r
+ ecently taught a new course called Understanding\nUsers at Stanford.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Kurtis Heimerl (Computer Science & Engineering) - "C
+ ommunity Cellular Networks"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161207T133000
+UID:2016-12-07@dub.washington.edu
+DESCRIPTION:Despite the narrative of ubiquitous cellular coverage througho
+ ut the world\, hundreds of millions of people still remain outside \nthe r
+ ange of traditional networks. The reason for this is primarily economic\; 
+ incumbents cannot profitably serve the most rural parts\nof the world. Our
+  solution for this is a new network architecture called a Community Cellul
+ ar Network (CCN). CCNs are owned and\noperated by local agents who are abl
+ e to more efficiently operate and maintain infrastructure in their communi
+ ties. In this talk we\ndescribe an example CCN system and supporting techn
+ ologies such as Virtual Coverage and GSM White Spaces. We then evaluate th
+ e system\nthrough a longitudinal deployment in rural Indonesia\, with both
+  economic and interview results. \n\nKurtis Heimerl is a new assistant pro
+ fessor at the University of Washington's Computer Science and Engineering 
+ department. His\nresearch interests span information and communication tec
+ hnologies and development (ICTD)\, human-computer interaction\, networks\,
+  and\nsystems. He was recognized by MIT Technology Review with a TR35 Awar
+ d in 2014 for his work on The Village Base Station (VBTS)\, a \nlow-cost\,
+  low-power system for providing small-scale\, locally-owned cellular netwo
+ rks in rural communities that lack existing cellular\ncoverage. After buil
+ ding the one of the first community cellular networks in a small village i
+ n Papua\, Indonesia in 2013\, Kurtis \nco-founded a startup company\, Enda
+ ga\, to commercialize the technology and bring VBTS to more communities ar
+ ound the world. Endaga\njoined Facebook in 2015. Kurtis has also worked in
+  the areas of Crowdsourcing (Umati\, the crowdsourcing vending machine) an
+ d single\ndisplay groupware (Metamouse). \n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Finals Week
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161214T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161214T133000
+UID:2016-12-14@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161221T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161221T133000
+UID:2016-12-21@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161228T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20161228T133000
+UID:2016-12-28@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Faculty Meeting / Student Group Lunches
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170104T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170104T133000
+UID:2017-01-04@dub.washington.edu
+DESCRIPTION:The first week of each quarter focuses on communication and ne
+ tworking\nwithin the DUB community. Instead of a seminar speaker\, we hold
+  a DUB faculty meeting\nand coordinate student small group lunches. See be
+ low for appropriate details.\n\n1) DUB Faculty Meeting\n\n- CSE 691 (Gates
+  Commons) on Wednesday at 12:00\n- We Actually Have Agenda Items\n- But Mo
+ stly We Chat\n- Lunch is Provided\n\n2) Student Group Lunches\n\nThe heart
+  of the DUB community is our diversity of perspectives\, bringing together
+ \npeople and ideas that might otherwise be hidden in our departments.\nWe 
+ want everybody in DUB to seek out some new DUB friends for lunch. \n\n- Ha
+ ve lunch in a group of 4 DUB people who all add something\n  different (e.
+ g.\, different departments\, different research advisors\,\n  different di
+ sciplinary background\, different years in their program).\n  You decide w
+ hat brings different perspectives to your DUB lunch.\n\n- Tweet your lunch
+  @uwdub\, including a group selfie and telling\n  us what DUB means to you
+ .\n\n- Keep your receipt. We will reimburse up to $50 for your group of 4.
+ \n  Lunch with diverse DUB friends is fun and informative\, but free lunch
+  is even better!\n\nWe have created a speadsheet to help you find a group\
+ , and where you\nneed to enter your group and your tweet in order to coord
+ inate\nreimbursement. For reimbursement sanity\, we will coordinate with t
+ he\nfirst person listed in each group.\n\n<http://tiny.cc/uwdublunch> \n
+LOCATION:Faculty in CSE 691<br>\n<br>\nStudents in Groups<br>\n
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Richard Ladner (Computer Science & Engineering) - "A
+ ccessibility Is Becoming Mainstream"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170111T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170111T133000
+UID:2017-01-11@dub.washington.edu
+DESCRIPTION:This talk is based on the keynote presentation at the 18th Int
+ ernational ACM SIGACCESS Conference on Computers\nand Accessibility (ASSET
+ S 2016).   According to the Word Health Organization there are one billion
+  people in the\nworld have a significant disability.  The view of disabili
+ ty has changed over the past 100 years and continues to change.\nAccessibi
+ lity has become a professional field both in research and practice.   Tech
+ nology originally intended for people with\ndisabilities has become useful
+  technologies for everyone.  More and more technology for people with disa
+ bility\nare being built into mainstream products.  For example\, screen re
+ aders are built into iOS and Android platforms.\nMainstream companies are 
+ beginning to require knowledge of accessibility best practices in their jo
+ b descriptions.\nMore and more accessibility research is appearing in main
+ stream conferences.\nOverall\, accessibility is becoming mainstream in bot
+ h research and practice.\n\nRichard Ladner is a professor in Computer Scie
+ nce and Engineering at the University of Washington\,\nwhere he has been o
+ n the faculty since 1971.  He received in B.S. degree in Mathematics at\nS
+ t. Mary’s College of California in 1965 and his Ph.D. in Mathematics fro
+ m the University of California\,\nBerkeley in 1971. After many years of do
+ ing research in theoretical computer science\,\nhe turned his attention in
+  2004 to accessibility research\, especially on technology for people\nwho
+  are blind\, deaf\, and deaf-blind.  Some notable projects include the Tac
+ tile Graphics Project\, MobileASL\,\nASL-STEM Forum\, and MobileAccessibil
+ ity.  He wrote a short article for the SIGACCESS Newsletter about\nhis tra
+ nsition from theoretical computer science research to accessibility resear
+ ch:\n\n<http://www.sigaccess.org/wp-content/uploads/formidable/sigaccess_n
+ ewsletter_1102.pdf>.\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Daniel McDuff (Microsoft Research) - "Emotion Measur
+ ement in Natural Settings through Everyday Devices"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170118T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170118T133000
+UID:2017-01-18@dub.washington.edu
+DESCRIPTION:Emotions play an important role in our everyday lives. They in
+ fluence memory\, decision-making and well-being.  In order to advance the 
+ fundamental understanding of human emotions\, build smarter affective tech
+ nology\, and ultimately help people\, we need to perform research in-situ.
+  It is now possible to quantify emotional responses on a large scale using
+  webcams and wearable devices in everyday environments. I will present wor
+ k on state-of-the-art automated facial expression recognition tools and in
+ sights from analysis from the world’s largest dataset of naturalistic em
+ otional responses (featuring examples from millions of individuals). I'll 
+ show examples of how this data has allowed us to corroborate and extend th
+ e understanding of nonverbal behavior\, including modeling gender and cult
+ ural differences in expression (and what makes a viral video). I'll presen
+ t methods for remotely measuring physiology using webcams that allow low-c
+ ost and highly scalable measurement of cardio-pulmonary activity including
+  heart rate variability allowing us to capture sympathetic nervous system 
+ activity in addition to expressions. Finally\, I will discuss how this wor
+ k will help us bring emotional intelligence to everyday digital devices an
+ d potentially track important health conditions. \n\n[Daniel McDuff](http:
+ //alumni.media.mit.edu/~djmcduff/) is a Researcher at Microsoft and works 
+ on scalable tools to enable the automated recognition and analysis of emot
+ ions and physiology. He is also a visiting scientist at Brigham and Women
+ ’s Hospital in Boston where he works on deploying these methods in prima
+ ry care and surgical applications. Daniel completed his PhD in the Affecti
+ ve Computing Group at the MIT Media Lab in 2014 and has a B.A. and Masters
+  from Cambridge University. Previously\, Daniel was Director of Research a
+ t Affectiva and a post-doctoral research affiliate at the MIT Media Lab.  
+ During his Ph.D. and at Affectiva he built state-of-the-art facial express
+ ion recognition software and lead analysis of the world's largest database
+  of facial expression videos.\n\nHis work has received nominations and awa
+ rds from [Popular Science](http://www.popsci.com/diy/article/2011-05/2011-
+ invention-awards-picture-health) magazine as one of the top inventions in 
+ 2011\, [South-by-South-West Interactive (SXSWi)](http://www.robertrmorris.
+ org/pavlovpoke)\, The Webby Awards\, ESOMAR and the Center for Integrated 
+ Medicine and Innovative Technology (CIMIT). His projects have been reporte
+ d in many publications including The Times\, the New York Times\, The Wall
+  Street Journal\, BBC News\, New Scientist and Forbes magazine. Daniel was
+  named a [2015 WIRED Innovation Fellow](http://www.wired.co.uk/article/dan
+ iel-mcduff-on-emotive-computing) and has spoken at [TEDx Berlin](http://ww
+ w.tedxberlin.de/daniel-mcduff-emotion-aware-technology-improve-well-being-
+ and-beyond).\n
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Umer Farooq\, Jonathan Grudin (Microsoft)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170125T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170125T133000
+UID:2017-01-25@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Dan Russell (Google)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170201T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170201T133000
+UID:2017-02-01@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Meredith Ringel Morris (Microsoft Research) - "Enhan
+ cing the Throughput and Expressivity of Augmentative and Alternative Commu
+ nication Technologies for People with ALS"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170208T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170208T133000
+UID:2017-02-08@dub.washington.edu
+DESCRIPTION:ALS (amyotrophic lateral sclerosis) is a degenerative neuromus
+ cular disease\; people with late-stage ALS typically retain cognitive func
+ tion\, but lose the motor ability to speak\, relying on gaze-controlled AA
+ C (augmentative and alternative communication) devices for interpersonal i
+ nteractions. State-of-the-art AAC technologies used by people with ALS do 
+ not facilitate natural communication\; gaze-based AAC communication is ext
+ remely slow (typically below 20 wpm\, compared to 190 wpm for conversation
+ al speech)\, and the resulting synthesized speech is flat and robotic. In 
+ this talk\, I will present a series of novel technology prototypes from th
+ e Microsoft Research Enable team that aim to address the challenges of imp
+ roving the throughput and expressivity of AAC for people with ALS.  \n\nMe
+ redith Ringel Morris is a Principal Researcher at Microsoft Research\, whe
+ re she is affiliated with the Ability\, Enable\, and neXus research teams.
+  She is also an affiliate faculty member at the University of Washington\,
+  in both the department of Computer Science and Engineering and the School
+  of Information. Dr. Morris earned a Ph.D. in computer science from Stanfo
+ rd University in 2006\, and also did her undergraduate work in computer sc
+ ience at Brown University. Her primary research area is human-computer int
+ eraction\, specifically computer-supported cooperative work and social com
+ puting. Her current research focuses on the intersection of CSCW and Acces
+ sibility ("social accessibility")\, creating technologies that facilitate 
+ people with disabilities in connecting with others in social and professio
+ nal contexts. Past research contributions include foundational work in fac
+ ilitating cooperative interactions in the domain of surface computing\, an
+ d in supporting collaborative information retrieval via collaborative web 
+ search and friendsourcing. More information about Merrie\, including her f
+ ull list of publications\, can be found on her website\, <http://meredithr
+ ingelmorris.com>.\n
+LOCATION:HUB 334
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Anand Kulkarni (LeadGenius)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170215T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170215T133000
+UID:2017-02-15@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Jeff Huang (Brown University)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170222T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170222T133000
+UID:2017-02-22@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Sam Ladner (Amazon)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170301T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170301T133000
+UID:2017-03-01@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Tawanna Dillahunt (University of Michigan)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170308T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170308T133000
+UID:2017-03-08@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Finals Week
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170315T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170315T133000
+UID:2017-03-15@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170322T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170322T133000
+UID:2017-03-22@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "DUB Faculty Meeting / Student Group Lunches"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170329T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170329T133000
+UID:2017-03-29@dub.washington.edu
+DESCRIPTION:
+LOCATION:CSE 691
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - Andrea Grimes Parker (Northeastern University)
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170405T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170405T133000
+UID:2017-04-05@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170412T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170412T133000
+UID:2017-04-12@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170419T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170419T133000
+UID:2017-04-19@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170426T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170426T133000
+UID:2017-04-26@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170503T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170503T133000
+UID:2017-05-03@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD - "No DUB Seminar - CHI 2017"
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170510T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170510T133000
+UID:2017-05-10@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170517T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170517T133000
+UID:2017-05-17@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170524T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170524T133000
+UID:2017-05-24@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DUB Seminar - TBD
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170531T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170531T133000
+UID:2017-05-31@dub.washington.edu
+DESCRIPTION:
+LOCATION:Kane 225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Finals Week
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170607T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170607T133000
+UID:2017-06-07@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:No DUB Seminar - Quarter Break
+DTSTART;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170614T120000
+DTEND;TZID=America/Los_Angeles;VALUE=DATE-TIME:20170614T133000
+UID:2017-06-14@dub.washington.edu
+DESCRIPTION:
+LOCATION:TBD
+END:VEVENT
 END:VCALENDAR
