@@ -3,6 +3,7 @@ import invoke
 import jinja2
 import re
 import os
+import ntpath
 import sys
 import yaml
 import markdown
@@ -155,7 +156,7 @@ def compile_calendar():
            os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
     ]
 
-    regenerate_calendar_ics = True #For debugging, change to "False" before PR
+    regenerate_calendar_ics = False
 
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file, to compare against our stored data
@@ -163,15 +164,17 @@ def compile_calendar():
             seminar_hash_current = hashlib.md5(f.read()).hexdigest()
         with open(seminar_path_current) as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
-        if seminar_path_current not in seminar_calendar_sequences:
+        # Make a path Windows-like, since that's what's in the yml. On Windows, seminar_sequence_current == seminar_path_current_windows.
+        seminar_path_current_windows = ntpath.normpath(seminar_path_current)
+        if seminar_path_current_windows not in seminar_calendar_sequences:
             # This is a seminar that is new to our sequence tracking
-            seminar_calendar_sequences[seminar_path_current] = {
+            seminar_calendar_sequences[seminar_path_current_windows] = {
                 'hash': 'invalid_hash_to_force_update',
                 'sequence': seminar_sequence_current
             }
 
-        seminar_hash_stored = seminar_calendar_sequences[seminar_path_current]['hash']
-        seminar_sequence_stored = seminar_calendar_sequences[seminar_path_current]['sequence']
+        seminar_hash_stored = seminar_calendar_sequences[seminar_path_current_windows]['hash']
+        seminar_sequence_stored = seminar_calendar_sequences[seminar_path_current_windows]['sequence']
         if seminar_hash_current != seminar_hash_stored:
             # Change detected, we need to bump the sequence
             seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
@@ -184,14 +187,14 @@ def compile_calendar():
                 'sequence: {}'.format(seminar_sequence_current),
                 seminar_contents
             )
-            with open(seminar_path_current, 'w') as f:
+            with open(seminar_path_current, 'wb') as f:
                 f.write(seminar_contents)
 
             # That changed the file, so update our hash, then store the updated sequence
             with open(seminar_path_current, 'rb') as f:
                 seminar_hash_current = hashlib.md5(f.read()).hexdigest()
 
-            seminar_calendar_sequences[seminar_path_current] = {
+            seminar_calendar_sequences[seminar_path_current_windows] = {
                 'hash': seminar_hash_current,
                 'sequence': seminar_sequence_current
             }
