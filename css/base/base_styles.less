@@ -1,8 +1,10 @@
-@icon-font-path:                        "../../../bootstrap/fonts/";
-
 ////////////////////////////////////////////////////////////////////////////////
 // Apply our base variables to Bootstrap variables.
 ////////////////////////////////////////////////////////////////////////////////
+
+// Fonts
+
+@icon-font-path:                        @base-font-path;
 
 // Background
 
@@ -16,16 +18,14 @@
 @btn-default-color:                     @base-button-color;
 @btn-default-bg:                        @base-button-bg;
 @btn-default-hover:                     @base-button-hover;
+@btn-default-border:                    #cccccc;
 
 // Buttons otherwise get darker on hover
 .btn-default {
   &:hover {
-    background-color: @base-button-hover;
+    background-color:                   @base-button-hover;
   }
 }
-
-
-@btn-default-border:                    #ccc;
 
 // Links
 
