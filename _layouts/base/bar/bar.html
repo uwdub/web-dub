@@ -23,10 +23,10 @@
         {% assign render_title_bar = page.title %}
       {% endif %}
 
-      {% if page.title_secondary %}
-        {% assign render_title_bar_secondary = page.title_secondary %}
-      {% elsif layout.title_secondary %}
-        {% assign render_title_bar_secondary = layout.title_secondary %}
+      {% if page.title_bar_secondary %}
+        {% assign render_title_bar_secondary = page.title_bar_secondary %}
+      {% elsif layout.title_bar_secondary %}
+        {% assign render_title_bar_secondary = layout.title_bar_secondary %}
       {% endif %}
 
       <!-- Bar -->

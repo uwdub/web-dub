@@ -1,7 +1,7 @@
 ---
 layout: base/bar/bar-sidebar-right
 title: "About DUB"
-title_secondary: "HCI & Design at the University of Washington"
+title_bar_secondary: "HCI & Design at the University of Washington"
 ---
 
 # What is DUB?
