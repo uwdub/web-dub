@@ -12,9 +12,9 @@ class TestCompileConfig(unittest.TestCase):
 
         # Hash each output file
         before_output_hashes = {}
-        for jinja2_entry in compile_config['jinja2']['entries']:
-            with open(jinja2_entry['out'], 'rb') as f:
-                before_output_hashes[jinja2_entry['out']] = hashlib.md5(f.read()).hexdigest()
+        for compile_config_entry in compile_config['compile_config']['entries']:
+            with open(compile_config_entry['out'], 'rb') as f:
+                before_output_hashes[compile_config_entry['out']] = hashlib.md5(f.read()).hexdigest()
 
         # Run the compile_config
         self.assertEqual(
@@ -25,17 +25,17 @@ class TestCompileConfig(unittest.TestCase):
 
         # Re-hash each output file
         after_output_hashes = {}
-        for jinja2_entry in compile_config['jinja2']['entries']:
-            with open(jinja2_entry['out'], 'rb') as f:
-                after_output_hashes[jinja2_entry['out']] = hashlib.md5(f.read()).hexdigest()
+        for compile_config_entry in compile_config['compile_config']['entries']:
+            with open(compile_config_entry['out'], 'rb') as f:
+                after_output_hashes[compile_config_entry['out']] = hashlib.md5(f.read()).hexdigest()
 
         # Confirm they all match
-        for jinja2_entry in compile_config['jinja2']['entries']:
+        for compile_config_entry in compile_config['compile_config']['entries']:
             self.assertEqual(
-                before_output_hashes[jinja2_entry['out']],
-                after_output_hashes[jinja2_entry['out']],
+                before_output_hashes[compile_config_entry['out']],
+                after_output_hashes[compile_config_entry['out']],
                 'compile_config detected inconsistency between {} and {}'.format(
-                    jinja2_entry['out'],
-                    jinja2_entry['in']
+                    compile_config_entry['out'],
+                    compile_config_entry['in']
                 )
             )

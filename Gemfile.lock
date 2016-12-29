@@ -1,13 +1,14 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     colorator (1.1.0)
     ffi (1.9.14)
     ffi (1.9.14-x86-mingw32)
     forwardable-extended (2.6.0)
-    hitimes (1.2.4)
-    hitimes (1.2.4-x86-mingw32)
-    jekyll (3.2.1)
+    jekyll (3.3.1)
+      addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -17,11 +18,11 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-sass-converter (1.4.0)
+    jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
-    kramdown (1.12.0)
+    kramdown (1.13.1)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -29,7 +30,8 @@ GEM
     mercenary (0.3.6)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rb-fsevent (0.9.7)
+    public_suffix (2.0.4)
+    rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.11.1)
@@ -41,11 +43,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  hitimes
   jekyll
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.3p222
 
 BUNDLED WITH
-   1.13.1
+   1.13.6

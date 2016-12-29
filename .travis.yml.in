@@ -15,21 +15,23 @@ cache:
     - /home/travis/.rvm/gems
 
 install:
-  # Install Ruby
-  - rvm install {{ local.ruby.version }}
-  - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
-  - rvm @global do gem query --local
-  - rvm @global do gem list ^bundler$ -i -v "!={{ local.ruby.bundler_version }}" &&
-    rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}" ||
-    true
-  - rvm use {{ local.ruby.version }} --default
-
   # Install NodeJS
   - nvm install {{ local.node.version }}
 
   # Install Python dependencies
   - python -m pip install --upgrade pip=={{ local.python.pip_version }}
   - python -m pip install -r requirements3.txt
+
+  # Install Ruby
+  - rvm install {{ local.ruby.version }}
+  - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
+  - |
+    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ local.ruby.bundler_version }}" )
+    if [ "$bundler_uninstall" == "true" ]
+    then
+      rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}"
+    fi
+  - rvm use {{ local.ruby.version }} --default
 
   # Invoke will get our other dependencies
   - invoke update_dependencies

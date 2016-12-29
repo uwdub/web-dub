@@ -11,8 +11,8 @@ config:
       invoke_version: 0.12.2
 
     ruby:
-      version: 2.3.1
-      bundler_version: 1.13.1
+      version: 2.3.3
+      bundler_version: 1.13.6
 
   readme:
     working_directory: c:\devel\web-jekyll-base
@@ -39,8 +39,13 @@ config:
         install_path: c:\Ruby231
         installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
         install_devkit_path: c:\RubyDevKit
+      - version: 2.3.3
+        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe
+        install_path: c:\Ruby233
+        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+        install_devkit_path: c:\RubyDevKit
 
-jinja2:
+compile_config:
   entries:
     - in:  README.md.in
       out: README.md
