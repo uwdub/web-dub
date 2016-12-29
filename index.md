@@ -1,5 +1,5 @@
 ---
-layout: base/bar-sidebar-none
+layout: base/bar/bar-sidebar-none
 title: "HCI & Design at the University of Washington"
 title_bar: "Design. Use. Build."
 title_secondary: "HCI & Design at the University of Washington"

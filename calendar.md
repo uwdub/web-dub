@@ -1,5 +1,5 @@
 ---
-layout: base/bar-sidebar-right
+layout: base/bar/bar-sidebar-right
 title: "Calendar"
 title_secondary: "HCI & Design at the University of Washington"
 ---
