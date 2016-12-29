@@ -1,5 +1,5 @@
 ---
-layout: base/bar-sidebar-none
+layout: base/bar/bar-sidebar-none
 title: "title"
 title_bar: "title_bar"
 title_secondary: "title_secondary"

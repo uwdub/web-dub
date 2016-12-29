@@ -1,0 +1,42 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PageHeader -->
+    {% include base/pagehead.html %}
+
+    <!-- Styles -->
+    <link href="{{ site.baseurl }}/css/base/bar/styles.css" rel="stylesheet">
+  </head>
+  <body class="layout-bar" id="{{ page.url | slugify: 'pretty' }}">
+    <!-- NavHeader -->
+    {% include base/bar/navheader.html %}
+
+    <!-- Main -->
+    <div class="container base-main">
+      <!-- Bar -->
+      <div class="row bar-bar">
+        {% if page.title_secondary %}
+          <div class="col-md-6 bar-primary">
+            <h1>{% if page.title_bar %}{{ page.title_bar }}{% else %}{{ page.title }}{% endif %}</h1>
+          </div>
+          <div class="col-md-6 bar-secondary">
+            <p>{{ page.title_secondary }}</p>
+          </div>
+        {% else %}
+          <div class="col-md-12 bar-primary">
+            <h1>{% if page.title_bar %}{{ page.title_bar }}{% else %}{{ page.title }}{% endif %}</h1>
+          </div>
+        {% endif %}
+      </div>
+
+      <!-- Content -->
+      {{ content }}
+    </div>
+    <!-- Main End -->
+
+    <!-- EndOfBody -->
+    {% include base/bodyend.html %}
+  </body>
+</html>

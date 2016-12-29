@@ -2,12 +2,14 @@
 .idea
 *.iml
 
+# MacOS files
+.DS_Store
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
 
 # Our Python environment
-env34
 env35
 
 # Compiled Python
@@ -16,5 +18,5 @@ env35
 # Installed node packages
 node_modules
 
-# Any secrets
-secrets
+# Any secrets, such as passwords or keys
+/secrets
