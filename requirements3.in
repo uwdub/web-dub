@@ -5,3 +5,5 @@ jinja2
 nose
 pip-tools
 pyyaml
+icalendar
+markdown
