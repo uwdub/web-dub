@@ -110,22 +110,6 @@ def update_dependencies():
 
 
 @invoke.task(pre=[update_dependencies])
-def build_production():
-    invoke.run(
-        'bundle exec jekyll build -t --config _config.yml,_config-production.yml',
-        encoding=sys.stdout.encoding
-    )
-
-
-@invoke.task(pre=[update_dependencies])
-def build_test():
-    invoke.run(
-        'bundle exec jekyll build -t --config _config.yml,_config-test.yml',
-        encoding=sys.stdout.encoding
-    )
-
-
-@invoke.task()
 def compile_config():
     # Parse our compile config
     with open('_compile-config.yml') as f:
@@ -142,7 +126,7 @@ def compile_config():
             f.write(template.render(compile_config_yaml['config']))
 
 
-@invoke.task()
+@invoke.task(pre=[update_dependencies])
 def compile_calendar():
     # Obtain our stored sequences
     with open('_compile-calendar-sequences.yml') as f:
@@ -156,6 +140,7 @@ def compile_calendar():
            os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
     ]
 
+    # Maintain the sequence field for each seminar
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file, to compare against our stored data
         with open(seminar_path_current, 'rb') as f:
@@ -207,81 +192,158 @@ def compile_calendar():
             default_flow_style=False
         )
 
-    # if regenerate_calendar_ics:
-    #     # Create calendar object. Unless we were to store the calendar object between runs and update it dynamically (as above), we have to re-generate the entire file every time.
-    #     ics = Calendar()
-    #     ics.add('prodid', '-//DUB//DUB Calendar 2.0//EN')
-    #     ics.add('version', '2.0')
-    #     ics.add('calscale','gregorian')
-    #     ics.add('method', 'publish')
-    #     ics.add('x-wr-calname', 'DUB Calendar')
-    #     ics.add('x-wr-timezone', 'America/Los_Angeles')
-    #     ics.add('x-wr-caldesc', 'A calendar of DUB events.')
-    #     for seminar_path_current in seminar_paths:
-    #         with open(seminar_path_current) as f:
-    #             seminar_contents = list(yaml.safe_load_all(f))[0]
-    #         # Add seminar as calendar event
-    #         ics_event = Event()
-    #         ics_event.add('uid', seminar_contents['date'].strftime('%Y-%m-%d') + '@dub.washington.edu')
-    #
-    #         #Generate seminar string from applicable components
-    #         summary_string = 'DUB Seminar'
-    #         if 'no_seminar' in seminar_contents:
-    #             #Title is reflected when there's no seminar
-    #             summary_string = seminar_contents['title']
-    #         else:
-    #             #Add the location unless overridden by the page
-    #             if 'location_override_seminar_page' in seminar_contents:
-    #                 #Remove newlines in title
-    #                 ics_event.add('location', re.sub('<br>', '', seminar_contents['location_override_seminar_page']))
-    #             else:
-    #                 ics_event.add('location', seminar_contents['location'])
-    #             if 'tbd_speakers' not in seminar_contents:
-    #                 speaker_names = ', '.join([' '.join(speaker['name'][1:] + [speaker['name'][0]]) for speaker in seminar_contents['speakers']])
-    #                 #Assume the first speaker's affiliation is representative of all of them, rather than duplicating e.g., Speaker A (UW), Speaker B (UW), Speaker C (UW)
-    #                 #This is not true in all cases. See 2016-06-22
-    #                 first_affiliation = ''
-    #                 if 'affiliation' in seminar_contents['speakers'][0]:
-    #                     first_affiliation = '({})'.format(seminar_contents['speakers'][0]['affiliation'])
-    #                 summary_string += ' - {} {}'.format(speaker_names ,first_affiliation)
-    #             else:
-    #                 summary_string += ' - TBD'
-    #             if 'tbd_title' not in seminar_contents:
-    #                 summary_string += ' - "{}"'.format(seminar_contents['title'])
-    #             if 'title_override_seminar_page' in seminar_contents:
-    #                 summary_string = seminar_contents['title_override_seminar_page']
-    #         ics_event.add('summary', summary_string)
-    #         # Generate naive time objects from seminar date and time
-    #         seminar_start_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time'], '%I:%M %p').time())
-    #         seminar_end_time = datetime.combine(seminar_contents['date'], datetime.strptime(seminar_contents['time_end'], '%I:%M %p').time())
-    #         # Localize time objects by time zone
-    #         ics_event.add('dtstart', pytz.timezone('America/Los_Angeles').localize(seminar_start_time))
-    #         ics_event.add('dtend', pytz.timezone('America/Los_Angeles').localize(seminar_end_time))
-    #         #Generate description string from applicable components
-    #         description_string = ''
-    #         if 'text_override_seminar_page' in seminar_contents:
-    #             description_string = seminar_contents['text_override_seminar_page']
-    #         else:
-    #             if 'tbd_bio' not in seminar_contents:
-    #                 if 'tbd_abstract' not in seminar_contents:
-    #                     description_string = seminar_contents['abstract'] + '\r\n' + seminar_contents['bio']
-    #                 else:
-    #                     description_string = seminar_contents['bio']
-    #             elif 'tbd_abstract' not in seminar_contents:
-    #                 description_string = seminar_contents['abstract']
-    #         #parse description as markdown
-    #         class SensibleParagraphs(markdown.extensions.Extension):
-    #             def extendMarkdown(self, md, md_globals):
-    #                 br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
-    #                 md.inlinePatterns.add('nl', br_tag, '_end')
-    #         ics_event.add('description', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
-    #
-    #         ics.add_component(ics_event)
-    #     with open('calendar.ics', 'wb') as f:
-    #         f.write(ics.to_ical())
+    # Now generate the ics file from our seminars and their sequences
+    ics = Calendar()
+    ics.add('PRODID', '-//DUB//DUB Calendar')
+    ics.add('VERSION', '2.0')
+    ics.add('CALSCALE','GREGORIAN')
+    ics.add('METHOD', 'PUBLISH')
+    ics.add('X-WR-CALNAME', 'DUB Calendar')
+    ics.add('X-WR-TIMEZONE', 'America/Los_Angeles')
+    ics.add('X-WR-CALDESC', 'Calendar of DUB seminars.')
+
+    for seminar_path_current in seminar_paths:
+        # Parse the seminar
+        with open(seminar_path_current) as f:
+            seminar_contents = list(yaml.safe_load_all(f))[0]
+
+        # Add seminar as calendar event
+        ics_event = Event()
+
+        # Give it a UID
+        ics_event.add(
+            'UID',
+            seminar_contents['date'].strftime('%Y-%m-%d') + '@dub.washington.edu'
+        )
+
+        # Give it DTSTART and DTEND
+        timezone = pytz.timezone('America/Los_Angeles')
+        seminar_start_time = timezone.localize(datetime.combine(
+            seminar_contents['date'],
+            datetime.strptime(seminar_contents['time'], '%I:%M %p').time()
+        ))
+        seminar_end_time = timezone.localize(datetime.combine(
+            seminar_contents['date'],
+            datetime.strptime(seminar_contents['time_end'], '%I:%M %p').time()
+        ))
+        ics_event.add('DTSTART', seminar_start_time)
+        ics_event.add('DTEND', seminar_end_time)
+
+        # Generate SUMMARY from applicable components
+        if seminar_contents.get('no_seminar', False):
+            # Flagged as not having a seminar
+
+            # Title should indicate why there's no seminar
+            seminar_summary = seminar_contents['title']
+        else:
+            # We have a seminar, but its data may not yet be complete
+            seminar_summary = 'DUB Seminar'
+
+            if not seminar_contents.get('tbd_speakers', False):
+                # We have speakers
+
+                # If they all have the same affiliation, we'll collapse it, so let's check
+                speaker_affiliations = [
+                    speaker_current['affiliation'] if not speaker_current.get('affiliation_none', False) else 'affiliation_none'
+                    for speaker_current
+                    in seminar_contents['speakers']
+                ]
+                if len(set(speaker_affiliations)) == 1:
+                    # Everybody has the same affiliation
+                    # But it's still possible that affiliation is affiliation_none
+                    if not seminar_contents['speakers'][0].get('affiliation_none', False):
+                        # We have a legit affiliation
+                        seminar_summary = '{} - {} ({})'.format(
+                            seminar_summary,
+                            ', '.join(
+                                [
+                                    ' '.join(speaker_current['name'][1:] + [speaker_current['name'][0]])
+                                    for speaker_current
+                                    in seminar_contents['speakers']
+                                ]
+                            ),
+                            seminar_contents['speakers'][0]['affiliation']
+                        )
+                    else:
+                        # Everybody has no affiliation
+                        seminar_summary = '{} - {}'.format(
+                            seminar_summary,
+                            ', '.join(
+                                [
+                                    ' '.join(speaker_current['name'][1:] + [speaker_current['name'][0]])
+                                    for speaker_current
+                                    in seminar_contents['speakers']
+                                ]
+                            )
+                        )
+                else:
+                    # Distinct affiliations
+                    seminar_summary = '{} - {}'.format(
+                        seminar_summary,
+                        ', '.join(
+                            [
+                                '{}{}'.format(
+                                    ' '.join(speaker_current['name'][1:] + [speaker_current['name'][0]]),
+                                    '({})'.format(speaker_current['affiliation']) if not speaker_current.get('affiliation_none', False) else ''
+                                )
+                                for speaker_current
+                                in seminar_contents['speakers']
+                            ]
+                        )
+                    )
+            else:
+                # No speakers yet
+                seminar_summary = '{} - TBD'.format(
+                    seminar_summary
+                )
+
+            if not seminar_contents.get('tbd_title', False):
+                # We have a title
+                seminar_summary = '{} - "{}"'.format(
+                    seminar_summary,
+                    seminar_contents['title']
+                )
+
+        ics_event.add('SUMMARY', seminar_summary)
+
+        # Add the location unless it has an override
+        if seminar_contents.get('location_override_calendar', False):
+            ics_event.add('LOCATION', seminar_contents['location_override_calendar'])
+        else:
+            ics_event.add('LOCATION', seminar_contents['location'])
+
+        #
+        # This description generation is still a bit sketchy, should decide what we want
+        #
+        # Generate description string from applicable components
+        description_string = ''
+        if 'text_override_seminar_page' in seminar_contents:
+            description_string = seminar_contents['text_override_seminar_page']
+        else:
+            if 'tbd_bio' not in seminar_contents:
+                if 'tbd_abstract' not in seminar_contents:
+                    description_string = seminar_contents['abstract'] + '\r\n' + seminar_contents['bio']
+                else:
+                    description_string = seminar_contents['bio']
+            elif 'tbd_abstract' not in seminar_contents:
+                description_string = seminar_contents['abstract']
+
+        # Parse description as markdown
+        class SensibleParagraphs(markdown.extensions.Extension):
+            def extendMarkdown(self, md, md_globals):
+                br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
+                md.inlinePatterns.add('nl', br_tag, '_end')
+
+        ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
+
+        ics.add_component(ics_event)
+
+    # Store the ics file output
+    with open('calendar.ics', 'wb') as f:
+        f.write(ics.to_ical())
 
 
-@invoke.task()
+@invoke.task(pre=[update_dependencies])
 def compile_calendar_increment_all_sequences():
     # Obtain our stored sequences
     with open('_compile-calendar-sequences.yml') as f:
@@ -345,7 +407,7 @@ def compile_calendar_increment_all_sequences():
         )
 
 
-@invoke.task()
+@invoke.task(pre=[update_dependencies])
 def compile_requirements():
     # Compile the requirements file
     invoke.run(
@@ -354,7 +416,23 @@ def compile_requirements():
     )
 
 
-@invoke.task(pre=[update_dependencies])
+@invoke.task(pre=[update_dependencies, compile_calendar])
+def build_production():
+    invoke.run(
+        'bundle exec jekyll build -t --config _config.yml,_config-production.yml',
+        encoding=sys.stdout.encoding
+    )
+
+
+@invoke.task(pre=[update_dependencies, compile_calendar])
+def build_test():
+    invoke.run(
+        'bundle exec jekyll build -t --config _config.yml,_config-test.yml',
+        encoding=sys.stdout.encoding
+    )
+
+
+@invoke.task(pre=[update_dependencies, compile_calendar])
 def serve_production():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-production.yml -H 0.0.0.0',
@@ -362,7 +440,7 @@ def serve_production():
     )
 
 
-@invoke.task(pre=[update_dependencies])
+@invoke.task(pre=[update_dependencies, compile_calendar])
 def serve_test():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-test.yml --watch --force_polling',

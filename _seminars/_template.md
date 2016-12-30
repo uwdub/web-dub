@@ -73,6 +73,7 @@ speakers:
 # title:      "Title in Quotes: Because Colons Cause Errors"
 # 
 # location:   "HUB 334"
+# (optional) location_override_calendar:
 # (optional) location_override_seminar_page:
 #
 # abstract:   |
