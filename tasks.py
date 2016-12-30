@@ -307,34 +307,37 @@ def compile_calendar():
         ics_event.add('SUMMARY', seminar_summary)
 
         # Add the location unless it has an override
-        if seminar_contents.get('location_override_calendar', False):
-            ics_event.add('LOCATION', seminar_contents['location_override_calendar'])
-        else:
-            ics_event.add('LOCATION', seminar_contents['location'])
+        if not seminar_contents.get('no_seminar', False):
+            if seminar_contents.get('location_override_calendar', False):
+                ics_event.add('LOCATION', seminar_contents['location_override_calendar'])
+            else:
+                ics_event.add('LOCATION', seminar_contents['location'])
 
         # This description generation is still a bit sketchy, should decide what we want
         #
         # Generate description string from applicable components
-        description_string = ''
-        if 'text_override_seminar_page' in seminar_contents:
-            description_string = seminar_contents['text_override_seminar_page']
-        else:
-            if 'tbd_bio' not in seminar_contents:
-                if 'tbd_abstract' not in seminar_contents:
-                    description_string = seminar_contents['abstract'] + '\r\n' + seminar_contents['bio']
-                else:
-                    description_string = seminar_contents['bio']
-            elif 'tbd_abstract' not in seminar_contents:
-                description_string = seminar_contents['abstract']
+        if not seminar_contents.get('no_seminar', False):
+            description_string = ''
+            if 'text_override_seminar_page' in seminar_contents:
+                description_string = seminar_contents['text_override_seminar_page']
+            else:
+                if 'tbd_bio' not in seminar_contents:
+                    if 'tbd_abstract' not in seminar_contents:
+                        description_string = seminar_contents['abstract'] + '\r\n' + seminar_contents['bio']
+                    else:
+                        description_string = seminar_contents['bio']
+                elif 'tbd_abstract' not in seminar_contents:
+                    description_string = seminar_contents['abstract']
 
-        # Parse description as markdown
-        class SensibleParagraphs(markdown.extensions.Extension):
-            def extendMarkdown(self, md, md_globals):
-                br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
-                md.inlinePatterns.add('nl', br_tag, '_end')
+            # Parse description as markdown
+            class SensibleParagraphs(markdown.extensions.Extension):
+                def extendMarkdown(self, md, md_globals):
+                    br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
+                    md.inlinePatterns.add('nl', br_tag, '_end')
 
-        ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
+            ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
 
+        # That's our complete event
         ics.add_component(ics_event)
 
     # Store the ics file output
