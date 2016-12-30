@@ -312,7 +312,6 @@ def compile_calendar():
         else:
             ics_event.add('LOCATION', seminar_contents['location'])
 
-        #
         # This description generation is still a bit sketchy, should decide what we want
         #
         # Generate description string from applicable components
@@ -365,14 +364,17 @@ def compile_calendar_increment_all_sequences():
         with open(seminar_path_current) as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
-        if seminar_path_current not in seminar_calendar_sequences:
-            seminar_calendar_sequences[seminar_path_current] = {
+        # Regardless of platform we're on, standardize the path we store (e.g., slashes)
+        seminar_path_stored = posixpath.join(*os.path.normpath(seminar_path_current).split(os.sep))
+
+        if seminar_path_stored not in seminar_calendar_sequences:
+            seminar_calendar_sequences[seminar_path_stored] = {
                 'hash': seminar_hash_current,
                 'sequence': seminar_sequence_current
             }
 
-        seminar_hash_stored = seminar_calendar_sequences[seminar_path_current]['hash']
-        seminar_sequence_stored = seminar_calendar_sequences[seminar_path_current]['sequence']
+        seminar_hash_stored = seminar_calendar_sequences[seminar_path_stored]['hash']
+        seminar_sequence_stored = seminar_calendar_sequences[seminar_path_stored]['sequence']
 
         # Bump the sequence
         seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
@@ -392,7 +394,7 @@ def compile_calendar_increment_all_sequences():
         with open(seminar_path_current, 'rb') as f:
             seminar_hash_current = hashlib.md5(f.read()).hexdigest()
 
-        seminar_calendar_sequences[seminar_path_current] = {
+        seminar_calendar_sequences[seminar_path_stored] = {
             'hash': seminar_hash_current,
             'sequence': seminar_sequence_current
         }
