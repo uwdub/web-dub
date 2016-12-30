@@ -153,6 +153,12 @@ class TestSeminars(unittest.TestCase):
                             'Missing speakers affiliation in {}'.format(seminar_path_current)
                         )
 
+                        self.assertIsInstance(
+                            speaker_current['affiliation'],
+                            str,
+                            'Speakers affiliation is not string in {}'.format(seminar_path_current)
+                        )
+
             # The title may be tbd
             if 'tbd_title' in seminar:
                 # If the field exists, its value must be True

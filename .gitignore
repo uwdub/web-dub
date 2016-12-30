@@ -5,6 +5,9 @@
 # MacOS files
 .DS_Store
 
+# Our build of the calendar
+calendar.ics
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
