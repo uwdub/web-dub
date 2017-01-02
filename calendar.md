@@ -9,6 +9,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 <ul id="seminar-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
   <li class="active"><a href="#upcoming_seminars" data-toggle="tab">Upcoming Seminars</a></li>
   <li><a href="#previous_seminars" data-toggle="tab">Previous Seminars</a></li>
+  <li>Subscription link: <a href="calendar.ics">{{ site.baseurl }}/calendar.ics</a></li>
 </ul>
 
 <div class="sidebar_end"></div>
