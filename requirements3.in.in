@@ -1,0 +1,10 @@
+{# This file compiles to requirements3.in -#}
+# This file compiled from requirements3.in.in
+
+invoke=={{ python.invoke_version }}
+jinja2
+nose
+pip-tools
+pyyaml
+requests
+{# This comment gives us a newline at the end of the generated file #}
