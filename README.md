@@ -1,48 +1,8 @@
-This is a template for websites implemented using Jekyll.
+This is the beginning of a project template.
 
-# Building the Site
-
-This site is implemented in Jekyll, which requires Ruby and Node.js. It also uses Python for automation and testing.
-
-## Installing Ruby, Ruby DevKit, Node.js, and Python
+## Installing Python
 
 Development currently requires:
-
-- Ruby 2.3.1
-
-  [https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe)
-
-  Installation on Windows:
-
-  During installation:
-
-  - On 'Installation Destination and Optional Tasks':
-
-    Documentation assumes an installation path of c:\Ruby231.
-
-    Check 'Add Ruby executables to your PATH'.
-
-- Ruby DevKit
-
-  [https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe)
-
-  When installing the Ruby DevKit:
-
-  - Extract to `c:\RubyDevKit`.
-
-  - Install the DevKit into our Ruby installation:
-
-    ~~~
-    cd c:\RubyDevKit
-    ruby dk.rb init
-    ruby dk.rb install
-    ~~~
-
-- Node 4.5.0
-
-  [https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi](https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi)
-
-  When installing Node.js, the default options are appropriate.
 
 - Python 3.5.2
 
@@ -83,20 +43,3 @@ Next activate that virtual environment and install our Python dependencies:
 Next use Python's invoke automation to get the rest of our dependencies:
 
     invoke update_dependencies
-
-## Building and Serving the Site
-
-Invoke automation is provided for building the site.
-
-If it is not already active, you need to re-activate the virtual environment.
-From the working directory of our project (e.g., `c:\devel\web-jekyll-base`):
-
-    env35\Scripts\activate.bat
-
-To build the site:
-
-    invoke build_test
-
-To build and serve the site on `localhost:4000`, continuously updating based on changes:
-
-    invoke serve_test
