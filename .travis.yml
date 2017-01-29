@@ -1,0 +1,20 @@
+# This file compiled from .travis.yml.in
+
+sudo: false
+
+language: python
+
+python:
+  - "3.5.2"
+
+cache:
+  pip: true
+
+install:
+  # Install Python dependencies
+  - python -m pip install --upgrade pip==8.1.1
+  - python -m pip install -r requirements3.txt
+
+script:
+  - nosetests tests.fast
+  - nosetests tests.full

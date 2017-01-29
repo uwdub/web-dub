@@ -1,0 +1,15 @@
+# IDE settings
+.idea
+*.iml
+
+# MacOS files
+.DS_Store
+
+# Python environment
+env35
+
+# Python compilation
+*.pyc
+
+# Secrets that should not be committed, such as passwords or keys
+/secrets
