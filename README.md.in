@@ -1,9 +1,49 @@
 This is the beginning of a project template.
 
-## Installing Python
+## Homebrew Instructions for Mac
 
-Development currently requires:
+{% include "base/readme/homebrew_install.md" %}
 
-{% include "base/readme/python_install.md" %}
+# Installing Python
 
-{% include "base/readme/python_venv_create.md" %}
+{% include "base/readme/python_requirements.md" %}
+
+## Windows Instructions
+
+{% include "base/readme/python_install_windows.md" %}
+
+### Creating a Virtual Environment and Installing Dependencies
+
+{% include "base/readme/python_venv_create_windows.md" %}
+
+## Mac Instructions
+
+{% include "base/readme/python_install_mac.md" %}
+
+### Creating a Virtual Environment and Installing Dependencies
+
+{% include "base/readme/python_venv_create_mac.md" %}
+
+# Installing Node
+
+{% include "base/readme/node_requirements.md" %}
+
+## Windows Instructions
+
+{% include "base/readme/node_install_windows.md" %}
+
+## Mac Instructions
+
+{% include "base/readme/node_install_mac.md" %}
+
+# Installing Ruby
+
+{% include "base/readme/ruby_requirements.md" %}
+
+## Windows Instructions
+
+{% include "base/readme/ruby_install_windows.md" %}
+
+## Mac Instructions
+
+{% include "base/readme/ruby_install_mac.md" %}

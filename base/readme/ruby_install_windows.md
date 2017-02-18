@@ -1,5 +1,3 @@
-- Ruby {{ ruby.version }}
-
   {% set install_params_ruby = {} -%}
   {%- for version_available in readme.ruby_versions -%}
     {%- if version_available.version == ruby.version -%}
@@ -7,9 +5,9 @@
     {%- endif -%}
   {%- endfor -%}
 
+- Ruby:
+  
   [{{ install_params_ruby.installer_url }}]({{ install_params_ruby.installer_url }})
-
-  Installation on Windows:
 
   During installation:
 
@@ -19,7 +17,7 @@
 
     Check 'Add Ruby executables to your PATH'.
 
-- Ruby DevKit
+- Ruby DevKit:
 
   [{{ install_params_ruby.installer_devkit_url }}]({{ install_params_ruby.installer_devkit_url }})
 

@@ -5,12 +5,6 @@
   {%- endif -%}
 {%- endfor -%}
 
-## Creating a Virtual Environment and Installing Dependencies
-
-All Python work should be done within a virtual environment, to avoid dependency conflicts.
-Node.js and Ruby have their own dependency management (i.e., npm shrinkwrap and bundler).
-Our Python automation scripts will employ those tools, but we first need to configure Python.
-
 Create the virtual environment. From the working directory of our project (e.g., `{{ readme.working_directory }}`):
 
     {{ install_params_python.install_path }}\python.exe -m venv {{ install_params_python.virtual_environment_name }}
