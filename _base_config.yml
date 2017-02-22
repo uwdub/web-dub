@@ -27,6 +27,7 @@ config:
 
   readme:
     working_directory: c:\devel\web-jekyll-base
+    working_directory_mac: ~/Desktop/web-jekyll-base
 
     node_versions:
       - version: 4.5.0

@@ -11,12 +11,14 @@
   Install the correct version of Ruby:
   
   `rbenv install {{ ruby.version }}`
+  
   `rbenv global {{ ruby.version }}`
 
-  Alternatively, you can a Ruby version for the directory:
+
+  Alternatively, you can specify a Ruby version for the directory:
   
   `rbenv local {{ ruby.version }}`
 
 - Ruby-Devkit:
   
-  `brew install ruby-build`
+  `ruby-devkit` is automatically installed when `rbenv` is installed.

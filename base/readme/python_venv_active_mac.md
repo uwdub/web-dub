@@ -6,7 +6,7 @@
 {%- endfor -%}
 
 If it is not already active, you need to re-activate the virtual environment.
-Move to the working directory of our project. (e.g., `cd {{ readme.working_directory }}`)
+Move to the working directory of our project. (e.g., `cd {{ readme.working_directory_mac }}`)
 
 Next activate that virtual environment:
-`source {{ install_params_python.virtual_environment_name }} activate`
+`source {{ install_params_python.virtual_environment_name }}/bin/activate`

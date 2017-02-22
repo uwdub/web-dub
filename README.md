@@ -65,11 +65,11 @@ Installing `python3` via Homebrew should install `pip3` automatically.
 Create the virtual environment using pip.
 `pip3 install virtualenv`
 
-Move to the working directory of our project. (e.g., `cd c:\devel\web-jekyll-base`)
+Move to the working directory of our project. (e.g., `cd ~/Desktop/web-jekyll-base`)
 
 `virtualenv -p python3 env35`
 
-This will create a directory for the virtual environment (e.g., `c:\devel\web-jekyll-base\env35\`).
+This will create a directory for the virtual environment (e.g., `~/Desktop/web-jekyll-base/env35/`).
 
 Next activate that virtual environment and install our Python dependencies:
 
@@ -77,7 +77,7 @@ Next activate that virtual environment and install our Python dependencies:
 
 Next activate that virtual environment and install our Python dependencies:
 
-    env35\Scripts\activate.bat
+    env35/bin/activate
     pip3 install -r requirements3.txt
 
 Next use Python's invoke automation to get the rest of our dependencies:
@@ -153,12 +153,14 @@ Development currently requires:
   Install the correct version of Ruby:
   
   `rbenv install 2.3.1`
+  
   `rbenv global 2.3.1`
 
-  Alternatively, you can a Ruby version for the directory:
+
+  Alternatively, you can specify a Ruby version for the directory:
   
   `rbenv local 2.3.1`
 
 - Ruby-Devkit:
   
-  `brew install ruby-build`
+  `ruby-devkit` is automatically installed when `rbenv` is installed.
