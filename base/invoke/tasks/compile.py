@@ -13,6 +13,7 @@ def compile_config():
     for jinja2_entry in base_config_yaml['compile_config']['entries']:
         jinja2_environment = jinja2.Environment(
             loader=jinja2.FileSystemLoader(searchpath='.'),
+            trim_blocks=True,
             undefined=jinja2.StrictUndefined
         )
         template = jinja2_environment.get_template(jinja2_entry['in'])

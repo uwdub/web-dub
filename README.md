@@ -1,26 +1,20 @@
 This is the beginning of a project template.
 
-## Homebrew Instructions for Mac
+# Project Dependencies
 
-We recommend Homebrew for configuring your Mac system: [https://brew.sh/](https://brew.sh/).
-
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-
-The default options are appropriate.
-
-# Installing Python
-
-Development currently requires:
-
+Dependencies required for this project are:
 - Python 3.5.2
+- Node 4.5.0
+- Ruby 2.3.1
+- Ruby DevKit
 
-All Python work should be done within a virtual environment, to avoid dependency conflicts.
-Node.js and Ruby have their own dependency management (i.e., npm shrinkwrap and bundler).
-Our Python automation scripts will employ those tools, but we first need to configure Python.
-
-## Windows Instructions
+# Windows Installation
+        
+## Installing Python
 
 [https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe](https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe)
+
+This documentation assumes an installation path of `c:/Python35`.
 
 When installing Python:
 
@@ -33,134 +27,138 @@ When installing Python:
 
 - On 'Advanced Options':
 
-  Uncheck all options.
+  Set an installation path of `c:/Python35`.
 
-  Set the installation path to `c:\Python35`.
+  Uncheck all options.
 
 ### Creating a Virtual Environment and Installing Dependencies
 
-Create the virtual environment. From the working directory of our project (e.g., `c:\devel\web-jekyll-base`):
+Create the virtual environment. From the working directory of our project (e.g., `c:/devel/web-jekyll-base`):
 
-    c:\Python35\python.exe -m venv env35
+~~~
+c:/Python35/python.exe -m venv env35
+~~~
 
-This will create a directory for the virtual environment (e.g., `c:\devel\web-jekyll-base\env35\`).
+This will create a directory for the virtual environment (e.g., `c:/devel/web-jekyll-base/env35/`).
 
 Next activate that virtual environment and install our Python dependencies:
 
-    env35\Scripts\activate.bat
-    pip install -r requirements3.txt
+~~~
+env35/Scripts/activate.bat
+pip install -r requirements3.txt
+~~~
+        
+## Installing Node
 
-Next use Python's invoke automation to get the rest of our dependencies:
+[https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi](https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi)
 
-    invoke update_dependencies
+The default installation options are appropriate.
+          
+## Installing Ruby
 
-## Mac Instructions
+[https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe)
 
-`brew install python3`
+This documentation assumes an installation path of `c:/Ruby231`.
+
+When installing Ruby:
+
+- On 'Installation Destination and Optional Tasks':
+
+  Set an installation path of `c:/Ruby231`.
+
+  Check 'Add Ruby executables to your PATH'.
+
+### Installing Ruby DevKit:
+
+[https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe)
+
+This documentation assumes an installation path of `c:/RubyDevKit`.
+
+When installing the Ruby DevKit:
+
+- Extract to `c:/RubyDevKit`.
+
+- Install the DevKit into the Ruby installation:
+
+  ~~~
+  cd c:/RubyDevKit
+  ruby dk.rb init
+  ruby dk.rb install
+  ~~~
+
+# Mac Installation
+
+## Installing Homebrew
+
+This documentation assumes use of Homebrew: [https://brew.sh/](https://brew.sh/).
+
+~~~
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+~~~
+
+The default installation options are appropriate.
+        
+## Installing Python
+
+~~~
+brew install python3
+~~~
+
+Installing `python3` via Homebrew should automatically install `pip3`. Use that to install `virtualenv`.
+
+~~~
+pip3 install virtualenv
+~~~
 
 ### Creating a Virtual Environment and Installing Dependencies
 
-Installing `python3` via Homebrew should install `pip3` automatically.
+Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/web-jekyll-base`):
 
-Create the virtual environment using pip.
-`pip3 install virtualenv`
-
-Move to the working directory of our project. (e.g., `cd ~/Desktop/web-jekyll-base`)
-
-`virtualenv -p python3 env35`
+~~~
+virtualenv -p python3 env35
+~~~
 
 This will create a directory for the virtual environment (e.g., `~/Desktop/web-jekyll-base/env35/`).
 
 Next activate that virtual environment and install our Python dependencies:
 
-`source env35 activate`
+~~~
+source env35/bin/activate
+pip3 install -r requirements3.txt
+~~~
 
-Next activate that virtual environment and install our Python dependencies:
+## Installing Node
 
-    env35/bin/activate
-    pip3 install -r requirements3.txt
+~~~
+brew install node
+~~~
 
-Next use Python's invoke automation to get the rest of our dependencies:
+## Installing Ruby
 
-    invoke update_dependencies
+~~~
+brew install rbenv
+~~~
 
-# Installing Node
+Configure the terminal to include `rbenv`:
 
-Development currently requires:
+~~~
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile`
+source ~/.bash_profile`
+~~~
 
-- Node 4.5.0
+Install the correct version of Ruby:
 
+~~~
+rbenv install 2.3.1
+rbenv global 2.3.1
+~~~
 
-## Windows Instructions
+Alternatively, you can specify a Ruby version for the directory:
 
-Latest version available: [https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi](https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi)
+~~~
+rbenv local 2.3.1
+~~~
 
-When installing Node.js, the default options are appropriate.
+### Installing Ruby DevKit:
 
-## Mac Instructions
-
-`brew install node`
-
-# Installing Ruby
-
-Development currently requires:
-
-- Ruby 2.3.1
-- Ruby DevKit
-
-## Windows Instructions
-
-  - Ruby:
-  
-  [https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe)
-
-  During installation:
-
-  - On 'Installation Destination and Optional Tasks':
-
-    Documentation assumes an installation path of c:\Ruby231.
-
-    Check 'Add Ruby executables to your PATH'.
-
-- Ruby DevKit:
-
-  [https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe)
-
-  When installing the Ruby DevKit:
-
-  - Extract to `c:\RubyDevKit`.
-
-  - Install the DevKit into our Ruby installation:
-
-    ~~~
-    cd c:\RubyDevKit
-    ruby dk.rb init
-    ruby dk.rb install
-    ~~~
-
-## Mac Instructions
-
-- Ruby:
-  
-  `brew install rbenv`
-  
-  Start rbenv whenever you open your terminal:
-  
-  `echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile`
-  
-  `source ~/.bash_profile`
-
-  Install the correct version of Ruby:
-  
-  `rbenv install 2.3.1`
-  
-  `rbenv global 2.3.1`
-
-
-  Alternatively, you can specify a Ruby version for the directory:
-  
-  `rbenv local 2.3.1`
-
-- Ruby-Devkit:
-  
-  `ruby-devkit` is automatically installed when `rbenv` is installed.
+Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
