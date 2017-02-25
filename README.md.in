@@ -1,9 +1,3 @@
 This is the beginning of a project template.
 
-## Installing Python
-
-Development currently requires:
-
-{% include "base/readme/python_install.md" %}
-
-{% include "base/readme/python_venv_create.md" %}
+{% include "base/readme/install_dependencies.md" %}
