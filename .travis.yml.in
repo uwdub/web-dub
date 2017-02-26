@@ -6,36 +6,38 @@ sudo: false
 language: python
 
 python:
-  - "{{ local.python.version }}"
+  - "{{ python.version }}"
 
 cache:
   pip: true
-  directories:
-    - node_modules
-    - /home/travis/.rvm/gems
 
 install:
-  # Install NodeJS
-  - nvm install {{ local.node.version }}
-
   # Install Python dependencies
-  - python -m pip install --upgrade pip=={{ local.python.pip_version }}
+  - python -m pip install --upgrade pip=={{ python.pip_version }}
   - python -m pip install -r requirements3.txt
 
+{% if node is defined and node.required %}
+  # Install Node
+  - nvm install {{ node.version }}
+
+{% endif %}
+{% if ruby is defined and ruby.required %}
   # Install Ruby
-  - rvm install {{ local.ruby.version }}
-  - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
+  - rvm install {{ ruby.version }}
+  - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
   - |
-    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ local.ruby.bundler_version }}" )
+    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ ruby.bundler_version }}" )
     if [ "$bundler_uninstall" == "true" ]
     then
-      rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}"
+      rvm @global do gem uninstall bundler -v "!={{ ruby.bundler_version }}"
     fi
-  - rvm use {{ local.ruby.version }} --default
+  - rvm use {{ ruby.version }} --default
 
+{% endif %}
   # Invoke will get our other dependencies
   - invoke update_dependencies
 
 script:
-  - nosetests
+  - nosetests tests.fast
+  - nosetests tests.full
 {# This comment gives us a newline at the end of the generated file #}
