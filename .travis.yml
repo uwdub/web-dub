@@ -34,4 +34,4 @@ install:
 
 script:
   - nosetests tests.fast
-  - nosetests tests.full
+  - nosetests
