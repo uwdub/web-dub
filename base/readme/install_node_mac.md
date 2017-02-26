@@ -1,4 +1,4 @@
-{% if node.required %}
+{% if node is defined and node.required %}
 
 ## Installing Node
 

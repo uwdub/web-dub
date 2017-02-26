@@ -11,5 +11,8 @@ env35
 # Python compilation
 *.pyc
 
+# Node install packages
+node_modules
+
 # Secrets that should not be committed, such as passwords or keys
 /secrets

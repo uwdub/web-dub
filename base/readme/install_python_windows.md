@@ -1,8 +1,8 @@
 {% set install_params_python = {} %}
 {% for version_available in readme.python_versions %}
-  {% if version_available.version == python.version %}
-    {% set install_params_python = install_params_python.update(version_available) %}
-  {% endif %}
+{% if version_available.version == python.version %}
+{% set install_params_python = install_params_python.update(version_available) %}
+{% endif %}
 {% endfor %}
 
 ## Installing Python

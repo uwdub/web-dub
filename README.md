@@ -5,11 +5,11 @@ This is the beginning of a project template.
 Dependencies required for this project are:
 - Python 3.5.2
 - Node 4.5.0
-- Ruby 2.3.1
+- Ruby 2.3.3
 - Ruby DevKit
 
 # Windows Installation
-        
+
 ## Installing Python
 
 [https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe](https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe)
@@ -47,24 +47,24 @@ Next activate that virtual environment and install our Python dependencies:
 env35/Scripts/activate.bat
 pip install -r requirements3.txt
 ~~~
-        
+
 ## Installing Node
 
 [https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi](https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi)
 
 The default installation options are appropriate.
-          
+
 ## Installing Ruby
 
-[https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe)
+[https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe)
 
-This documentation assumes an installation path of `c:/Ruby231`.
+This documentation assumes an installation path of `c:/Ruby233`.
 
 When installing Ruby:
 
 - On 'Installation Destination and Optional Tasks':
 
-  Set an installation path of `c:/Ruby231`.
+  Set an installation path of `c:/Ruby233`.
 
   Check 'Add Ruby executables to your PATH'.
 
@@ -97,7 +97,7 @@ This documentation assumes use of Homebrew: [https://brew.sh/](https://brew.sh/)
 ~~~
 
 The default installation options are appropriate.
-        
+
 ## Installing Python
 
 ~~~
@@ -149,14 +149,14 @@ source ~/.bash_profile`
 Install the correct version of Ruby:
 
 ~~~
-rbenv install 2.3.1
-rbenv global 2.3.1
+rbenv install 2.3.3
+rbenv global 2.3.3
 ~~~
 
 Alternatively, you can specify a Ruby version for the directory:
 
 ~~~
-rbenv local 2.3.1
+rbenv local 2.3.3
 ~~~
 
 ### Installing Ruby DevKit:
