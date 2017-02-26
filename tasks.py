@@ -1,6 +1,5 @@
 import importlib
 import invoke
-import yaml
 
 task_module_names = [
     'base.invoke.tasks.compile',
