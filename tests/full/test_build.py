@@ -1,10 +1,10 @@
+import nose.tools
 import subprocess
-import unittest
 
 
-class TestBuild(unittest.TestCase):
+class TestBuild:
     def test_build(self):
-        self.assertEqual(
+        nose.tools.assert_equals(
             subprocess.call('invoke build_test', shell=True),
             0,
             'Jekyll build failed'

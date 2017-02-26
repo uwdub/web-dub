@@ -5,18 +5,18 @@
 # MacOS files
 .DS_Store
 
+# Python environment
+env35
+
+# Python compilation
+*.pyc
+
+# Node install packages
+node_modules
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
 
-# Our Python environment
-env35
-
-# Compiled Python
-*.pyc
-
-# Installed node packages
-node_modules
-
-# Any secrets, such as passwords or keys
+# Secrets that should not be committed, such as passwords or keys
 /secrets
