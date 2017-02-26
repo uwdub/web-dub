@@ -28,8 +28,8 @@ config:
       compose_up_delay: 60
 
   readme:
-    working_directory_windows: c:/devel/web-jekyll-base
-    working_directory_mac: ~/Desktop/web-jekyll-base
+    working_directory_windows: c:/devel/invoke-base
+    working_directory_mac: ~/Desktop/invoke-base
 
     node_versions:
       - version: 4.5.0

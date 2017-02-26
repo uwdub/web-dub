@@ -39,5 +39,5 @@ install:
 
 script:
   - nosetests tests.fast
-  - nosetests tests.full
+  - nosetests
 {# This comment gives us a newline at the end of the generated file #}
