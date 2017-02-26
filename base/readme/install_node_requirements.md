@@ -1,3 +1,3 @@
-{% if node.required %}
+{% if node is defined and node.required %}
 - Node {{ node.version }}
 {% endif %}

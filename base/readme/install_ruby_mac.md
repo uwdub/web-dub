@@ -1,4 +1,4 @@
-{% if ruby.required %}
+{% if ruby is defined and ruby.required %}
 
 ## Installing Ruby
 

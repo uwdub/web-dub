@@ -1,9 +1,9 @@
-{% if ruby.required %}
+{% if ruby is defined and ruby.required %}
 {% set install_params_ruby = {} %}
 {% for version_available in readme.ruby_versions %}
-  {% if version_available.version == ruby.version %}
-    {% set install_params_ruby = install_params_ruby.update(version_available) %}
-  {% endif %}
+{% if version_available.version == ruby.version %}
+{% set install_params_ruby = install_params_ruby.update(version_available) %}
+{% endif %}
 {% endfor %}
 
 ## Installing Ruby

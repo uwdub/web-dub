@@ -16,6 +16,27 @@ install:
   - python -m pip install --upgrade pip=={{ python.pip_version }}
   - python -m pip install -r requirements3.txt
 
+{% if node is defined and node.required %}
+  # Install Node
+  - nvm install {{ node.version }}
+
+{% endif %}
+{% if ruby is defined and ruby.required %}
+  # Install Ruby
+  - rvm install {{ ruby.version }}
+  - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
+  - |
+    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ ruby.bundler_version }}" )
+    if [ "$bundler_uninstall" == "true" ]
+    then
+      rvm @global do gem uninstall bundler -v "!={{ ruby.bundler_version }}"
+    fi
+  - rvm use {{ ruby.version }} --default
+
+{% endif %}
+  # Invoke will get our other dependencies
+  - invoke update_dependencies
+
 script:
   - nosetests tests.fast
   - nosetests tests.full
