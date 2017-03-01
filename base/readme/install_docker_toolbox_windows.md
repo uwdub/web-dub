@@ -18,4 +18,5 @@ When installing Docker Toolbox:
 - On 'Select Components':
 
   Uncheck 'Kitematic for Windows'.
+
 {% endif %}
