@@ -4,7 +4,6 @@
 {% set install_params_python = install_params_python.update(version_available) %}
 {% endif %}
 {% endfor %}
-
 ## Installing Python
 
 [{{ install_params_python.installer_url }}]({{ install_params_python.installer_url }})
@@ -42,4 +41,5 @@ Next activate that virtual environment and install our Python dependencies:
 {{ install_params_python.virtual_environment_name }}/Scripts/activate.bat
 pip install -r {{ install_params_python.requirements_name }}
 ~~~
+
 

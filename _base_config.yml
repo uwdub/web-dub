@@ -16,11 +16,19 @@ config:
     bundler_version: 1.13.6
 
   docker:
-    cmd_bash_macos: /bin/bash
-    cmd_dockermachine_macos: /usr/local/bin/docker-machine
+    required: true
 
-    cmd_bash_windows: C:/Program Files/Git/bin/bash
-    cmd_dockermachine_windows: C:/Program Files/Docker Toolbox/docker-machine.exe
+    toolbox:
+      # Docker Toolbox is currently pinned by this bug:
+      #   https://github.com/docker/toolbox/issues/607
+      version: 1.12.3
+
+      macos:
+        cmd_bash: /bin/bash
+        cmd_dockermachine: /usr/local/bin/docker-machine
+      windows:
+        cmd_bash: c:/Program Files/Git/bin/bash
+        cmd_dockermachine: c:/Program Files/Docker Toolbox/docker-machine.exe
 
     travis:
       version: 1.11.2-0~trusty
@@ -30,6 +38,12 @@ config:
   readme:
     working_directory_windows: c:/devel/invoke-base
     working_directory_mac: ~/Desktop/invoke-base
+
+    docker_toolbox_versions:
+      - version: 1.12.3
+        windows:
+          installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe
+          install_path: c:/Program Files/Docker Toolbox
 
     node_versions:
       - version: 4.5.0
@@ -70,7 +84,5 @@ compile_config:
 
 compile_docker_localize:
   entries:
-    - in:  tests/test-compose.yml
-      out: tests/test-compose.localized.yml
-    - in:  _config-test.yml
-      out: _config-test.localized.yml
+    - in:  tests/full/docker/test_compose.yml
+      out: tests/full/docker/test_compose.localized.yml

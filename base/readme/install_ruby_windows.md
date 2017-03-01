@@ -5,7 +5,6 @@
 {% set install_params_ruby = install_params_ruby.update(version_available) %}
 {% endif %}
 {% endfor %}
-
 ## Installing Ruby
 
 [{{ install_params_ruby.installer_url }}]({{ install_params_ruby.installer_url }})
@@ -37,4 +36,5 @@ When installing the Ruby DevKit:
   ruby dk.rb init
   ruby dk.rb install
   ~~~
+
 {% endif %}

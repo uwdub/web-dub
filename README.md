@@ -7,6 +7,11 @@ Dependencies required for this project are:
 - Node 4.5.0
 - Ruby 2.3.3
 - Ruby DevKit
+- Docker Toolbox 1.12.3
+
+  Note we are using this version due to a potential bug in 1.12.5, which is unable to mount volumes on Windows.
+
+  [https://github.com/docker/toolbox/issues/607](https://github.com/docker/toolbox/issues/607)
 
 # Windows Installation
 
@@ -86,6 +91,20 @@ When installing the Ruby DevKit:
   ruby dk.rb install
   ~~~
 
+## Installing Docker Toolbox
+
+[https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe](https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe)
+
+When installing Docker Toolbox:
+
+- On 'Select Destination Location':
+
+  Set an installation path of c:/Program Files/Docker Toolbox.
+
+- On 'Select Components':
+
+  Uncheck 'Kitematic for Windows'.
+
 # Mac Installation
 
 ## Installing Homebrew
@@ -162,3 +181,7 @@ rbenv local 2.3.3
 ### Installing Ruby DevKit:
 
 Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
+
+## Installing Docker Toolbox
+
+`TODO`
