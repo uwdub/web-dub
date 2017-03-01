@@ -7,7 +7,7 @@
 {% endfor %}
 ## Installing Node
 
-[{{ install_params_node.installer_url }}]({{ install_params_node.installer_url }})
+[{{ install_params_node.windows.installer_url }}]({{ install_params_node.windows.installer_url }})
 
 The default installation options are appropriate.
 
