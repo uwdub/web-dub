@@ -3,6 +3,7 @@ import invoke
 
 task_module_names = [
     'base.invoke.tasks.compile',
+    'base.invoke.tasks.docker',
     'base.invoke.tasks.update',
 ]
 
