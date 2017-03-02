@@ -109,3 +109,7 @@ To build the site:
 To build and serve the site on `localhost:4000`, continuously updating based on changes:
 
     invoke serve_test
+
+# Docker-based building and serving
+
+You can use Docker to download a prebuilt development environment for this website, using the provided `Dockerfile`.  To build the development environment, run `docker build --squash -t web-dub .`.  If you just want to build this website, and don't care about building the development environment itself, you can use a prebuilt Docker image (@staticfloat) through `docker run -p 4000:4000/tcp -v $(pwd):/app staticfloat/web-dub`.  This will build the website and serve it on http://localhost:4000
