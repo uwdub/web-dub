@@ -24,3 +24,4 @@ To build the site:
 To build and serve the site on `localhost:4000`, continuously updating based on changes:
 
     invoke serve_test
+{# This comment gives us a newline at the end of the generated file #}
