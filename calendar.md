@@ -23,3 +23,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 {% include seminartable.md seminars="previous" %}
   </div>
 </div>
+
+# Subscribing to DUB Calendar
+
+You can add our [calendar](https://calendar.google.com/calendar/ical/designusebuild%40gmail.com/public/basic.ics) to your calendar software (e.g., [Google Calendar](https://support.google.com/calendar/answer/37100?co=GENIE.Platform%3DDesktop&hl=en)).
