@@ -49,7 +49,7 @@ def update_dependencies():
     }
 
     # Parse our compile config
-    with open('_compile-config.yml') as f:
+    with open('_compile-config.yml', encoding='utf-8') as f:
         compile_config_yaml = yaml.safe_load(f)
 
     # The npm install command sometimes outputs characters that cause Unicode
@@ -112,7 +112,7 @@ def update_dependencies():
 @invoke.task(pre=[update_dependencies])
 def compile_config():
     # Parse our compile config
-    with open('_compile-config.yml') as f:
+    with open('_compile-config.yml', encoding='utf-8') as f:
         compile_config_yaml = yaml.safe_load(f)
 
     # Compile each jinja2 file
@@ -122,14 +122,14 @@ def compile_config():
             undefined=jinja2.StrictUndefined
         )
         template = jinja2_environment.get_template(jinja2_entry['in'])
-        with open(jinja2_entry['out'], 'w') as f:
+        with open(jinja2_entry['out'], 'w', encoding='utf-8') as f:
             f.write(template.render(compile_config_yaml['config']))
 
 
 @invoke.task(pre=[update_dependencies])
 def compile_calendar():
     # Obtain our stored sequences
-    with open('_compile-calendar-sequences.yml') as f:
+    with open('_compile-calendar-sequences.yml', encoding='utf-8') as f:
         seminar_calendar_sequences = yaml.safe_load(f)['sequences']
     # Iterate over all our seminar files
     seminar_paths = [
@@ -145,7 +145,7 @@ def compile_calendar():
         # Get the hash and sequence from the file, to compare against our stored data
         with open(seminar_path_current, 'rb') as f:
             seminar_hash_current = hashlib.md5(f.read()).hexdigest()
-        with open(seminar_path_current) as f:
+        with open(seminar_path_current, encoding='utf-8') as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
         # Regardless of platform we're on, standardize the path we store (e.g., slashes)
@@ -164,14 +164,14 @@ def compile_calendar():
             seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
 
             # pyyaml does not preserve comments, so we brute force modification of the seminar yml file
-            with open(seminar_path_current) as f:
+            with open(seminar_path_current, encoding='utf-8') as f:
                 seminar_contents = f.read()
             seminar_contents = re.sub(
                 'sequence: {}'.format(seminar_sequence_stored),
                 'sequence: {}'.format(seminar_sequence_current),
                 seminar_contents
             )
-            with open(seminar_path_current, 'w') as f:
+            with open(seminar_path_current, 'w', encoding='utf-8') as f:
                 f.write(seminar_contents)
 
             # That changed the file, so update our hash, then store the updated sequence
@@ -184,8 +184,8 @@ def compile_calendar():
             }
 
     # Store our updated sequences
-    data = {'sequences': seminar_calendar_sequences }
-    with open('_compile-calendar-sequences.yml', 'w') as f:
+    data = {'sequences': seminar_calendar_sequences}
+    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8') as f:
         yaml.dump(
             data,
             stream=f,
@@ -204,7 +204,7 @@ def compile_calendar():
 
     for seminar_path_current in seminar_paths:
         # Parse the seminar
-        with open(seminar_path_current) as f:
+        with open(seminar_path_current, encoding='utf-8') as f:
             seminar_contents = list(yaml.safe_load_all(f))[0]
 
         # Add seminar as calendar event
@@ -348,7 +348,7 @@ def compile_calendar():
 @invoke.task(pre=[update_dependencies])
 def compile_calendar_increment_all_sequences():
     # Obtain our stored sequences
-    with open('_compile-calendar-sequences.yml') as f:
+    with open('_compile-calendar-sequences.yml', encoding='utf-8') as f:
         seminar_calendar_sequences = yaml.safe_load(f)['sequences']
 
     # Iterate over all our seminar files
@@ -364,7 +364,7 @@ def compile_calendar_increment_all_sequences():
         # Get the hash and sequence from the file
         with open(seminar_path_current, 'rb') as f:
             seminar_hash_current = hashlib.md5(f.read()).hexdigest()
-        with open(seminar_path_current) as f:
+        with open(seminar_path_current, encoding='utf-8') as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
         # Regardless of platform we're on, standardize the path we store (e.g., slashes)
@@ -383,14 +383,14 @@ def compile_calendar_increment_all_sequences():
         seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
 
         # pyyaml does not preserve comments, so we brute force modification of the seminar yml file
-        with open(seminar_path_current) as f:
+        with open(seminar_path_current, encoding='utf-8') as f:
             seminar_contents = f.read()
         seminar_contents = re.sub(
             'sequence: {}'.format(seminar_sequence_stored),
             'sequence: {}'.format(seminar_sequence_current),
             seminar_contents
         )
-        with open(seminar_path_current, 'w') as f:
+        with open(seminar_path_current, 'w', encoding='utf-8') as f:
             f.write(seminar_contents)
 
         # That changed the file, so update our hash, then store the updated sequence
@@ -403,8 +403,8 @@ def compile_calendar_increment_all_sequences():
         }
 
     # Store our updated sequences
-    data = {'sequences': seminar_calendar_sequences }
-    with open('_compile-calendar-sequences.yml', 'w') as f:
+    data = {'sequences': seminar_calendar_sequences}
+    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8') as f:
         yaml.dump(
             data,
             stream=f,
