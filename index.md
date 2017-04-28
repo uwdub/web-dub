@@ -20,16 +20,16 @@ title_bar_secondary: "HCI & Design at the University of Washington"
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ site.baseurl }}/posts/2017/cscw2017_slide.png" alt="CSCW 2017">
+          <img src="{{ site.baseurl }}/posts/2017/chi2017_slide.jpg" alt="CHI 2017">
           <div class="carousel-caption">
             <div class="carousel-caption-innter">
-            <h2>DUB at CSCW 2017</h2>
+            <h2>DUB at CHI 2017</h2>
             <p>
-                HCI & Design at the University of Washington<br>will have a large and quality presence at CSCW 2017.
+                HCI & Design at the University of Washington<br>will have a large and quality presence at CHI 2017.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2017/201701-cscw2017papers.html" class="btn btn-default btn-lg">
-                UW Research at CSCW 2017
+              <a href="{{ site.baseurl }}/posts/2017/201704-chi2017papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2017
               </a>
             </p>
             </div>
