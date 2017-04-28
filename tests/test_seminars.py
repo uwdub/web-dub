@@ -16,8 +16,14 @@ class TestSeminars(unittest.TestCase):
         ]
         for seminar_path_current in seminar_paths:
             try:
-                with open(seminar_path_current) as f:
-                    blocks = list(yaml.safe_load_all(f))
+                with open(seminar_path_current, encoding='utf-8') as f:
+                    blocks = yaml.safe_load_all(f)
+                    seminar = list(blocks)[0]
+            except IndexError as e:
+                self.assertIsNone(
+                    e,
+                    'Error parsing seminar file: {}'.format(seminar_path_current)
+                )
             except UnicodeDecodeError as e:
                 self.assertIsNone(
                     e,
@@ -28,6 +34,8 @@ class TestSeminars(unittest.TestCase):
                 blocks,
                 'Could not parse seminar file: {}'.format(seminar_path_current)
             )
+
+# “Stitching Worlds”
 
     def test_seminars_fields(self):
         """
@@ -40,7 +48,7 @@ class TestSeminars(unittest.TestCase):
             if seminar_file_entry.is_file()
         ]
         for seminar_path_current in seminar_paths:
-            with open(seminar_path_current) as f:
+            with open(seminar_path_current, encoding='utf-8') as f:
                 # First block should be our header
                 seminar = list(yaml.safe_load_all(f))[0]
 
