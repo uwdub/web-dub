@@ -4,7 +4,7 @@ import requests
 
 
 class TestConnect:
-    def test_connect_to_main(self):
+    def test_connect_to_nginx(self):
         response = requests.get(
             'http://{}:{}'.format(
                 base.docker.machine_ip(),

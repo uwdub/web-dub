@@ -6,16 +6,21 @@ import yaml
 
 
 @invoke.task()
+def docker_machine_ensure():
+    base.docker.machine_ensure()
+
+
+@invoke.task(pre=[docker_machine_ensure])
 def docker_console():
     base.docker.machine_console()
 
 
-@invoke.task()
+@invoke.task(pre=[docker_machine_ensure])
 def docker_ip():
     print(base.docker.machine_ip())
 
 
-@invoke.task()
+@invoke.task(pre=[docker_machine_ensure])
 def docker_localize():
     # Parse our config
     with open('_base_config.yml') as f:
@@ -33,11 +38,6 @@ def docker_localize():
                 'DOCKER_LOCALIZE_CWD': os.path.normpath(os.getcwd()).replace('\\', '/'),
                 'DOCKER_LOCALIZE_IP': base.docker.machine_ip()
             }))
-
-
-@invoke.task()
-def docker_machine_ensure():
-    base.docker.machine_ensure()
 
 
 @invoke.task(pre=[docker_localize])
