@@ -4,14 +4,6 @@ This is the beginning of a project template.
 
 Dependencies required for this project are:
 - Python 3.5.2
-- Node 4.5.0
-- Ruby 2.3.3
-- Ruby DevKit
-- Docker Toolbox 1.12.3
-
-  Note we are using this version due to a potential bug in 1.12.5, which is unable to mount volumes on Windows.
-
-  [https://github.com/docker/toolbox/issues/607](https://github.com/docker/toolbox/issues/607)
 
 # Windows Installation
 
@@ -52,58 +44,6 @@ Next activate that virtual environment and install our Python dependencies:
 env35/Scripts/activate.bat
 pip install -r requirements3.txt
 ~~~
-
-## Installing Node
-
-[https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi](https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi)
-
-The default installation options are appropriate.
-
-## Installing Ruby
-
-[https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe](https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe)
-
-This documentation assumes an installation path of `c:/Ruby233`.
-
-When installing Ruby:
-
-- On 'Installation Destination and Optional Tasks':
-
-  Set an installation path of `c:/Ruby233`.
-
-  Check 'Add Ruby executables to your PATH'.
-
-### Installing Ruby DevKit:
-
-[https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe](https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe)
-
-This documentation assumes an installation path of `c:/RubyDevKit`.
-
-When installing the Ruby DevKit:
-
-- Extract to `c:/RubyDevKit`.
-
-- Install the DevKit into the Ruby installation:
-
-  ~~~
-  cd c:/RubyDevKit
-  ruby dk.rb init
-  ruby dk.rb install
-  ~~~
-
-## Installing Docker Toolbox
-
-[https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe](https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe)
-
-When installing Docker Toolbox:
-
-- On 'Select Destination Location':
-
-  Set an installation path of c:/Program Files/Docker Toolbox.
-
-- On 'Select Components':
-
-  Uncheck 'Kitematic for Windows'.
 
 # Mac Installation
 
@@ -146,42 +86,3 @@ source env35/bin/activate
 pip3 install -r requirements3.txt
 ~~~
 
-## Installing Node
-
-~~~
-brew install node
-~~~
-
-## Installing Ruby
-
-~~~
-brew install rbenv
-~~~
-
-Configure the terminal to include `rbenv`:
-
-~~~
-echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.bash_profile`
-source ~/.bash_profile`
-~~~
-
-Install the correct version of Ruby:
-
-~~~
-rbenv install 2.3.3
-rbenv global 2.3.3
-~~~
-
-Alternatively, you can specify a Ruby version for the directory:
-
-~~~
-rbenv local 2.3.3
-~~~
-
-### Installing Ruby DevKit:
-
-Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
-
-## Installing Docker Toolbox
-
-`TODO`

@@ -1,17 +1,11 @@
 # This file compiled from .travis.yml.in
 
-sudo: required
+sudo: false
 
 language: python
 
 python:
   - "3.5.2"
-
-services:
-  - docker
-
-env:
-  - BASE_DOCKER_ON_TRAVIS=true
 
 cache:
   pip: true
@@ -21,37 +15,9 @@ install:
   - python -m pip install --upgrade pip==8.1.1
   - python -m pip install -r requirements3.txt
 
-  # Install Node
-  - nvm install 4.5.0
-
-  # Install Ruby
-  - rvm install 2.3.3
-  - rvm @global do gem install bundler -v 1.13.6
-  - |
-    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!=1.13.6" )
-    if [ "$bundler_uninstall" == "true" ]
-    then
-      rvm @global do gem uninstall bundler -v "!=1.13.6"
-    fi
-  - rvm use 2.3.3 --default
-
-  # Install Docker and Docker-Compose
-  - apt-cache madison docker-engine
-  - docker version
-  - sudo apt-get -o Dpkg::Options::="--force-confnew" install --yes --force-yes docker-engine=1.11.2-0~trusty
-  - sudo rm /usr/local/bin/docker-compose
-  - curl -L https://github.com/docker/compose/releases/download/1.8.0-rc1/docker-compose-`uname -s`-`uname -m` > docker-compose
-  - chmod +x docker-compose
-  - sudo mv docker-compose /usr/local/bin
-  - docker version
-  - docker-compose version
-
   # Invoke will get our other dependencies
   - invoke update_dependencies
 
 script:
-  - |
-    invoke docker_start
-    sleep 60
   - nosetests tests.fast
   - nosetests
