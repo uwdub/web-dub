@@ -7,16 +7,16 @@ config:
     invoke_version: 0.12.2
 
   node:
-    required: true
+    required: false
     version: 4.5.0
 
   ruby:
-    required: true
+    required: false
     version: 2.3.3
     bundler_version: 1.13.6
 
   docker:
-    required: true
+    required: false
 
     toolbox:
       # Docker Toolbox is currently pinned by this bug:

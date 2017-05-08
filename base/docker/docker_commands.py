@@ -1,3 +1,4 @@
+import base.invoke.tasks.command
 import os
 import subprocess
 import sys
@@ -38,18 +39,7 @@ def compose_run(file_compose, compose_command):
         raise Exception('Unknown runtime environment')
 
     # Call the command
-    process = subprocess.Popen(
-        command,
-        shell=True,
-        # stdout=subprocess.PIPE,
-        # stderr=subprocess.PIPE,
-        # universal_newlines=True
-    )
-    # for line in process.stdout:
-    #     flag_print = line.startswith('Step ')
-    #
-    #     if flag_print:
-    #         print(line, end='', flush=True)
+    result = base.invoke.tasks.command.run(command)
 
 
 # def docker_run(docker_command, check_result=True):
@@ -79,16 +69,7 @@ def docker_run(docker_command):
         raise Exception('Unknown runtime environment')
 
     # Call the command
-    result = subprocess.run(
-        command,
-        # shell=True,
-        # stdout=subprocess.PIPE,
-        # stderr=subprocess.PIPE
-    )
-    # if check_result:
-    #     _check_result(command, result)
-    #
-    # return result
+    result = base.invoke.tasks.command.run(command)
 
 
 def machine_console():
@@ -147,13 +128,7 @@ def machine_ensure():
         raise Exception('Unknown runtime environment')
 
     # Call the command
-    result = subprocess.run(
-        command,
-        shell=True,
-        # stdout=subprocess.PIPE,
-        # stderr=subprocess.PIPE
-    )
-    # _check_result(command, result)
+    result = base.invoke.tasks.command.run(command)
 
 
 def machine_ip():
@@ -178,14 +153,8 @@ def machine_ip():
         raise Exception('Unknown runtime environment')
 
     # Call the command
-    result = subprocess.run(
-        command,
-        shell=True,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE
-    )
-    # _check_result(command, result)
+    result = base.invoke.tasks.command.run(command)
 
-    ip_address = result.stdout.decode('utf-8', 'backslashreplace').strip()
+    ip_address = result.stdout.strip()
 
     return ip_address
