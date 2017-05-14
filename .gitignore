@@ -5,21 +5,21 @@
 # MacOS files
 .DS_Store
 
-# Our build of the calendar
-calendar.ics
+# Python environment
+env35
+
+# Python compilation
+*.pyc
+
+# Node install packages
+node_modules
+
+# Secrets that should not be committed, such as passwords or keys
+/secrets
 
 # Jekyll's build of the site
 .jekyll-metadata
 _site
 
-# Our Python environment
-env35
-
-# Compiled Python
-*.pyc
-
-# Installed node packages
-node_modules
-
-# Any secrets, such as passwords or keys
-/secrets
+# Build of the calendar
+calendar.ics
