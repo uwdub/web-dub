@@ -1,9 +1,10 @@
 # This file compiled from requirements3.in.in
 
+icalendar
 invoke==0.12.2
 jinja2
+markdown
 nose
 pip-tools
 pyyaml
-icalendar
-markdown
+requests
