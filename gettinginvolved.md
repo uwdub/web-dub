@@ -55,7 +55,7 @@ As a grassroots organization, we are always looking for volunteers to step up an
 	</tr>
 	<tr>
 		<td>Doctoral Consortium</td>
-		<td>J<a href="/posts/2017/201701-dubdc.html">2017</a> organizers:<br />
+		<td><a href="/posts/2017/201701-dubdc.html">2017</a> organizers:<br />
 		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary</td>
 		<td></td>
 	</tr>
