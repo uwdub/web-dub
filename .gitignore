@@ -14,7 +14,7 @@ env35
 # Node install packages
 node_modules
 
-# Docker files that have been localized
+# Docker testing files that have been localized
 tests/full/docker/test_compose.localized.yml
 
 # Secrets that should not be committed, such as passwords or keys
