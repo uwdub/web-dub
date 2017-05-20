@@ -41,7 +41,7 @@ As a grassroots organization, we are always looking for volunteers to step up an
 	</tr>
 	<tr>
 		<td>Seminar Series</td>
-		<td>Sean Munson, Katie O’Leary, Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Bert Zhang</td>
+		<td>Sean Munson, Katie O’Leary (Diversity & Outreach Coordinator), Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Bert Zhang</td>
 		<td>speak@</td>
 	</tr>
 	<tr>
