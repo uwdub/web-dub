@@ -46,16 +46,16 @@ As a grassroots organization, we are always looking for volunteers to step up an
 	</tr>
 	<tr>
 		<td>Retreat</td>
-		<td>*2017 organizers:*<br />
+		<td><em>2017 organizers:</em><br />
 		Currently seeking 2017 faculty organizers!<br />
 		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br /><br />
-		*2016 organizers:*<br />
+		<em>2016 organizers:</em><br />
 		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>
 		<td></td>
 	</tr>
 	<tr>
 		<td>Doctoral Consortium</td>
-		<td>*<a href="/posts/2017/201701-dubdc.html">2017</a> organizers:*<br />
+		<td><em><a href="/posts/2017/201701-dubdc.html">2017</a> organizers:</em><br />
 		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary</td>
 		<td></td>
 	</tr>
