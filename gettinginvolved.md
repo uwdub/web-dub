@@ -51,8 +51,13 @@ As a grassroots organization, we are always looking for volunteers to step up an
 		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br />
 		2016 organizers: <br />
 		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>
-		<td><a href="/posts/2017/201701-dubdc.html">2017</a> organizers:<br />
-		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary </td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Doctoral Consortium</td>
+		<td>J<a href="/posts/2017/201701-dubdc.html">2017</a> organizers:<br />
+		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary</td>
+		<td></td>
 	</tr>
 	<tr>
 		<td>Website</td>
@@ -60,7 +65,7 @@ As a grassroots organization, we are always looking for volunteers to step up an
 		<td>See <a href="https://github.com/uwdub/web-dub">github</a></td>
 	</tr>
 	<tr>
-		<td><a href="https://medium.com/hci-design-at-uw">Medium</a>Curation</td>
+		<td><a href="https://medium.com/hci-design-at-uw">Medium</a> Curation</td>
 		<td>Sean Munson</td>
 		<td></td>
 	</tr>
