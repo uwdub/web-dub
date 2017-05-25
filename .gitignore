@@ -6,16 +6,16 @@
 .DS_Store
 
 # Python environment
-env35
+/env35
 
 # Python compilation
 *.pyc
 
 # Node install packages
-node_modules
+/node_modules
 
 # Docker testing files that have been localized
-tests/full/docker/test_compose.localized.yml
+/tests/full/docker/test_compose.localized.yml
 
 # Secrets that should not be committed, such as passwords or keys
 /secrets

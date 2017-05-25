@@ -1,4 +1,5 @@
 import base.invoke.tasks.command
+import base.invoke.tasks.compile
 import invoke
 import re
 import sys
@@ -10,7 +11,9 @@ def update_base():
     invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)
 
 
-@invoke.task
+@invoke.task(pre=[
+    base.invoke.tasks.compile.compile_config
+])
 def update_dependencies():
     # Parse our config
     with open('_base_config.yml') as f:
