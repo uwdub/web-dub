@@ -2,6 +2,7 @@ import importlib
 import invoke
 
 task_module_names = [
+    'base.invoke.tasks.calendar',
     'base.invoke.tasks.compile',
     'base.invoke.tasks.jekyll',
     'base.invoke.tasks.update',

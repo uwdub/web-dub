@@ -1,9 +1,13 @@
+import base.invoke.tasks.calendar
 import base.invoke.tasks.update
 import invoke
 import sys
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[
+    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.calendar.compile_calendar
+])
 def build_production():
     invoke.run(
         'bundle exec jekyll build -t --config _config.yml,_config-production.yml',
@@ -11,7 +15,10 @@ def build_production():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[
+    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.calendar.compile_calendar
+])
 def build_test():
     invoke.run(
         'bundle exec jekyll build -t --config _config.yml,_config-test.yml',
@@ -19,7 +26,10 @@ def build_test():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[
+    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.calendar.compile_calendar
+])
 def serve_production():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-production.yml -H 0.0.0.0',
@@ -27,7 +37,10 @@ def serve_production():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[
+    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.calendar.compile_calendar
+])
 def serve_test():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-test.yml --watch --force_polling',
