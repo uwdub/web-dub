@@ -1,5 +1,4 @@
 {% if ruby is defined and ruby.required %}
-
 ## Installing Ruby
 
 ~~~
@@ -29,4 +28,5 @@ rbenv local {{ ruby.version }}
 ### Installing Ruby DevKit:
 
 Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
+
 {% endif %}

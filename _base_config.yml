@@ -1,7 +1,7 @@
 config:
   python:
     version: 3.5.2
-    pip_version: 8.1.1
+    pip_version: 9.0.1
     # Invoke is currently pinned by this bug:
     #   https://github.com/pyinvoke/invoke/issues/345
     invoke_version: 0.12.2
@@ -16,11 +16,19 @@ config:
     bundler_version: 1.13.6
 
   docker:
-    cmd_bash_macos: /bin/bash
-    cmd_dockermachine_macos: /usr/local/bin/docker-machine
+    required: false
 
-    cmd_bash_windows: C:/Program Files/Git/bin/bash
-    cmd_dockermachine_windows: C:/Program Files/Docker Toolbox/docker-machine.exe
+    toolbox:
+      # Docker Toolbox is currently pinned by this bug:
+      #   https://github.com/docker/toolbox/issues/607
+      version: 1.12.3
+
+      macos:
+        cmd_bash: /bin/bash
+        cmd_dockermachine: /usr/local/bin/docker-machine
+      windows:
+        cmd_bash: c:/Program Files/Git/bin/bash
+        cmd_dockermachine: c:/Program Files/Docker Toolbox/docker-machine.exe
 
     travis:
       version: 1.11.2-0~trusty
@@ -28,36 +36,49 @@ config:
       compose_up_delay: 60
 
   readme:
-    working_directory_windows: c:/devel/web-jekyll-base
-    working_directory_mac: ~/Desktop/web-jekyll-base
-
-    node_versions:
-      - version: 4.5.0
-        installer_url: https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi
+    working_directory_windows: c:/devel/invoke-base
+    working_directory_mac: ~/Desktop/invoke-base
 
     python_versions:
       - version: 3.5.2
-        installer_url: https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
-        install_path: c:/Python35
         virtual_environment_name: env35
         requirements_name: requirements3.txt
+        windows:
+          installer_url: https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
+          install_path: c:/Python35
+
+    node_versions:
+      - version: 4.5.0
+        windows:
+          installer_url: https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi
 
     ruby_versions:
       - version: 2.2.3
-        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe
-        install_path: c:/Ruby223
-        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-        install_devkit_path: c:/RubyDevKit
+        windows:
+          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe
+          install_path: c:/Ruby223
+          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+          install_devkit_path: c:/RubyDevKit
       - version: 2.3.1
-        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe
-        install_path: c:/Ruby231
-        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-        install_devkit_path: c:/RubyDevKit
+        windows:
+          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe
+          install_path: c:/Ruby231
+          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+          install_devkit_path: c:/RubyDevKit
       - version: 2.3.3
-        installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe
-        install_path: c:/Ruby233
-        installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-        install_devkit_path: c:/RubyDevKit
+        windows:
+          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe
+          install_path: c:/Ruby233
+          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
+          install_devkit_path: c:/RubyDevKit
+
+    docker_toolbox_versions:
+      - version: 1.12.3
+        macos:
+          installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.pkg
+        windows:
+          installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe
+          install_path: c:/Program Files/Docker Toolbox
 
 compile_config:
   entries:
@@ -70,7 +91,5 @@ compile_config:
 
 compile_docker_localize:
   entries:
-    - in:  tests/test-compose.yml
-      out: tests/test-compose.localized.yml
-    - in:  _config-test.yml
-      out: _config-test.localized.yml
+    - in:  tests/full/docker/test_compose.yml
+      out: tests/full/docker/test_compose.localized.yml
