@@ -4,7 +4,6 @@
 {% set install_params_python = install_params_python.update(version_available) %}
 {% endif %}
 {% endfor %}
-
 ## Installing Python
 
 ~~~
@@ -33,4 +32,5 @@ Next activate that virtual environment and install our Python dependencies:
 source {{ install_params_python.virtual_environment_name }}/bin/activate
 pip3 install -r {{ install_params_python.requirements_name }}
 ~~~
+
 

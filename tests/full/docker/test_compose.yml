@@ -1,0 +1,5 @@
+test_nginx:
+  container_name: test_nginx
+  image: "nginx"
+  ports:
+    - "80:80"

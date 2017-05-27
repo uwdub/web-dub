@@ -6,13 +6,16 @@
 .DS_Store
 
 # Python environment
-env35
+/env35
 
 # Python compilation
 *.pyc
 
 # Node install packages
-node_modules
+/node_modules
+
+# Docker testing files that have been localized
+/tests/full/docker/test_compose.localized.yml
 
 # Jekyll's build of the site
 .jekyll-metadata

@@ -1,4 +1,3 @@
-
 ## Installing Homebrew
 
 This documentation assumes use of Homebrew: [https://brew.sh/](https://brew.sh/).
@@ -8,4 +7,5 @@ This documentation assumes use of Homebrew: [https://brew.sh/](https://brew.sh/)
 ~~~
 
 The default installation options are appropriate.
+
 
