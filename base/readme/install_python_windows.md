@@ -4,12 +4,11 @@
 {% set install_params_python = install_params_python.update(version_available) %}
 {% endif %}
 {% endfor %}
-
 ## Installing Python
 
-[{{ install_params_python.installer_url }}]({{ install_params_python.installer_url }})
+[{{ install_params_python.windows.installer_url }}]({{ install_params_python.windows.installer_url }})
 
-This documentation assumes an installation path of `{{ install_params_python.install_path }}`.
+This documentation assumes an installation path of `{{ install_params_python.windows.install_path }}`.
 
 When installing Python:
 
@@ -22,7 +21,7 @@ When installing Python:
 
 - On 'Advanced Options':
 
-  Set an installation path of `{{ install_params_python.install_path }}`.
+  Set an installation path of `{{ install_params_python.windows.install_path }}`.
 
   Uncheck all options.
 
@@ -31,7 +30,7 @@ When installing Python:
 Create the virtual environment. From the working directory of our project (e.g., `{{ readme.working_directory_windows }}`):
 
 ~~~
-{{ install_params_python.install_path }}/python.exe -m venv {{ install_params_python.virtual_environment_name }}
+{{ install_params_python.windows.install_path }}/python.exe -m venv {{ install_params_python.virtual_environment_name }}
 ~~~
 
 This will create a directory for the virtual environment (e.g., `{{ readme.working_directory_windows }}/{{ install_params_python.virtual_environment_name }}/`).
@@ -42,4 +41,5 @@ Next activate that virtual environment and install our Python dependencies:
 {{ install_params_python.virtual_environment_name }}/Scripts/activate.bat
 pip install -r {{ install_params_python.requirements_name }}
 ~~~
+
 
