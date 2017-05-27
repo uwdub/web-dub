@@ -5,10 +5,10 @@
 {% set install_params_node = install_params_node.update(version_available) %}
 {% endif %}
 {% endfor %}
-
 ## Installing Node
 
-[{{ install_params_node.installer_url }}]({{ install_params_node.installer_url }})
+[{{ install_params_node.windows.installer_url }}]({{ install_params_node.windows.installer_url }})
 
 The default installation options are appropriate.
+
 {% endif %}
