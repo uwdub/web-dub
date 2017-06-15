@@ -54,7 +54,7 @@ def compile_calendar():
             with open(seminar_path_current, encoding='utf-8') as f:
                 seminar_contents = f.read()
             seminar_contents = re.sub(
-                'sequence: {}'.format(seminar_sequence_stored),
+                'sequence: {}'.format('(\d*)'),
                 'sequence: {}'.format(seminar_sequence_current),
                 seminar_contents
             )
@@ -275,7 +275,7 @@ def compile_calendar_increment_all_sequences():
         with open(seminar_path_current, encoding='utf-8') as f:
             seminar_contents = f.read()
         seminar_contents = re.sub(
-            'sequence: {}'.format(seminar_sequence_stored),
+            'sequence: {}'.format('(\d*)'),
             'sequence: {}'.format(seminar_sequence_current),
             seminar_contents
         )
