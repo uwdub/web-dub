@@ -233,8 +233,10 @@ class TestSeminars(unittest.TestCase):
                         'HUB 250',
                         'HUB 332',
                         'HUB 334',
+                        'HUB 340',
                         'Kane 220',
                         'Kane 225',
+                        'More 230',
                         'Sieg 233',
                         'StartUp Hall Meeting Room'
                     ],
