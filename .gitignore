@@ -17,9 +17,9 @@
 # Docker testing files that have been localized
 /tests/full/docker/test_compose.localized.yml
 
+# Secrets that should not be committed, such as passwords or keys
+/secrets
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
-
-# Secrets that should not be committed, such as passwords or keys
-/secrets
