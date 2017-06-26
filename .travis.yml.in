@@ -50,7 +50,9 @@ install:
 {% endif %}
 {% if docker is defined and docker.required %}
   # Install Docker and Docker-Compose
-  - apt-cache madison docker-engine
+  - sudo add-apt-repository "deb https://apt.dockerproject.org/repo ubuntu-trusty main"
+  - sudo apt-get update
+  - apt-cache policy docker-engine
   - docker version
   - sudo apt-get -o Dpkg::Options::="--force-confnew" install --yes --force-yes docker-engine={{ docker.travis.version }}
   - sudo rm /usr/local/bin/docker-compose
