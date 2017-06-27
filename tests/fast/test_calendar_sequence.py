@@ -22,8 +22,11 @@ class TestSeminarSequence(object):
 
         for seminar_path_current in seminar_paths:
             # Get the hash and sequence from the file
-            with open(seminar_path_current, 'rb') as f:
-                seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+            with open(seminar_path_current, encoding='utf-8') as f:
+                hash = hashlib.md5()
+                for line in f:
+                    hash.update(line.strip().encode(encoding='utf-8'))
+                seminar_hash_current = hash.hexdigest()
             with open(seminar_path_current, encoding='utf-8') as f:
                 seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 

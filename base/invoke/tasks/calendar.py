@@ -30,8 +30,11 @@ def compile_calendar():
     # Maintain the sequence field for each seminar
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file, to compare against our stored data
-        with open(seminar_path_current, 'rb') as f:
-            seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+        with open(seminar_path_current, encoding='utf-8') as f:
+            hash = hashlib.md5()
+            for line in f:
+                hash.update(line.strip().encode(encoding='utf-8'))
+            seminar_hash_current = hash.hexdigest()
         with open(seminar_path_current, encoding='utf-8') as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
@@ -257,8 +260,11 @@ def compile_calendar_increment_all_sequences():
 
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file
-        with open(seminar_path_current, 'rb') as f:
-            seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+        with open(seminar_path_current, encoding='utf-8') as f:
+            hash = hashlib.md5()
+            for line in f:
+                hash.update(line.strip().encode(encoding='utf-8'))
+            seminar_hash_current = hash.hexdigest()
         with open(seminar_path_current, encoding='utf-8') as f:
             seminar_sequence_current = list(yaml.safe_load_all(f))[0]['sequence']
 
@@ -289,8 +295,11 @@ def compile_calendar_increment_all_sequences():
             f.write(seminar_contents)
 
         # That changed the file, so update our hash, then store the updated sequence
-        with open(seminar_path_current, 'rb') as f:
-            seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+        with open(seminar_path_current, encoding='utf-8') as f:
+            hash = hashlib.md5()
+            for line in f:
+                hash.update(line.strip().encode(encoding='utf-8'))
+            seminar_hash_current = hash.hexdigest()
 
         seminar_calendar_sequences[seminar_path_stored] = {
             'hash': seminar_hash_current,
