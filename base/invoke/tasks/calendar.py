@@ -47,28 +47,34 @@ def compile_calendar():
         seminar_hash_stored = seminar_calendar_sequences[seminar_path_stored]['hash']
         seminar_sequence_stored = seminar_calendar_sequences[seminar_path_stored]['sequence']
         if seminar_hash_current != seminar_hash_stored:
-            # Change detected, we need to bump the sequence
-            seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
+            # # Change detected, we need to bump the sequence
+            # seminar_sequence_current = max(seminar_sequence_current, seminar_sequence_stored) + 1
+            #
+            # # pyyaml does not preserve comments, so we brute force modification of the seminar yml file
+            # with open(seminar_path_current, encoding='utf-8') as f:
+            #     seminar_contents = f.read()
+            # seminar_contents = re.sub(
+            #     'sequence: {}'.format('(\d*)'),
+            #     'sequence: {}'.format(seminar_sequence_current),
+            #     seminar_contents
+            # )
+            # with open(seminar_path_current, 'w', encoding='utf-8') as f:
+            #     f.write(seminar_contents)
+            #
+            # # That changed the file, so update our hash, then store the updated sequence
+            # with open(seminar_path_current, 'rb') as f:
+            #     seminar_hash_current = hashlib.md5(f.read()).hexdigest()
+            #
+            # seminar_calendar_sequences[seminar_path_stored] = {
+            #     'hash': seminar_hash_current,
+            #     'sequence': seminar_sequence_current
+            # }
 
-            # pyyaml does not preserve comments, so we brute force modification of the seminar yml file
-            with open(seminar_path_current, encoding='utf-8') as f:
-                seminar_contents = f.read()
-            seminar_contents = re.sub(
-                'sequence: {}'.format('(\d*)'),
-                'sequence: {}'.format(seminar_sequence_current),
-                seminar_contents
-            )
-            with open(seminar_path_current, 'w', encoding='utf-8') as f:
-                f.write(seminar_contents)
-
-            # That changed the file, so update our hash, then store the updated sequence
-            with open(seminar_path_current, 'rb') as f:
-                seminar_hash_current = hashlib.md5(f.read()).hexdigest()
-
-            seminar_calendar_sequences[seminar_path_stored] = {
-                'hash': seminar_hash_current,
-                'sequence': seminar_sequence_current
-            }
+            if seminar_sequence_current > seminar_sequence_stored:
+                seminar_calendar_sequences[seminar_path_stored] = {
+                    'hash': seminar_hash_current,
+                    'sequence': seminar_sequence_current
+                }
 
     # Store our updated sequences
     data = {'sequences': seminar_calendar_sequences}

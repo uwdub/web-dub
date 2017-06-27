@@ -1,3 +1,4 @@
+import nose.tools
 import os
 import unittest
 import yaml
@@ -71,7 +72,7 @@ class TestSeminars(unittest.TestCase):
                 'No sequence in {}'.format(seminar_path_current)
             )
             if os.path.normpath(seminar_path_current) != os.path.normpath('_seminars/_template.md'):
-                self.assertGreater(
+                nose.tools.assert_not_equal(
                     seminar['sequence'],
                     0,
                     'Sequence was not incremented in {}'.format(seminar_path_current)
