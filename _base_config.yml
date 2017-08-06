@@ -19,9 +19,7 @@ config:
     required: false
 
     toolbox:
-      # Docker Toolbox is currently pinned by this bug:
-      #   https://github.com/docker/toolbox/issues/607
-      version: 1.12.3
+      version: v17.06.0a-ce
 
       macos:
         cmd_bash: /bin/bash
@@ -73,6 +71,12 @@ config:
           install_devkit_path: c:/RubyDevKit
 
     docker_toolbox_versions:
+      - version: v17.06.0a-ce
+        macos:
+          installer_url: https://github.com/docker/toolbox/releases/download/v17.06.0a-ce/DockerToolbox-17.06.0a-ce.pkg
+        windows:
+          installer_url: https://github.com/docker/toolbox/releases/download/v17.06.0a-ce/DockerToolbox-17.06.0a-ce.exe
+          install_path: c:/Program Files/Docker Toolbox
       - version: 1.12.3
         macos:
           installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.pkg

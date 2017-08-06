@@ -9,6 +9,10 @@
 
 [{{ install_params_docker_toolbox.windows.installer_url }}]({{ install_params_docker_toolbox.windows.installer_url }})
 
+This installer must be run by right-clicking and selecting 'Run as administrator'.
+This is required even when using an Administrator account.
+Otherwise, VirtualBox can fail to create the host-only network required for VirtualBox and Docker Toolbox.
+
 When installing Docker Toolbox:
 
 - On 'Select Destination Location':
