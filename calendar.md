@@ -9,7 +9,12 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 <ul id="seminar-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
   <li class="active"><a href="#upcoming_seminars" data-toggle="tab">Upcoming Seminars</a></li>
   <li><a href="#previous_seminars" data-toggle="tab">Previous Seminars</a></li>
-  <li>Subscription link: <a href="http://www.google.com/calendar/render?cid=http://{{ site.baseurl }}/calendar.ics">Google</a> <a href="webcal://{{ site.baseurl }}/calendar.ics">Microsoft/Apple</a></li>
+</ul>
+
+<h4>Calendar Subscriptions</h4>
+<ul class="nav nav-pills nav-stacked">
+    <li><a href="http://www.google.com/calendar/render?cid=http://{{ site.baseurl }}/calendar.ics">Google Calendar</a></li>
+    <li><a href="webcal://{{ site.baseurl }}/calendar.ics">iCal / Webcal</a></li>
 </ul>
 
 <div class="sidebar_end"></div>
