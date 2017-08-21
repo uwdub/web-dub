@@ -41,10 +41,11 @@ def compile_calendar():
         # Regardless of platform we're on, standardize the path we store (e.g., slashes)
         seminar_path_stored = posixpath.join(*os.path.normpath(seminar_path_current).split(os.sep))
         if seminar_path_stored not in seminar_calendar_sequences:
-            # This is a seminar that is new to our sequence tracking
+            # This is a seminar that is new to our sequence tracking,
+            # decrement the initial sequence so it will be hashed and incremented
             seminar_calendar_sequences[seminar_path_stored] = {
                 'hash': 'invalid_hash_to_force_update',
-                'sequence': seminar_sequence_current
+                'sequence': seminar_sequence_current - 1
             }
 
         seminar_hash_stored = seminar_calendar_sequences[seminar_path_stored]['hash']
