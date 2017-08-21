@@ -306,8 +306,8 @@ sequences:
     hash: b8f232bdb1e8b02705ee6108d674822f
     sequence: 1
   _seminars/2017-10-18.md:
-    hash: c1c2d49518ef2f03a8ab3684b19bf7a4
-    sequence: 1
+    hash: bd714fd8d8e443befb09dba61825e7c6
+    sequence: 2
   _seminars/2017-10-25.md:
     hash: e02f20534797f37705c536bdea3d039e
     sequence: 1
@@ -330,14 +330,14 @@ sequences:
     hash: 4bae9e2210ee61042e6ab3b228495f5d
     sequence: 1
   _seminars/2017-12-13.md:
-    hash: 9377fa86c9b2f9fc8d130d16c09c0f0a
-    sequence: 1
+    hash: 5045ea133157c2648a729b0e48a50162
+    sequence: 2
   _seminars/2017-12-20.md:
-    hash: 9a12b1f6adc5e6d05e5c850c5f76a9cf
-    sequence: 1
+    hash: 84a7ab3ac7e2f1a557d35e80917040eb
+    sequence: 2
   _seminars/2017-12-27.md:
-    hash: a3d4917c824cb94fafd5f53dc0014893
-    sequence: 1
+    hash: ffec2676a2b1d0556ba45bff68d1361e
+    sequence: 2
   _seminars/2018-01-03.md:
     hash: 457d1787defd8397326744c3b8344323
     sequence: 1
