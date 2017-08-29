@@ -3,28 +3,44 @@ import sys
 
 
 def run(command, error_on_failure=True):
-    # for line in process.stdout:
-    #     flag_print = line.startswith('Step ')
-    #
-    #     if flag_print:
-    #         print(line, end='', flush=True)
-
     process = subprocess.Popen(
         command,
         shell=True,
         stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-        universal_newlines=True
+        stderr=subprocess.PIPE
     )
 
     output = ''
     for line in process.stdout:
+        line = str(line, encoding='utf-8')
+
         output += line
-        print(
-            line.encode(sys.getdefaultencoding(), errors='backslashreplace').decode(sys.getdefaultencoding()),
-            end='',
-            flush=True
-        )
+        try:
+            if sys.stdout.encoding:
+                print(
+                    line.encode(
+                        encoding=sys.stdout.encoding,
+                        errors='backslashreplace'
+                    ).decode(encoding=sys.stdout.encoding),
+                    end='',
+                    flush=True
+                )
+            else:
+                print(
+                    line,
+                    end='',
+                    flush=True
+                )
+        except UnicodeDecodeError:
+            print(
+                '== Unprintable line ==',
+                flush=True
+            )
+        except UnicodeEncodeError:
+            print(
+                '== Unprintable line ==',
+                flush=True
+            )
 
     process.wait()
     process.stdout = output
@@ -59,7 +75,8 @@ def run(command, error_on_failure=True):
                     process.stdout,
                     process.stderr
                 ),
-                file=sys.stderr, flush=True
+                file=sys.stderr,
+                flush=True
             )
 
             raise subprocess.CalledProcessError(
