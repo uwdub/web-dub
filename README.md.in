@@ -1,27 +1,3 @@
-This is a template for websites implemented using Jekyll.
+This is the beginning of a template for websites implemented using Jekyll.
 
 {% include "base/readme/install_dependencies.md" %}
-
-{% set install_params_python = {} %}
-{% for version_available in readme.python_versions %}
-{% if version_available.version == python.version %}
-{% set install_params_python = install_params_python.update(version_available) %}
-{% endif %}
-{% endfor %}
-## Building and Serving the Site
-
-Invoke automation is provided for building the site.
-
-If it is not already active, you need to re-activate the virtual environment.
-From the working directory of our project:
-
-    {{ install_params_python.virtual_environment_name }}\Scripts\activate.bat
-
-To build the site:
-
-    invoke build_test
-
-To build and serve the site on `localhost:4000`, continuously updating based on changes:
-
-    invoke serve_test
-{# This comment gives us a newline at the end of the generated file #}
