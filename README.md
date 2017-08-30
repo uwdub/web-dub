@@ -1,4 +1,4 @@
-This is a template for websites implemented using Jekyll.
+This is the beginning of a template for websites implemented using Jekyll.
 
 # Project Dependencies
 
@@ -163,20 +163,3 @@ rbenv local 2.3.3
 
 Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
 
-
-## Building and Serving the Site
-
-Invoke automation is provided for building the site.
-
-If it is not already active, you need to re-activate the virtual environment.
-From the working directory of our project:
-
-    env35\Scripts\activate.bat
-
-To build the site:
-
-    invoke build_test
-
-To build and serve the site on `localhost:4000`, continuously updating based on changes:
-
-    invoke serve_test
