@@ -258,23 +258,23 @@ sequences:
     hash: d9f0fbc7c1b3d9aa4cf67e34e22a029e
     sequence: 8
   _seminars/2017-06-28.md:
-    hash: ac9ef215be2f0a517864a137bca12a96
-    sequence: 7
-  _seminars/2017-07-05.md:
-    hash: 5c62d53c21363188789438f6aac756b3
-    sequence: 6
-  _seminars/2017-07-12.md:
-    hash: e264e2bff65b51a4de3288859068acf4
+    hash: eb86304f190ed9ba96bc6cac3e982730
     sequence: 8
-  _seminars/2017-07-19.md:
-    hash: 517c985697677782e6183cd3cc9273a7
-    sequence: 6
-  _seminars/2017-07-26.md:
-    hash: 59da1e710a07501f3f17ed9304f34606
+  _seminars/2017-07-05.md:
+    hash: 5db027a902bff434258605375d8f976a
     sequence: 7
+  _seminars/2017-07-12.md:
+    hash: b19f5b8d385d7655120b767880800dbe
+    sequence: 9
+  _seminars/2017-07-19.md:
+    hash: 5d40a6c8d04450e50646d752dd558768
+    sequence: 7
+  _seminars/2017-07-26.md:
+    hash: cd9a9aac0c78979a9383748215c7989a
+    sequence: 8
   _seminars/2017-08-02.md:
-    hash: dedf75b2101ec7fec2000a5bef72ecd3
-    sequence: 6
+    hash: f367a420dd7479d3c95605e1f29019d0
+    sequence: 7
   _seminars/2017-08-09.md:
     hash: 4e6082e30c1c369546edb24d9247e0b6
     sequence: 6
@@ -303,20 +303,20 @@ sequences:
     hash: baddca78d3efd0e81f7bd30762f181fc
     sequence: 2
   _seminars/2017-10-11.md:
-    hash: 660c5f2799ca41eb00181f6e657cc0e2
-    sequence: 2
+    hash: 62e47430281228d41c8831090de4c37a
+    sequence: 3
   _seminars/2017-10-18.md:
     hash: bd714fd8d8e443befb09dba61825e7c6
     sequence: 2
   _seminars/2017-10-25.md:
-    hash: c1ba141bad4d1648287158a735f41e08
-    sequence: 2
+    hash: 14fa3664df050e68e8c6ced069253e3e
+    sequence: 3
   _seminars/2017-11-01.md:
-    hash: d40dde6600b4af95b4e289b0f3e8ef87
-    sequence: 2
+    hash: 2fa0c885beb8300a473fa9d952ce7ad8
+    sequence: 3
   _seminars/2017-11-08.md:
-    hash: 01dc320e75b10ca0046da214d581f5d1
-    sequence: 2
+    hash: 73e5d2251fcda6c19f623c6973c10dca
+    sequence: 3
   _seminars/2017-11-15.md:
     hash: eddc072d039fa8b1be87d6e6da87c965
     sequence: 2
@@ -327,8 +327,8 @@ sequences:
     hash: 118896cbef099ebca2670213644c7bcb
     sequence: 2
   _seminars/2017-12-06.md:
-    hash: f5a6651cee518b883b80999c85559d5e
-    sequence: 2
+    hash: 6cb85dc5fc4ed98e9fcdb9b15e3b4102
+    sequence: 3
   _seminars/2017-12-13.md:
     hash: 5045ea133157c2648a729b0e48a50162
     sequence: 2
