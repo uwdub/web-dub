@@ -10,27 +10,26 @@
 
 @body-bg:                               @base-body-bg;
 
-@base-button-bg:                        @base-primary-color;
-@base-button-color:                     #ffffff;
-@base-button-hover:                     @base-hover-color;
+// Links
 
-// Buttons
+@link-color:                            @base-link-color;
+@link-hover-color:                      @base-link-hover-color;
+
+// -----------------------------------------------------------------------------
+// buttons: Style buttons to use our color and hover.
+// -----------------------------------------------------------------------------
+
 @btn-default-color:                     @base-button-color;
 @btn-default-bg:                        @base-button-bg;
 @btn-default-hover:                     @base-button-hover;
 @btn-default-border:                    #cccccc;
 
-// Buttons otherwise get darker on hover
+// Buttons otherwise just get darker on hover
 .btn-default {
   &:hover {
     background-color:                   @base-button-hover;
   }
 }
-
-// Links
-
-@link-color:                            @base-link-color;
-@link-hover-color:                      @base-link-hover-color;
 
 // -----------------------------------------------------------------------------
 // navbar: Style navbar-default according to base-navbar
@@ -45,8 +44,6 @@
 @navbar-default-link-hover-bg:          @base-navbar-link-hover-bg;
 @navbar-default-link-active-color:      @base-navbar-link-active-color;
 @navbar-default-link-active-bg:         @base-navbar-link-active-bg;
-// @navbar-default-link-disabled-color:    @base-navbar-link-disabled-color;
-// @navbar-default-link-disabled-bg:       @base-navbar-link-disabled-bg;
 
 // Navbar brand label
 @navbar-default-brand-color:            @base-navbar-link-color;

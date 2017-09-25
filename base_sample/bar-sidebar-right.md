@@ -2,7 +2,7 @@
 layout: base/bar/bar-sidebar-right
 title: "bar-sidebar-right"
 title_bar: "title_bar"
-title_bar_secondary: "title_bar_secondary"
+title_secondary: "title_secondary"
 ---
 
 <div class="sidebar_start"></div>
