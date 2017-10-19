@@ -41,16 +41,18 @@ As a grassroots organization, we are always looking for volunteers to step up an
 	</tr>
 	<tr>
 		<td>Seminar Series</td>
-		<td>Sean Munson, Katie O’Leary (Diversity & Outreach Coordinator), Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Bert Zhang</td>
+		<td>Sean Munson, Katie O’Leary (Diversity & Outreach Coordinator), Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Hy Nguyen<br />
+		Starting in 2018: Jennifer Mankoff, Anat Caspi
+		</td>
 		<td>speak@</td>
 	</tr>
 	<tr>
 		<td>Retreat</td>
 		<td><em>2017 organizers:</em><br />
-		Currently seeking 2017 faculty organizers!<br />
+		Maya Cakmak, Andy Davidson, Emily Lloyd, Mary Larson, Jason Yip<br />
 		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br /><br />
-		<em>2016 organizers:</em><br />
-		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>
+		<!-- <em>2016 organizers:</em><br />
+		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>-->
 		<td></td>
 	</tr>
 	<tr>
