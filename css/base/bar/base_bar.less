@@ -1,0 +1,28 @@
+.bar-navbar {
+  border:                               none;
+}
+
+.bar-bar
+{
+  background-color:                     @base-navbar-bg;
+  color:                                @base-navbar-color;
+}
+
+.base-main {
+  margin-bottom: 50px;
+}
+
+// apply these only at medium or larger
+@media (min-width: @screen-md-min) {
+    .bar-bar {
+        position: relative;
+    }
+
+    .bar-secondary {
+        text-align: right;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}

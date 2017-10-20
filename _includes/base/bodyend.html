@@ -1,0 +1,15 @@
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{{ site.baseurl }}/bootstrap/js/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap -->
+<script src="{{ site.baseurl }}/bootstrap/js/bootstrap.min.js"></script>
+<!-- Angular -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+{% for angular_include_current in page.angular_includes %}
+<script src="{{ angular_include_current | liquify }}"></script>
+{% endfor %}
+
+<!-- Fixes and things specific to our base -->
+<script src="{{ site.baseurl }}/js/base/enable-link-to-tabs.js"></script>
+{% if layout.base-bar-sidebar-right-js %}
+<script src="{{ site.baseurl }}/js/base/bar-sidebar-right.js"></script>
+{% endif %}

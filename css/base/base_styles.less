@@ -1,0 +1,82 @@
+////////////////////////////////////////////////////////////////////////////////
+// Apply our base variables to Bootstrap variables.
+////////////////////////////////////////////////////////////////////////////////
+
+// Fonts
+
+@icon-font-path:                        @base-font-path;
+
+// Background
+
+@body-bg:                               @base-body-bg;
+
+// Links
+
+@link-color:                            @base-link-color;
+@link-hover-color:                      @base-link-hover-color;
+
+// -----------------------------------------------------------------------------
+// buttons: Style buttons to use our color and hover.
+// -----------------------------------------------------------------------------
+
+@btn-default-color:                     @base-button-color;
+@btn-default-bg:                        @base-button-bg;
+@btn-default-hover:                     @base-button-hover;
+@btn-default-border:                    #cccccc;
+
+// Buttons otherwise just get darker on hover
+.btn-default {
+  &:hover {
+    background-color:                   @base-button-hover;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// navbar: Style navbar-default according to base-navbar
+// -----------------------------------------------------------------------------
+
+@navbar-default-color:                  @base-navbar-color;
+@navbar-default-bg:                     @base-navbar-bg;
+
+// Navbar links
+@navbar-default-link-color:             @base-navbar-link-color;
+@navbar-default-link-hover-color:       @base-navbar-link-hover-color;
+@navbar-default-link-hover-bg:          @base-navbar-link-hover-bg;
+@navbar-default-link-active-color:      @base-navbar-link-active-color;
+@navbar-default-link-active-bg:         @base-navbar-link-active-bg;
+
+// Navbar brand label
+@navbar-default-brand-color:            @base-navbar-link-color;
+@navbar-default-brand-hover-color:      @base-navbar-link-color;
+@navbar-default-brand-hover-bg:         @base-navbar-bg;
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg:        @base-navbar-hover;
+@navbar-default-toggle-icon-bar-bg:     @base-navbar-link-color;
+@navbar-default-toggle-border-color:    @base-navbar-link-color;
+
+// -----------------------------------------------------------------------------
+// nav-pills: Style nav-pills according to base-navbar
+// -----------------------------------------------------------------------------
+
+@nav-pills-active-link-hover-color:     @base-navbar-color;
+@nav-pills-active-link-hover-bg:        @base-navbar-bg;
+
+////////////////////////////////////////////////////////////////////////////////
+// Apply our base variables to styles found in base layouts.
+////////////////////////////////////////////////////////////////////////////////
+
+// Main, where we generally put actual content, might have multiple content fields
+
+.base-main
+{
+  background-color:                     @base-main-bg;
+}
+
+// Content, will have one level of content in it
+
+.base-content
+{
+  padding-bottom:                       15px;
+  padding-top:                          15px;
+}

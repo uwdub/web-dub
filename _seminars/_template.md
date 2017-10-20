@@ -73,15 +73,19 @@ speakers:
 # title:      "Title in Quotes: Because Colons Cause Errors"
 # 
 # location:   "HUB 334"
+# (optional) location_override_calendar:
 # (optional) location_override_seminar_page:
 #
 # abstract:   |
 #   An abstract can span multiple lines, and can do things across those lines,
 #   like going on for a while or being repetitive.
-# 
+#
+#   But the indentation between line wraps is important.
+#
 # bio:        |
-#   And do not even get us started on how a bio can be. Bio definitely can
-#   also span multiple lines like this.
+#   And do not even get us started on how a bio can be.
+#
+#   Bio definitely can also span multiple lines like this.
 ################################################################################
 title:      "TBD"
 

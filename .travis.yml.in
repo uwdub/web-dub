@@ -1,39 +1,77 @@
 {# This file compiles to .travis.yml -#}
 # This file compiled from .travis.yml.in
 
+{% if docker is defined and docker.required %}
+sudo: required
+{% else %}
 sudo: false
+{% endif %}
 
 language: python
 
 python:
-  - "{{ local.python.version }}"
+  - "{{ python.version }}"
 
+{% if docker is defined and docker.required %}
+services:
+  - docker
+
+{% endif %}
+{% if docker is defined and docker.required %}
+env:
+  - BASE_DOCKER_ON_TRAVIS=true
+
+{% endif %}
 cache:
   pip: true
-  directories:
-    - node_modules
-    - /home/travis/.rvm/gems
 
 install:
-  # Install Ruby
-  - rvm install {{ local.ruby.version }}
-  - rvm @global do gem install bundler -v {{ local.ruby.bundler_version }}
-  - rvm @global do gem query --local
-  - rvm @global do gem list ^bundler$ -i -v "!={{ local.ruby.bundler_version }}" &&
-    rvm @global do gem uninstall bundler -v "!={{ local.ruby.bundler_version }}" ||
-    true
-  - rvm use {{ local.ruby.version }} --default
-
-  # Install NodeJS
-  - nvm install {{ local.node.version }}
-
   # Install Python dependencies
-  - python -m pip install --upgrade pip=={{ local.python.pip_version }}
+  - python -m pip install --upgrade pip=={{ python.pip_version }}
   - python -m pip install -r requirements3.txt
 
+{% if node is defined and node.required %}
+  # Install Node
+  - nvm install {{ node.version }}
+
+{% endif %}
+{% if ruby is defined and ruby.required %}
+  # Install Ruby
+  - rvm install {{ ruby.version }}
+  - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
+  - |
+    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ ruby.bundler_version }}" )
+    if [ "$bundler_uninstall" == "true" ]
+    then
+      rvm @global do gem uninstall bundler -v "!={{ ruby.bundler_version }}"
+    fi
+  - rvm use {{ ruby.version }} --default
+
+{% endif %}
+{% if docker is defined and docker.required %}
+  # Install Docker and Docker-Compose
+  - sudo add-apt-repository "deb https://apt.dockerproject.org/repo ubuntu-trusty main"
+  - sudo apt-get update
+  - apt-cache policy docker-engine
+  - docker version
+  - sudo apt-get -o Dpkg::Options::="--force-confnew" install --yes --force-yes docker-engine={{ docker.travis.version }}
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/{{ docker.travis.compose_version }}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+  - docker version
+  - docker-compose version
+
+{% endif %}
   # Invoke will get our other dependencies
   - invoke update_dependencies
 
 script:
+{% if docker is defined and docker.required %}
+  - |
+    invoke docker_start
+    sleep {{ docker.travis.compose_up_delay }}
+{% endif %}
+  - nosetests tests.fast
   - nosetests
 {# This comment gives us a newline at the end of the generated file #}

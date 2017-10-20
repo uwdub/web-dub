@@ -1,8 +1,8 @@
 ---
-layout: base/bar-sidebar-none
+layout: base/bar/bar-sidebar-none
 title: "HCI & Design at the University of Washington"
 title_bar: "Design. Use. Build."
-title_secondary: "HCI & Design at the University of Washington"
+title_bar_secondary: "HCI & Design at the University of Washington"
 ---
 
 <!-- Carousel -->
@@ -20,41 +20,46 @@ title_secondary: "HCI & Design at the University of Washington"
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="{{ site.baseurl }}/posts/2016/slide_chi2016.png" alt="CHI 2016">
+          <img src="{{ site.baseurl }}/posts/2017/chi2017_slide.jpg" alt="CHI 2017">
           <div class="carousel-caption">
-            <h2>DUB at CHI 2016</h2>
+            <div class="carousel-caption-innter">
+            <h2>DUB at CHI 2017</h2>
             <p>
-                HCI & Design at the University of Washington<br>will again have a large and quality presence at CHI 2016.
+                HCI & Design at the University of Washington<br>will have a large and quality presence at CHI 2017.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2016/20160321-chi2016papers.html" class="btn btn-default btn-lg">
-                UW Research at CHI 2016
+              <a href="{{ site.baseurl }}/posts/2017/201704-chi2017papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2017
               </a>
             </p>
+            </div>
           </div>
         </div>
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
+            <div class="carousel-caption-innter">
             <h2>Design</h2>
             <p>Applying design thinking to improve the future.</p>
-            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+            </div>
           </div>
         </div>
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
+            <div class="carousel-caption-innter">
             <h2>Use</h2>
             <p>Creating better user experiences with technology.</p>
-            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+            </div>
           </div>
         </div>
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
+            <div class="carousel-caption-innter">
             <h2>Build</h2>
             <p>Prototyping and developing new technologies.</p>
-            <!-- <a href="#" class="btn btn-default btn-lg">Learn more</a> -->
+            </div>
           </div>
         </div>       
       </div>

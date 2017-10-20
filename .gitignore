@@ -2,19 +2,27 @@
 .idea
 *.iml
 
+# MacOS files
+.DS_Store
+
+# Python environment
+/env35
+
+# Python compilation
+*.pyc
+
+# Node install packages
+/node_modules
+
+# Docker testing files that have been localized
+/tests/full/docker/test_compose.localized.yml
+
+# Secrets that should not be committed, such as passwords or keys
+/secrets
+
 # Jekyll's build of the site
 .jekyll-metadata
 _site
 
-# Our Python environment
-env34
-env35
-
-# Compiled Python
-*.pyc
-
-# Installed node packages
-node_modules
-
-# Any secrets
-secrets
+# Compiled calendar
+calendar.ics

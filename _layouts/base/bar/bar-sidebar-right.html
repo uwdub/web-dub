@@ -1,0 +1,59 @@
+---
+layout: base/bar/bar
+base-bar-sidebar-right-js: true
+---
+{% capture content_remainder %}
+  {{ content }}
+{% endcapture %}
+
+{% assign split_start = content_remainder | split: '<div class="sidebar_start"></div>' %}
+{% assign split_temp = split_start[1] | join: '' %}
+{% assign split_end = split_temp | split: '<div class="sidebar_end"></div>' %}
+{% assign content_sidebar = split_end[0] | join: '' %}
+{% capture content_remainder %}
+  {{ split_start[0] | join: '' }}
+  {{ split_end[1] | join: '' }}
+{% endcapture %}
+
+{% assign split_start = content_remainder | split: '<div class="top_start"></div>' %}
+{% assign split_temp = split_start[1] | join: '' %}
+{% assign split_end = split_temp | split: '<div class="top_end"></div>' %}
+{% assign content_top = split_end[0] | join: '' %}
+{% capture content_remainder %}
+  {{ split_start[0] | join: '' }}
+  {{ split_end[1] | join: '' }}
+{% endcapture %}
+
+<div class="base-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="base-sidebar-right-top">
+            {{ content_top }}
+          </div>
+        </div>
+      </div>
+      <div class="row hidden-xs hidden-sm">
+        <div class="col-md-12">
+          <div id="base-sidebar-right-remainder-tucked">
+            <div id="base-sidebar-right-remainder-content">
+              {{ content_remainder }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div id="base-sidebar-right-sidebar">
+        {{ content_sidebar }}
+      </div>
+    </div>
+  </div>
+  <div class="row hidden-md hidden-lg">
+    <div class="col-md-12">
+      <div id="base-sidebar-right-remainder-bottom">
+      </div>
+    </div>
+  </div>
+</div>

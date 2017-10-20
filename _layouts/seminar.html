@@ -1,136 +1,127 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <!-- PageHeader -->
-    {% include base/pageheader.html %}
-</head>
-<body class="layout-seminar">
-<!-- NavHeader -->
-{% include base/navheader.html %}
+---
+layout: base/bar/bar-sidebar-right
+title_bar: "Seminar"
+title_bar_secondary: "HCI & Design at the University of Washington"
+---
 
 <!-- Our Seminar -->
 {% assign item_seminar = page %}
 
-<!-- Main -->
-<div class="container" id="base-main">
-    <!-- Bar -->
-    <div class="row" id="bar">
-        <div class="col-md-6" id="bar-primary">
-            <h1>Seminar</h1>
-        </div>
-        <div class="col-md-6" id="bar-secondary">
-            <p>HCI & Design at the University of Washington</p>
-        </div>
-    </div>
-    <!-- Bar End -->
+<div class="sidebar_start"></div>
 
-    <div class="row base-content">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4 col-md-push-8">
-                    <ul id="seminar-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
-                        <li><a href="../../calendar.html#tab_upcoming_seminars">Upcoming Seminars</a></li>
-                        <li><a href="../../calendar.html#tab_previous_seminars">Previous Seminars</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-md-pull-4">
-                    {% if item_seminar.tbd_title %}
-                        {% if item_seminar.tbd_speakers %}
-                            {% assign item_publish_title = "DUB Seminar: Speaker TBD" %}
-                        {% endif %}
+<ul id="seminar-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
+  <li><a href="{{ site.baseurl }}/calendar.html#tab_upcoming_seminars">Upcoming Seminars</a></li>
+  <li><a href="{{ site.baseurl }}/calendar.html#tab_previous_seminars">Previous Seminars</a></li>
+</ul>
+
+<div class="sidebar_end"></div>
+
+<div class="row">
+    <div class="col-md-3">
+        {% if item_seminar.tbd_title %}
+            {% if item_seminar.tbd_speakers %}
+                {% assign item_publish_title = "DUB Seminar: Speaker TBD" %}
+            {% endif %}
+        {% else %}
+            {% assign item_publish_title = item_seminar.title %}
+        {% endif %}
+        <div class="col-xs-12">
+            <h3>Date</h3>
+            {{ item_seminar.date | date: '%b %d, %Y'}}
+        </div>
+        <div class="col-xs-12">
+            <h3>Time</h3>
+            {{ item_seminar.time }}
+        </div>
+        {% if item_seminar.location_override_seminar_page %}
+            <div class="col-xs-12">
+                <h3>Location</h3>
+                {{ item_seminar.location_override_seminar_page }}
+            </div>
+        {% else %}
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_location %}
+                    <h3>Location</h3>
+                    {{ item_seminar.location }}
+                {% endunless %}
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="col-md-9">
+        {% if item_seminar.title_override_seminar_page %}
+            <div class="col-xs-12">
+                <h3>{{ item_seminar.title_override_seminar_page }}</h3>
+            </div>
+        {% else %}
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_title %}
+                    <h3>Title</h3>
+                    {{ item_publish_title }}
+                {% endunless %}
+            </div>
+        {% endif %}
+        {% if item_seminar.text_override_seminar_page %}
+            <div class="col-xs-12">
+                {{ item_seminar.text_override_seminar_page | markdownify }}
+            </div>
+        {% else %}
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_speakers %}
+                    {% if item_seminar.speakers.size > 1 %}
+                        <h3>Speakers</h3>
                     {% else %}
-                        {% assign item_publish_title = item_seminar.title %}
+                        <h3>Speaker</h3>
                     {% endif %}
-                    <div class="col-xs-12">
-                        <h3>Date</h3>
-                        {{ item_seminar.date | date: '%b %d, %Y'}}
-                    </div>
-                    <div class="col-xs-12">
-                        <h3>Time</h3>
-                        {{ item_seminar.time }}
-                    </div>
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_location %}
-                            <h3>Location</h3>
-                            {% if item_seminar.location_override_seminar_page %}
-                                {{ item_seminar.location_override_seminar_page }}
-                            {% else %}
-                                {{ item_seminar.location }}
-                            {% endif %}
-                        {% endunless %}
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-pull-4">
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_title %}
-                            <h3>Title</h3>
-                            {{ item_publish_title }}
-                        {% endunless %}
-                    </div>
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_speakers %}
-                            {% if item_seminar.speakers.size > 1 %}
-                                <h3>Speakers</h3>
-                            {% else %}
-                                <h3>Speaker</h3>
-                            {% endif %}
-                            {% if item_seminar.speakers.size > 0 %}
-                                {% assign item_affiliations = '' | split: ',' %}
-                                {% for item_speaker in item_seminar.speakers %}
-                                    {% assign item_affiliations = item_affiliations | push: item_speaker.affiliation | uniq %}
-                                {% endfor %}
-                            {% endif %}
-                            {% for item_affiliation in item_affiliations %}
-                                {% assign item_affiliation_names = '' | split: ' ' %}
-                                {% for item_speaker in item_seminar.speakers %}
-                                    {% if item_speaker.affiliation == item_affiliation %}
-                                        {% assign item_full_name = '' %}
-                                        {% for item_name in item_speaker.name offset: 1 %}
-                                            {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
-                                            {% if forloop.last %}
-                                                {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
-                                            {% endif %}
-                                        {% endfor %}
-                                        {% assign item_affiliation_names = item_affiliation_names | push: item_full_name %}
+                    {% if item_seminar.speakers.size > 0 %}
+                        {% assign item_affiliations = '' | split: ',' %}
+                        {% for item_speaker in item_seminar.speakers %}
+                            {% assign item_affiliations = item_affiliations | push: item_speaker.affiliation | uniq %}
+                        {% endfor %}
+                    {% endif %}
+                    {% for item_affiliation in item_affiliations %}
+                        {% assign item_affiliation_names = '' | split: ' ' %}
+                        {% for item_speaker in item_seminar.speakers %}
+                            {% if item_speaker.affiliation == item_affiliation %}
+                                {% assign item_full_name = '' %}
+                                {% for item_name in item_speaker.name offset: 1 %}
+                                    {% assign item_full_name = item_full_name | append: ' ' | append: item_name %}
+                                    {% if forloop.last %}
+                                        {% assign item_full_name = item_full_name | append: ' ' | append: item_speaker.name[0] %}
                                     {% endif %}
                                 {% endfor %}
-                                <div>
-                                    {{ item_affiliation_names | join: ', ' }}
-                                </div>
-                                <div class="text-muted">
-                                    {{ item_affiliation }}
-                                </div>
-                            {% endfor %}
-                        {% endunless %}
-                    </div>
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_abstract %}
-                            <h3>Abstract</h3>
-                            {{ item_seminar.abstract | markdownify }}
-                        {% endunless %}
-                    </div>
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_bio %}
-                            <h3>Bio</h3>
-                            {{ item_seminar.bio | markdownify }}
-                        {% endunless %}
-                    </div>
-                    <div class="col-xs-12">
-                        {% unless item_seminar.tbd_video %}
-                            <h3>Video</h3>
-                            <div class='embed-container'>
-                                {% vimeo item_seminar.video %}
-                            </div>
-                        {% endunless %}
-                    </div>
-                </div>
+                                {% assign item_affiliation_names = item_affiliation_names | push: item_full_name %}
+                            {% endif %}
+                        {% endfor %}
+                        <div>
+                            {{ item_affiliation_names | join: ', ' }}
+                        </div>
+                        <div class="text-muted">
+                            {{ item_affiliation }}
+                        </div>
+                    {% endfor %}
+                {% endunless %}
             </div>
-        </div>
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_abstract %}
+                    <h3>Abstract</h3>
+                    {{ item_seminar.abstract | markdownify }}
+                {% endunless %}
+            </div>
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_bio %}
+                    <h3>Bio</h3>
+                    {{ item_seminar.bio | markdownify }}
+                {% endunless %}
+            </div>
+            <div class="col-xs-12">
+                {% unless item_seminar.tbd_video %}
+                    <h3>Video</h3>
+                    <div class='embed-container'>
+                        {% vimeo item_seminar.video %}
+                    </div>
+                {% endunless %}
+            </div>
+        {% endif %}
     </div>
 </div>
-<!-- Main End -->
-
-<!-- EndOfBody -->
-{% include base/endofbody.html %}
-</body>
-</html>
