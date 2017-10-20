@@ -6,7 +6,8 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 
 <div class="sidebar_start"></div>
   <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
-    <li class="active"><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
+  	<li class="active"><a href="#getting_involved" data-toggle="tab">Getting Involved</a></li>
+    <li><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
     <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
     <li><a href="#branding" data-toggle="tab">Logo and Branding</a></li>
     <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
@@ -16,7 +17,72 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 <!----------------------------------------------------------------------------->
 
 <div id="seminar-tabs-content" class="tab-content">
-<div class="tab-pane active" id="mailing_lists" markdown="block">
+<div class="tab-pane active" id="getting_involved" markdown="block">
+
+# Getting involved
+DUB is a grassroots alliance of faculty, students, researchers, and industry partners interested in Human Computer Interaction & Design at the University of Washington. 
+
+Our mission is to bring together an interdisciplinary set of people to share ideas, collaborate on research, and discuss teaching related to the interaction between design, people, and technology. DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. For more than 10 years, DUB has helped bring these different people and perspectives together through weekly seminars, quarterly lunches, and yearly retreats, promoting an interdisciplinary environment and one of the world’s most vibrant communities for research and education in Human Computer Interaction & Design.
+
+If you are new to DUB, the best way to start participating is to come to our <a href="/gettinginvolved.html#tab_seminar">weekly seminar</a>, join one or more of our <a href="/gettinginvolved.html#tab_mailing_lists">mailing lists</a>, and join the <a href="https://uwdub.slack.com/">DUB Slack group</a>.
+
+As a grassroots organization, we are always looking for volunteers to step up and help make DUB happen. Some of our activities have more formal organization, including:
+
+<table>
+	<tr>
+		<th>what</th>
+		<th>who</th>
+		<th>contact (@dub.uw.edu)</th>
+	</tr>
+	<tr>
+		<td>Faculty Director</td>
+		<td>James Fogarty</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Seminar Series</td>
+		<td>Sean Munson, Katie O’Leary (Diversity & Outreach Coordinator), Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Hy Nguyen<br />
+		Starting in 2018: Jennifer Mankoff, Anat Caspi
+		</td>
+		<td>speak@</td>
+	</tr>
+	<tr>
+		<td>Retreat</td>
+		<td><em>2017 organizers:</em><br />
+		Maya Cakmak, Andy Davidson, Emily Lloyd, Mary Larson, Jason Yip<br />
+		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br /><br />
+		<!-- <em>2016 organizers:</em><br />
+		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>-->
+		<td></td>
+	</tr>
+	<tr>
+		<td>Doctoral Consortium</td>
+		<td><em><a href="/posts/2017/201701-dubdc.html">2017</a> organizers:</em><br />
+		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>Website</td>
+		<td>James Fogarty</td>
+		<td>See <a href="https://github.com/uwdub/web-dub">github</a></td>
+	</tr>
+	<tr>
+		<td><a href="https://medium.com/hci-design-at-uw">Medium</a> Curation</td>
+		<td>Sean Munson</td>
+		<td></td>
+	</tr>
+</table>
+
+Other activities are more ad-hoc and just require stepping up and getting a group together. These include paper draft review sessions, practice talk sessions, and happy hours.
+
+Whether you are a student, faculty member, or researcher, and you want to organize a paper swap, practice talk session for an upcoming conference, or a happy hour, one of the best places to start is <a href="https://uwdub.slack.com/">sending a message to the general channel on Slack</a>. We have a great set of templates and checklists that can help you organize an event. 
+
+Got other ideas of things we should be doing? Talk with the director, write a message on Slack to gauge interest (the faculty or general channels are good places to start), or chat about your idea with others at the start of a seminar!
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<div class="tab-pane" id="mailing_lists" markdown="block">
 
 # Mailing Lists
 
