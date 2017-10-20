@@ -51,8 +51,6 @@ As a grassroots organization, we are always looking for volunteers to step up an
 		<td><em>2017 organizers:</em><br />
 		Maya Cakmak, Andy Davidson, Emily Lloyd, Mary Larson, Jason Yip<br />
 		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br /><br />
-		<!-- <em>2016 organizers:</em><br />
-		Katharina Reinecke, Gary Hsieh, Daniel Epstein, Elena Agapie</td>-->
 		<td></td>
 	</tr>
 	<tr>
