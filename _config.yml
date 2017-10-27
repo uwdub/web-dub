@@ -11,10 +11,10 @@ navbar:
       link: 'index.html'
     - text: 'About DUB'
       link: 'aboutdub.html'
+    - text: 'Faculty'
+      link: 'faculty.html'
     - text: 'Calendar'
       link: 'calendar.html'
-#    - text: 'People'
-#      link: 'people.html'
 #    - text: 'Resources'
 #      link: 'resources.html'
     - text: 'Getting Involved'
@@ -70,3 +70,5 @@ exclude:
   - secrets
   # Tests
   - tests
+  # People raw images that are processed for the images we then use
+  - _people/faculty/_images_raw
