@@ -1,5 +1,6 @@
 # This file compiled from requirements3.in.in
 
+cloudinary
 icalendar
 invoke==0.12.2
 jinja2

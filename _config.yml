@@ -28,6 +28,10 @@ collections:
 
 defaults:
   - scope:
+      type: people
+    values:
+      layout: person
+  - scope:
       type: seminars
     values:
       layout: seminar
@@ -55,6 +59,10 @@ exclude:
   - node_modules
   - npm-shrinkwrap.json
   - package.json
+  # People raw images
+  - _people/doctoral/_images_raw
+  - _people/faculty/_images_raw
+  - _people/masters/_images_raw
   # Python
   - env35
   - requirements3.in
