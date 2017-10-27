@@ -7,6 +7,7 @@
 certifi==2017.4.17        # via requests
 chardet==3.0.3            # via requests
 click==6.7                # via pip-tools
+cloudinary==1.8.0
 first==2.0.1              # via pip-tools
 icalendar==3.11.4
 idna==2.5                 # via requests
@@ -14,11 +15,13 @@ invoke==0.12.2
 jinja2==2.9.6
 markdown==2.6.8
 markupsafe==1.0           # via jinja2
+mock==2.0.0               # via cloudinary
 nose==1.3.7
+pbr==3.0.1                # via mock
 pip-tools==1.9.0
 python-dateutil==2.6.0    # via icalendar
 pytz==2017.2              # via icalendar
 pyyaml==3.12
-requests==2.16.0
-six==1.10.0               # via pip-tools, python-dateutil
-urllib3==1.21.1           # via requests
+requests==2.17.3
+six==1.10.0               # via cloudinary, mock, pip-tools, python-dateutil
+urllib3==1.21.1           # via cloudinary, requests
