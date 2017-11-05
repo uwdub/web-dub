@@ -37,14 +37,8 @@ install:
 {% endif %}
 {% if ruby is defined and ruby.required %}
   # Install Ruby
-  - rvm install {{ ruby.version }}
   - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
-  - |
-    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!={{ ruby.bundler_version }}" )
-    if [ "$bundler_uninstall" == "true" ]
-    then
-      rvm @global do gem uninstall bundler -v "!={{ ruby.bundler_version }}"
-    fi
+  - rvm install {{ ruby.version }}
   - rvm use {{ ruby.version }} --default
 
 {% endif %}
