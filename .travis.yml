@@ -19,14 +19,8 @@ install:
   - nvm install 4.5.0
 
   # Install Ruby
-  - rvm install 2.3.3
   - rvm @global do gem install bundler -v 1.13.6
-  - |
-    bundler_uninstall=$( rvm @global do gem list ^bundler$ -i -v "!=1.13.6" )
-    if [ "$bundler_uninstall" == "true" ]
-    then
-      rvm @global do gem uninstall bundler -v "!=1.13.6"
-    fi
+  - rvm install 2.3.3
   - rvm use 2.3.3 --default
 
   # Invoke will get our other dependencies
