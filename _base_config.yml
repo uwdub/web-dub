@@ -34,6 +34,12 @@ config:
       compose_up_delay: 60
 
   readme:
+    url_github: https://github.com/fogies/invoke-base
+    url_github_readme: blob/master/README.md
+    url_github_readme_basedir: blob/master/readme
+
+    travis_badge: '[![Build Status](https://travis-ci.org/fogies/invoke-base.svg?branch=master)](https://travis-ci.org/fogies/invoke-base)'
+
     working_directory_windows: c:/devel/invoke-base
     working_directory_mac: ~/Desktop/invoke-base
 
@@ -88,6 +94,10 @@ compile_config:
   entries:
     - in:  README.md.in
       out: README.md
+    - in:  readme/install_dependencies_mac.md.in
+      out: readme/install_dependencies_mac.md
+    - in:  readme/install_dependencies_windows.md.in
+      out: readme/install_dependencies_windows.md
     - in:  requirements3.in.in
       out: requirements3.in
     - in:  .travis.yml.in
