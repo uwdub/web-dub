@@ -9,7 +9,9 @@ See [Additional Task Documentation]({{ readme.url_github }}/{{ readme.url_github
 Frequently used tasks will include:
 
 {% for task in readme.invoke_readme_frequent %}
-**{{ task }}**: {% include readme.invoke_readme_paths[task] %} 
+### {{ task }}
+
+{% include readme.invoke_readme_paths[task] %} 
 
 {% endfor %}
 
