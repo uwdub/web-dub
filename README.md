@@ -1,6 +1,6 @@
 # web-jekyll-base
 
-[![Build Status](https://travis-ci.org/fogies/invoke-base.svg?branch=master)](https://travis-ci.org/fogies/invoke-base)
+[![Build Status](https://travis-ci.org/fogies/web-jekyll-base.svg?branch=master)](https://travis-ci.org/fogies/web-jekyll-base)
 
 A fogies project used as a template for Jekyll websites.
 
@@ -22,9 +22,9 @@ Runtime dependencies for this project are:
 - Ruby 2.3.3
 - Ruby DevKit
 
-See [Installation for Windows](https://github.com/fogies/invoke-base/blob/master/readme/install_windows.md).
+See [Installation for Windows](https://github.com/fogies/web-jekyll-base/blob/master/readme/install_windows.md).
 
-See [Installation for Mac](https://github.com/fogies/invoke-base/blob/master/readme/install_mac.md).
+See [Installation for Mac](https://github.com/fogies/web-jekyll-base/blob/master/readme/install_mac.md).
 
 ## Tasks
 
@@ -32,25 +32,31 @@ This project uses Invoke for task execution. Available tasks can be listed:
 
 `invoke -l`
 
-See [Additional Task Documentation](https://github.com/fogies/invoke-base/blob/master/readme/invoke.md).
+See [Additional Task Documentation](https://github.com/fogies/web-jekyll-base/blob/master/readme/invoke.md).
 
 Frequently used tasks will include:
 
-### compile_config
+### build_production
 
-Compile files specified in `_base_config.yml`, via key `compile_config : entries`.
+Build the site to `_site`, using the production configuration in `_config-production.yml`.
 
-`invoke compile_config` 
+`invoke build_production` 
 
-### update_base
+### build_test
 
-Pull updates to this template.
+Build the site to `_site`, using the test configuration in `_config-test.yml`.
 
-`invoke update_base` 
+`invoke build_test` 
 
-### update_dependencies
+### serve_production
 
-Ensure dependencies are installed.
+Serve the site on port 4000, using the production configuration in `_config-production.yml`.
 
-`invoke update_depenencies` 
+`invoke serve_production` 
+
+### serve_test
+
+Serve the site on port 4000, using the test configuration in `_config-test.yml`.
+
+`invoke serve_test` 
 

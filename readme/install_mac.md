@@ -24,13 +24,13 @@ pip3 install virtualenv
 
 ### Creating a Virtual Environment and Installing Dependencies
 
-Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/invoke-base`):
+Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/web-jekyll-base`):
 
 ~~~
 virtualenv -p python3 env35
 ~~~
 
-This will create a directory for the virtual environment (e.g., `~/Desktop/invoke-base/env35/`).
+This will create a directory for the virtual environment (e.g., `~/Desktop/web-jekyll-base/env35/`).
 
 Next activate that virtual environment and install our Python dependencies:
 

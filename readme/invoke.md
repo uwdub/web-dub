@@ -6,6 +6,18 @@ This project uses Invoke for task execution. Available tasks can be listed:
 
 Available tasks include:
 
+### build_production
+
+Build the site to `_site`, using the production configuration in `_config-production.yml`.
+
+`invoke build_production`
+
+### build_test
+
+Build the site to `_site`, using the test configuration in `_config-test.yml`.
+
+`invoke build_test`
+
 ### compile_config
 
 Compile files specified in `_base_config.yml`, via key `compile_config : entries`.
@@ -53,6 +65,18 @@ If the project uses Docker, start the Docker containers specified in `tests/full
 If the project uses Docker, stop the Docker containers specified in `tests/full/docker/test_compose.yml`.
 
 `invoke docker_stop`
+
+### serve_production
+
+Serve the site on port 4000, using the production configuration in `_config-production.yml`.
+
+`invoke serve_production`
+
+### serve_test
+
+Serve the site on port 4000, using the test configuration in `_config-test.yml`.
+
+`invoke serve_test`
 
 ### update_base
 

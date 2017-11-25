@@ -34,21 +34,24 @@ config:
       compose_up_delay: 60
 
   readme:
-    url_github: https://github.com/fogies/invoke-base
+    url_github: https://github.com/fogies/web-jekyll-base
     url_github_readme: blob/master/README.md
     url_github_readme_basedir: blob/master/readme
 
-    travis_badge: '[![Build Status](https://travis-ci.org/fogies/invoke-base.svg?branch=master)](https://travis-ci.org/fogies/invoke-base)'
+    travis_badge: '[![Build Status](https://travis-ci.org/fogies/web-jekyll-base.svg?branch=master)](https://travis-ci.org/fogies/web-jekyll-base)'
 
-    working_directory_windows: c:/devel/invoke-base
-    working_directory_mac: ~/Desktop/invoke-base
+    working_directory_windows: c:/devel/web-jekyll-base
+    working_directory_mac: ~/Desktop/web-jekyll-base
 
     invoke_readme_frequent:
-      - compile_config
-      - update_base
-      - update_dependencies
+      - build_production
+      - build_test
+      - serve_production
+      - serve_test
 
     invoke_readme_paths:
+      build_production: base/readme/invoke/build_production.md
+      build_test: base/readme/invoke/build_test.md
       compile_config: base/readme/invoke/compile_config.md
       compile_requirements: base/readme/invoke/compile_requirements.md
       docker_console: base/readme/invoke/docker_console.md
@@ -57,6 +60,8 @@ config:
       docker_machine_ensure: base/readme/invoke/docker_machine_ensure.md
       docker_start: base/readme/invoke/docker_start.md
       docker_stop: base/readme/invoke/docker_stop.md
+      serve_production: base/readme/invoke/serve_production.md
+      serve_test: base/readme/invoke/serve_test.md
       update_base: base/readme/invoke/update_base.md
       update_dependencies: base/readme/invoke/update_dependencies.md
 
