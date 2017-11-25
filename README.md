@@ -29,7 +29,11 @@ See [Additional Task Documentation](https://github.com/fogies/invoke-base/blob/m
 
 Frequently used tasks will include:
 
-**compile_config**: asdf 
+**compile_config**: Compile files specified in `_base_config.yml`, key `compile_config : entries`.
 
-**compile_requirements**: asdf 
+invoke `compile_config` 
+
+**compile_requirements**: Compile `requirements3.txt` from `requirements3.txt.in`.
+
+invoke `compile_requirements` 
 
