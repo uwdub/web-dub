@@ -7,8 +7,9 @@ This project uses Invoke for task execution. Available tasks can be listed:
 Available tasks include:
 
 {% for task in readme.invoke_readme_paths.keys() | sort %}
-<div id="{{ task }}" markdown="block"/>
-**{{ task }}**: {% include readme.invoke_readme_paths[task] %} 
+### {{ task }}
+
+{% include readme.invoke_readme_paths[task] %}
+
 
 {% endfor %}
-

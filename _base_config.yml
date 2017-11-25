@@ -45,7 +45,8 @@ config:
 
     invoke_readme_frequent:
       - compile_config
-      - compile_requirements
+      - update_base
+      - update_dependencies
 
     invoke_readme_paths:
       compile_config: base/readme/invoke/compile_config.md
@@ -56,6 +57,8 @@ config:
       docker_machine_ensure: base/readme/invoke/docker_machine_ensure.md
       docker_start: base/readme/invoke/docker_start.md
       docker_stop: base/readme/invoke/docker_stop.md
+      update_base: base/readme/invoke/update_base.md
+      update_dependencies: base/readme/invoke/update_dependencies.md
 
     python_versions:
       - version: 3.5.2
