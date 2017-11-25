@@ -10,6 +10,7 @@ Runtime dependencies for this project are:
 {% include "base/readme/install/ruby_requirements.md" %}
 {% include "base/readme/install/docker_toolbox_requirements.md" %}
 
-See [Dependency Installation for Windows]({{ readme.url_github }}/{{ readme.url_github_readme_basedir }}/install_dependencies_windows.md).
+See [Installation for Windows]({{ readme.url_github }}/{{ readme.url_github_readme_basedir }}/install_windows.md).
 
-See [Dependency Installation for Mac]({{ readme.url_github }}/{{ readme.url_github_readme_basedir }}/install_dependencies_mac.md).
+See [Installation for Mac]({{ readme.url_github }}/{{ readme.url_github_readme_basedir }}/install_mac.md).
+

@@ -1,0 +1,13 @@
+# Tasks
+
+This project uses Invoke for task execution. Available tasks can be listed:
+
+`invoke -l`
+
+Available tasks include:
+
+{% for task in readme.invoke_readme_paths.keys() %}
+**{{ task }}**: {% include readme.invoke_readme_paths[task] %} 
+
+{% endfor %}
+
