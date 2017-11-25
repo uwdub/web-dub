@@ -43,6 +43,14 @@ config:
     working_directory_windows: c:/devel/invoke-base
     working_directory_mac: ~/Desktop/invoke-base
 
+    invoke_readme_frequent:
+      - compile_config
+      - compile_requirements
+
+    invoke_readme_paths:
+      compile_config: base/readme/invoke/compile_config.md
+      compile_requirements: base/readme/invoke/compile_config.md
+
     python_versions:
       - version: 3.5.2
         virtual_environment_name: env35
@@ -94,10 +102,12 @@ compile_config:
   entries:
     - in:  README.md.in
       out: README.md
-    - in:  readme/install_dependencies_mac.md.in
-      out: readme/install_dependencies_mac.md
-    - in:  readme/install_dependencies_windows.md.in
-      out: readme/install_dependencies_windows.md
+    - in:  readme/install_mac.md.in
+      out: readme/install_mac.md
+    - in:  readme/install_windows.md.in
+      out: readme/install_windows.md
+    - in:  readme/invoke.md.in
+      out: readme/invoke.md
     - in:  requirements3.in.in
       out: requirements3.in
     - in:  .travis.yml.in

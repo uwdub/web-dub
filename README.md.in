@@ -8,4 +8,6 @@ A fogies project used as a template for other projects.
 
 Provides for dependency management, tasks via the invoke tools, and testing.
 
-{% include "base/readme/install_dependencies.md" %}
+{% include "base/readme/install.md" %}
+
+{% include "base/readme/invoke.md" %}
