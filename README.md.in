@@ -1,3 +1,13 @@
-This is the beginning of a template for websites implemented using Jekyll.
+# web-jekyll-base
 
-{% include "base/readme/install_dependencies.md" %}
+{% if readme.travis_badge %}
+{{ readme.travis_badge }}
+{% endif %}
+
+A fogies project used as a template for Jekyll websites.
+
+Provides for a build process, common dependencies and extensions, and serving via docker-jekyll-site.
+
+{% include "base/readme/install.md" %}
+
+{% include "base/readme/invoke.md" %}
