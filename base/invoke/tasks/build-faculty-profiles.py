@@ -17,6 +17,9 @@
 import invoke
 import csv
 import requests
+import imghdr
+from os import rename
+from urllib.parse import urlparse, parse_qs
 from jinja2 import Environment, FileSystemLoader
 
 FACULTY_CSV_URL = 'https://docs.google.com/spreadsheets/export?format=csv&id=1WW7S0t6qUcFabLL4I9bE1uLex8wQmA40KfNEfXqCma4'
@@ -76,9 +79,26 @@ def build_faculty_profiles():
     # remove any unused title/affiliation blocks
     ctx['positions'].remove({'title': '', 'affiliations': ['']})
 
-
-    outfile = normalize(ctx['last_name'], ctx['first_name'], sep="-") + '.md'
-    print(ctx)
-    with open(OUTPUT_DIR + outfile, 'w') as fhand:
+    outfile_base = normalize(ctx['last_name'], ctx['first_name'], sep="-")
+    with open(OUTPUT_DIR + outfile_base + '.md', 'w') as fhand:
       fhand.write(template.render(ctx))
       fhand.close()
+
+    # fetch and save raw profile image
+    if ctx['profile_picture']:
+
+      # reformat the google drive url for downloading
+      parsed_url = urlparse(ctx['profile_picture'])
+      parsed_qs = parse_qs(parsed_url.query)
+      file_id = parsed_qs['id'][0]
+      url = 'https://drive.google.com/uc?export=download&id=' + file_id
+      response = requests.get(url)
+
+      if response.status_code == 200:
+        path = OUTPUT_DIR + outfile_base + '-raw'
+        with open(path, 'wb') as fhand:
+          fhand.write(response.content)
+          fhand.close()
+          file_type = imghdr.what(path)
+          rename(path, path + '.' + file_type)
+          
