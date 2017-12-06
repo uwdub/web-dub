@@ -23,9 +23,9 @@ version: 1
 # - More
 ################################################################################
 name:
-  - {{ last_name }}
-  - {{ first_name }}
-# - {{ middle_initial }}
+  {% for name_part in name %}
+  - {{ name_part }}
+  {% endfor %}
 
 ################################################################################
 # Each person has a single main role.

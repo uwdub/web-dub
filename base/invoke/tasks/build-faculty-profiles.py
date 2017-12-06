@@ -6,10 +6,10 @@
 #
 
 # NOTE: This script is very sensitive to the naming of fields in Google Forms.
-#       Namely, the Title and Affiliation fields need to start with the words
-#       Title and Affiliation, respectively, and need to contain a sequential
-#       index at the end of the field name. If we change the name of those 
-#       fields on the form, this script might break.
+#       Namely, the Title, Affiliation, and Name fields need to start with the 
+#       words Title, Affiliation, and Name, respectively, and need to contain a 
+#       sequential index at the end of the field name. If we change the name of 
+#       those fields on the form, this script might break.
 # TODO: It would be better if we could use some kind of internal field name that
 #       is independenet of the user-facing field name. But it's unclear whether 
 #       this is possible in Google Forms.
@@ -18,6 +18,7 @@ import invoke
 import csv
 import requests
 import imghdr
+import re
 from os import rename
 from urllib.parse import urlparse, parse_qs
 from jinja2 import Environment, FileSystemLoader
@@ -25,9 +26,19 @@ from jinja2 import Environment, FileSystemLoader
 FACULTY_CSV_URL = 'https://docs.google.com/spreadsheets/export?format=csv&id=1WW7S0t6qUcFabLL4I9bE1uLex8wQmA40KfNEfXqCma4'
 OUTPUT_DIR = './_people/faculty-new/'
 NUM_POSITION_BLOCKS_MAX = 4
+NUM_NAME_FIELDS_MAX = 5
 
-def normalize(*args, sep="_"):
-  return sep.join(args).lower().replace(' ', sep)
+# join together any number of strings, replacing all whitespace with sep,
+# converting to lowercase, and stripping out non-alphanumeric characters
+def normalize(fields, sep="_"):
+  fields = [fields] if not type(fields) is list else fields
+  regex = '[^A-Za-z0-9\\' + sep + ']'
+  return re.sub(regex, '', sep.join(fields).lower().replace(' ', sep))
+
+# certain fields--like title, affiliation, and name--have a sequential index in
+# the header. This function pulls that index out for use
+def get_field_index(field):
+  return int(field.split('_')[-1]) - 1
 
 @invoke.task()
 def build_faculty_profiles():
@@ -48,6 +59,7 @@ def build_faculty_profiles():
     ctx = {
       'role': 'faculty',
       'positions': [{} for _ in range(NUM_POSITION_BLOCKS_MAX)],
+      'name': ['' for _ in range(NUM_NAME_FIELDS_MAX)],
 
       # TODO: determine TBD fields, which will depend on which fields we require
       #       via the input form.
@@ -61,11 +73,11 @@ def build_faculty_profiles():
       # title and affiliation blocks need to be combined into a 'position'
       # object, one for each set of titles and affiliations
       if header.startswith('title') or header.startswith('affiliations'):
+        ctx['positions'][get_field_index(header)][header.split('_')[0]] = row[i].strip()
 
-        # titles and affiliations are numbered with an index at the end of the
-        # header name
-        idx = int(header.split('_')[-1]) - 1
-        ctx['positions'][idx][header.split('_')[0]] = row[i].strip()
+      # names can consist of several fields
+      elif header.startswith('name'):
+        ctx['name'][get_field_index(header)] = row[i].strip()
       else:
         ctx[header] = row[i].strip()
 
@@ -76,10 +88,11 @@ def build_faculty_profiles():
       ctx['positions'][i]['affiliations'] = \
         [affil.strip() for affil in ctx['positions'][i]['affiliations'].split(',')]
 
-    # remove any unused title/affiliation blocks
+    # remove any unused title/affiliation and name blocks
     ctx['positions'].remove({'title': '', 'affiliations': ['']})
+    ctx['name'].remove('')
 
-    outfile_base = normalize(ctx['last_name'], ctx['first_name'], sep="-")
+    outfile_base = normalize(ctx['name'], sep='-')
     with open(OUTPUT_DIR + outfile_base + '.md', 'w') as fhand:
       fhand.write(template.render(ctx))
       fhand.close()
