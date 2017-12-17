@@ -1,10 +1,11 @@
 #
 # build-faculty-profiles.py
 #
-# Fetch a CSV file of faculty bio information from Google Drive and convert it
-# to Markdown files suitable for consumption by Jekyll.
+# Fetch a file of faculty bio information from Google Sheets and convert it
+# to Markdown files suitable for consumption by Jekyll. Fetch profile images
+# referenced on the spreadsheet and save them locally.
 #
-# usage: invoke build_faculty_profiles.py
+# usage (from root of project): invoke build_faculty_profiles.py
 #
 
 # NOTE: This script is very sensitive to the naming of fields in Google Forms.
@@ -17,12 +18,14 @@
 #       this is possible in Google Forms.
 
 import invoke
+import os
 import re
+import io
 import httplib2
 from jinja2 import Environment, FileSystemLoader
-from apiclient import discovery
+from urllib.parse import urlparse, parse_qs
+from apiclient import discovery, http as google_http
 from oauth2client.service_account import ServiceAccountCredentials
-import os
 
 
 OUTPUT_DIR = './_people/faculty-new/'
@@ -63,23 +66,22 @@ def build_faculty_profiles():
     print('Error: Missing credentials file %s. Aborting.' % GOOGLE_CREDENTIALS_PATH)
     return
 
-  # establish our Google API credentials and connect to our spreadsheet
+  # establish our Google API credentials
   scope = ['https://www.googleapis.com/auth/spreadsheets.readonly']
   credentials = ServiceAccountCredentials.from_json_keyfile_name(GOOGLE_CREDENTIALS_PATH, scope)
   http = credentials.authorize(httplib2.Http())
+
+  # fetch data from the spreadsheet
   discovery_url = ('https://sheets.googleapis.com/$discovery/rest?'
                    'version=v4')
   google_service = discovery.build('sheets', 'v4', http=http,
                                    discoveryServiceUrl=discovery_url)
-
-  # fetch data from the spreadsheet
   result = (google_service
             .spreadsheets()
             .values()
             .get(spreadsheetId=GOOGLE_SHEETS_ID, range=GOOGLE_SHEETS_RANGE)
             .execute()
             .get('values', []))
-
   headers = result[0]
 
   # set up our jinja2 template
@@ -90,8 +92,8 @@ def build_faculty_profiles():
   )
   template = env.get_template('_template.j2')
 
-  # build templates for any new data on the spreadsheet
-  new_templates = 0
+  # build portfolios for any new data on the spreadsheet
+  new_portfolios = 0
   start_row = LAST_ACCESSED_ROW + 1
   for row in result[start_row:]:
 
@@ -141,25 +143,34 @@ def build_faculty_profiles():
       fhand.write(template.render(ctx))
       fhand.close()
 
-    new_templates += 1
+    new_portfolios += 1
 
-    # TODO: update image fetching to use google-api-python-client
-    # # fetch and save raw profile image
-    # if ctx['profile_picture']:
+    # fetch and save raw profile image
+    if ctx['profile_picture']:
 
-    #   # reformat the google drive url for downloading
-    #   parsed_url = urlparse(ctx['profile_picture'])
-    #   parsed_qs = parse_qs(parsed_url.query)
-    #   file_id = parsed_qs['id'][0]
-    #   url = 'https://drive.google.com/uc?export=download&id=' + file_id
-    #   response = requests.get(url)
+      # pull the image file id out of the saved URL
+      parsed_url = urlparse(ctx['profile_picture'])
+      parsed_qs = parse_qs(parsed_url.query)
+      file_id = parsed_qs['id'][0]
 
-    #   if response.status_code == 200:
-    #     path = OUTPUT_DIR + outfile_base + '-raw'
-    #     with open(path, 'wb') as fhand:
-    #       fhand.write(response.content)
-    #       fhand.close()
-    #       file_type = imghdr.what(path)
-    #       rename(path, path + '.' + file_type)
+      # establish our Google API credentials
+      scope = ['https://www.googleapis.com/auth/drive.readonly']
+      credentials = ServiceAccountCredentials.from_json_keyfile_name(GOOGLE_CREDENTIALS_PATH, scope)
+      http = credentials.authorize(httplib2.Http())
+
+      # fetch raw image from Google Drive
+      google_service = discovery.build('drive', 'v3', http=http)
+      metadata = google_service.files().get(fileId=file_id).execute()
+      file_extension = metadata['mimeType'].split('/')[-1]
+      request = google_service.files().get_media(fileId=file_id)
+      fhand = io.BytesIO()
+      downloader = google_http.MediaIoBaseDownload(fhand, request)
+      done = False
+      while done is False:
+        status, done = downloader.next_chunk()
+
+      with open(OUTPUT_DIR + outfile_base + '-raw.' + file_extension, 'wb') as f:
+        f.write(fhand.getvalue())
+        f.close()
           
-  print("Done! Built %d new faculty templates" % new_templates)
+  print("Done! Built %d new faculty portfolios" % new_portfolios)
