@@ -9,4 +9,5 @@ nose
 pip-tools
 pyyaml
 requests
+google-api-python-client
 {# This comment gives us a newline at the end of the generated file #}

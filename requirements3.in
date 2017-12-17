@@ -8,3 +8,4 @@ nose
 pip-tools
 pyyaml
 requests
+google-api-python-client
