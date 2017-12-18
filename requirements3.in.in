@@ -10,4 +10,6 @@ pip-tools
 pyyaml
 requests
 google-api-python-client
+boto3
+pillow
 {# This comment gives us a newline at the end of the generated file #}

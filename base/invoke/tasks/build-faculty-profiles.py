@@ -5,7 +5,7 @@
 # to Markdown files suitable for consumption by Jekyll. Fetch profile images
 # referenced on the spreadsheet and save them locally.
 #
-# usage (from root of project): invoke build_faculty_profiles.py
+# Usage (from root of project): invoke build_faculty_profiles
 #
 
 # NOTE: This script is very sensitive to the naming of fields in Google Forms.
