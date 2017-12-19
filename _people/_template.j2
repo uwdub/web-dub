@@ -14,13 +14,12 @@ version: 1
 {% endfor %}
 
 ################################################################################
-# Full name listed in the order of last name, first name, middle name(s).
+# Full name listed in the order of fields provided.
 #
 # name: 
-# - Surname
-# - First
-# - Middle
-# - More
+# - First name field
+# - Second name field
+# - etc (up to five fields)
 ################################################################################
 name:
   {% for name_part in name %}
@@ -36,28 +35,36 @@ role:
   - {{ role }}
 
 ################################################################################
-# A person may have multiple positions, which consist of titles and affiliations.
+# UW NetID, used for unique identification
+################################################################################
+netid: {{ netid }}
+
+################################################################################
+# A person may have multiple positions, which consist of a title and affiliation.
 #
 # Faculty have one or more title and affiliations.
 #
 # Valid faculty titles: 
-#   Assistant Professor 
-#   Associate Professor 
+#   Assistant Professor
+#   Adjunct Assistant Professor
+#   Affiliate Assistant Professor
+#   Associate Professor
+#   Adjunct Associate Professor
+#   Affiliate Associate Professor
 #   Professor
-#
+#   Adjunct Professor
+#   Affiliate Professor
 #   Lecturer
 #   Senior Lecturer
+#   Professor Emeritus
+
 #
-#   Professor Emeritus 
-#
-# Valid faculty and doctoral affiliations:
+# Valid faculty affiliations:
 #   Computer Science & Engineering
 #   Division of Design
 #   Human Centered Design & Engineering
 #   Information School
-#
-#   Human Computer Interaction & Design
-#
+#   Human-Computer Interaction & Design
 #   Architecture
 #   Biomedical & Health Informatics
 #   Civil & Environmental Engineering
@@ -69,14 +76,13 @@ role:
 #   Nursing
 #   Psychology
 #   Rehabilitation Medicine
+#   Other
+
 ################################################################################
 positions:
   {% for position in positions %}
   - title: {{ position.title }}
-    affiliation:
-    {% for affiliation in position.affiliations %}
-      - {{ affiliation }}
-    {% endfor %}
+    affiliation: {{ position.affiliation }}
   {% endfor %}
 
 ################################################################################

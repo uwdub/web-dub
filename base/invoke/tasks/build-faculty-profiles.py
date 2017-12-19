@@ -34,13 +34,13 @@ OUTPUT_DIR = './_people/faculty-new/'
 NUM_POSITION_BLOCKS_MAX = 4
 # max number of name fields that we allow on the Google form
 NUM_NAME_FIELDS_MAX = 5
-GOOGLE_SHEETS_ID = '1WW7S0t6qUcFabLL4I9bE1uLex8wQmA40KfNEfXqCma4'
+GOOGLE_SHEETS_ID = '1G7eBpUsG3QPA46IhAio4ViXKzLtNF2oqnNInHWpifyE'
 # the sheet name and column range to use
-GOOGLE_SHEETS_RANGE = 'Form Responses 1!A:X'
+GOOGLE_SHEETS_RANGE = 'Form Responses 1!A:AT'
 GOOGLE_CREDENTIALS_PATH = 'secrets/google-api-credentials.json'
 
 # TODO: pull this from a sequence file and keep it up to date
-LAST_ACCESSED_ROW = 1
+LAST_ACCESSED_ROW = 0
 
 def normalize(fields, sep="_"):
   """
@@ -115,7 +115,7 @@ def build_faculty_profiles():
 
       # title and affiliation fields need to be combined into a 'position'
       # block, one for each set of titles and affiliations
-      if header.startswith('title') or header.startswith('affiliations'):
+      if header.startswith('title') or header.startswith('affiliation'):
         if val:
           ctx['positions'][pluck_field_index(header)][header.split('_')[0]] = val
 
@@ -130,13 +130,6 @@ def build_faculty_profiles():
     # filter out any unused position blocks and name fields
     ctx['positions'] = [x for x in ctx['positions'] if x]
     ctx['name'] = [x for x in ctx['name'] if x]
-
-    for i in range(len(ctx['positions'])):
-
-      # convert the comma-separated string of affiliations for each position 
-      # block into an array, if it exists
-      ctx['positions'][i]['affiliations'] = \
-        [affil.strip() for affil in ctx['positions'][i]['affiliations'].split(',')]
 
     outfile_base = normalize(ctx['name'], sep='-')
     with open(OUTPUT_DIR + outfile_base + '.md', 'w') as fhand:
