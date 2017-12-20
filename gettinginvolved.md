@@ -8,7 +8,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
   <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
   	<li class="active"><a href="#getting_involved" data-toggle="tab">Getting Involved</a></li>
     <li><a href="#coordinators" data-toggle="tab">Coordinators</a></li>
-    <li><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
+    <li><a href="#mailing_lists_and_slack" data-toggle="tab">Mailing Lists and Slack</a></li>
     <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
     <li><a href="#branding" data-toggle="tab">Logo and Branding</a></li>
     <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
@@ -37,8 +37,8 @@ most vibrant communities for research and education in Human Computer Interactio
 If you are new to DUB, the best way to start participating is to:
 
 - Come to the weekly [DUB seminar]({{site.baseurl}}/gettinginvolved.html#tab_seminar).
-- Join one or more of the [DUB mailing lists]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists). 
-- Join the [DUB Slack](https://uwdub.slack.com).
+- Join one or more of the [DUB mailing lists]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists_and_slack). 
+- Join the [DUB Slack]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists_and_slack).
 
 ### Grassroots Organization
 
@@ -57,8 +57,9 @@ Prior examples of such events include:
 - Practice talk sessions.
 - Social events and happy hours.
 
-Whether you are a faculty, student, or researcher, one of the best places to start for
-is by reaching out in the faculty or general channels of the [DUB Slack](https://uwdub.slack.com).
+Whether you are a faculty, student, or researcher, 
+one of the best places to start in organizing an activity or event
+is by reaching out on the faculty or general channels of the DUB Slack.
 We have a set of templates and checklists that can help you coordinate such an activity or event. 
 
 If you have other ideas for DUB, talk with the DUB Coordinators, 
@@ -216,7 +217,7 @@ Sean Munson
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-Medium
+Medium Blog
 </div>
 <div class="col-md-8" markdown="block">
 [https://medium.com/hci-design-at-uw](https://medium.com/hci-design-at-uw)
@@ -229,19 +230,17 @@ Medium
 
 <!----------------------------------------------------------------------------->
 
-<div class="tab-pane" id="mailing_lists" markdown="block">
+<div class="tab-pane" id="mailing_lists_and_slack" markdown="block">
 
-## Mailing Lists
+## Mailing Lists and Slack
 
 The DUB mailing lists are the primary channel for DUB announcements.
 They are for faculty, students, researchers, and industry partners with an interest in
 Human Computer Interaction & Design at the University of Washington.
 
-We prefer you subscribe using your official email address (i.e., not a personal email).
-University of Washington addresses are approved most quickly,
-and posting is similarly restricted.
+We prefer you subscribe using your official email address (e.g., a University of Washington address).
 
-### DUB mailing list
+### DUB Mailing List
 
 <html>
 <div class="row">
@@ -254,9 +253,9 @@ General DUB-related announcements and information.
 </div>
 </html>
 
-### Additional DUB mailing lists
+### Additional DUB Mailing Lists
 
-In addition to joining the main list, join any additional appropriate lists.
+In addition to joining the main list, join more focused lists for additional announcements.
 
 <html>
 <div class="row">
@@ -267,9 +266,7 @@ In addition to joining the main list, join any additional appropriate lists.
 Faculty-specific DUB-related announcements and information.
 </div>
 </div>
-</html>
 
-<html>
 <div class="row">
 <div class="col-md-4" markdown="block">
 [Subscribe to dub-students]({{ site.baseurl }}/mailman/listinfo/dub-students)
@@ -279,6 +276,34 @@ Student-specific DUB-related announcements and information.
 </div>
 </div>
 </html>
+
+### DUB Slack
+
+Join the DUB Slack workspace for lightweight and social coordination in the DUB community.
+
+<html>
+<div class="row">
+<div class="col-md-4" markdown="block">
+[Sign in to the DUB Slack](https://uwdub.slack.com)
+</div>
+<div class="col-md-8" markdown="block">
+Lightweight and social coordination.
+</div>
+</div>
+</html>
+
+### Posting to the DUB Mailing Lists 
+
+Consistent with DUB's grassroots organization, 
+email can be sent directly to the lists (i.e., you do not need to ask a coordinator to send announcements on your behalf).
+The DUB mailing lists are configured to allow University of Washington addresses to send directly to the lists,
+while email sent from other addresses will be delayed by moderation.
+
+When deciding what content is appropriate to send, 
+please remember the general DUB list reaches more than 1000 people.
+If that audience is not right for your email, 
+consider directly contacting one or more of the [DUB Coordinators]({{site.baseurl}}/gettinginvolved.html#tab_coordinators),
+or consider the DUB Slack as a more lightweight and social channel to the DUB community.
 
 </div>
 
@@ -292,7 +317,7 @@ The seminar features talks from researchers, practitioners, and our own DUB comm
 All members of the DUB community are welcome and encouraged to attend the weekly DUB seminar.
 Seminars during the academic year often attract 100 to 120 people, beginning with socializing and then the talk.
 
-[The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists) are used for seminar announcements.
+[The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists_and_slack) are used for seminar announcements.
 
 [The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
 
