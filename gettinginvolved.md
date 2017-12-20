@@ -7,6 +7,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 <div class="sidebar_start"></div>
   <ul id="getting-involved-tabs" class="nav nav-pills nav-stacked" data-tabs="tabs">
   	<li class="active"><a href="#getting_involved" data-toggle="tab">Getting Involved</a></li>
+    <li><a href="#coordinators" data-toggle="tab">Coordinators</a></li>
     <li><a href="#mailing_lists" data-toggle="tab">Mailing Lists</a></li>
     <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
     <li><a href="#branding" data-toggle="tab">Logo and Branding</a></li>
@@ -19,70 +20,176 @@ title_bar_secondary: "HCI & Design at the University of Washington"
 <div id="seminar-tabs-content" class="tab-content">
 <div class="tab-pane active" id="getting_involved" markdown="block">
 
-# Getting involved
-DUB is a grassroots alliance of faculty, students, researchers, and industry partners interested in Human Computer Interaction & Design at the University of Washington. 
+DUB is a grassroots alliance of faculty, students, researchers, and
+industry partners interested in Human Computer Interaction & Design at the 
+University of Washington. The DUB acronym stands for Design, Use, Build. 
 
-Our mission is to bring together an interdisciplinary set of people to share ideas, collaborate on research, and discuss teaching related to the interaction between design, people, and technology. DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. For more than 10 years, DUB has helped bring these different people and perspectives together through weekly seminars, quarterly lunches, and yearly retreats, promoting an interdisciplinary environment and one of the world’s most vibrant communities for research and education in Human Computer Interaction & Design.
+Our mission is to bring together an interdisciplinary group of people to share ideas, 
+collaborate on research, and advance teaching related to the interaction between design, people, and technology. 
+DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. 
+For more than 10 years, DUB has helped bring these people and perspectives together
+through events that include weekly seminars, quarterly lunches, and yearly retreats.
+DUB's interdisciplinary environment is one of the world's 
+most vibrant communities for research and education in Human Computer Interaction & Design.
 
-If you are new to DUB, the best way to start participating is to come to our <a href="/gettinginvolved.html#tab_seminar">weekly seminar</a>, join one or more of our <a href="/gettinginvolved.html#tab_mailing_lists">mailing lists</a>, and join the <a href="https://uwdub.slack.com/">DUB Slack group</a>.
+### How to Get Started
 
-As a grassroots organization, we are always looking for volunteers to step up and help make DUB happen. Some of our activities have more formal organization, including:
+If you are new to DUB, the best way to start participating is to:
 
-<table>
-	<tr>
-		<th>what</th>
-		<th>who</th>
-		<th>contact (@dub.uw.edu)</th>
-	</tr>
-	<tr>
-		<td>Faculty Director</td>
-		<td>James Fogarty</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Seminar Series</td>
-		<td>Sean Munson, Katie O’Leary (Diversity & Outreach Coordinator), Christina Chung, Marina Lazarevic, and Alex Mariakakis<br/>Videos: Hy Nguyen<br />
-		Starting in 2018: Jennifer Mankoff, Anat Caspi
-		</td>
-		<td>speak@</td>
-	</tr>
-	<tr>
-		<td>Retreat</td>
-		<td><em>2017 organizers:</em><br />
-		Maya Cakmak, Andy Davidson, Emily Lloyd, Mary Larson, Jason Yip<br />
-		Katie O’Leary, Ravi Karkar, Sonu Mishra, Himanshu Zade<br /><br />
-		<td></td>
-	</tr>
-	<tr>
-		<td>Doctoral Consortium</td>
-		<td><em><a href="/posts/2017/201701-dubdc.html">2017</a> organizers:</em><br />
-		Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, and Katie O’Leary</td>
-		<td></td>
-	</tr>
-	<tr>
-		<td>Website</td>
-		<td>James Fogarty</td>
-		<td>See <a href="https://github.com/uwdub/web-dub">github</a></td>
-	</tr>
-	<tr>
-		<td><a href="https://medium.com/hci-design-at-uw">Medium</a> Curation</td>
-		<td>Sean Munson</td>
-		<td></td>
-	</tr>
-</table>
+- Come to the weekly [DUB seminar]({{site.baseurl}}/gettinginvolved.html#tab_seminar).
+- Join one or more of the [DUB mailing lists]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists). 
+- Join the [DUB Slack](https://uwdub.slack.com).
 
-Other activities are more ad-hoc and just require stepping up and getting a group together. These include paper draft review sessions, practice talk sessions, and happy hours.
+### Grassroots Organization
 
-Whether you are a student, faculty member, or researcher, and you want to organize a paper swap, practice talk session for an upcoming conference, or a happy hour, one of the best places to start is <a href="https://uwdub.slack.com/">sending a message to the general channel on Slack</a>. We have a great set of templates and checklists that can help you organize an event. 
+As a grassroots organization, DUB is based in members of the community coordinating its activities and events.
 
-Got other ideas of things we should be doing? Talk with the director, write a message on Slack to gauge interest (the faculty or general channels are good places to start), or chat about your idea with others at the start of a seminar!
+DUB's primary activities are coordinated by contributors from across the DUB community.
+If you have a question or suggestion about one of these activities,
+or would like to take on a larger role in DUB and the coordination of such activities, 
+reach out to one or more of the [DUB Coordinators]({{site.baseurl}}/gettinginvolved.html#tab_coordinators). 
+
+Additional activities and events are more ad-hoc and coordinated directly by members of the DUB community.
+If you are interested in such an activity or event, then just coordinate a group.
+Prior examples of such events include:
+
+- Paper draft review and swap sessions.
+- Practice talk sessions.
+- Social events and happy hours.
+
+Whether you are a faculty, student, or researcher, one of the best places to start for
+is by reaching out in the faculty or general channels of the [DUB Slack](https://uwdub.slack.com).
+We have a set of templates and checklists that can help you coordinate such an activity or event. 
+
+If you have other ideas for DUB, talk with the DUB Coordinators, 
+reach out on the faculty or general channels of the DUB Slack to gauge interest, 
+or chat about your idea with others at the start of a DUB seminar.
+
+</div>
+
+<!----------------------------------------------------------------------------->
+
+<div class="tab-pane" id="coordinators" markdown="block">
+
+## Coordinators
+
+<html>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Director**
+</div>
+<div class="col-md-8" markdown="block">
+James Fogarty
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Seminar Series**
+</div>
+<div class="col-md-8" markdown="block">
+Sean Munson
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Christina Chung, Marina Lazarevic, Alex Mariakakis, Katie O'Leary
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Diversity & Outreach Coordinator
+</div>
+<div class="col-md-8" markdown="block">
+Katie O'Leary
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Videos and Vimeo
+</div>
+<div class="col-md-8" markdown="block">
+Hy Nguyen
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2018 Faculty Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Jennifer Mankoff, Anat Caspi
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Retreat**
+</div>
+<div class="col-md-8" markdown="block">
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2017 Organizers
+</div>
+<div class="col-md-8" markdown="block">
+Maya Cakmak, Andy Davidson, Mary Larson, Emily Lloyd, Jason Yip
+
+Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Doctoral Consortium**
+</div>
+<div class="col-md-8" markdown="block">
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2017 Organizers
+</div>
+<div class="col-md-8" markdown="block">
+Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, Katie O'Leary
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Website**
+</div>
+<div class="col-md-8" markdown="block">
+James Fogarty
+
+[https://github.com/uwdub/web-dub](https://github.com/uwdub/web-dub)
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Medium Curation**
+</div>
+<div class="col-md-8" markdown="block">
+Sean Munson
+
+[https://medium.com/hci-design-at-uw](https://medium.com/hci-design-at-uw)
+</div>
+</div>
+
+</html>
+
 </div>
 
 <!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="mailing_lists" markdown="block">
 
-# Mailing Lists
+## Mailing Lists
 
 The DUB mailing lists are the primary channel for DUB announcements.
 They are for faculty, students, researchers, and industry partners with an interest in
@@ -92,7 +199,7 @@ We prefer you subscribe using your official email address (i.e., not a personal 
 University of Washington addresses are approved most quickly,
 and posting is similarly restricted.
 
-## DUB mailing list
+### DUB mailing list
 
 <html>
 <div class="row">
@@ -105,7 +212,7 @@ General DUB-related announcements and information.
 </div>
 </html>
 
-## Additional DUB mailing lists
+### Additional DUB mailing lists
 
 In addition to joining the main list, join any additional appropriate lists.
 
@@ -136,7 +243,7 @@ Student-specific DUB-related announcements and information.
 <!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="seminar" markdown="block">
-# DUB Seminars
+## DUB Seminars
 
 The weekly DUB seminar is the primary gathering point for the DUB community.
 The seminar features talks from researchers, practitioners, and our own DUB community.
@@ -158,7 +265,7 @@ The seminar can also be taken for credit.
 <!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="branding" markdown="block">
-# Logo and Branding
+## Logo and Branding
 
 We encourage the DUB community to include DUB in their presentations, posters, papers, and other materials. 
 
@@ -174,7 +281,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
 
 <table class="table">
     <tr>
-        <td colspan="2"><h2>Logo with Right Text</h2></td>
+        <td colspan="2"><h3>Logo with Right Text</h3></td>
     </tr>
     <tr>
         <td>
@@ -219,7 +326,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_right_white.png" /></td>
     </tr>
     <tr>
-        <td colspan="2"><h2>Logo with Bottom Text</h2></td>
+        <td colspan="2"><h3>Logo with Bottom Text</h3></td>
     </tr>
     <tr>
         <td>
@@ -264,7 +371,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_bottom_white.png" /></td>
     </tr>
     <tr>
-        <td colspan="2"><h2>Logo Only</h2></td>
+        <td colspan="2"><h3>Logo Only</h3></td>
     </tr>
     <tr>
         <td>
@@ -288,7 +395,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_white.png" /></td>
     </tr>
     <tr>
-        <td colspan="2"><h2>Logo Square</h2></td>
+        <td colspan="2"><h3>Logo Square</h3></td>
     </tr>
     <tr>
         <td>
@@ -305,7 +412,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
         <td><img class="logo-branding" src="{{ site.baseurl }}/images/logo/DUB_square_purpleonwhite.png" /></td>
     </tr>
     <tr>
-        <td colspan="2"><h2>Colors</h2></td>
+        <td colspan="2"><h3>Colors</h3></td>
     </tr>
     <tr>
         <td>Purple</td>
@@ -332,7 +439,7 @@ Please do not create images that introduce new colors, stretch or outline the lo
         </td>
     </tr>
     <tr>
-        <td colspan="2"><h2>Font</h2></td>
+        <td colspan="2"><h3>Font</h3></td>
     </tr>
     <tr>
         <td>Brandon</td>
@@ -345,12 +452,12 @@ Please do not create images that introduce new colors, stretch or outline the lo
 <!----------------------------------------------------------------------------->
 
 <div class="tab-pane" id="prospective" markdown="block">
-# Prospective Students
+## Prospective Students
 
 DUB is not an academic department, so prospective students join DUB by joining a department or program that
 participates in the University of Washington's Human Computer Interaction & Design community.
 
-## Doctoral Programs
+### Doctoral Programs
 
 Doctoral students involved in DUB come from a variety of programs across the University of Washington.
 Students must apply and be accepted to one of the individual DUB departments.
@@ -377,7 +484,7 @@ If you are unsure which program is the right fit for you, please talk directly w
 
 You can also apply to multiple programs. The important thing is to come join us!
 
-## Master's Programs
+### Master's Programs
 
 DUB faculty collaborate in leadership of the
 [Master of Human-Computer Interaction + Design (MHCI+D)](http://mhcid.washington.edu) program.
