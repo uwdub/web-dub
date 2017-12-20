@@ -44,7 +44,7 @@ If you are new to DUB, the best way to start participating is to:
 
 As a grassroots organization, DUB is based in members of the community coordinating its activities and events.
 
-DUB's primary activities are coordinated by contributors from across the DUB community.
+DUB's primary activities are coordinated by faculty, students, and researchers from across the DUB community.
 If you have a question or suggestion about one of these activities,
 or would like to take on a larger role in DUB and the coordination of such activities, 
 reach out to one or more of the [DUB Coordinators]({{site.baseurl}}/gettinginvolved.html#tab_coordinators). 
@@ -73,6 +73,11 @@ or chat about your idea with others at the start of a DUB seminar.
 
 ## Coordinators
 
+DUB's primary activities are coordinated by faculty, students, and researchers from across the DUB community.
+If you have a question or suggestion about one of these activities,
+or would like to take on a larger role in DUB and the coordination of such activities, 
+reach out to one or more of the DUB Coordinators. 
+
 <html>
 
 <div class="row">
@@ -85,11 +90,24 @@ James Fogarty
 </div>
 
 <div class="row">
+<div class="col-md-12" markdown="block">
+**Seminar**
+</div>
+</div>
+<div class="row">
 <div class="col-md-4" markdown="block">
-**Seminar Series**
+Email Contact
 </div>
 <div class="col-md-8" markdown="block">
-Sean Munson
+speak [at] dub [dot] washington [dot] edu
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Anat Caspi, Jennifer Mankoff, Sean Munson
 </div>
 </div>
 <div class="row">
@@ -116,43 +134,37 @@ Videos and Vimeo
 Hy Nguyen
 </div>
 </div>
-<div class="row">
-<div class="col-md-4" markdown="block">
-2018 Faculty Coordinators
-</div>
-<div class="col-md-8" markdown="block">
-Jennifer Mankoff, Anat Caspi
-</div>
-</div>
 
 <div class="row">
-<div class="col-md-4" markdown="block">
+<div class="col-md-12" markdown="block">
 **Retreat**
-</div>
-<div class="col-md-8" markdown="block">
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Organizers
+2017 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
 Maya Cakmak, Andy Davidson, Mary Larson, Emily Lloyd, Jason Yip
-
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2017 Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
 Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
 </div>
 </div>
 
 <div class="row">
-<div class="col-md-4" markdown="block">
+<div class="col-md-12" markdown="block">
 **Doctoral Consortium**
-</div>
-<div class="col-md-8" markdown="block">
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Organizers
+2017 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
 Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, Katie O'Leary
@@ -160,23 +172,53 @@ Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, Katie O'Leary
 </div>
 
 <div class="row">
-<div class="col-md-4" markdown="block">
+<div class="col-md-12" markdown="block">
 **Website**
 </div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Email Contact
+</div>
 <div class="col-md-8" markdown="block">
-James Fogarty
-
+dub-web [at] dub [dot] washington [dot] edu
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+James Fogarty, Trevor Croxson
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+GitHub Repository
+</div>
+<div class="col-md-8" markdown="block">
 [https://github.com/uwdub/web-dub](https://github.com/uwdub/web-dub)
 </div>
 </div>
 
 <div class="row">
-<div class="col-md-4" markdown="block">
+<div class="col-md-12" markdown="block">
 **Medium Curation**
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Coordinator
 </div>
 <div class="col-md-8" markdown="block">
 Sean Munson
-
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Medium
+</div>
+<div class="col-md-8" markdown="block">
 [https://medium.com/hci-design-at-uw](https://medium.com/hci-design-at-uw)
 </div>
 </div>
