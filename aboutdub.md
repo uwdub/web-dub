@@ -4,18 +4,17 @@ title: "About DUB"
 title_bar_secondary: "HCI & Design at the University of Washington"
 ---
 
-# What is DUB?
-
 DUB is a grassroots alliance of faculty, students, researchers, and
 industry partners interested in Human Computer Interaction & Design at the 
 University of Washington. The DUB acronym stands for Design, Use, Build. 
 
-The mission of DUB is to bring together an interdisciplinary set of people to share ideas, 
-collaborate on research, and discuss teaching related to the interaction between design, people, and technology. 
-DUB began when we recognized a strength of research in Human Computer Interaction & Design 
-across many units at the University of Washington. For more than 10 years, DUB has helped bring these 
-different people and perspectives together, promoting an interdisciplinary environment and 
-one of the world's most vibrant communities for research and education in Human Computer Interaction & Design. 
+Our mission is to bring together an interdisciplinary group of people to share ideas, 
+collaborate on research, and advance teaching related to the interaction between design, people, and technology. 
+DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. 
+For more than 10 years, DUB has helped bring these people and perspectives together
+through events that include weekly seminars, quarterly lunches, and yearly retreats.
+DUB's interdisciplinary environment is one of the world's 
+most vibrant communities for research and education in Human Computer Interaction & Design.
 
 Primary activities of the DUB group include: 
 
