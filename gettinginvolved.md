@@ -9,7 +9,6 @@ title_bar_secondary: "HCI & Design at the University of Washington"
   	<li class="active"><a href="#getting_involved" data-toggle="tab">Getting Involved</a></li>
     <li><a href="#coordinators" data-toggle="tab">Coordinators</a></li>
     <li><a href="#mailing_lists_and_slack" data-toggle="tab">Mailing Lists and Slack</a></li>
-    <li><a href="#seminar" data-toggle="tab">DUB Seminars</a></li>
     <li><a href="#branding" data-toggle="tab">Logo and Branding</a></li>
     <li><a href="#prospective" data-toggle="tab">Prospective Students</a></li>
   </ul>
@@ -304,28 +303,6 @@ please remember the general DUB list reaches more than 1000 people.
 If that audience is not right for your email, 
 consider directly contacting one or more of the [DUB Coordinators]({{site.baseurl}}/gettinginvolved.html#tab_coordinators),
 or consider the DUB Slack as a more lightweight and social channel to the DUB community.
-
-</div>
-
-<!----------------------------------------------------------------------------->
-
-<div class="tab-pane" id="seminar" markdown="block">
-## DUB Seminars
-
-The weekly DUB seminar is the primary gathering point for the DUB community.
-The seminar features talks from researchers, practitioners, and our own DUB community.
-All members of the DUB community are welcome and encouraged to attend the weekly DUB seminar.
-Seminars during the academic year often attract 100 to 120 people, beginning with socializing and then the talk.
-
-[The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists_and_slack) are used for seminar announcements.
-
-[The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
-
-With speaker permission, 
-videos of DUB seminar talks are posted to [the DUB calendar]({{ site.baseurl }}/calendar.html)
-and [the DUB Vimeo channel](http://vimeo.com/designusebuild).
-
-The seminar can also be taken for credit.
 
 </div>
 
