@@ -19,10 +19,6 @@ title: "DUB Seminar"
 
 <div class="sidebar_end"></div>
 
-<!----------------------------------------------------------------------------->
-
-<div id="seminar-tabs-content" class="tab-content" markdown="block">
-
 The weekly DUB seminar is the primary gathering point for the DUB community.
 The seminar features talks from diverse leading perspectives in Human Computer Interaction & Design,
 presented by members of the DUB community and by visiting researchers and practitioners.
@@ -45,6 +41,8 @@ but very limited support is available in situations where costs would be a barri
 If you are interested in hosting a DUB speaker, or are yourself interested in speaking in the DUB seminar,
 contact the [DUB Seminar Coordinators]({{ site.baseurl }}/gettinginvolved.html#tab_coordinators) 
 via email at speak [at] dub [dot] washington [dot] edu. 
+
+<div id="seminar-tabs-content" class="tab-content" markdown="block">
 
 <!----------------------------------------------------------------------------->
 
