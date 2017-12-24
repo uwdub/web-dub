@@ -28,7 +28,7 @@ from apiclient import discovery, http as google_http
 from oauth2client.service_account import ServiceAccountCredentials
 
 
-OUTPUT_DIR = './_people/faculty-new/'
+OUTPUT_DIR = './_people/faculty/'
 # max number of position blocks (title and affiliation) that we allow on the 
 # Google form
 NUM_POSITION_BLOCKS_MAX = 4

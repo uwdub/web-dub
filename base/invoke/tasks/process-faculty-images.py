@@ -16,7 +16,7 @@ from PIL import Image
 
 
 os.environ['AWS_CONFIG_FILE'] = 'secrets/aws-config'
-IMAGES_DIRECTORY = '_people/faculty-new'
+IMAGES_DIRECTORY = '_people/faculty'
 
 def bound_lower(val, bound):
   return val if val > bound else bound
