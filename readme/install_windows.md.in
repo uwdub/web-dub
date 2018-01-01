@@ -1,0 +1,6 @@
+# Dependency Installation for Windows
+
+{% include "base/readme/install/python_windows.md" %}
+{% include "base/readme/install/node_windows.md" %}
+{% include "base/readme/install/ruby_windows.md" %}
+{% include "base/readme/install/docker_toolbox_windows.md" -%}
