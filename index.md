@@ -149,7 +149,7 @@ collaborate on research, and advance teaching related to the interaction between
       </div>
       <div class="row icon-bottom">
         <div class="col-xs-12 calendar-button">
-        <a href="{{ site.baseurl }}/calendar.html" type="button" class="btn btn-default btn-block">View Full Calendar</a>
+        <a href="{{ site.baseurl }}/seminar.html" type="button" class="btn btn-default btn-block">View Full Calendar</a>
         </div>
       </div>
     </section>
