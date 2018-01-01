@@ -1,0 +1,7 @@
+# Dependency Installation for Mac
+
+{% include "base/readme/install/homebrew_mac.md" %}
+{% include "base/readme/install/python_mac.md" %}
+{% include "base/readme/install/node_mac.md" %}
+{% include "base/readme/install/ruby_mac.md" %}
+{% include "base/readme/install/docker_toolbox_mac.md" -%}
