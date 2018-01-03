@@ -7,6 +7,9 @@
 <html>
   <section>
     <div class="row">
+        <div class="col-xs-12">
+          <hr />
+        </div>
       {% for item_seminar in seminars %}
         <div class="col-md-3">
           <div class="col-xs-12">

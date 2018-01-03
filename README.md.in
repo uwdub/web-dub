@@ -1,12 +1,11 @@
 # DUB Website
-[![Build Status](https://travis-ci.org/uwdub/web-dub.svg?branch=master)](https://travis-ci.org/uwdub/web-dub)
+
+{% if readme.travis_badge %}
+{{ readme.travis_badge }}
+{% endif %}
 
 This is the repository for the DUB website, as hosted at <https://dub.washington.edu/>.
 
-# Issues
+{% include "base/readme/install.md" %}
 
-Issues and suggestions are tracked here:
-
-<https://github.com/uwdub/web-dub/issues>
-
-{% include "base/readme/install_dependencies.md" %}
+{% include "base/readme/invoke.md" %}
