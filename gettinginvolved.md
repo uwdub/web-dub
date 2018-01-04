@@ -115,7 +115,7 @@ Anat Caspi, Jennifer Mankoff, Sean Munson
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Christina Chung, Marina Lazarevic, Alex Mariakakis, Katie O'Leary
+Christina Chung, Daphne Liang, Alex Mariakakis, Katie O'Leary
 </div>
 </div>
 <div class="row">
