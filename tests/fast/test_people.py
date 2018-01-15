@@ -41,6 +41,7 @@ class TestPeople(unittest.TestCase):
             in os.scandir('_people')
             and os.scandir('_people/faculty')
             if people_file_entry.is_file()
+            and not people_file_entry.path.endswith('README.md')
             and os.path.splitext(people_file_entry.path)[1] == ".md"
         ]
 
@@ -96,12 +97,21 @@ class TestPeople(unittest.TestCase):
                     self.assertIn(
                         position_current['title'],
                         [
+                            'Adjunct Assistant Professor',
+                            'Adjunct Associate Professor',
+                            'Adjunct Lecturer',
+                            'Adjunct Senior Lecturer',
+                            'Adjunct Professor',
+                            'Affiliate Assistant Professor',
+                            'Affiliate Associate Professor',
+                            'Affiliate Professor',
                             'Assistant Professor',
                             'Associate Professor',
-                            'Professor',
                             'Lecturer',
-                            'Senior Lecturer',
+                            'Other <please email dub-web@dub.washington.edu>',
+                            'Professor',
                             'Professor Emeritus',
+                            'Senior Lecturer',
                         ],
                         'Invalid title in {}'.format(people_path_current)
                     )
@@ -123,23 +133,19 @@ class TestPeople(unittest.TestCase):
                 self.assertIn(
                     position_current['affiliation'],
                     [
+                        'Architecture',
+                        'Biomedical Informatics and Medical Education',
+                        'Civil & Environmental Engineering',
+                        'Communication',
                         'Computer Science & Engineering',
                         'Division of Design',
-                        'Human Centered Design & Engineering',
-                        'Information School',
-                        'Human Computer Interaction & Design',
-                        'Architecture',
-                        'Biomedical & Health Informatics',
-                        'Communication',
-                        'DXARTS Digital Arts',
                         'Electrical Engineering',
+                        'Human Centered Design & Engineering',
+                        'Human Computer Interaction + Design',
                         'Industrial & Systems Engineering',
+                        'Information School',
                         'Mechanical Engineering',
-                        'Psychology',
-                        'Civil & Environmental Engineering',
-                        'Nursing',
-                        'Rehabilitation Medicine',
-                        'Interdisciplinary Arts & Sciences of UW Tacoma'
+                        'Other <please email dub-web@dub.washington.edu>',
                     ],
                     'Invalid affiliation in {}'.format(people_path_current)
                 )
