@@ -86,4 +86,7 @@ def process_faculty_images():
                            '-processed' + img_type)))
     num_processed_images += 1
 
+    # remove the raw image
+    os.remove(os.path.join(IMAGES_DIRECTORY, base_filename + '-raw' + img_type))
+
   print('Done! Processed %d images' % num_processed_images)
