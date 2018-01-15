@@ -22,6 +22,7 @@ import os
 import re
 import io
 import httplib2
+import yaml
 from jinja2 import Environment, FileSystemLoader
 from urllib.parse import urlparse, parse_qs
 from apiclient import discovery, http as google_http
@@ -39,8 +40,11 @@ GOOGLE_SHEETS_ID = '1G7eBpUsG3QPA46IhAio4ViXKzLtNF2oqnNInHWpifyE'
 GOOGLE_SHEETS_RANGE = 'Form Responses 1!A:AT'
 GOOGLE_CREDENTIALS_PATH = 'secrets/google-api-credentials.json'
 
-# TODO: pull this from a sequence file and keep it up to date
 LAST_ACCESSED_ROW = 0
+with open('_remote_data_sequences.yml', 'r') as f:
+  sequences = yaml.load(f)
+  LAST_ACCESSED_ROW = sequences['roles']['faculty']['last_accessed_row']
+  f.close()
 
 def normalize(fields, sep="_"):
   """
@@ -93,9 +97,10 @@ def build_faculty_profiles():
   template = env.get_template('_template.j2')
 
   # build portfolios for any new data on the spreadsheet
-  new_portfolios = 0
+  num_new_portfolios = 0
   start_row = LAST_ACCESSED_ROW + 1
   for row in result[start_row:]:
+    print('Building portfolio %d of %d' % (num_new_portfolios + 1, len(result[start_row:])), end='\r')
 
     # context object to feed to the jinja2 template
     ctx = {
@@ -136,7 +141,7 @@ def build_faculty_profiles():
       fhand.write(template.render(ctx))
       fhand.close()
 
-    new_portfolios += 1
+    num_new_portfolios += 1
 
     # fetch and save raw profile image
     if ctx['profile_picture']:
@@ -165,5 +170,12 @@ def build_faculty_profiles():
       with open(OUTPUT_DIR + outfile_base + '-raw.' + file_extension, 'wb') as f:
         f.write(fhand.getvalue())
         f.close()
-          
-  print("Done! Built %d new faculty portfolios" % new_portfolios)
+
+  with open('_remote_data_sequences.yml', 'r+') as f:
+    sequences = yaml.load(f)
+    sequences['roles']['faculty']['last_accessed_row'] = LAST_ACCESSED_ROW + num_new_portfolios
+    f.seek(0)
+    yaml.dump(sequences, f, default_flow_style=False)
+    f.close()
+
+  print("Done! Built %d new faculty portfolios" % num_new_portfolios)
