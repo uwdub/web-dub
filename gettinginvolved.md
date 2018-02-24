@@ -115,7 +115,7 @@ Anat Caspi, Jennifer Mankoff, Sean Munson
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra
+Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra, John Robinson
 </div>
 </div>
 <div class="row">
