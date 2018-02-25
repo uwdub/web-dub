@@ -115,7 +115,7 @@ Anat Caspi, Jennifer Mankoff, Sean Munson
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra, John Robinson
+Eunice Jun, Ada Kim, Daphne Liang, Sonali Mishra, John Robinson
 </div>
 </div>
 <div class="row">
@@ -123,7 +123,7 @@ Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra, John Robinson
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Katie O'Leary
+Eunice Junice
 </div>
 </div>
 <div class="row">
