@@ -33,6 +33,8 @@ def migrate_seminar_files():
         with open(os.path.join(SOURCE_DIR, filename), 'r') as infile:
             # Strip the first and last lines of the seminar files, which
             # contain the Jekyll frontmatter delimiters (i.e. '---').
+            # Convert the result back to a stream so we can parse it with
+            # yaml.load().
             seminar_data = yaml.load(StringIO(''.join(infile.readlines()[1:-1])))
 
             # Make sure the bio and abstract text are free of newlines after
