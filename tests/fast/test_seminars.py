@@ -13,7 +13,7 @@ class TestSeminars(unittest.TestCase):
             seminar_file_entry.path
             for seminar_file_entry
             in os.scandir('_seminars')
-            if seminar_file_entry.is_file()
+            if seminar_file_entry.is_file() and not seminar_file_entry.name.endswith('j2')
         ]
         for seminar_path_current in seminar_paths:
             try:
@@ -46,7 +46,7 @@ class TestSeminars(unittest.TestCase):
             seminar_file_entry.path
             for seminar_file_entry
             in os.scandir('_seminars')
-            if seminar_file_entry.is_file()
+            if seminar_file_entry.is_file() and not seminar_file_entry.name.endswith('j2')
         ]
         for seminar_path_current in seminar_paths:
             with open(seminar_path_current, encoding='utf-8') as f:
