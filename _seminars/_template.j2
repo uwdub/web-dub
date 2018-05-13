@@ -1,0 +1,131 @@
+---
+################################################################################
+# Version of the seminar format. The only valid value for this is '1'. 
+# We may increment this in the future to simplify maintenance of old seminars.
+################################################################################
+version: {{ version }}
+
+################################################################################
+# Sequence number of the seminar file. This is used to keep the iCal up to date.
+# Increment the sequence number each time the seminar file is updated.
+################################################################################
+sequence: {{ sequence }}
+
+################################################################################
+# Date and time of the seminar. In quotes because : is a reserved character.
+# Date must equal the name of this file.
+################################################################################
+date:     {{ date }}
+time:     "{{ time }}"
+time_end: "{{ time_end }}"
+
+################################################################################
+# A seminar file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+{% if tbd_speakers %}
+tbd_speakers:   {{ tbd_speakers }}
+{% endif %}
+{% if tbd_title %}
+tbd_title:      {{ tbd_title }}
+{% endif %}
+{% if tbd_location %}
+tbd_location:   {{ tbd_location }}
+{% endif %}
+{% if tbd_abstract %}
+tbd_abstract:   {{ tbd_abstract }}
+{% endif %}
+{% if tbd_bio %}
+tbd_bio:        {{ tbd_bio }}
+{% endif %}
+{% if tbd_video %}
+tbd_video:      {{ tbd_video }}
+{% endif %}
+
+################################################################################
+# If a date is "No DUB Seminar", we display it differently.
+#
+# no_seminar: true
+#
+# Seminar files are archived by default. Add this if a seminar should not be.
+#
+# no_archive: true
+################################################################################
+
+################################################################################
+# One or more speakers. Each speaker has name and affiliation.
+#
+# If a speaker does not have an affiliation, the affiliation field can be removed.
+# In this case, the speaker needs a field 'affiliation_none: true'.
+#
+# speakers:
+#   - name: 
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation: Computer Science & Engineering 
+#   - name: 
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation: Information School 
+#   - name: 
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation: Carnegie Mellon University 
+################################################################################
+{% if speakers %}
+speakers:
+  {% for speaker in speakers %}
+  - name:
+    {% for name_part in speaker.name %}
+    - {{ name_part }}
+    {% endfor %}
+    affiliation: {{ speaker.affiliation }}
+  {% endfor %}
+{% endif %}
+
+################################################################################
+# Our core fields are title, location, abstract, bio.
+# title:      "Title in Quotes: Because Colons Cause Errors"
+# 
+# location:   "HUB 334"
+# (optional) location_override_calendar:
+# (optional) location_override_seminar_page:
+#
+# abstract:   |
+#   An abstract can span multiple lines, and can do things across those lines,
+#   like going on for a while or being repetitive.
+#
+#   But the indentation between line wraps is important.
+#
+# bio:        |
+#   And do not even get us started on how a bio can be.
+#
+#   Bio definitely can also span multiple lines like this.
+################################################################################
+title:     "{{ title }}"
+
+location:  "{{ location }}"
+
+abstract:   |
+  {{ abstract }}
+  
+bio:        |
+  {{ bio }}
+
+################################################################################
+# A seminar may have a video. If so, provide the Vimeo video number.
+#
+# video: 142303577
+#
+# If not, this field should not be present 
+################################################################################
+{% if video %}
+video: {{ video }}
+{% endif %}
+---
