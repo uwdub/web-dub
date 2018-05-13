@@ -24,7 +24,8 @@ def compile_calendar():
         for seminar_file_entry
         in os.scandir('_seminars')
         if seminar_file_entry.is_file() and
-           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
+           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md') and
+           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.j2')
     ]
 
     # Maintain the sequence field for each seminar
