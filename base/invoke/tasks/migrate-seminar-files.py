@@ -16,6 +16,9 @@ OUTPUT_DIR = './_seminars-new/'
 
 @invoke.task()
 def migrate_seminar_files():
+    if not os.path.isdir(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+
     env = Environment(
         loader=FileSystemLoader(searchpath='./_seminars'),
         trim_blocks=True,
