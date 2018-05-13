@@ -17,7 +17,8 @@ class TestSeminarSequence(object):
             for seminar_file_entry
             in os.scandir('_seminars')
             if seminar_file_entry.is_file() and
-               os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
+               os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md') and
+               os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.j2')
         ]
 
         for seminar_path_current in seminar_paths:
