@@ -145,7 +145,7 @@ Hy Nguyen
 2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Jon Froehlich, Audrey Deskjardins, Andy Davidson (hold the date: 19 October)
+Jon Froehlich, Audrey Desjardins, Andy Davidson (hold the date: 19 October)
 </div>
 </div>
 <div class="row">
@@ -167,7 +167,7 @@ Jon Froehlich, Audrey Deskjardins, Andy Davidson (hold the date: 19 October)
 2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Dharma Dailey, Ravi Karkar, Shefali Halder, Sonu Mishra, Aditya Vashistha
+Dharma Dailey, Ravi Karkar, Shefali Haldar, Sonu Mishra, Aditya Vashistha
 </div>
 </div>
 
