@@ -107,7 +107,7 @@ speak [at] dub [dot] washington [dot] edu
 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Anat Caspi, Jennifer Mankoff, Sean Munson
+Anat Caspi, Jennifer Mankoff
 </div>
 </div>
 <div class="row">
@@ -123,7 +123,7 @@ Eunice Jun, Ada Kim, Daphne Liang, Sonali Mishra, John Robinson
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Eunice Junice
+Eunice Jun
 </div>
 </div>
 <div class="row">
@@ -142,18 +142,18 @@ Hy Nguyen
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Coordinators
+2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Maya Cakmak, Andy Davidson, Mary Larson, Emily Lloyd, Jason Yip
+Jon Froehlich, Audrey Desjardins, Andy Davidson (hold the date: 19 October)
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Student Coordinators
+2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
+
 </div>
 </div>
 
@@ -164,10 +164,10 @@ Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Student Coordinators
+2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, Katie O'Leary
+Dharma Dailey, Ravi Karkar, Shefali Haldar, Sonu Mishra, Aditya Vashistha
 </div>
 </div>
 
