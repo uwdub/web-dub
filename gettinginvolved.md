@@ -136,8 +136,11 @@ Hy Nguyen
 </div>
 
 <div class="row">
-<div class="col-md-12" markdown="block">
+<div class="col-md-4" markdown="block">
 **Retreat**
+</div>
+<div class="col-md-8" markdown="block">
+October 19, 2018
 </div>
 </div>
 <div class="row">
@@ -145,7 +148,7 @@ Hy Nguyen
 2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Jon Froehlich, Audrey Desjardins, Andy Davidson (hold the date: 19 October)
+Andy Davidson, Audrey Desjardins, Jon Froehlich, Emily Lloyd
 </div>
 </div>
 <div class="row">
