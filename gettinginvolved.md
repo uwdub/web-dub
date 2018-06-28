@@ -107,7 +107,7 @@ speak [at] dub [dot] washington [dot] edu
 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Anat Caspi, Jennifer Mankoff, Sean Munson
+Anat Caspi, Jennifer Mankoff
 </div>
 </div>
 <div class="row">
@@ -115,7 +115,7 @@ Anat Caspi, Jennifer Mankoff, Sean Munson
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra
+Eunice Jun, Ada Kim, Daphne Liang, Sonali Mishra, John Robinson
 </div>
 </div>
 <div class="row">
@@ -123,7 +123,7 @@ Ada Kim, Daphne Liang, Alex Mariakakis, Sonali Mishra
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Katie O'Leary
+Eunice Jun
 </div>
 </div>
 <div class="row">
@@ -136,24 +136,27 @@ Hy Nguyen
 </div>
 
 <div class="row">
-<div class="col-md-12" markdown="block">
+<div class="col-md-4" markdown="block">
 **Retreat**
 </div>
-</div>
-<div class="row">
-<div class="col-md-4" markdown="block">
-2017 Coordinators
-</div>
 <div class="col-md-8" markdown="block">
-Maya Cakmak, Andy Davidson, Mary Larson, Emily Lloyd, Jason Yip
+October 19, 2018
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Student Coordinators
+2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
+Andy Davidson, Audrey Desjardins, Jon Froehlich, Emily Lloyd
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2018 Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+
 </div>
 </div>
 
@@ -164,10 +167,10 @@ Ravi Karkar, Sonu Mishra, Katie O'Leary, Himanshu Zade
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2017 Student Coordinators
+2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Elena Agapie, Christina Chung, Daniel Epstein, Alex Mariakakis, Katie O'Leary
+Dharma Dailey, Ravi Karkar, Shefali Haldar, Sonu Mishra, Aditya Vashistha
 </div>
 </div>
 
