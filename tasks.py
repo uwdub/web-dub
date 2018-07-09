@@ -7,6 +7,8 @@ task_module_names = [
     'base.invoke.tasks.docker',
     'base.invoke.tasks.jekyll',
     'base.invoke.tasks.update',
+    'base.invoke.tasks.build-faculty-profiles',
+    'base.invoke.tasks.process-faculty-images'
 ]
 
 # Create our task collection
