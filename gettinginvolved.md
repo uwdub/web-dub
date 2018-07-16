@@ -145,6 +145,14 @@ October 19, 2018
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
+Email Contact
+</div>
+<div class="col-md-8" markdown="block">
+dub-retreat [at] uw [dot] edu
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
 2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
