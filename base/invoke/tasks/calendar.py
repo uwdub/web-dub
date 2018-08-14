@@ -188,11 +188,6 @@ def compile_calendar():
                             ]
                         )
                     )
-            else:
-                # No speakers yet
-                seminar_summary = '{} - TBD'.format(
-                    seminar_summary
-                )
 
             if not seminar_contents.get('tbd_title', False):
                 # We have a title
