@@ -64,5 +64,5 @@ Pull updates to this template.
 
 Ensure dependencies are installed.
 
-`invoke update_depenencies`
+`invoke update_dependencies`
 
