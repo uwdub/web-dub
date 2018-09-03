@@ -4,7 +4,7 @@
 
 A fogies project used as a template for other projects.
 
-Provides for dependency management, tasks via the invoke tools, and testing.
+Provides for dependency management, tasks via the invoke tool, and testing.
 
 ## Project Dependencies
 
@@ -35,15 +35,9 @@ Compile files specified in `_base_config.yml`, via key `compile_config : entries
 
 `invoke compile_config` 
 
-### update_base
-
-Pull updates to this template.
-
-`invoke update_base` 
-
-### update_dependencies
+### dependencies_ensure
 
 Ensure dependencies are installed.
 
-`invoke update_dependencies` 
+`invoke dependencies_ensure` 
 

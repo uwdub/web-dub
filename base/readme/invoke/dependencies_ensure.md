@@ -1,3 +1,3 @@
 Ensure dependencies are installed.
 
-`invoke update_dependencies`
+`invoke dependencies_ensure`

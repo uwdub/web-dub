@@ -6,15 +6,10 @@ import sys
 import yaml
 
 
-@invoke.task
-def update_base():
-    invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)
-
-
 @invoke.task(pre=[
     base.invoke.tasks.compile.compile_config
 ])
-def update_dependencies():
+def dependencies_ensure():
     # Parse our config
     with open('_base_config.yml') as f:
         base_config_yaml = yaml.safe_load(f)
@@ -83,3 +78,8 @@ def update_dependencies():
         if result.failed:
             command = 'bundle install'
             result = base.invoke.tasks.command.run(command)
+
+
+@invoke.task
+def dependencies_upgrade_base():
+    invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)

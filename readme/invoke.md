@@ -18,6 +18,18 @@ Compile `requirements3.txt` from `requirements3.txt.in`.
 
 `invoke compile_requirements`
 
+### dependencies_ensure
+
+Ensure dependencies are installed.
+
+`invoke dependencies_ensure`
+
+### dependencies_upgrade_base
+
+Pull changes to this project template.
+
+`invoke dependencies_upgrade_base`
+
 ### docker_console
 
 If the project uses Docker, open a console in the Docker virtual machine.
@@ -53,16 +65,4 @@ If the project uses Docker, start the Docker containers specified in `tests/full
 If the project uses Docker, stop the Docker containers specified in `tests/full/docker/test_compose.yml`.
 
 `invoke docker_stop`
-
-### update_base
-
-Pull updates to this template.
-
-`invoke update_base`
-
-### update_dependencies
-
-Ensure dependencies are installed.
-
-`invoke update_dependencies`
 

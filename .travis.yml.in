@@ -64,7 +64,7 @@ install:
 
 {% endif %}
   # Invoke will get our other dependencies
-  - invoke update_dependencies
+  - invoke dependencies_ensure
 
 script:
 {% if docker is defined and docker.required %}
