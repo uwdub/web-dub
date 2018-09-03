@@ -16,7 +16,7 @@ install:
   - python -m pip install -r requirements3.txt
 
   # Invoke will get our other dependencies
-  - invoke update_dependencies
+  - invoke dependencies_ensure
 
 script:
   - nosetests tests.fast

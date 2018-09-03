@@ -6,7 +6,7 @@
 
 A fogies project used as a template for other projects.
 
-Provides for dependency management, tasks via the invoke tools, and testing.
+Provides for dependency management, tasks via the invoke tool, and testing.
 
 {% include "base/readme/install.md" %}
 
