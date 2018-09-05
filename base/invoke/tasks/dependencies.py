@@ -2,6 +2,7 @@ import base.invoke.tasks.command
 import base.invoke.tasks.compile
 import invoke
 import re
+import requests
 import sys
 import yaml
 
@@ -10,6 +11,13 @@ import yaml
     base.invoke.tasks.compile.compile_config
 ])
 def dependencies_ensure():
+    # Check that we are internet connected
+    try:
+        response = requests.head(url='http://www.google.com', timeout=5)
+    except (requests.ConnectionError, requests.ConnectTimeout):
+        print('No connection for ensuring dependencies')
+        return
+
     # Parse our config
     with open('_base_config.yml') as f:
         base_config_yaml = yaml.safe_load(f)
