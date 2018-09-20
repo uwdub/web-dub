@@ -71,13 +71,6 @@ def dependencies_ensure():
             )
             result = base.invoke.tasks.command.run(command)
 
-        # And only the correct Bundler version
-        # Expected to fail if no other versions of bundler are installed
-        command = 'gem uninstall bundler -v "!={}"'.format(
-            bundler_version_desired
-        )
-        result = base.invoke.tasks.command.run(command, error_on_failure=False)
-
         # Check we have our Ruby dependencies
         command = 'bundle check'
         result = base.invoke.tasks.command.run(command, error_on_failure=False)
@@ -89,5 +82,5 @@ def dependencies_ensure():
 
 
 @invoke.task
-def dependencies_upgrade_base():
+def dependencies_base_update():
     invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)
