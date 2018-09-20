@@ -13,7 +13,7 @@ This project is based on a template:
 [https://github.com/fogies/invoke-base](https://github.com/fogies/invoke-base)
 
 Runtime dependencies for this project are:
-- Python 3.5.2
+- Python 3.6.6
 
 See [Installation for Windows](https://github.com/fogies/invoke-base/blob/master/readme/install_windows.md).
 

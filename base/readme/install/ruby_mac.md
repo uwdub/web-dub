@@ -25,8 +25,4 @@ Alternatively, you can specify a Ruby version for the directory:
 rbenv local {{ ruby.version }}
 ~~~
 
-### Installing Ruby DevKit:
-
-Installing `rbenv` via Homebrew should automatically install `ruby-devkit`
-
 {% endif %}

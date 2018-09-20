@@ -27,15 +27,15 @@ pip3 install virtualenv
 Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/invoke-base`):
 
 ~~~
-virtualenv -p python3 env35
+virtualenv -p python3 env36
 ~~~
 
-This will create a directory for the virtual environment (e.g., `~/Desktop/invoke-base/env35/`).
+This will create a directory for the virtual environment (e.g., `~/Desktop/invoke-base/env36/`).
 
 Next activate that virtual environment and install our Python dependencies:
 
 ~~~
-source env35/bin/activate
+source env36/bin/activate
 pip3 install -r requirements3.txt
 ~~~
 
