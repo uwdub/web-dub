@@ -63,7 +63,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         {% endif %}
         {% if item_seminar.text_override_seminar_page %}
             <div class="col-xs-12">
-                {{ item_seminar.text_override_seminar_page | markdownify }}
+                {{ item_seminar.text_override_seminar_page | liquify | markdownify }}
             </div>
         {% else %}
             <div class="col-xs-12">
