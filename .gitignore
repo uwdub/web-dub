@@ -6,7 +6,7 @@
 .DS_Store
 
 # Python environment
-/env35
+/env36
 
 # Python compilation
 *.pyc

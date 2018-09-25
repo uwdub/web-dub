@@ -12,10 +12,11 @@ def run(command, error_on_failure=True):
 
     output = ''
     for line in process.stdout:
-        line = str(line, encoding='utf-8')
-
-        output += line
         try:
+            line = str(line, encoding='utf-8')
+
+            output += line
+
             if sys.stdout.encoding:
                 print(
                     line.encode(
