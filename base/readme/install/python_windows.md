@@ -15,15 +15,23 @@ When installing Python:
 - Choose 'Customize Installation'
 - On 'Optional Features':
 
-  Check 'pip' and 'for all users (requires elevation)'.
+  Check 'pip'.
 
-  Uncheck 'Documentation', 'tcl/tk and IDLE', 'Python test suite', 'py launcher'.
+  Uncheck 'Documentation', 'tcl/tk and IDLE', 'Python test suite', 'py launcher', and 'for all users (requires elevation)'.
 
 - On 'Advanced Options':
+
+  Check 'Install for all users' and 'Precompile standard library'.
+
+  Uncheck 'Create shortcuts for installed applications', 'Add Python to environment variables', 'Download debugging symbols', and 'Download debug binaries (requires VS 2015 or later)'.
 
   Set an installation path of `{{ install_params_python.windows.install_path }}`.
 
   Uncheck all options.
+
+- On 'Setup was successful':
+
+  If present, choose 'Disable path length limit'.
 
 ### Creating a Virtual Environment and Installing Dependencies
 

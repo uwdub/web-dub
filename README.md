@@ -17,10 +17,9 @@ Which is in turn based on:
 [https://github.com/fogies/invoke-base](https://github.com/fogies/invoke-base)
 
 Runtime dependencies for this project are:
-- Python 3.5.2
-- Node 4.5.0
-- Ruby 2.3.3
-- Ruby DevKit
+- Python 3.6.6
+- Node 8.12.0
+- Ruby 2.5.1
 
 See [Installation for Windows](https://github.com/fogies/web-jekyll-base/blob/master/readme/install_windows.md).
 

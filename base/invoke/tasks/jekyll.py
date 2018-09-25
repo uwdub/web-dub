@@ -1,9 +1,9 @@
-import base.invoke.tasks.update
+import base.invoke.tasks.dependencies
 import invoke
 import sys
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[base.invoke.tasks.dependencies.dependencies_ensure])
 def build_production():
     invoke.run(
         'bundle exec jekyll build -t --config _config.yml,_config-production.yml',
@@ -11,7 +11,7 @@ def build_production():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[base.invoke.tasks.dependencies.dependencies_ensure])
 def build_test():
     invoke.run(
         'bundle exec jekyll build -t --config _config.yml,_config-test.yml',
@@ -19,7 +19,7 @@ def build_test():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[base.invoke.tasks.dependencies.dependencies_ensure])
 def serve_production():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-production.yml -H 0.0.0.0',
@@ -27,7 +27,7 @@ def serve_production():
     )
 
 
-@invoke.task(pre=[base.invoke.tasks.update.update_dependencies])
+@invoke.task(pre=[base.invoke.tasks.dependencies.dependencies_ensure])
 def serve_test():
     invoke.run(
         'bundle exec jekyll serve -t --config _config.yml,_config-test.yml --watch --force_polling',

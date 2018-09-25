@@ -5,26 +5,26 @@ sudo: false
 language: python
 
 python:
-  - "3.5.2"
+  - "3.6.6"
 
 cache:
   pip: true
 
 install:
   # Install Python dependencies
-  - python -m pip install --upgrade pip==9.0.1
+  - python -m pip install --upgrade pip==18.0
   - python -m pip install -r requirements3.txt
 
   # Install Node
-  - nvm install 4.5.0
+  - nvm install 8.12.0
 
   # Install Ruby
-  - rvm @global do gem install bundler -v 1.13.6
-  - rvm install 2.3.3
-  - rvm use 2.3.3 --default
+  - rvm install 2.5.1
+  - rvm @global do gem install bundler -v 1.16.5
+  - rvm use 2.5.1 --default
 
   # Invoke will get our other dependencies
-  - invoke update_dependencies
+  - invoke dependencies_ensure
 
 script:
   - nosetests tests.fast
