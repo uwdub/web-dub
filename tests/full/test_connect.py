@@ -1,4 +1,4 @@
-import base.docker
+import base.docker.docker_commands
 import nose.tools
 import requests
 import yaml
@@ -15,7 +15,7 @@ class TestConnect:
         if TestConnect.base_config['docker']['required']:
             response = requests.get(
                 'http://{}:{}'.format(
-                    base.docker.machine_ip(),
+                    base.docker.docker_commands.machine_ip(),
                     80
                 )
             )
