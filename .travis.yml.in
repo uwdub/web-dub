@@ -37,8 +37,8 @@ install:
 {% endif %}
 {% if ruby is defined and ruby.required %}
   # Install Ruby
-  - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
   - rvm install {{ ruby.version }}
+  - rvm @global do gem install bundler -v {{ ruby.bundler_version }}
   - rvm use {{ ruby.version }} --default
 
 {% endif %}
@@ -58,7 +58,7 @@ install:
 
 {% endif %}
   # Invoke will get our other dependencies
-  - invoke update_dependencies
+  - invoke dependencies_ensure
 
 script:
 {% if docker is defined and docker.required %}

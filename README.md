@@ -15,14 +15,13 @@ Which is in turn based on:
 [https://github.com/fogies/invoke-base](https://github.com/fogies/invoke-base)
 
 Runtime dependencies for this project are:
-- Python 3.5.2
-- Node 4.5.0
-- Ruby 2.3.3
-- Ruby DevKit
+- Python 3.6.6
+- Node 8.12.0
+- Ruby 2.5.1
 
-See [Installation for Windows](https://github.com/fogies/web-jekyll-base/blob/master/readme/install_windows.md).
+See [Installation for Windows](https://github.com/fogies/web-dub/blob/master/readme/install_windows.md).
 
-See [Installation for Mac](https://github.com/fogies/web-jekyll-base/blob/master/readme/install_mac.md).
+See [Installation for Mac](https://github.com/fogies/web-dub/blob/master/readme/install_mac.md).
 
 ## Tasks
 
@@ -30,7 +29,7 @@ This project uses Invoke for task execution. Available tasks can be listed:
 
 `invoke -l`
 
-See [Additional Task Documentation](https://github.com/fogies/web-jekyll-base/blob/master/readme/invoke.md).
+See [Additional Task Documentation](https://github.com/fogies/web-dub/blob/master/readme/invoke.md).
 
 Frequently used tasks will include:
 

@@ -1,4 +1,4 @@
-import base.invoke.tasks.update
+import base.invoke.tasks.dependencies
 from datetime import datetime
 import hashlib
 import icalendar
@@ -12,7 +12,7 @@ import yaml
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies
+    base.invoke.tasks.dependencies.dependencies_ensure
 ])
 def compile_calendar():
     # Obtain our stored sequences
@@ -221,13 +221,15 @@ def compile_calendar():
                 elif 'tbd_abstract' not in seminar_contents:
                     description_string = seminar_contents['abstract']
 
-            # Parse description as markdown
-            class SensibleParagraphs(markdown.extensions.Extension):
-                def extendMarkdown(self, md, md_globals):
-                    br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
-                    md.inlinePatterns.add('nl', br_tag, '_end')
-
-            ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
+            # This was crashing, and I couldn't easily determine why, so I've temporarily removed it
+            #
+            # # Parse description as markdown
+            # class SensibleParagraphs(markdown.extensions.Extension):
+            #     def extendMarkdown(self, md, md_globals):
+            #         br_tag = markdown.inlinepatterns.SubstituteTagPattern(r'\n', None)
+            #         md.inlinePatterns.add('nl', br_tag, '_end')
+            #
+            # ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
 
         # That's our complete event
         ics.add_component(ics_event)
@@ -238,7 +240,7 @@ def compile_calendar():
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies
+    base.invoke.tasks.dependencies.dependencies_ensure
 ])
 def compile_calendar_increment_all_sequences():
     # Obtain our stored sequences

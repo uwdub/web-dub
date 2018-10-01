@@ -19,22 +19,20 @@ When installing Ruby:
 
   Check 'Add Ruby executables to your PATH'.
 
-### Installing Ruby DevKit:
+  Uncheck 'Associate .rb and .rbw files with this Ruby installation' and 'Use UTF-8 as default external encoding'.
 
-[{{ install_params_ruby.windows.installer_devkit_url }}]({{ install_params_ruby.windows.installer_devkit_url }})
+- On 'Select Components':
 
-This documentation assumes an installation path of `{{ install_params_ruby.windows.install_devkit_path }}`.
+  Check 'MSYS2 development toolchain 2018-06-24'.
 
-When installing the Ruby DevKit:
+- On 'Completing the Ruby 2.5.1-2-x86 with MSYS2 Setup Wizard':
 
-- Extract to `{{ install_params_ruby.windows.install_devkit_path }}`.
+  Check 'Run 'ridk install' to setup MSYS2 and development toolchain.
 
-- Install the DevKit into the Ruby installation:
+- On 'Ruby Installer 2 for Windows'
 
-  ~~~
-  cd {{ install_params_ruby.windows.install_devkit_path }}
-  ruby dk.rb init
-  ruby dk.rb install
-  ~~~
+  Press Enter for '[1, 2, 3]'.
+
+  Press Enter for '[]'.
 
 {% endif %}

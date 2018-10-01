@@ -30,6 +30,18 @@ Compile `requirements3.txt` from `requirements3.txt.in`.
 
 `invoke compile_requirements`
 
+### dependencies_ensure
+
+Ensure dependencies are installed.
+
+`invoke dependencies_ensure`
+
+### dependencies_upgrade_base
+
+Pull changes to this project template.
+
+`invoke dependencies_upgrade_base`
+
 ### docker_console
 
 If the project uses Docker, open a console in the Docker virtual machine.
@@ -77,16 +89,4 @@ Serve the site on port 4000, using the production configuration in `_config-prod
 Serve the site on port 4000, using the test configuration in `_config-test.yml`.
 
 `invoke serve_test`
-
-### update_base
-
-Pull updates to this template.
-
-`invoke update_base`
-
-### update_dependencies
-
-Ensure dependencies are installed.
-
-`invoke update_depenencies`
 
