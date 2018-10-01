@@ -1,11 +1,11 @@
 import base.invoke.tasks.calendar
-import base.invoke.tasks.update
+import base.invoke.tasks.dependencies
 import invoke
 import sys
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.dependencies.dependencies_ensure,
     base.invoke.tasks.calendar.compile_calendar
 ])
 def build_production():
@@ -16,7 +16,7 @@ def build_production():
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.dependencies.dependencies_ensure,
     base.invoke.tasks.calendar.compile_calendar
 ])
 def build_test():
@@ -27,7 +27,7 @@ def build_test():
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.dependencies.dependencies_ensure,
     base.invoke.tasks.calendar.compile_calendar
 ])
 def serve_production():
@@ -38,7 +38,7 @@ def serve_production():
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies,
+    base.invoke.tasks.dependencies.dependencies_ensure,
     base.invoke.tasks.calendar.compile_calendar
 ])
 def serve_test():

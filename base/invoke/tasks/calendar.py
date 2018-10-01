@@ -1,4 +1,4 @@
-import base.invoke.tasks.update
+import base.invoke.tasks.dependencies
 from datetime import datetime
 import hashlib
 import icalendar
@@ -12,7 +12,7 @@ import yaml
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies
+    base.invoke.tasks.dependencies.dependencies_ensure
 ])
 def compile_calendar():
     # Obtain our stored sequences
@@ -238,7 +238,7 @@ def compile_calendar():
 
 
 @invoke.task(pre=[
-    base.invoke.tasks.update.update_dependencies
+    base.invoke.tasks.dependencies.dependencies_ensure
 ])
 def compile_calendar_increment_all_sequences():
     # Obtain our stored sequences

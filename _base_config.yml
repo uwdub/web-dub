@@ -1,32 +1,34 @@
 config:
   python:
-    version: 3.5.2
-    pip_version: 9.0.1
+    # Python is currently pinned by this bug:
+    #   https://github.com/travis-ci/travis-ci/issues/9815
+    version: 3.6.6
+    pip_version: 18.0
     # Invoke is currently pinned by this bug:
     #   https://github.com/pyinvoke/invoke/issues/345
     invoke_version: 0.12.2
 
   node:
     required: true
-    version: 4.5.0
+    version: 8.12.0
 
   ruby:
     required: true
-    version: 2.3.3
-    bundler_version: 1.13.6
+    version: 2.5.1
+    bundler_version: 1.16.5
 
   docker:
     required: false
 
     toolbox:
-      version: v17.06.0a-ce
+      version: v18.06.1-ce
 
       macos:
         cmd_bash: /bin/bash
         cmd_dockermachine: /usr/local/bin/docker-machine
       windows:
-        cmd_bash: c:/Program Files/Git/bin/bash
-        cmd_dockermachine: c:/Program Files/Docker Toolbox/docker-machine.exe
+        cmd_bash: c:\Program Files\Git\bin\bash
+        cmd_dockermachine: c:\Program Files\Docker Toolbox\docker-machine.exe
 
     travis:
       version: 1.11.2-0~trusty
@@ -54,6 +56,8 @@ config:
       build_test: base/readme/invoke/build_test.md
       compile_config: base/readme/invoke/compile_config.md
       compile_requirements: base/readme/invoke/compile_requirements.md
+      dependencies_ensure: base/readme/invoke/dependencies_ensure.md
+      dependencies_upgrade_base: base/readme/invoke/dependencies_upgrade_base.md
       docker_console: base/readme/invoke/docker_console.md
       docker_ip: base/readme/invoke/docker_ip.md
       docker_localize: base/readme/invoke/docker_localize.md
@@ -62,55 +66,39 @@ config:
       docker_stop: base/readme/invoke/docker_stop.md
       serve_production: base/readme/invoke/serve_production.md
       serve_test: base/readme/invoke/serve_test.md
-      update_base: base/readme/invoke/update_base.md
-      update_dependencies: base/readme/invoke/update_dependencies.md
 
     python_versions:
-      - version: 3.5.2
-        virtual_environment_name: env35
+      - version: 3.7.0
+        virtual_environment_name: env37
         requirements_name: requirements3.txt
         windows:
-          installer_url: https://www.python.org/ftp/python/3.5.2/python-3.5.2.exe
-          install_path: c:/Python35
+          installer_url: https://www.python.org/ftp/python/3.7.0/python-3.7.0.exe
+          install_path: c:\Python37
+      - version: 3.6.6
+        virtual_environment_name: env36
+        requirements_name: requirements3.txt
+        windows:
+          installer_url: https://www.python.org/ftp/python/3.6.6/python-3.6.6.exe
+          install_path: c:\Python36
 
     node_versions:
-      - version: 4.5.0
+      - version: 8.12.0
         windows:
-          installer_url: https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi
+          installer_url: https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi
 
     ruby_versions:
-      - version: 2.2.3
+      - version: 2.5.1
         windows:
-          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe
-          install_path: c:/Ruby223
-          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-          install_devkit_path: c:/RubyDevKit
-      - version: 2.3.1
-        windows:
-          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe
-          install_path: c:/Ruby231
-          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-          install_devkit_path: c:/RubyDevKit
-      - version: 2.3.3
-        windows:
-          installer_url: https://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe
-          install_path: c:/Ruby233
-          installer_devkit_url: https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe
-          install_devkit_path: c:/RubyDevKit
+          installer_url: https://github.com/oneclick/rubyinstaller2/releases/download/rubyinstaller-2.5.1-2/rubyinstaller-devkit-2.5.1-2-x86.exe
+          install_path: c:\Ruby251
 
     docker_toolbox_versions:
-      - version: v17.06.0a-ce
+      - version: v18.06.1-ce
         macos:
-          installer_url: https://github.com/docker/toolbox/releases/download/v17.06.0a-ce/DockerToolbox-17.06.0a-ce.pkg
+          installer_url: https://github.com/docker/toolbox/releases/download/v18.06.1-ce/DockerToolbox-18.06.1-ce.pkg
         windows:
-          installer_url: https://github.com/docker/toolbox/releases/download/v17.06.0a-ce/DockerToolbox-17.06.0a-ce.exe
-          install_path: c:/Program Files/Docker Toolbox
-      - version: 1.12.3
-        macos:
-          installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.pkg
-        windows:
-          installer_url: https://github.com/docker/toolbox/releases/download/v1.12.3/DockerToolbox-1.12.3.exe
-          install_path: c:/Program Files/Docker Toolbox
+          installer_url: https://github.com/docker/toolbox/releases/download/v18.06.1-ce/DockerToolbox-18.06.1-ce.exe
+          install_path: c:\Program Files\Docker Toolbox
 
 compile_config:
   entries:

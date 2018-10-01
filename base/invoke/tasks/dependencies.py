@@ -7,16 +7,10 @@ import sys
 import yaml
 
 
-@invoke.task
-def update_base():
-    invoke.run('git pull https://github.com/fogies/web-jekyll-base.git master', encoding=sys.stdout.encoding)
-    invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)
-
-
 @invoke.task(pre=[
     base.invoke.tasks.compile.compile_config
 ])
-def update_dependencies():
+def dependencies_ensure():
     # Check that we are internet connected
     try:
         response = requests.head(url='http://www.google.com', timeout=5)
@@ -77,13 +71,6 @@ def update_dependencies():
             )
             result = base.invoke.tasks.command.run(command)
 
-        # And only the correct Bundler version
-        # Expected to fail if no other versions of bundler are installed
-        command = 'gem uninstall bundler -v "!={}"'.format(
-            bundler_version_desired
-        )
-        result = base.invoke.tasks.command.run(command, error_on_failure=False)
-
         # Check we have our Ruby dependencies
         command = 'bundle check'
         result = base.invoke.tasks.command.run(command, error_on_failure=False)
@@ -92,3 +79,9 @@ def update_dependencies():
         if result.failed:
             command = 'bundle install'
             result = base.invoke.tasks.command.run(command)
+
+
+@invoke.task
+def dependencies_base_update():
+    invoke.run('git pull https://github.com/fogies/web-jekyll-base.git master', encoding=sys.stdout.encoding)
+    invoke.run('git pull https://github.com/fogies/invoke-base.git master', encoding=sys.stdout.encoding)
