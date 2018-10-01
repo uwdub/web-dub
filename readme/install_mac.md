@@ -24,13 +24,13 @@ pip3 install virtualenv
 
 ### Creating a Virtual Environment and Installing Dependencies
 
-Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/web-jekyll-base`):
+Create the virtual environment. From the working directory of our project (e.g., `~/Desktop/web-dub`):
 
 ~~~
 virtualenv -p python3 env36
 ~~~
 
-This will create a directory for the virtual environment (e.g., `~/Desktop/web-jekyll-base/env36/`).
+This will create a directory for the virtual environment (e.g., `~/Desktop/web-dub/env36/`).
 
 Next activate that virtual environment and install our Python dependencies:
 

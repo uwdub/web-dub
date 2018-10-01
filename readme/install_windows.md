@@ -31,13 +31,13 @@ When installing Python:
 
 ### Creating a Virtual Environment and Installing Dependencies
 
-Create the virtual environment. From the working directory of our project (e.g., `c:/devel/web-jekyll-base`):
+Create the virtual environment. From the working directory of our project (e.g., `c:/devel/web-dub`):
 
 ~~~
 c:\Python36/python.exe -m venv env36
 ~~~
 
-This will create a directory for the virtual environment (e.g., `c:/devel/web-jekyll-base/env36/`).
+This will create a directory for the virtual environment (e.g., `c:/devel/web-dub/env36/`).
 
 Next activate that virtual environment and install our Python dependencies:
 

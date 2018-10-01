@@ -36,14 +36,14 @@ config:
       compose_up_delay: 60
 
   readme:
-    url_github: https://github.com/fogies/web-jekyll-base
+    url_github: https://github.com/fogies/web-dub
     url_github_readme: blob/master/README.md
     url_github_readme_basedir: blob/master/readme
 
     travis_badge: '[![Build Status](https://travis-ci.org/uwdub/web-dub.svg?branch=master)](https://travis-ci.org/uwdub/web-dub)'
 
-    working_directory_windows: c:/devel/web-jekyll-base
-    working_directory_mac: ~/Desktop/web-jekyll-base
+    working_directory_windows: c:/devel/web-dub
+    working_directory_mac: ~/Desktop/web-dub
 
     invoke_readme_frequent:
       - build_production
