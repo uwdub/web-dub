@@ -131,7 +131,7 @@ Eunice Jun
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Hy Nguyen
+Augustus Arthur
 </div>
 </div>
 
