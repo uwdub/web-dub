@@ -164,7 +164,7 @@ Andy Davidson, Audrey Desjardins, Jon Froehlich, Emily Lloyd
 2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-
+Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 </div>
 </div>
 
