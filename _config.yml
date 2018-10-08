@@ -36,9 +36,11 @@ future: true
 
 exclude:
   # base
-  - base.__init__.py
+  - base/__init__.py
+  - base/docker
   - base/invoke
   - base/readme
+  - base_sample
   # Bootstrap source files
   - bootstrap/less
   # CSS/LESS files that are included by other less files and cannot compile on their own
@@ -56,13 +58,14 @@ exclude:
   - npm-shrinkwrap.json
   - package.json
   # Python
-  - env35
+  - env36
   - requirements3.in
   - requirements3.txt
   - tasks.py
   - tasks.pyc
   # README
   - README.md
+  - readme
   # Ruby
   - Gemfile
   - Gemfile.lock
