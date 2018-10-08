@@ -16,8 +16,10 @@ navbar:
 
 exclude:
   # base
-  - base.__init__.py
-  - base
+  - base/__init__.py
+  - base/docker
+  - base/invoke
+  - base/readme
   - base_sample
   # Bootstrap source files
   - bootstrap/less
