@@ -115,7 +115,7 @@ Anat Caspi, Jennifer Mankoff
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Eunice Jun, Ada Kim, Daphne Liang, Sonali Mishra, John Robinson
+Eunice Jun, Sayena Majlesein, Sonali Mishra, John Robinson
 </div>
 </div>
 <div class="row">
