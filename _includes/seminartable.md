@@ -28,6 +28,11 @@
                 {{ item_seminar.location }}
               </div>
             {% endunless %}
+          {% unless item_seminar.tbd_food %}
+              <div class="col-xs-12">
+                {{ item_seminar.food }}
+              </div>
+            {% endunless %}
           {% endif %}
         </div>
         <div class="col-md-9">

@@ -29,6 +29,7 @@ tbd_location:   true
 tbd_abstract:   true
 tbd_bio:        true
 tbd_video:      true
+tbd_food:       true
 
 ################################################################################
 # If a date is "No DUB Seminar", we display it differently.
@@ -71,7 +72,8 @@ speakers:
 ################################################################################
 # Our core fields are title, location, abstract, bio.
 # title:      "Title in Quotes: Because Colons Cause Errors"
-# 
+# food:       "Homegrown Sandwiches (GF, Veg options)"
+#
 # location:   "HUB 334"
 # (optional) location_override_calendar:
 # (optional) location_override_seminar_page:
@@ -90,6 +92,7 @@ speakers:
 title:      "TBD"
 
 location:   "TBD"
+food:       "TBD"
 
 abstract:   |
   TBD
