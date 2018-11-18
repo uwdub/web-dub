@@ -5,16 +5,25 @@ import yaml
 
 
 class TestSeminars(unittest.TestCase):
-    def test_seminars_parse(self):
-        """
-        All seminar files parse as valid YAML.
-        """
+    def _get_seminar_paths(self):
         seminar_paths = [
             seminar_file_entry.path
             for seminar_file_entry
             in os.scandir('_seminars')
-            if seminar_file_entry.is_file() and not seminar_file_entry.name.endswith('j2')
+            if (
+                    seminar_file_entry.is_file()
+                    and os.path.splitext(seminar_file_entry.name)[1] == '.md'
+                    and seminar_file_entry.name != '_template.md'
+            )
         ]
+
+        return seminar_paths
+
+    def test_seminars_parse(self):
+        """
+        All seminar files parse as valid YAML.
+        """
+        seminar_paths = self._get_seminar_paths()
         for seminar_path_current in seminar_paths:
             try:
                 with open(seminar_path_current, encoding='utf-8') as f:
@@ -36,18 +45,11 @@ class TestSeminars(unittest.TestCase):
                 'Could not parse seminar file: {}'.format(seminar_path_current)
             )
 
-# “Stitching Worlds”
-
     def test_seminars_fields(self):
         """
         All seminar files have valid contents.
         """
-        seminar_paths = [
-            seminar_file_entry.path
-            for seminar_file_entry
-            in os.scandir('_seminars')
-            if seminar_file_entry.is_file() and not seminar_file_entry.name.endswith('j2')
-        ]
+        seminar_paths = self._get_seminar_paths()
         for seminar_path_current in seminar_paths:
             with open(seminar_path_current, encoding='utf-8') as f:
                 # First block should be our header
