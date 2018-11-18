@@ -11,7 +11,7 @@ import re
 import yaml
 
 
-def _get_seminar_paths(self):
+def _get_seminar_paths():
     seminar_paths = [
         os.path.normpath(seminar_file_entry.path)
         for seminar_file_entry
