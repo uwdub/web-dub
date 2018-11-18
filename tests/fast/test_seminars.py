@@ -7,7 +7,7 @@ import yaml
 class TestSeminars(unittest.TestCase):
     def _get_seminar_paths(self):
         seminar_paths = [
-            seminar_file_entry.path
+            os.path.normpath(seminar_file_entry.path)
             for seminar_file_entry
             in os.scandir('_seminars')
             if (
