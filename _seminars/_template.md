@@ -164,7 +164,7 @@ speakers:
 #
 #   All lines must be indented two spaces, like in these paragraphs.
 ################################################################################
-title:      "{{ title }}"
+title:      "{{ title | trim | replace("\"", "\\\"") }}"
 
 location:   "{{ location }}"
 
