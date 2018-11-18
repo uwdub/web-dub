@@ -1,0 +1,26 @@
+################################################################################
+# The YAML data for populating a template.
+#
+# This file is not well-defined, left in place pending a new invoke task.
+################################################################################
+
+version: 1
+sequence: 1
+
+date:     2015-10-07
+time:     "12:00 PM"
+time_end: "1:30 PM"
+
+tbd_speakers:   true
+tbd_title:      true
+tbd_location:   true
+tbd_abstract:   true
+tbd_bio:        true
+tbd_video:      true
+
+speakers:
+
+title:          "TBD"
+location:       "TBD"
+abstract:       "TBD"
+bio:            "TBD"
