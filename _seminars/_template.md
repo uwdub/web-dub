@@ -1,50 +1,84 @@
 ---
 ################################################################################
-# Version of the seminar format. The only valid value for this is '1'. 
-# We may increment this in the future to simplify maintenance of old seminars.
+# Version of the seminar file format.
+#
+# - The only valid value for this is '1'.
+# - We may increment this in the future to simplify maintenance of old seminars.
 ################################################################################
 version: 1
 
 ################################################################################
-# Sequence number of the seminar file. This is used to keep the iCal up to date.
-# Increment the sequence number each time the seminar file is updated.
+# Sequence number of the seminar file.
+#
+# - This is used to keep the iCal up to date.
+# - Increment the sequence each time the seminar file is updated.
 ################################################################################
-sequence: 1
+sequence: {{ sequence }}
 
 ################################################################################
-# Date and time of the seminar. In quotes because : is a reserved character.
-# Date must equal the name of this file.
+# Date and time of the seminar.
+#
+# - Date must equal the name of this file.
+# - Times must be in quotes because : is a reserved character.
 ################################################################################
-date:     2015-10-07
-time:     "12:00 PM"
-time_end: "1:30 PM"
+date:     "{{ date }}"
+time:     "{{ time }}"
+time_end: "{{ time_end }}"
 
 ################################################################################
-# A seminar file might exist but lack values for some fields. These are 'TBD'. 
-# The only valid value is 'True'. A TBD field should not be present if 'False'.
+# A TBD field indicates some other field still lacks a meaningful value.
+#
+# - The only valid value is 'true'.
+# - A field should not be present if 'false'.
 ################################################################################
-tbd_speakers:   true
-tbd_title:      true
-tbd_location:   true
-tbd_abstract:   true
-tbd_bio:        true
-tbd_video:      true
+{% if tbd_speakers is defined %}
+tbd_speakers:   {{ tbd_speakers }}
+{% endif %}
+{% if tbd_title is defined %}
+tbd_title:      {{ tbd_title }}
+{% endif %}
+{% if tbd_location is defined %}
+tbd_location:   {{ tbd_location }}
+{% endif %}
+{% if tbd_abstract is defined %}
+tbd_abstract:   {{ tbd_abstract }}
+{% endif %}
+{% if tbd_bio is defined %}
+tbd_bio:        {{ tbd_bio }}
+{% endif %}
+{% if tbd_video is defined %}
+tbd_video:      {{ tbd_video }}
+{% endif %}
 
 ################################################################################
-# If a date is "No DUB Seminar", we display it differently.
+# If a date is "No DUB Seminar", it will be displayed differently.
+#
+# - The only valid value is 'True'.
+# - A field should not be present if 'False'.
 #
 # no_seminar: true
-#
+################################################################################
+
+################################################################################
 # Seminar files are archived by default. Add this if a seminar should not be.
+#
+# - The only valid value is 'True'.
+# - A field should not be present if 'False'.
 #
 # no_archive: true
 ################################################################################
 
 ################################################################################
-# One or more speakers. Each speaker has name and affiliation.
+# One or more speakers. Each speaker has a name and affiliation.
 #
-# If a speaker does not have an affiliation, the affiliation field can be removed.
-# In this case, the speaker needs a field 'affiliation_none: true'.
+# - Our style guide is that:
+#   - UW affilitations are a program
+#   - Non-UW academic affiliations are a university
+#   - Non-UW corportate affiliations may include research (e.g., "Microsoft Research")
+# - If a speaker does not have an affiliation:
+#   - remove the affiliation field
+#   - add a field 'affiliation_none: true'.
+#
 #
 # speakers:
 #   - name: 
@@ -65,43 +99,91 @@ tbd_video:      true
 #     - Middle
 #     - More
 #     affiliation: Carnegie Mellon University 
+#   - name:
+#     - Surname
+#     - First
+#     - Middle
+#     - More
+#     affiliation_none: true
 ################################################################################
+{% if speakers %}
 speakers:
+  {% for speaker in speakers %}
+  - name:
+    {% for item_name in speaker.name %}
+    - "{{ item_name }}"
+    {% endfor %}
+    {% if speaker.affiliation is defined %}
+    affiliation: "{{ speaker.affiliation }}"
+    {% endif %}
+    {% if speaker.affiliation_none is defined %}
+    affiliation_none: "{{ speaker.affiliation_none }}"
+    {% endif %}
+  {% endfor %}
+{% endif %}
 
 ################################################################################
 # Our core fields are title, location, abstract, bio.
-# title:      "Title in Quotes: Because Colons Cause Errors"
-# 
+#
+# - title should be in quotes
+#
+# - location must be from a set of values:
+#     "Alder Commons"
+#     "CSE 691"
+#     "GIX"
+#     "Haggett Hall Cascade Room"
+#     "HUB 145"
+#     "HUB 250"
+#     "HUB 332"
+#     "HUB 334"
+#     "HUB 340"
+#     "Kane 220"
+#     "Kane 225"
+#     "More 230"
+#     "Sieg 233"
+#     "StartUp Hall Meeting Room"
+#
+# - if custom text is required for location, two override fields can be used
+#   - location_override_calendar:
+#   - location_override_seminar_page:
+#
+#
+# title: "Title in Quotes: Because Colons Cause Errors"
 # location:   "HUB 334"
-# (optional) location_override_calendar:
-# (optional) location_override_seminar_page:
 #
 # abstract:   |
-#   An abstract can span multiple lines, and can do things across those lines,
-#   like going on for a while or being repetitive.
+#   The | means that text actually starts on this line. Additional lines without
+#   a blank between them are considered part of the same paragraph.
 #
-#   But the indentation between line wraps is important.
+#   A blank line is then a new paragraph.
+#
+#   All lines must be indented two spaces, like in these paragraphs.
 #
 # bio:        |
-#   And do not even get us started on how a bio can be.
+#   Follows the same formatting as abstract.
 #
-#   Bio definitely can also span multiple lines like this.
+#   All lines must be indented two spaces, like in these paragraphs.
 ################################################################################
-title:      "TBD"
+title:      "{{ title }}"
 
-location:   "TBD"
+location:   "{{ location }}"
 
-abstract:   |
-  TBD
+abstract: |
+  {{ abstract | indent(width=2)}}
   
-bio:        |
-  TBD
+bio: |
+  {{ bio | indent(width=2)}}
 
 ################################################################################
-# A seminar may have a video. If so, provide the Vimeo video number.
+# A seminar may have a video.
+#
+# - If a seminar has a video, provide the Vimeo video number.
+# - If there is no video, this field should not be present
 #
 # video: 142303577
-#
-# If not, this field should not be present 
 ################################################################################
+{% if video %}
+video: {{ video }}
+{% endif %}
 ---
+
