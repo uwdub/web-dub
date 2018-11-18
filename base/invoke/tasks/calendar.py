@@ -11,6 +11,21 @@ import re
 import yaml
 
 
+def _get_seminar_paths(self):
+    seminar_paths = [
+        os.path.normpath(seminar_file_entry.path)
+        for seminar_file_entry
+        in os.scandir('_seminars')
+        if (
+                seminar_file_entry.is_file()
+                and os.path.splitext(seminar_file_entry.name)[1] == '.md'
+                and seminar_file_entry.name != '_template.md'
+        )
+    ]
+
+    return seminar_paths
+
+
 @invoke.task(pre=[
     base.invoke.tasks.dependencies.dependencies_ensure
 ])
@@ -19,14 +34,7 @@ def compile_calendar():
     with open('_compile-calendar-sequences.yml', encoding='utf-8') as f:
         seminar_calendar_sequences = yaml.safe_load(f)['sequences']
     # Iterate over all our seminar files
-    seminar_paths = [
-        os.path.normpath(seminar_file_entry.path)
-        for seminar_file_entry
-        in os.scandir('_seminars')
-        if seminar_file_entry.is_file() and
-           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md') and
-           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.j2')
-    ]
+    seminar_paths = _get_seminar_paths()
 
     # Maintain the sequence field for each seminar
     for seminar_path_current in seminar_paths:
@@ -249,13 +257,7 @@ def compile_calendar_increment_all_sequences():
         seminar_calendar_sequences = yaml.safe_load(f)['sequences']
 
     # Iterate over all our seminar files
-    seminar_paths = [
-        os.path.normpath(seminar_file_entry.path)
-        for seminar_file_entry
-        in os.scandir('_seminars')
-        if seminar_file_entry.is_file() and
-           os.path.normpath(seminar_file_entry.path) != os.path.normpath('_seminars/_template.md')
-    ]
+    seminar_paths = _get_seminar_paths()
 
     for seminar_path_current in seminar_paths:
         # Get the hash and sequence from the file
