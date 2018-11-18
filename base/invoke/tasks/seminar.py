@@ -20,6 +20,7 @@ def seminar_update_template():
         in os.scandir('_seminars')
         if (
             seminar_file_entry.is_file()
+            and os.path.splitext(seminar_file_entry.name)[1] == '.md'
             and seminar_file_entry.name != '_template.md'
         )
     ]
