@@ -58,6 +58,9 @@ tbd_video:      {{ tbd_video }}
 #
 # no_seminar: true
 ################################################################################
+{% if no_seminar is defined %}
+no_seminar: {{ no_seminar }}
+{% endif %}
 
 ################################################################################
 # Seminar files are archived by default. Add this if a seminar should not be.
@@ -67,6 +70,9 @@ tbd_video:      {{ tbd_video }}
 #
 # no_archive: true
 ################################################################################
+{% if no_archive is defined %}
+no_archive: {{ no_archive }}
+{% endif %}
 
 ################################################################################
 # One or more speakers. Each speaker has a name and affiliation.
