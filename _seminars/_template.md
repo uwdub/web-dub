@@ -106,8 +106,8 @@ tbd_video:      {{ tbd_video }}
 #     - More
 #     affiliation_none: true
 ################################################################################
-{% if speakers %}
 speakers:
+{% if speakers is defined and speakers is iterable %}
   {% for speaker in speakers %}
   - name:
     {% for item_name in speaker.name %}
@@ -168,11 +168,15 @@ title:      "{{ title }}"
 
 location:   "{{ location }}"
 
+{% if abstract is defined %}
 abstract: |
   {{ abstract | indent(width=2)}}
+{% endif %}
   
+{% if bio is defined %}
 bio: |
   {{ bio | indent(width=2)}}
+{% endif %}
 
 ################################################################################
 # A seminar may have a video.
@@ -182,7 +186,7 @@ bio: |
 #
 # video: 142303577
 ################################################################################
-{% if video %}
+{% if video is defined %}
 video: {{ video }}
 {% endif %}
 ---
