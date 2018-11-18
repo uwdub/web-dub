@@ -119,17 +119,17 @@ def compile_calendar():
         # Give it a UID
         ics_event.add(
             'UID',
-            seminar_contents['date'].strftime('%Y-%m-%d') + '@dub.washington.edu'
+            seminar_contents['date'] + '@dub.washington.edu'
         )
 
         # Give it DTSTART and DTEND
         timezone = pytz.timezone('America/Los_Angeles')
         seminar_start_time = timezone.localize(datetime.combine(
-            seminar_contents['date'],
+            datetime.strptime(seminar_contents['date'], '%Y-%m-%d').date(),
             datetime.strptime(seminar_contents['time'], '%I:%M %p').time()
         ))
         seminar_end_time = timezone.localize(datetime.combine(
-            seminar_contents['date'],
+            datetime.strptime(seminar_contents['date'], '%Y-%m-%d').date(),
             datetime.strptime(seminar_contents['time_end'], '%I:%M %p').time()
         ))
         ics_event.add('DTSTART', seminar_start_time)
