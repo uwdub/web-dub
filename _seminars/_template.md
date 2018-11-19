@@ -123,7 +123,7 @@ speakers:
     affiliation: "{{ speaker.affiliation }}"
     {% endif %}
     {% if speaker.affiliation_none is defined %}
-    affiliation_none: "{{ speaker.affiliation_none }}"
+    affiliation_none: {{ speaker.affiliation_none }}
     {% endif %}
   {% endfor %}
 {% endif %}
