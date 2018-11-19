@@ -153,6 +153,8 @@ speakers:
 #   - location_override_calendar:
 #   - location_override_seminar_page:
 #
+# - if the default layout is to be completely overridden
+#   - text_override_seminar_page:
 #
 # title: "Title in Quotes: Because Colons Cause Errors"
 # location:   "HUB 334"
@@ -192,6 +194,11 @@ abstract: |
 {% if bio is defined %}
 bio: |
   {{ bio | indent(width=2)}}
+
+{% endif %}
+{% if text_override_seminar_page is defined %}
+text_override_seminar_page: |
+  {{ text_override_seminar_page | indent(width=2)}}
 
 {% endif %}
 ################################################################################
