@@ -149,14 +149,18 @@ speakers:
 #     "Sieg 233"
 #     "StartUp Hall Meeting Room"
 #
-# - if custom text is required for location, two override fields can be used
+# - if custom text is required for the title
+#   - title_override_seminar_page:
+#
+# - if custom text is required for location
 #   - location_override_calendar:
 #   - location_override_seminar_page:
 #
 # - if the default layout is to be completely overridden
 #   - text_override_seminar_page:
 #
-# title: "Title in Quotes: Because Colons Cause Errors"
+#
+# title:      "Title in Quotes: Because Colons Cause Errors"
 # location:   "HUB 334"
 #
 # abstract:   |
@@ -174,6 +178,11 @@ speakers:
 ################################################################################
 title:      "{{ title | trim | replace("\"", "\\\"") }}"
 
+{% if title_override_seminar_page is defined %}
+title_override_seminar_page: |
+  {{ title_override_seminar_page | indent(width=2)}}
+
+{% endif %}
 location:   "{{ location }}"
 
 {% if location_override_calendar is defined %}
