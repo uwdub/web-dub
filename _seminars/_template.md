@@ -180,34 +180,34 @@ title:      "{{ title | trim | replace("\"", "\\\"") }}"
 
 {% if title_override_seminar_page is defined %}
 title_override_seminar_page: |
-  {{ title_override_seminar_page | indent(width=2)}}
+  {{ title_override_seminar_page | trim | indent(width=2)}}
 
 {% endif %}
 location:   "{{ location }}"
 
 {% if location_override_calendar is defined %}
 location_override_calendar: |
-  {{ location_override_calendar | indent(width=2)}}
+  {{ location_override_calendar | trim | indent(width=2)}}
 
 {% endif %}
 {% if location_override_seminar_page is defined %}
 location_override_seminar_page: |
-  {{ location_override_seminar_page | indent(width=2)}}
+  {{ location_override_seminar_page | trim | indent(width=2)}}
 
 {% endif %}
 {% if abstract is defined %}
 abstract: |
-  {{ abstract | indent(width=2)}}
+  {{ abstract | trim | indent(width=2)}}
 
 {% endif %}
 {% if bio is defined %}
 bio: |
-  {{ bio | indent(width=2)}}
+  {{ bio | trim | indent(width=2)}}
 
 {% endif %}
 {% if text_override_seminar_page is defined %}
 text_override_seminar_page: |
-  {{ text_override_seminar_page | indent(width=2)}}
+  {{ text_override_seminar_page | trim | indent(width=2)}}
 
 {% endif %}
 ################################################################################
