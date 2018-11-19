@@ -174,16 +174,26 @@ title:      "{{ title | trim | replace("\"", "\\\"") }}"
 
 location:   "{{ location }}"
 
+{% if location_override_calendar is defined %}
+location_override_calendar: |
+  {{ location_override_calendar | indent(width=2)}}
+
+{% endif %}
+{% if location_override_seminar_page is defined %}
+location_override_seminar_page: |
+  {{ location_override_seminar_page | indent(width=2)}}
+
+{% endif %}
 {% if abstract is defined %}
 abstract: |
   {{ abstract | indent(width=2)}}
+
 {% endif %}
-  
 {% if bio is defined %}
 bio: |
   {{ bio | indent(width=2)}}
-{% endif %}
 
+{% endif %}
 ################################################################################
 # A seminar may have a video.
 #
