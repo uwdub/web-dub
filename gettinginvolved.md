@@ -35,7 +35,7 @@ most vibrant communities for research and education in Human Computer Interactio
 
 If you are new to DUB, the best way to start participating is to:
 
-- Come to the weekly [DUB seminar]({{site.baseurl}}/gettinginvolved.html#tab_seminar).
+- Come to the weekly [DUB seminar]({{site.baseurl}}/seminar.html).
 - Join one or more of the [DUB mailing lists]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists_and_slack). 
 - Join the [DUB Slack]({{site.baseurl}}/gettinginvolved.html#tab_mailing_lists_and_slack).
 
