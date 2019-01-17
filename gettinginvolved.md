@@ -107,7 +107,7 @@ speak [at] dub [dot] washington [dot] edu
 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Anat Caspi, Jennifer Mankoff
+Anat Caspi, Leah Findlater
 </div>
 </div>
 <div class="row">
