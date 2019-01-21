@@ -567,5 +567,12 @@ If you are unsure which program is the right fit for you, please talk directly w
 
 You can also apply to multiple programs. The important thing is to come join us!
 
+### Summer Research Experiences for Undergraduates
+
+DUB faculty coordinate a set of summer REU activities for undergraduates from within and outside the University of Washington.
+Information about the Summer 2019 program can found here:
+
+[DUB REU Program Summer 2019]({{ site.baseref }}/posts/2019/201901-dubreu.html)
+
 </div>
 </div>
