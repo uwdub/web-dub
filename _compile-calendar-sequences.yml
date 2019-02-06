@@ -504,11 +504,11 @@ sequences:
     hash: c8b3c106e402ed569e3c07dfc5ea9214
     sequence: 6
   _seminars/2019-01-16.md:
-    hash: 7ed01896f7a51870eb58658300bdcc3f
-    sequence: 5
+    hash: ac8cbda8bcce0a1969c5a287ce8749ac
+    sequence: 6
   _seminars/2019-01-23.md:
-    hash: d51659cef51279b53d94c7b879ee5704
-    sequence: 8
+    hash: 8cefda99f55d093afef0dd21eab66240
+    sequence: 9
   _seminars/2019-01-30.md:
     hash: 86f33f76c6f5d72cb6a842345e42282e
     sequence: 5
@@ -544,6 +544,9 @@ sequences:
     sequence: 2
   _seminars/2019-04-17.md:
     hash: 6586822debe8b3b19d5ea6fa17871e97
+    sequence: 2
+  _seminars/2019-04-24.md:
+    hash: 748c58bfc0c0c5c69cba538b22dbc373
     sequence: 2
   _seminars/2019-05-01.md:
     hash: cbb21eb52b09bff94b33ae8d10bb4bbb
