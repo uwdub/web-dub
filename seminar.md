@@ -13,7 +13,7 @@ title: "DUB Seminar"
 
 <h4>Calendar Subscriptions</h4>
 <ul class="nav nav-pills nav-stacked">
-    <li><a href="https://calendar.google.com/calendar/r?cid=https://dub.washington.edu/calendar.ics">Google Calendar</a></li>
+    <li><a href="https://calendar.google.com/calendar/r?cid=webcal%3A%2F%2Fdub.washington.edu%2Fcalendar.ics">Google Calendar</a></li>
     <li><a href="webcal://dub.washington.edu/calendar.ics">iCal / Webcal</a></li>
 </ul>
 
