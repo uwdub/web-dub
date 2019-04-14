@@ -15,32 +15,31 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-main" data-slide-to="1"></li>
         <li data-target="#carousel-main" data-slide-to="2"></li>      
 
-<!--
         <li data-target="#carousel-main" data-slide-to="3"></li>
--->
+
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-<!--
-          <img src="{{ site.baseurl }}/posts/2018/chi2018_slide.png" alt="CHI 2018">
+
+          <img src="{{ site.baseurl }}/posts/2019/chi2019_slide.png" alt="CHI 2019">
           <div class="carousel-caption">
             <div class="carousel-caption-innter">
-            <h2>DUB at CHI 2018</h2>
+            <h2>DUB at CHI 2019</h2>
             <p>
-                HCI & Design at the University of Washington<br>will have a large and quality presence at CHI 2018.
+                HCI & Design at the University of Washington<br>will have a large and quality presence at CHI 2019.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2018/201804-chi2018papers.html" class="btn btn-default btn-lg">
-                UW Research at CHI 2018
+              <a href="{{ site.baseurl }}/posts/2019/201904-chi2019papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2019
               </a>
             </p>
             </div>
           </div>
         </div>
         <div class="item">
--->
+
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <div class="carousel-caption-innter">
