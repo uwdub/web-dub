@@ -139,6 +139,7 @@ speakers:
 #     "GIX"
 #     "Haggett Hall Cascade Room"
 #     "HUB 145"
+#     "HUB 214"
 #     "HUB 250"
 #     "HUB 332"
 #     "HUB 334"
