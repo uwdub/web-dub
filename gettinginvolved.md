@@ -98,7 +98,7 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Christine Geeng, Ravi Karkar
+Christine Geeng, Annie Ross
 </div>
 </div>
 
@@ -154,7 +154,7 @@ Augustus Arthur
 **Retreat**
 </div>
 <div class="col-md-8" markdown="block">
-October 19, 2018
+October 18, 2019
 </div>
 </div>
 <div class="row">
