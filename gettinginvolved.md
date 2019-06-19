@@ -81,11 +81,24 @@ reach out to one or more of the DUB Coordinators.
 <html>
 
 <div class="row">
+<div class="col-md-12" markdown="block">
+**Overall**
+</div>
+</div>
+<div class="row">
 <div class="col-md-4" markdown="block">
-**Director**
+Director
 </div>
 <div class="col-md-8" markdown="block">
 James Fogarty
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Christine Geeng, Ravi Karkar
 </div>
 </div>
 
@@ -115,7 +128,8 @@ Leah Findlater
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Eunice Jun, Kai Lukoff, Sayena Majlesein, Sonali Mishra, John Robinson, Benji Xie
+Sam Kolovson, Kai Lukoff, Benji Xie, Mingrui Zhang
+<!-- Eunice Jun, Kai Lukoff, Sayena Majlesein, Sonali Mishra, John Robinson, Benji Xie -->
 </div>
 </div>
 <div class="row">
@@ -153,6 +167,21 @@ dub-retreat [at] uw [dot] edu
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
+2019 Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Jon Froehlich, Benjamin Mako Hill, Emily Lloyd
+</div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2019 Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Tal August, Qisheng Li, Calvin Liang, Kathryn Shroyer
+</div>
+<!--
+<div class="col-md-4" markdown="block">
 2018 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
@@ -166,6 +195,7 @@ Andy Davidson, Audrey Desjardins, Jon Froehlich, Emily Lloyd
 <div class="col-md-8" markdown="block">
 Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 </div>
+-->
 </div>
 
 <div class="row">
@@ -175,12 +205,22 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
+2019 Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Ravi Karkar, Annie Ross, Susanne Kirchner-Adelhardt, Benjamin Xie
+</div>
+</div>
+<!--
+<div class="row">
+<div class="col-md-4" markdown="block">
 2018 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
 Dharma Dailey, Ravi Karkar, Shefali Haldar, Sonu Mishra, Aditya Vashistha
 </div>
 </div>
+-->
 
 <div class="row">
 <div class="col-md-12" markdown="block">
