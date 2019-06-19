@@ -1,0 +1,94 @@
+---
+################################################################################
+# Version of the people format. The only valid value for this is 1. 
+# We may increment this in the future to simplify maintenance of old people.
+################################################################################
+version: 1
+
+################################################################################
+# A people file might exist but lack values for some fields. These are 'TBD'. 
+# The only valid value is 'True'. A TBD field should not be present if 'False'.
+################################################################################
+
+################################################################################
+# Full name listed in the order of fields provided.
+#
+# name: 
+# - First name field
+# - Second name field
+# - etc (up to five fields)
+################################################################################
+name:
+  - Jacob
+  - O.
+  - Wobbrock
+
+################################################################################
+# Each person has a single main role.
+#
+# Valid roles: faculty
+################################################################################
+role:
+  - faculty
+
+################################################################################
+# UW NetID, used for unique identification
+################################################################################
+netid: 
+
+################################################################################
+# A person may have multiple positions, which consist of a title and affiliation.
+#
+# Faculty have one or more title and affiliations.
+#
+# Valid faculty titles: 
+#   Assistant Professor
+#   Adjunct Assistant Professor
+#   Affiliate Assistant Professor
+#   Associate Professor
+#   Adjunct Associate Professor
+#   Affiliate Associate Professor
+#   Professor
+#   Adjunct Professor
+#   Affiliate Professor
+#   Lecturer
+#   Senior Lecturer
+#   Professor Emeritus
+
+#
+# Valid faculty affiliations:
+#   Computer Science & Engineering
+#   Division of Design
+#   Human Centered Design & Engineering
+#   Information School
+#   Human-Computer Interaction & Design
+#   Architecture
+#   Biomedical & Health Informatics
+#   Civil & Environmental Engineering
+#   Communication
+#   DXARTS Digital Arts
+#   Electrical Engineering
+#   Industrial & Systems Engineering
+#   Mechanical Engineering
+#   Nursing
+#   Psychology
+#   Rehabilitation Medicine
+#   Other
+
+################################################################################
+positions:
+  - title: Professor
+    affiliation: Information School
+  - title: Adjunct Professor
+    affiliation: Computer Science & Engineering
+
+################################################################################
+# A person may have a website. If not, this field should not be present.
+#
+# web:
+# - https://homes.cs.washington.edu/~jfogarty/
+################################################################################
+web:
+  - 
+
+---
