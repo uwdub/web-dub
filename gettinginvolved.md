@@ -208,7 +208,7 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 2019 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ravi Karkar, Annie Ross, Susanne Kirchner-Adelhardt, Benjamin Xie
+Susanne Kirchner-Adelhardt, Ravi Karkar, Annie Ross, Benjamin Xie
 </div>
 </div>
 <!--
