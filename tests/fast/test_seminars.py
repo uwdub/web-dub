@@ -231,6 +231,7 @@ class TestSeminars(unittest.TestCase):
                     [
                         'Alder Commons',
                         'CSE 691',
+                        'CSE2 G10',
                         'GIX',
                         'Haggett Hall Cascade Room',
                         'HUB 145',
