@@ -48,4 +48,4 @@ DUB welcomes participation from across the University of Washington. Additional 
 - [Mechanical Engineering](http://www.me.washington.edu/)
 - [Psychology](http://www.psych.uw.edu/)
  
-Industry research partners include Adobe, FXPAL, Google, Intel, Microsoft, and others.
+Industry research partners include Adobe, FXPAL, Google, Intel, Microsoft, Snap, and others.
