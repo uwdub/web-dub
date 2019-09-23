@@ -231,6 +231,7 @@ class TestSeminars(unittest.TestCase):
                     [
                         'Alder Commons',
                         'CSE 691',
+                        'CSE2',
                         'CSE2 G01',
                         'CSE2 G10',
                         'GIX',
