@@ -128,7 +128,8 @@ Leah Findlater
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang
+Sam Kolovson, Kai Lukoff, Alannah Oleson, Vanshika Swaika, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang
+<!-- Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Benji Xie, Mingrui Zhang -->
 <!-- Eunice Jun, Kai Lukoff, Sayena Majlesein, Sonali Mishra, John Robinson, Benji Xie -->
 </div>
@@ -138,7 +139,8 @@ Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Z
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Eunice Jun
+Eunice Jun, Calvin Liang
+<!-- Eunice Jun -->
 </div>
 </div>
 <div class="row">
