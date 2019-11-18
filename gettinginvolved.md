@@ -148,7 +148,7 @@ Eunice Jun, Calvin Liang
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Augustus Arthur
+Xian (Shian) Yang
 </div>
 </div>
 
