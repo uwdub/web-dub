@@ -243,7 +243,7 @@ dub-web [at] dub [dot] washington [dot] edu
 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-James Fogarty, Trevor Croxson
+James Fogarty
 </div>
 </div>
 <div class="row">
