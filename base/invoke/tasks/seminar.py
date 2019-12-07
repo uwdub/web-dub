@@ -28,13 +28,23 @@ def seminar_update_template():
     for seminar_path_current in seminar_paths:
         # Load the existing seminar file
         with open(seminar_path_current, encoding='utf-8') as f:
+            # Get the raw text of the seminar
+            seminar_raw = f.read()
+
             # Parse the YAML of the seminar
-            seminar = list(yaml.safe_load_all(f))[0]
+            seminar = list(yaml.safe_load_all(seminar_raw))[0]
 
             # If we ever have more than one version, we'll need to check things here
             assert seminar['version'] == 1
 
-        # Write it back using the template
+        # Render the seminar in the current template
         seminar_rendered = template.render(seminar)
-        with open(seminar_path_current, encoding='utf-8', mode='w') as f:
-            f.write(seminar_rendered)
+
+        # If the seminar text will change, we also need to increment the sequence
+        if seminar_rendered != seminar_raw:
+            seminar['sequence'] += 1
+            seminar_rendered = template.render(seminar)
+
+            # Write it back
+            with open(seminar_path_current, encoding='utf-8', mode='w') as f:
+                f.write(seminar_rendered)
