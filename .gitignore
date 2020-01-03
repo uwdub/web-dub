@@ -5,8 +5,9 @@
 # MacOS files
 .DS_Store
 
-# Python environment
+# Python environments
 /env36
+/env38
 
 # Python compilation
 *.pyc

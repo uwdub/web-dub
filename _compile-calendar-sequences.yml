@@ -642,11 +642,11 @@ sequences:
     hash: 77df49abf6f3e1239c8526de113654bf
     sequence: 5
   _seminars/2019-11-27.md:
-    hash: e8aa11ba5b4373e10dd05a468bafa6ec
-    sequence: 5
-  _seminars/2019-12-04.md:
-    hash: 56bdb7a00ab15e1b943bc4b3567b1125
+    hash: 4f6a249345475445c9daaa3fcf201981
     sequence: 6
+  _seminars/2019-12-04.md:
+    hash: d951857623579791f64ee3da37b6c5c7
+    sequence: 7
   _seminars/2019-12-11.md:
     hash: fb5e91f869350b72d1ff3d4a298a89b1
     sequence: 3
