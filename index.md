@@ -14,15 +14,15 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-main" data-slide-to="1"></li>
         <li data-target="#carousel-main" data-slide-to="2"></li>      
-
+<!--
         <li data-target="#carousel-main" data-slide-to="3"></li>
-
+-->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-
+<!--
           <img src="{{ site.baseurl }}/posts/2019/chi2019_slide.png" alt="CHI 2019">
           <div class="carousel-caption">
             <div class="carousel-caption-innter">
@@ -39,7 +39,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
           </div>
         </div>
         <div class="item">
-
+-->
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <div class="carousel-caption-innter">
