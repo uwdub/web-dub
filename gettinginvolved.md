@@ -117,7 +117,7 @@ speak [at] dub [dot] washington [dot] edu
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-Coordinators
+Coordinator
 </div>
 <div class="col-md-8" markdown="block">
 Leah Findlater
