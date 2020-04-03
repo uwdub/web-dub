@@ -102,6 +102,16 @@ title_bar_secondary: "HCI & Design at the University of Washington"
                     {% endfor %}
                 {% endunless %}
             </div>
+            {% if item_seminar.zoom_seminar %}
+            <div class="col-xs-12">
+                <h3>Zoom Meeting</h3>
+                <p>
+                    DUB Seminar will be conducted using Zoom, via an invitation distributed to the DUB mailing list.
+                    Participants who are logged into Zoom using a UW account will be directly admitted,
+                    and participants who are not logged in to a UW account will be admitted using a Zoom waiting room.
+                </p>
+            </div>
+            {% endif %}
             <div class="col-xs-12">
                 {% unless item_seminar.tbd_abstract %}
                     <h3>Abstract</h3>
