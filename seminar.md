@@ -24,6 +24,14 @@ The seminar features talks from diverse leading perspectives in Human Computer I
 presented by members of the DUB community and by visiting researchers and practitioners.
 All members of the DUB community are welcome and encouraged to attend the weekly DUB seminar.
 
+- If you are interested in hosting a DUB speaker, or are yourself interested in speaking in the DUB seminar,
+contact the [DUB Seminar Coordinators]({{ site.baseurl }}/gettinginvolved.html#tab_coordinators) 
+via email at speak [at] dub [dot] washington [dot] edu. 
+
+- If you are interested in presenting a paper in our DUB Shorts format, submit our form:
+  
+  <https://tiny.cc/uwdubshorts>
+
 Seminars begin with some time for socializing, and then transition to the talk.
 Seminars during the academic year often attract 100 to 120 people,
 with seminars during the summer more often attracting 60 to 80 people. 
@@ -38,9 +46,6 @@ and the [DUB Vimeo channel](http://vimeo.com/designusebuild).
 The DUB seminar schedule is coordinated through grassroots identification of compelling speakers.
 This generally leverages a potential speaker's existing plans for visiting the University of Washington community,
 but very limited support is available in situations where costs would be a barrier to a potential speaker.
-If you are interested in hosting a DUB speaker, or are yourself interested in speaking in the DUB seminar,
-contact the [DUB Seminar Coordinators]({{ site.baseurl }}/gettinginvolved.html#tab_coordinators) 
-via email at speak [at] dub [dot] washington [dot] edu. 
 
 <div id="seminar-tabs-content" class="tab-content" markdown="block">
 
