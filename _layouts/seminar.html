@@ -110,6 +110,11 @@ title_bar_secondary: "HCI & Design at the University of Washington"
                     Participants who are logged into Zoom using a UW account will be directly admitted,
                     and participants who are not logged in to a UW account will be admitted using a Zoom waiting room.
                 </p>
+                {% if item_seminar.zoom_seminar_not_recorded %}
+                <p>
+                    This DUB seminar will not be recorded.
+                </p>
+                {% endif %}
             </div>
             {% endif %}
             <div class="col-xs-12">
