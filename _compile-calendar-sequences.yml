@@ -722,6 +722,9 @@ sequences:
   _seminars/2020-05-27.md:
     hash: fef8c2a591cf0225c2af587da3cb3039
     sequence: 7
+  _seminars/2020-05-29.md:
+    hash: b0b9bbb66ca035d3d94b98767794dff6
+    sequence: 2
   _seminars/2020-06-03.md:
     hash: 0389bc09c9c715f36c3f8a27e3c0fcab
     sequence: 4

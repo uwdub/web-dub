@@ -80,7 +80,7 @@ reach out to one or more of the DUB Coordinators.
 
 <html>
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-md-12" markdown="block">
 **Overall**
 </div>
@@ -102,7 +102,7 @@ Christine Geeng, Annie Ross
 </div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-md-12" markdown="block">
 **Seminar**
 </div>
@@ -140,7 +140,6 @@ Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
 Eunice Jun, Calvin Liang
-<!-- Eunice Jun -->
 </div>
 </div>
 <div class="row">
@@ -152,7 +151,7 @@ Xian (Shian) Yang
 </div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-md-4" markdown="block">
 **Retreat**
 </div>
@@ -201,11 +200,23 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 -->
 </div>
 
-<div class="row">
-<div class="col-md-12" markdown="block">
+<div class="row" style="margin-top: 20px">
+<div class="col-md-4" markdown="block">
 **Doctoral Consortium**
 </div>
+<div class="col-md-8" markdown="block">
+<https://dub.washington.edu/posts/2020/dubdc.html>
 </div>
+</div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2020 Student Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng
+</div>
+</div>
+<!--
 <div class="row">
 <div class="col-md-4" markdown="block">
 2019 Student Coordinators
@@ -214,7 +225,6 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 Susanne Kirchner-Adelhardt, Ravi Karkar, Annie Ross, Benjamin Xie
 </div>
 </div>
-<!--
 <div class="row">
 <div class="col-md-4" markdown="block">
 2018 Student Coordinators
@@ -225,7 +235,7 @@ Dharma Dailey, Ravi Karkar, Shefali Haldar, Sonu Mishra, Aditya Vashistha
 </div>
 -->
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-md-12" markdown="block">
 **Website**
 </div>
@@ -255,7 +265,7 @@ GitHub Repository
 </div>
 </div>
 
-<div class="row">
+<div class="row" style="margin-top: 20px">
 <div class="col-md-12" markdown="block">
 **Medium Curation**
 </div>
