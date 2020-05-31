@@ -711,11 +711,11 @@ sequences:
     hash: 494ab17c1e819370a018ccd088ae58ae
     sequence: 9
   _seminars/2020-05-06.md:
-    hash: 5341b1138ffac3d697cf2283c51ae138
-    sequence: 9
-  _seminars/2020-05-13.md:
-    hash: 812dde394abc0b9cb82b90320c14bd4f
+    hash: 2ba2b300574d2eceffa3c592f1f3bf11
     sequence: 10
+  _seminars/2020-05-13.md:
+    hash: 92c66e0f06dee6865404659f294d1082
+    sequence: 11
   _seminars/2020-05-20.md:
     hash: c433aae30f9fb0fd16da365631620ca1
     sequence: 10
