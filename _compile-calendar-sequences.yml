@@ -738,8 +738,8 @@ sequences:
     hash: d34f7c0abb6609763d2c30d7ba808609
     sequence: 5
   _seminars/2020-07-01.md:
-    hash: ea9c4d1b023b3ea4cdc40b6a79613a2d
-    sequence: 4
+    hash: a3ab7fc8ee9ee986f89c90fe6d5489da
+    sequence: 5
   _seminars/2020-07-08.md:
     hash: 4353ff86a6a2b958e0ec76d63acc98f2
     sequence: 8
@@ -747,8 +747,8 @@ sequences:
     hash: 7b665abb6af9d2096e6bca13b49cc6db
     sequence: 10
   _seminars/2020-07-22.md:
-    hash: 4c548898b363a5951d1344a25dfe0ad4
-    sequence: 8
+    hash: 45a16c66e01f1dac56bb3720c5d173e3
+    sequence: 9
   _seminars/2020-07-29.md:
     hash: a7784198015e13675881d05418e13cd1
     sequence: 9
@@ -776,3 +776,48 @@ sequences:
   _seminars/2020-09-25.md:
     hash: 6dcbdf17a4902d68a48363b85efc821c
     sequence: 3
+  _seminars/2020-09-30.md:
+    hash: 23025cfa32ce4ebbde2bccd9a1b8d2af
+    sequence: 1
+  _seminars/2020-10-07.md:
+    hash: cabd4fbef4d2ccc3a5c7e768eae1ee80
+    sequence: 2
+  _seminars/2020-10-14.md:
+    hash: a0a3f4e04ca61e49bbdc4818a3b8f9ef
+    sequence: 2
+  _seminars/2020-10-16.md:
+    hash: bd600650997f24869baef24f41d73495
+    sequence: 2
+  _seminars/2020-10-21.md:
+    hash: de09112f451e535c4c9d736b10302ce6
+    sequence: 1
+  _seminars/2020-10-28.md:
+    hash: a13ada0c689b93822ead0c54ea750695
+    sequence: 2
+  _seminars/2020-11-04.md:
+    hash: 71b631a1545c96a892d8693e1a49cb7a
+    sequence: 2
+  _seminars/2020-11-11.md:
+    hash: 0336b132f895f53a9fa0dc2e56fc6f8a
+    sequence: 1
+  _seminars/2020-11-18.md:
+    hash: ba8a866323d98c87382b1ba9165be9fb
+    sequence: 3
+  _seminars/2020-11-25.md:
+    hash: cf81b5caa98554a999186641b1112245
+    sequence: 3
+  _seminars/2020-12-02.md:
+    hash: b2d6676942473696555ad73734a2e3fb
+    sequence: 3
+  _seminars/2020-12-09.md:
+    hash: 24e5bae1184b6b1ad3b89ecb41f657c9
+    sequence: 1
+  _seminars/2020-12-16.md:
+    hash: 309a47a8da6ff0811292613ba7a92647
+    sequence: 1
+  _seminars/2020-12-23.md:
+    hash: 3eb40171f8022c312a8d89e848e38e30
+    sequence: 1
+  _seminars/2020-12-30.md:
+    hash: 3c6bb62d7422da6e9fc43cbe47ab920a
+    sequence: 1
