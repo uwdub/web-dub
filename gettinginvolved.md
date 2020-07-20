@@ -140,7 +140,8 @@ Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, 
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Eunice Jun, Calvin Liang
+Calvin Liang
+<!-- Eunice Jun, Calvin Liang -->
 </div>
 </div>
 <div class="row">
