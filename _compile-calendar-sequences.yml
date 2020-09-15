@@ -780,8 +780,8 @@ sequences:
     hash: 23025cfa32ce4ebbde2bccd9a1b8d2af
     sequence: 1
   _seminars/2020-10-07.md:
-    hash: cabd4fbef4d2ccc3a5c7e768eae1ee80
-    sequence: 2
+    hash: e6e8650db13fc8f325aed361c31a8d73
+    sequence: 3
   _seminars/2020-10-14.md:
     hash: c6ccd5da821f85dc8bd3b6b23f705d2a
     sequence: 3
@@ -795,8 +795,8 @@ sequences:
     hash: efaeca52011040a94f71bd3b15fe0c5c
     sequence: 3
   _seminars/2020-11-04.md:
-    hash: 5fdbecb485fa6648efc5fc49f62140ff
-    sequence: 5
+    hash: cb71aebee62abffad72a1bccc400a233
+    sequence: 6
   _seminars/2020-11-11.md:
     hash: 0336b132f895f53a9fa0dc2e56fc6f8a
     sequence: 1
