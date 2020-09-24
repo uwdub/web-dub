@@ -767,12 +767,21 @@ sequences:
   _seminars/2020-09-02.md:
     hash: dbd4f000c6f1fe0c1681c7b241864bc4
     sequence: 3
+  _seminars/2020-09-09.md:
+    hash: 773913df34195753cb868b7592bbda4f
+    sequence: 4
   _seminars/2020-09-11.md:
     hash: 90267b8448721d95432aaa0e24ec24bf
     sequence: 3
+  _seminars/2020-09-16.md:
+    hash: e9cd46dfe985498f5009417e937e226c
+    sequence: 4
   _seminars/2020-09-18.md:
     hash: 2dfb3954f600e6c7c2e069df61e3ecae
     sequence: 3
+  _seminars/2020-09-23.md:
+    hash: 3a92ab109ad6dbeec4858672df023f4a
+    sequence: 4
   _seminars/2020-09-25.md:
     hash: 6dcbdf17a4902d68a48363b85efc821c
     sequence: 3
