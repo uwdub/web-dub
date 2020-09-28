@@ -786,41 +786,41 @@ sequences:
     hash: 6dcbdf17a4902d68a48363b85efc821c
     sequence: 3
   _seminars/2020-09-30.md:
-    hash: 23025cfa32ce4ebbde2bccd9a1b8d2af
-    sequence: 1
-  _seminars/2020-10-07.md:
-    hash: e6e8650db13fc8f325aed361c31a8d73
-    sequence: 3
-  _seminars/2020-10-14.md:
-    hash: c6ccd5da821f85dc8bd3b6b23f705d2a
-    sequence: 3
-  _seminars/2020-10-16.md:
-    hash: bd600650997f24869baef24f41d73495
+    hash: def63337adfd00e0551eac2fccf1d166
     sequence: 2
-  _seminars/2020-10-21.md:
-    hash: de09112f451e535c4c9d736b10302ce6
-    sequence: 1
-  _seminars/2020-10-28.md:
-    hash: efaeca52011040a94f71bd3b15fe0c5c
+  _seminars/2020-10-07.md:
+    hash: 622bc67bd58a8dc3c813d7a47180f15c
+    sequence: 4
+  _seminars/2020-10-14.md:
+    hash: e8302455359ffb0ded109faad899d4bf
+    sequence: 4
+  _seminars/2020-10-16.md:
+    hash: e6ab50cb988ada5dead30f4a407896fe
     sequence: 3
+  _seminars/2020-10-21.md:
+    hash: d8a3b7feb1172f26ccfd8e500f04c404
+    sequence: 2
+  _seminars/2020-10-28.md:
+    hash: c246d0503044505d94ed9bc62de2469d
+    sequence: 4
   _seminars/2020-11-04.md:
-    hash: cb71aebee62abffad72a1bccc400a233
-    sequence: 6
+    hash: 05e22b12fb9e4a7bad648689e92ab6ec
+    sequence: 7
   _seminars/2020-11-11.md:
-    hash: 0336b132f895f53a9fa0dc2e56fc6f8a
-    sequence: 1
+    hash: da6dc42339f3ac205f7856c4370433d3
+    sequence: 2
   _seminars/2020-11-18.md:
-    hash: d7da3cc9698e9f52b07d9c48dd905ff8
-    sequence: 4
+    hash: 825665c49b7180c17fc0ad776cb2a424
+    sequence: 5
   _seminars/2020-11-25.md:
-    hash: 0b7b220b0eea0930d2bb9ab4b21e5326
-    sequence: 4
+    hash: 5a09ff0e9ffd7d1a8cd03f3e6a98d6e3
+    sequence: 5
   _seminars/2020-12-02.md:
-    hash: a6d17e9012aa6593a6eaef4b0d32148d
-    sequence: 4
+    hash: 5a91f80603f39bb581f5b8c33284cc29
+    sequence: 5
   _seminars/2020-12-09.md:
-    hash: 24e5bae1184b6b1ad3b89ecb41f657c9
-    sequence: 1
+    hash: 96e9f576b30822353557b4ff7d757c45
+    sequence: 2
   _seminars/2020-12-16.md:
     hash: 309a47a8da6ff0811292613ba7a92647
     sequence: 1
