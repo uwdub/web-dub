@@ -804,8 +804,8 @@ sequences:
     hash: 488571d3cc655e2287724735bff4c5f3
     sequence: 7
   _seminars/2020-11-04.md:
-    hash: fc8050b9edde37c7ed04051447a730e3
-    sequence: 8
+    hash: ade752acfded64dbdaae4119afd0472b
+    sequence: 9
   _seminars/2020-11-11.md:
     hash: da6dc42339f3ac205f7856c4370433d3
     sequence: 2
@@ -813,11 +813,11 @@ sequences:
     hash: faeff7634241b7a67216358e82698a96
     sequence: 6
   _seminars/2020-11-25.md:
-    hash: 5a09ff0e9ffd7d1a8cd03f3e6a98d6e3
-    sequence: 5
+    hash: 4b310cbee680b5d09e8bd7ad459be460
+    sequence: 6
   _seminars/2020-12-02.md:
-    hash: 5a91f80603f39bb581f5b8c33284cc29
-    sequence: 5
+    hash: d924fb86562ebe8bc02f33d32fad59c1
+    sequence: 6
   _seminars/2020-12-09.md:
     hash: 96e9f576b30822353557b4ff7d757c45
     sequence: 2
