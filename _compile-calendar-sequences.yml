@@ -837,11 +837,11 @@ sequences:
     hash: 88d93274a6a4abb11a173aa555ad2551
     sequence: 4
   _seminars/2021-01-20.md:
-    hash: c13d604429596ec50fb330cc37895ac4
-    sequence: 3
-  _seminars/2021-01-27.md:
-    hash: ea8e25c8395a1b4fb72f2ad8037aa41a
+    hash: 5793c6ee208bd18d8f797d9ad2739135
     sequence: 4
+  _seminars/2021-01-27.md:
+    hash: 95ae2451c2eb1da732c5d0ef4cc3cb3a
+    sequence: 5
   _seminars/2021-02-03.md:
     hash: 30e9107ec8b2e15ce0b43876b7ca71da
     sequence: 3
@@ -849,14 +849,14 @@ sequences:
     hash: 1ddb2badae854c4517163b3d2e62e785
     sequence: 3
   _seminars/2021-02-17.md:
-    hash: f3b7f59654968f7f2cfa3680717e2222
-    sequence: 3
+    hash: cead010eea5d6121a2e4fb2b565c3e72
+    sequence: 4
   _seminars/2021-02-24.md:
     hash: e5ce3fdc2619f272a3a4d59fa90ba405
     sequence: 5
   _seminars/2021-03-03.md:
-    hash: 8f048e8e747b3c0fcc5467c444928f39
-    sequence: 4
+    hash: a42463121d8d2fc74ec409f554278053
+    sequence: 5
   _seminars/2021-03-10.md:
     hash: f8910aab35ae1edf2a0da17ab07ae52f
     sequence: 3
@@ -870,11 +870,32 @@ sequences:
     hash: 596122cf5daa4b31fc8d8a4d20ebd7a9
     sequence: 1
   _seminars/2021-04-07.md:
-    hash: 8f20c4f73e061320f41308274d5fcf0f
-    sequence: 1
+    hash: 7eef31025caf00ff35f663690cb31077
+    sequence: 2
+  _seminars/2021-04-14.md:
+    hash: d8450bafc3887e620bd0e128c837d5db
+    sequence: 2
+  _seminars/2021-04-21.md:
+    hash: 499b33fb75a179ddc0aae179f0fefd01
+    sequence: 2
+  _seminars/2021-04-28.md:
+    hash: 31438277f1b73c6a4e1becd607f0c9a0
+    sequence: 2
+  _seminars/2021-05-05.md:
+    hash: ccec61c61c636f79da3175fc4d1556c7
+    sequence: 2
   _seminars/2021-05-12.md:
     hash: 5f34ae8029d5472a4c58c42d84ae843c
     sequence: 1
+  _seminars/2021-05-19.md:
+    hash: 697f1488f387be5a2cc8364e61410493
+    sequence: 2
+  _seminars/2021-05-26.md:
+    hash: a10641ff25a3aa865e0cba645084b57c
+    sequence: 2
+  _seminars/2021-06-02.md:
+    hash: 1cb0a6424f1c2ca25cf42acccea3d4c1
+    sequence: 2
   _seminars/2021-06-09.md:
     hash: 31623809c7979649697bcfcdab4462e1
     sequence: 1
