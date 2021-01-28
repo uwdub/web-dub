@@ -120,7 +120,10 @@ speak [at] dub [dot] washington [dot] edu
 Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Leah Findlater
+Jason C. Yip
+<!-- Leah Findlater -->
+<!-- Jennifer Mankoff -->
+<!-- Sean Munson -->
 </div>
 </div>
 <div class="row">
