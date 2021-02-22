@@ -98,7 +98,7 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Christine Geeng, Annie Ross
+Christine Geeng, Sam Kolovson
 </div>
 </div>
 
@@ -131,7 +131,8 @@ Jason C. Yip
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang
+Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Williams
+<!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Vanshika Swaika, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Benji Xie, Mingrui Zhang -->
@@ -152,7 +153,7 @@ Calvin Liang
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Xian (Shian) Yang
+Danielle Tuchman
 </div>
 </div>
 
@@ -161,7 +162,7 @@ Xian (Shian) Yang
 **Retreat**
 </div>
 <div class="col-md-8" markdown="block">
-October 18, 2019
+October 16, 2020
 </div>
 </div>
 <div class="row">
@@ -174,18 +175,18 @@ dub-retreat [at] uw [dot] edu
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2019 Coordinators
+2020 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Jon Froehlich, Benjamin Mako Hill, Emily Lloyd
+Benjamin Mako Hill, Nadya Peek
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2019 Student Coordinators
+2020 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Tal August, Qisheng Li, Calvin Liang, Kathryn Shroyer
+Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok
 </div>
 <!--
 <div class="col-md-4" markdown="block">
