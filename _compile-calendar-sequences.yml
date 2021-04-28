@@ -873,11 +873,11 @@ sequences:
     hash: f0f9ee3e3afc4de8584fd77193d354fc
     sequence: 6
   _seminars/2021-04-14.md:
-    hash: 45497eaafef9638548c97006f3db5cac
-    sequence: 4
-  _seminars/2021-04-21.md:
-    hash: 15fc193fff0b0ff17423ef20f1d7b1dc
+    hash: 5840e6a8be6e623309a19b74909f4e5c
     sequence: 5
+  _seminars/2021-04-21.md:
+    hash: 54365721e18af8b9a8367b6dbd75af1c
+    sequence: 7
   _seminars/2021-04-28.md:
     hash: cf0869f775f69edea660e3e063d52041
     sequence: 4
