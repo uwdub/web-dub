@@ -948,8 +948,8 @@ sequences:
     hash: 2deda4dc1c663ef7c05379c2ba5a4148
     sequence: 1
   _seminars/2021-10-06.md:
-    hash: 0ba48ab333ed64de77a3078c0b169d97
-    sequence: 2
+    hash: d62bdf36555dbdf4ecffb077432f1da8
+    sequence: 3
   _seminars/2021-10-13.md:
     hash: 071c55bee48b54199bed97cc4a7d5c37
     sequence: 3
@@ -972,11 +972,11 @@ sequences:
     hash: 21cc7dfc366f639ede5ce56425c5bafb
     sequence: 2
   _seminars/2021-11-24.md:
-    hash: ab407eadcd7b1987efb4f8d3aa6e17eb
-    sequence: 2
+    hash: e2195e1f3808a5d832fd06b9f1921b21
+    sequence: 3
   _seminars/2021-12-01.md:
-    hash: 9793877e7ad8d6d532aaf9a6c6aa47fe
-    sequence: 2
+    hash: 4e726c5b2ace502c0946890c7aad9de5
+    sequence: 4
   _seminars/2021-12-08.md:
     hash: 9c3bef04ed0003e1749320d9cd8c9544
     sequence: 1
