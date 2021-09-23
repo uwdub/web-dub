@@ -241,7 +241,8 @@ def compile_calendar():
             # ics_event.add('DESCRIPTION', markdown.markdown(description_string, extensions=[SensibleParagraphs()]))
 
         # That's our complete event
-        ics.add_component(ics_event)
+        if not seminar_contents.get('no_seminar', False):
+            ics.add_component(ics_event)
 
     # Store the ics file output
     with open('calendar.ics', 'wb') as f:
