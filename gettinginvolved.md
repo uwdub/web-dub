@@ -98,7 +98,8 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Christine Geeng, Sam Kolovson
+Sam Kolovson, Miranda Wei
+<!-- 2021-10 Christine Geeng, Sam Kolovson -->
 </div>
 </div>
 
@@ -131,7 +132,8 @@ Jason C. Yip
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Williams
+Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan
+<!-- 2021-10 Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Williams -->
 <!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Vanshika Swaika, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
 <!-- Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang -->
@@ -144,7 +146,8 @@ Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Will
 Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
-Calvin Liang
+Jesse Martinez
+<!-- 2021-10 Calvin Liang -->
 <!-- Eunice Jun, Calvin Liang -->
 </div>
 </div>
@@ -153,7 +156,8 @@ Calvin Liang
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Danielle Tuchman
+Eric Yu
+<!-- 2021-10 Danielle Tuchman -->
 </div>
 </div>
 
@@ -162,7 +166,7 @@ Danielle Tuchman
 **Retreat**
 </div>
 <div class="col-md-8" markdown="block">
-October 16, 2020
+October 15, 2021
 </div>
 </div>
 <div class="row">
@@ -175,18 +179,20 @@ dub-retreat [at] uw [dot] edu
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2020 Coordinators
+2021 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Benjamin Mako Hill, Nadya Peek
+Alexis Hiniker, Amy Zhang
+<!-- 2021-10 Benjamin Mako Hill, Nadya Peek -->
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2020 Student Coordinators
+2021 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok
+Leslie Coney, Chris Fu, Christine Geeng, Sam Kolovson, Rotem Landesman, Jesse Martinez, Miranda Wei
+<!-- 2021-10 Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok -->
 </div>
 <!--
 <div class="col-md-4" markdown="block">
@@ -211,15 +217,16 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 **Doctoral Consortium**
 </div>
 <div class="col-md-8" markdown="block">
-<https://dub.washington.edu/posts/2020/dubdc.html>
+<https://dub.washington.edu/posts/2021/202103-dubdc.html>
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2020 Student Coordinators
+2021 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng
+Tal August, Regina Cheng, Christine Geeng, Sam Kolovson 
+<!-- 2021-10 Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng -->
 </div>
 </div>
 <!--
