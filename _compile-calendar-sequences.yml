@@ -1014,11 +1014,11 @@ sequences:
     hash: 15e4f77b80cf3ff5e2e96a59f83cb8ad
     sequence: 2
   _seminars/2022-03-02.md:
-    hash: 268ed7ae9065a0c11ccca34bfe2c7a20
-    sequence: 1
+    hash: 87345a92d779b8e9eaa40025dfaef2da
+    sequence: 2
   _seminars/2022-03-09.md:
-    hash: 6fa6951c45d87b613823e6f739fd3afd
-    sequence: 1
+    hash: 4d4b7ee3d3cd431f85103c7056f69415
+    sequence: 2
   _seminars/2022-03-16.md:
     hash: ed1109a8697ea559f4aee2fb1237c73c
     sequence: 1
@@ -1029,8 +1029,8 @@ sequences:
     hash: 25cb2562ee49f5e57ce47c08f6e6462f
     sequence: 1
   _seminars/2022-04-06.md:
-    hash: 596d41b25cde63435d79db8961fff903
-    sequence: 1
+    hash: 5f50d74a00c0e646cc339dae4e9a316d
+    sequence: 2
   _seminars/2022-04-13.md:
     hash: 75c4eb978d902f4257e1896f3867892e
     sequence: 1
