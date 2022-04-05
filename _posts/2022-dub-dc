@@ -1,7 +1,7 @@
 ---
 permalink: /posts/:year/:year:month-:title.html
 layout: base/bar/bar-sidebar-none
-title: "DUB Doctoral Colloquium 2019"
+title: "DUB Doctoral Colloquium"
 ---
 
 <div class="row" style="margin-bottom: 15px">
