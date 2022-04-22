@@ -13,26 +13,24 @@ title_bar_secondary: "HCI & Design at the University of Washington"
       <ol class="carousel-indicators">
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-main" data-slide-to="1"></li>
-        <li data-target="#carousel-main" data-slide-to="2"></li>
-              
-        <li data-target="#carousel-main" data-slide-to="3"></li>
-        
+        <li data-target="#carousel-main" data-slide-to="2"></li>              
+        <li data-target="#carousel-main" data-slide-to="3"></li>        
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
         
-          <img src="{{ site.baseurl }}/posts/2021/chi2021_slide.png" alt="CHI 2021 Banner">
+          <img src="{{ site.baseurl }}/posts/2022/chi2022_slide.jpg" alt="CHI 2022 Banner">
           <div class="carousel-caption">
-            <div class="carousel-caption-innter">
-            <h2>DUB at CHI 2021</h2>
+            <div class="carousel-caption-inner">
+            <h2>DUB at CHI 2022</h2>
             <p>
-                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2021.
+                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2022.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2021/chi2021papers.html" class="btn btn-default btn-lg">
-                UW Research at CHI 2021
+              <a href="{{ site.baseurl }}/posts/2022/chi2022papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2022
               </a>
             </p>
             </div>
@@ -42,25 +40,25 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
-            <div class="carousel-caption-innter">
+            <div class="carousel-caption-inner">
             <h2>Design</h2>
-            <p>Applying design thinking to improve the future.</p>
+            <p>Applying design to improve the future.</p>
             </div>
           </div>
         </div>
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_use.jpg" alt="use">
           <div class="carousel-caption">
-            <div class="carousel-caption-innter">
+            <div class="carousel-caption-inner">
             <h2>Use</h2>
-            <p>Creating better user experiences with technology.</p>
+            <p>Creating better experiences with technology.</p>
             </div>
           </div>
         </div>
         <div class="item">
           <img src="{{ site.baseurl }}/images/slide_build.jpg" alt="build">
           <div class="carousel-caption">
-            <div class="carousel-caption-innter">
+            <div class="carousel-caption-inner">
             <h2>Build</h2>
             <p>Prototyping and developing new technologies.</p>
             </div>
