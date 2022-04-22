@@ -21,7 +21,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
       <div class="carousel-inner" role="listbox">
         <div class="item active">
         
-          <img src="{{ site.baseurl }}/posts/2022/chi2022_slide.jpg" alt="CHI 2022 Banner">
+          <img src="{{ site.baseurl }}/posts/2022/chi2022_slide.png" alt="CHI 2022 Banner">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
             <h2>DUB at CHI 2022</h2>
