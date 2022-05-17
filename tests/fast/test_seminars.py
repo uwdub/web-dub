@@ -234,6 +234,7 @@ class TestSeminars(unittest.TestCase):
                         'CSE2',
                         'CSE2 G01',
                         'CSE2 G10',
+                        'CSE2 401',
                         'GIX',
                         'Haggett Hall Cascade Room',
                         'HUB 145',
