@@ -1110,11 +1110,11 @@ sequences:
     hash: 0884beab8746f2d145a78e4ac3d6d597
     sequence: 2
   _seminars/2022-10-12.md:
-    hash: d9e3fbd3958bff438cf0e4f92c3a181d
-    sequence: 1
-  _seminars/2022-10-19.md:
-    hash: 9e509107affe9208209d6c4e97d451ac
+    hash: 679b76d0687184a964cbdf7a2c83faca
     sequence: 2
+  _seminars/2022-10-19.md:
+    hash: b14bd2af1e73c79d4697fe93ec96db71
+    sequence: 3
   _seminars/2022-10-26.md:
     hash: a2c0c2f72ba6f6e6384df1b5d56ed071
     sequence: 2
