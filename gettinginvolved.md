@@ -618,7 +618,7 @@ The demand is high for all of these competitive, world-class programs.
 - [Master of Human-Computer Interaction + Design](http://mhcid.washington.edu)
 
 - [Computer Science & Engineering](http://www.cs.washington.edu/prospective_students/pmp)
-- [The Division of Design](http://art.washington.edu/design/graduate/overview/)
+- [The Division of Design](https://www.mdesign.uw.edu/)
 - [Human Centered Design & Engineering](http://www.hcde.washington.edu/ms)
 - [The Information School](http://ischool.uw.edu/future/msim)
 
