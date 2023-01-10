@@ -28,9 +28,11 @@ All members of the DUB community are welcome and encouraged to attend the weekly
 contact the [DUB Seminar Coordinators]({{ site.baseurl }}/gettinginvolved.html#tab_coordinators) 
 via email at speak [at] dub [dot] washington [dot] edu. 
 
+<!--
 - If you are interested in presenting a paper in our DUB Shorts format, submit our form:
   
   <https://tiny.cc/uwdubshorts>
+-->
 
 Seminars begin with some time for socializing, and then transition to the talk.
 Seminars during the academic year often attract 100 to 120 people,
