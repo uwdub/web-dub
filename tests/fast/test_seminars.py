@@ -235,7 +235,7 @@ class TestSeminars(unittest.TestCase):
                         'CSE2 G01',
                         'CSE2 G10',
                         'CSE2 401',
-                        'CSE2/Gates 401 (Zillow Commons) - Hybrid via Zoom',
+                        'CSE2/Gates 401 - Hybrid via Zoom',
                         'GIX',
                         'Haggett Hall Cascade Room',
                         'HUB 145',
@@ -245,11 +245,13 @@ class TestSeminars(unittest.TestCase):
                         'HUB 332',
                         'HUB 334',
                         'HUB 340',
+                        'Location Varies',
                         'Kane 220',
                         'Kane 225',
                         'More 230',
                         'Sieg 233',
-                        'StartUp Hall Meeting Room'
+                        'StartUp Hall Meeting Room',
+                        'Zoom'
                     ],
                     'Invalid location in {}'.format(seminar_path_current)
                 )

@@ -109,15 +109,18 @@ collaborate on research, and advance teaching related to the interaction between
               <strong>{{ item_seminar.date | date: "%b %-d" | upcase }}</strong>
             </div>
             <div class="col-xs-8 text-right">
-              {% unless item_seminar.tbd_location %}
-                {{ item_seminar.location }}
-              {% endunless %}
               {% unless item_seminar.no_seminar %}
                 {{ item_seminar.time }}
               {% endunless %}
             </div>
-            <div class="col-xs-12">
 
+            {% unless item_seminar.tbd_location %}
+            <div class="col-xs-12 text-right upcomingseminar">
+                {{ item_seminar.location }}
+            </div>
+            {% endunless %}
+
+            <div class="col-xs-12">
               {% unless item_seminar.tbd_title %}
                 {% unless item_seminar.no_seminar %}
                   <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
@@ -129,8 +132,8 @@ collaborate on research, and advance teaching related to the interaction between
               {% else %}
                 DUB Seminar
               {% endunless %}
-
             </div>
+
             <div class="col-xs-12">
               {% assign speaker_names = '' | split: ' ' %}
               {% for item_speaker in item_seminar.speakers %}
@@ -147,6 +150,8 @@ collaborate on research, and advance teaching related to the interaction between
               {{ speaker_names}}
             </div>
           </div>
+
+          <hr />
         {% endfor %}
       </div>
       <div class="row icon-bottom">
