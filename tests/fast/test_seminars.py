@@ -246,6 +246,7 @@ class TestSeminars(unittest.TestCase):
                         'HUB 334',
                         'HUB 340',
                         'Location Varies',
+                        'MHCI+D Studio - Hybrid via Zoom',
                         'Kane 220',
                         'Kane 225',
                         'More 230',

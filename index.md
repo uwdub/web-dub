@@ -116,7 +116,7 @@ collaborate on research, and advance teaching related to the interaction between
 
             {% unless item_seminar.tbd_location %}
             <div class="col-xs-12 text-right upcomingseminar">
-                {{ item_seminar.location }}
+                {% include seminarlocation.md location=item_seminar.location %}
             </div>
             {% endunless %}
 
