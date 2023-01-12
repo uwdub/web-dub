@@ -25,7 +25,7 @@
             {% endunless %}
             {% unless item_seminar.tbd_location %}
               <div class="col-xs-12">
-                {{ item_seminar.location }}
+                {% include seminarlocation.md location=item_seminar.location %}
               </div>
             {% endunless %}
           {% endif %}
