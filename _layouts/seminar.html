@@ -42,7 +42,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
             <div class="col-xs-12">
                 {% unless item_seminar.tbd_location %}
                     <h3>Location</h3>
-                    {{ item_seminar.location }}
+                    {% include seminarlocation.md location=item_seminar.location %}
                 {% endunless %}
             </div>
         {% endif %}
