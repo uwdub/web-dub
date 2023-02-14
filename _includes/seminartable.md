@@ -33,20 +33,25 @@
         <div class="col-md-9">
           {% unless item_seminar.tbd_title %}
             <div class="col-xs-12">
-              {% if item_seminar.no_seminar == true %}
-                <div class="tableheading text-muted no-seminar">
-                  {{ item_seminar.title }}
-                </div>
-              {% else %}
                 <h4 class="tableheading">
                   <a href="{{ item_seminar.url }}">{{ item_seminar.title }}</a>
                 </h4>
-              {% endif %}
             </div>
+            {% if item_seminar.no_seminar == true %}
+              <div class="col-xs-12 text-muted no-seminar" style="margin-top: 20px">
+                {{ item_seminar.no_seminar_text }}
+              </div>
+            {% endif %}
           {% else %}
-            <div class="col-xs-12">
-              <h4 class="tableheading">DUB Seminar</h4>
-            </div>
+            {% unless item_seminar.no_seminar == true %}
+              <div class="col-xs-12">
+                <h4 class="tableheading">DUB Seminar</h4>
+              </div>
+            {% else %}
+              <div class="col-xs-12 tableheading text-muted no-seminar">
+                {{ item_seminar.no_seminar_text }}
+              </div>
+            {% endunless %}
           {% endunless %}
           {% unless item_seminar.tbd_speakers %}
             {% if item_seminar.speakers_no_collapse %}
