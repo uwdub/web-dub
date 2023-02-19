@@ -18,7 +18,7 @@
             </h4>
           </div>
           {% if include.seminars == "upcoming" %}
-            {% unless item_seminar.no_seminar == true %}
+            {% unless item_seminar.no_seminar == true and item_seminar.tbd_location == true %}
               <div class="col-xs-12">
                 {{ item_seminar.time }}
               </div>
