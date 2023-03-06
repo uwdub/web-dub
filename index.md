@@ -114,23 +114,31 @@ collaborate on research, and advance teaching related to the interaction between
               {% endunless %}
             </div>
 
-            {% unless item_seminar.tbd_location %}
             <div class="col-xs-12 text-right upcomingseminar">
-                {% include seminarlocation.md location=item_seminar.location %}
+              {% unless item_seminar.no_seminar %}
+                {% unless item_seminar.tbd_location %}
+                  {% include seminarlocation.md location=item_seminar.location %}
+                {% endunless %}
+              {% endunless %}
             </div>
-            {% endunless %}
 
             <div class="col-xs-12">
-              {% unless item_seminar.tbd_title %}
-                {% unless item_seminar.no_seminar %}
+              {% unless item_seminar.no_seminar %}
+                {% unless item_seminar.tbd_title %}
                   <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
                 {% else %}
-                  <div class="text-muted no-seminar">
-                    {{ item_seminar.title }}
-                  </div>
+                  DUB Seminar
                 {% endunless %}
               {% else %}
-                DUB Seminar
+                {% unless item_seminar.tbd_title %}
+                  <div class="text-muted no-seminar">
+                    <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.no_seminar_text }}</a>
+                  </div>
+                {% else %}
+                  <div class="text-muted no-seminar">
+                    {{ item_seminar.no_seminar_text }}
+                  </div>
+                {% endunless %}
               {% endunless %}
             </div>
 
