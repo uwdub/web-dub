@@ -9,6 +9,8 @@
 {% elsif include.location == "CSE2/Gates 401 - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/cse2" target="_blank">CSE2/Gates 401</a>
 <br>Hybrid via Zoom
+{% elsif include.location == "Kane 225" %}
+<a href="https://www.washington.edu/maps/#!/kne" target="_blank">{{ include.location }}</a>
 {% elsif include.location == "HUB 332 - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/hub" target="_blank">HUB 332</a>
 <br>Hybrid via Zoom
