@@ -1209,8 +1209,8 @@ sequences:
     hash: 67e5c0e0e1a6704485782d2d3707cfdb
     sequence: 6
   _seminars/2023-05-24.md:
-    hash: 4055718456783eae433ec81abba788d0
-    sequence: 5
+    hash: 4c58d6364319dad3b3bead449e133757
+    sequence: 6
   _seminars/2023-05-31.md:
     hash: cc266cede42bbd19bb7699e4ffd5d049
     sequence: 6
@@ -1233,5 +1233,5 @@ sequences:
     hash: 9850e18b510abaf209b221b7211442a8
     sequence: 1
   _seminars/2023-08-16.md:
-    hash: 033520f790732d55efee2efd58801c6d
-    sequence: 1
+    hash: 674387165dbf18825367cf123884a41e
+    sequence: 2
