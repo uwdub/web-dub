@@ -96,7 +96,7 @@ collaborate on research, and advance teaching related to the interaction between
   </div>
   <div class="col-md-4 footer-panel">
     <section class="footer-content">
-      <h2>Upcoming Seminars</h2>
+      <h2>Upcoming Events</h2>
       <div class="calendar-feed">
         {% assign upcoming = site.seminars | seminar_upcoming: site.time %}
         {% for item_seminar in upcoming limit: 2 %}
@@ -127,8 +127,9 @@ collaborate on research, and advance teaching related to the interaction between
                 {% endunless %}
               {% else %}
                 {% unless item_seminar.tbd_title %}
+                  <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.title }}</a>
                   <div class="text-muted no-seminar">
-                    <a href="{{ site.baseurl }}{{ item_seminar.url }}">{{ item_seminar.no_seminar_text }}</a>
+                    {{ item_seminar.no_seminar_text }}
                   </div>
                 {% else %}
                   <div class="text-muted no-seminar">
