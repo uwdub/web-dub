@@ -255,6 +255,7 @@ class TestSeminars(unittest.TestCase):
                         'MHCI+D Studio - Hybrid via Zoom',
                         'Kane 220',
                         'Kane 225',
+                        'Kane 225 - Hybrid via Zoom',
                         'More 230',
                         'Sieg 233',
                         'StartUp Hall Meeting Room',
