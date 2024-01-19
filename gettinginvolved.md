@@ -638,7 +638,7 @@ You can also apply to multiple programs. The important thing is to come join us!
 DUB faculty coordinate a set of summer REU activities for undergraduates from within and outside the University of Washington.
 Information about the Summer 2023 program can found here:
 
-[DUB REU Program Summer 2023]({{ site.baseref }}/posts/2023/dubreu.html)
+[DUB REU Program Summer 2024]({{ site.baseref }}/posts/2024/dubreu.html)
 
 </div>
 </div>
