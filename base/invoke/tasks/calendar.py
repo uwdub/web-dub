@@ -26,9 +26,7 @@ def _get_seminar_paths():
     return seminar_paths
 
 
-@invoke.task(pre=[
-    base.invoke.tasks.dependencies.dependencies_ensure
-])
+@invoke.task
 def compile_calendar():
     # Obtain our stored sequences
     with open('_compile-calendar-sequences.yml', encoding='utf-8') as f:
