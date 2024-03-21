@@ -3,7 +3,7 @@ config:
     # Python is currently pinned by this bug:
     #   https://github.com/travis-ci/travis-ci/issues/9815
     version: 3.6.6
-    pip_version: 18.0
+    pip_version: 21.3.1
     # Invoke is currently pinned by this bug:
     #   https://github.com/pyinvoke/invoke/issues/345
     invoke_version: 0.12.2
