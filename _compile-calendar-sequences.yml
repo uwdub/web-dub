@@ -1316,6 +1316,12 @@ sequences:
   _seminars/2024-08-14.md:
     hash: 5f289dfcc42485a3aaff3c0152d5dfd5
     sequence: 1
+  _seminars/2024-09-25.md:
+    hash: 7e8695264e0231b09dcca8d0068aa3fe
+    sequence: 1
+  _seminars/2024-10-25.md:
+    hash: 6d0f90236135b92c928546779574dcf9
+    sequence: 1
   _seminars/_blank.md:
     hash: 2cd18f03bc90e1df6b959c5938d9fe61
     sequence: 1
