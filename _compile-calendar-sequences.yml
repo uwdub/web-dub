@@ -1289,11 +1289,20 @@ sequences:
   _seminars/2024-05-01.md:
     hash: 40fc29174e0f2b5fef205527c77f02eb
     sequence: 3
+  _seminars/2024-05-08.md:
+    hash: 43e59e2c5972e34d9bf3c5aafcfc7a71
+    sequence: 2
+  _seminars/2024-05-11.md:
+    hash: 839b090180c76d45fca449dc2a1324cf
+    sequence: 1
   _seminars/2024-05-15.md:
     hash: f3d8692642fbd6ac8a9487fc98751af3
     sequence: 2
   _seminars/2024-05-29.md:
     hash: 68eb1b19441e8930eebca4b87db30898
+    sequence: 1
+  _seminars/2024-06-17.md:
+    hash: 05eaec13b903c2f6cddee19508a13079
     sequence: 1
   _seminars/2024-06-26.md:
     hash: 8e4fa4c330d0845d8abc494cdc3eb863
