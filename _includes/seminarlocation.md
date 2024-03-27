@@ -20,6 +20,8 @@
 {% elsif include.location == "HUB 334 - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/hub" target="_blank">HUB 334</a>
 <br>Hybrid via Zoom
+{% elsif include.location == "Oak Hall Denny Room" %}
+<a href="https://www.washington.edu/maps/#!/oak" target="_blank">Oak Hall<br>Denny Room</a>
 {% elsif include.location == "MHCI+D Studio - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/aho" target="_blank">{{ include.location }}</a>
 {% else %}
