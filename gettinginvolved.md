@@ -118,17 +118,6 @@ speak [at] dub [dot] washington [dot] edu
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-Coordinator
-</div>
-<div class="col-md-8" markdown="block">
-Jason C. Yip
-<!-- Leah Findlater -->
-<!-- Jennifer Mankoff -->
-<!-- Sean Munson -->
-</div>
-</div>
-<div class="row">
-<div class="col-md-4" markdown="block">
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
@@ -143,16 +132,6 @@ Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-Diversity & Outreach Coordinator
-</div>
-<div class="col-md-8" markdown="block">
-Jesse Martinez
-<!-- 2021-10 Calvin Liang -->
-<!-- Eunice Jun, Calvin Liang -->
-</div>
-</div>
-<div class="row">
-<div class="col-md-4" markdown="block">
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
@@ -160,6 +139,31 @@ Eric Yu
 <!-- 2021-10 Danielle Tuchman -->
 </div>
 </div>
+
+<!--
+<div class="row">
+<div class="col-md-4" markdown="block">
+Coordinator
+</div>
+<div class="col-md-8" markdown="block">
+Jason C. Yip
+<!- Leah Findlater ->
+<!- Jennifer Mankoff ->
+<!- Sean Munson ->
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+Diversity & Outreach Coordinator
+</div>
+<div class="col-md-8" markdown="block">
+Jesse Martinez
+<!- 2021-10 Calvin Liang ->
+<!- Eunice Jun, Calvin Liang ->
+</div>
+</div>
+-->
 
 <div class="row" style="margin-top: 20px">
 <div class="col-md-4" markdown="block">
@@ -184,6 +188,8 @@ dub-retreat [at] uw [dot] edu
 <div class="col-md-8" markdown="block">
 Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
 </div>
+</div>
+
 <!--
 <div class="row">
 <div class="col-md-4" markdown="block">
@@ -235,6 +241,7 @@ Tal August, Regina Cheng, Christine Geeng, Sam Kolovson
 <!-- 2021-10 Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng -->
 </div>
 </div>
+
 <!--
 <div class="row">
 <div class="col-md-4" markdown="block">
