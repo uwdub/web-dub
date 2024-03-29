@@ -184,7 +184,6 @@ dub-retreat [at] uw [dot] edu
 <div class="col-md-8" markdown="block">
 Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
 </div>
-</div>
 <!--
 <div class="row">
 <div class="col-md-4" markdown="block">
@@ -192,7 +191,7 @@ Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
 </div>
 <div class="col-md-8" markdown="block">
 Alexis Hiniker, Amy Zhang
-<!-- 2021-10 Benjamin Mako Hill, Nadya Peek -->
+<!- 2021-10 Benjamin Mako Hill, Nadya Peek ->
 </div>
 </div>
 <div class="row">
@@ -201,7 +200,7 @@ Alexis Hiniker, Amy Zhang
 </div>
 <div class="col-md-8" markdown="block">
 Leslie Coney, Chris Fu, Christine Geeng, Sam Kolovson, Rotem Landesman, Jesse Martinez, Miranda Wei
-<!-- 2021-10 Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok -->
+<!- 2021-10 Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok ->
 </div>
 <div class="col-md-4" markdown="block">
 2018 Coordinators
@@ -218,7 +217,6 @@ Andy Davidson, Audrey Desjardins, Jon Froehlich, Emily Lloyd
 Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 </div>
 -->
-</div>
 
 <div class="row" style="margin-top: 20px">
 <div class="col-md-4" markdown="block">
