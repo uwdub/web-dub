@@ -163,10 +163,10 @@ Eric Yu
 
 <div class="row" style="margin-top: 20px">
 <div class="col-md-4" markdown="block">
-**Retreat**
+**Community Day**
 </div>
 <div class="col-md-8" markdown="block">
-October 15, 2021
+<https://dub.washington.edu/seminars/2024-10-25.html>
 </div>
 </div>
 <div class="row">
@@ -177,6 +177,15 @@ Email Contact
 dub-retreat [at] uw [dot] edu
 </div>
 </div>
+<div class="row">
+<div class="col-md-4" markdown="block">
+2024 Coordinators
+</div>
+<div class="col-md-8" markdown="block">
+Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
+</div>
+</div>
+<!--
 <div class="row">
 <div class="col-md-4" markdown="block">
 2021 Coordinators
@@ -194,7 +203,6 @@ Alexis Hiniker, Amy Zhang
 Leslie Coney, Chris Fu, Christine Geeng, Sam Kolovson, Rotem Landesman, Jesse Martinez, Miranda Wei
 <!-- 2021-10 Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok -->
 </div>
-<!--
 <div class="col-md-4" markdown="block">
 2018 Coordinators
 </div>
