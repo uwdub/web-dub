@@ -23,16 +23,16 @@ title_bar_secondary: "HCI & Design at the University of Washington"
       <div class="carousel-inner" role="listbox">
         <div class="item active">
 <!--
-          <img src="{{ site.baseurl }}/posts/2023/chi2023_slide.png" alt="CHI 2023 Banner">
+          <img src="{{ site.baseurl }}/posts/2024/chi2024_slide.png" alt="CHI 2024 Banner">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
-            <h2>DUB at CHI 2023</h2>
+            <h2>DUB at CHI 2024</h2>
             <p>
-                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2023.
+                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2024.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2023/chi2023papers.html" class="btn btn-default btn-lg">
-                UW Research at CHI 2023
+              <a href="{{ site.baseurl }}/posts/2024/chi2024papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2024
               </a>
             </p>
             </div>
