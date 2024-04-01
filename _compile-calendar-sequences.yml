@@ -1281,14 +1281,14 @@ sequences:
     hash: fa4f3e45c97efc62c72e8908c80ce7d8
     sequence: 1
   _seminars/2024-04-03.md:
-    hash: c668cec0bb4afe0e20c047f64986bdb5
-    sequence: 5
-  _seminars/2024-04-17.md:
-    hash: dbde0c688a5d93d290c33516bb9927ff
+    hash: 15650ec42920cc0b39d01589dd425b7f
     sequence: 6
+  _seminars/2024-04-17.md:
+    hash: 765d2bb40da8920568eb00e509b7f371
+    sequence: 7
   _seminars/2024-05-01.md:
-    hash: 9e37f80569ba464fba35132b37df4b24
-    sequence: 4
+    hash: 3ee6f4309b6406d81542953444ba2dd4
+    sequence: 5
   _seminars/2024-05-08.md:
     hash: 43e59e2c5972e34d9bf3c5aafcfc7a71
     sequence: 2
