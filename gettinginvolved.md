@@ -98,7 +98,7 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Sam Kolovson, Miranda Wei
+Daniel Campos Zamora, Miranda Wei
 <!-- 2021-10 Christine Geeng, Sam Kolovson -->
 </div>
 </div>
