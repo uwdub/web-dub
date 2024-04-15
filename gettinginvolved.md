@@ -229,15 +229,16 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 **Doctoral Consortium**
 </div>
 <div class="col-md-8" markdown="block">
-<https://dub.washington.edu/posts/2021/202103-dubdc.html>
+<https://dub.washington.edu/posts/2024/dubdc.html>
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2021 Student Coordinators
+2024 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Tal August, Regina Cheng, Christine Geeng, Sam Kolovson 
+Jae Lee, Nina Lutz
+<!-- 2024-04 Tal August, Regina Cheng, Christine Geeng, Sam Kolovson --> 
 <!-- 2021-10 Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng -->
 </div>
 </div>
