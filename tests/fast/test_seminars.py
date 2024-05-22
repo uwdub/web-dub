@@ -244,6 +244,7 @@ class TestSeminars(unittest.TestCase):
                         'Haggett Hall Cascade Room',
                         'HUB 145',
                         'HUB 160: Lyceum',
+                        'HUB 160 - Hybrid via Zoom',
                         'HUB 214',
                         'HUB 250',
                         'HUB 332',

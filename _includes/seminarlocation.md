@@ -14,6 +14,9 @@
 {% elsif include.location == "Kane 225 - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/kne" target="_blank">Kane 225</a>
 <br>Hybrid via Zoom
+{% elsif include.location == "HUB 160 - Hybrid via Zoom" %}
+<a href="https://www.washington.edu/maps/#!/hub" target="_blank">HUB 160</a>
+<br>Hybrid via Zoom
 {% elsif include.location == "HUB 332 - Hybrid via Zoom" %}
 <a href="https://www.washington.edu/maps/#!/hub" target="_blank">HUB 332</a>
 <br>Hybrid via Zoom
