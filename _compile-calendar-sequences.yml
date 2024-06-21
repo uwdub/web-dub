@@ -1305,14 +1305,14 @@ sequences:
     hash: 05eaec13b903c2f6cddee19508a13079
     sequence: 1
   _seminars/2024-06-26.md:
-    hash: 21312d7f1eab89ce6827fe5fc08e4535
-    sequence: 2
+    hash: 7c492c1d149a22300baa4dfd999a7fc4
+    sequence: 3
   _seminars/2024-07-10.md:
-    hash: 131de0c8c8379da31091711c161552b6
-    sequence: 2
+    hash: 51f96ed5f74313da8c5161e88dbd9cbe
+    sequence: 3
   _seminars/2024-07-24.md:
-    hash: c941911f3314c2a229a6a3518f9c7bec
-    sequence: 1
+    hash: ceb15d0d4faffcb5d61894a285fd98a9
+    sequence: 2
   _seminars/2024-08-14.md:
     hash: 5f289dfcc42485a3aaff3c0152d5dfd5
     sequence: 1
@@ -1332,8 +1332,8 @@ sequences:
     hash: 6d0f90236135b92c928546779574dcf9
     sequence: 1
   _seminars/2024-10-30.md:
-    hash: 5e630d60c0eb1b7a656e8cf9ae590b59
-    sequence: 1
+    hash: ca731f70201342ccfaded684da380ae0
+    sequence: 2
   _seminars/2024-11-13.md:
     hash: 0cc8011b46cdb4e6a4eea1cf349fba9f
     sequence: 1
