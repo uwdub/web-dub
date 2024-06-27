@@ -638,7 +638,7 @@ The demand is high for all of these competitive, world-class programs.
 
 - [Architecture](http://arch.be.washington.edu/admissions)
 - [Biomedical & Health Informatics](http://www.bhi.washington.edu/welcomestudents)
-- [Communications](http://www.com.washington.edu/graduate-students)
+- [Communication](http://www.com.washington.edu/graduate-students)
 - [Electrical Engineering](http://www.ee.washington.edu/admissions/pmp)
 - [Industrial & Systems Engineering](http://depts.washington.edu/ie/degree-programs)
 - [Mechanical Engineering](http://www.me.washington.edu/prospective/grad/admissions.html)
