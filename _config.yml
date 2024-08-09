@@ -59,6 +59,8 @@ exclude:
   - package.json
   # Python
   - env36
+  - env38
+  - env39
   - requirements3.in
   - requirements3.txt
   - tasks.py
