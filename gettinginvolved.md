@@ -98,7 +98,8 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Daniel Campos Zamora, Miranda Wei
+Madeleine Grunde-McLaughlin, Daniel Campos Zamora
+<!-- 2024-10 Daniel Campos Zamora, Miranda Wei -->
 <!-- 2021-10 Christine Geeng, Sam Kolovson -->
 </div>
 </div>
