@@ -136,7 +136,8 @@ Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Eric Yu
+Trisha Pawar, Ariana Zhu  
+<!-- 2024-11 Eric Yu -->
 <!-- 2021-10 Danielle Tuchman -->
 </div>
 </div>
