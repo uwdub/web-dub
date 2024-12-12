@@ -5,14 +5,12 @@ title: "DUB REU Program Summer 2025"
 
 <div class="sidebar_start"></div>
 
-<h4>Previous REUs</h4>
+<h4>Related Links</h4>
 
 <ul class="nav nav-pills nav-stacked">
-  <li><a href="{{ site.baseurl }}/posts/2024/dubreu.html">2024</a></li>
-  <li><a href="{{ site.baseurl }}/posts/2023/dubreu.html">2023</a></li>
-  <li><a href="{{ site.baseurl }}/posts/2022/dubreu.html">2022</a></li>
-  <li><a href="{{ site.baseurl }}/posts/2021/dubreu.html">2021</a></li>
-  <li><a href="{{ site.baseurl }}/posts/2019/201901-dubreu.html">2020</a></li>
+  <li><a href="faq.html">DUB REU Frequently Asked Questions</a></li>
+  <li><a href="https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing">DUB REU Student Expectations</a></li>
+  <li><a href="mailto:dubreu@uw.edu">Contact Email</a></li>
 </ul>
 
 <div class="sidebar_end"></div>
