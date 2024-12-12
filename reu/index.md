@@ -48,7 +48,7 @@ Human-Computer Interaction and Design faculty across DUB, including in:
 **Contact Information**
 </div>
 <div class="col-md-8" markdown="block">
-Amy Zhang <axz [at] cs.uw.edu>,<br>Leilani Battle <leibatt [at] cs.washington.edu>,<br>Sayamindu Dasgupta <sdg1 [at] uw.edu>,<br>Tanu Mitra <tmitra [at] uw.edu> 
+<dubreu [at] uw.edu>
 </div>
 </div>
 
@@ -60,19 +60,19 @@ If you are accepted into the REU program, you will be invited to participate in 
 
 This experience will be excellent preparation if you are considering pursuing a Masters or Ph.D. degree. Past undergraduate students in DUB have been offered the chance to author a publication, and undergraduate interns who perform well frequently request reference letters from their mentors.  As such, this program is well suited to a student in the summer between their junior year and senior year of college. Students in other years may also apply, but students who will have already graduated by Summer 2025 are not eligible.
 
+For more information, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
+
 ### REU Program Dates
-The formal program begins on June 23 with a welcome reception and orientation, then concludes on August 22 with an afternoon poster session. Students are expected to be present and engaged for the entire 9-week period, work 40 hours a week, and make time to attend scheduled events such as the welcome reception, seminar, and final poster session.
+The formal program begins on June 16 with a welcome reception and orientation, then concludes on August 15 with an afternoon poster session. Students are expected to be present and engaged for the entire 9-week period, work 40 hours a week, and make time to attend scheduled events such as the welcome reception, seminar, and final poster session.
 
 Some students may additionally make arrangements with individual faculty to arrive earlier and/or stay later.
 
 ### REU Program Benefits
-Currently, this REU program is a funded NSF REU site (award ID: [2348926](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2348926)). However, the cohort for this year may also include accepted REU interns hired and funded by faculty mentors who have individual REU supplemental grants or similar funding for their projects. As such, there may be variation across students in the program in terms of their funding, duration, start and end dates, and benefits. The details of this information should be discussed with one's matched faculty mentor. In general though, many of the REU positions are funded through an NSF source, and the NSF provides guidance that a stipend should be $600 per student per week, with a maximum stipend of $8,000 over the entire summer.
+Currently, this REU program is a funded NSF REU site (award ID: [2348926](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2348926)). However, the cohort for this year may also include REU interns hired and funded by faculty mentors who have individual REU supplemental grants or similar funding for their projects. As such, there may be variation across students in the program in terms of their funding, duration, start and end dates, and benefits. The details of this information should be discussed with one's matched faculty mentor. For more information on this, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
 
-Based on this guidance, stipend support can vary (e.g., a 9-week summer REU internship might be associated with a $5400 stipend, longer internships with additional stipend). Funding support may also be available for participants with disabilities through Access Computing; interested applicants should include a note in their application form.
+<!-- Housing will not be provided, but is available through the university:
 
-Housing will not be provided, but is available through the university:
-
-<https://hfs.uw.edu/Guest-Housing>
+<https://hfs.uw.edu/Guest-Housing> -->
 
 ## Information about Applying
 
@@ -82,11 +82,13 @@ Students must be 18 years old or older.
 
 Submission of an application indicates that the applicant agrees to be present for the entire summer program period.
 
-The expected commitment is 40 hours per week, with no additional classes or jobs.
+The expected commitment is 40 hours per week, with no additional classes, or jobs, or other REUs.
 
 In addition, a strong application will have a minimum GPA of 3.5 and good class standing and/or grades in subjects relevant to the research area of interest.
 
 We expect the program to have 10 to 20 positions this summer, though the number of students will depend on funding and the number and strength of the applications.
+
+We require one letter of recommendation for an application.
 
 For additional information, please review the [FAQ](faq-2025.html) for this year.
 
@@ -106,8 +108,15 @@ Deadline for applications is January 31st, 2025
 **Application Link**
 </div>
 <div class="col-md-8" markdown="block">
-TBD
+<https://etap.nsf.gov/award/7098/opportunity/10161>
 </div>
 </div>
 
-<!-- In addition to completing the above form, please have one recommender submit a letter of recommendation to Leilani Battle <leibatt [at] cs.washington.edu> to complete your application. -->
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Contact Email**
+</div>
+<div class="col-md-8" markdown="block">
+<dubreu [at] uw.edu>
+</div>
+</div>
