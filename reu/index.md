@@ -86,7 +86,7 @@ In addition, a strong application will have a minimum GPA of 3.5 and good class 
 
 We expect the program to have 10 to 20 positions this summer, though the number of students will depend on funding and the number and strength of the applications.
 
-We require one letter of recommendation for an application.
+We require one letter of recommendation for an application, to be submitted by the application deadline.
 
 For additional information, please review the [FAQ](faq.html).
 
