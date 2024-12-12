@@ -90,7 +90,7 @@ We expect the program to have 10 to 20 positions this summer, though the number 
 
 We require one letter of recommendation for an application.
 
-For additional information, please review the [FAQ](faq-2025.html) for this year.
+For additional information, please review the [FAQ](faq.html).
 
 ## Application Instructions for Summer 2025
 

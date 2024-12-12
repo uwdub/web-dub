@@ -1,11 +1,11 @@
 ---
 layout: base/bar/bar-sidebar-right
-title: "DUB REU Program Summer 2025 - Frequently Asked Questions"
+title: "DUB REU Program - Frequently Asked Questions"
 ---
 
 <a onclick="window.history.back()" href="#">⟵ Back</a>
 
-## Which faculty members are recruiting REU students this year?
+## Which faculty members are recruiting REU students for summer 2025?
 
 As of October 2024, the following faculty members have indicated that they are willing to host a REU student in summer 2025:
 
