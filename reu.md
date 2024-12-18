@@ -70,19 +70,19 @@ This experience will be excellent preparation if you are considering pursuing a 
 
 For more information, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
 
-## REU Program Dates
+### REU Program Dates
 The formal program begins on June 16 with a welcome reception and orientation, then concludes on August 15 with an afternoon poster session. Students are expected to be present and engaged for the entire 9-week period, work 40 hours a week, and make time to attend scheduled events such as the welcome reception, seminar, and final poster session.
 
 Some students may additionally make arrangements with individual faculty to arrive earlier and/or stay later.
 
-## REU Program Benefits
+### REU Program Benefits
 Currently, this REU program is a funded NSF REU site (Award ID: [CNS-2348926](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2348926)). However, the cohort for this year may also include REU interns hired and funded by faculty mentors who have individual REU supplemental grants or similar funding for their projects. As such, there may be variation across students in the program in terms of their funding, duration, start and end dates, and benefits. The details of this information should be discussed with one's matched faculty mentor. For more information on this, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
 
 <!-- Housing will not be provided, but is available through the university:
 
 <https://hfs.uw.edu/Guest-Housing> -->
 
-## Information about Applying
+### Information about Applying
 
 Students must be a U.S. Citizen or permanent resident to apply. Ths NSF is the primary funding source for the program and requires this for its funding of REU positions.
 
@@ -102,7 +102,7 @@ For additional information, please review the Frequently Asked Questions below.
 
 ## Frequently Asked Questions
 
-#### Which faculty are recruiting REU students for Summer 2025?
+**Which faculty are recruiting REU students for Summer 2025?**
 
 As of October 2024, the following faculty have indicated that they are willing to host a REU student in summer 2025:
 
@@ -123,26 +123,26 @@ As of October 2024, the following faculty have indicated that they are willing t
 
 Note that this is not an exhaustive list as there may be faculty who sign up later in the process. If you are interested in working with a specific faculty member, we encourage you to indicate that in your application, regardless of whether that faculty member is listed on this page or not.
 
-#### Can I participate in this program remotely?
+**Can I participate in this program remotely?**
 
 No. All students in this program will need to be in the Seattle area and come to the UW Seattle campus regularly.
 
-#### Do I need a car to commute to campus?
+**Do I need a car to commute to campus?**
 
 No. The UW Seattle campus is well connected by public transit, including buses and light rail. The UW Transportation Services website lists a number of [options](https://transportation.uw.edu/getting-here) for commuting to the campus.
 
-#### When do I get paid?
+**When do I get paid?**
 
 This may vary. See the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for details.
 
-#### What is the stipend?
+**What is the stipend?**
 
 This may vary. See the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for details.
 
-#### Apart from being able to participate in conducting research, what else can I expect?
+**Apart from being able to participate in conducting research, what else can I expect?**
 
 We offer a range of opportunities for students to develop their research skills and knowledge. These include opportunities to attend the [DUB Seminar](https://dub.washington.edu/seminar.html), lunches with faculty members from across the campus, sessions with current graduate students, and a poster session to present and share your work with members of the DUB community. Furthermore, we value developing a community of undergraduate researchers, and encourage members of a REU cohort to self-organize social activities.
 
-#### I have a question that is not answered here. Who can I contact?
+**I have a question that is not answered here. Who can I contact?**
 
 You can email any questions that you may have about the program to dubreu [at] uw.edu.
