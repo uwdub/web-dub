@@ -33,12 +33,32 @@ Human-Computer Interaction and Design faculty across DUB, including in:
 
 <div class="row">
 <div class="col-md-4" markdown="block">
-**Contact Information**
+**Application Deadline**
+</div>
+<div class="col-md-8" markdown="block">
+Deadline for applications is January 31, 2025
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Application Link**
+</div>
+<div class="col-md-8" markdown="block">
+<https://etap.nsf.gov/award/7098/opportunity/10161>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-4" markdown="block">
+**Contact Email**
 </div>
 <div class="col-md-8" markdown="block">
 dubreu [at] uw.edu
 </div>
 </div>
+
+## REU Program
 
 DUB is a grassroots alliance of faculty, students, researchers, and industry partners interested in Human Computer Interaction & Design at the University of Washington. Our mission is to bring together an interdisciplinary group of people to share ideas, collaborate on research, and advance teaching related to the interaction between design, people, and technology.
 
@@ -80,38 +100,9 @@ We require one letter of recommendation for an application, to be submitted by t
 
 For additional information, please review the Frequently Asked Questions below.
 
-## Application Instructions for Summer 2025
-
-<div class="row">
-<div class="col-md-4" markdown="block">
-**Application Deadline**
-</div>
-<div class="col-md-8" markdown="block">
-Deadline for applications is January 31st, 2025
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-4" markdown="block">
-**Application Link**
-</div>
-<div class="col-md-8" markdown="block">
-<https://etap.nsf.gov/award/7098/opportunity/10161>
-</div>
-</div>
-
-<div class="row">
-<div class="col-md-4" markdown="block">
-**Contact Email**
-</div>
-<div class="col-md-8" markdown="block">
-<dubreu [at] uw.edu>
-</div>
-</div>
-
 ## Frequently Asked Questions
 
-### Which faculty are recruiting REU students for Summer 2025?
+#### Which faculty are recruiting REU students for Summer 2025?
 
 As of October 2024, the following faculty have indicated that they are willing to host a REU student in summer 2025:
 
@@ -148,10 +139,10 @@ This may vary. See the [student expectations document](https://docs.google.com/d
 
 This may vary. See the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for details.
 
-#### Apart from being able to participate in conducting research, what else can I expect from this program?
+#### Apart from being able to participate in conducting research, what else can I expect?
 
-We offer a range of opportunities for students to develop their research skills and knowledge. These include opportunities to attend the [DUB seminar series](https://dub.washington.edu/seminar.html), lunches with faculty members from across the campus, sessions with current graduate students, and a poster session to present and share your work with members of the DUB community. Furthermore, we value developing a community of undergraduate researchers, and encourage members of a REU cohort to self-organize social activities.
+We offer a range of opportunities for students to develop their research skills and knowledge. These include opportunities to attend the [DUB Seminar](https://dub.washington.edu/seminar.html), lunches with faculty members from across the campus, sessions with current graduate students, and a poster session to present and share your work with members of the DUB community. Furthermore, we value developing a community of undergraduate researchers, and encourage members of a REU cohort to self-organize social activities.
 
-#### I have a question that is not answered here. Whom do I contact?
+#### I have a question that is not answered here. Who can I contact?
 
-You can email <dubreu [at] uw.edu> with any questions that you may have about the program.
+You can email any questions that you may have about the program to dubreu [at] uw.edu.
