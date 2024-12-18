@@ -14,7 +14,7 @@ navbar:
     - text: 'DUB Seminar'
       link: 'seminar.html'
     - text: 'DUB REU'
-      link: 'reu/index.html'
+      link: 'reu.html'
 #    - text: 'People'
 #      link: 'people.html'
 #    - text: 'Resources'
