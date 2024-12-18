@@ -13,6 +13,8 @@ navbar:
       link: 'aboutdub.html'
     - text: 'DUB Seminar'
       link: 'seminar.html'
+    - text: 'DUB REU'
+      link: 'reu/index.html'
 #    - text: 'People'
 #      link: 'people.html'
 #    - text: 'Resources'
