@@ -259,6 +259,7 @@ class TestSeminars(unittest.TestCase):
                         'Kane 225 - Hybrid via Zoom',
                         'More 230',
                         'Oak Hall Denny Room',
+                        'Oak Hall Denny Room - Hybrid via Zoom',
                         'Sieg 233',
                         'StartUp Hall Meeting Room',
                         'Zoom'
