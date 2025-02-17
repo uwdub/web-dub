@@ -14,15 +14,15 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-main" data-slide-to="1"></li>
         <li data-target="#carousel-main" data-slide-to="2"></li>
-
+<!--
         <li data-target="#carousel-main" data-slide-to="3"></li>
-
+-->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-
+<!--
           <img src="{{ site.baseurl }}/posts/2024/chi2024_slide.png" alt="CHI 2024 Banner">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
@@ -39,7 +39,7 @@ title_bar_secondary: "HCI & Design at the University of Washington"
           </div>
         </div>
         <div class="item">
-
+-->
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
@@ -181,12 +181,14 @@ collaborate on research, and advance teaching related to the interaction between
             <span class="icon-link-text"><strong>Join</strong> the mailing lists</span>
           </p>
         </a>
+        <!--
         <a href="http://twitter.com/#!/uwdub">
           <p>
             <img src="{{ site.baseurl }}/images/connect_twitter.png" class="connecticon" alt="twitter">
             <span class="icon-link-text"><strong>Tweet</strong> @uwdub</span>
           </p>
         </a>
+        -->
         <a href="http://vimeo.com/designusebuild">
           <p>
             <img src="{{ site.baseurl }}/images/connect_vimeo.png" class="connecticon" alt="vimeo">
