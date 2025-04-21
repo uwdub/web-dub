@@ -14,32 +14,32 @@ title_bar_secondary: "HCI & Design at the University of Washington"
         <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-main" data-slide-to="1"></li>
         <li data-target="#carousel-main" data-slide-to="2"></li>
-<!--
+<!-- -->
         <li data-target="#carousel-main" data-slide-to="3"></li>
--->
+<!-- -->
       </ol>
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-<!--
-          <img src="{{ site.baseurl }}/posts/2024/chi2024_slide.png" alt="CHI 2024 Banner">
+<!-- -->
+          <img src="{{ site.baseurl }}/posts/2025/chi2025_slide.png" alt="CHI 2025 Banner">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
-            <h2>DUB at CHI 2024</h2>
+            <h2>DUB at CHI 2025</h2>
             <p>
-                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2024.
+                HCI & Design at the University of Washington<br>has a large and quality presence at CHI 2025.
             </p>
             <p>
-              <a href="{{ site.baseurl }}/posts/2024/chi2024papers.html" class="btn btn-default btn-lg">
-                UW Research at CHI 2024
+              <a href="{{ site.baseurl }}/posts/2025/chi2025papers.html" class="btn btn-default btn-lg">
+                UW Research at CHI 2025
               </a>
             </p>
             </div>
           </div>
         </div>
         <div class="item">
--->
+<!-- -->
           <img src="{{ site.baseurl }}/images/slide_design.jpg" alt="design">
           <div class="carousel-caption">
             <div class="carousel-caption-inner">
