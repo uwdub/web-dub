@@ -1407,11 +1407,11 @@ sequences:
     hash: a78408f4a40746eaff8f6840a3f0e16d
     sequence: 5
   _seminars/2025-10-29.md:
-    hash: dfe5d145c2dc22de23f8b9e48750004f
-    sequence: 1
+    hash: 587ec318b95e40875e30b39cf11db246
+    sequence: 2
   _seminars/2025-11-12.md:
-    hash: b21166747f0a74c49bcae415ba40df78
-    sequence: 1
+    hash: 20b7c2b4bda7de6390f36dc9afd849c1
+    sequence: 2
   _seminars/2026-01-05.md:
     hash: 6269f9d51e12f82e8c0f9089759ef254
     sequence: 1
