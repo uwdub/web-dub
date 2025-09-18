@@ -156,7 +156,7 @@ abstract: |
     <tr>
       <td style="white-space:nowrap; vertical-align:top">11:45am - 12:15pm:&nbsp;</td>
       <td>
-      Bring your own lunch and community socializing.
+      Food and community socializing.
       </td>
     </tr>
     <tr>
