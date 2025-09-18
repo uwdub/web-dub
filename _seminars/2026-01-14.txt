@@ -13,7 +13,7 @@ version: 1
 # - This is used to keep the iCal up to date.
 # - Increment the sequence each time the seminar file is updated.
 ################################################################################
-sequence: 3
+sequence: 1
 
 ################################################################################
 # Date and time of the seminar.
@@ -21,7 +21,7 @@ sequence: 3
 # - Date must equal the name of this file.
 # - Times must be in quotes because : is a reserved character.
 ################################################################################
-date:     "2025-10-01"
+date:     "2026-01-14"
 time:     "11:45 AM"
 time_end: "1:15 PM"
 
@@ -31,6 +31,9 @@ time_end: "1:15 PM"
 # - The only valid value is 'true'.
 # - A field should not be present if 'false'.
 ################################################################################
+tbd_speakers:   True
+tbd_title:      True
+tbd_bio:        True
 tbd_video:      True
 
 ################################################################################
@@ -90,10 +93,6 @@ tbd_video:      True
 #     affiliation_none: true
 ################################################################################
 speakers:
-  - name:
-    - Reinecke
-    - Katharina
-    affiliation: Computer Science & Engineering 
 
 ################################################################################
 # Our core fields are title, location, abstract, bio.
@@ -144,15 +143,15 @@ speakers:
 #
 #   All lines must be indented two spaces, like in these paragraphs.
 ################################################################################
-title:      "Digital Culture Shock: Who Creates Technology and Why This Matters"
+title:      "TBD"
 
 location:   "Kane 225 - Hybrid via Zoom"
 
 abstract: |
-  Robots that encroach on your personal space, baffling emojis, a chatbot that gives you an answer that seems terribly rude—does any of this sound familiar? If so, you may know what it feels like to experience a clash of cultures in technology. In this talk, I will present key insights from my book Digital Culture Shock: Who Creates Technology and Why This Matters (Princeton, 2025), showing how culture—shared values, norms, and behaviors—influences both the design of technology and its use. Drawing on a set of common assumptions that do not translate across cultures, the talk will outline what is at stake and how we can resist generalizing our own cultural peccadillos in technology design.
+  TBD
 
-  ### Schedule 
-  
+  ### Schedule
+
   <table>
     <tr>
       <td style="white-space:nowrap; vertical-align:top">11:45am - 12:15pm:&nbsp;</td>
@@ -169,7 +168,7 @@ abstract: |
     <tr>
       <td style="white-space:nowrap; vertical-align:top">1:30pm - 2:15pm:&nbsp;</td>
       <td>
-      Student meeting with speaker, held in 
+      Student meeting with speaker, held in
       <a href="https://www.washington.edu/maps/#!/cse2" target="_blank">CSE2/Gates 371</a>.
       Students will walk to this from the seminar.
       </td>
@@ -177,7 +176,7 @@ abstract: |
   </table>
 
 bio: |
-  Katharina Reinecke is a Professor and Associate Director for Research and Communication in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, Seattle. She has been speaking and writing about intelligent user interfaces that seamlessly adapt to people’s cultural and demographic backgrounds for nearly two decades and has pioneered ways for reliable, large-scale data collection from participants around the world with her virtual lab, the LabintheWild. Katharina received a PhD in Computer Science from the University of Zurich and was a postdoctoral fellow at Harvard University. Prior to coming to the University of Washington, she was an Assistant Professor in the School of Information at the University of Michigan.
+  TBD
 
 ################################################################################
 # A seminar may have a video.
