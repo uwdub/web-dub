@@ -1,6 +1,6 @@
 ---
 layout: base/bar/bar-sidebar-right
-title: "DUB REU Program Summer 2025"
+title: "DUB REU Program Summer 2026"
 ---
 
 <!----------------------------------------------------------------------------->
@@ -36,7 +36,7 @@ Human-Computer Interaction and Design faculty across DUB, including in:
 **Application Deadline**
 </div>
 <div class="col-md-8" markdown="block">
-Deadline for applications is January 31, 2025
+Deadline for applications is January 31, 2026
 </div>
 </div>
 
@@ -45,7 +45,7 @@ Deadline for applications is January 31, 2025
 **Application Link**
 </div>
 <div class="col-md-8" markdown="block">
-<https://etap.nsf.gov/award/7098/opportunity/10161>
+<https://etap.nsf.gov/award/7098/opportunity/11585>
 </div>
 </div>
 
@@ -66,17 +66,19 @@ This year we are offering a summer research opportunity, available to undergradu
 
 If you are accepted into the REU program, you will be invited to participate in a paid 9-week internship during the summer in a research laboratory at the University of Washington. Based on your application, you will be matched with a specific project and mentored by a faculty member and associated graduate students or postdocs. You will learn about research through engagement in the project to which you are matched, through interactions with other students, and through weekly mentoring seminars focused on research and associated skills. Topics covered may include graduate admissions, career opportunities, research ethics, and research paper writing. In addition, you will be invited to attend the DUB Seminar for exposure to a wide range of research in HCI.
 
-This experience will be excellent preparation if you are considering pursuing a Masters or Ph.D. degree. Past undergraduate students in DUB have been offered the chance to author a publication, and undergraduate interns who perform well frequently request reference letters from their mentors.  As such, this program is well suited to a student in the summer between their junior year and senior year of college. Students in other years may also apply, but students who will have already graduated by Summer 2025 are not eligible.
+This experience will be excellent preparation if you are considering pursuing a Masters or Ph.D. degree. Past undergraduate students in DUB have been offered the chance to author a publication, and undergraduate interns who perform well frequently request reference letters from their mentors.  As such, this program is well suited to a student in the summer between their junior year and senior year of college. Students in other years may also apply, but students who will have already graduated by Summer 2026 are not eligible.
 
 For more information, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
 
 ### REU Program Dates
-The formal program begins on June 16 with a welcome reception and orientation, then concludes on August 15 with an afternoon poster session. Students are expected to be present and engaged for the entire 9-week period, work 40 hours a week, and make time to attend scheduled events such as the welcome reception, seminar, and final poster session.
+The formal program begins on June 15 and then concludes on August 14, with the first week being virtual. Students are expected to be present and engaged for the entire 9-week period, work 40 hours a week, and make time to attend scheduled events such as the welcome reception, seminars, and final poster session.
 
 Some students may additionally make arrangements with individual faculty to arrive earlier and/or stay later.
 
 ### REU Program Benefits
 Currently, this REU program is a funded NSF REU site (Award ID: [CNS-2348926](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2348926)). However, the cohort for this year may also include REU interns hired and funded by faculty mentors who have individual REU supplemental grants or similar funding for their projects. As such, there may be variation across students in the program in terms of their funding, duration, start and end dates, and benefits. The details of this information should be discussed with one's matched faculty mentor. For more information on this, refer to the [student expectations document](https://docs.google.com/document/d/1rZp9QP83v2BVWevAMsBJi4Aj-jCYtmRv10kwtyINmf4/edit?usp=sharing) for this program.
+
+For most students, housing will be provided through the program.
 
 <!-- Housing will not be provided, but is available through the university:
 
@@ -102,34 +104,24 @@ For additional information, please review the Frequently Asked Questions below.
 
 ## Frequently Asked Questions
 
-**Which faculty are recruiting REU students for Summer 2025?**
+**Which faculty are recruiting REU students for Summer 2026?**
 
-As of October 2024, the following faculty have indicated that they are willing to host a REU student in summer 2025:
+Coming soon!
+<!-- 
+Note that this is not an exhaustive list as there may be faculty who sign up later in the process. If you are interested in working with a specific faculty member, and have talked to them, we encourage you to indicate that in your application, regardless of whether that faculty member is listed on this page or not. -->
 
-* Katya Cherukumilli, HCDE, [https://depts.washington.edu/swellhcde/](https://depts.washington.edu/swellhcde/)  
-* Kurtis Heimerl, CSE, [https://kurti.sh/](https://kurti.sh/)  
-* Julie Kientz, HCDE, [https://faculty.washington.edu/jkientz/](https://faculty.washington.edu/jkientz/)  
-* R. Benjamin Shapiro, CSE, [https://benshapi.ro/](https://benshapi.ro/)  
-* James Pierce, Design, [https://jamesjpierce.com/](https://jamesjpierce.com/)  
-* Maya Cakmak, CSE, [https://www.mayacakmak.io/](https://www.mayacakmak.io/)  
-* Tanu Mitra, iSchool, [https://faculty.washington.edu/tmitra/](https://faculty.washington.edu/tmitra/)  
-* Amy Ko, iSchool, [https://faculty.washington.edu/ajko/](https://faculty.washington.edu/ajko/)  
-* Leilani Battle, CSE, [https://homes.cs.washington.edu/\~leibatt/](https://homes.cs.washington.edu/~leibatt/bio.html)  
-* Sayamindu Dasgupta, HCDE, [https://unmad.in/](https://unmad.in/)  
-* Amy Zhang, CSE, [https://homes.cs.washington.edu/\~axz](https://homes.cs.washington.edu/~axz)  
-* Gary Hsieh, HCDE, [https://faculty.washington.edu/garyhs/](https://faculty.washington.edu/garyhs/)   
-* Jennifer Mankoff, CSE, [https://make4all.org/](https://make4all.org/)   
-* Benjamin Mako Hill, Communication, [https://mako.cc/](https://mako.cc/) 
+**When should I expect to be notified about decisions?**
 
-Note that this is not an exhaustive list as there may be faculty who sign up later in the process. If you are interested in working with a specific faculty member, we encourage you to indicate that in your application, regardless of whether that faculty member is listed on this page or not.
+We expect to send out the first round of offers in early March.
 
 **Can I participate in this program remotely?**
 
-No. All students in this program will need to be in the Seattle area and come to the UW Seattle campus regularly.
+No. All students in this program will need to be in the Seattle area and come to the UW Seattle campus regularly, except for the first week, which will be virtual.
 
+<!-- 
 **Do I need a car to commute to campus?**
 
-No. The UW Seattle campus is well connected by public transit, including buses and light rail. The UW Transportation Services website lists a number of [options](https://transportation.uw.edu/getting-here) for commuting to the campus.
+No. The UW Seattle campus is well connected by public transit, including buses and light rail. The UW Transportation Services website lists a number of [options](https://transportation.uw.edu/getting-here) for commuting to the campus. -->
 
 **When do I get paid?**
 
