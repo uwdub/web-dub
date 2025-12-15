@@ -236,6 +236,7 @@ class TestSeminars(unittest.TestCase):
                         'CSE2 G01',
                         'CSE2 G10',
                         'CSE2 401',
+                        'CSE2/Gates G20',
                         'CSE2/Gates 271',
                         'CSE2/Gates 371',
                         'CSE2/Gates 401',

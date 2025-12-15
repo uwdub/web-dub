@@ -1,5 +1,7 @@
 {% if include.location == "CSE/Allen 691" %}
 <a href="https://www.washington.edu/maps/#!/cse" target="_blank">{{ include.location }}</a>
+{% elsif include.location == "CSE2/Gates G20" %}
+<a href="https://www.washington.edu/maps/#!/cse2" target="_blank">{{ include.location }}</a>
 {% elsif include.location == "CSE2/Gates 271" %}
 <a href="https://www.washington.edu/maps/#!/cse2" target="_blank">{{ include.location }}</a>
 {% elsif include.location == "CSE2/Gates 371" %}
