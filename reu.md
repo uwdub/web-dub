@@ -106,9 +106,24 @@ For additional information, please review the Frequently Asked Questions below.
 
 **Which faculty are recruiting REU students for Summer 2026?**
 
-Coming soon!
-<!-- 
-Note that this is not an exhaustive list as there may be faculty who sign up later in the process. If you are interested in working with a specific faculty member, and have talked to them, we encourage you to indicate that in your application, regardless of whether that faculty member is listed on this page or not. -->
+* Katya Cherukumilli, HCDE, [https://depts.washington.edu/swellhcde/](https://depts.washington.edu/swellhcde/)  
+* Kurtis Heimerl, CSE, [https://kurti.sh/](https://kurti.sh/)  
+* Julie Kientz, HCDE, [https://faculty.washington.edu/jkientz/](https://faculty.washington.edu/jkientz/)  
+* R. Benjamin Shapiro, CSE, [https://benshapi.ro/](https://benshapi.ro/)  
+* James Pierce, Design, [https://jamesjpierce.com/](https://jamesjpierce.com/)  
+* Maya Cakmak, CSE, [https://www.mayacakmak.io/](https://www.mayacakmak.io/)  
+* Tanu Mitra, iSchool, [https://faculty.washington.edu/tmitra/](https://faculty.washington.edu/tmitra/)  
+* Amy Ko, iSchool, [https://faculty.washington.edu/ajko/](https://faculty.washington.edu/ajko/)  
+* Leilani Battle, CSE, [https://homes.cs.washington.edu/\~leibatt/](https://homes.cs.washington.edu/~leibatt/bio.html)  
+* Sayamindu Dasgupta, HCDE, [https://unmad.in/](https://unmad.in/)  
+* Amy Zhang, CSE, [https://homes.cs.washington.edu/\~axz](https://homes.cs.washington.edu/~axz)  
+* Gary Hsieh, HCDE, [https://faculty.washington.edu/garyhs/](https://faculty.washington.edu/garyhs/)   
+* Jennifer Mankoff, CSE, [https://make4all.org/](https://make4all.org/)   
+* Benjamin Mako Hill, Communication, [https://mako.cc/](https://mako.cc/)
+* Belén Saldías, iSchool, [https://belencarolina.com/](https://belencarolina.com/)
+* Meichun Liu, Design, [https://www.linkedin.com/in/meichun-liu-4378143b/](https://www.linkedin.com/in/meichun-liu-4378143b/)
+
+Note that this is not an exhaustive list as there may be faculty who sign up later in the process. If you are interested in working with a specific faculty member, and have talked to them, we encourage you to indicate that in your application, regardless of whether that faculty member is listed on this page or not.
 
 **When should I expect to be notified about decisions?**
 
