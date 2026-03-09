@@ -26,7 +26,7 @@ module Jekyll
         @idvalue = look_up(context, $1)
       end
 
-      %(<iframe width="#{@@width}" height="#{@@height}" src="https://player.vimeo.com/video/#{@idvalue}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>)
+      %(<iframe title="Seminar Video" width="#{@@width}" height="#{@@height}" src="https://player.vimeo.com/video/#{@idvalue}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>)
     end
   end
 end

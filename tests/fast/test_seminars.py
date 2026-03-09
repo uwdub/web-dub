@@ -248,6 +248,7 @@ class TestSeminars(unittest.TestCase):
                         'HUB 160 - Hybrid via Zoom',
                         'HUB 214',
                         'HUB 250',
+                        'HUB 250 - Hybrid via Zoom',
                         'HUB 332',
                         'HUB 332 - Hybrid via Zoom',
                         'HUB 334',
