@@ -26,8 +26,8 @@ University of Washington. The DUB acronym stands for Design, Use, Build.
 Our mission is to bring together an interdisciplinary group of people to share ideas, 
 collaborate on research, and advance teaching related to the interaction between design, people, and technology. 
 DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. 
-For more than 10 years, DUB has helped bring these people and perspectives together
-through events that include weekly seminars, quarterly lunches, and yearly retreats.
+For 20 years, DUB has helped bring these people and perspectives together
+through events that include seminars, lunches, and an annual DUB Community Day.
 DUB's interdisciplinary environment is one of the world's 
 most vibrant communities for research and education in Human Computer Interaction & Design.
 
