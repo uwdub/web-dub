@@ -1452,11 +1452,11 @@ sequences:
     hash: 628179a63c815a4aac04072d69285fea
     sequence: 1
   _seminars/2026-07-01.md:
-    hash: 67b0cd6af78b0e272cdf21d65307caf0
-    sequence: 1
-  _seminars/2026-07-29.md:
-    hash: 88378aaf5f87c6a1c3e02327dc473afd
+    hash: 5da2c9f679b50a7457cadc14d82738c0
     sequence: 2
+  _seminars/2026-07-29.md:
+    hash: 48d3dedcc7998fd08fac326b47575c63
+    sequence: 3
   _seminars/2026-08-20.md:
     hash: 6bacd571d66c8950e0edd7e9a376141c
     sequence: 1
