@@ -337,7 +337,7 @@ We prefer you subscribe using your official email address (e.g., a University of
 <html>
 <div class="row">
 <div class="col-md-4" markdown="block">
-[Subscribe to dub](https://dubber.cs.washington.edu/mailman/listinfo/dub)
+[Subscribe to dub](https://dubber.cs.washington.edu/postorius/lists/dub.dub.washington.edu/)
 </div>
 <div class="col-md-8" markdown="block">
 General DUB-related announcements and information.
@@ -352,7 +352,7 @@ In addition to joining the main list, join more focused lists for additional ann
 <html>
 <div class="row">
 <div class="col-md-4" markdown="block">
-[Subscribe to dub-faculty](https://dubber.cs.washington.edu/mailman/listinfo/dub-faculty)
+[Subscribe to dub-faculty](https://dubber.cs.washington.edu/postorius/lists/dub-faculty.dub.washington.edu/)
 </div>
 <div class="col-md-8" markdown="block">
 Faculty-specific DUB-related announcements and information.
@@ -361,7 +361,7 @@ Faculty-specific DUB-related announcements and information.
 
 <div class="row">
 <div class="col-md-4" markdown="block">
-[Subscribe to dub-students](https://dubber.cs.washington.edu/mailman/listinfo/dub-students)
+[Subscribe to dub-students](https://dubber.cs.washington.edu/postorius/lists/dub-students.dub.washington.edu/)
 </div>
 <div class="col-md-8" markdown="block">
 Student-specific DUB-related announcements and information.
