@@ -1,0 +1,13 @@
+# Configure Git to always use LF line endings.
+#
+# '* text=auto eol=lf' tells Git to:
+#   1. Automatically detect whether files are text or binary.
+#   2. Store text files with LF line endings.
+#   3. Get text files with LF line endings on all platforms.
+#
+# This helps:
+#   - Ensure consistent line endings regardless of contributor platform.
+#   - Prevent unnecessary line ending changes in diffs when collaborating across platforms.
+#   - Avoid "false" changes that only involve line ending differences.
+
+* text=auto eol=lf
