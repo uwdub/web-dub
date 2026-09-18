@@ -175,7 +175,7 @@ collaborate on research, and advance teaching related to the interaction between
       <h2>Connect with DUB</h2>
       <p class="connect-text">Join one of the world's most vibrant communities for research and education addressing all aspects of Human Computer Interaction & Design.</p>
       <div class="icon-bottom">
-        <a href="{{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists">
+        <a href="{{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists_and_slack">
           <p>
             <img src="{{ site.baseurl }}/images/connect_email.png" class="connecticon" alt="e-mail">
             <span class="icon-link-text"><strong>Join</strong> the mailing lists</span>
