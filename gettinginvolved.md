@@ -98,9 +98,11 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Madeleine Grunde-McLaughlin, Daniel Campos Zamora
-<!-- 2024-10 Daniel Campos Zamora, Miranda Wei -->
-<!-- 2021-10 Christine Geeng, Sam Kolovson -->
+Longjie Guo, Katelyn Mei
+<!-- Replaced 2026-Autumn: Madeleine Grunde-McLaughlin, Anukriti Kumar -->
+<!-- Replaced 2025-Autumn: Madeleine Grunde-McLaughlin, Daniel Campos Zamora -->
+<!-- Replaced 2024-10-25: Daniel Campos Zamora, Miranda Wei -->
+<!-- Replaced 2021-10-02: Christine Geeng, Sam Kolovson -->
 </div>
 </div>
 
@@ -117,28 +119,33 @@ Email Contact
 speak [at] dub [dot] washington [dot] edu
 </div>
 </div>
+<!--
 <div class="row">
 <div class="col-md-4" markdown="block">
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan
-<!-- 2021-10 Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Williams -->
-<!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
-<!-- Sam Kolovson, Kai Lukoff, Alannah Oleson, Vanshika Swaika, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang -->
-<!-- Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang -->
-<!-- Sam Kolovson, Kai Lukoff, Benji Xie, Mingrui Zhang -->
-<!-- Eunice Jun, Kai Lukoff, Sayena Majlesein, Sonali Mishra, John Robinson, Benji Xie -->
+<!- TODO the idea of a fixed set of coordinators faded over time ->
+<!- Replaced 2026-09-23: Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan ->
+<!- Replaced 2021-10-02: Mingrui Zhang, Spencer Williams, Lotus Zhang, Alex Okeson, Neilly Tan, Joan Williams ->
+<!- Replaced 2021-02-17: Sam Kolovson, Kai Lukoff, Alannah Oleson, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang ->
+<!- Replaced 2020-05-02: Sam Kolovson, Kai Lukoff, Alannah Oleson, Vanshika Swaika, Veronica Wojnas, Benji Xie, Orson Xu, Mingrui Zhang ->
+<!- Replaced 2019-11-18: Sam Kolovson, Kai Lukoff, Vanshika Swaika, Veronica Wojnas, Benji Xie, Mingrui Zhang ->
+<!- Replaced 2019-10-10: Sam Kolovson, Kai Lukoff, Benji Xie, Mingrui Zhang ->
+<!- Replaced 2019-06-19: Eunice Jun, Kai Lukoff, Sayena Majlesein, Sonali Mishra, John Robinson, Benji Xie ->
 </div>
 </div>
+-->
 <div class="row">
 <div class="col-md-4" markdown="block">
 Videos and Vimeo
 </div>
 <div class="col-md-8" markdown="block">
-Trisha Pawar, Ariana Zhu  
-<!-- 2024-11 Eric Yu -->
-<!-- 2021-10 Danielle Tuchman -->
+To Be Updated
+<!-- Replaced 2026-Autumn: Caleb Aguiar, Umi Chen -->
+<!-- Replaced 2025-Autumn: Trisha Pawar, Ariana Zhu -->
+<!-- Replaced 2024-11-04: Eric Yu -->
+<!-- Replaced 2021-10-02: Danielle Tuchman -->
 </div>
 </div>
 
@@ -149,9 +156,10 @@ Coordinator
 </div>
 <div class="col-md-8" markdown="block">
 Jason C. Yip
-<!- Leah Findlater ->
-<!- Jennifer Mankoff ->
-<!- Sean Munson ->
+<!- Row commented out 2024-03-29: Jason C. Yip ->
+<!- Replaced 2021-01-28: Leah Findlater ->
+<!- Replaced 2019-01-17: Jennifer Mankoff ->
+<!- Removed 2018-05-14: Sean Munson ->
 </div>
 </div>
 
@@ -161,8 +169,9 @@ Diversity & Outreach Coordinator
 </div>
 <div class="col-md-8" markdown="block">
 Jesse Martinez
-<!- 2021-10 Calvin Liang ->
-<!- Eunice Jun, Calvin Liang ->
+<!- Row commented out 2024-03-29: Jesse Martinez ->
+<!- Replaced 2021-10-02: Calvin Liang ->
+<!- Replaced 2020-07-20: Eunice Jun, Calvin Liang ->
 </div>
 </div>
 -->
@@ -172,7 +181,7 @@ Jesse Martinez
 **Community Day**
 </div>
 <div class="col-md-8" markdown="block">
-<https://dub.washington.edu/seminars/2024-10-25.html>
+<https://dub.washington.edu/seminars/2026-10-21.html>
 </div>
 </div>
 <div class="row">
@@ -180,15 +189,17 @@ Jesse Martinez
 Email Contact
 </div>
 <div class="col-md-8" markdown="block">
-dub-retreat [at] uw [dot] edu
+dub-community-day [at] dub [dot] washington [dot] edu
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2024 Coordinators
+2026 Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
+Jon Froehlich, Julie Kientz, Kristen Houston, Crystal Welliver
+<!-- TODO: look up 2025 Community Day Coordinators -->
+<!-- Replaced 2026-09-23 (pending lookup): 2024 Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder -->
 </div>
 </div>
 
@@ -199,7 +210,7 @@ Ana Pinto da Silva, Kurtis Heimerl, Jaime Snyder
 </div>
 <div class="col-md-8" markdown="block">
 Alexis Hiniker, Amy Zhang
-<!- 2021-10 Benjamin Mako Hill, Nadya Peek ->
+<!- Replaced 2021-10-02: Benjamin Mako Hill, Nadya Peek ->
 </div>
 </div>
 <div class="row">
@@ -208,7 +219,7 @@ Alexis Hiniker, Amy Zhang
 </div>
 <div class="col-md-8" markdown="block">
 Leslie Coney, Chris Fu, Christine Geeng, Sam Kolovson, Rotem Landesman, Jesse Martinez, Miranda Wei
-<!- 2021-10 Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok ->
+<!- Replaced 2021-10-02: Anastasia Schaadhardt, Jason Hoffman, Jesse Martinez, Raymond Fok ->
 </div>
 <div class="col-md-4" markdown="block">
 2018 Coordinators
@@ -231,17 +242,21 @@ Christine Geeng, Wendy Roldan, Manaswi Saha, Benji Xie
 **Doctoral Consortium**
 </div>
 <div class="col-md-8" markdown="block">
-<https://dub.washington.edu/posts/2024/dubdc.html>
+<https://dub.washington.edu/posts/2026/dubdc.html>
 </div>
 </div>
 <div class="row">
 <div class="col-md-4" markdown="block">
-2024 Student Coordinators
+2026 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Jae Lee, Nina Lutz
-<!-- 2024-04 Tal August, Regina Cheng, Christine Geeng, Sam Kolovson --> 
-<!-- 2021-10 Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng -->
+Medina Lamkin, Jessamine Li
+<!-- 2026 Medina Lamkin, Jessamine Li: from _posts/2026-03-13-dubdc.md -->
+<!-- 2025 Lucy Jiang, Zainab Tanveer: from _posts/2025-03-01-dubdc.md -->
+<!-- Replaced 2026-09-23: 2024 Jae Lee, Nina Lutz -->
+<!-- 2023 Judy Kong, Madeleine Grunde-McLaughlin: from _posts/2023-04-03-dubdc.md -->
+<!-- Replaced 2024-04-15: Tal August, Regina Cheng, Christine Geeng, Sam Kolovson -->
+<!-- Replaced 2021-10-02: Kenya Mejia, Miranda Wei, Annie Ross, Christine Geeng -->
 </div>
 </div>
 
@@ -652,9 +667,9 @@ You can also apply to multiple programs. The important thing is to come join us!
 ### Summer Research Experiences for Undergraduates
 
 DUB faculty coordinate a set of summer REU activities for undergraduates from within and outside the University of Washington.
-Information about the Summer 2024 program can found here:
+Information about the Summer 2026 program can found here:
 
-[DUB REU Program Summer 2024]({{ site.baseref }}/posts/2024/dubreu.html)
+[DUB REU Program Summer 2026]({{ site.baseurl }}/reu.html)
 
 </div>
 </div>
