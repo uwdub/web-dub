@@ -11,19 +11,19 @@ University of Washington. The DUB acronym stands for Design, Use, Build.
 Our mission is to bring together an interdisciplinary group of people to share ideas, 
 collaborate on research, and advance teaching related to the interaction between design, people, and technology. 
 DUB began when we recognized a strength of Human Computer Interaction & Design across many units at the University of Washington. 
-For more than 10 years, DUB has helped bring these people and perspectives together
-through events that include weekly seminars, quarterly lunches, and yearly retreats.
+For 20 years, DUB has helped bring these people and perspectives together
+through events that include seminars, lunches, and an annual DUB Community Day.
 DUB's interdisciplinary environment is one of the world's 
 most vibrant communities for research and education in Human Computer Interaction & Design.
 
 Primary activities of the DUB group include: 
 
-- A weekly lunch speaker seminar, on Wednesdays from 12:00-1:30. 
+- A lunch speaker seminar, on Wednesdays from 11:45 AM to 1:15 PM. 
 
-  [The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists) are used for seminar announcements.
+  [The DUB mailing lists]({{ site.baseurl }}/gettinginvolved.html#tab_mailing_lists_and_slack) are used for seminar announcements.
   
   [The DUB calendar]({{ site.baseurl }}/calendar.html) presents upcoming speakers, topics, and locations.
-- An annual retreat for faculty, research-active students, and industry partners.
+- An annual DUB Community Day for faculty, research-active students, and industry partners.
 - An annual reception at the CHI conference, promoting broader visibility of the DUB community.
 
 Members of DUB come from many University of Washington departments. The historic core is based in:
