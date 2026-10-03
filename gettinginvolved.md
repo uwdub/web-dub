@@ -98,7 +98,7 @@ James Fogarty
 Student Coordinators
 </div>
 <div class="col-md-8" markdown="block">
-Longjie Guo, Katelyn Mei
+Longjie Guo, Donghoon Shin
 <!-- Replaced 2026-Autumn: Madeleine Grunde-McLaughlin, Anukriti Kumar -->
 <!-- Replaced 2025-Autumn: Madeleine Grunde-McLaughlin, Daniel Campos Zamora -->
 <!-- Replaced 2024-10-25: Daniel Campos Zamora, Miranda Wei -->
