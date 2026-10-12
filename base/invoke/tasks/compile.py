@@ -18,7 +18,7 @@ def compile_config():
             undefined=jinja2.StrictUndefined
         )
         template = jinja2_environment.get_template(jinja2_entry['in'])
-        with open(jinja2_entry['out'], 'w') as f:
+        with open(jinja2_entry['out'], 'w', newline='\n') as f:
             f.write(template.render(config_yaml['config']))
 
 
