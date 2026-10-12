@@ -89,7 +89,7 @@ def compile_calendar():
 
     # Store our updated sequences
     data = {'sequences': seminar_calendar_sequences}
-    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8') as f:
+    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8', newline='\n') as f:
         yaml.dump(
             data,
             stream=f,
@@ -308,7 +308,7 @@ def compile_calendar_increment_all_sequences():
 
     # Store our updated sequences
     data = {'sequences': seminar_calendar_sequences}
-    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8') as f:
+    with open('_compile-calendar-sequences.yml', 'w', encoding='utf-8', newline='\n') as f:
         yaml.dump(
             data,
             stream=f,
